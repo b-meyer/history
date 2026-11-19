@@ -1,0 +1,72 @@
+id: proclus
+type: person
+names: { en: Proclus }
+notability: 8
+claims:
+  - id: proclus.born
+    predicate: born
+    when: 0412
+    where: constantinople
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: '§6'
+        stance: asserts
+        excerpt: 'At birth he was welcomed by the Constantinopolitan goddess Poliouchos'
+      - key: sep-proclus
+        locator: '§1'
+        stance: asserts
+        excerpt: 'Proclus was born in Constantinople/Byzantium (now Istanbul) into a rich Lycian family in 412.'
+  - id: proclus.active-at.athens
+    predicate: active-at
+    object: athens
+    when: 0430~/0485
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: '§10'
+        stance: asserts
+        excerpt: 'he embarked for Athens'
+      - key: sep-proclus
+        locator: preamble
+        stance: asserts
+        excerpt: 'Proclus of Athens (*412–485 C.E.)'
+  - id: proclus.influenced-by.iamblichus
+    predicate: influenced-by
+    object: iamblichus
+    # Suggested: confidence B, basis scholarly.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-proclus
+        locator: preamble
+        stance: asserts
+        excerpt: 'Continuing a movement that was inaugurated by Iamblichus (4th c.) and the charismatic figure of emperor Julian, and following the teaching of Syrianus, Proclus was eager to demonstrate the harmony of the ancient religious revelations'
+  - id: proclus.died
+    predicate: died
+    when: 0485
+    where: athens
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: '§36'
+        stance: asserts
+        excerpt: "Proclus left this world in the 124th year from Julian's accession to the empire"
+      - key: marinus-life-of-proclus-guthrie
+        locator: '§36'
+        stance: asserts
+        excerpt: 'under the archonship of the younger Nicagoras in Athens'

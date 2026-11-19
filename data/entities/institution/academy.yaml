@@ -1,0 +1,62 @@
+id: academy
+type: institution
+names: { en: Academy }
+notability: 8
+claims:
+  - id: academy.located-at.athens
+    predicate: located-at
+    object: athens
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.7
+        stance: asserts
+        excerpt: 'Having returned to Athens, he lived in the Academy, which is a gymnasium outside the walls'
+  - id: academy.opened
+    predicate: opened
+    when: -0386~
+    # Suggested: confidence B, basis scholarly.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: mactutor-academy
+        locator: opening section
+        stance: asserts
+        excerpt: 'began to teach there in around 387 BC'
+  - id: academy.closed
+    predicate: closed
+    when: 0529
+    # Suggested: confidence B, basis scholarly. MacTutor disputes both the closing and the continuity from Plato; SEP Proclus calls the later school the Platonic ‘Academy’ in quotation marks.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-neoplatonism
+        locator: '§7'
+        stance: asserts
+        excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
+      - key: mactutor-academy
+        locator: final paragraph
+        stance: disputes
+        excerpt: "the Academy continued to exist after Justinian's edict to close the pagan schools"
+  - id: academy.affected-by.justinian-edict
+    predicate: affected-by
+    object: justinian-edict
+    when: 0529
+    # Suggested: confidence B, basis scholarly. The plan’s Proclus–edict line has no predicate, so the edict attaches to the school it closed.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-neoplatonism
+        locator: '§7'
+        stance: asserts
+        excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'

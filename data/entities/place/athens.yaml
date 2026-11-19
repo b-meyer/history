@@ -1,0 +1,5 @@
+id: athens
+type: place
+names: { en: Athens }
+ids: { wikidata: 'Q844930', pleiades: '579885' }
+coords: [23.72, 37.97]

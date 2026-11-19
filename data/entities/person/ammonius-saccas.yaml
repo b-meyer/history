@@ -1,0 +1,19 @@
+id: ammonius-saccas
+type: person
+names: { en: Ammonius Saccas }
+notability: 5
+claims:
+  - id: ammonius-saccas.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: 0232/0242
+    # Suggested: confidence A, basis primary. The years are the ones Plotinus studied with him.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-plotinus
+        locator: '§1'
+        stance: asserts
+        excerpt: 'the elusive but evidently influential Ammonius Saccas in Alexandria at the age of 28'

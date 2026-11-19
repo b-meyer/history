@@ -1,0 +1,34 @@
+id: enneads
+type: work
+names: { en: Enneads }
+notability: 8
+language: grc
+status: extant
+claims:
+  - id: enneads.attributed-to.plotinus
+    predicate: attributed-to
+    object: plotinus
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 24
+        stance: asserts
+        excerpt: 'I had fifty-four treatises before me : I divided them into six sets of nine'
+  - id: enneads.composed
+    predicate: composed
+    when: 0253/0270
+    where: rome
+    # Suggested: confidence A, basis primary. The treatises were written 253–270; Porphyry edited them as the Enneads about 301.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 4
+        stance: asserts
+        excerpt: 'From about the first year of Galienus Plotinus had begun to write'

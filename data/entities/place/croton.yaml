@@ -1,0 +1,5 @@
+id: croton
+type: place
+names: { en: Croton }
+ids: { wikidata: 'Q13526919', pleiades: '452317' }
+coords: [17.13, 39.08]

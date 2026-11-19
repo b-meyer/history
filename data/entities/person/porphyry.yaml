@@ -1,0 +1,64 @@
+id: porphyry
+type: person
+names: { en: Porphyry }
+notability: 8
+claims:
+  - id: porphyry.born
+    predicate: born
+    when: 0233/0234
+    where: tyre
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: eunapius-lives-wright
+        locator: p. 353
+        stance: asserts
+        excerpt: "Tyre was PORPHYRY's birthplace"
+      - key: sep-porphyry
+        locator: '§1'
+        stance: asserts
+        excerpt: 'born in Tyre in Phoenicia (now in Lebanon), probably in 234 C.E.'
+  - id: porphyry.student-of.plotinus
+    predicate: student-of
+    object: plotinus
+    when: 0263/0268
+    where: rome
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 4
+        stance: asserts
+        excerpt: 'I myself arrived from Greece in the tenth year of Galienus’ reign'
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 5
+        stance: asserts
+        excerpt: 'After coming to know him I passed six years in close relation with him.'
+      - key: sep-porphyry
+        locator: preamble
+        stance: asserts
+        excerpt: 'from 263 to 268 C.E., with Plotinus in Rome'
+  - id: porphyry.died
+    predicate: died
+    when: 0305?
+    where: rome
+    # Suggested: confidence B, basis primary. Eunapius gives the place as hearsay; the year is SEP’s estimate.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: eunapius-lives-wright
+        locator: p. 361
+        stance: reports
+        excerpt: 'He is said to have departed this life in Rome.'
+      - key: sep-porphyry
+        locator: preamble
+        stance: asserts
+        excerpt: 'Porphyry (234?–305? C.E.)'

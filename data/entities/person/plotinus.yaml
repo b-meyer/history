@@ -1,0 +1,90 @@
+id: plotinus
+type: person
+names: { en: Plotinus }
+notability: 9
+claims:
+  - id: plotinus.born
+    predicate: born
+    when: 0204/0205
+    where: lycopolis
+    # Suggested: confidence B, basis primary. Porphyry gives the year but not the town; Eunapius, writing about 400, names it.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 2
+        stance: asserts
+        excerpt: 'Counting sixty-six years back from the second year of Claudius, we can fix Plotinus’ birth at the thirteenth year of Severus'
+      - key: eunapius-lives-wright
+        locator: p. 353
+        stance: asserts
+        excerpt: 'I will add his native place also; Lyco they call it'
+  - id: plotinus.student-of.ammonius-saccas
+    predicate: student-of
+    object: ammonius-saccas
+    when: 0232/0242
+    where: alexandria
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 3
+        stance: asserts
+        excerpt: 'he was directed to the most highly reputed professors to be found at Alexandria'
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 3
+        stance: asserts
+        excerpt: 'From that day he followed Ammonius continuously'
+  - id: plotinus.active-at.rome
+    predicate: active-at
+    object: rome
+    when: 0244/0270
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 3
+        stance: asserts
+        excerpt: 'At forty, in the reign of Philip, he settled in Rome.'
+      - key: sep-plotinus
+        locator: '§1'
+        stance: asserts
+        excerpt: 'settled permanently there late in 244, teaching continuously for more than twenty-five years, until his death in 270'
+  - id: plotinus.influenced-by.numenius
+    predicate: influenced-by
+    object: numenius
+    # Suggested: confidence B, basis scholarly.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-numenius
+        locator: preamble
+        stance: asserts
+        excerpt: 'shows how much of Plotinus’ philosophy, especially Plotinus’ metaphysics, was inspired by earlier Platonists such as Numenius'
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 17
+        stance: reports
+        excerpt: 'Some of the Greeks began to accuse Plotinus of appropriating the ideas of Numenius.'
+  - id: plotinus.died
+    predicate: died
+    when: 0270
+    # Suggested: confidence A, basis primary. He died on Zethus’s estate near Minturnae, in Campania; no place entity for it yet.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: VP 2
+        stance: asserts
+        excerpt: 'This was at the end of the second year of the reign of Claudius, and, as Eustochius tells me, Plotinus was then sixty-six.'

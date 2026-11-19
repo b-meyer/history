@@ -1,0 +1,5 @@
+id: chalcis
+type: place
+names: { en: Chalcis }
+ids: { wikidata: 'Q979091', pleiades: '668226' }
+coords: [37, 36]

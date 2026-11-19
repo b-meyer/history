@@ -1,0 +1,58 @@
+id: iamblichus
+type: person
+names: { en: Iamblichus }
+notability: 7
+claims:
+  - id: iamblichus.born
+    predicate: born
+    when: 0242~
+    where: chalcis
+    # Suggested: confidence B, basis primary. SEP notes a case for Chalcis sub Libanum instead of Chalcis ad Belum.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: eunapius-lives-wright
+        locator: p. 363
+        stance: asserts
+        excerpt: 'Chalcis, a city in the region called Coele Syria'
+      - key: sep-iamblichus
+        locator: '§1.1'
+        stance: asserts
+        excerpt: 'His birthplace is traditionally taken to be Chalcis ad Belum (modern Qinnasrin)'
+      - key: sep-iamblichus
+        locator: preamble
+        stance: asserts
+        excerpt: 'Iamblichus (ca. 242–ca. 325)'
+  - id: iamblichus.student-of.porphyry
+    predicate: student-of
+    object: porphyry
+    # Suggested: confidence A, basis primary.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: eunapius-lives-wright
+        locator: p. 363
+        stance: asserts
+        excerpt: 'Then leaving Anatolius he attached himself to Porphyry'
+      - key: sep-iamblichus
+        locator: preamble
+        stance: asserts
+        excerpt: 'Iamblichus (ca. 242–ca. 325) was a Syrian Neoplatonist and disciple of Porphyry of Tyre'
+  - id: iamblichus.active-at.apamea
+    predicate: active-at
+    object: apamea
+    when: 0300~/0325~
+    # Suggested: confidence B, basis scholarly. SEP dates neither the break with Porphyry nor the move; the start year is a guess to review.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-iamblichus
+        locator: '§1.1'
+        stance: asserts
+        excerpt: 'it is now accepted that he settled in Apamea'

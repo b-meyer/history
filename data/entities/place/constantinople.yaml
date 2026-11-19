@@ -1,0 +1,5 @@
+id: constantinople
+type: place
+names: { en: Constantinople }
+ids: { wikidata: 'Q16869', pleiades: '520998' }
+coords: [28.98, 41.01]

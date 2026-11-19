@@ -1,0 +1,32 @@
+id: moderatus
+type: person
+names: { en: Moderatus }
+notability: 4
+claims:
+  - id: moderatus.floruit
+    predicate: floruit
+    when: 00XX
+    where: gades
+    # Suggested: confidence B, basis scholarly. Gades is his city of origin; nothing places his activity there. Consider born, if a birth date can be sourced.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.3'
+        stance: asserts
+        excerpt: 'Moderatus of Gades (modern Cadiz in Spain), who was active in the first century CE'
+  - id: moderatus.member-of.neopythagoreans
+    predicate: member-of
+    object: neopythagoreans
+    # Suggested: confidence A, basis scholarly.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.3'
+        stance: reports
+        excerpt: 'Plutarch explicitly labels him a Pythagorean'

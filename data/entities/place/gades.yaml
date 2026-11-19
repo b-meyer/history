@@ -1,0 +1,5 @@
+id: gades
+type: place
+names: { en: Gades }
+ids: { wikidata: 'Q5890310', pleiades: '256177' }
+coords: [-6.29, 36.53]

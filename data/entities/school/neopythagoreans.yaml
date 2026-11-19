@@ -1,0 +1,32 @@
+id: neopythagoreans
+type: school
+names: { en: Neopythagoreans }
+notability: 7
+claims:
+  - id: neopythagoreans.influenced-by.plato
+    predicate: influenced-by
+    object: plato
+    # Suggested: confidence B, basis scholarly.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4'
+        stance: asserts
+        excerpt: 'treat the One and Indefinite Dyad as ultimate principles going back to Pythagoras, although these principles in fact originate with Plato'
+  - id: neopythagoreans.active-at.rome
+    predicate: active-at
+    object: rome
+    when: -0099/0000
+    # Suggested: confidence B, basis scholarly. SEP calls Neopythagoreanism "not a unified school of thought but rather a tendency"; Rome is its one place the entry dates.
+    confidence:
+    basis:
+    origin: ai-extracted
+    reviewed:
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.5'
+        stance: asserts
+        excerpt: 'The two most learned figures in Rome of the first century BCE, Nigidius Figulus and Varro, both have connections to Pythagorean ritual practices.'
