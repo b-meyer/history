@@ -102,6 +102,20 @@ describe('loadGraph', () => {
     expect(graph.entities.get('pythagoras')?.claims[0]?.when).toBe('-0569');
   });
 
+  it('accepts only http and https source URLs', () => {
+    write(
+      'sources/bad-url.yaml',
+      'key: bad-url\nkind: secondary\ntitle: T\nurl: javascript:alert(1)\n',
+    );
+    write(
+      'sources/good-url.yaml',
+      'key: good-url\nkind: secondary\ntitle: T\nurl: https://example.org/t\n',
+    );
+    const found = problems();
+    expect(found).toContainEqual(expect.stringMatching(/bad-url\.yaml.*http or https/u));
+    expect(found.filter((p) => p.includes('good-url'))).toEqual([]);
+  });
+
   it('reports schema problems with their file and field', () => {
     write(
       'entities/person/bad.yaml',
