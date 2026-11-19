@@ -12,9 +12,7 @@ dispatcher.
 > find-and-replace across the workspace.
 
 A site built on it is **config + content** — `vite.config.ts` and `src/*.md` (or
-`src/pages/*.md`). No `main.ts`, no `main.css`, no `index.html`. This repo ships
-three consumers: `apps/tcm` (rich: mermaid + theme controls), `apps/8fold` (minimal
-stock-prose stub), and `apps/showcase` (feature demos).
+`src/pages/*.md`). No `main.ts`, no `main.css`, no `index.html`.
 
 ---
 

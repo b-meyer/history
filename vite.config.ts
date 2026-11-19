@@ -5,9 +5,8 @@ import { defineConfig } from 'vite-plus';
 // to every package. Apps' own vite.config.ts files carry build settings only.
 const IGNORE_PATTERNS: string[] = [
   '**/dist/**',
-  '**/dist-baseline/**',
   '**/node_modules/**',
-  '**/.framework-ssg-temp/**',
+  '**/.qdocs-ssg-temp/**',
   '**/.claude/**',
   'pnpm-lock.yaml',
 ];

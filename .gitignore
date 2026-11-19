@@ -1,4 +1,5 @@
 dist
+.qdocs-ssg-temp
 node_modules
 .env*
 .playwright*

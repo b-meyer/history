@@ -41,6 +41,7 @@ catalogMode: prefer
 overrides:
   vite: 'catalog:'
   vitest: 'catalog:'
+  mermaid: 'catalog:'
   ws: '>=8.21.0'
   linkify-it@^5: ^5.0.2
   '@vue/server-renderer': ^3.5.42
@@ -62,17 +63,6 @@ peerDependencyRules:
 allowBuilds:
   esbuild: false
   vue-demi: true
-minimumReleaseAgeExclude:
-  - '@voidzero-dev/vite-plus-core@0.2.1'
-  - '@voidzero-dev/vite-plus-darwin-arm64@0.2.1'
-  - '@voidzero-dev/vite-plus-darwin-x64@0.2.1'
-  - '@voidzero-dev/vite-plus-linux-arm64-gnu@0.2.1'
-  - '@voidzero-dev/vite-plus-linux-arm64-musl@0.2.1'
-  - '@voidzero-dev/vite-plus-linux-x64-gnu@0.2.1'
-  - '@voidzero-dev/vite-plus-linux-x64-musl@0.2.1'
-  - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.2.1'
-  - '@voidzero-dev/vite-plus-win32-x64-msvc@0.2.1'
-  - vite-plus@0.2.1
 auditConfig:
   ignoreGhsas:
     # picomatch ReDoS (GHSA-fc5q-39xc-vjpf): no fixed release yet, and picomatch is only

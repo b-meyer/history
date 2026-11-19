@@ -8,7 +8,7 @@ export default defineConfig({
     siteTitle: 'History',
   },
   markdown: {
-    mermaid: false,
+    mermaid: true,
   },
   sidebar: [{ path: 'index', title: 'Home' }],
   server: { port: 48460 },
