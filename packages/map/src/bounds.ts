@@ -1,5 +1,5 @@
-// Keeps the view inside the basemap: no zooming out past the land, no panning into the empty
-// ocean the basemap leaves below 60°S. Web Mercator maths on a 512-pixel world tile, as deck.gl's
+// Keeps the view on the basemap: zooming out stops once the whole map fits, and panning cannot
+// move it off the window or into the empty ocean the basemap leaves below 60°S. Web Mercator maths on a 512-pixel world tile, as deck.gl's
 // MapView uses.
 
 import type { MapViewState } from './url.ts';
@@ -20,10 +20,13 @@ function yToLat(y: number): number {
   return (Math.atan(Math.exp(merc)) * 2 - Math.PI / 2) * (180 / Math.PI);
 }
 
-/** The smallest zoom at which a width × height viewport fits inside the bounds. */
+/**
+ * The smallest zoom: the one at which the whole bounded map fits the viewport, centred, with water
+ * filling the spare width or height.
+ */
 export function minZoom(width: number, height: number): number {
   const span = latToY(BOUNDS.south) - latToY(BOUNDS.north);
-  return Math.max(Math.log2(width / TILE), Math.log2(height / (TILE * span)));
+  return Math.min(Math.log2(width / TILE), Math.log2(height / (TILE * span)));
 }
 
 function clamp(value: number, low: number, high: number): number {

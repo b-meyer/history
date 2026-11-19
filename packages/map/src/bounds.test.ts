@@ -3,9 +3,17 @@ import { BOUNDS, clampView, minZoom } from './bounds.ts';
 import { DEFAULT_VIEW } from './url.ts';
 
 describe('minZoom', () => {
-  it('fits a wide window to the world width and a tall one to the latitude span', () => {
-    expect(minZoom(1024, 300)).toBeCloseTo(1);
-    expect(minZoom(400, 2000)).toBeGreaterThan(Math.log2(400 / 512));
+  it('fits the whole bounded map inside the window, whichever side is tighter', () => {
+    const span = 0.5866; // 58.5°S to 80°N as a share of the Mercator world's height
+    for (const [width, height] of [
+      [1920, 950],
+      [1400, 900],
+      [400, 900],
+    ] as const) {
+      const world = 512 * 2 ** minZoom(width, height);
+      expect(world).toBeLessThanOrEqual(width + 0.5);
+      expect(world * span).toBeLessThanOrEqual(height + 0.5);
+    }
   });
 });
 
@@ -17,16 +25,24 @@ describe('clampView', () => {
     expect(view.latitude).toBeCloseTo(DEFAULT_VIEW.latitude);
   });
 
-  it('stops zooming out once the bounds fill the window', () => {
+  it('stops zooming out once the whole map fits', () => {
     const view = clampView({ longitude: 20, latitude: 10, zoom: 0 }, 1400, 835);
     expect(view.zoom).toBeCloseTo(minZoom(1400, 835));
   });
 
-  it('keeps the bottom edge above the southern bound', () => {
+  it('keeps the bottom edge above the southern bound once zoomed in', () => {
     const view = clampView({ longitude: 20, latitude: -80, zoom: 3 }, 1400, 835);
     expect(view.latitude).toBeGreaterThan(BOUNDS.south);
     // Panning further south changes nothing.
     expect(clampView({ ...view, latitude: view.latitude - 5 }, 1400, 835).latitude).toBeCloseTo(
+      view.latitude,
+    );
+  });
+
+  it('centres the map at full zoom-out', () => {
+    const view = clampView({ longitude: 100, latitude: -40, zoom: 0 }, 1920, 950);
+    expect(view.longitude).toBeCloseTo(0);
+    expect(clampView({ ...view, latitude: view.latitude + 20 }, 1920, 950).latitude).toBeCloseTo(
       view.latitude,
     );
   });
