@@ -1,0 +1,35 @@
+{
+  "name": "map",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The /map view: deck.gl layers over the graph's map data, with the time slider and legend.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./url": "./src/url.ts"
+  },
+  "dependencies": {
+    "@deck.gl/core": "catalog:",
+    "@deck.gl/extensions": "catalog:",
+    "@deck.gl/layers": "catalog:",
+    "graph": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@vue/tsconfig": "catalog:",
+    "jsdom": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:",
+    "vue-tsc": "catalog:"
+  },
+  "peerDependencies": {
+    "vue": "^3.5",
+    "vue-router": "~5.0.7"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

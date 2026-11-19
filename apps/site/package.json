@@ -11,6 +11,7 @@
   "dependencies": {
     "@unhead/vue": "catalog:",
     "graph": "workspace:*",
+    "map": "workspace:*",
     "mermaid": "catalog:",
     "qdocs": "workspace:*",
     "vue": "catalog:",
