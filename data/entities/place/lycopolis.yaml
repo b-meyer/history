@@ -1,0 +1,5 @@
+id: lycopolis
+type: place
+names: { en: Lycopolis }
+ids: { wikidata: 'Q11764433', pleiades: '756593' }
+coords: [31.18, 27.18]

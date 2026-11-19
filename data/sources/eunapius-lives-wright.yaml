@@ -1,0 +1,11 @@
+# Locators are the Loeb page numbers that the tertullian.org copy prints; the canonical (Didot) numbers were not checked.
+key: eunapius-lives-wright
+kind: primary
+title: Lives of the Philosophers and Sophists
+authors: [Eunapius]
+translators: [Wilmer Cave Wright]
+publisher: Loeb Classical Library (Heinemann)
+published: 1921
+written: '0399~'
+language: en
+url: 'https://www.tertullian.org/fathers/eunapius_02_text.htm'

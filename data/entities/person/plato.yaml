@@ -1,0 +1,69 @@
+id: plato
+type: person
+names: { en: Plato }
+notability: 10
+claims:
+  - id: plato.born
+    predicate: born
+    when: -0428/-0426
+    where: athens
+    # Note: DL 3.3 also reports a birth on Aegina; SEP gives 429? for the year.
+    confidence: B
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.1
+        stance: asserts
+        excerpt: 'Plato was the son of Ariston and a citizen of Athens.'
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.2
+        stance: reports
+        excerpt: "Apollodorus in his Chronology fixes the date of Plato's birth in the 88th Olympiad"
+      - key: sep-plato
+        locator: preamble
+        stance: asserts
+        excerpt: 'Plato (429?–347 B.C.E.)'
+  - id: plato.active-at.athens
+    predicate: active-at
+    object: athens
+    when: -0386~/-0347
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.7
+        stance: asserts
+        excerpt: 'Having returned to Athens, he lived in the Academy'
+  - id: plato.founder-of.academy
+    predicate: founder-of
+    object: academy
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.41
+        stance: asserts
+        excerpt: 'the school which he founded was called the Academic school'
+  - id: plato.died
+    predicate: died
+    when: -0347/-0346
+    where: athens
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.2
+        stance: asserts
+        excerpt: 'He died, according to Hermippus, at a wedding feast, in the first year of the 108th Olympiad, in his eightyfirst year.'
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.41
+        stance: asserts
+        excerpt: 'He was buried in the Academy'

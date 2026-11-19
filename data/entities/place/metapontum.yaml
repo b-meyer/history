@@ -1,0 +1,5 @@
+id: metapontum
+type: place
+names: { en: Metapontum }
+ids: { wikidata: 'Q1058770', pleiades: '442658' }
+coords: [16.82, 40.42]

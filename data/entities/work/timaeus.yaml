@@ -1,0 +1,20 @@
+id: timaeus
+type: work
+names: { en: Timaeus }
+notability: 7
+language: grc
+status: extant
+claims:
+  - id: timaeus.attributed-to.plato
+    predicate: attributed-to
+    object: plato
+    # Note: Undated and unplaced: the fetched sources give no composition date.
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.60
+        stance: asserts
+        excerpt: 'Timaeus or On Nature, a physical treatise'

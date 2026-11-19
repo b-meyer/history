@@ -1,0 +1,74 @@
+id: pythagoras
+type: person
+names: { en: Pythagoras }
+notability: 9
+claims:
+  - id: pythagoras.born
+    predicate: born
+    when: -0569~
+    where: samos
+    # Note: The year is inferred; DL also reports a Tyrrhenian origin (Aristoxenus).
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoras
+        locator: '§3'
+        stance: asserts
+        excerpt: 'This chronology would suggest that he was born ca. 570 BCE.'
+      - key: sep-pythagoras
+        locator: preamble
+        stance: asserts
+        excerpt: 'He spent his early years on the island of Samos'
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.1
+        stance: reports
+        excerpt: 'according to Hermippus, a Samian'
+  - id: pythagoras.active-at.croton
+    predicate: active-at
+    object: croton
+    when: -0529~/-0509~
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.3
+        stance: asserts
+        excerpt: 'so he sailed away to Croton in Italy'
+      - key: sep-pythagoras
+        locator: '§3'
+        stance: asserts
+        excerpt: 'He then emigrated to the Greek city of Croton in southern Italy ca. 530 BCE'
+  - id: pythagoras.founder-of.pythagoreans
+    predicate: founder-of
+    object: pythagoreans
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: iamblichus-pythagoric-life-taylor
+        locator: ch. 6
+        stance: reports
+        excerpt: 'on his arrival at Crotona, which was the noblest city in Italy, he had many followers'
+  - id: pythagoras.died
+    predicate: died
+    when: -0489~
+    where: metapontum
+    # Note: DL 8.39–40 gives competing accounts of the death; SEP follows the Metapontum one.
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoras
+        locator: '§3'
+        stance: asserts
+        excerpt: 'led him to flee to another Greek city in southern Italy, Metapontum, where he died around 490 BCE'
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.40
+        stance: reports
+        excerpt: 'Dicaearchus, however, says that Pythagoras died a fugitive in the temple of the Muses at Metapontum'

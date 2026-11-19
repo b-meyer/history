@@ -1,0 +1,36 @@
+id: numenius
+type: person
+names: { en: Numenius }
+notability: 6
+claims:
+  - id: numenius.active-at.apamea
+    predicate: active-at
+    object: apamea
+    when: 0150~
+    # Note: SEP ties him to both Apamea and Rome.
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-numenius
+        locator: preamble
+        stance: asserts
+        excerpt: 'Numenius, a Platonist philosopher of the mid 2nd century CE'
+      - key: sep-numenius
+        locator: '§1'
+        stance: asserts
+        excerpt: 'The existing evidence associates Numenius with two cities, Apamea in Syria and Rome.'
+  - id: numenius.member-of.neopythagoreans
+    predicate: member-of
+    object: neopythagoreans
+    # Note: SEP Numenius calls him a Platonist; SEP Pythagoreanism counts him a Neopythagorean.
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.4'
+        stance: asserts
+        excerpt: 'Unlike Neopythagoreans such as Eudorus, Moderatus and Numenius'

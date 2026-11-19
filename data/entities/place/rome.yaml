@@ -1,0 +1,5 @@
+id: rome
+type: place
+names: { en: Rome }
+ids: { wikidata: 'Q220', pleiades: '423025' }
+coords: [12.48, 41.89]

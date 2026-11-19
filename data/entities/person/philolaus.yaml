@@ -1,0 +1,31 @@
+id: philolaus
+type: person
+names: { en: Philolaus }
+notability: 6
+claims:
+  - id: philolaus.born
+    predicate: born
+    when: -0469~
+    where: croton
+    # Note: Croton is his city; the sources do not say he was born there in so many words.
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-philolaus
+        locator: preamble
+        stance: asserts
+        excerpt: 'Philolaus of Croton, in southern Italy, was a Greek philosopher/scientist, who lived from ca. 470 to ca. 385 BC'
+  - id: philolaus.member-of.pythagoreans
+    predicate: member-of
+    object: pythagoreans
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.84
+        stance: asserts
+        excerpt: 'Philolaus of Croton was a Pythagorean'

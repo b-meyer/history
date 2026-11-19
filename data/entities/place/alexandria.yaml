@@ -1,0 +1,5 @@
+id: alexandria
+type: place
+names: { en: Alexandria }
+ids: { wikidata: 'Q87', pleiades: '727070' }
+coords: [29.89, 31.2]

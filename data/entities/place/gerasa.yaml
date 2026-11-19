@@ -1,0 +1,5 @@
+id: gerasa
+type: place
+names: { en: Gerasa }
+ids: { wikidata: 'Q56072866', pleiades: '678158' }
+coords: [35.89, 32.27]

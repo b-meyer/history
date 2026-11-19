@@ -1,0 +1,5 @@
+id: tyre
+type: place
+names: { en: Tyre }
+ids: { wikidata: 'Q82070', pleiades: '678437' }
+coords: [35.2, 33.27]

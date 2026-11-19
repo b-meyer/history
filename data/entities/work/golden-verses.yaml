@@ -1,0 +1,32 @@
+id: golden-verses
+type: work
+names: { en: Golden Verses }
+notability: 5
+language: grc
+status: extant
+claims:
+  - id: golden-verses.attributed-to.pythagoras
+    predicate: attributed-to
+    object: pythagoras
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.5'
+        stance: reports
+        excerpt: 'a treatise consisting of 71 Greek hexameter verses, which was ascribed to Pythagoras or the Pythagoreans'
+  - id: golden-verses.composed
+    predicate: composed
+    when: -0349/0400
+    # Note: No place is known, so the work has no stay and its attribution link cannot draw on the map.
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.5'
+        stance: asserts
+        excerpt: 'dates ranging from 350 BCE to 400 CE have been suggested'

@@ -1,0 +1,20 @@
+id: justinian-edict
+type: event
+names: { en: Justinian’s edict }
+notability: 6
+kind: edict
+claims:
+  - id: justinian-edict.occurred
+    predicate: occurred
+    when: 0529
+    where: athens
+    # Note: Placed where it took effect; it was issued at Constantinople. Malalas (Chronicle 18.47) is the primary source, not quoted here.
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-neoplatonism
+        locator: '§7'
+        stance: asserts
+        excerpt: 'The most vigorous group of Neoplatonists, living in Athens and still adhering to the old rituals, disbanded in the aftermath of Emperor Justinian’s legislation of 529'

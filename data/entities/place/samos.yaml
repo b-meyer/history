@@ -1,0 +1,5 @@
+id: samos
+type: place
+names: { en: Samos }
+ids: { wikidata: 'Q13580795', pleiades: '599925' }
+coords: [26.94, 37.69]

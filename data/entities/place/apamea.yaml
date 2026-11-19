@@ -1,0 +1,5 @@
+id: apamea
+type: place
+names: { en: Apamea }
+ids: { wikidata: 'Q617550', pleiades: '668335' }
+coords: [36.4, 35.42]

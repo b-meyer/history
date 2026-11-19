@@ -1,0 +1,20 @@
+id: on-the-pythagorean-way-of-life
+type: work
+names: { en: On the Pythagorean Way of Life }
+notability: 5
+language: grc
+status: extant
+claims:
+  - id: on-the-pythagorean-way-of-life.attributed-to.iamblichus
+    predicate: attributed-to
+    object: iamblichus
+    # Note: Undated and unplaced.
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-iamblichus
+        locator: '§1.2'
+        stance: asserts
+        excerpt: 'Four of these texts pertain to a summa On Pythagoreanism (conflicting testimonies exist about its title: cf. O’Meara 1989: 32–33): On the Pythagorean Life'

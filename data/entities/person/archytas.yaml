@@ -1,0 +1,38 @@
+id: archytas
+type: person
+names: { en: Archytas }
+notability: 7
+claims:
+  - id: archytas.active-at.tarentum
+    predicate: active-at
+    object: tarentum
+    when: -0399/-0349
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.79
+        stance: asserts
+        excerpt: 'he was generalissimo of his city seven times'
+      - key: sep-archytas
+        locator: preamble
+        stance: asserts
+        excerpt: 'active in the first half of the fourth century BC (i.e., during Plato’s lifetime)'
+  - id: archytas.member-of.pythagoreans
+    predicate: member-of
+    object: pythagoreans
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.79
+        stance: asserts
+        excerpt: 'Archytas of Tarentum, son of Mnesagoras or, if we may believe Aristoxenus, of Hestiaeus, was another of the Pythagoreans.'
+      - key: sep-archytas
+        locator: preamble
+        stance: asserts
+        excerpt: 'He was the last prominent figure in the early Pythagorean tradition and the dominant political figure in Tarentum'

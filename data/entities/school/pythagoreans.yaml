@@ -1,0 +1,31 @@
+id: pythagoreans
+type: school
+names: { en: Pythagoreans }
+notability: 8
+claims:
+  - id: pythagoreans.active-at.croton
+    predicate: active-at
+    object: croton
+    when: -0529~/-0509~
+    # Note: Dates run from Pythagoras arriving (ca. 530) to the violence against his followers (ca. 510).
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoras
+        locator: '§3'
+        stance: asserts
+        excerpt: 'it is in Croton that he first seems to have attracted a large number of followers to his way of life'
+  - id: pythagoreans.closed
+    predicate: closed
+    when: -0349~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoreanism
+        locator: preamble
+        stance: asserts
+        excerpt: 'It is likely that the Pythagorean communities that practiced a way of life that they traced back to Pythagoras died out in the middle of the fourth century BCE.'

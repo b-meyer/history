@@ -1,0 +1,31 @@
+id: nicomachus
+type: person
+names: { en: Nicomachus }
+notability: 5
+claims:
+  - id: nicomachus.floruit
+    predicate: floruit
+    when: 0100/0150
+    where: gerasa
+    # Note: Gerasa is his city of origin; nothing places his activity there.
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.4'
+        stance: asserts
+        excerpt: 'Nicomachus of Gerasa (modern Jerash in Jordan) was probably active a little before Numenius, in the first half of the second century CE.'
+  - id: nicomachus.member-of.neopythagoreans
+    predicate: member-of
+    object: neopythagoreans
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    reviewed: 2026-11-19
+    sources:
+      - key: sep-pythagoreanism
+        locator: '§4.4'
+        stance: asserts
+        excerpt: 'Neopythagorean Mathematical Sciences: Nicomachus, Porphyry and Iamblichus'
