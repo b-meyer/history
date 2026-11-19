@@ -46,7 +46,8 @@ const facts = computed(() => {
   if (r.kind !== undefined) rows.push(['Kind', r.kind]);
   if (r.coords !== undefined) {
     const [lon, lat] = r.coords;
-    rows.push(['Coordinates', `${lat}, ${lon}`]);
+    const from = r.ids?.pleiades === undefined ? '' : ' (Pleiades)';
+    rows.push(['Coordinates', `${lat}, ${lon}${from}`]);
   }
   return rows;
 });
