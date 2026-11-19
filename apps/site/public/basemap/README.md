@@ -14,6 +14,7 @@ Processing, to keep the files small:
 
 - every feature's properties are removed, along with the collection's `name`, `crs` and `bbox`;
 - coordinates are rounded to 3 decimal places (about 100 m), and points the rounding makes repeat are dropped;
-- a line left with fewer than 2 points, or a ring with fewer than 4, is dropped, along with a feature left with none (one river).
+- a line left with fewer than 2 points, or a ring with fewer than 4, is dropped, along with a feature left with none (one river);
+- every feature entirely south of 60°S is dropped: Antarctica and the islands around it, which the map never needs.
 
 The coastlines and rivers are modern ones, not their ancient courses.
