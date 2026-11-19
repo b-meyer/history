@@ -1,5 +1,4 @@
 import './styles/entry.css';
-import { createUnhead, headSymbol } from '@unhead/vue';
 import config from 'virtual:@qdocs/config';
 import setup from 'virtual:@qdocs/setup';
 import { createSSRApp, nextTick } from 'vue';
@@ -9,6 +8,7 @@ import App from './App.vue';
 import { CodeGroup, HomeLayout, LayoutResolver, NotFoundPage, PageLayout } from './components';
 import { CONFIG_KEY } from './config';
 import { scrollBehavior } from './routerFactory';
+import { provideHead } from './runtime/head';
 
 /**
  * Creates the Vue app instance. Called once by the browser entry (no routePath — mounts to #app
@@ -19,7 +19,7 @@ export async function createApp(routePath?: string) {
   // createSSRApp on both sides: server rendering works either way, but the client
   // side requires it to trigger hydration against the pre-rendered HTML.
   const app = createSSRApp(App);
-  const head = createUnhead();
+  const head = provideHead(app);
   const router = createRouter({
     history: import.meta.env.SSR
       ? createMemoryHistory(import.meta.env.BASE_URL)
@@ -33,7 +33,6 @@ export async function createApp(routePath?: string) {
   if (setup) await setup({ app, router });
 
   app.use(router);
-  app.provide(headSymbol, head);
   app.component('CodeGroup', CodeGroup);
   app.component('LayoutResolver', LayoutResolver);
   app.component('PageLayout', PageLayout);
