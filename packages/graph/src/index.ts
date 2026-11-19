@@ -1,7 +1,7 @@
 // Typed read API for the site, the map and the qdocs plugins. Node-only parts (loading and
 // writing data/) are exported for tools and tests; the browser needs only the types,
 // ./dates and ./shard.
-export type { MapClaim, MapData, MapEntity } from './build/mapData.ts';
+export type { MapClaim, MapData, MapEntity, MapLink, MapStay } from './build/mapData.ts';
 export type { EntityRecord, RecordClaim, RecordRef, RecordSource } from './build/records.ts';
 export { buildMapData } from './build/mapData.ts';
 export { buildRecords, shardRecords } from './build/records.ts';

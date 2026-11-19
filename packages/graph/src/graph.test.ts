@@ -10,7 +10,7 @@ import {
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vite-plus/test';
-import type { MapData } from './build/mapData.ts';
+import { buildMapData, type MapData } from './build/mapData.ts';
 import type { EntityRecord } from './build/records.ts';
 import { writeOutputs, type VocabTerms } from './build/write.ts';
 import { loadGraph } from './load.ts';
@@ -290,6 +290,95 @@ describe('writeOutputs', () => {
     writeFileSync(join(out, 'records', 'stale.json'), '{}');
     writeOutputs(loadGraph(data).graph, out);
     expect(existsSync(join(out, 'records', 'stale.json'))).toBe(false);
+  });
+});
+
+function mapData(): MapData {
+  return buildMapData(loadGraph(data).graph);
+}
+
+describe('buildMapData', () => {
+  it('puts an entity at the place an active-at claim names', () => {
+    expect(mapData().stays.find((s) => s.claim === 'porphyry.active-at.rome')).toMatchObject({
+      entity: 'porphyry',
+      type: 'person',
+      name: 'Porphyry',
+      place: 'rome',
+      coords: [12.48, 41.89],
+      start: 263,
+      end: 268,
+      confidence: 'A',
+      basis: 'primary',
+    });
+  });
+
+  it('places a born claim by its where, using one date bound for both ends', () => {
+    write(
+      'entities/person/plotinus.yaml',
+      `id: plotinus\ntype: person\nnames: { en: Plotinus }\nnotability: 9\nclaims:\n${claim('plotinus.born', 'predicate: born\nwhen: 0204/\nwhere: rome')}`,
+    );
+    expect(mapData().stays.find((s) => s.claim === 'plotinus.born')).toMatchObject({
+      entity: 'plotinus',
+      notability: 9,
+      start: 204,
+      end: 204,
+    });
+  });
+
+  it('draws a student-of link from the teacher to the student', () => {
+    write(
+      'entities/place/lycopolis.yaml',
+      'id: lycopolis\ntype: place\nnames: { en: Lycopolis }\ncoords: [31.18, 27.18]\n',
+    );
+    write(
+      'entities/person/plotinus.yaml',
+      `id: plotinus\ntype: person\nnames: { en: Plotinus }\nclaims:\n${claim('plotinus.born', 'predicate: born\nwhen: 0204/0205\nwhere: lycopolis')}${claim('plotinus.active-at.rome', 'predicate: active-at\nobject: rome\nwhen: 0244/0270')}`,
+    );
+    expect(mapData().links).toEqual([
+      expect.objectContaining({
+        claim: 'porphyry.student-of.plotinus',
+        label: 'student of',
+        subject: 'porphyry',
+        object: 'plotinus',
+        // Plotinus's stay at Rome overlaps 263–268; his birthplace does not.
+        from: [12.48, 41.89],
+        to: [12.48, 41.89],
+        start: 263,
+        end: 268,
+      }),
+    ]);
+  });
+
+  it('dates an undated link by the later entity, so it draws when that one is active', () => {
+    write(
+      'entities/place/athens.yaml',
+      'id: athens\ntype: place\nnames: { en: Athens }\ncoords: [23.73, 37.98]\n',
+    );
+    write(
+      'entities/person/proclus.yaml',
+      `id: proclus\ntype: person\nnames: { en: Proclus }\nclaims:\n${claim('proclus.active-at.athens', 'predicate: active-at\nobject: athens\nwhen: 0430/0485')}`,
+    );
+    write(
+      'entities/person/plotinus.yaml',
+      `id: plotinus\ntype: person\nnames: { en: Plotinus }\nclaims:\n${claim('plotinus.active-at.rome', 'predicate: active-at\nobject: rome\nwhen: 0244/0270')}`,
+    );
+    write(
+      'entities/person/marinus.yaml',
+      `id: marinus\ntype: person\nnames: { en: Marinus }\nclaims:\n${claim('marinus.student-of.proclus', 'predicate: student-of\nobject: proclus')}${claim('marinus.active-at.athens', 'predicate: active-at\nobject: athens\nwhen: 0470/0500')}`,
+    );
+    const link = mapData().links.find((l) => l.claim === 'marinus.student-of.proclus');
+    expect(link).toMatchObject({ start: 470, end: 500, from: [23.73, 37.98] });
+  });
+
+  it('skips a link when one end has no place', () => {
+    write(
+      'entities/person/amelius.yaml',
+      `id: amelius\ntype: person\nnames: { en: Amelius }\nclaims:\n${claim('amelius.student-of.plotinus', 'predicate: student-of\nobject: plotinus\nwhen: 0246/0269')}`,
+    );
+    // Plotinus has a born claim but no place, so neither link can be drawn.
+    const links = mapData().links;
+    expect(links.find((l) => l.claim === 'amelius.student-of.plotinus')).toBeUndefined();
+    expect(links.find((l) => l.claim === 'porphyry.student-of.plotinus')).toBeUndefined();
   });
 });
 
