@@ -40,7 +40,9 @@ ${fields
     confidence: A
     basis: primary
     origin: human
-    reviewed: 2026-11-02
+    audits:
+      - { on: 2026-11-02, by: claude-opus-5-5, verdict: confirmed }
+      - { on: 2026-11-03, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: porphyry-life-of-plotinus
         locator: VP 4–5
@@ -49,7 +51,29 @@ ${fields
 `;
 }
 
+/** One person, x, with a single born claim carrying these audits and source stances. */
+function audited(
+  audits: string[],
+  options: { confidence?: string; stances?: string[] } = {},
+): void {
+  const sources = (options.stances ?? ['asserts'])
+    .map(
+      (stance, index) =>
+        `      - { key: ${index === 0 ? 'porphyry-life-of-plotinus' : 'other-source'}, locator: "1", stance: ${stance}, excerpt: x }\n`,
+    )
+    .join('');
+  const list =
+    audits.length === 0
+      ? '    audits: []\n'
+      : `    audits:\n${audits.map((audit) => `      - { ${audit} }\n`).join('')}`;
+  write(
+    'entities/person/x.yaml',
+    `id: x\ntype: person\nnames: { en: X }\nclaims:\n  - id: x.born\n    predicate: born\n    when: "0300"\n    confidence: ${options.confidence ?? 'B'}\n    basis: primary\n    origin: ai-extracted\n${list}    sources:\n${sources}`,
+  );
+}
+
 function seed(): void {
+  write('sources/other-source.yaml', 'key: other-source\nkind: secondary\ntitle: Other\n');
   write(
     'sources/porphyry-life-of-plotinus.yaml',
     'key: porphyry-life-of-plotinus\nkind: primary\ntitle: Life of Plotinus\nauthors: [Porphyry]\nwritten: 0301~\n',
@@ -119,7 +143,7 @@ describe('loadGraph', () => {
   it('reports schema problems with their file and field', () => {
     write(
       'entities/person/bad.yaml',
-      'id: bad\ntype: person\nnames: { en: Bad }\nclaims:\n  - id: bad.born\n    predicate: born\n    when: 570 BCE\n    confidence: D\n    basis: primary\n    origin: human\n    reviewed: 2026-11-02\n    sources: []\n',
+      'id: bad\ntype: person\nnames: { en: Bad }\nclaims:\n  - id: bad.born\n    predicate: born\n    when: 570 BCE\n    confidence: D\n    basis: primary\n    origin: human\n    audits: []\n    sources: []\n',
     );
     const found = problems();
     expect(found).toContainEqual(
@@ -129,14 +153,6 @@ describe('loadGraph', () => {
     expect(found).toContainEqual(
       expect.stringContaining('claims.0.sources: a claim needs at least one source'),
     );
-  });
-
-  it('rejects a claim with no reviewed date', () => {
-    write(
-      'entities/person/unreviewed.yaml',
-      'id: unreviewed\ntype: person\nnames: { en: X }\nclaims:\n  - id: unreviewed.born\n    predicate: born\n    when: "0300"\n    confidence: A\n    basis: primary\n    origin: import\n    sources:\n      - { key: porphyry-life-of-plotinus, locator: "1", stance: asserts, excerpt: x }\n',
-    );
-    expect(problems()).toContainEqual(expect.stringContaining('unreviewed.yaml claims.0.reviewed'));
   });
 
   it('checks file names, folders and duplicate IDs', () => {
@@ -183,16 +199,12 @@ describe('validateGraph', () => {
     );
   });
 
-  it('rejects a reviewed date in the future and an unknown source', () => {
+  it('rejects an unknown claim source', () => {
     write(
       'entities/person/x.yaml',
-      'id: x\ntype: person\nnames: { en: X }\nclaims:\n  - id: x.born\n    predicate: born\n    when: "0300"\n    confidence: A\n    basis: primary\n    origin: human\n    reviewed: 2027-01-01\n    sources:\n      - { key: missing-source, locator: "1", stance: asserts, excerpt: x }\n',
+      'id: x\ntype: person\nnames: { en: X }\nclaims:\n  - id: x.born\n    predicate: born\n    when: "0300"\n    confidence: A\n    basis: primary\n    origin: human\n    audits:\n      - { on: 2026-11-02, by: human, verdict: confirmed }\n    sources:\n      - { key: missing-source, locator: "1", stance: asserts, excerpt: x }\n',
     );
-    const found = problems();
-    expect(found).toContainEqual(
-      expect.stringContaining('reviewed date 2027-01-01 is in the future'),
-    );
-    expect(found).toContainEqual(expect.stringContaining("unknown source 'missing-source'"));
+    expect(problems()).toContainEqual(expect.stringContaining("unknown source 'missing-source'"));
   });
 
   it('requires coords on places only', () => {
@@ -386,5 +398,89 @@ describe('shardOf', () => {
   it('is stable and two hex digits', () => {
     expect(shardOf('porphyry')).toMatch(/^[0-9a-f]{2}$/u);
     expect(shardOf('porphyry')).toBe(shardOf('porphyry'));
+  });
+});
+
+const OPUS = 'on: 2026-11-02, by: claude-opus-5-5, verdict: confirmed';
+const SONNET = 'on: 2026-11-03, by: claude-sonnet-5-5, verdict: confirmed';
+
+/** Problems in the x.yaml fixture that audited() writes. */
+function auditProblems(): string[] {
+  return problems().filter((p) => p.includes('x.yaml'));
+}
+
+describe('audits', () => {
+  it('passes two confirmations by different auditors', () => {
+    audited([OPUS, SONNET]);
+    expect(auditProblems()).toEqual([]);
+  });
+
+  it('fails a claim with no audits', () => {
+    audited([]);
+    expect(auditProblems()).toContainEqual(
+      expect.stringContaining('claims.0.audits: needs two independent passing audits (has 0)'),
+    );
+  });
+
+  it('fails two passes by the same auditor', () => {
+    audited([OPUS, 'on: 2026-11-04, by: claude-opus-5-5, verdict: changed']);
+    expect(auditProblems()).toContainEqual(
+      expect.stringContaining('needs two independent passing audits (has 1)'),
+    );
+  });
+
+  it('passes the same auditor when one audit checked a different source', () => {
+    audited([
+      OPUS,
+      'on: 2026-11-04, by: claude-opus-5-5, verdict: confirmed, source: other-source',
+    ]);
+    expect(auditProblems()).toEqual([]);
+  });
+
+  it('passes a single human audit', () => {
+    audited(['on: 2026-11-02, by: human, verdict: confirmed']);
+    expect(auditProblems()).toEqual([]);
+  });
+
+  it('fails when the latest audit is flagged, even after two passes', () => {
+    audited([
+      OPUS,
+      SONNET,
+      'on: 2026-11-05, by: claude-opus-5-5, verdict: flagged, note: wrong year',
+    ]);
+    expect(auditProblems()).toContainEqual(
+      expect.stringContaining('claims.0.audits: the latest audit flagged this claim'),
+    );
+  });
+
+  it('rejects an audit dated in the future or citing an unknown source', () => {
+    audited([
+      OPUS,
+      SONNET,
+      'on: 2027-01-01, by: claude-sonnet-5-5, verdict: confirmed, source: nowhere',
+    ]);
+    const found = auditProblems();
+    expect(found).toContainEqual(
+      expect.stringContaining('claims.0.audits.2.on: audit date 2027-01-01 is in the future'),
+    );
+    expect(found).toContainEqual(
+      expect.stringContaining("claims.0.audits.2.source: unknown source 'nowhere'"),
+    );
+  });
+
+  it('rejects confidence A resting only on reports', () => {
+    audited([OPUS, SONNET], { confidence: 'A', stances: ['reports', 'reports'] });
+    expect(auditProblems()).toContainEqual(
+      expect.stringContaining('claims.0.confidence: confidence A needs a source that asserts'),
+    );
+  });
+
+  it('rejects confidence A with a disputing source', () => {
+    audited([OPUS, SONNET], { confidence: 'A', stances: ['asserts', 'disputes'] });
+    expect(auditProblems()).toContainEqual(
+      expect.stringContaining(
+        'claims.0.confidence: confidence A cannot rest on a claim a source disputes',
+      ),
+    );
   });
 });

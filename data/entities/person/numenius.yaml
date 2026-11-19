@@ -11,7 +11,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'SEP ties him to both Apamea and Rome; the date is mid-2nd century, approximate.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Evidence also associates him with Rome.',
+        }
     sources:
       - key: sep-numenius
         locator: preamble
@@ -28,7 +40,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'Often classed as a Platonist instead (SEP Numenius calls him a Platonist).',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Numenius is also labelled a Platonist.',
+        }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'

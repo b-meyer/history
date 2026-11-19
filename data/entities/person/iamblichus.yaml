@@ -9,9 +9,22 @@ claims:
     where: chalcis
     # Note: SEP notes a case for Chalcis sub Libanum instead of Chalcis ad Belum.
     confidence: B
-    basis: primary
+    basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. ca. 242 is a modern estimate; SEP also notes some support for Chalcis sub Libanum instead of Chalcis ad Belum.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          source: sep-iamblichus,
+          note: "Graded B scholarly. Birth year is ca. 242 and place only 'traditionally' Chalcis.",
+        }
     sources:
       - key: eunapius-lives-wright
         locator: p. 363
@@ -31,7 +44,14 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: "Graded B primary. Eunapius is late; SEP says only that there are 'no decisive reasons to doubt' it.",
+        }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-iamblichus }
     sources:
       - key: eunapius-lives-wright
         locator: p. 363
@@ -49,7 +69,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "SEP: 'now accepted' (Daphne estate noted); the dates are approximate.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'SEP says he settled in Apamea but gives no dates; 0300~/0325~ is not in the source.',
+        }
     sources:
       - key: sep-iamblichus
         locator: '§1.1'

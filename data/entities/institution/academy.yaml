@@ -9,7 +9,9 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.7
@@ -21,7 +23,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "387 BCE is the conventional date ('around'), not attested directly.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'MacTutor says Plato began teaching there around 387 BC; opening date is approximate.',
+        }
     sources:
       - key: mactutor-academy
         locator: opening section
@@ -31,10 +45,22 @@ claims:
     predicate: closed
     when: 0529
     # Note: MacTutor disputes both the closing and the continuity from Plato; SEP Proclus calls the later school the Platonic ‘Academy’ in quotation marks.
-    confidence: B
+    confidence: C
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: 'Graded C scholarly. MacTutor disputes it: the Academy (under Simplicius) continued after 529, and there was no Academy from 85 BCE to the 2nd century CE.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded C scholarly. SEP asserts closure after 529 but MacTutor disputes it (Academy continued); closure date is contested.',
+        }
     sources:
       - key: sep-neoplatonism
         locator: '§7'
@@ -52,7 +78,14 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "Accepted that the Athenian school was hit by the 529 legislation, but the exact mechanism and the school's continuity are debated.",
+        }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: sep-neoplatonism
         locator: '§7'

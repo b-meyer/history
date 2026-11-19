@@ -4,6 +4,8 @@ import { entityType, flag, list, slug } from './common.ts';
 export const CONFIDENCE = ['A', 'B', 'C'] as const;
 export const BASIS = ['primary', 'scholarly', 'tradition'] as const;
 export const ORIGIN = ['human', 'ai-extracted', 'import'] as const;
+/** confirmed and changed pass; flagged holds the claim back from publishing. */
+export const AUDIT_VERDICT = ['confirmed', 'changed', 'flagged'] as const;
 export const STANCE = ['asserts', 'reports', 'disputes'] as const;
 
 export type Confidence = (typeof CONFIDENCE)[number];

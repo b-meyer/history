@@ -9,7 +9,9 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: changed, note: 'Graded A scholarly.' }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: sep-pythagoreanism
         locator: '§4'
@@ -23,7 +25,14 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "The excerpt is weak (only 'connections to Pythagorean ritual'); the same section names Nigidius Figulus as the reviver.",
+        }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.5'

@@ -11,7 +11,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "SEP notes Aristoxenus' rival tradition that he was from Tarentum.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Dates approximate; Croton as birthplace is the usual attribution.',
+        }
     sources:
       - key: sep-philolaus
         locator: preamble
@@ -23,7 +35,9 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.84

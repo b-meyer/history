@@ -146,7 +146,8 @@ function people(source: RecordSource): string {
                 <span v-if="claim.basis === 'tradition'" class="font-medium text-gray-700">
                   · a tradition's own account</span
                 >
-                · origin {{ claim.origin }} · reviewed {{ claim.reviewed }}
+                · origin {{ claim.origin }} · audited {{ claim.audits.count }}× · last
+                {{ claim.audits.last }}
               </p>
               <ul class="text-sm not-italic">
                 <li v-for="(source, index) in claim.sources" :key="index">
@@ -171,6 +172,10 @@ function people(source: RecordSource): string {
             <span class="text-sm text-gray-500"> ({{ source.kind }})</span>
           </li>
         </ul>
+        <p class="text-sm text-gray-500">
+          Researched and compiled with AI assistance from the sources cited above, and checked by
+          automated audits. Offered for educational purposes as a study aid, not a primary source.
+        </p>
       </template>
     </template>
     <template v-else>

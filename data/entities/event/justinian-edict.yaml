@@ -12,7 +12,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: 'Graded A scholarly. 529 is right, but the edict was issued in Constantinople; Athens is where its effect fell, not where it occurred.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Edict was empire-wide; Athens is where its effect on the school is placed.',
+        }
     sources:
       - key: sep-neoplatonism
         locator: '§7'

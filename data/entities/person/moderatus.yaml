@@ -11,7 +11,9 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: changed, note: 'Graded A scholarly.' }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: changed, note: 'Graded A scholarly.' }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.3'
@@ -20,10 +22,22 @@ claims:
   - id: moderatus.member-of.neopythagoreans
     predicate: member-of
     object: neopythagoreans
-    confidence: A
+    confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: "Graded B scholarly. The only stance is reports (Plutarch's label), so A is not allowed; SEP §4.4 also names him a Neopythagorean outright.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: "Graded B scholarly. Reports Plutarch's label; 'Neopythagorean' is a modern category.",
+        }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.3'
