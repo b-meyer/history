@@ -1,6 +1,7 @@
 import './styles/entry.css';
 import { createUnhead, headSymbol } from '@unhead/vue';
 import config from 'virtual:@qdocs/config';
+import setup from 'virtual:@qdocs/setup';
 import { createSSRApp, nextTick } from 'vue';
 import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router';
 import { routes } from 'vue-router/auto-routes';
@@ -26,6 +27,10 @@ export async function createApp(routePath?: string) {
     routes: [...routes, { path: '/:pathMatch(.*)*', component: NotFoundPage }],
     scrollBehavior,
   });
+
+  // The consumer's setup runs before app.use(router), which starts the first client navigation,
+  // so guards it registers (data loading, say) finish before SSR renders and before hydration.
+  if (setup) await setup({ app, router });
 
   app.use(router);
   app.provide(headSymbol, head);

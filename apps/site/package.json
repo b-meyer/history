@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@unhead/vue": "catalog:",
+    "graph": "workspace:*",
     "mermaid": "catalog:",
     "qdocs": "workspace:*",
     "vue": "catalog:",
@@ -21,7 +22,6 @@
     "@types/node": "catalog:",
     "@vitejs/plugin-vue": "catalog:",
     "@vue/tsconfig": "catalog:",
-    "graph": "workspace:*",
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",

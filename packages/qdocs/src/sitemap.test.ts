@@ -13,7 +13,67 @@ const mockReaddir = vi.mocked(readdirSync);
 const mockRead = vi.mocked(readFileSync);
 const mockWrite = vi.mocked(writeFileSync);
 
-import { buildSearchIndexEntries, buildSitemap, filterPublicRoutes } from './sitemap';
+import {
+  buildRouteModuleMap,
+  buildSearchIndexEntries,
+  buildSitemap,
+  expandRouteParams,
+  filterPublicRoutes,
+} from './sitemap';
+
+describe('expandRouteParams', () => {
+  it('substitutes each value into a one-param pattern', () => {
+    const result = expandRouteParams(['/', '/e/:id'], { '/e/:id': ['plotinus', 'porphyry'] });
+    expect([...result]).toEqual([
+      ['/e/plotinus', '/e/:id'],
+      ['/e/porphyry', '/e/:id'],
+    ]);
+  });
+
+  it('gives nothing for a pattern with no entry', () => {
+    expect(expandRouteParams(['/e/:id'], { '/x/:id': ['a'] }).size).toBe(0);
+    expect(expandRouteParams(['/e/:id']).size).toBe(0);
+  });
+
+  it('URL-encodes values', () => {
+    expect([...expandRouteParams(['/e/:id'], { '/e/:id': ['a b/c'] }).keys()]).toEqual([
+      '/e/a%20b%2Fc',
+    ]);
+  });
+
+  it('ignores patterns with more than one param', () => {
+    expect(expandRouteParams(['/:a/:b'], { '/:a/:b': ['x'] }).size).toBe(0);
+  });
+});
+
+describe('buildRouteModuleMap', () => {
+  beforeEach(() => {
+    mockExists.mockReset();
+  });
+
+  it('maps a plain route to its file', () => {
+    mockExists.mockImplementation((p) => String(p).replaceAll('\\', '/') === '/pages/about.md');
+    expect(buildRouteModuleMap(['/about'], '/pages', 'src/pages').get('/about')).toBe(
+      'src/pages/about.md',
+    );
+  });
+
+  it('falls back to the pattern file for an expanded route', () => {
+    mockExists.mockImplementation((p) => String(p).replaceAll('\\', '/') === '/pages/e/[id].vue');
+    const map = buildRouteModuleMap(
+      ['/e/plotinus'],
+      '/pages',
+      'src/pages',
+      new Map([['/e/plotinus', '/e/:id']]),
+    );
+    expect(map.get('/e/plotinus')).toBe('src/pages/e/[id].vue');
+  });
+
+  it('leaves a route with no file unmapped', () => {
+    mockExists.mockReturnValue(false);
+    expect(buildRouteModuleMap(['/x'], '/pages', 'src/pages').has('/x')).toBe(false);
+  });
+});
 
 describe('filterPublicRoutes', () => {
   beforeEach(() => {
