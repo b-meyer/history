@@ -8,11 +8,11 @@ claims:
   - id: timaeus.attributed-to.plato
     predicate: attributed-to
     object: plato
-    # Suggested: confidence A, basis primary. Undated and unplaced: the fetched sources give no composition date.
-    confidence:
-    basis:
+    # Note: Undated and unplaced: the fetched sources give no composition date.
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.60

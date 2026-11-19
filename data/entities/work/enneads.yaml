@@ -8,11 +8,10 @@ claims:
   - id: enneads.attributed-to.plotinus
     predicate: attributed-to
     object: plotinus
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 24
@@ -22,11 +21,11 @@ claims:
     predicate: composed
     when: 0253/0270
     where: rome
-    # Suggested: confidence A, basis primary. The treatises were written 253–270; Porphyry edited them as the Enneads about 301.
-    confidence:
-    basis:
+    # Note: The treatises were written 253–270; Porphyry edited them as the Enneads about 301.
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 4

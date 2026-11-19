@@ -7,11 +7,11 @@ claims:
     predicate: floruit
     when: 0100/0150
     where: gerasa
-    # Suggested: confidence B, basis scholarly. Gerasa is his city of origin; nothing places his activity there.
-    confidence:
-    basis:
+    # Note: Gerasa is his city of origin; nothing places his activity there.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'
@@ -20,11 +20,10 @@ claims:
   - id: nicomachus.member-of.neopythagoreans
     predicate: member-of
     object: neopythagoreans
-    # Suggested: confidence A, basis scholarly.
-    confidence:
-    basis:
+    confidence: A
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'

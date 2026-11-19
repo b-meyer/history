@@ -7,11 +7,11 @@ claims:
     predicate: born
     when: -0469~
     where: croton
-    # Suggested: confidence B, basis scholarly. Croton is his city; the sources do not say he was born there in so many words.
-    confidence:
-    basis:
+    # Note: Croton is his city; the sources do not say he was born there in so many words.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-philolaus
         locator: preamble
@@ -20,11 +20,10 @@ claims:
   - id: philolaus.member-of.pythagoreans
     predicate: member-of
     object: pythagoreans
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.84

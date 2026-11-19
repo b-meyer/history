@@ -8,11 +8,11 @@ claims:
   - id: on-the-pythagorean-way-of-life.attributed-to.iamblichus
     predicate: attributed-to
     object: iamblichus
-    # Suggested: confidence A, basis scholarly. Undated and unplaced.
-    confidence:
-    basis:
+    # Note: Undated and unplaced.
+    confidence: A
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-iamblichus
         locator: '§1.2'

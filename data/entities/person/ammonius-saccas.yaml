@@ -7,11 +7,11 @@ claims:
     predicate: active-at
     object: alexandria
     when: 0232/0242
-    # Suggested: confidence A, basis primary. The years are the ones Plotinus studied with him.
-    confidence:
-    basis:
+    # Note: The years are the ones Plotinus studied with him.
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-plotinus
         locator: '§1'

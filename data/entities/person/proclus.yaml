@@ -7,11 +7,10 @@ claims:
     predicate: born
     when: 0412
     where: constantinople
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: marinus-life-of-proclus-guthrie
         locator: '§6'
@@ -25,11 +24,10 @@ claims:
     predicate: active-at
     object: athens
     when: 0430~/0485
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: marinus-life-of-proclus-guthrie
         locator: '§10'
@@ -42,11 +40,10 @@ claims:
   - id: proclus.influenced-by.iamblichus
     predicate: influenced-by
     object: iamblichus
-    # Suggested: confidence B, basis scholarly.
-    confidence:
-    basis:
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-proclus
         locator: preamble
@@ -56,11 +53,10 @@ claims:
     predicate: died
     when: 0485
     where: athens
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: marinus-life-of-proclus-guthrie
         locator: '§36'

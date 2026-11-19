@@ -7,11 +7,11 @@ claims:
     predicate: born
     when: -0428/-0426
     where: athens
-    # Suggested: confidence B, basis primary. DL 3.3 also reports a birth on Aegina; SEP gives 429? for the year.
-    confidence:
-    basis:
+    # Note: DL 3.3 also reports a birth on Aegina; SEP gives 429? for the year.
+    confidence: B
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.1
@@ -29,11 +29,10 @@ claims:
     predicate: active-at
     object: athens
     when: -0386~/-0347
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.7
@@ -42,11 +41,10 @@ claims:
   - id: plato.founder-of.academy
     predicate: founder-of
     object: academy
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.41
@@ -56,11 +54,10 @@ claims:
     predicate: died
     when: -0347/-0346
     where: athens
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.2

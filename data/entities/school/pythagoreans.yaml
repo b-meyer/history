@@ -7,11 +7,11 @@ claims:
     predicate: active-at
     object: croton
     when: -0529~/-0509~
-    # Suggested: confidence A, basis scholarly. Dates run from Pythagoras arriving (ca. 530) to the violence against his followers (ca. 510).
-    confidence:
-    basis:
+    # Note: Dates run from Pythagoras arriving (ca. 530) to the violence against his followers (ca. 510).
+    confidence: A
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoras
         locator: '§3'
@@ -20,11 +20,10 @@ claims:
   - id: pythagoreans.closed
     predicate: closed
     when: -0349~
-    # Suggested: confidence B, basis scholarly.
-    confidence:
-    basis:
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: preamble

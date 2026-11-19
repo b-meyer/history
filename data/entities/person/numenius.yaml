@@ -7,11 +7,11 @@ claims:
     predicate: active-at
     object: apamea
     when: 0150~
-    # Suggested: confidence B, basis scholarly. SEP ties him to both Apamea and Rome.
-    confidence:
-    basis:
+    # Note: SEP ties him to both Apamea and Rome.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-numenius
         locator: preamble
@@ -24,11 +24,11 @@ claims:
   - id: numenius.member-of.neopythagoreans
     predicate: member-of
     object: neopythagoreans
-    # Suggested: confidence B, basis scholarly. SEP Numenius calls him a Platonist; SEP Pythagoreanism counts him a Neopythagorean.
-    confidence:
-    basis:
+    # Note: SEP Numenius calls him a Platonist; SEP Pythagoreanism counts him a Neopythagorean.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'

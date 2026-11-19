@@ -8,11 +8,10 @@ claims:
   - id: golden-verses.attributed-to.pythagoras
     predicate: attributed-to
     object: pythagoras
-    # Suggested: confidence C, basis tradition.
-    confidence:
-    basis:
+    confidence: C
+    basis: tradition
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.5'
@@ -21,11 +20,11 @@ claims:
   - id: golden-verses.composed
     predicate: composed
     when: -0349/0400
-    # Suggested: confidence C, basis scholarly. No place is known, so the work has no stay and its attribution link cannot draw on the map.
-    confidence:
-    basis:
+    # Note: No place is known, so the work has no stay and its attribution link cannot draw on the map.
+    confidence: C
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.5'

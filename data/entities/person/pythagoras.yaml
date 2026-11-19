@@ -7,11 +7,11 @@ claims:
     predicate: born
     when: -0569~
     where: samos
-    # Suggested: confidence B, basis scholarly. The year is inferred; DL also reports a Tyrrhenian origin (Aristoxenus).
-    confidence:
-    basis:
+    # Note: The year is inferred; DL also reports a Tyrrhenian origin (Aristoxenus).
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoras
         locator: '§3'
@@ -29,11 +29,10 @@ claims:
     predicate: active-at
     object: croton
     when: -0529~/-0509~
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.3
@@ -46,11 +45,10 @@ claims:
   - id: pythagoras.founder-of.pythagoreans
     predicate: founder-of
     object: pythagoreans
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: iamblichus-pythagoric-life-taylor
         locator: ch. 6
@@ -60,11 +58,11 @@ claims:
     predicate: died
     when: -0489~
     where: metapontum
-    # Suggested: confidence B, basis scholarly. DL 8.39–40 gives competing accounts of the death; SEP follows the Metapontum one.
-    confidence:
-    basis:
+    # Note: DL 8.39–40 gives competing accounts of the death; SEP follows the Metapontum one.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoras
         locator: '§3'

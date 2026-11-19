@@ -7,11 +7,11 @@ claims:
     predicate: floruit
     when: 00XX
     where: gades
-    # Suggested: confidence B, basis scholarly. Gades is his city of origin; nothing places his activity there. Consider born, if a birth date can be sourced.
-    confidence:
-    basis:
+    # Note: Gades is his city of origin; nothing places his activity there. Consider born, if a birth date can be sourced.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.3'
@@ -20,11 +20,10 @@ claims:
   - id: moderatus.member-of.neopythagoreans
     predicate: member-of
     object: neopythagoreans
-    # Suggested: confidence A, basis scholarly.
-    confidence:
-    basis:
+    confidence: A
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.3'

@@ -6,11 +6,10 @@ claims:
   - id: neopythagoreans.influenced-by.plato
     predicate: influenced-by
     object: plato
-    # Suggested: confidence B, basis scholarly.
-    confidence:
-    basis:
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4'
@@ -20,11 +19,11 @@ claims:
     predicate: active-at
     object: rome
     when: -0099/0000
-    # Suggested: confidence B, basis scholarly. SEP calls Neopythagoreanism "not a unified school of thought but rather a tendency"; Rome is its one place the entry dates.
-    confidence:
-    basis:
+    # Note: SEP calls Neopythagoreanism "not a unified school of thought but rather a tendency"; Rome is its one place the entry dates.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-pythagoreanism
         locator: '§4.5'

@@ -7,11 +7,10 @@ claims:
     predicate: born
     when: 0233/0234
     where: tyre
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: eunapius-lives-wright
         locator: p. 353
@@ -26,11 +25,10 @@ claims:
     object: plotinus
     when: 0263/0268
     where: rome
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 4
@@ -48,11 +46,11 @@ claims:
     predicate: died
     when: 0305?
     where: rome
-    # Suggested: confidence B, basis primary. Eunapius gives the place as hearsay; the year is SEP’s estimate.
-    confidence:
-    basis:
+    # Note: Eunapius gives the place as hearsay; the year is SEP’s estimate.
+    confidence: B
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: eunapius-lives-wright
         locator: p. 361

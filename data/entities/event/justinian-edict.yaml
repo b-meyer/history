@@ -8,11 +8,11 @@ claims:
     predicate: occurred
     when: 0529
     where: athens
-    # Suggested: confidence B, basis scholarly. Placed where it took effect; it was issued at Constantinople. Malalas (Chronicle 18.47) is the primary source, not quoted here.
-    confidence:
-    basis:
+    # Note: Placed where it took effect; it was issued at Constantinople. Malalas (Chronicle 18.47) is the primary source, not quoted here.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-neoplatonism
         locator: '§7'

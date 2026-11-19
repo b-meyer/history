@@ -7,11 +7,11 @@ claims:
     predicate: born
     when: 0242~
     where: chalcis
-    # Suggested: confidence B, basis primary. SEP notes a case for Chalcis sub Libanum instead of Chalcis ad Belum.
-    confidence:
-    basis:
+    # Note: SEP notes a case for Chalcis sub Libanum instead of Chalcis ad Belum.
+    confidence: B
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: eunapius-lives-wright
         locator: p. 363
@@ -28,11 +28,10 @@ claims:
   - id: iamblichus.student-of.porphyry
     predicate: student-of
     object: porphyry
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: eunapius-lives-wright
         locator: p. 363
@@ -46,11 +45,11 @@ claims:
     predicate: active-at
     object: apamea
     when: 0300~/0325~
-    # Suggested: confidence B, basis scholarly. SEP dates neither the break with Porphyry nor the move; the start year is a guess to review.
-    confidence:
-    basis:
+    # Note: SEP dates neither the break with Porphyry nor the move; the start year is a guess to review.
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-iamblichus
         locator: '§1.1'

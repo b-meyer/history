@@ -7,11 +7,11 @@ claims:
     predicate: born
     when: 0204/0205
     where: lycopolis
-    # Suggested: confidence B, basis primary. Porphyry gives the year but not the town; Eunapius, writing about 400, names it.
-    confidence:
-    basis:
+    # Note: Porphyry gives the year but not the town; Eunapius, writing about 400, names it.
+    confidence: B
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 2
@@ -26,11 +26,10 @@ claims:
     object: ammonius-saccas
     when: 0232/0242
     where: alexandria
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 3
@@ -44,11 +43,10 @@ claims:
     predicate: active-at
     object: rome
     when: 0244/0270
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 3
@@ -61,11 +59,10 @@ claims:
   - id: plotinus.influenced-by.numenius
     predicate: influenced-by
     object: numenius
-    # Suggested: confidence B, basis scholarly.
-    confidence:
-    basis:
+    confidence: B
+    basis: scholarly
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: sep-numenius
         locator: preamble
@@ -78,11 +75,11 @@ claims:
   - id: plotinus.died
     predicate: died
     when: 0270
-    # Suggested: confidence A, basis primary. He died on Zethus’s estate near Minturnae, in Campania; no place entity for it yet.
-    confidence:
-    basis:
+    # Note: He died on Zethus’s estate near Minturnae, in Campania; no place entity for it yet.
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 2

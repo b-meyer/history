@@ -7,11 +7,10 @@ claims:
     predicate: active-at
     object: tarentum
     when: -0399/-0349
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.79
@@ -24,11 +23,10 @@ claims:
   - id: archytas.member-of.pythagoreans
     predicate: member-of
     object: pythagoreans
-    # Suggested: confidence A, basis primary.
-    confidence:
-    basis:
+    confidence: A
+    basis: primary
     origin: ai-extracted
-    reviewed:
+    reviewed: 2026-11-19
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.79
