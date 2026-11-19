@@ -41,6 +41,17 @@ describe('expandRouteParams', () => {
     ]);
   });
 
+  it('ignores optional and repeatable params', () => {
+    expect(expandRouteParams(['/e/:id?'], { '/e/:id?': ['x'] }).size).toBe(0);
+    expect(expandRouteParams(['/:path(.*)*'], { '/:path(.*)*': ['x'] }).size).toBe(0);
+  });
+
+  it('accepts a param with a custom regex', () => {
+    expect([...expandRouteParams(['/n/:n(\\d+)'], { '/n/:n(\\d+)': ['7'] }).keys()]).toEqual([
+      '/n/7',
+    ]);
+  });
+
   it('ignores patterns with more than one param', () => {
     expect(expandRouteParams(['/:a/:b'], { '/:a/:b': ['x'] }).size).toBe(0);
   });

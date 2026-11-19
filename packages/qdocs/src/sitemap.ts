@@ -54,12 +54,14 @@ export function filterPublicRoutes(paths: string[], pagesDir: string): string[] 
   });
 }
 
-const PARAM_RE = /:\w+(?:\([^)]*\))?/gu;
+// A param with an optional custom regex and an optional modifier (`?`, `*`, `+`).
+const PARAM_RE = /:\w+(?:\([^)]*\))?[?*+]?/gu;
 
 /**
  * Expands dynamic route patterns into concrete paths from `routeParams`: `/e/:id` with `['a',
- * 'b']` gives `/e/a` and `/e/b`. Values are URL-encoded. A pattern with no entry, or with more
- * than one param, gives nothing. Returns each path with the pattern it came from.
+ * 'b']` gives `/e/a` and `/e/b`. Values are URL-encoded. A pattern with no entry, with more than
+ * one param, or whose param is optional or repeatable (`:id?`, `:path*`), gives nothing. Returns
+ * each path with the pattern it came from.
  */
 export function expandRouteParams(
   patterns: string[],
@@ -70,7 +72,8 @@ export function expandRouteParams(
   for (const pattern of patterns) {
     const values = routeParams[pattern];
     if (!values) continue;
-    if ((pattern.match(PARAM_RE) ?? []).length !== 1) continue;
+    const params = pattern.match(PARAM_RE) ?? [];
+    if (params.length !== 1 || /[?*+]$/u.test(params[0] ?? '')) continue;
     for (const value of values) {
       out.set(pattern.replaceAll(PARAM_RE, encodeURIComponent(value)), pattern);
     }
