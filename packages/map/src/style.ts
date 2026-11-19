@@ -17,6 +17,8 @@ export type Palette = {
   link: Rgba;
   tradition: Rgba;
   focus: Rgba;
+  /** dev:leads only: unaudited leads. */
+  lead: Rgba;
   types: Record<EntityType, Rgba>;
 };
 
@@ -30,6 +32,7 @@ const LIGHT: Palette = {
   link: [70, 80, 100, 220],
   tradition: [176, 92, 20, 230],
   focus: [200, 30, 60, 255],
+  lead: [190, 0, 150, 190],
   types: {
     tradition: [120, 70, 150, 255],
     school: [40, 120, 110, 255],
@@ -51,6 +54,7 @@ const DARK: Palette = {
   link: [190, 200, 215, 220],
   tradition: [240, 160, 80, 230],
   focus: [255, 110, 130, 255],
+  lead: [255, 120, 225, 200],
   types: {
     tradition: [190, 150, 220, 255],
     school: [110, 200, 185, 255],

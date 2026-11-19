@@ -18,6 +18,7 @@ history/                     ← repo root (pnpm workspace)
 - **Dates are EDTF strings** (`0263`, `-0569~`, `02XX`, `0263/0268`), read as astronomical years (-569 is 570 BCE). Never use JavaScript `Date` for them.
 - **YAML is read as failsafe**, so every scalar is a string and the schemas in `packages/graph/src/schema/` convert numbers and flags.
 - **Generated files stay out of git.** `graph build` writes `apps/site/public/data/`.
+- **Leads are never published.** `vp run dev:leads` overlays the library's unaudited Wikidata leads (from `LIBRARY_DIR`) on `/map`, served from memory by the dev server only. `vp run build` ends with `graph check-leads`, which fails if lead data reaches `public/data/` or `dist/`.
 
 Stack: Vite + Vue 3 + qdocs-ssg (custom SSG, not SPA) + unplugin-vue-markdown + Tailwind 4. NOT VitePress.
 
@@ -34,15 +35,16 @@ Always run `vp run fix` before `vp check` — `vp check` will fail on formatting
 
 ## Toolchain — `vp` is the sole entry point
 
-| Command        | Does                                             |
-| -------------- | ------------------------------------------------ |
-| `vp install`   | Install/refresh all deps                         |
-| `vp check`     | Format + lint + type-check (whole workspace)     |
-| `vp run fix`   | Autofix format/lint issues                       |
-| `vp run build` | Build the site (`qdocs-ssg` → static HTML/route) |
-| `vp run test`  | Run all tests (Vitest)                           |
-| `vp run ready` | Check, test and build — pre-push gate            |
-| `vp run dev`   | Dev server for the site (HMR on `.md` changes)   |
+| Command            | Does                                                              |
+| ------------------ | ----------------------------------------------------------------- |
+| `vp install`       | Install/refresh all deps                                          |
+| `vp check`         | Format + lint + type-check (whole workspace)                      |
+| `vp run fix`       | Autofix format/lint issues                                        |
+| `vp run build`     | Build the site (`qdocs-ssg` → static HTML/route)                  |
+| `vp run test`      | Run all tests (Vitest)                                            |
+| `vp run ready`     | Check, test and build — pre-push gate                             |
+| `vp run dev`       | Dev server for the site (HMR on `.md` changes)                    |
+| `vp run dev:leads` | Dev server with the library's leads on `/map` (set `LIBRARY_DIR`) |
 
 **`vp build` ≠ `vp run build`** — `vp build` invokes Vite's SPA path, skipping qdocs-ssg. Always use `vp run build`.
 **`vp test` ≠ `vp run test`** — `vp test` runs current package only. Always use `vp run test`.

@@ -45,6 +45,8 @@ export type MapStay = {
   approximate: boolean;
   confidence: Confidence;
   basis: Basis;
+  /** Set only on dev:leads data: an unaudited lead, never published. */
+  lead?: true;
 };
 
 /** A claim between two entities, drawn from the object's place to the subject's. */
@@ -60,6 +62,8 @@ export type MapLink = {
   end: number;
   confidence: Confidence;
   basis: Basis;
+  /** Set only on dev:leads data: an unaudited lead, never published. */
+  lead?: true;
 };
 
 /** public/data/map.json: every audited item with its year bounds, place and confidence. */

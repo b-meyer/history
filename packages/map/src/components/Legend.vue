@@ -3,7 +3,7 @@ import type { VocabTerms } from 'graph';
 import { computed } from 'vue';
 import { DASH, linkColor, palette, rgbaCss, type Theme } from '../style.ts';
 
-const props = defineProps<{ vocab: VocabTerms | null; theme: Theme }>();
+const props = defineProps<{ vocab: VocabTerms | null; theme: Theme; leads?: boolean }>();
 
 const LINE_WIDTH = 3;
 
@@ -24,6 +24,7 @@ const rows = computed(() =>
   })),
 );
 
+const lead = computed(() => rgbaCss(palette(props.theme).lead));
 const plain = computed(() => rgbaCss(linkColor('primary', props.theme)));
 const tradition = computed(() => ({
   color: rgbaCss(palette(props.theme).tradition),
@@ -70,6 +71,21 @@ const tradition = computed(() => ({
           <circle cx="27" cy="6" r="4" fill="none" :stroke="plain" stroke-width="1.5" />
         </svg>
         <span>Filled: secure or probable. Hollow: contested.</span>
+      </li>
+      <li v-if="leads" class="flex items-center gap-2">
+        <svg class="shrink-0" width="36" height="12" aria-hidden="true">
+          <circle cx="12" cy="6" r="4" fill="none" :stroke="lead" stroke-width="1.5" />
+          <line
+            x1="20"
+            y1="6"
+            x2="36"
+            y2="6"
+            :stroke="lead"
+            stroke-width="1.5"
+            stroke-dasharray="1.5 4"
+          />
+        </svg>
+        <span>Lead: unaudited Wikidata import, dev:leads only</span>
       </li>
     </ul>
     <p class="m-0 mt-2 text-xs text-gray-500">

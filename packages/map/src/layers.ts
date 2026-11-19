@@ -39,6 +39,8 @@ export type LayerInput = {
   stays: MapStay[];
   labels: MapLabel[];
   links: LinkPath[];
+  /** dev:leads only: unaudited leads, drawn beneath the graph and never pickable. */
+  leads?: { stays: MapStay[]; labels: MapLabel[]; links: LinkPath[] };
 };
 
 const timeFilter = new DataFilterExtension({ filterSize: 2 });
@@ -157,6 +159,83 @@ function labelLayer(input: LayerInput): Layer {
   });
 }
 
+type Leads = NonNullable<LayerInput['leads']>;
+
+function leadLinkLayer(input: LayerInput, leads: Leads, color: Rgba): Layer {
+  return new PathLayer<
+    LinkPath,
+    DataFilterExtensionProps<LinkPath> & PathStyleExtensionProps<LinkPath>
+  >({
+    id: 'lead-links',
+    data: leads.links,
+    getPath: (item) => item.path,
+    getColor: color,
+    getWidth: 1.5,
+    widthUnits: 'pixels',
+    getDashArray: [1, 3],
+    getFilterValue: (item) => filterValue(item.link),
+    ...timeProps(input),
+    extensions: [timeFilter, dashes],
+    updateTriggers: { getColor: input.theme },
+  });
+}
+
+function leadStayLayer(input: LayerInput, leads: Leads, color: Rgba): Layer {
+  return new ScatterplotLayer<MapStay, DataFilterExtensionProps<MapStay>>({
+    id: 'lead-stays',
+    data: leads.stays,
+    stroked: true,
+    filled: false,
+    radiusUnits: 'pixels',
+    lineWidthUnits: 'pixels',
+    getPosition: (stay) => stay.coords,
+    getRadius: (stay) => stayRadius(stay.notability),
+    getLineColor: color,
+    getLineWidth: 1.5,
+    getFilterValue: filterValue,
+    ...timeProps(input),
+    extensions: [timeFilter],
+    updateTriggers: { getLineColor: input.theme },
+  });
+}
+
+function leadLabelLayer(input: LayerInput, leads: Leads, color: Rgba): Layer {
+  return new TextLayer<MapLabel, DataFilterExtensionProps<MapLabel>>({
+    id: 'lead-labels',
+    data: leads.labels,
+    getText: (label) => label.name,
+    getPosition: (label) => label.coords,
+    getPixelOffset: (label) => [0, -(stayRadius(label.notability) + 8)],
+    getSize: 11,
+    sizeUnits: 'pixels',
+    getColor: color,
+    outlineWidth: 2,
+    outlineColor: palette(input.theme).labelOutline,
+    fontSettings: { sdf: true },
+    getFilterValue: filterValue,
+    ...timeProps(input),
+    extensions: [timeFilter],
+    updateTriggers: { getColor: input.theme },
+  });
+}
+
+/** A dotted line, a hollow ring and a small label, all in the lead colour. */
+function leadLayers(input: LayerInput): Layer[] {
+  if (input.leads === undefined) return [];
+  const color = palette(input.theme).lead;
+  return [
+    leadLinkLayer(input, input.leads, color),
+    leadStayLayer(input, input.leads, color),
+    leadLabelLayer(input, input.leads, color),
+  ];
+}
+
 export function buildLayers(input: LayerInput): Layer[] {
-  return [...basemapLayers(input), linkLayer(input), stayLayer(input), labelLayer(input)];
+  return [
+    ...basemapLayers(input),
+    ...leadLayers(input),
+    linkLayer(input),
+    stayLayer(input),
+    labelLayer(input),
+  ];
 }

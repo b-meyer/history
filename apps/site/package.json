@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "graph build && vp dev",
-    "build": "graph build && qdocs-ssg",
+    "dev:leads": "graph build && vp dev --mode leads",
+    "build": "graph build && qdocs-ssg && graph check-leads public/data dist",
     "preview": "vp preview"
   },
   "dependencies": {
