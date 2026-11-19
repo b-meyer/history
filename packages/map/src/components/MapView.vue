@@ -11,6 +11,7 @@ import {
   watchEffect,
 } from 'vue';
 import { arcPath } from '../arc.ts';
+import { boundedView } from '../bounds.ts';
 import { useMapUrl } from '../composables/useMapUrl.ts';
 import { labelData, stayAt, visibleLinks, visibleStays, type Selection } from '../data.ts';
 import { BASEMAP, buildLayers, type Basemap, type LinkPath } from '../layers.ts';
@@ -70,7 +71,14 @@ function openFocus(map: MapData): void {
   selection.value = { kind: 'stay', stay };
   const [longitude, latitude] = stay.coords;
   const zoom = Math.max(state.view.zoom, 5);
-  deck?.setProps({ initialViewState: { longitude, latitude, zoom, transitionDuration: 600 } });
+  deck?.setProps({
+    initialViewState: { ...bounded({ longitude, latitude, zoom }), transitionDuration: 600 },
+  });
+}
+
+/** A view kept inside the basemap for the container's current size. */
+function bounded(view: { longitude: number; latitude: number; zoom: number }) {
+  return boundedView(view, container.value?.clientWidth ?? 0, container.value?.clientHeight ?? 0);
 }
 
 async function load(): Promise<void> {
@@ -142,14 +150,16 @@ onMounted(() => {
     parent: container.value,
     views: new DeckMapView({ repeat: false }),
     controller: true,
-    initialViewState: { ...state.view },
+    initialViewState: bounded(state.view),
     layers: layers(),
     onClick,
     getCursor: ({ isDragging, isHovering }) =>
       isDragging ? 'grabbing' : isHovering ? 'pointer' : 'grab',
+    // Returning a view state overrides the controller's, so the view never leaves the bounds.
     onViewStateChange: ({ viewState }) => {
-      const { longitude, latitude, zoom } = viewState;
-      state.view = { longitude, latitude, zoom };
+      const view = bounded(viewState);
+      state.view = { longitude: view.longitude, latitude: view.latitude, zoom: view.zoom };
+      return { ...viewState, ...view };
     },
   });
   void load();
