@@ -8,6 +8,7 @@ const IGNORE_PATTERNS: string[] = [
   '**/node_modules/**',
   '**/.qdocs-ssg-temp/**',
   'apps/site/public/data/**',
+  'apps/site/public/basemap/*.json',
   '**/.claude/**',
   'pnpm-lock.yaml',
 ];
@@ -64,6 +65,14 @@ export default defineConfig({
         files: ['**/components/AppHeader.vue'],
         rules: {
           'import/max-dependencies': ['error', { max: 12 }],
+        },
+      },
+      {
+        // MapView is the map's root shell: it wires deck.gl, the URL state, the data and the four
+        // overlay components together.
+        files: ['packages/map/src/components/MapView.vue'],
+        rules: {
+          'import/max-dependencies': ['error', { max: 14 }],
         },
       },
     ],

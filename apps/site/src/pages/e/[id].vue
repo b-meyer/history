@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { RecordClaim, RecordSource } from 'graph';
 import { formatYear } from 'graph/dates';
+import { formatYearParam } from 'map/url';
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { records, vocab } from '@/records';
@@ -25,6 +26,13 @@ const span = computed(() => {
   if (start === null && end === null) return '';
   if (start === end) return formatYear(start ?? 0);
   return `${start === null ? '?' : formatYear(start)} – ${end === null ? '?' : formatYear(end)}`;
+});
+
+// /map at the record's first known year, focused on it.
+const mapLink = computed(() => {
+  const { start, end } = record.value?.span ?? { start: null, end: null };
+  const year = start ?? end;
+  return year === null ? null : `/map?focus=${id.value}&t=${formatYearParam(year)}`;
 });
 
 const facts = computed(() => {
@@ -99,6 +107,7 @@ function people(source: RecordSource): string {
           <dd class="m-0">{{ value }}</dd>
         </template>
       </dl>
+      <p v-if="mapLink"><RouterLink :to="mapLink">Show on map</RouterLink></p>
 
       <template v-if="claimGroups.length > 0">
         <h2 id="claims">Claims</h2>

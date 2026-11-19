@@ -28,6 +28,7 @@ import { processSnippets } from './markdown/snippets.ts';
 import { mdTableWrapper } from './markdown/tableWrapper.ts';
 import { slugify } from './runtime/slugify.ts';
 import { buildSearchIndexEntries } from './sitemap.ts';
+import { tailwindSourcesPlugin } from './tailwindSources.ts';
 
 export type QDocsPluginOptions = Pick<QDocsConfig, 'markdown'> & {
   /**
@@ -36,6 +37,8 @@ export type QDocsPluginOptions = Pick<QDocsConfig, 'markdown'> & {
    * step. Derived from rootDir when omitted (set automatically by defineConfig).
    */
   pagesDir?: string;
+  /** Absolute folders for Tailwind to scan beyond the app root. */
+  tailwindSources?: string[];
 };
 
 // Module-level state set by defineConfig before Vite processes plugins.
@@ -293,6 +296,7 @@ export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
   // (used by makeSearchIndexPlugin) is updated in the config() hook with the resolved root.
   const routesFolder = existsSync(join(process.cwd(), 'src', 'pages')) ? 'src/pages' : 'src';
   return [
+    tailwindSourcesPlugin(options.tailwindSources ?? []),
     {
       name: 'qdocs:define-flags',
       config(userConfig) {
@@ -308,7 +312,12 @@ export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
     injectHtmlPlugin(),
     makeSearchIndexPlugin(options.pagesDir),
     VueRouter({ routesFolder, extensions: ['.md', '.vue'], dts: false }),
-    vue({ include: [/\.vue$/u, /\.md$/u] }),
+    // Template comments stay out of both builds: the client build kept them and the server render
+    // did not, so hydration met a comment node the server never sent.
+    vue({
+      include: [/\.vue$/u, /\.md$/u],
+      template: { compilerOptions: { comments: false } },
+    }),
     Markdown({
       wrapperComponent: 'LayoutResolver',
       markdownItOptions: {

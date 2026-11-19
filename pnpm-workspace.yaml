@@ -5,6 +5,9 @@ packages:
 # Single source of truth for dependency versions. Every package references
 # `catalog:`; bump a version here once and it applies workspace-wide.
 catalog:
+  '@deck.gl/core': ^9.4.1
+  '@deck.gl/extensions': ^9.4.1
+  '@deck.gl/layers': ^9.4.1
   '@heroicons/vue': ^2.2.0
   '@tailwindcss/typography': ^0.5.16
   '@tailwindcss/vite': ^4.2.2
@@ -41,6 +44,7 @@ catalog:
 catalogMode: prefer
 
 overrides:
+  '@types/node': 'catalog:'
   vite: 'catalog:'
   vitest: 'catalog:'
   mermaid: 'catalog:'

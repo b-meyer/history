@@ -20,6 +20,9 @@ export default defineConfig({
   branding: {
     siteTitle: 'History',
   },
+  nav: [{ text: 'Map', link: '/map' }],
+  // The map package's components carry Tailwind classes; Tailwind scans only the app by default.
+  tailwindSources: ['../../packages/map/src'],
   markdown: {
     mermaid: true,
   },
