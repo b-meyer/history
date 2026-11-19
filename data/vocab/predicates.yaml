@@ -1,0 +1,129 @@
+# Every predicate a claim may use. A link is stored once, on its subject; the inverse is how it
+# reads from the object's record and is derived at build. `dated: true` means a claim must carry
+# `when`. `basis` restricts the evidence a claim may rest on.
+
+# Dates and places
+born:
+  label: born
+  subject: person
+  dated: true
+died:
+  label: died
+  subject: person
+  dated: true
+floruit:
+  label: active
+  subject: person
+  dated: true
+composed:
+  label: written
+  subject: work
+  dated: true
+opened:
+  label: founded
+  subject: [school, institution]
+  dated: true
+closed:
+  label: closed
+  subject: [school, institution]
+  dated: true
+occurred:
+  label: took place
+  subject: event
+  dated: true
+active-at:
+  label: active at
+  inverse: active-here
+  inverseLabel: active here
+  subject: [person, school]
+  object: place
+  dated: true
+located-at:
+  label: located at
+  inverse: location-of
+  inverseLabel: location of
+  subject: institution
+  object: place
+
+# People and their schools
+student-of:
+  label: student of
+  inverse: teacher-of
+  inverseLabel: teacher of
+  subject: person
+  object: person
+member-of:
+  label: member of
+  inverse: has-member
+  inverseLabel: members
+  subject: person
+  object: [school, institution]
+founder-of:
+  label: founder of
+  inverse: founded-by
+  inverseLabel: founded by
+  subject: person
+  object: [school, institution, tradition]
+
+# Works
+attributed-to:
+  label: attributed to
+  inverse: wrote
+  inverseLabel: wrote or is credited with
+  subject: work
+  object: person
+quotes:
+  label: quotes
+  inverse: quoted-by
+  inverseLabel: quoted by
+  subject: work
+  object: work
+comments-on:
+  label: comments on
+  inverse: commented-on-by
+  inverseLabel: commented on by
+  subject: work
+  object: work
+translates:
+  label: translates
+  inverse: translated-by
+  inverseLabel: translated by
+  subject: work
+  object: work
+
+# Traditions and schools
+branch-of:
+  label: branch of
+  inverse: has-branch
+  inverseLabel: branches
+  subject: school
+  object: [tradition, school]
+splits-from:
+  label: splits from
+  inverse: split-off
+  inverseLabel: split off
+  subject: school
+  object: [tradition, school]
+
+# Influence is interpretive, so it rests on scholarship
+influenced-by:
+  label: influenced by
+  inverse: influenced
+  inverseLabel: influenced
+  subject: [person, work, school, tradition]
+  object: [person, work, school, tradition]
+  basis: scholarly
+
+# Events
+took-part-in:
+  label: took part in
+  inverse: participant
+  inverseLabel: participants
+  subject: [person, institution]
+  object: event
+affected-by:
+  label: affected by
+  inverse: affected
+  inverseLabel: affected
+  subject: [person, institution]
+  object: event

@@ -1,0 +1,10 @@
+# What kind of evidence backs a claim. Independent of confidence.
+primary:
+  label: Primary
+  meaning: Stated in an ancient or original source.
+scholarly:
+  label: Scholarly
+  meaning: A judgment of modern scholarship.
+tradition:
+  label: Tradition
+  meaning: A tradition's own account of itself, such as a scripture, hagiography or lineage.

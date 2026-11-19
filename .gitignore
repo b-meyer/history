@@ -3,3 +3,4 @@ dist
 node_modules
 .env*
 .playwright*
+apps/site/public/data

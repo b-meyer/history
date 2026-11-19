@@ -6,8 +6,18 @@
 history/                     ← repo root (pnpm workspace)
 ├── apps/site/               the only deployable app: /, /wiki, /e and /map
 ├── packages/qdocs/          qdocs — the docs framework, carried over from the docs POC
+├── packages/graph/          the graph: schema, validation, and the files the site reads
+├── data/                    the graph as YAML: entities/<type>/<id>.yaml, sources/<key>.yaml, vocab/
 └── vite.config.ts           canonical lint + format config (whole workspace)
 ```
+
+## The graph
+
+- **Every claim is reviewed.** A claim in `data/` carries `confidence`, `basis`, `origin`, a `reviewed` date and at least one source; `graph build` fails on any claim without them, and the site build runs it first.
+- **A link is stored once, on its subject.** The inverse (`teacher-of` for `student-of`) is derived at build from `data/vocab/predicates.yaml`. Never store both sides.
+- **Dates are EDTF strings** (`0263`, `-0569~`, `02XX`, `0263/0268`), read as astronomical years (-569 is 570 BCE). Never use JavaScript `Date` for them.
+- **YAML is read as failsafe**, so every scalar is a string and the schemas in `packages/graph/src/schema/` convert numbers and flags.
+- **Generated files stay out of git.** `graph build` writes `apps/site/public/data/`.
 
 Stack: Vite + Vue 3 + qdocs-ssg (custom SSG, not SPA) + unplugin-vue-markdown + Tailwind 4. NOT VitePress.
 

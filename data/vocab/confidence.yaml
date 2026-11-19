@@ -1,0 +1,10 @@
+# How certain a claim is. Drawn as the line style on the map and named in its legend.
+A:
+  label: Secure
+  meaning: The sources agree, and modern scholarship does not seriously dispute it.
+B:
+  label: Probable
+  meaning: The standard modern view, or a sound inference, with some doubt.
+C:
+  label: Contested
+  meaning: Argued but disputed, or reported only by late or partisan sources.
