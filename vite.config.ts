@@ -7,6 +7,7 @@ const IGNORE_PATTERNS: string[] = [
   '**/dist/**',
   '**/node_modules/**',
   '**/.qdocs-ssg-temp/**',
+  'apps/site/public/data/**',
   '**/.claude/**',
   'pnpm-lock.yaml',
 ];

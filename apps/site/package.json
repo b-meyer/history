@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vp dev",
-    "build": "qdocs-ssg",
+    "dev": "graph build && vp dev",
+    "build": "graph build && qdocs-ssg",
     "preview": "vp preview"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "@types/node": "catalog:",
     "@vitejs/plugin-vue": "catalog:",
     "@vue/tsconfig": "catalog:",
+    "graph": "workspace:*",
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",

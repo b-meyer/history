@@ -10,7 +10,8 @@
     "check": "vp check",
     "fix": "vp check --fix",
     "test": "vp run -r test",
-    "ready": "vp check && vp run -r test && vp run -r build"
+    "ready": "vp check && vp run -r typecheck && vp run -r test && vp run -r build",
+    "typecheck": "vp run -r typecheck"
   },
   "devDependencies": {
     "vite": "catalog:",
