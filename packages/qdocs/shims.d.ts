@@ -31,6 +31,12 @@ declare module 'virtual:@qdocs/header-end' {
   export default HeaderEnd;
 }
 
+declare module 'virtual:@qdocs/setup' {
+  import type { QDocsSetup } from 'qdocs/config';
+  const setup: QDocsSetup | null;
+  export default setup;
+}
+
 declare module 'vue-router/auto-routes' {
   import type { RouteRecordRaw } from 'vue-router';
   export const routes: RouteRecordRaw[];

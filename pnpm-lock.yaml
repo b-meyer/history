@@ -123,6 +123,9 @@ importers:
       '@unhead/vue':
         specifier: 'catalog:'
         version: 2.1.15(vue@3.5.45(typescript@6.0.3))
+      graph:
+        specifier: workspace:*
+        version: link:../../packages/graph
       mermaid:
         specifier: ^11.17.2
         version: 11.17.2
@@ -151,9 +154,6 @@ importers:
       '@vue/tsconfig':
         specifier: 'catalog:'
         version: 0.9.1(typescript@6.0.3)(vue@3.5.45(typescript@6.0.3))
-      graph:
-        specifier: workspace:*
-        version: link:../../packages/graph
       tailwindcss:
         specifier: 'catalog:'
         version: 4.3.0

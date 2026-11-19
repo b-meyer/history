@@ -8,8 +8,10 @@ import { build, resolveConfig, type HtmlTagDescriptor } from 'vite';
 import type { QDocsConfig } from './config.ts';
 import { buildHeadTags } from './plugin.ts';
 import {
+  buildRouteModuleMap,
   buildSearchIndex,
   buildSitemap,
+  expandRouteParams,
   filterPublicRoutes,
   patchCspScriptHash,
 } from './sitemap.ts';
@@ -92,22 +94,33 @@ async function renderPage({
   console.info(`  ${outPath.replace(outDir, '')}`);
 }
 
-type RouteDiscovery = { renderedPaths: string[]; pagesDir: string; createApp: AppFactory };
+type RouteDiscovery = {
+  renderedPaths: string[];
+  /** Paths expanded from `routeParams`, each with its route pattern. */
+  expanded: Map<string, string>;
+  pagesDir: string;
+  createApp: AppFactory;
+};
 
-async function discoverRoutes(root: string, tempDir: string): Promise<RouteDiscovery> {
+async function discoverRoutes(
+  root: string,
+  tempDir: string,
+  routeParams: Record<string, string[]> | undefined,
+): Promise<RouteDiscovery> {
   const serverEntry = join(tempDir, 'app.mjs');
   const { createApp } = (await import(pathToFileURL(serverEntry).href)) as {
     createApp: AppFactory;
   };
   const { router } = await createApp('/');
-  const allPaths = router
-    .getRoutes()
-    .map((r) => r.path)
-    .filter((p) => p && !p.includes(':') && !p.includes('*') && !p.includes('['));
+  const routePaths = router.getRoutes().flatMap((r) => (r.path ? [r.path] : []));
+  const staticPaths = routePaths.filter((p) => !/[:*[]/u.test(p));
   const pagesDir = existsSync(join(root, 'src', 'pages'))
     ? join(root, 'src', 'pages')
     : join(root, 'src');
-  return { renderedPaths: filterPublicRoutes(allPaths, pagesDir), pagesDir, createApp };
+  // Dynamic routes render only through routeParams, one page per listed value.
+  const expanded = expandRouteParams(routePaths, routeParams);
+  const renderedPaths = [...filterPublicRoutes(staticPaths, pagesDir), ...expanded.keys()];
+  return { renderedPaths, expanded, pagesDir, createApp };
 }
 
 async function runBuild(): Promise<void> {
@@ -122,7 +135,11 @@ async function runBuild(): Promise<void> {
   await buildClientBundle(root, outDir);
   await buildServerBundle(root, tempDir);
 
-  const { renderedPaths, pagesDir, createApp } = await discoverRoutes(root, tempDir);
+  const { renderedPaths, expanded, pagesDir, createApp } = await discoverRoutes(
+    root,
+    tempDir,
+    qdocsConfig?.routeParams,
+  );
   console.info(`[qdocs-ssg] Rendering ${renderedPaths.length} pages...`);
 
   const base = viteConfig.base ?? '/';
@@ -132,7 +149,7 @@ async function runBuild(): Promise<void> {
   // Build route→module-id map from the filesystem — same source of truth as unplugin-vue-router,
   // so SSG never guesses module IDs from URL paths.
   const pagesRelDir = relative(root, pagesDir).replaceAll('\\', '/');
-  const routeModuleMap = buildRouteModuleMap(renderedPaths, pagesDir, pagesRelDir);
+  const routeModuleMap = buildRouteModuleMap(renderedPaths, pagesDir, pagesRelDir, expanded);
 
   const sharedOpts = {
     createApp,
@@ -197,29 +214,6 @@ function buildStaticHead(config: QDocsConfig | null, base: string): string {
   return buildHeadTags(config, base)
     .map((t) => serializeTag(t))
     .join('\n    ');
-}
-
-// Maps each rendered route to its source module ID (e.g. 'src/pages/Watchers.vue') by
-// consulting the filesystem — the same source of truth unplugin-vue-router uses to generate
-// routes. Built once before the render loop so buildPreloadLinks never guesses module IDs.
-function buildRouteModuleMap(
-  paths: string[],
-  pagesDir: string,
-  pagesRelDir: string,
-): Map<string, string> {
-  const map = new Map<string, string>();
-  for (const routePath of paths) {
-    const slug = routePath === '/' ? 'index' : routePath.replace(/^\//u, '');
-    outer: for (const ext of ['.md', '.vue']) {
-      for (const rel of [`${slug}${ext}`, `${slug}/index${ext}`]) {
-        if (existsSync(join(pagesDir, rel))) {
-          map.set(routePath, `${pagesRelDir}/${rel}`);
-          break outer;
-        }
-      }
-    }
-  }
-  return map;
 }
 
 function buildPreloadLinks(

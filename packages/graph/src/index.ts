@@ -5,7 +5,7 @@ export type { MapClaim, MapData, MapEntity } from './build/mapData.ts';
 export type { EntityRecord, RecordClaim, RecordRef, RecordSource } from './build/records.ts';
 export { buildMapData } from './build/mapData.ts';
 export { buildRecords, shardRecords } from './build/records.ts';
-export { writeOutputs } from './build/write.ts';
+export { writeOutputs, type VocabTerms } from './build/write.ts';
 export { formatEdtf, formatYear, parseEdtf, type YearBounds } from './dates.ts';
 export {
   claimsByEntity,

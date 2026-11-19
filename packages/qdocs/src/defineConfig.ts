@@ -23,6 +23,8 @@ export type QDocsConsumerConfig = {
   themeDefaults?: { brandHue?: number; brandIntensity?: number };
   themeControls?: boolean;
   headerEnd?: string;
+  routeParams?: Record<string, string[]>;
+  setup?: string;
 } & UserConfig;
 
 /**
@@ -53,6 +55,8 @@ function buildQDocsConfig(opts: QDocsConsumerConfig): QDocsConfig {
     themeDefaults: opts.themeDefaults,
     themeControls: opts.themeControls,
     headerEnd: opts.headerEnd,
+    routeParams: opts.routeParams,
+    setup: opts.setup,
     base: resolvedBase,
   };
 }
@@ -83,7 +87,13 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     server,
     preview,
     plugins: [qdocsPlugin({ markdown: qdocsConfig.markdown }), ...(userPlugins ?? [])],
-    resolve: { ...userResolve, alias },
+    // One copy of each injection-keyed peer: app code calling useRoute or useHead must get the
+    // instance qdocs installed, even when the package manager resolves the peer twice.
+    resolve: {
+      ...userResolve,
+      alias,
+      dedupe: ['vue-router', '@unhead/vue', ...(userResolve?.dedupe ?? [])],
+    },
   };
 }
 

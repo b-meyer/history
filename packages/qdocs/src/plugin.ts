@@ -11,7 +11,7 @@ import Markdown from 'unplugin-vue-markdown/vite';
 import type { HtmlTagDescriptor, Plugin, PluginOption, ViteDevServer } from 'vite';
 import VueRouter from 'vue-router/vite';
 import type { QDocsConfig } from './config';
-import { isSidebarGroup } from './config.ts';
+import { clientConfig, isSidebarGroup } from './config.ts';
 // NOTE: explicit `.ts` extensions and no barrel import here, deliberately.
 // `plugin.ts` is loaded by Vite's Node config loader (a `.ts`-transpiling but
 // Node-style ES resolver), which rejects directory imports (`./markdown`) and
@@ -61,6 +61,9 @@ const RESOLVED_VIRTUAL_ENTRY_ID = '\0virtual:qdocs-entry';
 const VIRTUAL_HEADER_END_ID = 'virtual:@qdocs/header-end';
 const RESOLVED_VIRTUAL_HEADER_END_ID = '\0virtual:@qdocs/header-end';
 
+const VIRTUAL_SETUP_ID = 'virtual:@qdocs/setup';
+const RESOLVED_VIRTUAL_SETUP_ID = '\0virtual:@qdocs/setup';
+
 // Inline pre-paint script — runs before Vue hydrates to apply .dark and brand CSS vars.
 // themeDefaults are baked in as the baseline; localStorage overrides win on top.
 // Using inline setProperty() means these win over any stylesheet regardless of load order.
@@ -99,12 +102,13 @@ function virtualModulesPlugin(): Plugin {
       if (id === VIRTUAL_CONFIG_ID) return RESOLVED_VIRTUAL_CONFIG_ID;
       if (id === VIRTUAL_ENTRY_ID) return RESOLVED_VIRTUAL_ENTRY_ID;
       if (id === VIRTUAL_HEADER_END_ID) return RESOLVED_VIRTUAL_HEADER_END_ID;
+      if (id === VIRTUAL_SETUP_ID) return RESOLVED_VIRTUAL_SETUP_ID;
     },
     load(id) {
       if (id === RESOLVED_VIRTUAL_CONFIG_ID) {
         if (!qdocsConfigStore)
           throw new Error('qdocs: defineConfig must be called before this virtual module resolves');
-        return `export default ${JSON.stringify(qdocsConfigStore)};`;
+        return `export default ${JSON.stringify(clientConfig(qdocsConfigStore))};`;
       }
       if (id === RESOLVED_VIRTUAL_ENTRY_ID) {
         return [
@@ -118,6 +122,12 @@ function virtualModulesPlugin(): Plugin {
         if (!comp) return 'export default null;';
         const abs = pathResolve(rootDir, comp).replaceAll('\\', '/');
         return `import HeaderEnd from ${JSON.stringify(abs)};\nexport default HeaderEnd;`;
+      }
+      if (id === RESOLVED_VIRTUAL_SETUP_ID) {
+        const mod = qdocsConfigStore?.setup;
+        if (!mod) return 'export default null;';
+        const abs = pathResolve(rootDir, mod).replaceAll('\\', '/');
+        return `import setup from ${JSON.stringify(abs)};\nexport default setup;`;
       }
     },
     configResolved(cfg) {

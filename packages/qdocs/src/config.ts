@@ -171,7 +171,35 @@ export type QDocsConfig = {
    * every page. Example: './src/components/UserProfile.vue'
    */
   headerEnd?: string;
+  /**
+   * Values for dynamic routes, keyed by route pattern, so `qdocs-ssg` pre-renders one page per
+   * value: `{ '/e/:id': ['plotinus', 'porphyry'] }`. A pattern needs exactly one `:param`.
+   * Build-only: never shipped to the client.
+   */
+  routeParams?: Record<string, string[]>;
+  /**
+   * Relative path from the project root to a module whose default export `({ app, router }) =>
+   * void | Promise<void>` runs before the router resolves its first route, on both server and
+   * client. Use it to register guards that load a page's data before render and hydration.
+   */
+  setup?: string;
 };
+
+/**
+ * The default export of the module named by `setup`.
+ */
+export type QDocsSetup = (ctx: {
+  app: import('vue').App;
+  router: import('vue-router').Router;
+}) => void | Promise<void>;
+
+/**
+ * The config as the client bundle sees it: build-only fields removed.
+ */
+export function clientConfig(config: QDocsConfig): QDocsConfig {
+  const { routeParams: _routeParams, ...rest } = config;
+  return rest;
+}
 
 export const CONFIG_KEY: InjectionKey<QDocsConfig> = Symbol('qdocs-config');
 

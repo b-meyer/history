@@ -54,6 +54,60 @@ export function filterPublicRoutes(paths: string[], pagesDir: string): string[] 
   });
 }
 
+// A param with an optional custom regex and an optional modifier (`?`, `*`, `+`).
+const PARAM_RE = /:\w+(?:\([^)]*\))?[?*+]?/gu;
+
+/**
+ * Expands dynamic route patterns into concrete paths from `routeParams`: `/e/:id` with `['a',
+ * 'b']` gives `/e/a` and `/e/b`. Values are URL-encoded. A pattern with no entry, with more than
+ * one param, or whose param is optional or repeatable (`:id?`, `:path*`), gives nothing. Returns
+ * each path with the pattern it came from.
+ */
+export function expandRouteParams(
+  patterns: string[],
+  routeParams?: Record<string, string[]>,
+): Map<string, string> {
+  const out = new Map<string, string>();
+  if (!routeParams) return out;
+  for (const pattern of patterns) {
+    const values = routeParams[pattern];
+    if (!values) continue;
+    const params = pattern.match(PARAM_RE) ?? [];
+    if (params.length !== 1 || /[?*+]$/u.test(params[0] ?? '')) continue;
+    for (const value of values) {
+      out.set(pattern.replaceAll(PARAM_RE, encodeURIComponent(value)), pattern);
+    }
+  }
+  return out;
+}
+
+/**
+ * Maps each rendered route to its source module ID (e.g. 'src/pages/Watchers.vue') by consulting
+ * the filesystem, the same source of truth unplugin-vue-router uses to generate routes. A path
+ * expanded from a pattern (`expanded`: path → pattern) falls back to the pattern's file, so
+ * `/e/plotinus` maps to `src/pages/e/[id].vue`.
+ */
+export function buildRouteModuleMap(
+  paths: string[],
+  pagesDir: string,
+  pagesRelDir: string,
+  expanded: Map<string, string> = new Map(),
+): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const routePath of paths) {
+    const pattern = expanded.get(routePath);
+    const slugs = [routePath === '/' ? 'index' : routePath.replace(/^\//u, '')];
+    if (pattern !== undefined) {
+      slugs.push(pattern.replace(/^\//u, '').replaceAll(/:(\w+)(?:\([^)]*\))?/gu, '[$1]'));
+    }
+    const rel = slugs
+      .flatMap((slug) => ['.md', '.vue'].flatMap((ext) => [`${slug}${ext}`, `${slug}/index${ext}`]))
+      .find((candidate) => existsSync(join(pagesDir, candidate)));
+    if (rel !== undefined) map.set(routePath, `${pagesRelDir}/${rel}`);
+  }
+  return map;
+}
+
 function escapeXml(s: string): string {
   return s
     .replaceAll('&', '&amp;')

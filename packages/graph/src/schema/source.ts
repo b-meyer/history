@@ -32,7 +32,7 @@ export const sourceSchema = z.strictObject({
     .regex(/^10\.\d{4,}\/\S+$/u, 'must be a DOI such as 10.1234/abc')
     .optional(),
   /** A public-domain or publisher page; never an unofficial copy. */
-  url: z.url().optional(),
+  url: z.url({ protocol: /^https?$/u, error: 'must be an http or https URL' }).optional(),
   readingList: flag.optional(),
   /** Your words: what it is good for, its level, which translation to start with. */
   annotation: z.string().min(1).optional(),

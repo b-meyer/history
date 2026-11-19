@@ -12,7 +12,7 @@ import { dirname, join, resolve } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vite-plus/test';
 import type { MapData } from './build/mapData.ts';
 import type { EntityRecord } from './build/records.ts';
-import { writeOutputs } from './build/write.ts';
+import { writeOutputs, type VocabTerms } from './build/write.ts';
 import { loadGraph } from './load.ts';
 import { shardOf } from './shard.ts';
 import { validateGraph } from './validate.ts';
@@ -100,6 +100,20 @@ describe('loadGraph', () => {
     );
     const { graph } = loadGraph(data);
     expect(graph.entities.get('pythagoras')?.claims[0]?.when).toBe('-0569');
+  });
+
+  it('accepts only http and https source URLs', () => {
+    write(
+      'sources/bad-url.yaml',
+      'key: bad-url\nkind: secondary\ntitle: T\nurl: javascript:alert(1)\n',
+    );
+    write(
+      'sources/good-url.yaml',
+      'key: good-url\nkind: secondary\ntitle: T\nurl: https://example.org/t\n',
+    );
+    const found = problems();
+    expect(found).toContainEqual(expect.stringMatching(/bad-url\.yaml.*http or https/u));
+    expect(found.filter((p) => p.includes('good-url'))).toEqual([]);
   });
 
   it('reports schema problems with their file and field', () => {
@@ -258,6 +272,16 @@ describe('writeOutputs', () => {
       start: 204,
       end: 205,
     });
+  });
+
+  it('writes the confidence and basis wording to vocab.json', () => {
+    const out = join(root, 'out');
+    writeOutputs(loadGraph(data).graph, out);
+    const vocab = JSON.parse(readFileSync(join(out, 'vocab.json'), 'utf8')) as VocabTerms;
+    expect(Object.keys(vocab.confidence)).toEqual(['A', 'B', 'C']);
+    expect(vocab.confidence.C.label).toBe('Contested');
+    expect(Object.keys(vocab.basis)).toEqual(['primary', 'scholarly', 'tradition']);
+    expect(vocab.basis.tradition.meaning).toMatch(/\S/u);
   });
 
   it('replaces records from an earlier build', () => {
