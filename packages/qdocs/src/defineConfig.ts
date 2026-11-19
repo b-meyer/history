@@ -25,6 +25,11 @@ export type QDocsConsumerConfig = {
   headerEnd?: string;
   routeParams?: Record<string, string[]>;
   setup?: string;
+  /**
+   * Folders for Tailwind to scan for class names, relative to the app root. Tailwind's automatic
+   * detection covers only the app, so a workspace package with its own components is listed here.
+   */
+  tailwindSources?: string[];
 } & UserConfig;
 
 /**
@@ -69,6 +74,7 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     preview,
     plugins: userPlugins,
     resolve: userResolve,
+    tailwindSources,
     ...viteRest
   } = opts;
   const qdocsConfig = buildQDocsConfig(opts);
@@ -86,7 +92,13 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     base,
     server,
     preview,
-    plugins: [qdocsPlugin({ markdown: qdocsConfig.markdown }), ...(userPlugins ?? [])],
+    plugins: [
+      qdocsPlugin({
+        markdown: qdocsConfig.markdown,
+        tailwindSources: (tailwindSources ?? []).map((source) => pathResolve(projectRoot, source)),
+      }),
+      ...(userPlugins ?? []),
+    ],
     // One copy of each injection-keyed peer: app code calling useRoute or useHead must get the
     // instance qdocs installed, even when the package manager resolves the peer twice.
     resolve: {

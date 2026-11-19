@@ -92,6 +92,7 @@ export default defineConfig({
 | `themeDefaults.brandIntensity` | `number` (0–100)           | `50`                               | Starting brand intensity.                                                                                                                                                                                   |
 | `routeParams`                  | `Record<string, string[]>` | —                                  | Values per dynamic route pattern (`{ '/e/:id': ['a', 'b'] }`); `qdocs-ssg` pre-renders one page per value. One `:param` per pattern. Build-only, never in the client bundle.                                |
 | `setup`                        | `string`                   | —                                  | Path to a module whose default export `({ app, router })` runs before the router is installed, on server and client. Register guards that load a page's data there, so SSR and hydration see the same data. |
+| `tailwindSources`              | `string[]`                 | —                                  | Folders for Tailwind to scan for class names, relative to the app root. Automatic detection covers only the app, so list a workspace package that ships its own components (`['../../packages/map/src']`).  |
 
 `SidebarGroup = { group: string; items: { slug; title }[]; extra?: boolean }`.
 Groups with `extra: true` render under "Additional reading" and sit **outside**
