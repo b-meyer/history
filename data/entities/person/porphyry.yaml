@@ -7,10 +7,23 @@ claims:
     predicate: born
     when: 0233/0234
     where: tyre
-    confidence: A
+    confidence: B
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: "Graded B primary. Tyre is secure; the year is inferred from VP 4 (aged 30 in Gallienus' 10th year), SEP 'probably 234'.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          source: sep-porphyry,
+          note: "Graded B scholarly. SEP says 'probably 234'; place from Eunapius too.",
+        }
     sources:
       - key: eunapius-lives-wright
         locator: p. 353
@@ -28,7 +41,9 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-porphyry }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 4
@@ -47,10 +62,23 @@ claims:
     when: 0305?
     where: rome
     # Note: Eunapius gives the place as hearsay; the year is SEP’s estimate.
-    confidence: B
+    confidence: C
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: "Graded C primary. The date is conjectural (SEP '305?'), and Rome rests only on Eunapius' hedged 'is said to'.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          source: sep-porphyry,
+          note: "Graded C primary. Rome rests only on Eunapius' 'is said'; SEP gives 305? but no place.",
+        }
     sources:
       - key: eunapius-lives-wright
         locator: p. 361

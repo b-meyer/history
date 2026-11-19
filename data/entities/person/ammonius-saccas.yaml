@@ -11,7 +11,20 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          source: porphyry-life-of-plotinus-mackenna,
+          note: "The range covers only Plotinus' years with him (VP 3: at 28, for 11 years); Ammonius taught there before and maybe after too.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. Excerpt gives only Plotinus arriving at 28; the 232/242 range is inferred, not stated.',
+        }
     sources:
       - key: sep-plotinus
         locator: '§1'

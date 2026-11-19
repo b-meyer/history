@@ -10,7 +10,15 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          source: sep-archytas,
+          note: 'Graded A scholarly.',
+        }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.79
@@ -26,7 +34,9 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-archytas }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.79

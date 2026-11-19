@@ -8,10 +8,22 @@ claims:
   - id: golden-verses.attributed-to.pythagoras
     predicate: attributed-to
     object: pythagoras
-    confidence: C
+    confidence: B
     basis: tradition
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: "Graded B tradition. A pseudepigraphic attribution ('Pythagoras or the Pythagoreans'); the only stance is reports.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. Reports an ascription only; authorship is pseudepigraphic.',
+        }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.5'
@@ -24,7 +36,19 @@ claims:
     confidence: C
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'The range is the span of proposed dates, not a dating.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Range is the span of proposed dates, widely disputed.',
+        }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.5'

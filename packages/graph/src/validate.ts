@@ -1,9 +1,10 @@
+import { independentPasses, latestAudit, meetsThreshold } from './audits.ts';
 import type { Graph, Problem } from './load.ts';
 import type { Claim, Entity } from './schema/entity.ts';
 import type { Predicate } from './schema/vocab.ts';
 
 export type ValidateOptions = {
-  /** Today as YYYY-MM-DD; a reviewed date after it is rejected. */
+  /** Today as YYYY-MM-DD; an audit dated after it is rejected. */
   today: string;
 };
 
@@ -129,6 +130,35 @@ function checkPredicate(
   }
 }
 
+/** Audits are dated no later than today, cite known sources, and clear the publish threshold. */
+function checkAudits(
+  graph: Graph,
+  claim: Claim,
+  today: string,
+  report: (field: string, message: string) => void,
+): void {
+  for (const [auditIndex, audit] of claim.audits.entries()) {
+    if (audit.on > today)
+      report(`audits.${auditIndex}.on`, `audit date ${audit.on} is in the future`);
+    if (audit.source !== undefined && !graph.sources.has(audit.source))
+      report(`audits.${auditIndex}.source`, `unknown source '${audit.source}'`);
+  }
+  if (latestAudit(claim.audits)?.verdict === 'flagged') {
+    report('audits', 'the latest audit flagged this claim');
+  } else if (!meetsThreshold(claim)) {
+    report('audits', `needs two independent passing audits (has ${independentPasses(claim)})`);
+  }
+}
+
+/** Confidence A needs a source that asserts the claim, and none that disputes it. */
+function checkGrade(claim: Claim, report: (field: string, message: string) => void): void {
+  if (claim.confidence !== 'A') return;
+  if (claim.sources.every((source) => source.stance === 'reports'))
+    report('confidence', 'confidence A needs a source that asserts the claim, not only reports');
+  if (claim.sources.some((source) => source.stance === 'disputes'))
+    report('confidence', 'confidence A cannot rest on a claim a source disputes');
+}
+
 type ClaimContext = {
   graph: Graph;
   entity: Entity;
@@ -150,8 +180,8 @@ function checkClaim(context: ClaimContext, claim: Claim, index: number): Problem
   if (earlier === undefined) claimIds.set(claim.id, file);
   else report('id', `claim ID '${claim.id}' is already used in ${earlier}`);
 
-  if (claim.reviewed > today)
-    report('reviewed', `reviewed date ${claim.reviewed} is in the future`);
+  checkAudits(graph, claim, today, report);
+  checkGrade(claim, report);
   checkPredicate(graph, entity, claim, report);
 
   if (claim.where !== undefined) {
@@ -172,7 +202,7 @@ function checkClaim(context: ClaimContext, claim: Claim, index: number): Problem
 }
 
 /**
- * Checks what the schemas cannot: predicates, links between files, source keys, review dates.
+ * Checks what the schemas cannot: predicates, links between files, source keys, audits.
  * Schema problems are reported by loadGraph; this adds the rest.
  */
 export function validateGraph(graph: Graph, options: ValidateOptions): Problem[] {

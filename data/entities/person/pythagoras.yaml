@@ -11,7 +11,20 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "ca. 570 is a chronological inference; DL reports Aristoxenus' rival claim that he was a Tyrrhenian.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          source: diogenes-laertius-lives-hicks,
+          note: 'Date is a reconstruction; DL reports Samian per Hermippus.',
+        }
     sources:
       - key: sep-pythagoras
         locator: '§3'
@@ -32,7 +45,20 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'The dates are approximate (arrived ca. 530, revolt ca. 510).',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          source: sep-pythagoras,
+          note: 'Graded B scholarly.',
+        }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 8.3
@@ -45,13 +71,26 @@ claims:
   - id: pythagoras.founder-of.pythagoreans
     predicate: founder-of
     object: pythagoreans
-    confidence: A
+    confidence: B
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          source: sep-pythagoras,
+          note: 'Graded B primary. The excerpt is in CHAP. V of the Taylor text, not ch. 6, and it says only that he gained followers; the only stance is reports, so A is not allowed.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded B primary. Could not fetch Gutenberg 63300 (HTTP 503), so the excerpt is unverified; it reports followers at Croton, not explicitly founding.',
+        }
     sources:
       - key: iamblichus-pythagoric-life-taylor
-        locator: ch. 6
+        locator: ch. 5
         stance: reports
         excerpt: 'on his arrival at Crotona, which was the noblest city in Italy, he had many followers'
   - id: pythagoras.died
@@ -62,7 +101,20 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'Ancient accounts conflict (DL 8.39 has him killed near Croton); Metapontum ca. 490 is the standard modern view.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          source: diogenes-laertius-lives-hicks,
+          note: 'Death date and place vary across ancient accounts.',
+        }
     sources:
       - key: sep-pythagoras
         locator: '§3'

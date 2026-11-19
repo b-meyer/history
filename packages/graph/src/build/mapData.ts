@@ -62,7 +62,7 @@ export type MapLink = {
   basis: Basis;
 };
 
-/** public/data/map.json: every reviewed item with its year bounds, place and confidence. */
+/** public/data/map.json: every audited item with its year bounds, place and confidence. */
 export type MapData = {
   places: Record<string, { name: string; coords: [number, number] }>;
   entities: MapEntity[];

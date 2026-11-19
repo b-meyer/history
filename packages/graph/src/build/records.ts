@@ -1,3 +1,4 @@
+import { isPassing, latestAudit } from '../audits.ts';
 import { formatEdtf, parseEdtf } from '../dates.ts';
 import { claimsByEntity, type Graph, type Link } from '../load.ts';
 import type { EntityType } from '../schema/common.ts';
@@ -23,7 +24,8 @@ export type RecordClaim = {
   confidence: Confidence;
   basis: Basis;
   origin: (typeof ORIGIN)[number];
-  reviewed: string;
+  /** Passing audits, and the date of the latest audit. */
+  audits: { count: number; last: string };
   sources: { key: string; locator: string; stance: (typeof STANCE)[number]; excerpt: string }[];
 };
 
@@ -94,7 +96,10 @@ function recordClaim(graph: Graph, { claim, subject, derived }: Link): RecordCla
     confidence: claim.confidence,
     basis: claim.basis,
     origin: claim.origin,
-    reviewed: claim.reviewed,
+    audits: {
+      count: claim.audits.filter(isPassing).length,
+      last: latestAudit(claim.audits)?.on ?? '',
+    },
     sources: claim.sources.map(({ key, locator, stance, excerpt }) => ({
       key,
       locator,

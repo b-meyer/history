@@ -11,7 +11,20 @@ claims:
     confidence: B
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: "'Citizen of Athens' doesn't establish his birthplace, and DL 3.3 itself reports Aegina according to some; the date (88th Olympiad, SEP 429?) is fine.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          source: sep-plato,
+          note: 'Graded A primary. Year range reflects 429/428/427 variants; Athens inferred from citizenship.',
+        }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.1
@@ -32,7 +45,14 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded B primary. DL 3.7 supports return to Athens and the Academy but gives no dates; range is inferred.',
+        }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.7
@@ -44,7 +64,9 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.41
@@ -57,7 +79,14 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: '108th Olympiad year 1 is 348/7; Athens inferred from burial in the Academy.',
+        }
     sources:
       - key: diogenes-laertius-lives-hicks
         locator: DL 3.2

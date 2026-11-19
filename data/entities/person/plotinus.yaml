@@ -11,7 +11,20 @@ claims:
     confidence: B
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "The date is computed from VP 2; Lycopolis comes only from late sources (Eunapius), since Porphyry doesn't name it.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          source: sep-plotinus,
+          note: 'Year derived from Porphyry; Lycopolis comes only from late Eunapius, Porphyry says birthplace unknown, SEP says only Egypt.',
+        }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 2
@@ -29,7 +42,15 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          source: sep-plotinus,
+          note: 'Dates inferred from age 28 and eleven years of study.',
+        }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 3
@@ -46,7 +67,14 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'He left Rome for Campania shortly before his death in 270.',
+        }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-plotinus }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 3
@@ -62,7 +90,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'The influence is accepted, but how far it went is debated (Amelius rebutted the plagiarism charge, VP 17).',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Ancient accusation of plagiarism is reported, extent of influence debated.',
+        }
     sources:
       - key: sep-numenius
         locator: preamble
@@ -79,7 +119,9 @@ claims:
     confidence: A
     basis: primary
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed }
+      - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-plotinus }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
         locator: VP 2

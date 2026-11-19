@@ -11,7 +11,21 @@ claims:
     confidence: A
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: changed,
+          source: diogenes-laertius-lives-hicks,
+          note: "Graded A primary. The range ends ca. 510 with Pythagoras' departure, but the Pythagoreans stayed active at Croton until the mid-5th-century attacks.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          source: diogenes-laertius-lives-hicks,
+          note: 'Graded B scholarly.',
+        }
     sources:
       - key: sep-pythagoras
         locator: '§3'
@@ -23,7 +37,14 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - { on: 2026-11-19, by: claude-opus-5-5, verdict: confirmed, note: "SEP: 'It is likely'." }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: "SEP says 'likely' mid fourth century.",
+        }
     sources:
       - key: sep-pythagoreanism
         locator: preamble

@@ -13,7 +13,7 @@ history/                     ← repo root (pnpm workspace)
 
 ## The graph
 
-- **Every claim is reviewed.** A claim in `data/` carries `confidence`, `basis`, `origin`, a `reviewed` date and at least one source; `graph build` fails on any claim without them, and the site build runs it first.
+- **Every claim is audited.** A claim in `data/` carries `confidence`, `basis`, `origin`, at least one source, and `audits`. `graph build` fails unless the claim has one passing `human` audit or two independent passing ones (different auditors, or a different source) and its latest audit isn't `flagged`; the site build runs it first. The drafting pass never adds an audit. An audit re-fetches the source and grades the claim without seeing the stored grade.
 - **A link is stored once, on its subject.** The inverse (`teacher-of` for `student-of`) is derived at build from `data/vocab/predicates.yaml`. Never store both sides.
 - **Dates are EDTF strings** (`0263`, `-0569~`, `02XX`, `0263/0268`), read as astronomical years (-569 is 570 BCE). Never use JavaScript `Date` for them.
 - **YAML is read as failsafe**, so every scalar is a string and the schemas in `packages/graph/src/schema/` convert numbers and flags.

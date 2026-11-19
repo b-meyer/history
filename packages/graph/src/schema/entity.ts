@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { edtf, entityType, isoDate, number, slug } from './common.ts';
-import { BASIS, CONFIDENCE, ORIGIN, STANCE } from './vocab.ts';
+import { AUDIT_VERDICT, BASIS, CONFIDENCE, ORIGIN, STANCE } from './vocab.ts';
 
 /** One source behind a claim: what the source says, where, and in which words. */
 export const claimSourceSchema = z.strictObject({
@@ -14,7 +14,19 @@ export const claimSourceSchema = z.strictObject({
   passage: z.string().min(1).optional(),
 });
 
-/** A dated, sourced and reviewed statement about the entity whose file holds it. */
+/** One audit pass over a claim: who checked it, when, and what they found. */
+export const auditSchema = z.strictObject({
+  on: isoDate,
+  /** The auditing model ID, such as claude-opus-5-5, or `human`. */
+  by: z.string().min(1),
+  verdict: z.enum(AUDIT_VERDICT),
+  /** A different source the audit confirmed the claim against. */
+  source: slug.optional(),
+  note: z.string().min(1).optional(),
+});
+export type Audit = z.infer<typeof auditSchema>;
+
+/** A dated, sourced and audited statement about the entity whose file holds it. */
 export const claimSchema = z.strictObject({
   id: z
     .string()
@@ -29,7 +41,7 @@ export const claimSchema = z.strictObject({
   confidence: z.enum(CONFIDENCE),
   basis: z.enum(BASIS),
   origin: z.enum(ORIGIN),
-  reviewed: isoDate,
+  audits: z.array(auditSchema).default([]),
   sources: z.array(claimSourceSchema).min(1, 'a claim needs at least one source'),
 });
 export type Claim = z.infer<typeof claimSchema>;

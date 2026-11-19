@@ -1,6 +1,6 @@
 # history
 
-One static site with two views, `/map` and `/wiki`, over a shared knowledge graph of people, works, places and events. Every claim on the map carries its sources and a reviewed confidence.
+One static site with two views, `/map` and `/wiki`, over a shared knowledge graph of people, works, places and events. Every claim on the map carries its sources and a graded confidence. The claims are researched and compiled with AI assistance from the sources they cite, and checked by automated audits before they publish.
 
 ## Commands
 

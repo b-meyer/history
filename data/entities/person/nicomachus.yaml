@@ -11,7 +11,19 @@ claims:
     confidence: B
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "SEP says 'probably' for the date.",
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: "SEP says 'probably' first half of 2nd c.",
+        }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'
@@ -23,7 +35,19 @@ claims:
     confidence: A
     basis: scholarly
     origin: ai-extracted
-    reviewed: 2026-11-19
+    audits:
+      - {
+          on: 2026-11-19,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'The excerpt is the §4.4 section heading, not a sentence.',
+        }
+      - {
+          on: 2026-11-19,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. Excerpt is a section heading only, a weak citation.',
+        }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'
