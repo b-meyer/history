@@ -308,7 +308,12 @@ export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
     injectHtmlPlugin(),
     makeSearchIndexPlugin(options.pagesDir),
     VueRouter({ routesFolder, extensions: ['.md', '.vue'], dts: false }),
-    vue({ include: [/\.vue$/u, /\.md$/u] }),
+    // Template comments stay out of both builds: the client build kept them and the server render
+    // did not, so hydration met a comment node the server never sent.
+    vue({
+      include: [/\.vue$/u, /\.md$/u],
+      template: { compilerOptions: { comments: false } },
+    }),
     Markdown({
       wrapperComponent: 'LayoutResolver',
       markdownItOptions: {
