@@ -53,6 +53,14 @@ export const entitySchema = z.strictObject({
     .optional(),
   /** Places only: [longitude, latitude]. */
   coords: z.tuple([number, number]).optional(),
+  /** Traditions only: the family it belongs to, such as Abrahamic or Indian. */
+  family: z.string().min(1).optional(),
+  /** Works only: the language it was written in, as a language code (grc, la, ar, sa). */
+  language: z.string().min(2).optional(),
+  /** Works only: whether it survives whole, in fragments, or not at all. */
+  status: z.enum(['extant', 'fragmentary', 'lost']).optional(),
+  /** Events only: what kind of event it is, such as war, council, founding or closure. */
+  kind: slug.optional(),
   /** Traditions only: the map colour. */
   color: z
     .string()

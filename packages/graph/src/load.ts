@@ -19,9 +19,8 @@ export type Graph = {
   vocab: Vocab;
   entities: Map<string, Entity>;
   sources: Map<string, Source>;
-  /** The file each entity and source came from, for problem reports. */
+  /** The file each entity came from, for problem reports. */
   entityFiles: Map<string, string>;
-  sourceFiles: Map<string, string>;
 };
 
 export type LoadResult = { graph: Graph; problems: Problem[] };
@@ -127,9 +126,8 @@ function readEntities(reader: Reader, dataDir: string): Pick<Graph, 'entities' |
 }
 
 /** data/sources/<key>.yaml: the file name must be the key. */
-function readSources(reader: Reader, dataDir: string): Pick<Graph, 'sources' | 'sourceFiles'> {
+function readSources(reader: Reader, dataDir: string): Pick<Graph, 'sources'> {
   const sources = new Map<string, Source>();
-  const sourceFiles = new Map<string, string>();
   for (const file of yamlFiles(join(dataDir, 'sources'))) {
     const source = reader.read(file, sourceSchema);
     if (source === null) continue;
@@ -139,9 +137,8 @@ function readSources(reader: Reader, dataDir: string): Pick<Graph, 'sources' | '
       continue;
     }
     sources.set(source.key, source);
-    sourceFiles.set(source.key, reader.show(file));
   }
-  return { sources, sourceFiles };
+  return { sources };
 }
 
 /** Reads data/ into one in-memory graph. Files that fail their schema are reported and left out. */

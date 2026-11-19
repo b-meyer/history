@@ -185,6 +185,33 @@ describe('validateGraph', () => {
     write('entities/place/athens.yaml', 'id: athens\ntype: place\nnames: { en: Athens }\n');
     expect(problems()).toContainEqual(expect.stringContaining('a place needs coords'));
   });
+
+  it('keeps type-specific fields on their type', () => {
+    write(
+      'entities/work/golden-verses.yaml',
+      'id: golden-verses\ntype: work\nnames: { en: Golden Verses }\nlanguage: grc\nstatus: extant\n',
+    );
+    write(
+      'entities/person/x.yaml',
+      'id: x\ntype: person\nnames: { en: X }\nstatus: lost\nfamily: Abrahamic\n',
+    );
+    const found = problems();
+    expect(found).not.toContainEqual(expect.stringContaining('golden-verses.yaml'));
+    expect(found).toContainEqual(expect.stringContaining('x.yaml status: only a work has status'));
+    expect(found).toContainEqual(
+      expect.stringContaining('x.yaml family: only a tradition has family'),
+    );
+  });
+
+  it('rejects a claim that points at its own entity', () => {
+    write(
+      'entities/person/x.yaml',
+      `id: x\ntype: person\nnames: { en: X }\nclaims:\n${claim('x.student-of.x', 'predicate: student-of\nobject: x')}`,
+    );
+    expect(problems()).toContainEqual(
+      expect.stringContaining('a claim cannot point at its own entity'),
+    );
+  });
 });
 
 describe('writeOutputs', () => {

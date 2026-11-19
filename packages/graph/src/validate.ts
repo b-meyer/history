@@ -69,10 +69,21 @@ function checkEntityFields(entity: Entity, file: string): Problem[] {
       report('coords', 'coords must be [longitude, latitude] within -180..180 and -90..90');
     }
   }
-  if (entity.type !== 'tradition' && entity.color !== undefined)
-    report('color', 'only traditions have a map colour');
+  for (const [field, owner] of TYPE_FIELDS) {
+    if (entity[field] !== undefined && entity.type !== owner)
+      report(field, `only a ${owner} has ${field}`);
+  }
   return problems;
 }
+
+/** Fields that belong to one entity type only. */
+const TYPE_FIELDS: [keyof Entity, Entity['type']][] = [
+  ['color', 'tradition'],
+  ['family', 'tradition'],
+  ['language', 'work'],
+  ['status', 'work'],
+  ['kind', 'event'],
+];
 
 /** The claim's predicate applies to its subject and object, with the date and basis it needs. */
 function checkPredicate(
@@ -97,6 +108,7 @@ function checkPredicate(
   if (predicate.object !== undefined && claim.object === undefined) {
     report('object', `'${claim.predicate}' needs an object (${predicate.object.join(', ')})`);
   }
+  if (claim.object === entity.id) report('object', 'a claim cannot point at its own entity');
   if (predicate.object !== undefined && claim.object !== undefined) {
     const target = graph.entities.get(claim.object);
     if (target === undefined) report('object', `unknown entity '${claim.object}'`);

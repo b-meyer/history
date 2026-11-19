@@ -35,7 +35,7 @@ active-at:
   label: active at
   inverse: active-here
   inverseLabel: active here
-  subject: [person, school, tradition]
+  subject: [person, school]
   object: place
   dated: true
 located-at:
@@ -125,5 +125,5 @@ affected-by:
   label: affected by
   inverse: affected
   inverseLabel: affected
-  subject: [person, institution, school]
+  subject: [person, institution]
   object: event

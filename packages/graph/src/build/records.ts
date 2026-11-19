@@ -3,7 +3,7 @@ import { claimsByEntity, type Graph, type Link } from '../load.ts';
 import type { EntityType } from '../schema/common.ts';
 import type { Entity } from '../schema/entity.ts';
 import type { Source } from '../schema/source.ts';
-import type { Basis, Confidence } from '../schema/vocab.ts';
+import type { Basis, Confidence, ORIGIN, STANCE } from '../schema/vocab.ts';
 import { shardOf } from '../shard.ts';
 
 export type RecordRef = { id: string; type: EntityType; name: string };
@@ -22,9 +22,9 @@ export type RecordClaim = {
   where?: RecordRef;
   confidence: Confidence;
   basis: Basis;
-  origin: string;
+  origin: (typeof ORIGIN)[number];
   reviewed: string;
-  sources: { key: string; locator: string; stance: string; excerpt: string }[];
+  sources: { key: string; locator: string; stance: (typeof STANCE)[number]; excerpt: string }[];
 };
 
 export type RecordSource = {
@@ -45,6 +45,10 @@ export type EntityRecord = {
   names: Record<string, string>;
   ids?: NonNullable<Entity['ids']>;
   coords?: [number, number];
+  family?: string;
+  language?: string;
+  status?: 'extant' | 'fragmentary' | 'lost';
+  kind?: string;
   color?: string;
   /** Earliest and latest year across the entity's own dated claims. */
   span: { start: number | null; end: number | null };
@@ -136,6 +140,10 @@ export function buildRecords(graph: Graph): EntityRecord[] {
       ...(entity.ids === undefined ? {} : { ids: entity.ids }),
       ...(entity.coords === undefined ? {} : { coords: entity.coords }),
       ...(entity.color === undefined ? {} : { color: entity.color }),
+      ...(entity.family === undefined ? {} : { family: entity.family }),
+      ...(entity.language === undefined ? {} : { language: entity.language }),
+      ...(entity.status === undefined ? {} : { status: entity.status }),
+      ...(entity.kind === undefined ? {} : { kind: entity.kind }),
       span: spanOf(
         entity.claims.flatMap((claim) => (claim.when === undefined ? [] : [claim.when])),
       ),
