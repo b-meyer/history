@@ -1,5 +1,5 @@
 import type { QDocsSetup } from 'qdocs/config';
-import { loadRecord, loadVocab } from './records.ts';
+import { loadRecordPage } from './records.ts';
 
 export const RECORD_ROUTE = '/e/:id';
 
@@ -10,7 +10,7 @@ const setup: QDocsSetup = ({ router }) => {
     if (!to.matched.some((route) => route.path === RECORD_ROUTE)) return;
     const id = to.params['id'];
     if (typeof id !== 'string') return;
-    await Promise.all([loadRecord(id), loadVocab()]);
+    await loadRecordPage(id, import.meta.env.SSR);
   });
 };
 

@@ -29,4 +29,11 @@ export default defineConfig({
   routeParams: { '/e/:id': readIds() },
   server: { port: 48460 },
   preview: { port: 48460 },
+  test: {
+    include: ['src/**/*.test.ts'],
+    pool: 'threads',
+    clearMocks: true,
+    restoreMocks: true,
+  },
+  run: { tasks: { test: { command: 'vp test' } } },
 });

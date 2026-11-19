@@ -38,25 +38,34 @@ function loadShard(shard: string): Promise<Record<string, EntityRecord>> {
   return pending;
 }
 
-/** Loads the record with this ID, or returns undefined when there is none. */
+/**
+ * Loads the record with this ID. Returns undefined when its shard has no such record; throws when
+ * the shard cannot be read.
+ */
 export async function loadRecord(id: string): Promise<EntityRecord | undefined> {
   const known = records.get(id);
   if (known !== undefined) return known;
-  try {
-    const record = (await loadShard(shardOf(id)))[id];
-    if (record !== undefined) records.set(id, record);
-    return record;
-  } catch {
-    return undefined;
-  }
+  const record = (await loadShard(shardOf(id)))[id];
+  if (record !== undefined) records.set(id, record);
+  return record;
 }
 
-/** Loads vocab.json once; a missing file leaves the raw values on show and is retried later. */
+/** Loads vocab.json once; throws when it cannot be read, and a later call retries. */
 export async function loadVocab(): Promise<void> {
   if (vocab.value !== null) return;
-  try {
-    vocab.value = await readData<VocabTerms>('vocab.json');
-  } catch {
-    // Leave the raw values on show.
+  vocab.value = await readData<VocabTerms>('vocab.json');
+}
+
+/**
+ * Loads what a record page shows. Strict (the server render) throws when the record is missing or
+ * its files cannot be read, which fails the build rather than pre-rendering an empty page. In the
+ * browser a failure leaves the page's "No record" message, or the raw confidence and basis values.
+ */
+export async function loadRecordPage(id: string, strict: boolean): Promise<void> {
+  if (!strict) {
+    await Promise.allSettled([loadRecord(id), loadVocab()]);
+    return;
   }
+  const [record] = await Promise.all([loadRecord(id), loadVocab()]);
+  if (record === undefined) throw new Error(`record "${id}" is listed but not in its shard`);
 }

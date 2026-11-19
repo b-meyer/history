@@ -140,7 +140,7 @@ function people(source: RecordSource): string {
                 · origin {{ claim.origin }} · reviewed {{ claim.reviewed }}
               </p>
               <ul class="text-sm not-italic">
-                <li v-for="source in claim.sources" :key="`${source.key}:${source.locator}`">
+                <li v-for="(source, index) in claim.sources" :key="index">
                   {{ sourceTitle(source.key) }}, {{ source.locator }}
                   <span class="text-gray-500">({{ source.stance }})</span>
                   <blockquote class="my-1">{{ source.excerpt }}</blockquote>
