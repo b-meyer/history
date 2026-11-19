@@ -72,6 +72,12 @@ const tradition = computed(() => ({
         <span>Filled: secure or probable. Hollow: contested.</span>
       </li>
     </ul>
-    <p class="m-0 mt-2 text-xs text-gray-500">Basemap: Natural Earth</p>
+    <p class="m-0 mt-2 text-xs text-gray-500">
+      Basemap: Natural Earth · Places:
+      <a href="https://pleiades.stoa.org/" class="underline" target="_blank" rel="noopener"
+        >Pleiades</a
+      >
+      (CC BY 3.0)
+    </p>
   </section>
 </template>
