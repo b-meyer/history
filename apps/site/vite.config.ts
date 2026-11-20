@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { defineConfig } from 'qdocs/vite';
+import { leadsPlugin } from './leadsPlugin.ts';
 
 // The entity IDs `graph build` wrote, one pre-rendered /e/<id> page each. Empty before the first
 // graph build (the site's dev and build scripts run it first).
@@ -30,6 +31,8 @@ export default defineConfig({
   sidebar: { '/e/': [], '/': [{ path: 'index', title: 'Home' }] },
   setup: './src/setup.ts',
   routeParams: { '/e/:id': readIds() },
+  // dev:leads only; see leadsPlugin.ts.
+  plugins: [leadsPlugin()],
   server: { port: 48460 },
   preview: { port: 48460 },
   test: {

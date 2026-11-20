@@ -109,3 +109,6 @@ export function formatMapUrl(state: MapUrlState): string {
   if (view !== fallback) params.push(`v=${view}`);
   return `?${params.join('&')}`;
 }
+
+/** dev:leads only: where the dev server serves lead map data. Never a built file. */
+export const LEADS_URL = '/__leads/map.json';

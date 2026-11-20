@@ -22,13 +22,15 @@ import LayerPanel from './LayerPanel.vue';
 import Legend from './Legend.vue';
 import TimeSlider from './TimeSlider.vue';
 
-const props = defineProps<{ base: string }>();
+/** `leadsUrl` is set only by dev:leads, which serves unaudited leads beside the graph. */
+const props = defineProps<{ base: string; leadsUrl?: string }>();
 
 const state = useMapUrl();
 const span = ref(DEFAULT_WINDOW);
 const playing = ref(false);
 const theme = ref<Theme>('light');
 const data = shallowRef<MapData | null>(null);
+const leadData = shallowRef<MapData | null>(null);
 const vocab = shallowRef<VocabTerms | null>(null);
 const basemap = shallowRef<Basemap | null>(null);
 const failed = ref(false);
@@ -47,6 +49,18 @@ const links = computed<LinkPath[]>(() =>
     path: arcPath(link.from, link.to),
   })),
 );
+const leadLayers = computed(() => {
+  if (leadData.value === null) return null;
+  const leadStays = visibleStays(leadData.value.stays, state.layers);
+  return {
+    stays: leadStays,
+    labels: labelData(leadStays),
+    links: visibleLinks(leadData.value.links, state.layers).map((link) => ({
+      link,
+      path: arcPath(link.from, link.to),
+    })),
+  };
+});
 const focus = computed(() =>
   selection.value?.kind === 'stay' ? selection.value.stay.entity : null,
 );
@@ -79,6 +93,16 @@ function openFocus(map: MapData): void {
 /** A view kept inside the basemap for the container's current size. */
 function bounded(view: { longitude: number; latitude: number; zoom: number }) {
   return boundedView(view, container.value?.clientWidth ?? 0, container.value?.clientHeight ?? 0);
+}
+
+async function loadLeads(url: string): Promise<void> {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`${url}: ${response.status}`);
+    leadData.value = (await response.json()) as MapData;
+  } catch (error) {
+    console.error('map: could not load leads', error);
+  }
 }
 
 async function load(): Promise<void> {
@@ -130,6 +154,7 @@ function layers() {
     stays: stays.value,
     labels: labels.value,
     links: links.value,
+    ...(leadLayers.value === null ? {} : { leads: leadLayers.value }),
   });
 }
 
@@ -163,6 +188,7 @@ onMounted(() => {
     },
   });
   void load();
+  if (props.leadsUrl !== undefined) void loadLeads(props.leadsUrl);
 });
 
 onBeforeUnmount(() => {
@@ -199,7 +225,7 @@ onBeforeUnmount(() => {
     <div
       class="absolute bottom-2 left-2 max-w-xs rounded-lg bg-white/90 px-3 py-2 shadow dark:bg-gray-125/90"
     >
-      <Legend :vocab="vocab" :theme="theme" />
+      <Legend :vocab="vocab" :theme="theme" :leads="leadData !== null" />
     </div>
 
     <div

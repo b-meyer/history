@@ -5,6 +5,8 @@ export type { MapClaim, MapData, MapEntity, MapLink, MapStay } from './build/map
 export type { EntityRecord, RecordClaim, RecordRef, RecordSource } from './build/records.ts';
 export { buildMapData } from './build/mapData.ts';
 export { buildRecords, shardRecords } from './build/records.ts';
+export { buildLeadMapData, leadId, leadNotability, readLeads } from './leads.ts';
+export { findLeadFiles } from './leadGuard.ts';
 export { writeOutputs, type VocabTerms } from './build/write.ts';
 export { formatEdtf, formatYear, parseEdtf, type YearBounds } from './dates.ts';
 export {
