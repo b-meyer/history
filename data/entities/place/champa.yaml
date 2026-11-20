@@ -1,0 +1,5 @@
+id: champa
+type: place
+names: { en: Champa }
+ids: { wikidata: 'Q216786' }
+coords: [108, 14]

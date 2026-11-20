@@ -1,0 +1,26 @@
+id: padmasambhava
+type: person
+names:
+  en: Padmasambhava
+ids:
+  wikidata: Q231582
+claims:
+  - id: padmasambhava.active-at.samye
+    predicate: active-at
+    object: samye
+    when: 0779~
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-tibet
+        locator: preamble
+        stance: reports
+        excerpt: The foundation of Bsam yas is said also to have involved the intercession of Padmasambhava

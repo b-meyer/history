@@ -1,0 +1,5 @@
+id: pagan
+type: place
+names: { en: Pagan }
+ids: { wikidata: 'Q29317' }
+coords: [94.86, 21.17]

@@ -1,0 +1,5 @@
+id: angkor
+type: place
+names: { en: Angkor }
+ids: { wikidata: 'Q163607', pleiades: '531398484' }
+coords: [103.83, 13.43]

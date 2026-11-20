@@ -1,0 +1,105 @@
+id: tibetan-buddhism
+type: school
+names:
+  en: Tibetan Buddhism
+ids:
+  wikidata: Q483889
+claims:
+  - id: tibetan-buddhism.branch-of.vajrayana
+    predicate: branch-of
+    object: vajrayana
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: flagged
+        note: The article says only "especially influenced by" Vajrayāna; it never calls Tibetan Buddhism a branch of it.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: Influence, not a branch relation.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: re-cited to the overview, which speaks of Tibet and Mongolia''s "Vajrayāna ethos" and says Vajrayāna was preserved especially in Japan and Tibet.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: the overview treats Tibetan Buddhism as Vajrayāna-oriented but never says "branch of" outright.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-buddhism-tibet
+        note: 'Graded B scholarly: third pass; the overview''s "Vajrayāna ethos" and the Tibet article''s "especially influenced by" Vajrayāna back the link, not a strict branch relation.'
+    sources:
+      - key: eor-buddhism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: In Tibet and Mongolia, as one would expect given their Vajrayāna ethos
+  - id: tibetan-buddhism.active-at.samye
+    predicate: active-at
+    object: samye
+    when: 0779~/..
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-tibet
+        locator: preamble
+        stance: asserts
+        excerpt: Khri Srong lde'u btsan went on to construct Tibet's first Buddhist monastery, Bsam yas (Samye, c. 779)
+  - id: tibetan-buddhism.active-at.sakya
+    predicate: active-at
+    object: sakya
+    when: 1073/..
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The order was founded in 1073; Sakya as a place is implied by the name, not stated.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: the founding in 1073 is stated as fact.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: "Third pass: the location is inferred from the order's name and the 'Khon family of Sa skya."
+    sources:
+      - key: eor-buddhism-tibet
+        locator: preamble
+        stance: asserts
+        excerpt: the Sa skya pa (Sakyapa) order, founded by the aristocratic 'Khon (Khön) household in 1073
+  - id: tibetan-buddhism.active-at.lhasa
+    predicate: active-at
+    object: lhasa
+    when: 1419/..
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Se ra near Lhasa in 1419, and activity at Lhasa much earlier.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: stated as fact; 1419 is a late start.'
+    sources:
+      - key: eor-buddhism-tibet
+        locator: preamble
+        stance: asserts
+        excerpt: established Se ra Monastery near Lhasa in 1419

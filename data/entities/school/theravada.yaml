@@ -1,0 +1,113 @@
+id: theravada
+type: school
+names:
+  en: Theravāda
+ids:
+  wikidata: Q132265
+claims:
+  - id: theravada.branch-of.buddhism
+    predicate: branch-of
+    object: buddhism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: asserts
+        excerpt: It lives on in a school that refers to itself as the Theravāda, a Sinhala derivative of the Sthavira school.
+  - id: theravada.active-at.srikshetra
+    predicate: active-at
+    object: srikshetra
+    when: 0400/0599
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: the Hmawza Pali inscriptions are stated as evidence by the fifth or sixth century.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: stated as fact from inscriptions.'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Pali inscriptions found in Hmawza, the ancient Pyu capital of Śrīkṣetra in lower Burma, indicate the existence of Theravāda Buddhism by the fifth or sixth century ce.
+  - id: theravada.active-at.pagan
+    predicate: active-at
+    object: pagan
+    when: 1173/1210
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Chapaṭa reordained the Pagan monks under Narapatisithu (1173–1210).'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Mahāvihāra Theravāda became normative at Pagan under Narapatisithu.'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: asserts
+        excerpt: When Chapaṭa returned to Pagan, Narapatisithu requested that he and the other four Mahatheras reordain Burmese monks of the Shin Arahan tradition, thereby establishing the superior legitimacy of the Sinhala orthodoxy over the Mon form of Theravāda.
+  - id: theravada.active-at.sukhothai
+    predicate: active-at
+    object: sukhothai
+    when: 1298/1374
+    confidence: B
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B tradition: Sumana's mission is told from the Jīnakālamāli chronicle."
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B tradition: per the Jīnakālamāli chronicle.'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Sumana returned to Sukhōthai to establish the Sīhaḷa Sangha there
+  - id: theravada.active-at.chiang-mai
+    predicate: active-at
+    object: chiang-mai
+    when: 1369/1526
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B primary: inscriptions and chronicles; nothing in the cited passage supports the 1526 end.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: both inscriptional and chronicle evidence.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: third pass; the next paragraph has the Pa Daeng order flourishing through Phra Muʾang Kaew (1495–1526).'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Sumana Mahāthera brought the Sinhala Buddhism he had learned from his preceptor in Martaban to Chiangmai in 1369

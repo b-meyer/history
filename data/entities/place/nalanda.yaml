@@ -1,0 +1,5 @@
+id: nalanda
+type: place
+names: { en: Nālandā }
+ids: { wikidata: 'Q216243', pleiades: '154636892' }
+coords: [85.44, 25.14]
