@@ -39,6 +39,9 @@ export type RecordSource = {
   written?: string;
   writtenText?: string;
   url?: string;
+  readingList?: true;
+  /** The operator's note on the source, shown with it on reading lists. */
+  annotation?: string;
 };
 
 export type EntityRecord = {
@@ -121,6 +124,8 @@ function recordSource(source: Source): RecordSource {
       ? {}
       : { written: source.written, writtenText: formatEdtf(source.written) }),
     ...(source.url === undefined ? {} : { url: source.url }),
+    ...(source.readingList === true ? { readingList: true as const } : {}),
+    ...(source.annotation === undefined ? {} : { annotation: source.annotation }),
   };
 }
 

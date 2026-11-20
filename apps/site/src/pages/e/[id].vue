@@ -68,6 +68,9 @@ const sourceList = computed(() =>
   ),
 );
 
+// The cited sources flagged for the reading list, primary first, each with its annotation.
+const readingList = computed(() => sourceList.value.filter((source) => source.readingList));
+
 function confidenceLabel(claim: RecordClaim): string {
   return vocab.value?.confidence[claim.confidence].label ?? claim.confidence;
 }
@@ -173,6 +176,20 @@ function people(source: RecordSource): string {
             <span class="text-sm text-gray-500"> ({{ source.kind }})</span>
           </li>
         </ul>
+        <template v-if="readingList.length > 0">
+          <h2 id="reading-list">Reading List</h2>
+          <ul>
+            <li v-for="source in readingList" :key="source.key">
+              <a v-if="source.url" :href="source.url" rel="noopener noreferrer">{{
+                source.title
+              }}</a>
+              <cite v-else>{{ source.title }}</cite>
+              <span v-if="people(source)">, {{ people(source) }}</span>
+              <span class="text-sm text-gray-500"> ({{ source.kind }})</span>
+              <p v-if="source.annotation" class="my-1 text-gray-700">{{ source.annotation }}</p>
+            </li>
+          </ul>
+        </template>
         <p class="text-sm text-gray-500">
           Researched and compiled with AI assistance from the sources cited above, and checked by
           automated audits. Offered for educational purposes as a study aid, not a primary source.

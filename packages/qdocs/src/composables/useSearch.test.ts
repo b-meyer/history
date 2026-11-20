@@ -16,19 +16,30 @@ function entry(slug: string, headingId: string): SearchEntry & { id: number } {
 
 describe('targetFor', () => {
   it('maps index H1 to /', () => {
-    expect(targetFor(entry('index', ''))).toBe('/');
+    expect(targetFor(entry('index', ''), '/')).toBe('/');
   });
 
   it('maps index sub-heading to /#heading', () => {
-    expect(targetFor(entry('index', 'overview'))).toBe('/#overview');
+    expect(targetFor(entry('index', 'overview'), '/')).toBe('/#overview');
   });
 
   it('maps other page H1 to /slug', () => {
-    expect(targetFor(entry('about', ''))).toBe('/about');
+    expect(targetFor(entry('about', ''), '/')).toBe('/about');
   });
 
   it('maps other page sub-heading to /slug#heading', () => {
-    expect(targetFor(entry('about', 'section'))).toBe('/about#section');
+    expect(targetFor(entry('about', 'section'), '/')).toBe('/about#section');
+  });
+
+  it('maps a record to /e/<id>', () => {
+    const record = { ...entry('e/archytas', ''), entity: 'archytas' };
+    expect(targetFor(record, '/')).toBe('/e/archytas');
+    expect(targetFor(record, '/e/plato')).toBe('/e/archytas');
+  });
+
+  it('maps a record to /map?focus=<id> when search runs on /map', () => {
+    const record = { ...entry('e/archytas', ''), entity: 'archytas' };
+    expect(targetFor(record, '/map')).toBe('/map?focus=archytas');
   });
 });
 

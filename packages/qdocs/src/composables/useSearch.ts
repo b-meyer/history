@@ -32,7 +32,7 @@ async function fetchSearchIndex(): Promise<void> {
     const ms = new MiniSearch<IndexedEntry>({
       idField: 'id',
       fields: ['heading', 'body'],
-      storeFields: ['slug', 'pageTitle', 'heading', 'headingId', 'level', 'body'],
+      storeFields: ['slug', 'pageTitle', 'heading', 'headingId', 'level', 'body', 'entity'],
     });
     ms.addAll(entries.map((e, i) => Object.assign(e as IndexedEntry, { id: i })));
     miniSearch.value = ms; // triggers results recompute
@@ -102,7 +102,19 @@ function setSelection(i: number): void {
   selectedIndex.value = Math.max(0, Math.min(n - 1, i));
 }
 
-export function targetFor(entry: Pick<SearchResult, 'slug' | 'headingId'>): string {
+/**
+ * Where a result opens. A record opens at /e/<id>, or on the map itself when search runs from
+ * /map. A page opens at its route and heading.
+ */
+export function targetFor(
+  entry: Pick<SearchResult, 'slug' | 'headingId' | 'entity'>,
+  currentPath: string,
+): string {
+  if (entry.entity !== undefined) {
+    return currentPath === '/map'
+      ? `/map?focus=${encodeURIComponent(entry.entity)}`
+      : `/e/${encodeURIComponent(entry.entity)}`;
+  }
   // index.md maps to /, not /index — use the empty-string base to match the route.
   const path = entry.slug === 'index' ? '/' : `/${entry.slug}`;
   return entry.headingId ? `${path}#${entry.headingId}` : path;

@@ -2,7 +2,9 @@
 // writing data/) are exported for tools and tests; the browser needs only the types,
 // ./dates and ./shard.
 export type { MapClaim, MapData, MapEntity, MapLink, MapStay } from './build/mapData.ts';
+export type { ReadingEntry } from './build/reading.ts';
 export type { EntityRecord, RecordClaim, RecordRef, RecordSource } from './build/records.ts';
+export type { RecordSearchEntry } from './build/searchRecords.ts';
 export { buildMapData } from './build/mapData.ts';
 export { buildRecords, shardRecords } from './build/records.ts';
 export { buildLeadMapData, leadId, leadNotability, readLeads } from './leads.ts';

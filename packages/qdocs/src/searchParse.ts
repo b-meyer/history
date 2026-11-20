@@ -16,6 +16,9 @@ export type SearchEntry = {
   headingId: string;
   level: 1 | 2 | 3;
   body: string;
+  /** Set on a record entry: the entity ID, which search opens at /e/<id> (or on the map). */
+  entity?: string;
+  origin?: 'page' | 'record';
 };
 
 export type RawSection = { level: 1 | 2 | 3; heading: string; bodyLines: string[] };

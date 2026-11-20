@@ -87,7 +87,11 @@ function makeSearchIndexPlugin(explicitPagesDir: string | undefined): Plugin {
           return;
         }
         try {
-          const entries = buildSearchIndexEntries(dir);
+          const extra = qdocsConfigStore?.searchEntries;
+          const entries = buildSearchIndexEntries(
+            dir,
+            extra === undefined ? undefined : pathResolve(rootDir, extra),
+          );
           res.setHeader('Content-Type', 'application/json');
           res.end(JSON.stringify(entries));
         } catch {

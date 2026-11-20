@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { nextTick, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import { type SearchResult, targetFor, useSearch } from '../composables/useSearch';
 
 const { idPrefix = 'search-opt' } = defineProps<{ idPrefix?: string }>();
 
 const { query, selectedIndex, results, closeSearch } = useSearch();
+const route = useRoute();
 
 const listRef = ref<HTMLElement | null>(null);
 
@@ -62,7 +64,7 @@ watch(query, () => {
         v-for="(r, idx) in results"
         :key="`${r.slug}#${r.headingId}-${idx}`"
         :id="`${idPrefix}-${idx}`"
-        :to="targetFor(r)"
+        :to="targetFor(r, route.path)"
         role="option"
         :aria-selected="idx === selectedIndex"
         :data-result-idx="idx"

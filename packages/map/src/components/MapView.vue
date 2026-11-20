@@ -8,6 +8,7 @@ import {
   ref,
   shallowRef,
   useTemplateRef,
+  watch,
   watchEffect,
 } from 'vue';
 import { arcPath } from '../arc.ts';
@@ -22,8 +23,11 @@ import LayerPanel from './LayerPanel.vue';
 import Legend from './Legend.vue';
 import TimeSlider from './TimeSlider.vue';
 
-/** `leadsUrl` is set only by dev:leads, which serves unaudited leads beside the graph. */
-const props = defineProps<{ base: string; leadsUrl?: string }>();
+/**
+ * `leadsUrl` is set only by dev:leads, which serves unaudited leads beside the graph. `focus` is an
+ * entity to open once the map is showing, as when search on /map picks a record.
+ */
+const props = defineProps<{ base: string; leadsUrl?: string; focus?: string }>();
 
 const state = useMapUrl();
 const span = ref(DEFAULT_WINDOW);
@@ -61,7 +65,7 @@ const leadLayers = computed(() => {
     })),
   };
 });
-const focus = computed(() =>
+const selected = computed(() =>
   selection.value?.kind === 'stay' ? selection.value.stay.entity : null,
 );
 const background = computed(() => rgbaCss(palette(theme.value).background));
@@ -149,7 +153,7 @@ function layers() {
     theme: theme.value,
     t: state.t,
     window: span.value,
-    focus: focus.value,
+    focus: selected.value,
     basemap: basemap.value,
     stays: stays.value,
     labels: labels.value,
@@ -157,6 +161,16 @@ function layers() {
     ...(leadLayers.value === null ? {} : { leads: leadLayers.value }),
   });
 }
+
+watch(
+  () => props.focus,
+  (id) => {
+    if (id === undefined) return;
+    playing.value = false;
+    state.focus = id;
+    if (data.value !== null) openFocus(data.value);
+  },
+);
 
 watchEffect(() => {
   const next = layers();

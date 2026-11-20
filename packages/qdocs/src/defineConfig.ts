@@ -25,6 +25,8 @@ export type QDocsConsumerConfig = {
   headerEnd?: string;
   routeParams?: Record<string, string[]>;
   setup?: string;
+  /** Path from the app root to a JSON array of extra search entries. See QDocsConfig. */
+  searchEntries?: string;
   /**
    * Folders for Tailwind to scan for class names, relative to the app root. Tailwind's automatic
    * detection covers only the app, so a workspace package with its own components is listed here.
@@ -62,6 +64,7 @@ function buildQDocsConfig(opts: QDocsConsumerConfig): QDocsConfig {
     headerEnd: opts.headerEnd,
     routeParams: opts.routeParams,
     setup: opts.setup,
+    searchEntries: opts.searchEntries,
     base: resolvedBase,
   };
 }

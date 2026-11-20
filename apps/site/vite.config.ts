@@ -21,7 +21,13 @@ export default defineConfig({
   branding: {
     siteTitle: 'History',
   },
-  nav: [{ text: 'Map', link: '/map' }],
+  nav: [
+    { text: 'Map', link: '/map' },
+    { text: 'Reading List', link: '/reading' },
+    { text: 'About', link: '/about' },
+  ],
+  // graph build writes one entry per record, so search finds records as well as pages.
+  searchEntries: 'public/data/search-records.json',
   // The map package's components carry Tailwind classes; Tailwind scans only the app by default.
   tailwindSources: ['../../packages/map/src'],
   markdown: {
