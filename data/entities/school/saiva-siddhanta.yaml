@@ -25,3 +25,24 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: A fourth early sect is that of the Śaiva Siddhāntins, often simply called Śaivas.
+  - id: saiva-siddhanta.active-at.kashmir
+    predicate: active-at
+    object: kashmir
+    when: 09XX/10XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: In the tenth and eleventh centuries the Śaiva Siddhānta was the dominant Śaiva doctrine in Kashmir.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Śaiva Siddhānta was the dominant Śaiva doctrine in Kashmir in the tenth and eleventh centuries, with Kashmirian authors Nārāyaṇakaṇṭha and Rāmakaṇṭha.'
+    sources:
+      - key: eor-saivism-kashmir
+        locator: preamble
+        stance: asserts
+        excerpt: in the tenth and eleventh centuries, the period of most of the existing Śaiva literature, it was the Śaiva Siddhānta that was the dominant Śaiva doctrine (jñāna ) in Kashmir

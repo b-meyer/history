@@ -25,3 +25,38 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: Śaivism and Vaiṣṇavism form the two principal religious currents of classical and modern Hinduism.
+  - id: saivism.active-at.varanasi
+    predicate: active-at
+    object: varanasi
+    when: 11XX
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Kāśī has countless Śiva shrines and temples, and Viśveśvara rose to preeminence and popularity around the twelfth century.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: eor-saivism-overview
+        note: Calls Banaras the city of Śiva with Viśveśvara a chief pilgrimage site, but speaks of the present and gives no date near the twelfth century.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-saivism-overview
+        note: Kāśī has countless Śiva shrines and Viśveśvara rose to preeminence around the twelfth century, an approximate date.
+    sources:
+      - key: eor-banaras
+        locator: preamble
+        stance: asserts
+        excerpt: There are countless shrines and temples of Śiva in Kāśī
+      - key: eor-banaras
+        locator: preamble
+        stance: asserts
+        excerpt: Viśveśvara (modern-day Viśvanātha) rose to preeminence and popularity around the twelfth century
+      - key: eor-saivism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: The holy city of the Hindus, Banaras, is the city of Śiva, and the temple of Śiva Viśveśvara there is one of the chief pilgrimage sites of all India.

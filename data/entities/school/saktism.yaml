@@ -29,3 +29,24 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: Within Hinduism per se, there are also Tantric strains within most of the major divisions of that tradition—Vaiṣṇava, Śaivite, and Śākta
+  - id: saktism.active-at.kashmir
+    predicate: active-at
+    object: kashmir
+    when: 10XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Kaula cult of Tripurasundarī (Śrīvidyā) rose to eminence in Kashmir during the eleventh century.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Kaula cult of the goddess Tripurasundarī rose to eminence in Kashmir in the eleventh century; the text does not say Śākta, but it is a goddess-centred cult.'
+    sources:
+      - key: eor-saivism-kashmir
+        locator: preamble
+        stance: asserts
+        excerpt: the Kaula cult of the goddess Tripurasundarī, or Śrīvidyā, which rose to eminence in Kashmir during the eleventh century
