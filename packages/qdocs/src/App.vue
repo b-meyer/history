@@ -31,7 +31,8 @@ onUnmounted(() => disposeColorScheme?.());
       </template>
     </AppHeader>
     <main id="main-content" tabindex="-1" class="w-full flex-auto focus:outline-none">
-      <RouterView :key="$route.fullPath" />
+      <!-- Keyed by path: a query or hash change on the same page (/map?focus=x) keeps it mounted. -->
+      <RouterView :key="$route.path" />
     </main>
   </div>
 </template>

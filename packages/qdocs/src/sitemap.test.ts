@@ -206,6 +206,36 @@ describe('buildSearchIndexEntries', () => {
     expect(buildSearchIndexEntries('/pages')).toEqual([]);
   });
 
+  it('appends the entries of a searchEntries file', () => {
+    mockReaddir.mockReturnValue(['index.md'] as unknown as ReturnType<typeof readdirSync>);
+    const record = {
+      slug: 'e/archytas',
+      pageTitle: 'Person',
+      heading: 'Archytas',
+      headingId: '',
+      level: 1,
+      body: '',
+      entity: 'archytas',
+      origin: 'record',
+    };
+    mockRead.mockImplementation(((file: string) =>
+      file === '/data/search-records.json'
+        ? JSON.stringify([record])
+        : '# Home\nWelcome.') as unknown as typeof readFileSync);
+    const entries = buildSearchIndexEntries('/pages', '/data/search-records.json');
+    expect(entries).toHaveLength(2);
+    expect(entries[1]).toEqual(record);
+  });
+
+  it('skips a missing searchEntries file', () => {
+    mockReaddir.mockReturnValue(['index.md'] as unknown as ReturnType<typeof readdirSync>);
+    mockRead.mockImplementation(((file: string) => {
+      if (file === '/data/missing.json') throw new Error('ENOENT');
+      return '# Home\nWelcome.';
+    }) as unknown as typeof readFileSync);
+    expect(buildSearchIndexEntries('/pages', '/data/missing.json')).toHaveLength(1);
+  });
+
   it('uses the H1 heading as the page title', () => {
     mockReaddir.mockReturnValue(['index.md'] as unknown as ReturnType<typeof readdirSync>);
     mockRead.mockReturnValue('# Home\nWelcome text.' as unknown as Buffer);

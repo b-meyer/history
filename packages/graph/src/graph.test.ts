@@ -11,8 +11,8 @@ import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vite-plus/test';
 import { buildMapData, type MapData } from './build/mapData.ts';
-import type { EntityRecord } from './build/records.ts';
 import { writeOutputs, type VocabTerms } from './build/write.ts';
+import type { EntityRecord, ReadingEntry, RecordSearchEntry } from './index.ts';
 import { loadGraph } from './load.ts';
 import { shardOf } from './shard.ts';
 import { validateGraph } from './validate.ts';
@@ -294,6 +294,63 @@ describe('writeOutputs', () => {
     expect(vocab.confidence.C.label).toBe('Contested');
     expect(Object.keys(vocab.basis)).toEqual(['primary', 'scholarly', 'tradition']);
     expect(vocab.basis.tradition.meaning).toMatch(/\S/u);
+  });
+
+  it('writes one search entry per record with other names, span and places', () => {
+    const out = join(root, 'out');
+    writeOutputs(loadGraph(data).graph, out);
+    const entries = JSON.parse(
+      readFileSync(join(out, 'search-records.json'), 'utf8'),
+    ) as RecordSearchEntry[];
+    expect(entries.map((e) => e.entity)).toEqual(['plotinus', 'porphyry', 'rome']);
+    expect(entries.find((e) => e.entity === 'porphyry')).toEqual({
+      slug: 'e/porphyry',
+      pageTitle: 'Person',
+      heading: 'Porphyry',
+      headingId: '',
+      level: 1,
+      body: 'Πορφύριος · 263–268 CE · Rome',
+      entity: 'porphyry',
+      origin: 'record',
+    });
+    expect(entries.find((e) => e.entity === 'plotinus')?.body).toBe('204–205 CE · Rome');
+  });
+
+  it('writes only flagged sources to reading.json, with the records that cite them', () => {
+    write(
+      'sources/porphyry-life-of-plotinus.yaml',
+      'key: porphyry-life-of-plotinus\nkind: primary\ntitle: Life of Plotinus\nauthors: [Porphyry]\nwritten: 0301~\nreadingList: true\nannotation: Start here.\n',
+    );
+    const out = join(root, 'out');
+    writeOutputs(loadGraph(data).graph, out);
+    const reading = JSON.parse(readFileSync(join(out, 'reading.json'), 'utf8')) as ReadingEntry[];
+    expect(reading).toHaveLength(1);
+    expect(reading[0]).toMatchObject({
+      key: 'porphyry-life-of-plotinus',
+      kind: 'primary',
+      annotation: 'Start here.',
+      writtenText: 'c. 301 CE',
+      records: [
+        { id: 'plotinus', name: 'Plotinus' },
+        { id: 'porphyry', name: 'Porphyry' },
+        { id: 'rome', type: 'place', name: 'Rome' },
+      ],
+    });
+    expect(reading[0]).not.toHaveProperty('readingList');
+
+    const shard = JSON.parse(
+      readFileSync(join(out, 'records', `${shardOf('plotinus')}.json`), 'utf8'),
+    ) as Record<string, EntityRecord>;
+    expect(shard.plotinus?.sources['porphyry-life-of-plotinus']).toMatchObject({
+      readingList: true,
+      annotation: 'Start here.',
+    });
+  });
+
+  it('writes an empty reading.json when no source is flagged', () => {
+    const out = join(root, 'out');
+    writeOutputs(loadGraph(data).graph, out);
+    expect(JSON.parse(readFileSync(join(out, 'reading.json'), 'utf8'))).toEqual([]);
   });
 
   it('replaces records from an earlier build', () => {

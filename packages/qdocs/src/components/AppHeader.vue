@@ -72,7 +72,7 @@ function matchesNavActive(activeMatch: string | undefined): boolean {
 function navigateToSelected(): void {
   const r = results.value[selectedIndex.value];
   if (!r) return;
-  void router.push(targetFor(r));
+  void router.push(targetFor(r, route.path));
   closeSearch();
 }
 

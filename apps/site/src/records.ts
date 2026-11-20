@@ -2,12 +2,15 @@
 // Record data for the /e/<id> pages. The server render reads the generated files from
 // public/data/ on disk; the browser fetches the same files. setup.ts loads a record before its
 // route resolves, so the server and the hydrating client render from the same data.
-import type { EntityRecord, VocabTerms } from 'graph';
+import type { EntityRecord, ReadingEntry, VocabTerms } from 'graph';
 import { shardOf } from 'graph/shard';
 import { shallowReactive, shallowRef } from 'vue';
 
 /** Records loaded so far, by ID. */
 export const records = shallowReactive(new Map<string, EntityRecord>());
+
+/** The reading list from reading.json, once loaded. */
+export const reading = shallowRef<ReadingEntry[] | null>(null);
 
 /** The confidence and basis wording, once loaded. */
 export const vocab = shallowRef<VocabTerms | null>(null);
@@ -68,4 +71,17 @@ export async function loadRecordPage(id: string, strict: boolean): Promise<void>
   }
   const [record] = await Promise.all([loadRecord(id), loadVocab()]);
   if (record === undefined) throw new Error(`record "${id}" is listed but not in its shard`);
+}
+
+/**
+ * Loads reading.json once for /reading. Strict (the server render) throws when it cannot be read;
+ * in the browser a failure leaves the list unloaded and a later navigation retries.
+ */
+export async function loadReading(strict: boolean): Promise<void> {
+  if (reading.value !== null) return;
+  try {
+    reading.value = await readData<ReadingEntry[]>('reading.json');
+  } catch (error) {
+    if (strict) throw error;
+  }
 }

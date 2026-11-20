@@ -5,8 +5,8 @@ const WRITE_DELAY_MS = 250;
 
 /**
  * Map state backed by the URL. It reads the query once, then writes changes back with
- * history.replaceState, keeping vue-router's history.state. Going through the router would change
- * $route.fullPath, which keys the app's RouterView and would remount the map on every change.
+ * history.replaceState, keeping vue-router's history.state. Going through the router would run a
+ * navigation, guards and all, on every pan and every tick of the time slider.
  */
 export function useMapUrl(): MapUrlState {
   const state = reactive(parseMapUrl(window.location.search));

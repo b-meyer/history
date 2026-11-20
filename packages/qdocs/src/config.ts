@@ -183,6 +183,11 @@ export type QDocsConfig = {
    * client. Use it to register guards that load a page's data before render and hydration.
    */
   setup?: string;
+  /**
+   * Path from the app root to a JSON array of extra `SearchEntry` objects (records, say) that the
+   * search index appends to the page entries. A missing file adds nothing. Build and dev server only.
+   */
+  searchEntries?: string;
 };
 
 /**
@@ -197,7 +202,7 @@ export type QDocsSetup = (ctx: {
  * The config as the client bundle sees it: build-only fields removed.
  */
 export function clientConfig(config: QDocsConfig): QDocsConfig {
-  const { routeParams: _routeParams, ...rest } = config;
+  const { routeParams: _routeParams, searchEntries: _searchEntries, ...rest } = config;
   return rest;
 }
 

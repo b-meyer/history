@@ -188,10 +188,20 @@ export function buildSitemap(outDir: string, paths: string[], options: SitemapOp
 
 /**
  * Reads all `.md` files in `pagesDir` and returns `SearchEntry[]` — the same payload that the
- * client lazy-fetches as `search-index.json`. Used both by `buildSearchIndex` (build-time write)
- * and `qdocsPlugin`'s dev-server middleware (on-demand serve).
+ * client lazy-fetches as `search-index.json` — followed by the entries of `searchEntriesFile`, when
+ * given. Used both by `buildSearchIndex` (build-time write) and `qdocsPlugin`'s dev-server
+ * middleware (on-demand serve).
  */
-export function buildSearchIndexEntries(pagesDir: string): SearchEntry[] {
+export function buildSearchIndexEntries(
+  pagesDir: string,
+  searchEntriesFile?: string,
+): SearchEntry[] {
+  const entries = pageSearchEntries(pagesDir);
+  if (searchEntriesFile !== undefined) entries.push(...readSearchEntries(searchEntriesFile));
+  return entries;
+}
+
+function pageSearchEntries(pagesDir: string): SearchEntry[] {
   // Recurse only for dedicated 'pages' dirs; shallow scan prevents non-page src/ files from indexing.
   const useRecursive = basename(pagesDir) === 'pages';
   const rawFiles = useRecursive
@@ -242,12 +252,26 @@ export function buildSearchIndexEntries(pagesDir: string): SearchEntry[] {
   return entries;
 }
 
+/** The extra entries in a `searchEntries` file, or none when it is missing or unreadable. */
+function readSearchEntries(file: string): SearchEntry[] {
+  try {
+    const parsed = JSON.parse(readFileSync(file, 'utf8')) as unknown;
+    return Array.isArray(parsed) ? (parsed as SearchEntry[]) : [];
+  } catch {
+    return [];
+  }
+}
+
 /**
  * Called from each app's `ssgOptions.onFinished`. Writes `search-index.json` to `outDir` so the
  * client can lazy-fetch it when search first opens instead of bundling raw markdown in the initial
  * JS chunk.
  */
-export function buildSearchIndex(pagesDir: string, outDir: string): void {
-  const entries = buildSearchIndexEntries(pagesDir);
+export function buildSearchIndex(
+  pagesDir: string,
+  outDir: string,
+  searchEntriesFile?: string,
+): void {
+  const entries = buildSearchIndexEntries(pagesDir, searchEntriesFile);
   writeFileSync(join(outDir, 'search-index.json'), JSON.stringify(entries), 'utf8');
 }

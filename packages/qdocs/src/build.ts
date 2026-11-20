@@ -123,6 +123,11 @@ async function discoverRoutes(
   return { renderedPaths, expanded, pagesDir, createApp };
 }
 
+/** The absolute path of the config's `searchEntries` file, when it names one. */
+function searchEntriesPath(root: string, config: QDocsConfig | null): string | undefined {
+  return config?.searchEntries === undefined ? undefined : resolve(root, config.searchEntries);
+}
+
 async function runBuild(): Promise<void> {
   const viteConfig = await resolveConfig({}, 'build', 'production');
   const root = viteConfig.root;
@@ -165,7 +170,7 @@ async function runBuild(): Promise<void> {
     CONCURRENCY,
   );
 
-  buildSearchIndex(pagesDir, outDir);
+  buildSearchIndex(pagesDir, outDir, searchEntriesPath(root, qdocsConfig));
   buildSitemap(outDir, renderedPaths, { hostname: process.env['PUBLIC_SITE_URL'], base });
   patchCspScriptHash(outDir);
   rmSync(tempDir, { recursive: true, force: true });

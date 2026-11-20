@@ -3,7 +3,9 @@ import { join } from 'node:path';
 import type { Graph } from '../load.ts';
 import type { Vocab } from '../schema/vocab.ts';
 import { buildMapData } from './mapData.ts';
+import { buildReading } from './reading.ts';
 import { buildRecords, shardRecords } from './records.ts';
+import { buildSearchRecords } from './searchRecords.ts';
 
 export type WriteSummary = { entities: number; claims: number; shards: number };
 
@@ -12,7 +14,8 @@ export type VocabTerms = Pick<Vocab, 'confidence' | 'basis'>;
 
 /**
  * Writes the generated files the site reads into outDir (apps/site/public/data/):
- * map.json, vocab.json, record-ids.json and records/<shard>.json. Only these paths are replaced.
+ * map.json, vocab.json, record-ids.json, search-records.json, reading.json and records/<shard>.json.
+ * Only these paths are replaced.
  */
 export function writeOutputs(graph: Graph, outDir: string): WriteSummary {
   const records = buildRecords(graph);
@@ -30,6 +33,8 @@ export function writeOutputs(graph: Graph, outDir: string): WriteSummary {
     join(outDir, 'record-ids.json'),
     JSON.stringify(records.map((record) => record.id).toSorted()),
   );
+  writeFileSync(join(outDir, 'search-records.json'), JSON.stringify(buildSearchRecords(records)));
+  writeFileSync(join(outDir, 'reading.json'), JSON.stringify(buildReading(graph, records)));
   for (const [shard, entries] of shards) {
     writeFileSync(join(recordsDir, `${shard}.json`), JSON.stringify(entries));
   }
