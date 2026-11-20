@@ -65,9 +65,14 @@ export type MapLabel = {
   start: number;
   end: number;
   notability: number;
+  /** Stacks labels that share a place: 0 sits just above the dot, 1 above that, and so on. */
+  row: number;
 };
 
-/** One label per entity and place, spanning every stay it has there. */
+/**
+ * One label per entity and place, spanning every stay it has there. Labels at one place get
+ * rows in order of their start, so two schools at one centre don't print over each other.
+ */
 export function labelData(stays: readonly MapStay[]): MapLabel[] {
   const labels = new Map<string, MapLabel>();
   for (const stay of stays) {
@@ -81,11 +86,19 @@ export function labelData(stays: readonly MapStay[]): MapLabel[] {
         start: stay.start,
         end: stay.end,
         notability: stay.notability,
+        row: 0,
       });
     } else {
       label.start = Math.min(label.start, stay.start);
       label.end = Math.max(label.end, stay.end);
     }
   }
-  return [...labels.values()];
+  const rows = new Map<string, number>();
+  const result = [...labels.values()];
+  for (const label of result.toSorted((a, b) => a.start - b.start)) {
+    const place = label.coords.join(',');
+    label.row = rows.get(place) ?? 0;
+    rows.set(place, label.row + 1);
+  }
+  return result;
 }
