@@ -1,0 +1,56 @@
+id: mahasamghika
+type: school
+names:
+  en: Mahāsāṃghika
+ids:
+  wikidata: Q1150429
+claims:
+  - id: mahasamghika.branch-of.buddhism
+    predicate: branch-of
+    object: buddhism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: the overview frames the Second Council split as probable.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-buddhism-india
+        note: 'Third pass on the split: the overview and the India article both name the Sthavira/Mahāsāṃghika split.'
+    sources:
+      - key: eor-buddhism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: those who adhered to the latter position came to be known as the Mahāsāṃghikas (Members of the Great Assembly)
+  - id: mahasamghika.active-at.srikshetra
+    predicate: active-at
+    object: srikshetra
+    when: 06XX
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B primary: rests on one traveler, Yijing.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: the article later calls the four sects attested to by Yijing.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A primary: third pass on the split; still split three ways, so set to C (and a reports-only claim cannot be A).'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: reports
+        excerpt: The Chinese traveler Yijing, who visited Shih-li-cha-to-lo (Śrīkṣetra, or Prome) in the seventh century, mentions the presence of not only Theravādins (Āryasthaviras) but also the Āryamahāsāṃghika

@@ -1,0 +1,5 @@
+id: kyoto
+type: place
+names: { en: Kyōto }
+ids: { wikidata: 'Q34600' }
+coords: [135.77, 35.01]

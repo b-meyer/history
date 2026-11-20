@@ -1,0 +1,70 @@
+id: vajrayana
+type: school
+names:
+  en: Vajrayāna
+ids:
+  wikidata: Q172175
+claims:
+  - id: vajrayana.branch-of.mahayana
+    predicate: branch-of
+    object: mahayana
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-tibet
+        locator: preamble
+        stance: asserts
+        excerpt: so-called because the primary symbol of this branch of Mahāyāna Buddhism is the vajra
+  - id: vajrayana.active-at.nalanda
+    predicate: active-at
+    object: nalanda
+    when: 0675~/1197
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says "Tantric", not Vajrayāna, and the 1197 end is the sack.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: abundant evidence of a Tantric circle from the late seventh century.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: 'Third pass: the 1197 end is inferred from the sack, not from Tantra continuing there.'
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: asserts
+        excerpt: We have abundant evidence of a flourishing Tantric circle at Nālandā, for instance, at least since the late seventh century.
+  - id: vajrayana.active-at.vikramasila
+    predicate: active-at
+    object: vikramasila
+    when: 0800~/1203
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says "Tantric", not Vajrayāna specifically.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: asserts
+        excerpt: the construction of the University of Vikramaśīla under Dharmapāla about the year 800 marks the beginning of the Tantric period

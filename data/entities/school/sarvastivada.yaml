@@ -1,0 +1,71 @@
+id: sarvastivada
+type: school
+names:
+  en: Sarvāstivāda
+ids:
+  wikidata: Q633994
+claims:
+  - id: sarvastivada.branch-of.buddhism
+    predicate: branch-of
+    object: buddhism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: The Theravāda and Sarvāstivāda schools mentioned above are two of the major schools that are included under the Hīnayāna rubric.
+  - id: sarvastivada.active-at.kashmir
+    predicate: active-at
+    object: kashmir
+    when: 0100~
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C tradition: the council is "supposed", and the article says "If this legend is true".'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded C tradition: place and date rest on legend.'
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: reports
+        excerpt: This canon is supposed to have been written down at a "Fourth Council" held in Jālandhara, Kashmir, about 100 ce
+  - id: sarvastivada.active-at.champa
+    predicate: active-at
+    object: champa
+    when: 06XX
+    confidence: B
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B primary: Yijing is the only witness.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-buddhism-china
+        note: 'Graded B primary: third pass; the China article dates Yijing 635–713.'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: reports
+        excerpt: According to Yijing, the dominant tradition in Champa was that of the Āryasammatīya nikāya, but the Sarvāstivādins were also present.

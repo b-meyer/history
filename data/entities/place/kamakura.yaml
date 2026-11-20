@@ -1,0 +1,5 @@
+id: kamakura
+type: place
+names: { en: Kamakura }
+ids: { wikidata: 'Q10939227' }
+coords: [139.55, 35.32]

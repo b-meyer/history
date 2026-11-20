@@ -1,0 +1,76 @@
+id: pure-land
+type: school
+names:
+  en: Pure Land
+ids:
+  wikidata: Q262244
+claims:
+  - id: pure-land.branch-of.mahayana
+    predicate: branch-of
+    object: mahayana
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Places Pure Land in a Mahāyāna setting without calling it a branch.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: treats Pure Land as Mahāyāna schools.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-buddhism-india
+        note: 'Third pass: inside Mahāyāna by placement, not stated outright.'
+    sources:
+      - key: eor-buddhism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: In the East Asian Mahāyāna areas the most important development was the increasing prominence of the Pure Land schools in the early centuries of the second millennium ce.
+  - id: pure-land.active-at.xuanzhongsi
+    predicate: active-at
+    object: xuanzhongsi
+    when: 0500/0699
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-schools-chinese
+        locator: preamble
+        stance: asserts
+        excerpt: During the sixth and seventh centuries, at Xuanzhongsi in north China (Shanxi province), there appeared a succession of monks who transformed the understanding of Pure Land practice
+  - id: pure-land.active-at.kyoto
+    predicate: active-at
+    object: kyoto
+    when: 1496/..
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Outside this source, the usual chronology puts the 1496 Honganji at Ishiyama (Ōsaka); the source does not dispute Kyōto.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Rennyo established the Honganji in Kyōto in 1496.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: third pass; stated as fact.'
+    sources:
+      - key: eor-buddhism-japan
+        locator: preamble
+        stance: asserts
+        excerpt: Rennyo went on to take advantage of the new wealth, land, and military strength to establish the Honganji temple in the capital of Kyōto in 1496.

@@ -1,0 +1,73 @@
+id: the-buddha
+type: person
+names:
+  en: The Buddha
+ids:
+  wikidata: Q9441
+claims:
+  - id: the-buddha.founder-of.buddhism
+    predicate: founder-of
+    object: buddhism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: asserts
+        excerpt: the founder of the Buddhist religion was born into the Śākya tribe
+  - id: the-buddha.active-at.bodh-gaya
+    predicate: active-at
+    object: bodh-gaya
+    when: -0527~
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C tradition: legend, and a chronology disputed by up to a century.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C scholarly: third pass; the date holds only if the legend is reliable. Still split, so set to C.'
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: reports
+        excerpt: he "awakened" under a pipal tree (Ficus religiosa ) near the border town of Uruvilvā (Bodh Gayā)
+  - id: the-buddha.active-at.sarnath
+    predicate: active-at
+    object: sarnath
+    when: -0527~
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C tradition: "assuming the legend is reliable", on a disputed chronology.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C scholarly: third pass; the place is supported, the year depends on the legend. Still split, so set to C.'
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: reports
+        excerpt: we can say that the history of the religion begins when Śākyamuni was thirty-five (therefore, in about 528), with his first sermon at Sārnāth

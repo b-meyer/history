@@ -1,0 +1,5 @@
+id: lhasa
+type: place
+names: { en: Lhasa }
+ids: { wikidata: 'Q5869' }
+coords: [91.14, 29.65]

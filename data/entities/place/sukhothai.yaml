@@ -1,0 +1,5 @@
+id: sukhothai
+type: place
+names: { en: Sukhothai }
+ids: { wikidata: 'Q5368613' }
+coords: [99.82, 17]

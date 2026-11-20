@@ -1,0 +1,110 @@
+id: mahayana
+type: school
+names:
+  en: Mahāyāna
+ids:
+  wikidata: Q48362
+claims:
+  - id: mahayana.branch-of.buddhism
+    predicate: branch-of
+    object: buddhism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: a new movement, self-designated as the Mahāyāna, or Great Vehicle
+  - id: mahayana.active-at.nalanda
+    predicate: active-at
+    object: nalanda
+    when: 0414/0799
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Kumāra Gupta I endowed Nālandā (414–455); sacked 1197 but lingered on.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Mahāyāna scholars trained disciples first at Nālandā.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: flagged
+        note: "Third pass: Mahāyāna at Nālandā is supported but 0414/1197 is not; the article dates Mahāyāna's decline from 657 and calls the eighth-century masters Nālandā's last lights. Still split, so set to C."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: Mahāyāna scholars trained disciples first at Nālandā, endowed under Kumāra Gupta I (414–455) and active into the eighth century; the bounds are inferred, not stated.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: Mahāyāna activity at Nālandā is supported, but the text gives no 414 start or 799 end.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: third pass; the endowment under Kumāra Gupta I (414–455) and the "last shining lights" Śāntirakṣita and Kamalaśīla bound the range approximately.'
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: asserts
+        excerpt: First at Nālandā and Valabhī, then, as the Pāla dynasty took control of East Central India (c. 650), at the universities of Vikramaśīla and Odantapurī, Mahāyāna scholars trained disciples from different parts of the Buddhist world
+  - id: mahayana.active-at.khotan
+    predicate: active-at
+    object: khotan
+    when: 02XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: an inference from Chinese sources; no third-century Khotan manuscripts survive.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: 'Third pass: the article concludes it from Zhu Shixing, Mokṣala (291) and Gītamitra (296).'
+    sources:
+      - key: eor-buddhism-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Thus, Khotan was already a well-established center of Mahāyāna studies in the third century.
+  - id: mahayana.active-at.angkor
+    predicate: active-at
+    object: angkor
+    when: 1181/1218
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: the article gives the reign as 1181–1218 and the Mahāyāna cult of the Bayon.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: third pass; stated in three sections of the article.'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Jayavarman VII, the Khmer empire's greatest monarch and builder of Angkor Thom, patronized Buddhism of the Mahāyāna variety

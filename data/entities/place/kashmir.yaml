@@ -1,0 +1,7 @@
+# Note: The source places the "Fourth Council" in "Jālandhara, Kashmir"; this is the Kashmir Valley,
+# the approved centre, not Jālandhara (now in Punjab).
+id: kashmir
+type: place
+names: { en: Kashmir }
+ids: { wikidata: 'Q2361576' }
+coords: [74.8, 34.05]

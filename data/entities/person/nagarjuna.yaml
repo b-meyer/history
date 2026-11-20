@@ -1,0 +1,25 @@
+id: nagarjuna
+type: person
+names:
+  en: Nāgārjuna
+ids:
+  wikidata: Q171195
+claims:
+  - id: nagarjuna.member-of.mahayana
+    predicate: member-of
+    object: mahayana
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+    sources:
+      - key: eor-buddhism-india
+        locator: preamble
+        stance: asserts
+        excerpt: he became the first major philosopher of Mahāyāna

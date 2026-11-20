@@ -1,0 +1,5 @@
+id: sakya
+type: place
+names: { en: Sakya }
+ids: { wikidata: 'Q1585564' }
+coords: [88.02, 28.9]

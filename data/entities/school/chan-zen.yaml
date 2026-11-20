@@ -1,0 +1,76 @@
+id: chan-zen
+type: school
+names:
+  en: Chan/Zen
+ids:
+  wikidata: Q7953
+claims:
+  - id: chan-zen.branch-of.mahayana
+    predicate: branch-of
+    object: mahayana
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: the Summary presents Chan as the main Mahāyāna tradition in Vietnam.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: 'Third pass: Chan is inside Mahāyāna by implication, never stated outright.'
+    sources:
+      - key: eor-buddhism-southeast-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Mahāyāna Buddhism was certainly part of the Chinese cultural influence, and the Chan (Viet., Thien) school
+  - id: chan-zen.active-at.kamakura
+    predicate: active-at
+    object: kamakura
+    when: 1282/..
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Tōkeiji, a Zen nunnery, founded in Kamakura in 1282.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Five Mountains Rinzai convents in Kamakura, Tōkeiji 1282.'
+    sources:
+      - key: eor-buddhism-japan
+        locator: preamble
+        stance: asserts
+        excerpt: a system of Five Mountains Rinzai convents developed in Kyōto and Kamakura
+  - id: chan-zen.active-at.kyoto
+    predicate: active-at
+    object: kyoto
+    when: 1375~/..
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: 'Place and date are joined by inference: the dated sentence does not name Kyōto.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: the Ashikaga promoted the Five Mountains from the late fourteenth century.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: 'Third pass: the Kyōto link comes from an undated paragraph.'
+    sources:
+      - key: eor-buddhism-japan
+        locator: preamble
+        stance: asserts
+        excerpt: Zen lineages increasingly took unique positions among the newer lineages with their success at winning the patronage of the Ashikaga (Muromachi) shogunate, which came particularly to promote Rinzai Zen lineages and the Five Mountains system from the late fourteenth century on.
