@@ -103,4 +103,17 @@ describe('labelData', () => {
       expect.objectContaining({ entity: 'porphyry', coords: [14, 37.5], start: 268, end: 270 }),
     ]);
   });
+
+  it('stacks labels at one place in order of start', () => {
+    const labels = labelData([
+      stay({ claim: 'a', entity: 'vajrayana', start: 675, end: 1197 }),
+      stay({ claim: 'b', entity: 'mahayana', start: 414, end: 799 }),
+      stay({ claim: 'c', entity: 'plato', place: 'athens', coords: [23.72, 37.97] }),
+    ]);
+    expect(labels.map((label) => [label.entity, label.row])).toEqual([
+      ['vajrayana', 1],
+      ['mahayana', 0],
+      ['plato', 0],
+    ]);
+  });
 });
