@@ -46,3 +46,27 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: 'He was the last prominent figure in the early Pythagorean tradition and the dominant political figure in Tarentum'
+  - id: archytas.floruit
+    predicate: floruit
+    when: -0399~
+    where: tarentum
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-19
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Rouse Ball states it as plain fact, the date marked circ.'
+      - on: 2026-11-19
+        by: claude-sonnet-5-5
+        verdict: confirmed
+      - on: 2026-11-19
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: 'Third pass on the split: B, since circ. 400 BC is a rough date and the rescue of Plato puts him active into the 360s; DL 8.79 confirms Tarentum but gives no date.'
+    sources:
+      - key: rouse-ball-short-account-history-mathematics
+        locator: p. 22
+        stance: asserts
+        excerpt: Archytas, circ. 400 b.c., was one of the most influential citizens of Tarentum
