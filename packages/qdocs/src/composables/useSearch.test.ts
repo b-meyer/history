@@ -40,6 +40,7 @@ describe('targetFor', () => {
   it('maps a record to /map?focus=<id> when search runs on /map', () => {
     const record = { ...entry('e/archytas', ''), entity: 'archytas' };
     expect(targetFor(record, '/map')).toBe('/map?focus=archytas');
+    expect(targetFor(record, '/map/')).toBe('/map?focus=archytas');
   });
 });
 
