@@ -1,6 +1,0 @@
-# Note: A region, not a point; coords are a centroid of the delta around Thanjavur–Kumbakonam.
-id: cauvery-basin
-type: place
-names: { en: Cauvery basin }
-ids: { wikidata: 'Q124745110' }
-coords: [79.2, 10.9]

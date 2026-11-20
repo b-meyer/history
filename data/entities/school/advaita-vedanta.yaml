@@ -1,0 +1,133 @@
+id: advaita-vedanta
+type: school
+names:
+  en: Advaita Vedānta
+ids:
+  wikidata: Q2348383
+claims:
+  - id: advaita-vedanta.branch-of.hinduism
+    predicate: branch-of
+    object: hinduism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Treats nondualistic Vedānta as an outlook later Hinduism develops and Śaṅkara's Advaita as the touchstone of smārta orthodoxy, without saying branch of Hinduism.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-sankara
+        note: 'Graded A scholarly: Calls Śaṅkara a Hindu metaphysician and proponent of Advaita Vedānta, a Vedānta school.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-sankara
+        note: 'Graded A scholarly: Later Hinduism develops the outlook of nondualistic Vedānta, and Śaṅkara is a Hindu metaphysician and proponent of Advaita Vedānta.'
+    sources:
+      - key: eor-hinduism
+        locator: preamble
+        stance: asserts
+        excerpt: the knowledge-path outlook of nondualistic (advaita ) Vedānta
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: was a Hindu metaphysician, religious leader, and proponent of Advaita Vedānta
+  - id: advaita-vedanta.active-at.sringeri
+    predicate: active-at
+    object: sringeri
+    when: 0700~/0820~
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: According to traditions, Śaṅkara founded a centre at Śṛngerī; his dates are disputed and the hagiographies late.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: A centre at Śṛngerī is given only as traditions not preserved by Mādhava or Anantānandagiri, and his dates are disputed.
+    sources:
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: Śaṅkara established four or five monastic centers for the spread of Advaita Vedānta
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: one at Śṛngerī in Karṇataka (south)
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: ŚAṄKARA (c. 700 ce)
+  - id: advaita-vedanta.active-at.kanchipuram
+    predicate: active-at
+    object: kanchipuram
+    when: 0700~/0820~
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Kanchipuram is a fifth centre not considered of equal status by some, tied to a late hagiography.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Kanchipuram appears only in the same unpreserved tradition and in Anantānandagiri's late hagiography, and is not of equal status for some.
+    sources:
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: Śaṅkara established four or five monastic centers for the spread of Advaita Vedānta
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: another, not considered to be of equal status by some, at Kanchipuram
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: the Advaita center at Kanchipuram, Tamil Nadu
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: ŚAṄKARA (c. 700 ce)
+  - id: advaita-vedanta.active-at.puri
+    predicate: active-at
+    object: puri
+    when: 0700~/0820~
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: According to traditions, one of Śaṅkara's centres was at Puri; the dating is uncertain.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-vedanta
+        note: According to a tradition, Padmapāda was nominated first pontiff of the maṭha at Puri; no dates are given.
+    sources:
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: Śaṅkara established four or five monastic centers for the spread of Advaita Vedānta
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: one at Puri in Orissa (east)
+      - key: eor-vedanta
+        locator: preamble
+        stance: reports
+        excerpt: nominated by the master as the first pontiff of the maṭha at Puri
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: ŚAṄKARA (c. 700 ce)

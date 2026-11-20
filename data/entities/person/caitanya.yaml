@@ -1,0 +1,91 @@
+id: caitanya
+type: person
+names:
+  en: Caitanya
+ids:
+  wikidata: Q870262
+claims:
+  - id: caitanya.founder-of.gaudiya-vaisnavism
+    predicate: founder-of
+    object: gaudiya-vaisnavism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Names Caitanya (1486–1533) as founder of the Gauḍiya Vaiṣṇava sect.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: eor-caitanya
+        note: Calls him the movement's fervent catalyst and does not say he founded it.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-caitanya
+        note: Calls Caitanya founder of the Gauḍiya Vaiṣṇava sect; eor-caitanya's fervent catalyst is softer wording that agrees.
+    sources:
+      - key: eor-hinduism
+        locator: preamble
+        stance: asserts
+        excerpt: founder of the Gauḍiya Vaiṣṇava sect
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: the movement (often called Gauḍīya or Bengali Vaiṣṇava) of which he was the fervent catalyst
+  - id: caitanya.active-at.navadvipa
+    predicate: active-at
+    object: navadvipa
+    when: 1486/1510
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Born at Navadvip in 1486, he led its Vaiṣṇavas and took ascetic initiation in February 1510.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Born at Navadvip in 1486, he led its Vaiṣṇavas in saṃkīrtana there until his ascetic initiation in February 1510.
+    sources:
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: at Navadvip town, the center of Sanskrit learning in then Muslim-ruled Bengal
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: Viśvambhara's charismatic proselytizing led him to be readily hailed by the Vaiṣṇavas of Navadvip as their leader.
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: He received ascetic initiation from Keśava Bhāratī in February 1510
+  - id: caitanya.active-at.puri
+    predicate: active-at
+    object: puri
+    when: 1516/1533
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: From 1516 he remained at Puri worshiping Jagannātha and counseling disciples, and died there in 1533.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: From 1516 Caitanya remained at Puri worshiping Jagannātha and counseling disciples until his death there in 1533.
+    sources:
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: From 1516 Caitanya remained at Puri, where he worshiped Jagannātha, engaged in his private devotions, and counseled disciples.
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: his death/disappearance at Puri in the month of Āṣāṛh (possibly July 9) in 1533

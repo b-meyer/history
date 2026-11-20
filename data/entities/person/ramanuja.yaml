@@ -1,0 +1,117 @@
+id: ramanuja
+type: person
+names:
+  en: Rāmānuja
+ids:
+  wikidata: Q1741798
+claims:
+  - id: ramanuja.member-of.sri-vaisnavism
+    predicate: member-of
+    object: sri-vaisnavism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-hinduism
+        note: Rāmānuja developed his viśiṣṭādvaita Vedānta for the Śrī Vaiṣṇavas.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Speaks of Rāmānuja's leadership within the Śrī Vaiṣṇava community as Yāmuna's successor.
+    sources:
+      - key: eor-ramanuja
+        locator: preamble
+        stance: asserts
+        excerpt: Within the Śrī Vaiṣṇava community Rāmānuja's importance comes from his authoritative exposition of the Vedānta
+      - key: eor-hinduism
+        locator: preamble
+        stance: asserts
+        excerpt: developed for the Śrī Vaiṣṇavas the first bhakti sectarian repudiation of the Advaita
+  - id: ramanuja.born
+    predicate: born
+    when: 1017
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B tradition: Gives Rāmānuja's traditional dates 1017–1137, presented as traditional rather than established."
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ramanuja
+        note: The opening gives 1017–1137 as a range only, and the hagiographies are late.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-ramanuja
+        note: 'Graded C tradition: Gives traditional dates 1017–1137; the earliest securely dated hagiography was written more than a century after his death, so 1017 comes from tradition.'
+    sources:
+      - key: eor-sri-vaisnavas
+        locator: preamble
+        stance: reports
+        excerpt: Rāmānuja (traditional dates 1017–1137)
+      - key: eor-ramanuja
+        locator: preamble
+        stance: reports
+        excerpt: RĀMĀNUJA (1017–1137)
+  - id: ramanuja.died
+    predicate: died
+    when: 1137
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B tradition: Gives Rāmānuja's traditional dates 1017–1137, presented as traditional rather than established."
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ramanuja
+        note: The opening gives 1017–1137 as a range only, and the hagiographies are late.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-ramanuja
+        note: 'Graded C tradition: Gives 1137 as the end of traditional dates 1017–1137 (a 120-year life), resting on hagiographies written more than a century later.'
+    sources:
+      - key: eor-sri-vaisnavas
+        locator: preamble
+        stance: reports
+        excerpt: Rāmānuja (traditional dates 1017–1137)
+      - key: eor-ramanuja
+        locator: preamble
+        stance: reports
+        excerpt: RĀMĀNUJA (1017–1137)
+  - id: ramanuja.active-at.srirangam
+    predicate: active-at
+    object: srirangam
+    when: 1017/1137
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Rāmānuja reorganized the central Śrī Vaiṣṇava temple at Śrīrangam to accommodate his disciples.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B tradition: States he reorganized the central Śrī Vaiṣṇava temple at Śrīrangam, but the surrounding paragraphs summarize hagiographies written a century after his death.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C tradition: The Śrīrangam reorganization is drawn from hagiographies written more than a century after his death, and eor-sri-vaisnavas calls 1017–1137 his traditional dates.'
+    sources:
+      - key: eor-ramanuja
+        locator: preamble
+        stance: asserts
+        excerpt: He reorganized the central Śrī Vaiṣṇava temple at Śrīrangam to accommodate his growing band of disciples

@@ -1,0 +1,32 @@
+id: vaisnavism
+type: school
+names:
+  en: Vaiṣṇavism
+ids:
+  wikidata: Q45584
+claims:
+  - id: vaisnavism.branch-of.hinduism
+    predicate: branch-of
+    object: hinduism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tantrism-hindu
+        note: Names the Vaiṣṇavas as one of the three main divisions of sects in Hinduism.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Śaivism and Vaiṣṇavism form the two principal currents of classical and modern Hinduism.
+    sources:
+      - key: eor-saivism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Śaivism and Vaiṣṇavism form the two principal religious currents of classical and modern Hinduism.
+      - key: eor-tantrism-hindu
+        locator: preamble
+        stance: asserts
+        excerpt: The main division of sects in Hinduism as a whole consists of the worshipers of Viṣṇu (Vaiṣṇavas)

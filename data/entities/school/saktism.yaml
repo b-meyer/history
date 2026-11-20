@@ -1,0 +1,31 @@
+id: saktism
+type: school
+names:
+  en: Śāktism
+ids:
+  wikidata: Q849345
+claims:
+  - id: saktism.branch-of.hinduism
+    predicate: branch-of
+    object: hinduism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Names the Śāktas as one of the three main divisions of sects in Hinduism.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The main division of sects in Hinduism as a whole is Vaiṣṇavas, Śaivas and Śāktas.
+    sources:
+      - key: eor-tantrism-hindu
+        locator: preamble
+        stance: asserts
+        excerpt: The main division of sects in Hinduism as a whole consists of the worshipers of Viṣṇu (Vaiṣṇavas), the worshipers of Śiva (Śaivas or Śaivites), and those who worship the Goddess, in one or another of her many forms, as the supreme deity (the Śāktas).
+      - key: eor-tantrism-hindu
+        locator: preamble
+        stance: asserts
+        excerpt: Within Hinduism per se, there are also Tantric strains within most of the major divisions of that tradition—Vaiṣṇava, Śaivite, and Śākta

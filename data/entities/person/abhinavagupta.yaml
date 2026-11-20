@@ -1,0 +1,58 @@
+id: abhinavagupta
+type: person
+names:
+  en: Abhinavagupta
+ids:
+  wikidata: Q320619
+claims:
+  - id: abhinavagupta.member-of.kashmir-saivism
+    predicate: member-of
+    object: kashmir-saivism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The tradition generally called Kashmir Śaivism culminated in the works of Abhinavagupta and his pupil Kṣemarāja.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-saivism-pratyabhijna
+        note: 'Graded B scholarly: Pratyabhijñā is part of Kashmir Śaivism and Abhinavagupta elaborated it in two commentaries, so membership is implied rather than stated.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-saivism-pratyabhijna
+        note: Nondualist Śaiva theology culminated in the works of Abhinavagupta and Kṣemarāja, and this tradition has generally been called Kashmir Śaivism.
+    sources:
+      - key: eor-saivism-kashmir
+        locator: preamble
+        stance: asserts
+        excerpt: culminated in the monumental works of Abhinavagupta and his pupil Kśemarāja
+      - key: eor-saivism-pratyabhijna
+        locator: preamble
+        stance: asserts
+        excerpt: The Pratyabhijñā system of thought is part of what is called Kashmir Śaivism
+  - id: abhinavagupta.active-at.kashmir
+    predicate: active-at
+    object: kashmir
+    when: 0975~/1025~
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Abhinavagupta (fl. c. 975–1025 ce) was a Kashmirian Śaiva theologian whose family was brought to Kashmir.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Abhinavagupta (fl. c. 975–1025 ce) was a Kashmirian Śaiva theologian whose ancestor was brought to Kashmir by Lalitāditya.
+    sources:
+      - key: eor-abhinavagupta
+        locator: preamble
+        stance: asserts
+        excerpt: ABHINAVAGUPTA (fl. c. 975–1025 ce), Kashmirian Śaiva theologian.

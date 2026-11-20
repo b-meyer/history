@@ -1,0 +1,62 @@
+id: sri-vaisnavism
+type: school
+names:
+  en: Śrī Vaiṣṇavism
+ids:
+  wikidata: Q2075582
+claims:
+  - id: sri-vaisnavism.branch-of.vaisnavism
+    predicate: branch-of
+    object: vaisnavism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The ācāryas of the Śrī Vaiṣṇava school (Nāthamuni, Yāmunācārya, Rāmānuja) gave Āḻvār bhakti a Vedantic foundation, presenting it as a school within Vaiṣṇavism.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sri-vaisnavas
+        note: Calls the Śrī Vaiṣṇava Sampradāya one of six major Hindu denominations devoted to Viṣṇu.
+    sources:
+      - key: eor-vaisnavism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: the ācāryas of the Śrī Vaiṣṇava school
+      - key: eor-sri-vaisnavas
+        locator: preamble
+        stance: asserts
+        excerpt: one of six major Hindu denominations devoted to Viṣṇu
+  - id: sri-vaisnavism.active-at.srirangam
+    predicate: active-at
+    object: srirangam
+    when: 1017/1137
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-sri-vaisnavas
+        note: "Graded B tradition: Lists the central temple at Śrīraṅgam among the community's temples in the present tense, without dating activity there to 1017–1137."
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Rāmānuja reorganized the central Śrī Vaiṣṇava temple at Śrīrangam for his disciples during his lifetime.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Both articles call the Śrīrangam temple the central Śrī Vaiṣṇava temple, reorganized by Rāmānuja in his lifetime; the second speaks of the present.
+    sources:
+      - key: eor-ramanuja
+        locator: preamble
+        stance: asserts
+        excerpt: He reorganized the central Śrī Vaiṣṇava temple at Śrīrangam to accommodate his growing band of disciples
+      - key: eor-sri-vaisnavas
+        locator: preamble
+        stance: asserts
+        excerpt: the central temple at Śrīraṅgam

@@ -1,0 +1,91 @@
+id: gaudiya-vaisnavism
+type: school
+names:
+  en: Gauḍīya Vaiṣṇavism
+ids:
+  wikidata: Q1144575
+claims:
+  - id: gaudiya-vaisnavism.branch-of.vaisnavism
+    predicate: branch-of
+    object: vaisnavism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-hinduism
+        note: 'Graded B scholarly: Calls Caitanya founder of the Gauḍiya Vaiṣṇava sect in a passage on Vaiṣṇava bhakti, placing it as a Vaiṣṇava sect without saying branch of Vaiṣṇavism.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Calls Caitanya's movement Gauḍīya or Bengali Vaiṣṇava and treats it as Vaiṣṇava bhakti to Kṛṣṇa.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-hinduism
+        note: Calls Caitanya's movement Gauḍīya or Bengali Vaiṣṇava, and eor-hinduism names him founder of the Gauḍiya Vaiṣṇava sect.
+    sources:
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: Caitanya and the movement (often called Gauḍīya or Bengali Vaiṣṇava)
+      - key: eor-hinduism
+        locator: preamble
+        stance: asserts
+        excerpt: founder of the Gauḍiya Vaiṣṇava sect
+  - id: gaudiya-vaisnavism.active-at.vrindavan
+    predicate: active-at
+    object: vrindavan
+    when: 15XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Caitanya dispatched the Gosvāmins to settle at Vrindavan, where they wrote the movement's theology; no date is given.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Caitanya directed the Gosvāmins to settle in and around Vrindavan, where they wrote the movement's theology, before 1533 but in no stated year.
+    sources:
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: the Gosvāmins (pastors) whom Caitanya had earlier directed to settle in and around Vrindavan
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: The myriad theological works in Sanskrit by the Gosvāmins whom Caitanya dispatched to Vrindavan
+  - id: gaudiya-vaisnavism.active-at.puri
+    predicate: active-at
+    object: puri
+    when: 1516/1533
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Caitanya lived at Puri from 1516 to his death in 1533, counseling disciples; the text does not frame it as the movement's seat.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: From 1516 Caitanya stayed at Puri counseling disciples, and Bengali devotees came there every year, until his death there in 1533.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: From 1516 Caitanya remained at Puri counseling disciples, with Bengali devotees coming yearly, until his death there in 1533; the movement is named Gauḍīya.'
+    sources:
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: From 1516 Caitanya remained at Puri, where he worshiped Jagannātha, engaged in his private devotions, and counseled disciples.
+      - key: eor-caitanya
+        locator: preamble
+        stance: asserts
+        excerpt: his death/disappearance at Puri in the month of Āṣāṛh (possibly July 9) in 1533
