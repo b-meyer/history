@@ -8,6 +8,7 @@ description: 'The data the site draws on, and the terms each source comes with.'
 The site draws on these sources of data. Each keeps its own licence.
 
 - **[Pleiades](https://pleiades.stoa.org/)** - place coordinates and place IDs, used under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+- **[GeoNames](https://www.geonames.org/)** - coordinates and IDs for places Pleiades doesn't cover, used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - **[Natural Earth](https://www.naturalearthdata.com/)** - the land, lakes and rivers of the map's basemap, in the public domain.
 - **[Wikidata](https://www.wikidata.org/)** - released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/). It is used only to find leads for research, and none of its data is published here.
 - **ISBN and DOI lookups** - the bibliographic facts of a book or article, such as its title, authors, publisher and year. Nothing else is taken from them.

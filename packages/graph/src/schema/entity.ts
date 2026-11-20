@@ -61,6 +61,8 @@ export const entitySchema = z.strictObject({
         .regex(/^Q\d+$/u)
         .optional(),
       pleiades: z.string().regex(/^\d+$/u).optional(),
+      /** A place's GeoNames ID, where its coords come from GeoNames rather than Pleiades. */
+      geonames: z.string().regex(/^\d+$/u).optional(),
     })
     .optional(),
   /** Places only: [longitude, latitude]. */

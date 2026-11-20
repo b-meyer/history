@@ -140,6 +140,22 @@ describe('loadGraph', () => {
     expect(found.filter((p) => p.includes('good-url'))).toEqual([]);
   });
 
+  it('reads Pleiades and GeoNames IDs as numeric strings', () => {
+    write(
+      'entities/place/town.yaml',
+      "id: town\ntype: place\nnames: { en: Town }\nids: { pleiades: '100', geonames: '200' }\ncoords: [83.27, 27.48]\n",
+    );
+    write(
+      'entities/place/bad-id.yaml',
+      "id: bad-id\ntype: place\nnames: { en: X }\nids: { geonames: 'gn1' }\ncoords: [0, 0]\n",
+    );
+    expect(loadGraph(data).graph.entities.get('town')?.ids).toEqual({
+      pleiades: '100',
+      geonames: '200',
+    });
+    expect(problems()).toContainEqual(expect.stringContaining('bad-id.yaml ids.geonames'));
+  });
+
   it('reports schema problems with their file and field', () => {
     write(
       'entities/person/bad.yaml',
