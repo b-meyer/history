@@ -111,7 +111,7 @@ export function targetFor(
   currentPath: string,
 ): string {
   if (entry.entity !== undefined) {
-    return currentPath === '/map'
+    return currentPath.replace(/\/$/u, '') === '/map'
       ? `/map?focus=${encodeURIComponent(entry.entity)}`
       : `/e/${encodeURIComponent(entry.entity)}`;
   }
