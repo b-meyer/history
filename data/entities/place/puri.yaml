@@ -1,0 +1,5 @@
+id: puri
+type: place
+names: { en: Purī }
+ids: { wikidata: 'Q207799', geonames: '1259184' }
+coords: [85.82, 19.8]

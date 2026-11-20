@@ -1,0 +1,82 @@
+id: sankara
+type: person
+names:
+  en: Śaṅkara
+ids:
+  wikidata: Q180967
+claims:
+  - id: sankara.member-of.advaita-vedanta
+    predicate: member-of
+    object: advaita-vedanta
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-hinduism
+        note: Advaita goes back to Gauḍapāda, but Śaṅkara established it as the touchstone of a revived smārta orthodoxy.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Śaṅkara is called a proponent of Advaita Vedānta.
+    sources:
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: was a Hindu metaphysician, religious leader, and proponent of Advaita Vedānta
+      - key: eor-hinduism
+        locator: preamble
+        stance: asserts
+        excerpt: The Advaita (nondualist) interpretation of the Vedānta can be traced back at least to Gauḍapāda (c. 600 ce), but it is Śaṅkara (c. 788–820) who established this viewpoint as the touchstone of a revived smārta orthodoxy.
+  - id: sankara.active-at.varanasi
+    predicate: active-at
+    object: varanasi
+    when: 0700~/0820~
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Mādhava's late hagiography says Govindanātha sent Śaṅkara to Varanasi, where he gained his first disciple.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Told according to Mādhava, whose hagiography dates from 1650–1800; the article doubts how far these preserve fact.
+    sources:
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: Govindanātha later sent Śaṅkara to Varanasi (Banaras), where he acquired his first important disciple, Sanandana, later called Padmapāda.
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: ŚAṄKARA (c. 700 ce)
+  - id: sankara.active-at.badrinath
+    predicate: active-at
+    object: badrinath
+    when: 0700~/0820~
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: According to Mādhava's late hagiography, Śaṅkara moved to Badarī, where he wrote the Brahma-sūtra-bhāṣya.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The move to Badarī comes from Mādhava's late hagiographical account, and the dates are disputed.
+    sources:
+      - key: eor-sankara
+        locator: preamble
+        stance: reports
+        excerpt: After some time Śaṅkara moved on to Badarī in the Himalayas, where he wrote (at the age of twelve, according to Mādhava) his famous Brahma-sūtra-bhāṣya.
+      - key: eor-sankara
+        locator: preamble
+        stance: asserts
+        excerpt: ŚAṄKARA (c. 700 ce)

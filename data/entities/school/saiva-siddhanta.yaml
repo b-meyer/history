@@ -1,0 +1,27 @@
+id: saiva-siddhanta
+type: school
+names:
+  en: Śaiva Siddhānta
+ids:
+  wikidata: Q2760628
+claims:
+  - id: saiva-siddhanta.branch-of.saivism
+    predicate: branch-of
+    object: saivism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Lists the Śaiva Siddhāntins as a fourth early Śaiva sect.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: After the Pāśupatas, Kālamukhas and Kāpālikas, the Śaiva Siddhāntins are a fourth early Śaiva sect.
+    sources:
+      - key: eor-saivism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: A fourth early sect is that of the Śaiva Siddhāntins, often simply called Śaivas.

@@ -1,0 +1,27 @@
+id: saivism
+type: school
+names:
+  en: Śaivism
+ids:
+  wikidata: Q234953
+claims:
+  - id: saivism.branch-of.hinduism
+    predicate: branch-of
+    object: hinduism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Names Śaivism as one of the two principal currents of classical and modern Hinduism.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Śaivism and Vaiṣṇavism are the two principal religious currents of classical and modern Hinduism.
+    sources:
+      - key: eor-saivism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Śaivism and Vaiṣṇavism form the two principal religious currents of classical and modern Hinduism.

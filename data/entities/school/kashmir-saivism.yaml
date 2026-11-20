@@ -1,0 +1,53 @@
+id: kashmir-saivism
+type: school
+names:
+  en: Kashmir Śaivism
+ids:
+  wikidata: Q1734884
+claims:
+  - id: kashmir-saivism.branch-of.saivism
+    predicate: branch-of
+    object: saivism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Kashmir Śaivism is a name applied to nondualist forms of Śaivism.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Kashmir Śaivism is a name applied to nondualist forms of Śaivism.
+    sources:
+      - key: eor-saivism-pratyabhijna
+        locator: preamble
+        stance: asserts
+        excerpt: a name applied to nondualist forms of Śaivism
+  - id: kashmir-saivism.active-at.kashmir
+    predicate: active-at
+    object: kashmir
+    when: 08XX/12XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: These forms flourished approximately between the ninth and thirteenth centuries in Kashmir.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-saivism-trika
+        note: The nondualist idealism the Trika propagated flourished in Kashmir from about 900 ce.
+    sources:
+      - key: eor-saivism-pratyabhijna
+        locator: preamble
+        stance: asserts
+        excerpt: nondualist forms of Śaivism that flourished approximately between the ninth and thirteenth centuries in Kashmir
+      - key: eor-saivism-trika
+        locator: preamble
+        stance: asserts
+        excerpt: the nondualist idealism that flourished in Kashmir from about 900 ce

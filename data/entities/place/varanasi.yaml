@@ -1,0 +1,5 @@
+id: varanasi
+type: place
+names: { en: Vārāṇasī }
+ids: { wikidata: 'Q79980', pleiades: '59866' }
+coords: [83.03, 25.33]
