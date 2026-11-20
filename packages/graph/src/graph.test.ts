@@ -10,7 +10,7 @@ import {
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vite-plus/test';
-import { buildMapData, type MapData } from './build/mapData.ts';
+import { buildMapData, colorOf, type MapData } from './build/mapData.ts';
 import { writeOutputs, type VocabTerms } from './build/write.ts';
 import type { EntityRecord, ReadingEntry, RecordSearchEntry } from './index.ts';
 import { loadGraph } from './load.ts';
@@ -383,6 +383,36 @@ function mapData(): MapData {
 }
 
 describe('buildMapData', () => {
+  it('colours a school by the nearest colour up its branch-of chain', () => {
+    write(
+      'entities/tradition/faith.yaml',
+      "id: faith\ntype: tradition\nnames: { en: Faith }\ncolor: '#3b6e8f'\n",
+    );
+    write(
+      'entities/school/elders.yaml',
+      `id: elders\ntype: school\nnames: { en: Elders }\nclaims:\n${claim('elders.branch-of.faith', 'predicate: branch-of\nobject: faith')}`,
+    );
+    write(
+      'entities/school/forest.yaml',
+      `id: forest\ntype: school\nnames: { en: Forest }\nclaims:\n${claim('forest.branch-of.elders', 'predicate: branch-of\nobject: elders')}${claim('forest.active-at.rome', 'predicate: active-at\nobject: rome\nwhen: 0300')}`,
+    );
+    write(
+      'entities/school/loop-a.yaml',
+      `id: loop-a\ntype: school\nnames: { en: A }\nclaims:\n${claim('loop-a.branch-of.loop-b', 'predicate: branch-of\nobject: loop-b')}`,
+    );
+    write(
+      'entities/school/loop-b.yaml',
+      `id: loop-b\ntype: school\nnames: { en: B }\nclaims:\n${claim('loop-b.branch-of.loop-a', 'predicate: branch-of\nobject: loop-a')}`,
+    );
+    const graph = loadGraph(data).graph;
+    expect(colorOf(graph, 'forest')).toBe('#3b6e8f');
+    expect(colorOf(graph, 'faith')).toBe('#3b6e8f');
+    expect(colorOf(graph, 'loop-a')).toBeUndefined();
+    const map = buildMapData(graph);
+    expect(map.entities.find((e) => e.id === 'forest')?.color).toBe('#3b6e8f');
+    expect(map.stays.find((s) => s.claim === 'forest.active-at.rome')?.color).toBe('#3b6e8f');
+  });
+
   it('puts an entity at the place an active-at claim names', () => {
     expect(mapData().stays.find((s) => s.claim === 'porphyry.active-at.rome')).toMatchObject({
       entity: 'porphyry',

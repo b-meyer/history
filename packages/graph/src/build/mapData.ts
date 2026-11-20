@@ -113,6 +113,30 @@ function placeOf(graph: Graph, claim: Claim): string | undefined {
   return claim.where ?? (objectIsPlace ? claim.object : undefined);
 }
 
+/**
+ * An entity's map colour: its own, else the nearest one up its `branch-of` chain, so a school
+ * draws in its tradition's colour. A cycle in the chain ends the search.
+ */
+export function colorOf(graph: Graph, id: string): string | undefined {
+  const seen = new Set<string>();
+  let queue = [id];
+  while (queue.length > 0) {
+    const next: string[] = [];
+    for (const current of queue) {
+      if (seen.has(current)) continue;
+      seen.add(current);
+      const entity = graph.entities.get(current);
+      if (entity === undefined) continue;
+      if (entity.color !== undefined) return entity.color;
+      for (const claim of entity.claims) {
+        if (claim.predicate === 'branch-of' && claim.object !== undefined) next.push(claim.object);
+      }
+    }
+    queue = next;
+  }
+  return undefined;
+}
+
 export function buildMapData(graph: Graph): MapData {
   const places: MapData['places'] = {};
   const entities: MapEntity[] = [];
@@ -127,6 +151,7 @@ export function buildMapData(graph: Graph): MapData {
       entity.claims.flatMap((claim) => (claim.when === undefined ? [] : [claim.when])),
     );
     spans.set(id, span);
+    const color = colorOf(graph, id);
     entities.push({
       id,
       type: entity.type,
@@ -134,7 +159,7 @@ export function buildMapData(graph: Graph): MapData {
       notability: entity.notability ?? 0,
       start: span.start,
       end: span.end,
-      ...(entity.color === undefined ? {} : { color: entity.color }),
+      ...(color === undefined ? {} : { color }),
     });
 
     for (const claim of entity.claims) {
@@ -168,6 +193,7 @@ function buildStays(
   const stays: MapStay[] = [];
   for (const [id, entity] of graph.entities) {
     const entitySpan = closed(spans.get(id) ?? { start: null, end: null });
+    const color = colorOf(graph, id);
     for (const claim of entity.claims) {
       const place = placeOf(graph, claim);
       const coords = place === undefined ? undefined : places[place]?.coords;
@@ -180,7 +206,7 @@ function buildStays(
         type: entity.type,
         name: entity.names.en,
         notability: entity.notability ?? 0,
-        ...(entity.color === undefined ? {} : { color: entity.color }),
+        ...(color === undefined ? {} : { color }),
         claim: claim.id,
         place,
         coords,
