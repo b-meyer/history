@@ -1,0 +1,5 @@
+id: edessa
+type: place
+names: { en: Edessa }
+ids: { wikidata: 'Q133118', pleiades: '658457', geonames: '298333' }
+coords: [38.79, 37.15]

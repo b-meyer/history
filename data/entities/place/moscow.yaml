@@ -1,0 +1,5 @@
+id: moscow
+type: place
+names: { en: Moscow }
+ids: { wikidata: 'Q649', geonames: '524894' }
+coords: [37.62, 55.75]

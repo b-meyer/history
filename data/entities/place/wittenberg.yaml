@@ -1,0 +1,5 @@
+id: wittenberg
+type: place
+names: { en: Wittenberg }
+ids: { wikidata: 'Q6837', geonames: '6548975' }
+coords: [12.65, 51.87]

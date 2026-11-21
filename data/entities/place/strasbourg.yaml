@@ -1,0 +1,5 @@
+id: strasbourg
+type: place
+names: { en: Strasbourg }
+ids: { wikidata: 'Q6602', pleiades: '108754', geonames: '2973783' }
+coords: [7.75, 48.58]

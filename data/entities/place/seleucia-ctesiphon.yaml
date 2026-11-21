@@ -1,0 +1,6 @@
+# Note: The coords and IDs are Ctesiphon's (Pleiades 893976); Seleucia lay just across the Tigris.
+id: seleucia-ctesiphon
+type: place
+names: { en: Seleucia-Ctesiphon }
+ids: { wikidata: 'Q192541', pleiades: '893976', geonames: '90287' }
+coords: [44.58, 33.09]

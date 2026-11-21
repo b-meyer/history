@@ -1,0 +1,5 @@
+id: kiev
+type: place
+names: { en: Kiev }
+ids: { wikidata: 'Q1899', geonames: '703448' }
+coords: [30.52, 50.45]

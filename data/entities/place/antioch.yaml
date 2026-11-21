@@ -1,0 +1,5 @@
+id: antioch
+type: place
+names: { en: Antioch }
+ids: { wikidata: 'Q200441', pleiades: '658381' }
+coords: [36.18, 36.22]

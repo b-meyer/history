@@ -1,0 +1,5 @@
+id: avignon
+type: place
+names: { en: Avignon }
+ids: { wikidata: 'Q6397', pleiades: '148004', geonames: '3035681' }
+coords: [4.81, 43.95]

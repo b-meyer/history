@@ -1,0 +1,5 @@
+id: milan
+type: place
+names: { en: Milan }
+ids: { wikidata: 'Q490', pleiades: '383706', geonames: '6542283' }
+coords: [9.19, 45.46]

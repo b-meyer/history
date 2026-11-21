@@ -1,0 +1,5 @@
+id: geneva
+type: place
+names: { en: Geneva }
+ids: { wikidata: 'Q71', pleiades: '177528', geonames: '7285902' }
+coords: [6.14, 46.20]
