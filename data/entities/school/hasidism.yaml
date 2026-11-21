@@ -1,0 +1,103 @@
+id: hasidism
+type: school
+names:
+  en: Hasidism
+ids:
+  wikidata: Q171201
+claims:
+  - id: hasidism.branch-of.judaism
+    predicate: branch-of
+    object: judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article opens by calling Hasidism a Jewish pietistic movement that arose in eastern Europe in the later 18th century and became a major force in modern Judaism.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-judaism-overview
+        note: "Graded A scholarly: The text calls the Hasidic movement 'the principal Jewish mystical movement of modern times', which carries on Qabbalah's influence on Jewish thought and practice."
+    sources:
+      - key: eor-hasidism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Hasidism is the common appellation of a Jewish pietistic movement that developed in eastern Europe in the second half of the eighteenth century
+      - key: eor-judaism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Through the Hasidic movement, the principal Jewish mystical movement of modern times
+  - id: hasidism.active-at.safed
+    predicate: active-at
+    object: safed
+    when: 1777
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Spread of the Movement section says Hasidic communities were established in Safad and Tiberias by Menahem Mendel of Vitebsk and Avraham of Kalisz, who migrated to the Land of Israel in 1777.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: Under 'Spread of the Movement', the text says Hasidic communities were established in Safad and Tiberias by Menahem Mendel of Vitebsk and Avraham Kats of Kalisz, who migrated to the Land of Israel in 1777; 1777 is the year they migrated, not a stated founding year for the Safed community."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: Under 'Spread of the Movement' the text says Hasidic communities in the Land of Israel were established in Safad and Tiberias by Menahem Mendel of Vitebsk and Avraham of Kalisz, who migrated there in 1777. It gives 1777 as the year they migrated, not as the year the communities were founded, so the claim's 1777 date is inferred."
+    sources:
+      - key: eor-hasidism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Hasidic communities in the Land of Israel were established in Safad and Tiberias by Manaḥem Mendel of Vitebsk and Avraham ben Aleksander Kats of Kalisz who migrated to the Land of Israel in 1777
+  - id: hasidism.active-at.tiberias
+    predicate: active-at
+    object: tiberias
+    when: 1777
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The same sentence names Tiberias alongside Safad as a Hasidic community founded by the 1777 migrants.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: The same 'Spread of the Movement' sentence names Tiberias alongside Safad as a Hasidic community founded by the 1777 immigrants, but it gives no founding date for Tiberias itself, so a Tiberias presence in 1777 is only implied."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: Under 'Spread of the Movement' the text says Hasidic communities were established in Safad and Tiberias by Menahem Mendel of Vitebsk and Avraham of Kalisz, who migrated to the Land of Israel in 1777. The founding itself is not dated, so 1777 is inferred from the migration year."
+    sources:
+      - key: eor-hasidism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Hasidic communities in the Land of Israel were established in Safad and Tiberias by Manaḥem Mendel of Vitebsk and Avraham ben Aleksander Kats of Kalisz who migrated to the Land of Israel in 1777
+  - id: hasidism.active-at.mezhirich
+    predicate: active-at
+    object: mezhirich
+    when: 1760/1772
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 2, 'The first Hasidic center in Mezhirich (1760-1772)', says Dov Ber took over leadership after the BeSHT's death and held court at Mezhirich, where Hasidism began as an organized movement.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 2, headed 'The first Hasidic center in Mezhirich (1760–1772)', says Dov Ber of Mezhirich took over leadership after the BeSHT's death and held a court there, marking the start of Hasidism as an organized movement.
+    sources:
+      - key: eor-hasidism-overview
+        locator: §2
+        stance: asserts
+        excerpt: After the BeSHT's death, the leadership of the Hasidic movement was assumed by his disciple, Dov Ber of Mezhirich

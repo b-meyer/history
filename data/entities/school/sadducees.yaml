@@ -1,0 +1,60 @@
+id: sadducees
+type: school
+names:
+  en: Sadducees
+ids:
+  wikidata: Q182682
+claims:
+  - id: sadducees.branch-of.judaism
+    predicate: branch-of
+    object: judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article opens by stating the Sadducees were one of the main Jewish political and religious groups ("sects") of the Second Temple period.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article's opening paragraph states as fact that the Sadducees were one of the main Jewish political and religious groups (usually termed "sects") of the Second Temple period.
+    sources:
+      - key: eor-sadducees
+        locator: preamble
+        stance: asserts
+        excerpt: The Sadducees were one of the main Jewish political and religious groups (usually termed "sects") of the Second Temple period.
+  - id: sadducees.active-at.jerusalem
+    predicate: active-at
+    object: jerusalem
+    when: -0134/0070
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says moderately Hellenized Sadducees remained in Jerusalem, were a recognizable aristocratic group by John Hyrcanus I (135-104 bce), and ceased to be a factor after the Temple's destruction in 70 ce, which covers the -0134/0070 span."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says the Sadducees were a recognizable aristocratic group "by about" the reign of John Hyrcanus I (135–104 bce), that the Sadducees in the strict sense "remained in Jerusalem" with the Jerusalem Temple as their power base, and that they ceased to be a factor in Jewish history when the Temple was destroyed in 70 ce, so the start date is only approximate.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says the Sadducees were a recognizable aristocratic group 'by about the reign of John Hyrcanus I (135–104 bce)', that the moderately Hellenized Sadducees 'remained in Jerusalem' as part of the Hasmonean aristocracy and gerousia with the Jerusalem Temple as their power base, and that with the destruction of the Temple in 70 ce they 'ceased to be a factor in Jewish history'; the start date is only approximate.
+    sources:
+      - key: eor-sadducees
+        locator: preamble
+        stance: asserts
+        excerpt: Other moderately Hellenized Sadducees remained in Jerusalem
+      - key: eor-sadducees
+        locator: preamble
+        stance: asserts
+        excerpt: By about the reign of John Hyrcanus I (135–104 bce), they were a recognizable aristocratic group.
+      - key: eor-sadducees
+        locator: preamble
+        stance: asserts
+        excerpt: with the destruction of the Temple in 70 ce, the Sadducees ceased to be a factor in Jewish history

@@ -1,0 +1,108 @@
+id: saadia-gaon
+type: person
+names:
+  en: Saʿadyah Gaon
+ids:
+  wikidata: Q328748
+claims:
+  - id: saadia-gaon.born
+    predicate: born
+    when: 0882
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article's opening line gives the dates as 'SAʿADYAH GAON (882–942)', so birth in 882.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-karaites
+        note: The article gives Saʿadyah ben Joseph al-Fayyūmī's dates as 882–942.
+    sources:
+      - key: eor-saadyah-gaon
+        locator: preamble
+        stance: asserts
+        excerpt: SAʿADYAH GAON (882–942)
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: Saʿadyah ben Joseph al-Fayyūmī (882–942)
+  - id: saadia-gaon.died
+    predicate: died
+    when: 0942
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article's opening line gives the dates as 'SAʿADYAH GAON (882–942)', so death in 942.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-karaites
+        note: The article gives Saʿadyah ben Joseph al-Fayyūmī's dates as 882–942.
+    sources:
+      - key: eor-saadyah-gaon
+        locator: preamble
+        stance: asserts
+        excerpt: SAʿADYAH GAON (882–942)
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: Saʿadyah ben Joseph al-Fayyūmī (882–942)
+  - id: saadia-gaon.member-of.rabbinic-judaism
+    predicate: member-of
+    object: rabbinic-judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls him a Jewish theologian, jurist and 'gaon of the rabbinic academy at Sura, Babylonia', and says he championed the Babylonian rabbis, which places him in rabbinic Judaism.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-karaites
+        note: The opening paragraph calls Saʿadyah a Jewish theologian, jurist, scholar and gaon of the rabbinic academy at Sura, and says he championed the Babylonian rabbis in the calendar dispute.
+    sources:
+      - key: eor-saadyah-gaon
+        locator: preamble
+        stance: asserts
+        excerpt: gaon ("head, eminence") of the rabbinic academy at Sura, Babylonia
+  - id: saadia-gaon.active-at.sura
+    predicate: active-at
+    object: sura
+    when: 0922/0930
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The exilarch gave him an academic appointment in 922 and then raised him to the gaonate of Sura; the text also says a dispute in 930 led to mutual deposition, with reinstatement in 937, so 922 and 930 are both attested dates in his Sura tenure.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-karaites
+        note: The article calls Saʿadyah the polymath gaon of the Sura academy in Baghdad and places his anti-Karaite works in the second quarter of the tenth century. The 922/930 span is not stated.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: eor-saadyah-gaon says the exilarch gave him an academic appointment in 922 without naming where, then later made him gaon of Sura; the two fell out in 930 and deposed each other. eor-karaites calls him 'the polymath gaon of the Sura academy in Baghdad'. Neither source dates the start of his time at Sura, so the 922-930 range is only partly supported.
+    sources:
+      - key: eor-saadyah-gaon
+        locator: preamble
+        stance: asserts
+        excerpt: awarded Saʿadyah with an academic appointment in 922 and subsequently elevated him to the gaonate of Sura
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: the polymath gaon of the Sura academy in Baghdad

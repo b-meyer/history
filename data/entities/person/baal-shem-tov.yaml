@@ -1,0 +1,80 @@
+id: baal-shem-tov
+type: person
+names:
+  en: Baʿal Shem Ṭov
+ids:
+  wikidata: Q319062
+claims:
+  - id: baal-shem-tov.born
+    predicate: born
+    when: 1700~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The opening paragraph gives Yisraʾel ben Eliʿezer's dates as "c. 1700–1760", so the birth year is stated only as approximate (circa 1700).
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The opening paragraph gives Yisraʾel ben Eliʿezer's dates as "c. 1700–1760", so the birth year is only approximate, and it says few historically authentic sources on his life exist.
+    sources:
+      - key: eor-baal-shem-tov
+        locator: preamble
+        stance: asserts
+        excerpt: Yisraʾel ben Eliʿezer (c. 1700–1760)
+  - id: baal-shem-tov.died
+    predicate: died
+    when: 1760
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The opening paragraph gives the dates "c. 1700–1760", and the 1760 end date is not hedged; the later statement that Dov Ber led the movement after his death is consistent with it.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The opening paragraph gives his dates as "c. 1700–1760" with no qualifier on the death year, and the Hasidism overview dates the circle of the BeSHT to c. 1740–1760.'
+    sources:
+      - key: eor-baal-shem-tov
+        locator: preamble
+        stance: asserts
+        excerpt: Yisraʾel ben Eliʿezer (c. 1700–1760)
+  - id: baal-shem-tov.founder-of.hasidism
+    predicate: founder-of
+    object: hasidism
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The opening calls him "the founder of the Hasidic movement in eastern Europe", and a later paragraph says Scholem suggested he "should be regarded as the founder" even though knowledge of his organizational work is scanty and the first Hasidic center was set up after his death by Dov Ber.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-hasidism-overview
+        note: "Graded A scholarly: The opening paragraph calls Yisra'el ben Eli'ezer, the BeSHT (Ba'al Shem Tov), the movement's founder."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article calls him "the founder of the Hasidic movement in eastern Europe" but later hedges, following Gershom Scholem, that he "should be regarded as" founder even though little is known of his organizational work and the first Hasidic center was set up only after his death by Dov Ber; the Hasidism overview calls him "the movement's founder".
+    sources:
+      - key: eor-baal-shem-tov
+        locator: preamble
+        stance: asserts
+        excerpt: the founder of the Hasidic movement in eastern Europe
+      - key: eor-baal-shem-tov
+        locator: preamble
+        stance: reports
+        excerpt: the Besht should be regarded as the founder of the great eastern European Hasidic movement, even though our knowledge of his organizational work is scanty
+      - key: eor-hasidism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: the movement's founder, Yisraʾel ben Eliʿezer
