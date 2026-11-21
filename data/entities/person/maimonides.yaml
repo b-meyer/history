@@ -1,0 +1,149 @@
+id: maimonides
+type: person
+names:
+  en: Maimonides
+ids:
+  wikidata: Q127398
+claims:
+  - id: maimonides.born
+    predicate: born
+    when: 1135/1138
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The heading dates his life c. 1135/8–1204 and the text says he was born in Córdoba, so the 1135/1138 birth range is stated, hedged with 'c.'.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-karaites
+        note: "Graded A scholarly: The article gives Moses Maimonides' dates as 1135/8–1204, so the birth year is 1135 or 1138."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: eor-maimonides heads the article 'MAIMONIDES, MOSES (c. 1135/8–1204)' and eor-karaites gives 'Mosheh ben Maimon, 1135/8–1204', so both put his birth in 1135/1138."
+    sources:
+      - key: eor-maimonides
+        locator: preamble
+        stance: asserts
+        excerpt: MAIMONIDES, MOSES (c. 1135/8–1204)
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: Mosheh ben Maimon, 1135/8–1204
+  - id: maimonides.died
+    predicate: died
+    when: 1204
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The heading gives his dates as c. 1135/8–1204, which fixes death at 1204; the article body has no separate death narrative.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-karaites
+        note: The article gives Moses Maimonides' dates as 1135/8–1204.
+    sources:
+      - key: eor-maimonides
+        locator: preamble
+        stance: asserts
+        excerpt: MAIMONIDES, MOSES (c. 1135/8–1204)
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: Mosheh ben Maimon, 1135/8–1204
+  - id: maimonides.member-of.rabbinic-judaism
+    predicate: member-of
+    object: rabbinic-judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: He is called a 'distinguished Talmudist, philosopher, and physician' and a central figure of halakhah and Jewish thought, which places him in rabbinic Judaism (the text does not use that label)."
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-karaites
+        note: The article says Maimonides summed up the Rabbanite attitude toward Karaites, which presents him as speaking for the Rabbanite (rabbinic) camp.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: eor-maimonides calls him a 'distinguished Talmudist' and RaMBaM ('Rabbi Mosheh ben Maimon'), and eor-karaites says he 'summed up the Rabbanite attitude' toward Karaites, which places him in the Rabbanite camp."
+    sources:
+      - key: eor-maimonides
+        locator: preamble
+        stance: asserts
+        excerpt: distinguished Talmudist, philosopher, and physician
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: summed up the Rabbanite attitude
+  - id: maimonides.active-at.cordoba
+    predicate: active-at
+    object: cordoba
+    when: 1135/1148
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says he was born in Córdoba to a family of scholars and that the family fled when the Almohads conquered the city in 1148.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Early Life and Works', eor-maimonides says he was born in Córdoba and his family fled after the Almohads took the city in 1148, so it supports residence there from birth to 1148, though as a child rather than active work.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The 'Early Life and Works' section says Maimonides (c. 1135/8–1204) was born in Córdoba and that his family fled the city after the Almohad conquest of 1148, so he lived there from birth until 1148, as a child rather than an active scholar."
+    sources:
+      - key: eor-maimonides
+        locator: preamble
+        stance: asserts
+        excerpt: Maimonides was born in Córdoba, Spain, to a family of scholars. In 1148 Córdoba was conquered by the Almohads
+  - id: maimonides.active-at.fustat
+    predicate: active-at
+    object: fustat
+    when: 1165/1204
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: eor-judaism-middle-east-north-africa-to-1492
+        note: The cited passage says only that Maimonides did most of his writing, including the Guide of the Perplexed, in Egypt, where he lived most of his life, and it never names Fusṭāṭ; the sibling source eor-maimonides does place him at Fusṭāṭ, which supports the claim only indirectly.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says that after leaving the Land of Israel in 1165 he settled in Fusṭāṭ (Old Cairo) and practised medicine there; the 1204 end date is not stated in the cited passage.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: eor-maimonides says that after leaving Morocco in 1165 and passing through the Land of Israel he settled in Fusṭāṭ (Old Cairo) and practiced medicine there (death 1204 per the heading), and eor-judaism-middle-east-north-africa-to-1492 says he did most of his writing in Egypt and lived out most of his life there, arriving around 1165.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: eor-maimonides says that after resuming his wanderings in 1165 he settled in Fusṭāṭ (Old Cairo), practised medicine and led the Jewish community, and eor-judaism-middle-east-north-africa-to-1492 says he did most of his writing in Egypt, where he lived out most of his life; neither text says outright that he died in Fusṭāṭ in 1204.'
+    sources:
+      - key: eor-maimonides
+        locator: preamble
+        stance: asserts
+        excerpt: he settled in Fusṭāṭ (Old Cairo)
+      - key: eor-judaism-middle-east-north-africa-to-1492
+        locator: preamble
+        stance: asserts
+        excerpt: did most of his writing, including his philosophic magnum opus, the Guide of the Perplexed, in Egypt, where he lived out most of his life

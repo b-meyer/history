@@ -1,0 +1,98 @@
+id: isaac-luria
+type: person
+names:
+  en: Isaac Luria
+ids:
+  wikidata: Q339509
+claims:
+  - id: isaac-luria.born
+    predicate: born
+    when: 1534
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article heading gives Luria's dates as 1534–1572, so 1534 is the birth year (the text does not say 'born in 1534' in prose).
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article's heading reads "LURIA, ISAAC (1534–1572)" and nothing in the text disputes the birth year.
+    sources:
+      - key: eor-luria-isaac
+        locator: preamble
+        stance: asserts
+        excerpt: LURIA, ISAAC (1534–1572)
+  - id: isaac-luria.died
+    predicate: died
+    when: 1572
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article heading gives Luria's dates as 1534–1572, so 1572 is the death year (the text does not say 'died in 1572' in prose).
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-qabbalah
+        note: The text refers to the premature death of Luria in 1572, after which Vital committed his views to writing.
+    sources:
+      - key: eor-luria-isaac
+        locator: preamble
+        stance: asserts
+        excerpt: LURIA, ISAAC (1534–1572)
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: With the premature death of Luria in 1572
+  - id: isaac-luria.member-of.kabbalah
+    predicate: member-of
+    object: kabbalah
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls Luria 'the preeminent qabbalist of Safad' and says his system influenced virtually all later Jewish mystical creativity.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The opening paragraph calls him "the preeminent qabbalist of Safad", and the text says he founded the Lurianic system of Jewish mysticism.
+    sources:
+      - key: eor-luria-isaac
+        locator: preamble
+        stance: asserts
+        excerpt: Isaac Luria was the preeminent qabbalist of Safad
+  - id: isaac-luria.active-at.safed
+    predicate: active-at
+    object: safed
+    when: 1570~/1572
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Luria traveled to Safad in late 1569 or early 1570, studied with Cordovero and gathered a circle of students there. It gives no date for the end of his stay, but the heading dates his death to 1572.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-qabbalah
+        note: The text says Isaac Luria rapidly moved to the center of the qabbalist community in Safad after Cordovero's death, and that he died in 1572.
+    sources:
+      - key: eor-luria-isaac
+        locator: preamble
+        stance: asserts
+        excerpt: In late 1569 or early 1570, Luria traveled to Safad and began studying with Mosheh Cordovero
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: Isaac Luria, rapidly moved to the center of the qabbalist community in Safad

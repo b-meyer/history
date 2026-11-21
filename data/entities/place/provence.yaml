@@ -1,0 +1,6 @@
+# Note: A region; the coords are a centroid (Wikidata's point for the historical province).
+id: provence
+type: place
+names: { en: Provence }
+ids: { wikidata: 'Q101081', geonames: '2985246' }
+coords: [6.0, 44.0]

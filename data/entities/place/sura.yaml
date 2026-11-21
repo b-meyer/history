@@ -1,0 +1,6 @@
+# Note: The site of the Sura academy is not precisely located; the coords are Wikidata's for the academy (Q7645256), near the Euphrates.
+id: sura
+type: place
+names: { en: Sura }
+ids: { wikidata: 'Q7645256' }
+coords: [44.45, 31.87]

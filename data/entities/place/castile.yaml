@@ -1,0 +1,6 @@
+# Note: A region; the coords are a centroid. Chosen as Old Castile around Burgos–Valladolid–Toledo (about lon -4.0, lat 41.0) rather than Wikidata's point (-3.82, 42.35), which sits north of that core.
+id: castile
+type: place
+names: { en: Castile }
+ids: { wikidata: 'Q173063' }
+coords: [-4.0, 41.0]

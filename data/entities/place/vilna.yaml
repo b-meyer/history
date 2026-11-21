@@ -1,0 +1,5 @@
+id: vilna
+type: place
+names: { en: Vilna }
+ids: { wikidata: 'Q216', geonames: '593116' }
+coords: [25.28, 54.69]

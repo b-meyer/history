@@ -1,0 +1,129 @@
+id: rabbinic-judaism
+type: school
+names:
+  en: Rabbinic Judaism
+ids:
+  wikidata: Q1366914
+claims:
+  - id: rabbinic-judaism.branch-of.judaism
+    predicate: branch-of
+    object: judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Under 'Definitions', the text says 'rabbinic' before 'Judaism' signifies a kind of Judaism named after its principal kind of leader, the rabbi, and it treats the rabbis as a distinctive amalgam 'within the Jewish nation'.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Definitions', the article says the adjective rabbinic 'signifies a kind of Judaism named after its principal kind of leader, a rabbi', and it defines Rabbinic Judaism as the worldview and way of life that rabbis applied to the Jewish nation.
+    sources:
+      - key: eor-rabbinic-judaism
+        locator: preamble
+        stance: asserts
+        excerpt: signifies a kind of Judaism named after its principal kind of leader
+  - id: rabbinic-judaism.active-at.yavneh
+    predicate: active-at
+    object: yavneh
+    when: 0068
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B tradition: The text says Yohanan ben Zakkai's academy at Yavneh was founded in 68 ce and functioned, according to rabbinic tradition, as the continuation of the Sanhedrin."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article states that Yoḥanan ben Zakkʾai founded an academy at Yavneh in 68 CE, that it and its successors became central institutions after the Temple's destruction, and that by rabbinic tradition they carried on the Sanhedrin and trained future scholars; the date and the Sanhedrin link come from rabbinic tradition, so this is graded B rather than A.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under the article's opening section (no heading), the encyclopedia says plainly that Yoḥanan ben Zakkʾai founded an academy at Yavneh in 68 ce; it does not use the term 'Rabbinic Judaism', and the same sentence leans on rabbinic tradition for the academy's role as the Sanhedrin's continuation, so the claim is an inference from the founding statement.
+    sources:
+      - key: eor-yeshivah
+        locator: preamble
+        stance: asserts
+        excerpt: The academy founded by Yoḥanan ben Zakkʾai at Yavneh in 68 ce and its successors
+  - id: rabbinic-judaism.active-at.sura
+    predicate: active-at
+    object: sura
+    when: 0219~/0300~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says Rav settled in Nehardea in 219 and shortly after moved to Sura and opened a yeshivah there, so the 219 date is only a terminus post quem for Sura and the exact founding date is not given.'
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-rabbinic-judaism
+        note: "Graded B scholarly: Under 'The Rabbi as Judge', the text introduces Rabbi Hunaʾ as 'head of the Sura academy about 300 ce' and quotes a Talmudic anecdote about him, so a rabbinic academy at Sura is stated as fact, but the date is approximate and only that one rabbi is named."
+    sources:
+      - key: eor-yeshivah
+        locator: preamble
+        stance: asserts
+        excerpt: he moved to the town of Sura and opened a yeshivah there
+      - key: eor-rabbinic-judaism
+        locator: preamble
+        stance: asserts
+        excerpt: Rabbi Hunaʾ, head of the Sura academy about 300 ce
+  - id: rabbinic-judaism.active-at.pumbedita
+    predicate: active-at
+    object: pumbedita
+    when: 0259/1038
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text states as fact that the yeshivah of Nehardea moved to Pumbedita after Nehardea was destroyed in 259; it gives no support for the 1038 end date.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-judaism-middle-east-north-africa-to-1492
+        note: The text says Sheriraʾ and his son Hʾai served consecutively as gaon of the yeshivah of Pumbedita from 968 to 1038, and elsewhere calls Pumbedita one of the two Babylonian yeshivot of rabbinic Judaism.
+    sources:
+      - key: eor-yeshivah
+        locator: preamble
+        stance: asserts
+        excerpt: The yeshivah of Nehardea moved to Pumbedita in the wake of the destruction of Nehardea in 259
+      - key: eor-judaism-middle-east-north-africa-to-1492
+        locator: preamble
+        stance: asserts
+        excerpt: whose consecutive reigns as gaon of the yeshivah of Pumbedita spanned the years 968–1038
+  - id: rabbinic-judaism.active-at.vilna
+    predicate: active-at
+    object: vilna
+    when: 17XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text calls Eliyyahu (1720–1797) the preeminent representative of rabbinism in the eighteenth century and says he settled in Vilnius (Vilna) for the rest of his life, supporting rabbinic Judaism active at Vilna in the 1700s.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article calls Eliyyahu (1720–1797) the preeminent representative of rabbinism in the eighteenth century and says he settled in Vilnius, lived there for the rest of his life and lectured to disciples there, so rabbinism was active at Vilna in the 1700s (it also says Vilnius became the center of anti-Hasidic activity under him, with excommunications in 1772 and after 1781).'
+    sources:
+      - key: eor-eliyyahu-ben-shelomoh-zalman
+        locator: preamble
+        stance: asserts
+        excerpt: the preeminent representative of rabbinism in the eighteenth century
+      - key: eor-eliyyahu-ben-shelomoh-zalman
+        locator: preamble
+        stance: asserts
+        excerpt: Eliyyahu settled in Vilnius (Vilna), where he lived for the rest of this life

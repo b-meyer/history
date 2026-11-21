@@ -1,0 +1,76 @@
+id: hillel
+type: person
+names:
+  en: Hillel
+ids:
+  wikidata: Q319219
+claims:
+  - id: hillel.born
+    predicate: born
+    when: -0049~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article heading dates Hillel to 'c. 50 bce', so a birth around 49 BCE is only approximate and the text gives no exact birth year.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article's heading gives Hillel's dates as 'c. 50 bce–early first century ce', an approximate birth date of about 50 BCE (astronomical -0049).
+    sources:
+      - key: eor-hillel
+        locator: preamble
+        stance: asserts
+        excerpt: HILLEL (c. 50 bce–early first century ce)
+  - id: hillel.died
+    predicate: died
+    when: 00XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: The heading gives his span as 'c. 50 bce–early first century ce', so he died in the early first century CE with no exact year."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: The same heading puts the end of Hillel's life in the 'early first century ce' and gives no exact year, which matches 00XX."
+    sources:
+      - key: eor-hillel
+        locator: preamble
+        stance: asserts
+        excerpt: HILLEL (c. 50 bce–early first century ce)
+  - id: hillel.active-at.jerusalem
+    predicate: active-at
+    object: jerusalem
+    when: -0049~/00XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B tradition: Hillel was a disciple of Shemaʿyah and Avṭalyon, the leading 'pair' in Jerusalem, and succeeded them as a leading teacher alongside Shammai; the article calls him pivotal in the late first century bce and early first century ce."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says Shemaʿyah and Avṭalyon preceded Hillel and Shammai as the two leading teachers (zugot) in Jerusalem, and that Hillel was a pivotal figure in the late first century BCE and early first century CE; his Jerusalem role is drawn from Talmudic tradition, which the article accepts.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article dates Hillel c. 50 bce to the early first century ce and calls him a pivotal figure in that period; it places him in Jerusalem only by implication, saying his teachers Shemaʿyah and Avṭalyon preceded him and Shammai as the leading 'pairs' (zugot) in Jerusalem, and that role rests on Talmudic tradition.
+    sources:
+      - key: eor-hillel
+        locator: preamble
+        stance: asserts
+        excerpt: who preceded Hillel and his colleague Shammai as the two leading teachers, or "pairs" (zugot), in Jerusalem
+      - key: eor-hillel
+        locator: preamble
+        stance: asserts
+        excerpt: he was a pivotal figure in Judaism during the late first century bce and the early first century ce

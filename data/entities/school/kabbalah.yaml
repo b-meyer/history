@@ -1,0 +1,125 @@
+id: kabbalah
+type: school
+names:
+  en: Kabbalah
+ids:
+  wikidata: Q123006
+claims:
+  - id: kabbalah.branch-of.judaism
+    predicate: branch-of
+    object: judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-judaism-overview
+        note: "Graded A scholarly: The text describes Qabbalah as 'a form of Jewish theology' and Jewish mysticism that grew from a small circle of mystics in the 12th-13th centuries to prominence in the later medieval and early modern period."
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says the term Qabbalah refers in general to Jewish mysticism from the twelfth century onward, and calls it the main term for Jewish mystical traditions.'
+    sources:
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: the term Qabbalah refers in general to Jewish mysticism from the twelfth century onward
+      - key: eor-judaism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: its prominence as a form of Jewish theology in the later medieval period and early modern period
+  - id: kabbalah.active-at.safed
+    predicate: active-at
+    object: safed
+    when: 1540/1590
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-judaism-overview
+        note: The text says that in Safed in Palestine in the sixteenth century, teachers such as Isaac Luria redrew Qabbalah's cosmology and eschatology, which fits 1540/1590.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says that beginning in the 1540s Safad rapidly acquired a dominant place in qabbalistic activity and for half a century was the arena of crucial developments.
+    sources:
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: Beginning in the 1540s, the small Galilean village of Safad rapidly acquired a dominant place in qabbalistic activity. For half a century, Safad was the arena of crucial developments in the history of Qabbalah.
+      - key: eor-judaism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: In the town of Safed in Palestine in the sixteenth century charismatic teachers such as Isaac Luria redrew the Qabbalah's cosmology and eschatology
+  - id: kabbalah.active-at.jerusalem
+    predicate: active-at
+    object: jerusalem
+    when: 15XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says that at the very beginning of the sixteenth century Jerusalem became an important center of qabbalistic studies, naming Albotini, ibn Saiah and ha-Levi.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Historical Survey' the article says that at the very beginning of the sixteenth century Jerusalem became an important center of qabbalistic studies, naming Yehudah Albotini, Yosef ibn Saiah and Avraham ben Eli'ezer ha-Levi."
+    sources:
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: At the very beginning of the sixteenth century, Jerusalem became an important center of qabbalistic studies
+  - id: kabbalah.active-at.provence
+    predicate: active-at
+    object: provence
+    when: 1150/1199
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says the first written evidence of theosophical and theurgical thought in Judaism comes from Provence in the second half of the twelfth century.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Historical Survey' the article says the first written evidence of theosophical and theurgical thought in Judaism comes from Provence in the second half of the twelfth century, with Avraham ben David of Posquieres among its full-fledged qabbalists."
+    sources:
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: The first written evidence of the existence of theosophical and theurgical thought in Judaism comes from Provence, in southern France, in the second half of the twelfth century.
+  - id: kabbalah.active-at.castile
+    predicate: active-at
+    object: castile
+    when: 1280/1335
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says qabbalistic creativity passed to Castile, where it had a renaissance, and that the Zohar circulated among Castilian qabbalists beginning in 1280, with Zohar-related works produced between 1285 and 1335.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Historical Survey' the article says the center of qabbalistic creativity passed from Catalonia to Castile, where the Zohar circulated among Castilian qabbalists from 1280 and qabbalists produced Zohar translations, commentaries and imitations between 1285 and 1335."
+    sources:
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: the center of qabbalistic creativity passed to Castile, where it underwent a renaissance
+      - key: eor-qabbalah
+        locator: preamble
+        stance: asserts
+        excerpt: a collection of mystical writings that was circulated among the Castilian qabbalists beginning in 1280

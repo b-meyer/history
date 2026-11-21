@@ -1,0 +1,61 @@
+id: essenes
+type: school
+names:
+  en: Essenes
+ids:
+  wikidata: Q189204
+claims:
+  - id: essenes.branch-of.judaism
+    predicate: branch-of
+    object: judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article opens by stating the Essenes were a sect of Jews during the Hasmonean and Roman periods (c. 150 bce-74 ce), with no dispute.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article's opening paragraph says plainly that the Essenes were a sect of Jews in the Hasmonean and Roman periods (c. 150 bce-74 ce), and nothing in the text disputes it.
+    sources:
+      - key: eor-essenes
+        locator: preamble
+        stance: asserts
+        excerpt: The Essenes were a sect of Jews during the Hasmonean and Roman periods of Jewish history (c. 150 bce–74 ce).
+  - id: essenes.active-at.qumran
+    predicate: active-at
+    object: qumran
+    when: -0165/0074
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says most scholars hold the scrolls were the Essenes' library and that they settled at Qumran, but also says the identification's main weakness is that the word Essene is absent from the scrolls, and it lists discrepancies (communal meals, property, apocalyptic outlook), so it is a majority view rather than settled fact.
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-dead-sea-scrolls
+        note: "Graded B scholarly: The cited passage (under the 'Dating' heading) says only that a sect, not named as Essenes, occupied Qumran from after 166–164 bce until 66–74 ce, which it calls certain; the Essene identification is stated separately as 'dominant scholarly opinion' and is qualified by differences from Josephus and Philo, so the date range is solid but the Essene label is probable, not certain."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: eor-essenes reports that most scholars take the scrolls to be the Essenes' library and so place the Essenes at Qumran, but it calls the absence of the word Essene from the scrolls the main weakness of that identification and keeps it conditional ('If, indeed...'). eor-dead-sea-scrolls dates the sect's occupation of Qumran from after 166-164 bce to 66-74 ce, but treats its identification with the Essenes only as the dominant scholarly opinion and notes points where the scrolls disagree with the Essene accounts.
+    sources:
+      - key: eor-essenes
+        locator: preamble
+        stance: reports
+        excerpt: the majority of scholars have taken the view that these documents were the library of the Essenes who, accordingly, were settled at Qumran
+      - key: eor-dead-sea-scrolls
+        locator: preamble
+        stance: asserts
+        excerpt: a sect that occupied the Qumran area from after the Maccabean Revolt of 166–164 bce until the great revolt against Rome of 66–74 ce
+      - key: eor-essenes
+        locator: preamble
+        stance: reports
+        excerpt: The main weakness of the identification of these two groups is the fact that the word Essene or its equivalent is not present in the Qumran scrolls.

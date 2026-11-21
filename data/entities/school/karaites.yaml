@@ -1,0 +1,119 @@
+id: karaites
+type: school
+names:
+  en: Karaites
+ids:
+  wikidata: Q208398
+claims:
+  - id: karaites.branch-of.judaism
+    predicate: branch-of
+    object: judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article opens by calling the Karaites a Jewish sect that accepts only the Hebrew Bible and denies the Oral Law.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The opening paragraph calls the Karaites 'a Jewish sect' that accepts the Hebrew Bible as its only source of law and rejects the Oral Law, and says they are the oldest surviving Jewish sect apart from the Samaritans.
+    sources:
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: The Karaites (Heb., Qaraʾim ; Arab., Qarāʾīyūn ) are a Jewish sect
+  - id: karaites.splits-from.rabbinic-judaism
+    predicate: splits-from
+    object: rabbinic-judaism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The article says postbiblical rabbinic tradition gave rise to further dissent, and that Saʿadyah's polemics effected a decisive break between the two camps that has never healed."
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-judaism-middle-east-north-africa-to-1492
+        note: Under 'The Rise of Karaite Judaism', the article says the growth of the rabbinic tradition 'gave rise to further dissent' and that Saʿadyah's polemics 'effected a decisive break between the two camps that has never healed'. It also describes the origin as several dissident groups merging over time, not one secession, and says the Rabbanite account of ʿAnan as founder 'suffers from a number of historical and psychological difficulties'.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'The Rise of Karaite Judaism', the article says the codification of the rabbinic tradition gave rise to further dissent, with the Karaites rejecting the Oral Law, and that Saadyah's polemics 'effected a decisive break between the two camps that has never healed'; it disputes only the early Rabbanite account of how the movement began (Anan ben David), not the split."
+    sources:
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: The growth and eventual codification of the postbiblical rabbinic tradition in turn gave rise to further dissent.
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: effected a decisive break between the two camps that has never healed
+  - id: karaites.active-at.jerusalem
+    predicate: active-at
+    object: jerusalem
+    when: 0901/1100
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article says that in the tenth and eleventh centuries Karaite scholars connected with the academy in Jerusalem produced important works.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Karaite Literature', the article says that in the tenth and eleventh centuries Karaite scholars connected with the academy in Jerusalem produced important works. Under 'The Rise of Karaite Judaism' it adds that a Karaite academy flourished in Jerusalem and that the Mourners for Zion settled there from the early tenth century."
+    sources:
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: In the tenth and eleventh centuries, Karaite scholars connected with the academy in Jerusalem produced a number of important works
+  - id: karaites.active-at.fustat
+    predicate: active-at
+    object: fustat
+    when: 1001/1200
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article says the Cairo Karaite community remained intact into the late twentieth century, though its prestige declined in the twelfth. It names Cairo, not Fusṭāṭ, and does not give the 1001/1200 span explicitly.
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says the Karaite community of Egypt grew in wealth and importance in the eleventh century, and that 'the Cairo community remained intact' while losing prestige in the twelfth. It never names Fusṭāṭ, so equating that place with 'Cairo' is an inference the text does not make.
+    sources:
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: While the Cairo community remained intact
+  - id: karaites.active-at.constantinople
+    predicate: active-at
+    object: constantinople
+    when: 14XX/16XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-20
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article says Constantinople remained the leading Karaite center until the seventeenth century, when it went into steep decline. This agrees with the 14XX/16XX span, but the article gives no start date.'
+      - on: 2026-11-20
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The article says 'Constantinople remained the leading Karaite center until the seventeenth century when it went into a steep decline'. It also names Karaite scholars there in the mid-fifteenth century (Bashyatchi, Afendopolo, Gibbor) and a dispute within the community over Sabbath lights in the late fifteenth and early sixteenth centuries."
+    sources:
+      - key: eor-karaites
+        locator: preamble
+        stance: asserts
+        excerpt: Constantinople remained the leading Karaite center until the seventeenth century

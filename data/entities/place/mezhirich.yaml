@@ -1,0 +1,6 @@
+# Note: Mezhyrichi (Międzyrzec Korecki), Korets Raion, Rivne Oblast, Ukraine: the Maggid Dov Ber's town. Not Międzyrzec Podlaski or Międzyrzecz in western Poland.
+id: mezhirich
+type: place
+names: { en: Mezhirich }
+ids: { wikidata: 'Q2580559', geonames: '701291' }
+coords: [26.86, 50.66]
