@@ -1,0 +1,5 @@
+id: tiberias
+type: place
+names: { en: Tiberias }
+ids: { wikidata: 'Q151920', pleiades: '678431', geonames: '293322' }
+coords: [35.54, 32.79]

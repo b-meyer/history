@@ -1,0 +1,5 @@
+id: safed
+type: place
+names: { en: Safed }
+ids: { wikidata: 'Q188336', geonames: '293100' }
+coords: [35.50, 32.97]

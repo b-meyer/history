@@ -1,0 +1,5 @@
+id: qumran
+type: place
+names: { en: Qumran }
+ids: { wikidata: 'Q223399', pleiades: '688011', geonames: '282303' }
+coords: [35.46, 31.74]

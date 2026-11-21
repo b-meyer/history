@@ -1,0 +1,6 @@
+# Note: The site is not precisely located; the coords are Pleiades' representative point for Pumbedita/Anbar/Peroz-Shapur (near Fallujah).
+id: pumbedita
+type: place
+names: { en: Pumbedita }
+ids: { wikidata: 'Q2067193', pleiades: '894043' }
+coords: [43.72, 33.38]

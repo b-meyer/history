@@ -1,0 +1,5 @@
+id: yavneh
+type: place
+names: { en: Yavneh }
+ids: { wikidata: 'Q167677', pleiades: '687925', geonames: '293222' }
+coords: [34.74, 31.88]

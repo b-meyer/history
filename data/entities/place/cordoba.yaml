@@ -1,0 +1,5 @@
+id: cordoba
+type: place
+names: { en: Córdoba }
+ids: { wikidata: 'Q5818', pleiades: '256128', geonames: '6357216' }
+coords: [-4.78, 37.88]

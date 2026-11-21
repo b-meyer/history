@@ -1,0 +1,5 @@
+id: jerusalem
+type: place
+names: { en: Jerusalem }
+ids: { wikidata: 'Q1218', pleiades: '687928', geonames: '281184' }
+coords: [35.23, 31.78]
