@@ -1,0 +1,87 @@
+id: lutheranism
+type: school
+names:
+  en: Lutheranism
+ids:
+  wikidata: Q75809
+claims:
+  - id: lutheranism.splits-from.roman-catholicism
+    predicate: splits-from
+    object: roman-catholicism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says princes, peasants, patricians, priests and bishops joined the Lutheran cause mainly to break from Rome, and that princes wanted to be free of Rome's domination."
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-luther-martin
+        note: "Graded A scholarly: The text says the bull Decet Romanum Pontificem excommunicated Luther on January 3, 1521, which supports the break with Rome, though it does not use the word 'Lutheranism' or describe a split."
+    sources:
+      - key: eor-lutheranism
+        locator: preamble
+        stance: asserts
+        excerpt: Princes, peasants, patricians, priests, and even bishops joined the Lutheran cause, mainly to break from Rome.
+      - key: eor-luther-martin
+        locator: preamble
+        stance: asserts
+        excerpt: the bull Decet Romanum Pontificem (It Pleases the Roman Pontiff) excommunicated Luther
+  - id: lutheranism.active-at.wittenberg
+    predicate: active-at
+    object: wittenberg
+    when: 1522-03
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: eor-lutheranism
+        note: The text refers to Luther's liturgical reforms in Wittenberg, which places Lutheranism there, but it gives no date, so 1522-03 is not supported.
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says Luther returned to Wittenberg in March 1522 to calm the unrest there over the reform movement.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: eor-luther-martin says Luther returned to Wittenberg in March 1522 to calm restlessness over the reform movement there and preached a conservative notion of reform, and eor-lutheranism refers to Luther's liturgical reforms in Wittenberg without a date; calling the 1522 movement 'Lutheranism' is an inference, since eor-lutheranism notes that his supporters first called themselves 'evangelical'.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-reformation
+        note: The Luther article (History section) says Luther returned to Wittenberg in March 1522 to calm restlessness over the reform movement there and preached a conservative program of reform, and the Lutheranism article (Teaching and Worship) refers to his liturgical reforms in Wittenberg; neither uses the word 'Lutheranism' for 1522, so the claim reads 'Luther's reform movement' as Lutheranism.
+    sources:
+      - key: eor-luther-martin
+        locator: preamble
+        stance: asserts
+        excerpt: He returned to Wittenberg in March 1522 to calm the restlessness that had surfaced there over the nature of the reform movement.
+      - key: eor-lutheranism
+        locator: preamble
+        stance: asserts
+        excerpt: Following Luther's careful liturgical reforms in Wittenberg
+  - id: lutheranism.branch-of.christianity
+    predicate: branch-of
+    object: christianity
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-22
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text describes Protestant northern Europe as divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity, treating Lutheranism as a form of Christianity.
+      - on: 2026-11-22
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Post-Reformation Christianity' the article says the predominantly Protestant north of post-Reformation Europe was divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity, naming Lutheranism as a form of Christianity.
+    sources:
+      - key: eor-christianity-overview
+        locator: preamble
+        stance: asserts
+        excerpt: divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity

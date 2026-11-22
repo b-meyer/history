@@ -1,0 +1,5 @@
+id: canterbury
+type: place
+names: { en: Canterbury }
+ids: { wikidata: 'Q29303', pleiades: '79439', geonames: '2653877' }
+coords: [1.08, 51.28]

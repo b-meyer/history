@@ -1,0 +1,69 @@
+id: paul
+type: person
+names:
+  en: Paul
+ids:
+  wikidata: Q9200
+claims:
+  - id: paul.died
+    predicate: died
+    when: 0062
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The article’s opening line dates Paul’s death as "d. 62 ce", and the body says he was executed two years after arriving in Rome in 60 ce.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: The article opens with 'PAUL THE APOSTLE (d. 62 ce)' and later says he was summarily executed two years after reaching Rome in spring 60, but its preamble also admits scholars cannot agree 'even on the chronology' of his life, so the date is one reconstruction."
+    sources:
+      - key: eor-paul-apostle
+        locator: preamble
+        stance: asserts
+        excerpt: PAUL THE APOSTLE (d. 62 ce)
+  - id: paul.active-at.antioch
+    predicate: active-at
+    object: antioch
+    when: 004X
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says "By the early 40s, Paul was working in cooperation with the dynamic center of Hellenistic Christianity in Antioch."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'From Pharisee to Christian missionary' the article says that by the early 40s Paul was working with the Hellenistic Christian center in Antioch and helped lead its mission to Cyprus and southern Galatia around 43-45 (Acts 13-14), a reconstruction the author builds from Acts and Galatians.
+    sources:
+      - key: eor-paul-apostle
+        locator: preamble
+        stance: asserts
+        excerpt: By the early 40s, Paul was working in cooperation with the dynamic center of Hellenistic Christianity in Antioch.
+  - id: paul.active-at.rome
+    predicate: active-at
+    object: rome
+    when: 0060/0062
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Paul reached Rome in chains in spring 60 ce after appealing to the emperor, and two years later, when Nero restored the treason law, he was summarily executed.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'From Corinth to Rome as diplomat and prisoner' the article says Paul reached Rome in chains in spring 60 ce after appealing to the emperor and was executed two years later when Nero restored the treason law, which puts him in Rome from 60 to 62 as a prisoner, within a chronology the article admits is disputed.
+    sources:
+      - key: eor-paul-apostle
+        locator: preamble
+        stance: asserts
+        excerpt: he appealed his case to the emperor in Rome. Thus he arrived at his desired destination in the spring of 60 ce, but in chains. Two years later, when Nero restored the treason law, Paul was summarily executed.

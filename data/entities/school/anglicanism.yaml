@@ -1,0 +1,82 @@
+id: anglicanism
+type: school
+names:
+  en: Anglicanism
+ids:
+  wikidata: Q6423963
+claims:
+  - id: anglicanism.splits-from.roman-catholicism
+    predicate: splits-from
+    object: roman-catholicism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says the settlement that produced the Church of England 'emerged from the break with Rome occasioned by the divorce of Henry VIII', so Anglicanism separated from Roman authority."
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-reformation
+        note: In the Reformation in England section, after the 1533 Act in Restraint of Appeals the king had broken with the papal church; the cited sentence does not name Anglicanism or the Church of England.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Europe in the Reformation' the article says the Church of England's settlement emerged from 'the break with Rome occasioned by the divorce of Henry VIII', and eor-reformation ('The Reformation in England') says that after the 1533 Act in Restraint of Appeals 'the king had broken with the papal church.'"
+    sources:
+      - key: eor-christianity-western-europe
+        locator: preamble
+        stance: asserts
+        excerpt: the break with Rome occasioned by the divorce of Henry VIII
+      - key: eor-reformation
+        locator: preamble
+        stance: asserts
+        excerpt: The king had broken with the papal church.
+  - id: anglicanism.active-at.canterbury
+    predicate: active-at
+    object: canterbury
+    when: 1533/1556
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text (line 15, under the Early History heading) says the 1549 and 1552 prayer books were chiefly the work of Archbishop Thomas Cranmer of Canterbury (1533–1556), and says Elizabeth's Canterbury was vacant at her accession and filled by Parker, so Anglicanism's centre at Canterbury is clear, but the article does not use the word 'Anglicanism' for the 1533–1556 period itself, only the English Reformation that it says Anglicanism stems from."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: flagged
+        note: The passage gives only Cranmer's tenure as archbishop of Canterbury (1533–1556) while crediting him with the 1549/1552 prayer books, and the same article says Mary I (r. 1553–1558) restored papal authority and burned Cranmer, so it does not show Anglicanism active at Canterbury in 1533 or 1556; those dates are an office tenure, not dates of Anglican activity.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-reformation
+        note: Under 'Early History', the source says the 1549 and 1552 prayer books were 'chiefly the work of Archbishop Thomas Cranmer of Canterbury (1533–1556), whom Queen Mary had burned as a heretic', and its archbishops list also gives Cranmer 1533-1556; the claim is an inference from his tenure, since the text never says Anglicanism was 'active at Canterbury', and the end date is weak because Canterbury was under Mary's Catholic restoration by 1556 (Reginald Pole follows him in the list).
+    sources:
+      - key: eor-anglicanism
+        locator: preamble
+        stance: asserts
+        excerpt: Archbishop Thomas Cranmer of Canterbury (1533–1556)
+  - id: anglicanism.branch-of.christianity
+    predicate: branch-of
+    object: christianity
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-22
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The same sentence lists Anglican as one of the forms of Christianity into which the Protestant north was divided.
+      - on: 2026-11-22
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Post-Reformation Christianity' the article says the predominantly Protestant north of post-Reformation Europe was divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity, naming Anglicanism as a form of Christianity.
+    sources:
+      - key: eor-christianity-overview
+        locator: preamble
+        stance: asserts
+        excerpt: divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity

@@ -1,0 +1,107 @@
+id: oriental-orthodoxy
+type: school
+names:
+  en: Oriental Orthodoxy
+ids:
+  wikidata: Q49377
+claims:
+  - id: oriental-orthodoxy.branch-of.christianity
+    predicate: branch-of
+    object: christianity
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article says the Eastern churches are divided into four great families and describes the Oriental Orthodox family (Coptic, Syrian, Armenian) as the largest in the Middle East by number of faithful.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'A Plural Presence' the article says the Eastern churches 'have been divided into four great families', and its first subsection says the Oriental Orthodox family (Coptic, Syrian Orthodox and Armenian Apostolic churches) has the most faithful in the Middle East, separating from the other churches in the fifth century over Chalcedon."
+    sources:
+      - key: eor-christianity-middle-east
+        locator: preamble
+        stance: asserts
+        excerpt: the Eastern churches have been divided into four great families.
+      - key: eor-christianity-middle-east
+        locator: preamble
+        stance: asserts
+        excerpt: The Oriental Orthodox family is the most important in terms of the number of faithful living in the Middle East.
+  - id: oriental-orthodoxy.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: 064X
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says the anti-Chalcedonian (Coptic) patriarch Benjamin was a fugitive within Egypt until the Arab conquest of the early 640s, and that after the fall of Alexandria the conquerors gave him safe-conduct and the churches the Chalcedonians had held, but it never says he was in Alexandria itself.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: Under 'From Chalcedon to the Arab Conquest' the article says the Arab conquest of Egypt in the early 640s began a new era, and that after the fall of Alexandria the conquerors gave the anti-Chalcedonian (miaphysite) Coptic patriarch Benjamin safe-conduct and the churches the Chalcedonians had held; it implies, but never says outright, that his church was active in Alexandria itself."
+    sources:
+      - key: eor-coptic-church
+        locator: preamble
+        stance: asserts
+        excerpt: With the Arab conquest of Egypt in the early 640s, however, a new era began for Egyptian Christians
+      - key: eor-coptic-church
+        locator: preamble
+        stance: asserts
+        excerpt: after the fall of Alexandria, the conquerors offered the fugitive Coptic patriarch Benjamin honorable safe-conduct
+  - id: oriental-orthodoxy.active-at.antioch
+    predicate: active-at
+    object: antioch
+    when: 0512-11
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says the Monophysites found a spokesman in Severus, who in November 512 was promoted to be patriarch of Antioch and ruled six years, developing their theology, with communion among the four Eastern patriarchates maintained.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says the Monophysites found a spokesman in Severus, who was made patriarch of Antioch in November 512 and ruled for six years; it does not use the name 'Oriental Orthodoxy' and dates the schism from Byzantine orthodoxy to 529/30, so equating the movement in 512 with that church is an inference.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: "The article says the Monophysites found their spokesman in Severus, who became patriarch of Antioch in November 512 and held the see for six years under Anastasius. Calling this 'Oriental Orthodoxy' is the claim's own label: the article dates the separate Monophysite hierarchy and the schism only from 529/30."
+    sources:
+      - key: eor-monophysitism
+        locator: preamble
+        stance: asserts
+        excerpt: Severus, a monk from a noble ecclesiastical family in Pisidia who in November 512 was promoted to be patriarch of Antioch
+  - id: oriental-orthodoxy.active-at.etchmiadzin
+    predicate: active-at
+    object: etchmiadzin
+    when: 1441
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The source states the catholicate see was returned to its original site at Echmiadzin in 1441 (and a later paragraph says the catholicos still resides there as head of the Armenian church), though the Cilician see's refusal to comply is noted as an unresolved division."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article states as fact that a church assembly returned the Armenian catholicate from Cilicia to its original site at Echmiadzin in 1441, though the Sis incumbent refused and the Cilician see carried on separately; it also says the Armenian church, with the Coptic and Syrian Orthodox churches, accepts only the first three councils and rejects Chalcedon, but it never uses the term 'Oriental Orthodoxy', so that label is inferred.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-christianity-middle-east
+        note: Under 'Historical Development of the Church in Armenia', eor-armenian-church says the Armenian catholicate, based in Cilicia since 1116, was moved back to its original site at Echmiadzin in 1441 by a church assembly, though the Sis incumbent refused to go along; the article never uses the term 'Oriental Orthodox', so linking the Armenian church to Oriental Orthodoxy depends on its Doctrine section (it accepts only the first three councils, like the Coptic and Syrian Orthodox churches) and on another source.
+    sources:
+      - key: eor-armenian-church
+        locator: preamble
+        stance: asserts
+        excerpt: The see was returned to its original site at Echmiadzin in 1441.

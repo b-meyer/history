@@ -1,0 +1,5 @@
+id: hippo
+type: place
+names: { en: Hippo }
+ids: { wikidata: 'Q858024', pleiades: '305090', geonames: '2493847' }
+coords: [7.75, 36.88]

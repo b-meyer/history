@@ -1,0 +1,133 @@
+id: augustine
+type: person
+names:
+  en: Augustine
+ids:
+  wikidata: Q8018
+claims:
+  - id: augustine.born
+    predicate: born
+    when: 0354
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article's opening heading and sentence give Augustine of Hippo's dates as (354–430), so birth in 354.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article's opening line gives Augustine's dates as 354–430, so it places his birth in 354.
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: AUGUSTINE OF HIPPO (354–430)
+  - id: augustine.died
+    predicate: died
+    when: 0430-08-28
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text states 'On August 28, 430, while prayers were being offered in the churches of Hippo, Augustine died.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Final Years' the article states that Augustine died on August 28, 430, while Hippo was under Vandal siege.
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: On August 28, 430, while prayers were being offered in the churches of Hippo, Augustine died.
+  - id: augustine.active-at.hippo
+    predicate: active-at
+    object: hippo
+    when: 0391/0430
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: A chance visit to Hippo Regius in 391 led to his conscription as priest, and he died at Hippo on August 28, 430 while Vandals besieged it.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says a visit to Hippo Regius in 391 led to his ordination there and that he died at Hippo on August 28, 430.
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: a chance visit to Hippo Regius (present-day Annaba, Algeria) in 391 resulted in his conscription
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: On August 28, 430, while prayers were being offered in the churches of Hippo, Augustine died.
+  - id: augustine.active-at.milan
+    predicate: active-at
+    object: milan
+    when: 0387
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says that in Milan at Easter of 387 Augustine, with Adeodatus and Alypius, was baptized by Ambrose.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text places him in Milan as public orator and says he was baptized there by Ambrose at Easter 387.
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: In Milan at Easter of 387, along with Adeodatus and Alypius, Augustine was baptized by Ambrose.
+  - id: augustine.influenced-by.paul
+    predicate: influenced-by
+    object: paul
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says he took up his duties as parish priest using Paul as guide and 'found in Paul his theological mentor.'"
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says that as a priest at Hippo Augustine used Paul as his guide and found in Paul his theological mentor, and that Paul's message figured in his conversion in 386."
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: He found in Paul his theological mentor.
+  - id: augustine.influenced-by.plotinus
+    predicate: influenced-by
+    object: plotinus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says Augustine and his associates were introduced to Plato via Plotinus's teachings, that the Platonic conception of God became a key to understanding Christ, and that he later combined the writings of Plotinus with the Gospel of John."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says Augustine and his associates were introduced to Plato through the teachings of Plotinus in Milan, and that he later combined the Gospel of John with Plotinus's writings."
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: Augustine and his associates were introduced to Plato via the teachings of Plotinus

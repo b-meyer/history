@@ -1,0 +1,97 @@
+id: origen
+type: person
+names:
+  en: Origen
+ids:
+  wikidata: Q170472
+claims:
+  - id: origen.born
+    predicate: born
+    when: 0185~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Under the heading Life, the text says Origen was probably born in Alexandria in 185, so the hedged date matches.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The Life section says Origen 'was probably born in Alexandria in 185' and the headline gives c. 185; it also warns that the events of his life are hard to date precisely.
+    sources:
+      - key: eor-origen
+        locator: preamble
+        stance: asserts
+        excerpt: Origen was probably born in Alexandria in 185
+  - id: origen.died
+    predicate: died
+    when: 0254~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Under the heading Life, the text says he died, probably in 254, after the Decian persecution broke his health.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says that after the Decian persecution broke his health 'he died, probably in 254', which matches the headline's c. 254.
+    sources:
+      - key: eor-origen
+        locator: preamble
+        stance: asserts
+        excerpt: he died, probably in 254
+  - id: origen.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: 0202/0215
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says that in 202 he opened a school and trained catechumens at Alexandria, and that he was forced to leave the city in 215.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: In 202 Origen opened a school of rhetoric in Alexandria and Bishop Demetrius set him to train catechumens; during this 'first Alexandrian period' he was forced to leave the city in 215, though the article notes that dating his life precisely is difficult.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The Life section says that after his father's martyrdom in 202 Origen opened a school of rhetoric and Bishop Demetrius of Alexandria gave him the training of catechumens, and that Origen 'was forced to leave the city in 215' (he was later called back to Alexandria)."
+    sources:
+      - key: eor-origen
+        locator: preamble
+        stance: asserts
+        excerpt: In 202, when he was seventeen, his father was martyred (by beheading) during the persecution of Septimius Severus. To support his family, Origen opened a school of rhetoric, and at the same time Bishop Demetrius of Alexandria assigned to him the task of training catechumens.
+      - key: eor-origen
+        locator: preamble
+        stance: asserts
+        excerpt: Origen was forced to leave the city in 215.
+  - id: origen.active-at.caesarea
+    predicate: active-at
+    object: caesarea
+    when: 0231~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says that about 231 he was ordained a priest at Caesarea by Theoctistus and Alexander; the date is approximate.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: About 231 Origen was ordained a priest at Caesarea by Theoctistus and Alexander; after Egypt expelled him he was welcomed to Caesarea, where he opened a school and kept writing, and he had already preached there briefly after 215.'
+    sources:
+      - key: eor-origen
+        locator: preamble
+        stance: asserts
+        excerpt: About 231 Origen was invited by the bishops of Achaia (Greece) to debate with heretics in Athens. Passing through Palestine, he was ordained a priest at Caesarea by Theoctistus and Alexander.

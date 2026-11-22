@@ -1,0 +1,5 @@
+id: caesarea
+type: place
+names: { en: Caesarea }
+ids: { wikidata: 'Q319242', pleiades: '678401', geonames: '294716' }
+coords: [34.89, 32.50]
