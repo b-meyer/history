@@ -1,0 +1,90 @@
+id: eastern-orthodoxy
+type: school
+names:
+  en: Eastern Orthodoxy
+ids:
+  wikidata: Q35032
+claims:
+  - id: eastern-orthodoxy.branch-of.christianity
+    predicate: branch-of
+    object: christianity
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text describes a schism of the one Church into a Western (eventually Roman Catholic) and an Eastern (eventually Orthodox) Church, and calls Eastern Orthodoxy one of the Christian traditions contending in eastern Europe.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article calls the Eastern (eventually Eastern or Orthodox) Church one side of the schism within the Christian Church, and says the early Greek tradition of Christianity was preserved in what later came to be called the Eastern or Greek Orthodox Church.'
+    sources:
+      - key: eor-christianity-eastern-europe
+        locator: preamble
+        stance: asserts
+        excerpt: schism between the Western (eventually Roman Catholic) Church and the Eastern (eventually Eastern or Orthodox) Church
+  - id: eastern-orthodoxy.active-at.constantinople
+    predicate: active-at
+    object: constantinople
+    when: 1453
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: After 1453 the Ottomans made the Ecumenical Patriarchate of Constantinople head of the Rum Millet, with civil and religious authority over all Orthodox, so the church was active there in 1453 and after.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says that after Constantinople fell in 1453 the Ottomans made the Ecumenical Patriarchate of Constantinople head of the Rum Millet, the Roman Orthodox people, so the Orthodox Church was active there in 1453 (para. 107 also says the Church of Constantinople then came under Muslim domination).'
+    sources:
+      - key: eor-eastern-christianity
+        locator: preamble
+        stance: asserts
+        excerpt: After the fall of Constantinople in 1453, the Orthodox world, with the exception of Russia, was under the domination of the Ottomans. The Ottomans designated the Ecumenical Patriarchate of Constantinople as the head of the "Rum Millet,"
+  - id: eastern-orthodoxy.active-at.kiev
+    predicate: active-at
+    object: kiev
+    when: 0988/1240
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says Kiev adopted Christianity in 988 and the church flourished there until the Mongols came in 1240.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says Christianity was adopted in Kiev in 988 and the church flourished until the Mongols came in 1240; para. 83 also dates the formal conversion of Kiev under Prince Vladimir, with its bond to the Church of Constantinople, to 988.'
+    sources:
+      - key: eor-eastern-christianity
+        locator: preamble
+        stance: asserts
+        excerpt: adoption of Christianity in Kiev in 988, the church flourished until the coming of Mongols in 1240.
+  - id: eastern-orthodoxy.active-at.moscow
+    predicate: active-at
+    object: moscow
+    when: 1448
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says that by the fourteenth century Moscow was the center of religious life, and that its metropolitan led the Russian church, which became autocephalous in 1448.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says the center of Russian religious life had moved to Moscow by the fourteenth century and that the Church of Russia, led by the metropolitan of Moscow, became autocephalous and independent of Constantinople in 1448.'
+    sources:
+      - key: eor-eastern-christianity
+        locator: preamble
+        stance: asserts
+        excerpt: The Church of Russia, led by the metropolitan of Moscow, became autocephalous and independent from Constantinople in 1448.

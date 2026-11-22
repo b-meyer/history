@@ -1,0 +1,78 @@
+id: church-of-the-east
+type: school
+names:
+  en: Church of the East
+ids:
+  wikidata: Q989799
+claims:
+  - id: church-of-the-east.branch-of.christianity
+    predicate: branch-of
+    object: christianity
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The article treats the Assyrian Church or Church of the East (120,000 members) as a Christian church that split off at the Council of Ephesus in 431, but it files it under the Oriental Orthodox family, a grouping that other scholarship usually does not use.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'The Oriental Orthodox family' the article names the Assyrian Church or Church of the East (120,000 members in the Middle East) as a Christian church that separated from the other churches at Ephesus (431) over Nestorius; it places it inside the Oriental Orthodox family, an unusual grouping, but that does not affect its standing as a branch of Christianity."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-eastern-christianity
+        note: "Graded A scholarly: Under 'A Plural Presence / The Oriental Orthodox family', the text says the Assyrian Church or Church of the East (120,000 members in the Middle East) is one of the Middle East's Christian churches and that it separated from the other churches at the Council of Ephesus (431) over Nestorius; it places the church within the Oriental Orthodox family, and eor-eastern-christianity disputes only that placement (the church 'has had little formal contact with either the Orthodox Church or the Oriental Orthodox Churches'), not that it is Christian."
+    sources:
+      - key: eor-christianity-middle-east
+        locator: preamble
+        stance: asserts
+        excerpt: The Assyrian Church or Church of the East (120,000 members in the Middle East) also forms part of the Oriental Orthodox family.
+  - id: church-of-the-east.active-at.seleucia-ctesiphon
+    predicate: active-at
+    object: seleucia-ctesiphon
+    when: 0410
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text states that at a synod convened in 410 the metropolitan of Seleucia-Ctesiphon was made a catholicos, which shows an organized church there in 410.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article states as fact that a synod convened in 410 by Marutha of Miya-farqin made the metropolitan of Seleucia-Ctesiphon a catholicos, so the church was organized and active there in 410.'
+    sources:
+      - key: eor-nestorian-church
+        locator: preamble
+        stance: asserts
+        excerpt: At a synod convened in 410 by Marutha of Miya-farqin, who was sent by the emperor and the patriarch, the metropolitan of Seleucia-Ctesiphon was made a catholicos
+  - id: church-of-the-east.active-at.edessa
+    predicate: active-at
+    object: edessa
+    when: 0489
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says many students of the school of Edessa became Nestorian partisans and that Zeno closed the school in 489, so it places Nestorian activity at Edessa then. It does not call that group the Church of the East.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: flagged
+        note: The text says students of the school of Edessa became Nestorian partisans and that Zeno closed the school in 489, after which they left for Persia; it describes an expulsion from Edessa in 489, not the Church of the East operating there that year.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: The article says many students of the school of Edessa became Nestorian partisans until Emperor Zeno closed the school in 489, when many left for Persia; it treats Edessa as the church's religious center, so the 489 activity is a reasonable reading but is put in terms of Nestorian students at the school, not the church as an institution."
+    sources:
+      - key: eor-nestorian-church
+        locator: preamble
+        stance: asserts
+        excerpt: many students of the celebrated school of Edessa became Nestorian partisans. When the emperor Zeno, in retaliation, closed it in 489, many of these Nestorian students left for Persia

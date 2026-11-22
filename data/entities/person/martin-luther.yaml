@@ -1,0 +1,93 @@
+id: martin-luther
+type: person
+names:
+  en: Martin Luther
+ids:
+  wikidata: Q9554
+claims:
+  - id: martin-luther.born
+    predicate: born
+    when: 1483
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry heading reads 'LUTHER, MARTIN (1483–1546)' and the text says he was born in Eisleben on November 10.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article heading gives Luther's dates as 1483–1546, and the text adds that he was born in Eisleben on November 10.
+    sources:
+      - key: eor-luther-martin
+        locator: preamble
+        stance: asserts
+        excerpt: LUTHER, MARTIN (1483–1546)
+  - id: martin-luther.died
+    predicate: died
+    when: 1546
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-lutheranism
+        note: The text says the Council of Trent was convened a year before Luther's death in 1546.
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry heading gives 1546 as the death year, and the text says he died on 16 February (1546) in Eisleben.
+    sources:
+      - key: eor-luther-martin
+        locator: preamble
+        stance: asserts
+        excerpt: LUTHER, MARTIN (1483–1546)
+      - key: eor-lutheranism
+        locator: preamble
+        stance: asserts
+        excerpt: a year before Luther's death in 1546
+  - id: martin-luther.founder-of.lutheranism
+    predicate: founder-of
+    object: lutheranism
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the Lutheran Reformation carried out the impulses set in motion by Luther's struggle for faith, and that Lutheran hymns 'began with the hymns of Luther himself'. It never uses the word 'founder'; it presents Luther as the originator of the movement.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Europe in the Reformation' the article says the Lutheran Reformation carried into church structures 'the impulses set in motion by Martin Luther's struggle for faith', which makes Luther its originator but never uses the word 'founder' (eor-lutheranism adds that the 'Lutheran' label came from his opponents, while his supporters called themselves 'evangelical').
+    sources:
+      - key: eor-christianity-western-europe
+        locator: preamble
+        stance: asserts
+        excerpt: The Lutheran Reformation carried out into cultural, political, and ecclesiastical structures the impulses set in motion by Martin Luther's struggle for faith.
+  - id: martin-luther.active-at.wittenberg
+    predicate: active-at
+    object: wittenberg
+    when: 1508
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says that in the fall of 1508 Luther began studies at the recently founded university at Wittenberg after transferring to the Augustinian monastery there.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: In the fall of 1508 Luther continued his graduate theological studies at the recently founded university at Wittenberg, after a transfer to the Augustinian monastery there, and lectured in the liberal arts curriculum.
+    sources:
+      - key: eor-luther-martin
+        locator: preamble
+        stance: asserts
+        excerpt: in the fall of 1508, at the recently founded university at Wittenberg

@@ -1,0 +1,73 @@
+id: roman-catholicism
+type: school
+names:
+  en: Roman Catholicism
+ids:
+  wikidata: Q9592
+claims:
+  - id: roman-catholicism.branch-of.christianity
+    predicate: branch-of
+    object: christianity
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text describes the same schism, with the Western Church becoming the Roman Catholic Church, which sought dominance over Eastern Orthodoxy in the region.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article calls the Western (eventually Roman Catholic) Church the other side of that schism, and says Latin Christianity in the western Roman Empire became what eventually came to be called the Roman Catholic Church.'
+    sources:
+      - key: eor-christianity-eastern-europe
+        locator: preamble
+        stance: asserts
+        excerpt: schism between the Western (eventually Roman Catholic) Church and the Eastern (eventually Eastern or Orthodox) Church
+  - id: roman-catholicism.active-at.rome
+    predicate: active-at
+    object: rome
+    when: 0382
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text states that at the Council of Rome (382) Damasus I declared the bishop of Rome's primacy rests on continuity with Peter, so the Roman church was active at Rome in 382."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Fourth and fifth centuries', eor-papacy says Damasus I, bishop of Rome (366–384), held the Council of Rome in 382 and declared there that the Roman bishop's primacy rests on continuity with Peter, so the Roman church and papacy were active at Rome in 382."
+    sources:
+      - key: eor-papacy
+        locator: preamble
+        stance: asserts
+        excerpt: At the Council of Rome (382), he declared that the primacy of the bishop of Rome is based on continuity with Peter.
+  - id: roman-catholicism.active-at.avignon
+    predicate: active-at
+    object: avignon
+    when: 1308/1377
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Clement V moved the papal residence to Avignon in 1308, the popes stayed seventy years, and Gregory XI returned to Rome in 1377, so the papacy was at Avignon from 1308 to 1377.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Decline of the papacy', eor-papacy says Clement V moved the papal residence to Avignon in 1308, the popes stayed there seventy years, and Gregory XI returned to Rome in 1377.
+    sources:
+      - key: eor-papacy
+        locator: preamble
+        stance: asserts
+        excerpt: In 1308, Clement V (1305–1314) moved the papal residence to Avignon
+      - key: eor-papacy
+        locator: preamble
+        stance: asserts
+        excerpt: Gregory XI (1370–1378) returned to Rome in 1377

@@ -1,0 +1,124 @@
+id: john-calvin
+type: person
+names:
+  en: John Calvin
+ids:
+  wikidata: Q37577
+claims:
+  - id: john-calvin.born
+    predicate: born
+    when: 1509-07-10
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Calvin was born at Noyon, Picardy, France, on July 10, 1509.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article states plainly that Calvin was born at Noyon, Picardy, France, on July 10, 1509, the fourth of six children of Gérard Cauvin and Jeanne Lefranc.
+    sources:
+      - key: eor-calvin-john
+        locator: preamble
+        stance: asserts
+        excerpt: He was born at Noyon (province of Picardy), France, on July 10, 1509
+  - id: john-calvin.died
+    predicate: died
+    when: 1564
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-reformation
+        note: The text says Calvin remained at Geneva until his death in 1564.
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The heading gives his dates as (1509–1564), so 1564 is the death year, though the body text never states his death explicitly.
+    sources:
+      - key: eor-calvin-john
+        locator: preamble
+        stance: asserts
+        excerpt: CALVIN, JOHN (1509–1564)
+      - key: eor-reformation
+        locator: preamble
+        stance: asserts
+        excerpt: he remained there until his death in 1564
+  - id: john-calvin.influenced-by.martin-luther
+    predicate: influenced-by
+    object: martin-luther
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Calvin fully accepted Luther's idea that salvation is by grace alone through faith.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The article states that Calvin had fully accepted Luther's idea that salvation is by grace alone through faith."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-christianity-western-europe
+        note: "Graded A scholarly: The article states plainly that 'Calvin had fully accepted Luther's idea that salvation is by grace alone through faith', and eor-christianity-western-europe agrees that the Calvinist/Reformed tradition shared many of the central emphases of the Lutheran Reformation, as worked out in Calvin's career and thought."
+    sources:
+      - key: eor-calvin-john
+        locator: preamble
+        stance: asserts
+        excerpt: Calvin had fully accepted Luther's idea that salvation is by grace alone through faith
+  - id: john-calvin.active-at.geneva
+    predicate: active-at
+    object: geneva
+    when: 1536/1564
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-reformation
+        note: 'Graded A scholarly: Calvin came to Geneva in 1536, was expelled in 1538, was invited back three years later, and stayed until his death in 1564, so the span is not unbroken.'
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says he arrived in Geneva in late July 1536 and, apart from the Strasbourg years 1538–1541, was associated with Geneva thereafter; the end year 1564 is not stated in the cited passage but is implied by the 1509–1564 dates.'
+    sources:
+      - key: eor-calvin-john
+        locator: preamble
+        stance: asserts
+        excerpt: Except for a three-year period of peaceful study and ministry in Strasbourg (1538–1541), Calvin was henceforth associated with the city and republic of Geneva
+      - key: eor-reformation
+        locator: preamble
+        stance: asserts
+        excerpt: he remained there until his death in 1564
+  - id: john-calvin.active-at.strasbourg
+    predicate: active-at
+    object: strasbourg
+    when: 1538/1541
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says he spent a three-year period of peaceful study and ministry in Strasbourg (1538–1541).'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article says that apart from a three-year period of peaceful study and ministry in Strasbourg (1538–1541), Calvin was associated with Geneva from 1536 on.'
+    sources:
+      - key: eor-calvin-john
+        locator: preamble
+        stance: asserts
+        excerpt: a three-year period of peaceful study and ministry in Strasbourg (1538–1541)

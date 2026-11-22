@@ -1,0 +1,53 @@
+id: reformed
+type: school
+names:
+  en: Reformed Christianity
+ids:
+  wikidata: Q101849
+claims:
+  - id: reformed.branch-of.christianity
+    predicate: branch-of
+    object: christianity
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says the Protestant north was divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity, which treats Reformed as a form (branch) of Christianity.'
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Post-Reformation Christianity' the article states that the predominantly Protestant north of post-Reformation Europe was divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity, so it presents Reformed Christianity as one form of Christianity."
+    sources:
+      - key: eor-christianity-overview
+        locator: preamble
+        stance: asserts
+        excerpt: divided between Anglican, Lutheran, and Reformed or Calvinist forms of Christianity
+  - id: reformed.active-at.geneva
+    predicate: active-at
+    object: geneva
+    when: 1536
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-21
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: In the John Calvin section, Calvin, author of the Institutes, was pressured in 1536 into staying at Geneva to take part in the reform there; the passage does not use the word 'Reformed'.
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under the heading 'John Calvin', the article says Calvin, passing through Geneva in 1536, was pressured into staying to take part in 'the reform there', which means a reform was already under way in Geneva that year; the following paragraphs make Geneva Calvin's 'seat of action' for the Reformation."
+      - on: 2026-11-21
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-calvin-john
+        note: "Graded A scholarly: Under the 'John Calvin' heading, eor-reformation says Calvin, passing through Geneva by chance in 1536, was pressured into staying to take part in the reform there, which shows reform was already under way in the city that year."
+    sources:
+      - key: eor-reformation
+        locator: preamble
+        stance: asserts
+        excerpt: Passing by chance through Geneva in 1536, the twenty-seven-year-old scholar was pressured into staying to take part in the reform there.
