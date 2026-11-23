@@ -163,4 +163,18 @@ describe('readWikiPages', () => {
     expect(routes.get('plotinus')).toBe('/wiki/a');
     expect(routes.get('porphyry')).toBe('/wiki/a/P');
   });
+
+  it('reads title, group, order, extra and audited from frontmatter', () => {
+    page('a/P', 'x', 'group: People\norder: 30\nextra: true\naudited: 2026-11-09\n');
+    page('a/Q', 'y');
+    const [p, q] = readWikiPages(join(root, 'apps/site/src/pages'));
+    expect(p).toMatchObject({
+      title: 'T',
+      group: 'People',
+      order: 30,
+      extra: true,
+      audited: '2026-11-09',
+    });
+    expect(q).toMatchObject({ group: undefined, order: undefined, extra: false });
+  });
 });

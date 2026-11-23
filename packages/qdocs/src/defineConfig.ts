@@ -7,6 +7,7 @@ import {
 } from 'vite';
 import type { QDocsConfig, NavItem, SidebarEntry, SidebarItem, SocialLink } from './config.ts';
 import type { CitationData } from './markdown/citations.ts';
+import type { PageNotice } from './markdown/pageNotice.ts';
 import { setQDocsConfig, qdocsPlugin } from './plugin.ts';
 
 // The consumer's merged config type: all QDocsConfig fields (except `base`,
@@ -35,6 +36,8 @@ export type QDocsConsumerConfig = {
   tailwindSources?: string[];
   /** Wiki data for `[@key]` notes and `[[id]]` links; see QDocsPluginOptions.citations. */
   citations?: () => CitationData;
+  /** HTML notice inserted below each page's first heading, or null for none; see mdPageNotice. */
+  pageNotice?: PageNotice;
 } & UserConfig;
 
 /**
@@ -82,6 +85,7 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     resolve: userResolve,
     tailwindSources,
     citations,
+    pageNotice,
     ...viteRest
   } = opts;
   const qdocsConfig = buildQDocsConfig(opts);
@@ -103,6 +107,7 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
       qdocsPlugin({
         markdown: qdocsConfig.markdown,
         citations,
+        pageNotice,
         tailwindSources: (tailwindSources ?? []).map((source) => pathResolve(projectRoot, source)),
       }),
       ...(userPlugins ?? []),

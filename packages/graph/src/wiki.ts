@@ -13,6 +13,16 @@ export type WikiPage = {
   route: string;
   /** The entity this page is the home article of, from frontmatter `entity:`. */
   entity?: string | undefined;
+  /** Frontmatter `title`, or the file name when absent. */
+  title: string;
+  /** Frontmatter `group`: the sidebar heading the page sits under. */
+  group?: string | undefined;
+  /** Frontmatter `order`: position among its siblings, ascending. */
+  order?: number | undefined;
+  /** Frontmatter `extra: true`: supplementary, so its group renders de-emphasized. */
+  extra: boolean;
+  /** Frontmatter `audited`: the date of the article audit, as written. */
+  audited?: string | undefined;
   refs: WikiRefs;
 };
 
@@ -41,14 +51,22 @@ function splitFrontmatter(text: string): { front: string; body: string } {
   return { front: match[1] ?? '', body: text.slice(match[0].length) };
 }
 
-function entityOf(front: string): string | undefined {
+function readFront(front: string): Record<string, unknown> {
   try {
-    const data = parse(front, { schema: 'failsafe' }) as { entity?: unknown } | null;
-    return typeof data?.entity === 'string' && data.entity !== '' ? data.entity : undefined;
+    return (parse(front, { schema: 'failsafe' }) as Record<string, unknown> | null) ?? {};
   } catch {
     // Unreadable frontmatter fails the site build by itself.
-    return undefined;
+    return {};
   }
+}
+
+function nonEmpty(value: unknown): string | undefined {
+  return typeof value === 'string' && value !== '' ? value : undefined;
+}
+
+function orderOf(value: unknown): number | undefined {
+  const order = typeof value === 'string' ? Number(value) : Number.NaN;
+  return Number.isFinite(order) ? order : undefined;
 }
 
 /** Reads every page under `<pagesDir>/wiki`. */
@@ -56,10 +74,16 @@ export function readWikiPages(pagesDir: string): WikiPage[] {
   return filesWithExtension(join(pagesDir, 'wiki'), '.md').map((file) => {
     const path = slashes(relative(pagesDir, file)).replace(/\.md$/u, '');
     const { front, body } = splitFrontmatter(readFileSync(file, 'utf8'));
+    const data = readFront(front);
     return {
       path,
       route: `/${path.replace(/(?:^|\/)index$/u, '')}`,
-      entity: entityOf(front),
+      entity: nonEmpty(data['entity']),
+      title: nonEmpty(data['title']) ?? path.split('/').at(-1) ?? path,
+      group: nonEmpty(data['group']),
+      order: orderOf(data['order']),
+      extra: data['extra'] === 'true',
+      audited: nonEmpty(data['audited']),
       refs: findWikiRefs(body),
     };
   });

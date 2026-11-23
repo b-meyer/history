@@ -24,6 +24,7 @@ import { mdContainers } from './markdown/containers.ts';
 import { mdLinkRewriter } from './markdown/linkRewriter.ts';
 import { mdLinkTitles } from './markdown/linkTitles.ts';
 import { mdMermaid } from './markdown/mermaid.ts';
+import { mdPageNotice, type PageNotice } from './markdown/pageNotice.ts';
 import { mdShiki } from './markdown/shiki.ts';
 import { processSnippets } from './markdown/snippets.ts';
 import { mdTableWrapper } from './markdown/tableWrapper.ts';
@@ -45,6 +46,8 @@ export type QDocsPluginOptions = Pick<QDocsConfig, 'markdown'> & {
    * either. Without it the syntax is not registered.
    */
   citations?: () => CitationData;
+  /** Builds a notice inserted below each page's first heading; see mdPageNotice. */
+  pageNotice?: PageNotice;
 };
 
 // Module-level state set by defineConfig before Vite processes plugins.
@@ -343,6 +346,7 @@ export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
       async markdownItSetup(md) {
         md.use(anchor, { permalink: false, slugify });
         if (options.citations) md.use(mdCitations, options.citations);
+        if (options.pageNotice) md.use(mdPageNotice, options.pageNotice);
         md.use(mdLinkRewriter, () => resolvedBase);
         md.use(mdLinkTitles, () => {
           if (!qdocsConfigStore) return new Map<string, string>();
