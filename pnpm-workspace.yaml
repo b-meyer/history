@@ -1,6 +1,7 @@
 packages:
   - 'packages/*'
   - 'apps/*'
+  - 'tools/*'
 
 # Single source of truth for dependency versions. Every package references
 # `catalog:`; bump a version here once and it applies workspace-wide.
