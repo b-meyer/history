@@ -1,0 +1,20 @@
+- key: mactutor-academy
+  locator: preamble
+  excerpt: 'began to teach there in around 387 BC'
+  passage: 38424e06b83543b8
+- key: sep-pythagoreanism
+  locator: §4
+  excerpt: 'Neopythagoreans typically emphasize the role of number in the cosmos and treat the One and Indefinite Dyad as ultimate principles'
+  passage: e0aa034178b19f53
+- key: sep-neoplatonism
+  locator: §1
+  excerpt: 'the Egyptian-born Plotinus (204/5–270) is commonly regarded as the founder of Neoplatonism'
+  passage: bb0a7f0fa3247e2c
+- key: sep-neoplatonism
+  locator: preamble
+  excerpt: 'the designation “Neoplatonic” is of modern coinage and to some extent a misnomer'
+  passage: afae651497950cea
+- key: sep-neoplatonism
+  locator: §7
+  excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
+  passage: b77f00a2646bd600

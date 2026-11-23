@@ -1,0 +1,136 @@
+- key: sep-philolaus
+  locator: '§3'
+  excerpt: 'Aristotle’s assertion that the Pythagoreans thought that things were numbers or that they were made of numbers is also not supported by the fragments of Philolaus'
+  passage: 56f7598d84159de5
+- key: sep-philolaus
+  locator: preamble
+  excerpt: 'Limiters and unlimiteds are not combined in a haphazard way but are subject to a “fitting together” or “harmonia,” which can be described mathematically.'
+  passage: cdb33e77cac7c6c7
+- key: sep-pythagoreanism
+  locator: '§2.4'
+  excerpt: 'These Pythagoreans presented the principles of reality as consisting of ten pairs of opposites'
+  passage: 0aaa84d13f4f8da3
+- key: sep-pythagoras
+  locator: '§5'
+  excerpt: 'there is no indication in that evidence that his fame was primarily based on mathematics or cosmology'
+  passage: 7fc88685eb56bcfa
+- key: sep-philolaus
+  locator: '§7.1'
+  excerpt: 'one of the acousmata asserts that number is the wisest thing'
+  passage: 346cde7f1c549dbc
+- key: iamblichus-pythagoric-life-taylor
+  locator: ch. XXIX
+  excerpt: 'All things accord in number: which he very frequently uttered to all his disciples.'
+  passage: e8f3d0a95da25075
+- key: sep-pythagoreanism
+  locator: '§4.4'
+  excerpt: 'Nicomachus presents arithmetic as the most important of the four, because it existed in the mind of the creating god (the demiurge)'
+  passage: 79c391bb309a6f63
+- key: iamblichus-pythagoric-life-taylor
+  locator: preamble
+  excerpt: 'The sum likewise of these four numbers was said by them to constitute the tetractys, in which all harmonic ratios are included.'
+  passage: 25c277668fcea2ef
+- key: sep-philolaus
+  locator: '§7.2'
+  excerpt: 'Plato’s insistence that number is the basis for all inquiring, learning, and teaching'
+  passage: c475e579e5c20986
+- key: plato-republic-jowett
+  locator: bk. VII
+  excerpt: 'they must carry on the study until they see the nature of numbers with the mind only'
+  passage: 595178f23acbf705
+- key: diogenes-laertius-lives-hicks
+  locator: DL 8.25
+  excerpt: 'from the monad and the undefined dyad spring numbers; from numbers, points'
+  passage: 341f069e78859562
+- key: sep-pythagoras
+  locator: '§2.2'
+  excerpt: 'The testimony of Aristotle makes completely clear, however, that this was the philosophical system of Plato in his later years'
+  passage: ef27a0e072419502
+- key: sep-pythagoreanism
+  locator: '§4.1'
+  excerpt: 'Speusippus also wrote a book On Pythagorean Numbers'
+  passage: 8f1334c36b2a6437
+- key: sep-pythagoreanism
+  locator: '§4.3'
+  excerpt: 'According to Eudorus, the Pythagoreans posited a single supreme principle, known as the one and the supreme god'
+  passage: f1899f96a5c2313b
+- key: sep-numenius
+  locator: '§2'
+  excerpt: 'His interest in numbers (he wrote a work on numbers), to which he assigns an ontological role'
+  passage: fbc66dbec68c657b
+- key: plotinus-enneads-mackenna
+  locator: Enn. 6.6.1
+  excerpt: 'It is suggested that multiplicity is a falling away from The Unity, infinity (limitlessness) being the complete departure'
+  passage: b99c25c5a34c1821
+- key: plotinus-enneads-mackenna
+  locator: Enn. 6.6.4
+  excerpt: 'Are they Ideas added to the other Ideas ? Or are they no more than necessary concomitants to the Ideas ?'
+  passage: 6b897248f226e5d1
+- key: plotinus-enneads-mackenna
+  locator: Enn. 6.6.5
+  excerpt: 'numbers might be what the Pythagoreans seem to hold them in their symbolic system in which Justice, for example, is a Tetrad'
+  passage: 795cd83f79eff3f0
+- key: plotinus-enneads-mackenna
+  locator: Enn. 6.6.9
+  excerpt: 'Clearly Being is to be thought of as Number Collective, while the Beings are Number unfolded'
+  passage: 336d0b8bf48d241f
+- key: plotinus-enneads-mackenna
+  locator: Enn. 6.6.10
+  excerpt: 'Number then preexists and is the cause by which produced things participate in quantity.'
+  passage: 7608b37f3637a604
+- key: sep-plotinus
+  locator: '§6'
+  excerpt: 'the arrangement of the Forms inside the intelligible realm is further determined by the arrangement of eidetic numbers'
+  passage: 755bfebbeb26f427
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 24
+  excerpt: 'I had fifty-four treatises before me : I divided them into six sets of nine, an arrangement which pleased me by the happy combination of the perfect number six with the nines'
+  passage: 7534d1aad7ce8b6b
+- key: sep-plotinus
+  locator: '§1'
+  excerpt: 'Porphyry’s arrangement has been repeatedly criticized in the past as utterly artificial and arbitrary'
+  passage: 278c0fbbe38c542b
+- key: sep-iamblichus
+  locator: '§4.1'
+  excerpt: 'the dual principles of Limit (peras) and the Unlimited'
+  passage: e68cddb566272600
+- key: sep-iamblichus
+  locator: '§3.1'
+  excerpt: 'Damascius assimilates this sequence to another one attributed to “the Pythagoreans”: Monad-Dyad-Triad'
+  passage: 7dc1a3031711f041
+- key: sep-iamblichus
+  locator: '§4.2'
+  excerpt: 'mathematics is both a scientific discipline and concerns a realm of being, intermediate between the intelligible and the sensible'
+  passage: c884522d9f0ae18b
+- key: sep-iamblichus
+  locator: '§4.3'
+  excerpt: 'it is necessary to pursue with zeal its divinely inspired, elevating, purifying and perfective way'
+  passage: 4c2f5855d160df91
+- key: marinus-life-of-proclus-guthrie
+  locator: Marinus 28
+  excerpt: 'he was convinced that his was the reincarnated soul of the Pythagorean Nicomachus'
+  passage: ed016122025e8e5e
+- key: proclus-elements-of-theology-taylor
+  locator: ET 1
+  excerpt: 'All multitude participates in a certain respect of the one.'
+  passage: 8d5a99cbf072af6d
+- key: proclus-elements-of-theology-taylor
+  locator: ET 113
+  excerpt: 'Every divine number is unical.'
+  passage: 6751206d5d90706e
+- key: proclus-elements-of-theology-taylor
+  locator: ET 114
+  excerpt: 'Every God is a self-perfect unity, and every self-perfect unity is a God.'
+  passage: b2fd550b61c43e84
+- key: proclus-elements-of-theology-taylor
+  locator: ET 149
+  excerpt: 'Every multitude of the divine unities is bounded according to number.'
+  passage: 8d6c09b1b0e7093d
+- key: proclus-elements-of-theology-taylor
+  locator: ET 179
+  excerpt: 'Every intellectual number is bounded.'
+  passage: 535a8d06f51526e9
+- key: sep-proclus
+  locator: '§3.5'
+  excerpt: 'mathematical objects reside primarily in intellect and secondarily in souls'
+  passage: b0bd2363fac7249f
