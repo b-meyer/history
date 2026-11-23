@@ -1,0 +1,6 @@
+# Note: A region; the coords are Wikidata's point for the modern region.
+id: campania
+type: place
+names: { en: Campania }
+ids: { wikidata: 'Q1438' }
+coords: [14.95, 40.75]

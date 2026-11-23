@@ -1,0 +1,5 @@
+id: lycabettus
+type: place
+names: { en: Mount Lycabettus }
+ids: { wikidata: 'Q1357713', pleiades: '582871' }
+coords: [23.75, 37.98]

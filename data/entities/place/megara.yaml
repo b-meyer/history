@@ -1,0 +1,5 @@
+id: megara
+type: place
+names: { en: Megara }
+ids: { wikidata: 'Q184864', pleiades: '570468' }
+coords: [23.34, 37.99]
