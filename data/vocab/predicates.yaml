@@ -110,8 +110,8 @@ influenced-by:
   label: influenced by
   inverse: influenced
   inverseLabel: influenced
-  subject: [person, work, school, tradition]
-  object: [person, work, school, tradition]
+  subject: [person, work, school, tradition, institution]
+  object: [person, work, school, tradition, institution]
   basis: scholarly
 
 # Events

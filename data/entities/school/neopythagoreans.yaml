@@ -118,3 +118,32 @@ claims:
         locator: §4
         stance: asserts
         excerpt: Neopythagoreanism is characterized by the tendency to see Pythagoras as the central and original figure in the development of Greek philosophy
+  - id: neopythagoreans.influenced-by.academy
+    predicate: influenced-by
+    object: academy
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP section 4 says the origins of Neopythagoreanism are probably in Plato's Academy (Speusippus, Xenocrates), a hedged judgment.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: sep-numenius
+        note: The cited sentence says early Academics like Xenocrates were interested in Pythagoras' doctrines, which runs the opposite way; the paragraph shows Numenius following Plato's Timaeus but does not state Neopythagorean influence by the Academy.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §4 says the origins of Neopythagoreanism are probably to be found in the Academy in the later fourth century BCE, with Speusippus and Xenocrates presenting Academic speculations as Pythagoras's work, and SEP Numenius §2 notes early Academics like Xenocrates showed strong interest in Pythagoras's doctrines.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §4
+        stance: asserts
+        excerpt: The origins of Neopythagoreanism are probably to be found already in Plato’s school, the Academy, in the second half of the fourth century BCE.
+      - key: sep-numenius
+        locator: §2
+        stance: asserts
+        excerpt: That early Academics like Xenocrates showed strong interest in Pythagoras’ doctrines
