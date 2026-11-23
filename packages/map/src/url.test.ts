@@ -24,7 +24,7 @@ describe('year params', () => {
     expect(parseYearParam('263')).toBeNull();
     expect(parseYearParam('0ce')).toBeNull();
     expect(parseYearParam('-5bce')).toBeNull();
-    expect(parseYearParam('5000bce')).toBe(-1000);
+    expect(parseYearParam('5000bce')).toBe(-999);
     expect(parseYearParam('2100ce')).toBe(2000);
   });
 });

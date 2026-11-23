@@ -27,7 +27,7 @@ export type MapUrlState = {
   view: MapViewState;
 };
 
-export const YEAR_MIN = -1000;
+export const YEAR_MIN = -999;
 export const YEAR_MAX = 2000;
 
 /** 600 BCE, where the corridor starts. */
