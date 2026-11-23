@@ -1,0 +1,5 @@
+id: kufa
+type: place
+names: { en: Kufa }
+ids: { wikidata: 'Q186234', pleiades: '912808', geonames: '99135' }
+coords: [44.34, 32.00]

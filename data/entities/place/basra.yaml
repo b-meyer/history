@@ -1,0 +1,5 @@
+id: basra
+type: place
+names: { en: Basra }
+ids: { wikidata: 'Q48195', pleiades: '912821', geonames: '99532' }
+coords: [47.82, 30.50]

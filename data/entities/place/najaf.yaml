@@ -1,0 +1,5 @@
+id: najaf
+type: place
+names: { en: Najaf }
+ids: { wikidata: 'Q168193', geonames: '98860' }
+coords: [44.34, 32.03]

@@ -1,0 +1,5 @@
+id: balkh
+type: place
+names: { en: Balkh }
+ids: { wikidata: 'Q182159', pleiades: '961886', geonames: '1147290' }
+coords: [66.90, 36.77]

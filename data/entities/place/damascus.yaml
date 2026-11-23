@@ -1,0 +1,5 @@
+id: damascus
+type: place
+names: { en: Damascus }
+ids: { wikidata: 'Q3766', pleiades: '678106', geonames: '170654' }
+coords: [36.31, 33.51]

@@ -1,0 +1,5 @@
+id: harran
+type: place
+names: { en: Harran }
+ids: { wikidata: 'Q199547', pleiades: '658427', geonames: '439166' }
+coords: [39.03, 36.86]

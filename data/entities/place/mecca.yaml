@@ -1,0 +1,5 @@
+id: mecca
+type: place
+names: { en: Mecca }
+ids: { wikidata: 'Q5806', geonames: '104515' }
+coords: [39.83, 21.42]

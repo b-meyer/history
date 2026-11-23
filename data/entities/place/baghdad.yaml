@@ -1,0 +1,5 @@
+id: baghdad
+type: place
+names: { en: Baghdad }
+ids: { wikidata: 'Q1530', geonames: '98182' }
+coords: [44.37, 33.32]

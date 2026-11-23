@@ -1,0 +1,5 @@
+id: isfahan
+type: place
+names: { en: Isfahan }
+ids: { wikidata: 'Q42053', pleiades: '902990', geonames: '418863' }
+coords: [51.68, 32.65]
