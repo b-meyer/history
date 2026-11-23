@@ -1,0 +1,60 @@
+- key: sep-porphyry
+  locator: preamble
+  excerpt: 'Porphyry (234?–305? C.E.) was a Neoplatonist philosopher, born in Tyre in Phoenicia.'
+  passage: 826ee93ab464464a
+- key: sep-porphyry
+  locator: §1
+  excerpt: 'born in Tyre in Phoenicia (now in Lebanon), probably in 234 C.E.'
+  passage: 548f140e5e6f7e8b
+- key: eunapius-lives-wright
+  locator: p. 353
+  excerpt: "Tyre was PORPHYRY's birthplace"
+  passage: c4b1404f2c488174
+- key: eunapius-lives-wright
+  locator: p. 355
+  excerpt: 'Longinus gave him the name of Porphyry'
+  passage: 3d67e7c92a46dce8
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 4
+  excerpt: 'I myself arrived from Greece in the tenth year of Galienus’ reign'
+  passage: 8211aea6ca1f4fe0
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 5
+  excerpt: 'After coming to know him I passed six years in close relation with him.'
+  passage: 86027feaa78832f3
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 17
+  excerpt: 'wrote a recantation and read it before the circle'
+  passage: b695a72221315ea5
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 12
+  excerpt: 'my decision sprang not from reason but from mere melancholy and advised me to leave Rome'
+  passage: ca1b692921b3d3de
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 2
+  excerpt: 'I myself was at Lilybaeum at the time'
+  passage: 27cffd3180b0e01c
+- key: eunapius-lives-wright
+  locator: p. 361
+  excerpt: 'He is said to have departed this life in Rome.'
+  passage: 5a799695cdde16a9
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 9
+  excerpt: 'it was to me he entrusted the task of revising his writings'
+  passage: b62578e2a9cd98e1
+- key: porphyry-life-of-plotinus-mackenna
+  locator: p. 24
+  excerpt: 'I divided them into six sets of nine, an arrangement which pleased me by the happy combination of the perfect number six with the nines'
+  passage: 7534d1aad7ce8b6b
+- key: sep-porphyry
+  locator: §2
+  excerpt: 'records more than sixty titles, most of them now lost or surviving only in fragments'
+  passage: e0591ae63e7995b0
+- key: sep-porphyry
+  locator: §3
+  excerpt: 'This is Plotinus’ philosophy, which Porphyry shares in broad outline'
+  passage: bf9ba75514bc31d6
+- key: sep-pythagoreanism
+  locator: §4.4
+  excerpt: 'is one of our most important sources for Pythagoreanism'
+  passage: b69be9c63666bb02
