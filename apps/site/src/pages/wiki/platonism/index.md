@@ -3,25 +3,26 @@ title: 'Platonism'
 description: 'A guide to the Pythagorean and Platonic line from Pythagoras at Croton to Proclus and the closing of the Athenian Academy in 529.'
 group: 'Overview'
 order: 0
+audited: '2026-11-23'
 ---
 
 # Platonism
 
-This collection follows one line of philosophy from [[pythagoras]] to [[proclus]]. It runs through Plato and his school, the Pythagorean revivalists of the early empire, and the Neoplatonists of late antiquity. Each page below covers one person or group, in the order the line runs. Figures who have no page of their own, such as Nicomachus, Numenius and Philolaus, are named inside the pages where they matter.
+This collection follows one line of philosophy from [[pythagoras]] to [[proclus]]. It runs through Plato and his school, the [[neopythagoreans]], and the [[neoplatonists]]. Each page below covers one person or group, in the order the line runs. Figures who have no page of their own, such as Nicomachus, Numenius and Philolaus, are named inside the pages where they matter.
 
 ## Pythagorean Beginnings
 
-- [Pythagoras](platonism/Pythagoras.md) - the Samian who settled at [[croton]] and drew the followers later called Pythagoreans.
-- [Pythagoreans](platonism/Pythagoreans.md) - the community around him and its fifth- and fourth-century successors.
+- [Pythagoras](platonism/Pythagoras.md) - the philosopher who spent his early years on [[samos]] and emigrated to [[croton]] at the age of forty. [@sep-pythagoras, preamble]
+- [Pythagoreans](platonism/Pythagoreans.md) - the fifth- and fourth-century thinkers whom Aristotle called "the so-called Pythagoreans". [@sep-pythagoreanism, preamble]
 
 ## Plato and the Academy
 
-- [Plato](platonism/Plato.md) - the Athenian philosopher from whom the Platonic tradition takes its name.
-- [Academy](platonism/Academy.md) - the school he founded near [[athens]]. MacTutor says Plato began to teach there around 387 BCE. [@mactutor-academy, preamble]
+- [Plato](platonism/Plato.md) - the son of Ariston and a citizen of [[athens]]. [@diogenes-laertius-lives-hicks, DL 3.1]
+- [Academy](platonism/Academy.md) - the school he founded near [[athens]], where MacTutor says he began to teach around 387 BCE. [@mactutor-academy, preamble]
 
 ## Between Plato and Plotinus
 
-- [Neopythagoreans](platonism/Neopythagoreans.md) - Platonists and revivalists who made Pythagoras the source of Greek philosophy. [@sep-pythagoreanism, §4]
+- [Neopythagoreans](platonism/Neopythagoreans.md) - thinkers most of whom, the Stanford Encyclopedia says, may well be best regarded as part of the Platonic tradition. [@sep-pythagoreanism, §4.3]
 
 ## Late Platonists
 

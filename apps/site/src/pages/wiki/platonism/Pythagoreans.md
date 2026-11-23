@@ -3,6 +3,7 @@ title: 'Pythagoreans'
 description: 'The community around Pythagoras at Croton and its fifth- and fourth-century successors, ending with the school at Tarentum.'
 group: 'Pythagorean Beginnings'
 order: 20
+audited: '2026-11-23'
 entity: pythagoreans
 ---
 
@@ -20,13 +21,13 @@ An older history of mathematics gives the traditional picture of the inner circl
 
 Outsiders attacked the Pythagorean societies again around 450 BCE. [@sep-pythagoreanism, §3.4] Plutarch tells that Philolaus, then a young man, was one of two who escaped when the Pythagorean meeting place at Metapontum was burned in 454. Earlier versions of the story do not name him, so his part in it is far from certain. [@sep-philolaus, §1.1]
 
-After the attacks the school did not simply end. Rouse Ball says that the Pythagoreans at once regrouped as a society devoted to philosophy and mathematics, headquartered at Tarentum, and flourished for over a century. [@rouse-ball-short-account-history-mathematics, p. 16] The Stanford Encyclopedia gives a shorter span. It judges the communities that kept a way of life they ascribed to Pythagoras likely to have vanished by about the middle of the fourth century BCE. [@sep-pythagoreanism, preamble] It adds that Pythagoreanism appears to have largely died out for the two centuries after the death of Aristoxenus. [@sep-pythagoreanism, §3.1]
+After the attacks the school did not simply end. Rouse Ball says that the Pythagoreans seem to have re-established themselves at once as a society devoted to philosophy and mathematics, headquartered at Tarentum, and to have flourished for over a century. [@rouse-ball-short-account-history-mathematics, p. 16] The Stanford Encyclopedia judges the communities that kept a way of life they ascribed to Pythagoras likely to have vanished by about the middle of the fourth century BCE. [@sep-pythagoreanism, preamble] It adds that Pythagoreanism appears to have largely died out for the two centuries after the death of Aristoxenus. [@sep-pythagoreanism, §3.1]
 
 ## Acusmatici and Mathematici
 
 Later writers describe a split inside the school. The acusmatici stressed rules for living, including taboos, while the mathematici stressed mathematics and natural philosophy. Each claimed to be the true Pythagoreans. [@sep-pythagoreanism, §3.4] The account comes from Iamblichus, who gives two contradictory versions. The scholarly consensus accepts the split on the strength of Burkert's argument that Iamblichus drew on Aristotle, though Zhmud holds that the split was invented by the later tradition. [@sep-pythagoreanism, §3.4]
 
-Hippasus of Metapontum is the figure the dispute turns on. Diogenes lists him as a Pythagorean who held that the changes of the universe take a definite time to complete, and says he left nothing in writing. [@diogenes-laertius-lives-hicks, DL 8.84] The modern account treats him as the first Pythagorean who can be identified with some confidence as a natural philosopher, mathematician and music theorist, and has him disavowed by both sides of the split. [@sep-pythagoreanism, §3.4]
+Diogenes lists Hippasus of Metapontum as a Pythagorean who held that the changes of the universe take a definite time to complete, and reports, on the authority of Demetrius, that he left nothing in writing. [@diogenes-laertius-lives-hicks, DL 8.84] The modern account treats him as the first Pythagorean who can be identified with some confidence as a natural philosopher, mathematician and music theorist, and has him disavowed by both sides of the split. [@sep-pythagoreanism, §3.4]
 
 ## Philolaus
 
@@ -46,7 +47,7 @@ Aristoxenus, born at Tarentum, was a Pythagorean in his early years before he jo
 
 ## Plato and the Pythagoreans
 
-Scholars disagree widely about how much Plato owed to the Pythagoreans. Some ancient and modern writers tie him closely to the school, and a ninth-century biography of Pythagoras makes him a pupil of Archytas and the ninth successor to Pythagoras. [@sep-pythagoreanism, §3.7] A more limited view holds that Plato names Pythagoras and the Pythagoreans only once each in the dialogues. It finds clear influence in the Philebus, where Plato acknowledges earlier thinkers who posit limit and unlimited as basic principles, and treats that as Pythagorean influence on Plato's late theory of principles. [@sep-pythagoreanism, §3.7]
+Scholars disagree widely about how much Plato owed to the Pythagoreans. Some ancient and modern writers tie him closely to the school, and a biography of Pythagoras that Photius read in the ninth century makes him a pupil of Archytas and the ninth successor to Pythagoras. [@sep-pythagoreanism, §3.7] A more limited view holds that Plato names Pythagoras and the Pythagoreans only once each in the dialogues. It finds clear influence in the Philebus, where Plato acknowledges earlier thinkers who posit limit and unlimited as basic principles, and treats that as Pythagorean influence on Plato's late theory of principles. [@sep-pythagoreanism, §3.7]
 
 Plato first visited southern Italy and Sicily in 388 or 387 BCE, and met Archytas there. [@sep-archytas, §1.4] The sources give conflicting pictures of the relationship, and the Stanford Encyclopedia concludes that Plato sought out Archytas as an expert in the mathematical sciences, not as a master philosopher. [@sep-archytas, §1.4] A report that Plato met an aged Philolaus at Tarentum on that trip is a possibility only. [@sep-philolaus, §7.2] For Plato himself, see [[plato]].
 

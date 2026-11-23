@@ -3,6 +3,7 @@ title: 'Academy'
 description: 'The school Plato founded near Athens around 387 BCE, whose later history and closing in 529 the sources describe differently.'
 group: 'Plato and the Academy'
 order: 40
+audited: '2026-11-23'
 entity: academy
 ---
 
@@ -18,15 +19,15 @@ Diogenes Laertius lists Plato's disciples, beginning with Speusippus of Athens, 
 
 ## The Early Heads
 
-MacTutor says the head was elected for life by a majority vote, and names the first leaders as Plato, Speusippus, Xenocrates, Polemon, Crates and Crantor. Aristotle was a member for many years but never head [@mactutor-academy, preamble]. Speusippus was the son of Plato's sister Potone [@diogenes-laertius-lives-hicks, DL 3.4]. The Stanford article on Pythagoreanism calls him Plato's successor and says the evidence for him is fragmentary and second hand [@sep-pythagoreanism, §4.1]. It reports that he wrote a book On Pythagorean Numbers, though it is not certain that the title is his [@sep-pythagoreanism, §4.1]. His successor Xenocrates may have followed a version of the Pythagorean way of life, though Sedley distances him from Pythagoreanism [@sep-pythagoreanism, §4.1].
+MacTutor says it appears that the head was elected for life by a majority vote, and names the first leaders as Plato, Speusippus, Xenocrates, Polemon, Crates and Crantor. Aristotle was a member for many years but never head [@mactutor-academy, preamble]. Speusippus was the son of Plato's sister Potone [@diogenes-laertius-lives-hicks, DL 3.4]. The Stanford article on Pythagoreanism calls him Plato's successor and says the evidence for him is fragmentary and second hand [@sep-pythagoreanism, §4.1]. It reports that he wrote a book On Pythagorean Numbers, though it is not certain that the title is his [@sep-pythagoreanism, §4.1]. His successor Xenocrates may have followed a version of the Pythagorean way of life, though Sedley distances him from Pythagoreanism [@sep-pythagoreanism, §4.1].
 
-The same article holds that [[neopythagoreans]] had their probable origin in the Academy of the later fourth century BCE, where Speusippus and Xenocrates are said to have presented speculations growing out of Plato's late metaphysics as the work of Pythagoras [@sep-pythagoreanism, §4]. The article notes that some scholars reject the evidence for Speusippus on this point, and that Zhmud disputes the reading of Xenocrates [@sep-pythagoreanism, §4.1].
+The same article holds that [[neopythagoreans]] had their probable origin in the Academy of the later fourth century BCE, where Speusippus and Xenocrates are said to have presented speculations growing in part out of Plato's late metaphysics as the work of Pythagoras [@sep-pythagoreanism, §4]. The article notes that some scholars reject the evidence for Speusippus on this point, and that Zhmud disputes the reading of Xenocrates [@sep-pythagoreanism, §4.1].
 
 Arcesilaus became head in 265 BCE, and some writers date a New Academy from him, against the Old Academy of Plato to Crantor [@mactutor-academy, preamble].
 
 ## A Break and a Revival
 
-Philo left Athens for Rome about 85 BCE, after Sulla's army besieged the city and many trees in the Academy park were cut for timber. MacTutor finds little evidence that the school was restarted before the second century CE [@mactutor-academy, preamble]. On that reading there was no Academy between 85 BCE and the second century CE, and the usual statement that the Academy ran from 387 BCE to 529 CE is inaccurate [@mactutor-academy, preamble].
+Philo left Athens for Rome about 85 BCE [@mactutor-academy, preamble]. A year or so before, Sulla had marched on Athens, and during the siege many trees in the Academy park were cut for timber [@mactutor-academy, preamble]. MacTutor sees no evidence that Philo's school still had any tie to the park by then [@mactutor-academy, preamble]. MacTutor finds little evidence that the school was restarted before the second century CE [@mactutor-academy, preamble]. On that reading there was no Academy between 85 BCE and the second century CE, and the usual statement that the Academy ran from 387 BCE to 529 CE is inaccurate [@mactutor-academy, preamble].
 
 ## The Late School and 529
 

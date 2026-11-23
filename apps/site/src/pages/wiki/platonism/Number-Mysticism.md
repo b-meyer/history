@@ -3,6 +3,7 @@ title: 'Number Mysticism from Pythagoras to Proclus'
 description: 'How the Pythagorean claim that things are numbers passed through Plato, the Neopythagoreans and the Neoplatonists to Proclus.'
 group: 'Themes'
 order: 100
+audited: '2026-11-23'
 ---
 
 # Number Mysticism from Pythagoras to Proclus
@@ -63,6 +64,6 @@ Mathematics, for Iamblichus, is both a science and a realm of being between the 
 
 [[proclus]] is reported to have dreamed that he was the reincarnated soul of the Pythagorean Nicomachus. [@marinus-life-of-proclus-guthrie, Marinus 28] The Stanford article on Pythagoreanism says that it was because of Iamblichus that numerology and mathematics were emphasized by Syrianus and Proclus. It adds that Proclus found Plato clearer than the Pythagoreans, though his Platonism is still heavily Pythagorean. [@sep-pythagoreanism, §4.4]
 
-His [[elements-of-theology]] puts number inside a chain of causes that ends in the one. Proposition 1 says all multitude participates in a certain respect in the one. [@proclus-elements-of-theology-taylor, ET 1] Every divine number is unical, Proclus argues, because its cause is the one and the one is God. [@proclus-elements-of-theology-taylor, ET 113] He also identifies gods with self-perfect unities, in both directions. [@proclus-elements-of-theology-taylor, ET 114] The multitude of the divine unities is bounded according to number, because it lies nearest the one and the infinite is foreign to the one. [@proclus-elements-of-theology-taylor, ET 149] The multitude of intellects is bounded for the same reason. [@proclus-elements-of-theology-taylor, ET 179]
+In his [[elements-of-theology]], Proposition 1 says all multitude participates in a certain respect in the one. [@proclus-elements-of-theology-taylor, ET 1] Every divine number is unical, Proclus argues, because its cause is the one and the one is God. [@proclus-elements-of-theology-taylor, ET 113] He also identifies gods with self-perfect unities, in both directions. [@proclus-elements-of-theology-taylor, ET 114] The multitude of the divine unities is bounded according to number, because it lies nearest the one and the infinite is foreign to the one. [@proclus-elements-of-theology-taylor, ET 149] The multitude of intellects is bounded for the same reason. [@proclus-elements-of-theology-taylor, ET 179]
 
 In his commentary on Euclid, Proclus holds that mathematical objects cannot be abstracted from sensible particulars. They reside primarily in intellect and secondarily in souls, and geometry leads the soul upward to the unextended causes of geometrical objects in the divine mind. [@sep-proclus, §3.5] Iamblichus's writings on mathematics were used in that commentary. [@sep-iamblichus, §4.2] Boethius later made what is virtually a translation of Nicomachus's Introduction to Arithmetic, which became the standard work on arithmetic in the Middle Ages. [@sep-pythagoreanism, §4.4]

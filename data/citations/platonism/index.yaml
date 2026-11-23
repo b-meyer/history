@@ -1,11 +1,23 @@
+- key: sep-pythagoras
+  locator: preamble
+  excerpt: 'He spent his early years on the island of Samos, off the coast of modern Turkey. At the age of forty, however, he emigrated to the city of Croton in southern Italy'
+  passage: 89fe82bc6a243277
+- key: sep-pythagoreanism
+  locator: preamble
+  excerpt: 'active in the fifth and the first half of the fourth century BCE, whom Aristotle refers to as “the so-called Pythagoreans”'
+  passage: c92ebf0802a3e393
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.1
+  excerpt: 'Plato was the son of Ariston and a citizen of Athens.'
+  passage: befaa91286d699d8
 - key: mactutor-academy
   locator: preamble
   excerpt: 'began to teach there in around 387 BC'
   passage: 38424e06b83543b8
 - key: sep-pythagoreanism
-  locator: §4
-  excerpt: 'Neopythagoreans typically emphasize the role of number in the cosmos and treat the One and Indefinite Dyad as ultimate principles'
-  passage: e0aa034178b19f53
+  locator: §4.3
+  excerpt: 'It may well be that most of the figures discussed below are best regarded as part of the Platonic tradition'
+  passage: f1899f96a5c2313b
 - key: sep-neoplatonism
   locator: §1
   excerpt: 'the Egyptian-born Plotinus (204/5–270) is commonly regarded as the founder of Neoplatonism'
@@ -14,6 +26,10 @@
   locator: preamble
   excerpt: 'the designation “Neoplatonic” is of modern coinage and to some extent a misnomer'
   passage: afae651497950cea
+- key: sep-pythagoreanism
+  locator: §4
+  excerpt: 'Neopythagoreans typically emphasize the role of number in the cosmos and treat the One and Indefinite Dyad as ultimate principles'
+  passage: e0aa034178b19f53
 - key: sep-neoplatonism
   locator: §7
   excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'

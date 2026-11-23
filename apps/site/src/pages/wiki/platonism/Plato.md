@@ -3,6 +3,7 @@ title: 'Plato'
 description: 'Athenian philosopher, founder of the Academy, and the source of the Platonic tradition the later pages follow.'
 group: 'Plato and the Academy'
 order: 30
+audited: '2026-11-23'
 entity: plato
 ---
 
@@ -12,7 +13,7 @@ Plato was the son of Ariston and a citizen of [[athens]] [@diogenes-laertius-liv
 
 ## Life
 
-The ancient lives say Plato became a pupil of Socrates at about twenty. After Socrates was gone he is said to have turned to Cratylus the Heraclitean and to Hermogenes, then to have travelled to Megara, Cyrene, Italy and Egypt [@diogenes-laertius-lives-hicks, DL 3.6]. The same passage names the Pythagoreans Philolaus and Eurytus as the people he went to Italy to see. Rouse Ball gives a different order and says that in Italy Plato became close to Archytas, Eurytus of Metapontum and Timaeus of Locri [@rouse-ball-short-account-history-mathematics, p. 35]. A modern reading dates his first visit to southern Italy and Sicily to 388/7, after the death of Socrates [@sep-archytas, §1.4]. Whether he met an aged Philolaus at [[tarentum]] on that trip is only a possibility [@sep-philolaus, §7.2], and Rouse Ball adds that Eudoxus also went to Tarentum and studied under Archytas [@rouse-ball-short-account-history-mathematics, p. 36].
+The ancient lives say Plato became a pupil of Socrates at about twenty. After Socrates was gone he is said to have turned to Cratylus the Heraclitean and to Hermogenes, then to have travelled to Megara, Cyrene, Italy and Egypt [@diogenes-laertius-lives-hicks, DL 3.6]. The same passage names the Pythagoreans Philolaus and Eurytus as the people he went to Italy to see [@diogenes-laertius-lives-hicks, DL 3.6]. Rouse Ball gives a different order and says that in Italy Plato became close to Archytas, Eurytus of Metapontum and Timaeus of Locri [@rouse-ball-short-account-history-mathematics, p. 35]. A modern reading dates his first visit to southern Italy and Sicily to 388/7, after the death of Socrates [@sep-archytas, §1.4]. Whether he met an aged Philolaus at [[tarentum]] on that trip is only a possibility [@sep-philolaus, §7.2], and Rouse Ball adds that Eudoxus also went to Tarentum and studied under Archytas [@rouse-ball-short-account-history-mathematics, p. 36].
 
 Diogenes says Plato made three voyages to Sicily. On the first, the elder Dionysius took offence at Plato's views on tyranny [@diogenes-laertius-lives-hicks, DL 3.18]. On a later voyage, to the younger Dionysius, some say Plato was in danger as a suspected backer of a plan to free the island, and Archytas the Pythagorean wrote to Dionysius and got him home safe to Athens [@diogenes-laertius-lives-hicks, DL 3.21]. The Stanford article on Archytas dates the rescue to 361, when Archytas sent a ship to take Plato from Dionysius II of [[syracuse]] [@sep-archytas, preamble]. The same article describes the personal and philosophical ties between the two men as complex and the evidence for disagreement as plentiful [@sep-archytas, preamble].
 
@@ -22,13 +23,13 @@ Plato lived in the Academy, a gymnasium outside the walls of Athens, after he re
 
 Nearly everything Plato wrote is a dialogue, with the Apology as the one striking exception, and the thirteen letters transmitted under his name are not all accepted as his [@sep-plato, §3]. Socrates speaks in nearly every dialogue and is absent only from the Laws [@sep-plato, §4]. Diogenes lists the [[republic]], [[timaeus]] and Critias together in the eighth of his groups of four [@diogenes-laertius-lives-hicks, DL 3.60]. He also reports that the opening of the Republic was found revised several times [@diogenes-laertius-lives-hicks, DL 3.37].
 
-The Republic takes up who should rule. Jowett's analysis of Book VI has Socrates ask whether philosophers or the many should govern, and answer that philosophers should, because they love knowledge of eternal truth [@plato-republic-jowett, preamble]. In the Timaeus, Socrates presents Timaeus as a man of Locris in Italy [@plato-timaeus-jowett, preamble]. Socrates plays only a small part in that dialogue, and Timaeus and Critias deliver long speeches of their own [@sep-plato, §5].
+The Republic takes up who should rule. Jowett's analysis of Book VI has Socrates ask whether philosophers or the many should govern, and answer that philosophers should, if they have the other qualities a ruler needs, because they love knowledge of the eternal and of all truth [@plato-republic-jowett, preamble]. In the Timaeus, Socrates presents Timaeus as a man of Locris in Italy [@plato-timaeus-jowett, preamble]. Socrates plays only a small part in that dialogue, and Timaeus and Critias deliver long speeches of their own [@sep-plato, §5].
 
 ## Doctrine
 
 The Stanford article names as the central distinction the one between the many observable things that appear beautiful and the one object that is what beauty really is [@sep-plato, §1]. On this reading Plato's works urge the reader to value the forms over the defective bodily world, and the soul is a different sort of object from the body, able to grasp the forms more easily when free of anything corporeal [@sep-plato, §1].
 
-Attributing a doctrine to Plato is itself debated. He affirms nothing in his own voice in any dialogue, so some ask whether his convictions can be recovered at all [@sep-plato, §6]. The Stanford article argues that the dialogues were written to bring readers to certain conclusions, and that Plato probably meant his writings as aids to conversation [@sep-plato, §6].
+Attributing a doctrine to Plato is itself debated. He affirms nothing in his own voice in any dialogue, so some ask whether his convictions can be recovered at all [@sep-plato, §6]. The Stanford article argues that dialogues in which one character dominates the conversation were written to bring readers to certain conclusions, and that Plato probably meant all his writings as aids to conversation [@sep-plato, §6].
 
 ## Pythagorean Influence
 

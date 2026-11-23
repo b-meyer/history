@@ -3,6 +3,7 @@ title: 'Pythagoras'
 description: 'Samian philosopher who settled at Croton about 530 BCE and drew the followers later called the Pythagoreans.'
 group: 'Pythagorean Beginnings'
 order: 10
+audited: '2026-11-23'
 entity: pythagoras
 ---
 
@@ -12,7 +13,7 @@ Pythagoras lived from about 570 to about 490 BCE. He spent his early years on [[
 
 ## The Pythagorean Question
 
-By the third century CE, when the first detailed accounts that survive intact were written, some circles treated him as the master philosopher and the source of Greek philosophical truth. [@sep-pythagoras, §1] Late in the first century BCE a large collection of books was being passed off as the work of Pythagoras and other early Pythagoreans. [@sep-pythagoras, §1]
+By the third century CE, when the first detailed accounts that survive intact were written, some circles treated him as the master philosopher and the source of Greek philosophical truth. [@sep-pythagoras, §1] By the close of the first century BCE, many books falsely ascribed to Pythagoras and to early Pythagoreans were in circulation. [@sep-pythagoras, §1]
 
 The three fullest ancient lives, by Diogenes Laertius, Porphyry and Iamblichus, date to the third century CE, some 800 years after his death. [@sep-pythagoras, §2.2] Iamblichus wrote [[on-the-pythagorean-way-of-life]], which includes some biography but concentrates on the way of life Pythagoras set up for his followers. [@sep-pythagoras, §2.2] This page therefore reports what the later authors say as their account, and marks where modern scholars judge it unreliable.
 

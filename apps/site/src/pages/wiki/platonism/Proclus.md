@@ -3,6 +3,7 @@ title: 'Proclus'
 description: 'Born at Constantinople in 412, a Platonist at Athens until his death in 485, and author of the Elements of Theology.'
 group: 'Late Platonists'
 order: 90
+audited: '2026-11-23'
 entity: proclus
 ---
 
@@ -36,12 +37,12 @@ The Stanford article on Neoplatonism dates the disbanding of the Athenian Neopla
 
 Marinus says that by the age of twenty-eight Proclus had written many treatises, among them a commentary on the Timaeus [@marinus-life-of-proclus-guthrie, Marinus 13]. The Stanford article cites the same passage for the age of 27 [@sep-proclus, §1.2]. Marinus adds that Proclus preferred this commentary, and that he said that of all ancient books he would leave in circulation only the Oracles and the Timaeus [@marinus-life-of-proclus-guthrie, Marinus 38].
 
-Roughly two thirds of his output is lost [@sep-proclus, §1.2]. The surviving works include five commentaries on Plato, a commentary on Euclid, the Elements of Physics and the Elements of Theology, an astronomical work, three short treatises on providence, fate, free will and evil, the Platonic Theology and a set of hymns [@sep-proclus, §1.2]. The Platonic Theology is generally taken to be his last work [@sep-proclus, §1.2].
+Roughly two thirds of his output is lost [@sep-proclus, §1.2]. The surviving works include five commentaries on Plato, a commentary on Euclid, the Elements of Physics and the Elements of Theology, an astronomical work, the Tria opuscula, three monographs whose subjects are providence, fate, free will and the origin of evil, the Platonic Theology and a set of hymns [@sep-proclus, §1.2]. The Platonic Theology is generally taken to be his last work [@sep-proclus, §1.2].
 
-The [[elements-of-theology]] is the usual starting point for his philosophy, as a systematic introduction to the Neoplatonic account of what exists [@sep-proclus, preamble]. It opens with the proposition that all multitude participates in some respect of the one [@proclus-elements-of-theology-taylor, ET 1]. In Thomas Taylor's translation, proposition 129 sets out a chain of dependence. A divine body is divine through a deified soul, soul through a divine intellect, and intellect through participation of a divine unity [@proclus-elements-of-theology-taylor, ET 129].
+The Stanford article calls the [[elements-of-theology]] probably the best starting point for the study of his philosophy, a systematic introduction to the Neoplatonic metaphysical system [@sep-proclus, preamble]. It opens with the proposition that all multitude participates in some respect of the one [@proclus-elements-of-theology-taylor, ET 1]. In Thomas Taylor's translation, proposition 129 sets out a chain of dependence. A divine body is divine through a deified soul, soul through a divine intellect, and intellect through participation of a divine unity [@proclus-elements-of-theology-taylor, ET 129].
 
 ## Place in the Tradition
 
-The Stanford article describes Proclus as continuing a movement begun by [[iamblichus]] and as following the teaching of Syrianus [@sep-proclus, preamble]. Its aim was to show that the religious revelations of Homer and Hesiod, the Orphic poems and the Chaldaean Oracles agree with one another, and to bring them into the philosophical tradition of Pythagoras and Plato [@sep-proclus, preamble]. Marinus says Proclus read the works of Porphyry and Iamblichus on the Oracles [@marinus-life-of-proclus-guthrie, Marinus 26].
+The Stanford article describes Proclus as continuing a movement begun by [[iamblichus]] and as following the teaching of Syrianus [@sep-proclus, preamble]. In the same account, Proclus was eager to show that the religious revelations of Homer and Hesiod, the Orphic poems and the Chaldaean Oracles agree with one another, and to bring them into the philosophical tradition of Pythagoras and Plato [@sep-proclus, preamble]. Marinus says Proclus read the works of Porphyry and Iamblichus on the Oracles [@marinus-life-of-proclus-guthrie, Marinus 26].
 
 The Stanford article on Neoplatonism lists him among the important figures of late antique [[neoplatonists|Neoplatonism]] [@sep-neoplatonism, §1]. His student Ammonius became head of the school at Alexandria [@sep-proclus, preamble].

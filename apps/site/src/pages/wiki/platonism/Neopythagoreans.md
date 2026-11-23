@@ -3,6 +3,7 @@ title: 'Neopythagoreans'
 description: 'Platonists and Pythagorean revivalists of roughly the first two centuries CE who read number and the Monad into Plato.'
 group: 'Between Plato and Plotinus'
 order: 50
+audited: '2026-11-23'
 entity: neopythagoreans
 ---
 
@@ -18,9 +19,9 @@ Neopythagoreans typically stress number in the cosmos. They credit Pythagoras wi
 
 ## Alexandria and Rome
 
-The first Neopythagorean in the metaphysical sense was Eudorus of Alexandria, active in the middle and later first century BCE. Philo, a Jewish thinker of Alexandria one generation after Eudorus, used a Pythagorean theory of principles and Pythagorean number symbolism to give a philosophical reading of the Old Testament. [@sep-pythagoreanism, §4.3] Rouse Ball's history of mathematics makes the same point about the city. In the change from republic to empire, he says, the prevailing views of philosophy at [[alexandria]] became mostly neo-platonic or neo-pythagorean. [@rouse-ball-short-account-history-mathematics, p. 78]
+The first Neopythagorean in the metaphysical sense was Eudorus of Alexandria, active in the middle and later first century BCE. Philo, a Jewish thinker of Alexandria one generation after Eudorus, used a Pythagorean theory of principles and Pythagorean number symbolism to give a philosophical reading of the Old Testament. [@sep-pythagoreanism, §4.3] Rouse Ball's history of mathematics, writing about the schools of [[alexandria]], says that the confusion of the change from republic to empire coincided with a shift in the prevailing views of philosophy, which were afterward mostly neo-platonic or neo-pythagorean. [@rouse-ball-short-account-history-mathematics, p. 78]
 
-At [[rome]] the movement took a different form, closer to ritual and conduct than to metaphysics. The Stanford Encyclopedia describes a strand that treats Pythagoras as a religious expert or a model of the moral life, tied to the prominence of Pythagoreanism in Roman literature of the first century BCE and first century CE. [@sep-pythagoreanism, §4.5] It names Nigidius Figulus and Varro, the two most learned men in Rome in the first century BCE, as having connections to Pythagorean ritual practices. [@sep-pythagoreanism, §4.5]
+The Stanford Encyclopedia describes a strand that treats Pythagoras as a religious expert or a model of the moral life, tied to the prominence of Pythagoreanism in the literature of [[rome]] in the first century BCE and first century CE. [@sep-pythagoreanism, §4.5] It names Nigidius Figulus and Varro, the two most learned men in Rome in the first century BCE, as having connections to Pythagorean ritual practices. [@sep-pythagoreanism, §4.5]
 
 The article sorts the movement into strands. One treats Pythagoras as a master metaphysician, a second stresses his place in the mathematical sciences, and a third stresses his practices. [@sep-pythagoreanism, §4.3] [@sep-pythagoreanism, §4.4] [@sep-pythagoreanism, §4.5] [[moderatus]] and [[numenius]] belong to the first, and [[nicomachus]] to the second.
 
