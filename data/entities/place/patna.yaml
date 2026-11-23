@@ -1,0 +1,5 @@
+id: patna
+type: place
+names: { en: Patna }
+ids: { wikidata: 'Q80484', geonames: '1260086' }
+coords: [85.14, 25.61]

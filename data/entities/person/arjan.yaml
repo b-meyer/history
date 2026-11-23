@@ -1,0 +1,73 @@
+id: arjan
+type: person
+names:
+  en: Guru Arjan
+ids:
+  wikidata: Q369920
+claims:
+  - id: arjan.born
+    predicate: born
+    when: 1563
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Sikhism article's list of gurus gives Guru Arjan as 1563-1606.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The list of the ten gurūs gives Gurū Arjan (1563–1606).
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Arjan (1563–1606)
+  - id: arjan.died
+    predicate: died
+    when: 1606
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Sikhism article's list of gurus gives Guru Arjan as 1563-1606.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The list of the ten gurūs gives Gurū Arjan (1563–1606).
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Arjan (1563–1606)
+  - id: arjan.active-at.amritsar
+    predicate: active-at
+    object: amritsar
+    when: 1604-08-16
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-guru-granth-sahib
+        note: 'Graded A scholarly: eor-sikhism states as fact that on August 16, 1604 Guru Arjan placed the Granth in the Hari Mandir in Amritsar; eor-guru-granth-sahib only mentions the Harmandir Sahib in Amritsar as the holiest shrine and names neither Arjan nor the date.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Arjan installed the Granth in the Hari Mandir in Amritsar on August 16, 1604; the Guru Granth Sahib article confirms the shrine is in Amritsar but does not name Arjan.'
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: On August 16, 1604, Gurū Arjan ceremoniously put the Granth in the inner sanctuary of the Harī Mandir in Amritsar.
+      - key: eor-guru-granth-sahib
+        locator: preamble
+        stance: asserts
+        excerpt: Sikhs' holiest shrine, the Harmandir Sāhib (the Golden Temple) in Amritsar

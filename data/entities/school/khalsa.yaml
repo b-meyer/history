@@ -1,0 +1,88 @@
+id: khalsa
+type: school
+names:
+  en: Khalsa
+ids:
+  wikidata: Q2004192
+claims:
+  - id: khalsa.branch-of.sikhi
+    predicate: branch-of
+    object: sikhi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article presents the Khalsa as the community of pure ones to which Sikhs aspire, and eor-sikhism treats Khalsa initiation and emblems as part of Sikh practice.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Both articles describe the Khalsa as the community of initiated Sikhs within Sikhism.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: members of the Sikh Khālsā, "the community of pure ones," aspire
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: The amrit initiation is open to both Sikh men and women, and both are equally enjoined to wear the emblems of the Khālsā
+  - id: khalsa.opened
+    predicate: opened
+    when: 1699
+    where: anandpur
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-gobind-singh
+        note: The article says Gobind Singh established the Khalsa, with the Baisakhi 1699 gathering at Anandpur described in the text, and eor-sikhism gives 1699 and Keshgarh in Anandpur.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: EoR says Gobind Singh created the Khalsa in 1699 at Keshgarh in Anandpur, stated as fact.
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: created the Khālsā (Community of the Pure) in 1699
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: In fact, it was Gobind Singh who established the Khālsā
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Keshgarh, in Anandpur, where he created the Khālsā
+  - id: khalsa.active-at.anandpur
+    predicate: active-at
+    object: anandpur
+    when: 1699
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-gobind-singh
+        note: Early in 1699 Gobind summoned the Sikhs to Anandpur and on April 13, 1699 founded the Khalsa there; eor-sikhism places its creation at Keshgarh in Anandpur.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Khalsa was created at Keshgarh in Anandpur in 1699, and Sikhs were summoned to Anandpur for it.
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Keshgarh, in Anandpur, where he created the Khālsā
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: to present themselves at Anandpur on the Hindu New Year's day

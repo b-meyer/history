@@ -1,0 +1,110 @@
+id: nanak
+type: person
+names:
+  en: Guru Nanak
+ids:
+  wikidata: Q83322
+claims:
+  - id: nanak.born
+    predicate: born
+    when: 1469
+    where: talwandi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-nanak says he was born in 1469 in Talwandi, a village in northern India (now Pakistan), and eor-sikhism says born in the Punjab in 1469; the Nankana Sahib name is not in the text.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Nanak was born in 1469, in Talwandi (now in Pakistan); the Sikhism article gives Punjab, 1469.
+    sources:
+      - key: eor-nanak
+        locator: preamble
+        stance: asserts
+        excerpt: Born in 1469, in Talwandi, a small village in northern India (now in Pakistan)
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: who was born in the Punjab in 1469
+  - id: nanak.died
+    predicate: died
+    when: 1539
+    where: kartarpur
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-nanak states flatly that Guru Nanak died in Kartarpur in 1539, and eor-sikhism gives his dates as 1469-1539.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Nanak died in Kartarpur in 1539; the Sikhism article gives his dates as 1469-1539.
+    sources:
+      - key: eor-nanak
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Nānak died in Kartarpur in 1539.
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Nānak (1469–1539)
+  - id: nanak.active-at.kartarpur
+    predicate: active-at
+    object: kartarpur
+    when: 1539
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-nanak says he settled in Kartarpur, a village he founded by the Ravi, and died there in 1539; eor-sikhism says he settled on the Ravi's banks where a community gathered.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Nanak settled at Kartarpur, a village he founded on the Ravi, and died there in 1539; the Sikhism article says only the Ravi banks.
+    sources:
+      - key: eor-nanak
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Nānak settled in Kartarpur, a village he founded by the river Ravi
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: he settled on the banks of the river Ravi, where a community of Sikhs gathered
+  - id: nanak.founder-of.sikhi
+    predicate: founder-of
+    object: sikhi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-guru
+        note: Both EoR articles state as plain fact that Nanak (1469-1539) was the founder of the Sikh religion/Sikhism, first of ten gurus.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-nanak opens by stating as fact that Nanak was the founder of the Sikh religion, and eor-guru calls him Sikhism's founder.
+    sources:
+      - key: eor-nanak
+        locator: preamble
+        stance: asserts
+        excerpt: was the founder of the Sikh religion
+      - key: eor-guru
+        locator: preamble
+        stance: asserts
+        excerpt: Sikhism's founder Gurū Nānak (1469–1539)

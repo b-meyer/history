@@ -1,0 +1,5 @@
+id: kartarpur
+type: place
+names: { en: Kartarpur }
+ids: { wikidata: 'Q6373510', geonames: '11081786' }
+coords: [75.01, 32.08]

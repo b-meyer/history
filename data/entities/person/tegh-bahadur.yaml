@@ -1,0 +1,79 @@
+id: tegh-bahadur
+type: person
+names:
+  en: Guru Tegh Bahadur
+ids:
+  wikidata: Q2019145
+claims:
+  - id: tegh-bahadur.born
+    predicate: born
+    when: 1621
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Sikhism article's list of gurus gives Tegh Bahadur as 1621-1675.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The list of the ten gurūs gives Gurū Tegh Bahadur (1621–1675).
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Tegh Bahadur (1621–1675)
+  - id: tegh-bahadur.died
+    predicate: died
+    when: 1675-11-11
+    where: delhi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article says Tegh Bahadur was executed in Delhi on November 11, 1675, and eor-sikhism gives his dates as 1621-1675 (year only, no place).
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Tegh Bahadur was executed in Delhi on November 11, 1675; the Sikhism article gives 1675.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: was executed in Delhi on November 11, 1675
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Tegh Bahadur (1621–1675)
+  - id: tegh-bahadur.active-at.delhi
+    predicate: active-at
+    object: delhi
+    when: 1675-11-11
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: He was summoned by the Mughal emperor and executed in Delhi on November 11, 1675; eor-sikhism says only that he gave up his life for religious freedom, without naming Delhi.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Tegh Bahadur was summoned and executed in Delhi on November 11, 1675; the Sikhism article says he gave up his life for religious freedom without naming Delhi.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: was executed in Delhi on November 11, 1675
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Gurū Tegh Bahadur (the ninth gurū and father of Gurū Gobind Singh) gave up his life for religious freedom.

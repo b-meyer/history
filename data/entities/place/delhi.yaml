@@ -1,0 +1,5 @@
+id: delhi
+type: place
+names: { en: Delhi }
+ids: { wikidata: 'Q3242297' }
+coords: [77.23, 28.66]

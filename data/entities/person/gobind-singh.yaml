@@ -1,0 +1,175 @@
+id: gobind-singh
+type: person
+names:
+  en: Guru Gobind Singh
+ids:
+  wikidata: Q312967
+claims:
+  - id: gobind-singh.born
+    predicate: born
+    when: 1666-12-26
+    where: patna
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article states he was born at Patna on December 26, 1666, and eor-sikhism names Patna Sahib as his birthplace (no date).
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Gobind Singh was born at Patna on December 26, 1666, and Patna Sahib is listed as his birthplace.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: Gobind Singh was born at Patna (in the Indian state of Bihar) on December 26, 1666
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Patna Sāhib in Bihar, where he was born
+  - id: gobind-singh.died
+    predicate: died
+    when: 1708-10-07
+    where: nanded
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article says he was stabbed at Nander and succumbed to his wounds on October 7, 1708; eor-sikhism names Hazur Sahib in Nander as where he died (no date).
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Gobind Singh died of stab wounds on October 7, 1708, at Nander; the Sikhism article also names Hazur Sahib in Nander as where he died.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: Before he succumbed to his wounds on October 7, 1708
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Hazur Sāhib in Nander, where he died
+  - id: gobind-singh.active-at.anandpur
+    predicate: active-at
+    object: anandpur
+    when: 1699
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Gobind summoned the Sikhs to Anandpur in early 1699 and baptized the first five Khalsa there; eor-sikhism says he created the Khalsa at Keshgarh in Anandpur.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Gobind Singh summoned Sikhs to Anandpur and created the Khalsa there at Keshgarh in 1699.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: to present themselves at Anandpur on the Hindu New Year's day
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Keshgarh, in Anandpur, where he created the Khālsā
+  - id: gobind-singh.active-at.damdama
+    predicate: active-at
+    object: damdama
+    when: 1704
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The EoR Adi Granth article states the final recension was prepared in 1704 by Guru Gobind Singh at Damdama, where he resided for some time after leaving Anandpur; the EoR Sikhism article only names Damdama as a place associated with the tenth guru.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: The final Granth recension was prepared in 1704 by Gobind Singh at Damdama; the Sikhism article lists Damdama as a takht tied to him.
+    sources:
+      - key: eor-adi-granth
+        locator: preamble
+        stance: asserts
+        excerpt: prepared in 1704 by Gurū Gobind Singh, the tenth gurū, at Damdamā
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Damdama, near Bhatinda, which later developed into a center of Sikh learning
+  - id: gobind-singh.active-at.nanded
+    predicate: active-at
+    object: nanded
+    when: 1708
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article says the guru followed the emperor to Nander in 1708, where he was stabbed and died; eor-sikhism confirms Hazur Sahib in Nander as his place of death.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Gobind Singh was stabbed at Nander in his tent and died there in October 1708.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: At Nander two young Pathans who were in his entourage entered his tent and stabbed him.
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Hazur Sāhib in Nander, where he died
+  - id: gobind-singh.founder-of.khalsa
+    predicate: founder-of
+    object: khalsa
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-dasam-granth
+        note: "Graded B tradition: All three EoR passages state flatly that Gobind Singh established or created the Khalsa (1699 in eor-sikhism), but as the tradition's own account with no scholarly argument or dispute shown, so capped at B."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article states flatly that it was Gobind Singh who established the Khalsa, and eor-sikhism and eor-dasam-granth say the same without hedging (eor-sikhism separately frames the amrit ceremony as what Sikhs believe).
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sikhism
+        note: Three EoR articles state flatly that Gobind Singh established or created the Khalsa in 1699; the amrit scene itself is reported as Sikh belief.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The EoR Gobind Singh article states as fact that 'it was Gobind Singh who established the Khālsā' (with the April 13, 1699 founding narrated in its body), and the EoR Sikhism and Dasam Granth articles likewise say plainly that he created the Khālsā in 1699.
+    sources:
+      - key: eor-gobind-singh
+        locator: preamble
+        stance: asserts
+        excerpt: In fact, it was Gobind Singh who established the Khālsā
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: The tenth gurū, Gobind Singh, created the Khālsā (Community of the Pure) in 1699
+      - key: eor-dasam-granth
+        locator: preamble
+        stance: asserts
+        excerpt: It celebrates the democratic Khālsā community created by Gurū Gobind Singh

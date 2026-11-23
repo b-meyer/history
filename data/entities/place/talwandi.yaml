@@ -1,0 +1,5 @@
+id: talwandi
+type: place
+names: { en: Talwandi }
+ids: { wikidata: 'Q2353077', geonames: '1169372' }
+coords: [73.71, 31.45]
