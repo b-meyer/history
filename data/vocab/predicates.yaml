@@ -44,6 +44,12 @@ located-at:
   inverseLabel: location of
   subject: institution
   object: place
+buried-at:
+  label: buried at
+  inverse: burial-place-of
+  inverseLabel: burial place of
+  subject: person
+  object: place
 
 # People and their schools
 student-of:
@@ -64,6 +70,28 @@ founder-of:
   inverseLabel: founded by
   subject: person
   object: [school, institution, tradition]
+head-of:
+  label: head of
+  inverse: headed-by
+  inverseLabel: headed by
+  subject: person
+  object: [school, institution]
+  dated: true
+successor-of:
+  label: successor of
+  inverse: succeeded-by
+  inverseLabel: succeeded by
+  subject: person
+  object: person
+  dated: true
+
+# Kinship
+nephew-of:
+  label: nephew of
+  inverse: uncle-of
+  inverseLabel: uncle of
+  subject: person
+  object: person
 
 # Works
 attributed-to:
