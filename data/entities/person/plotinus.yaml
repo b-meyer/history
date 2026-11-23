@@ -127,3 +127,96 @@ claims:
         locator: p. 2
         stance: asserts
         excerpt: 'This was at the end of the second year of the reign of Claudius, and, as Eustochius tells me, Plotinus was then sixty-six.'
+  - id: plotinus.founder-of.neoplatonists
+    predicate: founder-of
+    object: neoplatonists
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP says Plotinus is generally regarded as the founder of Late Antique Platonism, sometimes termed Neoplatonism.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: SEP says Plotinus is commonly regarded, rightly or wrongly, as the founder of Neoplatonism, so the attribution is hedged.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: sep-iamblichus
+        note: The cited passage says there is no unitary Neoplatonic school and that Neoplatonism is a modern category; it reports Praechter calling Iamblichus second founder after Plotinus but does not itself state Plotinus founded a school of Neoplatonists.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP Plotinus says he is 'generally regarded' as founder of Neoplatonism and SEP Neoplatonism says 'rightly or wrongly' he is 'commonly regarded' so, while SEP Iamblichus stresses Neoplatonism is a modern category with no unitary school, so the founder label is a hedged convention.
+    sources:
+      - key: sep-plotinus
+        locator: preamble
+        stance: reports
+        excerpt: Plotinus is generally regarded as the founder of Late Antique Platonism, sometimes termed “Neoplatonism”
+      - key: sep-neoplatonism
+        locator: §1
+        stance: reports
+        excerpt: Rightly or wrongly, the Egyptian-born Plotinus (204/5–270) is commonly regarded as the founder of Neoplatonism.
+      - key: sep-iamblichus
+        locator: §2.1
+        stance: disputes
+        excerpt: there is no unitary Neoplatonic school in Late Antiquity
+  - id: plotinus.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: 0232/0243
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: SEP, relaying Porphyry, says he attended Ammonius Saccas's lectures in Alexandria at 28 (born 204, so 232) and stayed eleven years until the 243 expedition."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: SEP says Plotinus was a pupil of Ammonius Saccas of Alexandria and moved from Alexandria to Rome around 245; the 232/243 dates are not stated.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: SEP Plotinus (from Porphyry's Life) says he attended Ammonius Saccas in Alexandria from age 28 for eleven years until joining Gordian's expedition in 243, i.e. about 232-243; SEP Neoplatonism also places him in Alexandria before Rome."
+    sources:
+      - key: sep-plotinus
+        locator: §1
+        stance: asserts
+        excerpt: came to attend the lectures of the elusive but evidently influential Ammonius Saccas in Alexandria at the age of 28 and that he stayed with his teacher for the next eleven years
+      - key: sep-neoplatonism
+        locator: §1
+        stance: asserts
+        excerpt: Around 245, at the age of 40, Plotinus moved from Alexandria to Rome
+  - id: plotinus.influenced-by.plato
+    predicate: influenced-by
+    object: plato
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP states Plato's figure dominates Plotinus' thought and is the key source of inspiration for his worldview.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: SEP says carefully selected passages from Plato's dialogues often serve Plotinus as starting points for his speculations.
+    sources:
+      - key: sep-plotinus
+        locator: §1
+        stance: asserts
+        excerpt: Plato’s figure dominates Plotinus’ thought
+      - key: sep-neoplatonism
+        locator: §1
+        stance: asserts
+        excerpt: Carefully selected passages from Plato’s dialogues

@@ -1,0 +1,34 @@
+id: republic
+type: work
+names:
+  en: Republic
+claims:
+  - id: republic.attributed-to.plato
+    predicate: attributed-to
+    object: plato
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: DL 3.60 lists the Republic or On Justice, political, in Plato's eighth tetralogy.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: plato-republic-jowett
+        note: "Graded A scholarly: Jowett's introduction opens by calling the Republic of Plato the longest of his works except the Laws, and treats it throughout as Plato's."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: DL 3.60 lists the Republic or On Justice in Plato's eighth tetralogy, and Jowett's introduction calls it the longest of Plato's works except the Laws."
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.60
+        stance: asserts
+        excerpt: the Republic or On Justice, political
+      - key: plato-republic-jowett
+        locator: preamble
+        stance: asserts
+        excerpt: The Republic of Plato is the longest of his works with the exception of the Laws

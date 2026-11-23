@@ -1,0 +1,54 @@
+id: life-of-plotinus
+type: work
+names:
+  en: Life of Plotinus
+claims:
+  - id: life-of-plotinus.attributed-to.porphyry
+    predicate: attributed-to
+    object: porphyry
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP calls it Porphyry's own Life of Plotinus, written as a preface to his edition of the Enneads.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eunapius-lives-wright
+        note: "Graded B primary: Eunapius says Porphyry set forth Plotinus's whole life so fully that no one could add more evidence."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP calls the Life of Plotinus Porphyry's own preface to his edition of the Enneads, and Eunapius says Porphyry set forth Plotinus' whole life fully.
+    sources:
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: his own Life of Plotinus, probably composed in 301 C.E. as a preface to his edition of Plotinus’ writings
+      - key: eunapius-lives-wright
+        locator: p. 353
+        stance: asserts
+        excerpt: Porphyry set forth his whole life so fully that no one could bring forward more evidence.
+  - id: life-of-plotinus.composed
+    predicate: composed
+    when: 0301
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says it was 'probably composed in 301 C.E.', so the date is hedged.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP says the Life of Plotinus was 'probably composed in 301 C.E.', a hedged dating.
+    sources:
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: his own Life of Plotinus, probably composed in 301 C.E.

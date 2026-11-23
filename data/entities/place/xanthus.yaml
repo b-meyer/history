@@ -1,0 +1,5 @@
+id: xanthus
+type: place
+names: { en: Xanthos }
+ids: { wikidata: 'Q464936', pleiades: '639166' }
+coords: [29.32, 36.36]

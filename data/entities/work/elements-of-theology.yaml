@@ -1,0 +1,30 @@
+id: elements-of-theology
+type: work
+names:
+  en: Elements of Theology
+claims:
+  - id: elements-of-theology.attributed-to.proclus
+    predicate: attributed-to
+    object: proclus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP §1.2 lists the Elements of Theology among Proclus' surviving works and §3 treats it as his introduction to metaphysics.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: proclus-elements-of-theology-taylor
+        note: Taylor's note on the proposition says what Proclus means by the echo of soul, treating the work as Proclus's.
+    sources:
+      - key: sep-proclus
+        locator: §1.2
+        stance: asserts
+        excerpt: two manuals on physics and metaphysics respectively (Elements of Physics, Elements of Theology)
+      - key: proclus-elements-of-theology-taylor
+        locator: ET 129
+        stance: asserts
+        excerpt: By the echo of soul, Proclus means that vital quality

@@ -1,0 +1,152 @@
+id: neoplatonists
+type: school
+names:
+  en: Neoplatonists
+ids:
+  wikidata: Q162145
+claims:
+  - id: neoplatonists.influenced-by.plato
+    predicate: influenced-by
+    object: plato
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-plotinus
+        note: SEP says Neoplatonism is based primarily on what are regarded as the fundamental principles of Platonic philosophy.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says they called themselves Platonists and held Plato's views in higher esteem than those of any other thinker.
+    sources:
+      - key: sep-neoplatonism
+        locator: preamble
+        stance: asserts
+        excerpt: they did call themselves “Platonists” and held Plato’s views, which they understood as a positive system of philosophical doctrine, in higher esteem than the tenets of the pre-Socratics, Aristotle, or any other subsequent thinker
+      - key: sep-plotinus
+        locator: preamble
+        stance: asserts
+        excerpt: Based primarily on what are regarded as the fundamental principles of Platonic philosophy
+  - id: neoplatonists.active-at.rome
+    predicate: active-at
+    object: rome
+    when: 0244/0270
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-plotinus
+        note: 'Graded A scholarly: SEP says Plotinus, the founder, settled permanently in Rome late in 244 and taught there continuously until his death in 270.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says Plotinus moved to Rome around 245 and founded a school there, and gives his death as 270; the exact 244/270 range is not stated.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP Neoplatonism 1 says Plotinus, commonly regarded as founder of Neoplatonism, moved from Alexandria to Rome around 245 and founded a school there, and SEP Plotinus 1 says he settled in Rome late in 244 and taught continuously until his death in 270.'
+    sources:
+      - key: sep-neoplatonism
+        locator: §1
+        stance: asserts
+        excerpt: Plotinus moved from Alexandria to Rome and founded a school of philosophy there
+      - key: sep-plotinus
+        locator: §1
+        stance: asserts
+        excerpt: settled permanently there late in 244, teaching continuously for more than twenty-five years, until his death in 270
+  - id: neoplatonists.active-at.apamea
+    predicate: active-at
+    object: apamea
+    when: 0270/0325~
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Section 1.1 says it is now accepted that Iamblichus settled in Apamea, where Amelius had earlier moved, and founded a flourishing school there; the exact date range is not given.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: porphyry-life-of-plotinus-mackenna
+        note: "Graded A primary: Porphyry reports that Amelius was at Apamea in Syria at the time of Plotinus's death; this places one Neoplatonist there but gives no range of dates."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Porphyry's Life places Amelius at Apamea in Syria when Plotinus died (270), and SEP says it is 'now accepted' that Iamblichus settled in Apamea and founded a flourishing school there, though no date for the school is given.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A primary: Porphyry (Life of Plotinus, on Plotinus's death in 270) places Amelius at Apamea in Syria, and SEP Iamblichus 1.1 states as accepted fact that Iamblichus settled in Apamea, where Amelius had moved, and founded a flourishing school there."
+    sources:
+      - key: sep-iamblichus
+        locator: §1.1
+        stance: asserts
+        excerpt: it is now accepted that he settled in Apamea, where Plotinus’ first disciple Amelius had previously moved. There, welcomed by a wealthy notable, Sopater, he founded a flourishing school
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: p. 2
+        stance: asserts
+        excerpt: Amelius at Apamea in Syria
+  - id: neoplatonists.active-at.athens
+    predicate: active-at
+    object: athens
+    when: 0430/0529
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says the Athens group disbanded after Justinian's legislation of 529; the 430 start date is not stated in the passage.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-proclus
+        note: SEP §1.1 says Proclus came to Athens in 430-431 drawn by the fame of the Platonic School there, and later headed it; the end date of 529 is not in the cited passage.
+    sources:
+      - key: sep-neoplatonism
+        locator: §7
+        stance: asserts
+        excerpt: The most vigorous group of Neoplatonists, living in Athens and still adhering to the old rituals, disbanded in the aftermath of Emperor Justinian’s legislation of 529
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: In 430–431, 18 years old, Proclus moved to Athens, attracted by the fame of the Platonic School there.
+  - id: neoplatonists.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: 0232/0599
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: sep-plotinus
+        note: The cited passage only places Plotinus in Alexandria under Ammonius (from about 232 to 243); it says nothing of Neoplatonists at Alexandria up to 599.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says Hellenic philosophy went on in Alexandria until the end of the 6th century and names Alexandrian Neoplatonists; the 232 start date is not stated.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP Neoplatonism 1 and 7 say Neoplatonism was taught in Alexandria and Hellenic philosophy continued there until the end of the 6th century, and SEP Plotinus 1 puts Plotinus with Ammonius Saccas in Alexandria from age 28 (about 232), but that 232 start is Plotinus as a pupil before he founded the school, so the span's lower bound is a stretch.
+    sources:
+      - key: sep-neoplatonism
+        locator: §7
+        stance: asserts
+        excerpt: Hellenic philosophy and the teaching of its attendant disciplines went on in Alexandria and Constantinople until the end of the 6th century
+      - key: sep-plotinus
+        locator: §1
+        stance: asserts
+        excerpt: came to attend the lectures of the elusive but evidently influential Ammonius Saccas in Alexandria

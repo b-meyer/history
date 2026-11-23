@@ -87,3 +87,73 @@ claims:
         locator: '§1.1'
         stance: asserts
         excerpt: 'it is now accepted that he settled in Apamea'
+  - id: iamblichus.influenced-by.porphyry
+    predicate: influenced-by
+    object: porphyry
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says it is clear Iamblichus was strongly influenced by Porphyry, though whether he was a student is questioned.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-iamblichus
+        note: The preamble calls Iamblichus a disciple of Porphyry of Tyre, and 2.1 calls him a student of Porphyry (with 'likely') and a follower of Plotinus and Porphyry.
+    sources:
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: It is clear, at any rate, that Iamblichus was strongly influenced by Porphyry
+      - key: sep-iamblichus
+        locator: preamble
+        stance: asserts
+        excerpt: disciple of Porphyry of Tyre
+  - id: iamblichus.member-of.neoplatonists
+    predicate: member-of
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: SEP lists Iamblichus, Porphyry's pupil, among the important figures of late antique Neoplatonism.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble states he was a Syrian Neoplatonist, one of three major representatives of early Neoplatonism, though 2.1 notes Neoplatonism is a modern category.
+    sources:
+      - key: sep-iamblichus
+        locator: preamble
+        stance: asserts
+        excerpt: was a Syrian Neoplatonist
+      - key: sep-neoplatonism
+        locator: §1
+        stance: asserts
+        excerpt: his pupil Iamblichus
+  - id: iamblichus.died
+    predicate: died
+    when: 0325~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble gives his dates as ca. 242 to ca. 325, so the death year is approximate.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP gives Iamblichus' dates only approximately as 'ca. 242-ca. 325'.
+    sources:
+      - key: sep-iamblichus
+        locator: preamble
+        stance: asserts
+        excerpt: Iamblichus (ca. 242–ca. 325)
