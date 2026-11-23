@@ -1,7 +1,7 @@
 import { parseEdtf } from '../dates.ts';
 import type { Graph } from '../load.ts';
 import type { EntityType } from '../schema/common.ts';
-import type { Claim } from '../schema/entity.ts';
+import type { Claim, Entity } from '../schema/entity.ts';
 import type { Basis, Confidence } from '../schema/vocab.ts';
 import { spanOf } from './records.ts';
 
@@ -13,6 +13,8 @@ export type MapEntity = {
   start: number | null;
   end: number | null;
   color?: string;
+  /** The route of the entity's home wiki article, when it has one. */
+  article?: string;
 };
 
 export type MapClaim = {
@@ -137,7 +139,31 @@ export function colorOf(graph: Graph, id: string): string | undefined {
   return undefined;
 }
 
-export function buildMapData(graph: Graph): MapData {
+function entityClaims(graph: Graph, id: string, entity: Entity): MapClaim[] {
+  const out: MapClaim[] = [];
+  for (const claim of entity.claims) {
+    const bounds = claim.when === undefined ? null : parseEdtf(claim.when);
+    const place = placeOf(graph, claim);
+    out.push({
+      id: claim.id,
+      subject: id,
+      predicate: claim.predicate,
+      ...(claim.object === undefined ? {} : { object: claim.object }),
+      ...(place === undefined ? {} : { place }),
+      start: bounds?.start ?? null,
+      end: bounds?.end ?? null,
+      approximate: bounds?.approximate ?? false,
+      confidence: claim.confidence,
+      basis: claim.basis,
+    });
+  }
+  return out;
+}
+
+export function buildMapData(
+  graph: Graph,
+  articles: ReadonlyMap<string, string> = new Map(),
+): MapData {
   const places: MapData['places'] = {};
   const entities: MapEntity[] = [];
   const claims: MapClaim[] = [];
@@ -160,24 +186,10 @@ export function buildMapData(graph: Graph): MapData {
       start: span.start,
       end: span.end,
       ...(color === undefined ? {} : { color }),
+      ...(articles.has(id) ? { article: articles.get(id) ?? '' } : {}),
     });
 
-    for (const claim of entity.claims) {
-      const bounds = claim.when === undefined ? null : parseEdtf(claim.when);
-      const place = placeOf(graph, claim);
-      claims.push({
-        id: claim.id,
-        subject: id,
-        predicate: claim.predicate,
-        ...(claim.object === undefined ? {} : { object: claim.object }),
-        ...(place === undefined ? {} : { place }),
-        start: bounds?.start ?? null,
-        end: bounds?.end ?? null,
-        approximate: bounds?.approximate ?? false,
-        confidence: claim.confidence,
-        basis: claim.basis,
-      });
-    }
+    claims.push(...entityClaims(graph, id, entity));
   }
 
   const stays = buildStays(graph, places, spans);

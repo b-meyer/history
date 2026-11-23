@@ -6,7 +6,8 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./url": "./src/url.ts"
+    "./url": "./src/url.ts",
+    "./EntityPanel.vue": "./src/components/EntityPanel.vue"
   },
   "dependencies": {
     "@deck.gl/core": "catalog:",

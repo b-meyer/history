@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { defineConfig } from 'qdocs/vite';
 import { leadsPlugin } from './leadsPlugin.ts';
+import { AI_PREPAINT_SCRIPT } from './readerSettings.ts';
 import { loadStartYears, loadWikiData, loadWikiSidebars } from './wikiData.ts';
 import { wikiProvenance } from './wikiProvenance.ts';
 
@@ -55,6 +56,9 @@ export default defineConfig({
     ...wiki.trees,
   },
   setup: './src/setup.ts',
+  // The AI-prose setting in the header on every page, and its data-ai attribute before first paint.
+  headerEnd: './src/components/ReaderSettings.vue',
+  prePaintScript: AI_PREPAINT_SCRIPT,
   routeParams: { '/e/:id': readIds() },
   // dev:leads only; see leadsPlugin.ts.
   plugins: [leadsPlugin()],

@@ -25,21 +25,24 @@ export function mapLink(entity: string, start: number | null | undefined): strin
 export function wikiProvenance(startYear: StartYear): PageNotice {
   return ({ id, frontmatter, sources }) => {
     const path = WIKI_PAGE.exec(id)?.[1];
-    if (path === undefined || path === 'wiki/index') return null;
+    if (path === undefined) return null;
+    const entity = typeof frontmatter['entity'] === 'string' ? frontmatter['entity'] : undefined;
+    // The notice that replaces the page while AI prose is off; see reader.css.
+    const off = `<AiOffNotice${entity === undefined ? '' : ` entity="${entity}"`} />`;
+    if (path === 'wiki/index') return off;
 
     const from =
       sources.length === 0
         ? ''
         : ` from ${sources.length} library ${sources.length === 1 ? 'source' : 'sources'}`;
     const audited = dateText(frontmatter['audited']);
-    const entity = typeof frontmatter['entity'] === 'string' ? frontmatter['entity'] : undefined;
     const map =
       entity === undefined
         ? ''
         : ` <a href="${mapLink(entity, startYear(entity)).replaceAll('&', '&amp;')}">Show on map</a>`;
 
     return (
-      `<p class="provenance not-prose my-4 text-sm text-gray-600">` +
+      `${off}<p class="provenance not-prose my-4 text-sm text-gray-600">` +
       `Written with AI assistance${from}, for educational purposes; a study aid, not a primary source. ` +
       `${audited === undefined ? 'Not yet audited.' : `Audited ${audited}.`}${map}</p>`
     );

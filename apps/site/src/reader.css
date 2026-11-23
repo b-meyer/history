@@ -1,0 +1,19 @@
+/* The AI-prose setting. The pre-paint script sets data-ai on <html> from localStorage before first
+   paint, so these rules apply with no flash. */
+
+/* Off hides every link into /wiki, and the list item or paragraph that holds only that link. */
+html[data-ai='off'] a[href^='/wiki'],
+html[data-ai='off'] :is(p, li, div):has(> a[href^='/wiki']:only-child) {
+  display: none;
+}
+
+/* A wiki page opens with the notice. It shows only when off, and then it replaces the article. */
+.ai-off-notice {
+  display: none;
+}
+html[data-ai='off'] .ai-off-notice {
+  display: block;
+}
+html[data-ai='off'] article:has(> .ai-off-notice) > :not(.ai-off-notice) {
+  display: none;
+}

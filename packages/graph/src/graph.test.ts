@@ -395,6 +395,12 @@ function mapData(): MapData {
 }
 
 describe('buildMapData', () => {
+  it('carries the home article route of an entity that has one', () => {
+    const map = buildMapData(loadGraph(data).graph, new Map([['plotinus', '/wiki/p/Plotinus']]));
+    expect(map.entities.find((e) => e.id === 'plotinus')?.article).toBe('/wiki/p/Plotinus');
+    expect(map.entities.find((e) => e.id === 'porphyry')).not.toHaveProperty('article');
+  });
+
   it('colours a school by the nearest colour up its branch-of chain', () => {
     write(
       'entities/tradition/faith.yaml',

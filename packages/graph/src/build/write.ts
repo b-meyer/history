@@ -24,7 +24,7 @@ export function writeOutputs(
 ): WriteSummary {
   const records = buildRecords(graph, articles);
   const shards = shardRecords(records);
-  const map = buildMapData(graph);
+  const map = buildMapData(graph, articles);
 
   const recordsDir = join(outDir, 'records');
   rmSync(recordsDir, { recursive: true, force: true });

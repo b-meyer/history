@@ -29,6 +29,8 @@ export type QDocsConsumerConfig = {
   setup?: string;
   /** Path from the app root to a JSON array of extra search entries. See QDocsConfig. */
   searchEntries?: string;
+  /** Inline script run in the head before first paint; see QDocsConfig. */
+  prePaintScript?: string;
   /**
    * Folders for Tailwind to scan for class names, relative to the app root. Tailwind's automatic
    * detection covers only the app, so a workspace package with its own components is listed here.
@@ -71,6 +73,7 @@ function buildQDocsConfig(opts: QDocsConsumerConfig): QDocsConfig {
     routeParams: opts.routeParams,
     setup: opts.setup,
     searchEntries: opts.searchEntries,
+    prePaintScript: opts.prePaintScript,
     base: resolvedBase,
   };
 }

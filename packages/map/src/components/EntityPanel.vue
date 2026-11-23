@@ -19,6 +19,16 @@ function years(start: number | null, end: number | null, approximate = false): s
   return `${c}${formatYear(start)} – ${formatYear(end)}`;
 }
 
+function entityOf(selection: Selection): string | null {
+  return selection.kind === 'entity' ? selection.entity.id : null;
+}
+
+const article = computed(() => {
+  const { selection } = props;
+  const id = selection.kind === 'stay' ? selection.stay.entity : entityOf(selection);
+  return props.data.entities.find((entity) => entity.id === id)?.article;
+});
+
 const names = computed(() => new Map(props.data.entities.map((e) => [e.id, e.name])));
 const nameOf = (id: string): string => names.value.get(id) ?? id;
 
@@ -68,6 +78,7 @@ const claim = computed(() => {
       <p class="m-0 mt-2">
         <RouterLink :to="`/e/${selection.stay.entity}`">Open record</RouterLink>
       </p>
+      <p v-if="article" class="m-0 mt-1"><RouterLink :to="article">Wiki</RouterLink></p>
     </template>
 
     <template v-else-if="selection.kind === 'entity'">
@@ -77,6 +88,7 @@ const claim = computed(() => {
       <p class="m-0 mt-2">
         <RouterLink :to="`/e/${selection.entity.id}`">Open record</RouterLink>
       </p>
+      <p v-if="article" class="m-0 mt-1"><RouterLink :to="article">Wiki</RouterLink></p>
     </template>
 
     <template v-else>

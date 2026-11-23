@@ -43,8 +43,16 @@ describe('wikiProvenance', () => {
     expect(mapLink('x')).toBe('/map?focus=x');
   });
 
-  it('adds nothing to the wiki home or to pages outside the wiki', () => {
-    expect(notice({ id: id('wiki/index'), frontmatter: {}, sources: [] })).toBeNull();
+  it('opens every wiki page with the AI-off notice, naming the entity when there is one', () => {
+    const html = notice({ id: id('wiki/a/P'), frontmatter: { entity: 'porphyry' }, sources: [] });
+    expect(html?.startsWith('<AiOffNotice entity="porphyry" />')).toBe(true);
+    expect(notice({ id: id('wiki/a/Q'), frontmatter: {}, sources: [] })).toMatch(
+      /^<AiOffNotice \/>/u,
+    );
+  });
+
+  it('gives the wiki home only the AI-off notice, and pages outside the wiki nothing', () => {
+    expect(notice({ id: id('wiki/index'), frontmatter: {}, sources: [] })).toBe('<AiOffNotice />');
     expect(notice({ id: id('about'), frontmatter: {}, sources: [] })).toBeNull();
   });
 });

@@ -188,6 +188,13 @@ export type QDocsConfig = {
    * search index appends to the page entries. A missing file adds nothing. Build and dev server only.
    */
   searchEntries?: string;
+  /**
+   * JavaScript run inline in the document head before first paint, right after the theme is
+   * applied. Use it to set an attribute on `<html>` from localStorage that CSS then reads, so a
+   * stored preference shows without a flash. It must not throw. Build-only: never shipped to the
+   * client bundle.
+   */
+  prePaintScript?: string;
 };
 
 /**
@@ -202,7 +209,12 @@ export type QDocsSetup = (ctx: {
  * The config as the client bundle sees it: build-only fields removed.
  */
 export function clientConfig(config: QDocsConfig): QDocsConfig {
-  const { routeParams: _routeParams, searchEntries: _searchEntries, ...rest } = config;
+  const {
+    routeParams: _routeParams,
+    searchEntries: _searchEntries,
+    prePaintScript: _prePaintScript,
+    ...rest
+  } = config;
   return rest;
 }
 
