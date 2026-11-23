@@ -1,0 +1,100 @@
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.1
+  excerpt: 'Plato was the son of Ariston and a citizen of Athens.'
+  passage: befaa91286d699d8
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.2
+  excerpt: 'He died, according to Hermippus, at a wedding feast, in the first year of the 108th Olympiad, in his eightyfirst year.'
+  passage: 543aefb5d1ab015e
+- key: sep-plato
+  locator: preamble
+  excerpt: 'Plato (429?–347 B.C.E.)'
+  passage: 70ce81895a76df85
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.3
+  excerpt: 'He was born, according to some, in Aegina'
+  passage: 50dae11f3c63dc36
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.6
+  excerpt: 'thence to Italy to see the Pythagorean philosophers Philolaus and Eurytus'
+  passage: 905694bd4552af65
+- key: rouse-ball-short-account-history-mathematics
+  locator: p. 35
+  excerpt: 'Next he moved to Italy, where he became intimate with Archytas the then head of the Pythagorean school, Eurytas of Metapontum, and Timaeus of Locri.'
+  passage: 50f07b1dfb54e62d
+- key: sep-archytas
+  locator: §1.4
+  excerpt: 'visited southern Italy and Sicily for the first time in 388/7'
+  passage: 652ff471c5c39fda
+- key: sep-philolaus
+  locator: §7.2
+  excerpt: 'on his first visit to Southern Italy and Sicily in 388–7 Plato met an aged Philolaus in Tarentum'
+  passage: 13462645e6d1a7ea
+- key: rouse-ball-short-account-history-mathematics
+  locator: p. 36
+  excerpt: 'Like Plato, he went to Tarentum and studied under Archytas'
+  passage: 13529c17dc6aeeb9
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.18
+  excerpt: 'He made three voyages to Sicily'
+  passage: 67e48650c9bb1f69
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.21
+  excerpt: 'on this occasion Archytas the Pythagorean wrote to Dionysius, procured his pardon, and got him conveyed safe to Athens'
+  passage: abe658cb52c7ad10
+- key: sep-archytas
+  locator: preamble
+  excerpt: 'personal and philosophical connections to Plato are complex, and there are many signs of disagreement'
+  passage: 025562f65b8b3ac1
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.7
+  excerpt: 'Having returned to Athens, he lived in the Academy'
+  passage: 853f570b2b7af69d
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.41
+  excerpt: 'the school which he founded was called the Academic school'
+  passage: 03ab94b71dd21d24
+- key: sep-plato
+  locator: §3
+  excerpt: 'Nearly everything he wrote takes the form of a dialogue.'
+  passage: 257f8e1ed8760a42
+- key: sep-plato
+  locator: §4
+  excerpt: 'being completely absent only in Laws'
+  passage: 9515a3500ac16a86
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.60
+  excerpt: 'The eighth tetralogy starts with Clitophon or Introduction, which is ethical, and is followed by the Republic or On Justice, political, Timaeus or On Nature, a physical treatise, and Critias or Story of Atlantis'
+  passage: 263c681d7601aa40
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.37
+  excerpt: 'the beginning of the Republic was found several times revised and rewritten'
+  passage: 66f53bafec9b5b1c
+- key: plato-republic-jowett
+  locator: preamble
+  excerpt: 'But who can doubt that philosophers should be chosen, if they have the other qualities which are required in a ruler?'
+  passage: 4aa68158b8a71e40
+- key: plato-timaeus-jowett
+  locator: preamble
+  excerpt: 'of Locris in Italy, a city which has admirable laws'
+  passage: e2f83e34f18e5031
+- key: sep-plato
+  locator: §5
+  excerpt: 'there are several dialogues (Sophist, Statesman, Timaeus) in which his role is small and peripheral'
+  passage: 08f80b9fff18e057
+- key: sep-plato
+  locator: §1
+  excerpt: 'The most fundamental distinction in Plato’s philosophy is between the many observable objects that appear beautiful'
+  passage: 6dfa46dbabcfe247
+- key: sep-plato
+  locator: §6
+  excerpt: 'it is highly likely that he wanted all of his writings to be supplementary aids to philosophical conversation'
+  passage: dca65d04afcd1f67
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.8
+  excerpt: 'In his doctrine of sensible things he agrees with Heraclitus, in his doctrine of the intelligible with Pythagoras, and in political philosophy with Socrates.'
+  passage: 9d52ceaee17d71e6
+- key: sep-pythagoreanism
+  locator: §3.7
+  excerpt: 'the world soul in the Timaeus is constructed according to the diatonic scale that is prominent in Philolaus'
+  passage: b2e0e65cf8a722d7
