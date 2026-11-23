@@ -90,6 +90,18 @@ Fourth ref text.
     expect(locate('# CHAPTER IV.\n\nBody.\n\n# V.\n\nOther.\n', 'ch. IV')).toEqual(['Body.']);
   });
 
+  it('resolves a book heading, by roman or arabic number, up to the next book', () => {
+    const books =
+      '# BOOK I.\n\nOne.\n\n## Part\n\nOne b.\n\n# BOOK VII.\n\nSeven.\n\n# Book VIII\n\nEight.\n\n# Civil Wars\n\nNo.\n';
+    expect(locate(books, 'bk. I')).toEqual(['One. One b.']);
+    expect(locate(books, 'bk. VII')).toEqual(['Seven.']);
+    expect(locate(books, 'bk. 7')).toEqual(['Seven.']);
+    expect(locate(books, 'bk. 8')).toEqual(['Eight.']);
+    expect(locate(books, 'bk. IX')).toEqual([]);
+    expect(() => locate(books, 'bk. seven')).toThrow(LocatorError);
+    expect(() => locate(books, 'bk. 0')).toThrow(LocatorError);
+  });
+
   it('throws on a malformed locator', () => {
     expect(() => locate(MD, '§x')).toThrow(LocatorError);
     expect(() => locate(MD, 'p. ')).toThrow(LocatorError);

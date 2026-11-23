@@ -25,7 +25,7 @@ LIBRARY_DIR=<library checkout> vp run verify -- --write
 | Type | Meaning | Allowed fix |
 | --- | --- | --- |
 | `no-text` | The library has no `text.md` for the key | Report; the operator prepares the source in the library |
-| `bad-locator` | The locator is not a known form (`§3.1`, `ch. IV`, `p. 12`, `p. 12-13`, a ref such as `DL 8.1`, `preamble`) | Correct the locator to what `vp run search` prints |
+| `bad-locator` | The locator is not a known form (`§3.1`, `ch. IV`, `bk. VII`, `p. 12`, `p. 12-13`, a ref such as `DL 8.1`, `preamble`) | Correct the locator to what `vp run search` prints |
 | `locator-unresolved` | The locator is well formed but names nothing in this text | Correct the locator, or report if the text's markers differ from the citation |
 | `excerpt-outside-locator` | The excerpt is not within the locator's text; the message says whether it is found elsewhere and at which locator | Move the locator to where it is found, or recopy the excerpt from the cited text |
 | `stale-passage` | The stored `passage` no longer matches the text | Rerun with `--write` after confirming the excerpt still says what the claim needs |

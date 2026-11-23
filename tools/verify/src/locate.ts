@@ -1,4 +1,4 @@
-// MIRRORS the library repo's `locate` in tools/passages.ts (with `collapse` from
+// MIRRORS the library repo's `locate` in tools/locate.ts (with `collapse` from
 // tools/extract/markdown.ts). History cannot import from the library, so this is a copy: change
 // both together, and keep locate.test.ts in step with the library's `locate` tests. The only
 // additions here are `locateParagraphs`, `paragraphLabels` and the `Block` type, which the quote
@@ -47,6 +47,7 @@ export function parseText(md: string): Block[] {
 }
 
 const SECTION = /^(\d+(?:\.\d+)*)\.?(?:\s|$)/u;
+const BOOK = /^(?:BOOK|Book|book)\s+([IVXLC]+)\.?(?:\s|$)/u;
 const CHAPTER = /^(?:CHAP(?:TER)?\.?\s+)?([IVXLC]+)\.?(?:\s|$)/u;
 
 /** The deepest numbered heading as `§3.2.1` or `ch. IV`, else `preamble`. */
@@ -103,6 +104,35 @@ function sectionNumber(heading: string): string | undefined {
   return SECTION.exec(heading)?.[1];
 }
 
+function bookNumber(heading: string): string | undefined {
+  return BOOK.exec(heading)?.[1]?.toUpperCase();
+}
+
+const ROMANS: [number, string][] = [
+  [100, 'C'],
+  [90, 'XC'],
+  [50, 'L'],
+  [40, 'XL'],
+  [10, 'X'],
+  [9, 'IX'],
+  [5, 'V'],
+  [4, 'IV'],
+  [1, 'I'],
+];
+
+/** 7 as VII, for `bk. 7`; up to 199. */
+function roman(value: number): string {
+  let rest = value;
+  let out = '';
+  for (const [size, letters] of ROMANS) {
+    while (rest >= size) {
+      out += letters;
+      rest -= size;
+    }
+  }
+  return out;
+}
+
 function chapterNumber(heading: string): string | undefined {
   return CHAPTER.exec(heading)?.[1];
 }
@@ -118,6 +148,8 @@ function chapterNumber(heading: string): string | undefined {
  * - `§3.1`: every paragraph under a heading numbered 3.1, including its subsections (3.1.2, ...),
  *   whatever page or ref markers sit between. A heading's number is its leading digits and dots
  *   (`## 3.1 Religion`, `# 1. Life`). `§3` does not match 3.10 or 31.
+ * - `bk. VII` (or `bk. 7`): every paragraph under a heading that starts `BOOK VII`, `Book VII` or `book VII` (with
+ *   or without the full stop), up to the next heading of the same or a higher level.
  * - `ch. IV`: every paragraph under a heading whose leading word is that roman numeral
  *   (`CHAPTER IV.`, `IV.`), subheadings included.
  * - `p. 129`: the paragraphs from `<!-- page 129 -->` up to the next page marker (or the next
@@ -197,6 +229,12 @@ function predicateFor(loc: string, refs: readonly string[]): (at: Where) => bool
         const number = sectionNumber(heading);
         return number !== undefined && (number === section || number.startsWith(`${section}.`));
       });
+  }
+  if (loc.startsWith('bk.')) {
+    const given = /^bk\. (?:([IVXLC]+)|([1-9]\d{0,2}))$/u.exec(loc);
+    const number = given?.[1] ?? (given?.[2] === undefined ? undefined : roman(Number(given[2])));
+    if (number === undefined) throw new LocatorError(`'${loc}' is not a book locator (bk. VII)`);
+    return (at) => at.stack.some((heading) => bookNumber(heading) === number);
   }
   if (loc.startsWith('ch.')) {
     const chapter = /^ch\. ([IVXLC]+)$/u.exec(loc)?.[1];

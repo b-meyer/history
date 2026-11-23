@@ -28,7 +28,7 @@ entity: iamblichus
 ```
 
 - Use the plan's `group` and `order`. **Never write `audited`**; only an audit pass sets it. A topic page omits `entity`.
-- **Every factual sentence carries a cite** `[@key, locator]`: a source key from `data/sources/`, with a locator that resolves in that source's `text.md` (`DL 8.79`, `p. 129`, `§3.2`, `ch. IV`, `preamble`). Use what the search printed; never invent a finer one. A claim from the graph is cited to the sources that claim lists.
+- **Every factual sentence carries a cite** `[@key, locator]`: a source key from `data/sources/`, with a locator that resolves in that source's `text.md` (`DL 8.79`, `p. 129`, `§3.2`, `ch. IV`, `bk. VII`, `preamble`). Use what the search printed; never invent a finer one. A claim from the graph is cited to the sources that claim lists.
 - **Your own words.** Paraphrase. A run of 12 or more words from a source outside quote marks is flagged by the overlap check. A phrase worth keeping is put in double quotation marks and cited.
 - **Links.** `[[id]]` for an entity, which resolves to its home article or record page. A link to another page is `[Display](collection/Page.md)`, root-relative from `wiki/`, and the file must exist. One entity has one home article, so link to it rather than rewriting it.
 - **Content rules.** Follow `AGENTS.md` "Content writing" §1-§40: plain verbs, no significance claims, no participial padding, no triads, title-case headings.
