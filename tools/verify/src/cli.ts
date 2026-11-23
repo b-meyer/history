@@ -12,9 +12,10 @@ import {
   writeEdits,
 } from './quoteCheck.ts';
 
-// vp run verify [--write]: the quote check and the overlap flag against the library checkout in
+// vp run verify [--write] [--root <dir>]: the quote check and the overlap flag against the library checkout in
 // LIBRARY_DIR. Without --write nothing is changed. With it, the `passage` hash of every matched
-// source is filled or updated, and nothing else in the YAML files moves.
+// source is filled or updated, and nothing else in the YAML files moves. --root points at another
+// checkout of the repo's data/ and pages (used to try --write on a copy).
 
 const CITE = /\[@([a-z0-9]+(?:-[a-z0-9]+)*)/gu;
 
@@ -56,7 +57,10 @@ export function checkWiki(root: string, library: Library): Problem[] {
 
 function main(): void {
   const write = process.argv.includes('--write');
-  const root = resolve(import.meta.dirname, '..', '..', '..');
+  const at = process.argv.indexOf('--root');
+  const root = resolve(
+    at === -1 ? join(import.meta.dirname, '..', '..', '..') : (process.argv[at + 1] ?? ''),
+  );
   let library: Library;
   try {
     library = openLibrary(process.env['LIBRARY_DIR']);
