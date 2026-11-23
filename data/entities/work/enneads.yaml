@@ -16,7 +16,7 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 24
+        locator: p. 24
         stance: asserts
         excerpt: 'I had fifty-four treatises before me : I divided them into six sets of nine'
   - id: enneads.composed
@@ -37,6 +37,6 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 4
+        locator: p. 4
         stance: asserts
         excerpt: 'From about the first year of Galienus Plotinus had begun to write'

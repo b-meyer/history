@@ -27,7 +27,7 @@ claims:
         }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 2
+        locator: p. 2
         stance: asserts
         excerpt: 'Counting sixty-six years back from the second year of Claudius, we can fix Plotinus’ birth at the thirteenth year of Severus'
       - key: eunapius-lives-wright
@@ -53,11 +53,11 @@ claims:
         }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 3
+        locator: p. 3
         stance: asserts
         excerpt: 'he was directed to the most highly reputed professors to be found at Alexandria'
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 3
+        locator: p. 3
         stance: asserts
         excerpt: 'From that day he followed Ammonius continuously'
   - id: plotinus.active-at.rome
@@ -77,7 +77,7 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-plotinus }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 3
+        locator: p. 3
         stance: asserts
         excerpt: 'At forty, in the reign of Philip, he settled in Rome.'
       - key: sep-plotinus
@@ -109,7 +109,7 @@ claims:
         stance: asserts
         excerpt: 'shows how much of Plotinus’ philosophy, especially Plotinus’ metaphysics, was inspired by earlier Platonists such as Numenius'
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 17
+        locator: p. 14
         stance: reports
         excerpt: 'Some of the Greeks began to accuse Plotinus of appropriating the ideas of Numenius.'
   - id: plotinus.died
@@ -124,6 +124,6 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-plotinus }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 2
+        locator: p. 2
         stance: asserts
         excerpt: 'This was at the end of the second year of the reign of Claudius, and, as Eustochius tells me, Plotinus was then sixty-six.'

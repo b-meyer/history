@@ -90,7 +90,7 @@ claims:
         }
     sources:
       - key: iamblichus-pythagoric-life-taylor
-        locator: ch. 5
+        locator: ch. V
         stance: reports
         excerpt: 'on his arrival at Crotona, which was the noblest city in Italy, he had many followers'
   - id: pythagoras.died

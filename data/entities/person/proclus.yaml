@@ -26,7 +26,7 @@ claims:
         }
     sources:
       - key: marinus-life-of-proclus-guthrie
-        locator: '§6'
+        locator: Marinus 6
         stance: asserts
         excerpt: 'At birth he was welcomed by the Constantinopolitan goddess Poliouchos'
       - key: sep-proclus
@@ -45,7 +45,7 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-proclus }
     sources:
       - key: marinus-life-of-proclus-guthrie
-        locator: '§10'
+        locator: Marinus 10
         stance: asserts
         excerpt: 'he embarked for Athens'
       - key: sep-proclus
@@ -78,10 +78,10 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: marinus-life-of-proclus-guthrie
-        locator: '§36'
+        locator: Marinus 36
         stance: asserts
         excerpt: "Proclus left this world in the 124th year from Julian's accession to the empire"
       - key: marinus-life-of-proclus-guthrie
-        locator: '§36'
+        locator: Marinus 36
         stance: asserts
         excerpt: 'under the archonship of the younger Nicagoras in Athens'
