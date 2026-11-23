@@ -42,17 +42,17 @@ Always run `vp run fix` before `vp check` — `vp check` will fail on formatting
 
 ## Toolchain — `vp` is the sole entry point
 
-| Command            | Does                                                                             |
-| ------------------ | -------------------------------------------------------------------------------- |
-| `vp install`       | Install/refresh all deps                                                         |
-| `vp check`         | Format + lint + type-check (whole workspace)                                     |
-| `vp run fix`       | Autofix format/lint issues                                                       |
-| `vp run build`     | Build the site (`qdocs-ssg` → static HTML/route)                                 |
-| `vp run test`      | Run all tests (Vitest)                                                           |
-| `vp run ready`     | Check, test and build — pre-push gate                                            |
-| `vp run dev`       | Dev server for the site (HMR on `.md` changes)                                   |
-| `vp run dev:leads` | Dev server with the library's leads on `/map` (set `LIBRARY_DIR`)                |
-| `vp run verify`    | Quote check and overlap flag against `LIBRARY_DIR`; `-- --write` fills `passage` |
+| Command            | Does                                                                                                           |
+| ------------------ | -------------------------------------------------------------------------------------------------------------- |
+| `vp install`       | Install/refresh all deps                                                                                       |
+| `vp check`         | Format + lint + type-check (whole workspace)                                                                   |
+| `vp run fix`       | Autofix format/lint issues                                                                                     |
+| `vp run build`     | Build the site (`qdocs-ssg` → static HTML/route)                                                               |
+| `vp run test`      | Run all tests (Vitest)                                                                                         |
+| `vp run ready`     | Check, test and build — pre-push gate                                                                          |
+| `vp run dev`       | Dev server for the site (HMR on `.md` changes)                                                                 |
+| `vp run dev:leads` | Dev server with the library's leads on `/map` (set `LIBRARY_DIR`)                                              |
+| `vp run verify`    | Quote check and overlap flag against `LIBRARY_DIR`; `-- --write` fills `passage`, `--only citations` scopes it |
 
 **`vp build` ≠ `vp run build`** — `vp build` invokes Vite's SPA path, skipping qdocs-ssg. Always use `vp run build`.
 **`vp test` ≠ `vp run test`** — `vp test` runs current package only. Always use `vp run test`.

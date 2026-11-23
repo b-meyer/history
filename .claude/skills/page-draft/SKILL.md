@@ -48,12 +48,12 @@ entity: iamblichus
 
 - `key` and `locator` match the cite exactly as written (the locator trimmed; empty when the cite gives none).
 - `excerpt` is the fewest words that carry the sentence, copied **character for character** from the cited span of `text.md`. Single-quote it in YAML and double any `'` inside. It is published, so keep it short.
-- Leave `passage` out; `vp run verify --write` fills it.
+- Leave `passage` out; `vp run verify -- --write --only citations` fills it.
 - A page with no cites has no citations file. The file's path is the page's path without `wiki/`.
 
 ## 4. Check and hand back
 
-1. `LIBRARY_DIR=<library> vp run verify` and fix every problem in your own files: recopy an excerpt that isn't found, correct a locator, rewrite an unquoted run. Never edit `text.md`. Then `vp run verify -- --write` to fill `passage`. Problems in other files are reported, not fixed.
+1. `LIBRARY_DIR=<library> vp run verify` and fix every problem in your own files: recopy an excerpt that isn't found, correct a locator, rewrite an unquoted run. Never edit `text.md`. Then `vp run verify -- --write --only citations` to fill `passage` without touching `data/entities/`. Problems in other files are reported, not fixed.
 2. `vp run fix`, then `vp run --no-cache ready`. Fix what your files cause.
 
 Hand back: the page and citations paths, the sources used, sentences dropped for lack of support, proposed claims (subject, predicate, object, the passage that supports it), entities the page needed but the graph lacks, and the next step (an independent audit of the page).
