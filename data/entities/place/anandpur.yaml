@@ -1,0 +1,5 @@
+id: anandpur
+type: place
+names: { en: Anandpur }
+ids: { wikidata: 'Q589664', geonames: '1278676' }
+coords: [76.50, 31.23]

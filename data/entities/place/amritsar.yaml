@@ -1,0 +1,5 @@
+id: amritsar
+type: place
+names: { en: Amritsar }
+ids: { wikidata: 'Q48403', geonames: '1278710' }
+coords: [74.88, 31.63]

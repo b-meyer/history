@@ -1,0 +1,5 @@
+id: nanded
+type: place
+names: { en: Nanded }
+ids: { wikidata: 'Q855122', geonames: '1261977' }
+coords: [77.33, 19.15]
