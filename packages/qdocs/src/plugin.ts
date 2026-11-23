@@ -18,11 +18,13 @@ import { clientConfig, isSidebarGroup } from './config.ts';
 // extensionless specifiers. This file is never in the browser/app import graph,
 // so the unusual extensions stay isolated to the config-load path.
 import { mdAlerts } from './markdown/alerts.ts';
+import { mdCitations, type CitationData } from './markdown/citations.ts';
 import { mdCodeGroup } from './markdown/codeGroup.ts';
 import { mdContainers } from './markdown/containers.ts';
 import { mdLinkRewriter } from './markdown/linkRewriter.ts';
 import { mdLinkTitles } from './markdown/linkTitles.ts';
 import { mdMermaid } from './markdown/mermaid.ts';
+import { mdPageNotice, type PageNotice } from './markdown/pageNotice.ts';
 import { mdShiki } from './markdown/shiki.ts';
 import { processSnippets } from './markdown/snippets.ts';
 import { mdTableWrapper } from './markdown/tableWrapper.ts';
@@ -39,6 +41,13 @@ export type QDocsPluginOptions = Pick<QDocsConfig, 'markdown'> & {
   pagesDir?: string;
   /** Absolute folders for Tailwind to scan beyond the app root. */
   tailwindSources?: string[];
+  /**
+   * Wiki data for `[@key, locator]` notes and `[[id]]` links, read on the first page that uses
+   * either. Without it the syntax is not registered.
+   */
+  citations?: () => CitationData;
+  /** Builds a notice inserted below each page's first heading; see mdPageNotice. */
+  pageNotice?: PageNotice;
 };
 
 // Module-level state set by defineConfig before Vite processes plugins.
@@ -73,7 +82,7 @@ const RESOLVED_VIRTUAL_SETUP_ID = '\0virtual:@qdocs/setup';
 export function buildPrePaintScript(config: QDocsConfig | null): string {
   const hue = config?.themeDefaults?.brandHue ?? 210;
   const intensity = (config?.themeDefaults?.brandIntensity ?? 50) / 100;
-  return `(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark')document.documentElement.classList.add('dark');document.documentElement.style.setProperty('--brand-hue','${hue}');var hRaw=localStorage.getItem('brand-hue');if(hRaw!==null){var h=Number(hRaw);if(Number.isFinite(h)&&h>=0&&h<=360){document.documentElement.style.setProperty('--brand-hue',String(h));}}document.documentElement.style.setProperty('--brand-intensity','${intensity}');var iRaw=localStorage.getItem('brand-intensity');if(iRaw!==null){var i=Number(iRaw);if(Number.isFinite(i)&&i>=0&&i<=100){document.documentElement.style.setProperty('--brand-intensity',String(i/100));}}}catch(e){}})();`;
+  return `(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark')document.documentElement.classList.add('dark');document.documentElement.style.setProperty('--brand-hue','${hue}');var hRaw=localStorage.getItem('brand-hue');if(hRaw!==null){var h=Number(hRaw);if(Number.isFinite(h)&&h>=0&&h<=360){document.documentElement.style.setProperty('--brand-hue',String(h));}}document.documentElement.style.setProperty('--brand-intensity','${intensity}');var iRaw=localStorage.getItem('brand-intensity');if(iRaw!==null){var i=Number(iRaw);if(Number.isFinite(i)&&i>=0&&i<=100){document.documentElement.style.setProperty('--brand-intensity',String(i/100));}}}catch(e){}})();${config?.prePaintScript ?? ''}`;
 }
 
 function makeSearchIndexPlugin(explicitPagesDir: string | undefined): Plugin {
@@ -290,7 +299,9 @@ function devHtmlPlugin(): Plugin {
 /**
  * The qdocs single Vite-plugin entry. Consumers do: `plugins: [qdocsPlugin({ markdown: { mermaid:
  * true } })]` Markdown-it plugin order is load-bearing: anchor → linkRewriter → tableWrapper →
- * mermaid → containers → alerts.
+ * mermaid → containers → alerts. The citations plugin adds an inline rule ahead of markdown-it's
+ * `link` rule and emits plain `<a href>` tokens that linkRewriter leaves alone (no `.md` target), so
+ * its position among the renderer plugins does not matter.
  */
 export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
   const mermaidEnabled = Boolean(options.markdown?.mermaid);
@@ -334,6 +345,8 @@ export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
       },
       async markdownItSetup(md) {
         md.use(anchor, { permalink: false, slugify });
+        if (options.citations) md.use(mdCitations, options.citations);
+        if (options.pageNotice) md.use(mdPageNotice, options.pageNotice);
         md.use(mdLinkRewriter, () => resolvedBase);
         md.use(mdLinkTitles, () => {
           if (!qdocsConfigStore) return new Map<string, string>();

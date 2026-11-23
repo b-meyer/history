@@ -1,6 +1,9 @@
 import { readFileSync } from 'node:fs';
 import { defineConfig } from 'qdocs/vite';
 import { leadsPlugin } from './leadsPlugin.ts';
+import { AI_PREPAINT_SCRIPT } from './readerSettings.ts';
+import { loadStartYears, loadWikiData, loadWikiSidebars } from './wikiData.ts';
+import { wikiProvenance } from './wikiProvenance.ts';
 
 // The entity IDs `graph build` wrote, one pre-rendered /e/<id> page each. Empty before the first
 // graph build (the site's dev and build scripts run it first).
@@ -13,6 +16,14 @@ function readIds(): string[] {
     return [];
   }
 }
+
+function memoize<T>(load: () => T): () => T {
+  let value: { v: T } | undefined;
+  return () => (value ??= { v: load() }).v;
+}
+
+const wiki = loadWikiSidebars();
+const startYears = memoize(loadStartYears);
 
 export default defineConfig({
   title: 'History',
@@ -33,9 +44,21 @@ export default defineConfig({
   markdown: {
     mermaid: true,
   },
-  // Records have no sidebar: the longest prefix wins, so /e/ pages get the empty tree.
-  sidebar: { '/e/': [], '/': [{ path: 'index', title: 'Home' }] },
+  // [@key] notes and [[id]] links in wiki pages; read from data/ on the first page that uses them.
+  citations: memoize(loadWikiData),
+  // The line under each wiki page title: AI assistance, audit date, Show on map.
+  pageNotice: wikiProvenance((entity) => startYears()(entity)),
+  // Records have no sidebar: the longest prefix wins, so /e/ pages get the empty tree. Each wiki
+  // collection gets its own tree, built from the pages' frontmatter.
+  sidebar: {
+    '/e/': [],
+    '/': [{ path: 'index', title: 'Home' }, ...wiki.homeEntry],
+    ...wiki.trees,
+  },
   setup: './src/setup.ts',
+  // The AI-prose setting in the header on every page, and its data-ai attribute before first paint.
+  headerEnd: './src/components/ReaderSettings.vue',
+  prePaintScript: AI_PREPAINT_SCRIPT,
   routeParams: { '/e/:id': readIds() },
   // dev:leads only; see leadsPlugin.ts.
   plugins: [leadsPlugin()],

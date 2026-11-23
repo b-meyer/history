@@ -17,10 +17,14 @@ export type VocabTerms = Pick<Vocab, 'confidence' | 'basis'>;
  * map.json, vocab.json, record-ids.json, search-records.json, reading.json and records/<shard>.json.
  * Only these paths are replaced.
  */
-export function writeOutputs(graph: Graph, outDir: string): WriteSummary {
-  const records = buildRecords(graph);
+export function writeOutputs(
+  graph: Graph,
+  outDir: string,
+  articles: ReadonlyMap<string, string> = new Map(),
+): WriteSummary {
+  const records = buildRecords(graph, articles);
   const shards = shardRecords(records);
-  const map = buildMapData(graph);
+  const map = buildMapData(graph, articles);
 
   const recordsDir = join(outDir, 'records');
   rmSync(recordsDir, { recursive: true, force: true });

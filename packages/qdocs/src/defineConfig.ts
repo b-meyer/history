@@ -6,6 +6,8 @@ import {
   type UserConfig,
 } from 'vite';
 import type { QDocsConfig, NavItem, SidebarEntry, SidebarItem, SocialLink } from './config.ts';
+import type { CitationData } from './markdown/citations.ts';
+import type { PageNotice } from './markdown/pageNotice.ts';
 import { setQDocsConfig, qdocsPlugin } from './plugin.ts';
 
 // The consumer's merged config type: all QDocsConfig fields (except `base`,
@@ -27,11 +29,17 @@ export type QDocsConsumerConfig = {
   setup?: string;
   /** Path from the app root to a JSON array of extra search entries. See QDocsConfig. */
   searchEntries?: string;
+  /** Inline script run in the head before first paint; see QDocsConfig. */
+  prePaintScript?: string;
   /**
    * Folders for Tailwind to scan for class names, relative to the app root. Tailwind's automatic
    * detection covers only the app, so a workspace package with its own components is listed here.
    */
   tailwindSources?: string[];
+  /** Wiki data for `[@key]` notes and `[[id]]` links; see QDocsPluginOptions.citations. */
+  citations?: () => CitationData;
+  /** HTML notice inserted below each page's first heading, or null for none; see mdPageNotice. */
+  pageNotice?: PageNotice;
 } & UserConfig;
 
 /**
@@ -65,6 +73,7 @@ function buildQDocsConfig(opts: QDocsConsumerConfig): QDocsConfig {
     routeParams: opts.routeParams,
     setup: opts.setup,
     searchEntries: opts.searchEntries,
+    prePaintScript: opts.prePaintScript,
     base: resolvedBase,
   };
 }
@@ -78,6 +87,8 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     plugins: userPlugins,
     resolve: userResolve,
     tailwindSources,
+    citations,
+    pageNotice,
     ...viteRest
   } = opts;
   const qdocsConfig = buildQDocsConfig(opts);
@@ -98,6 +109,8 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     plugins: [
       qdocsPlugin({
         markdown: qdocsConfig.markdown,
+        citations,
+        pageNotice,
         tailwindSources: (tailwindSources ?? []).map((source) => pathResolve(projectRoot, source)),
       }),
       ...(userPlugins ?? []),

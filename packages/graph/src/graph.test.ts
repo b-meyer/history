@@ -257,6 +257,18 @@ describe('validateGraph', () => {
 });
 
 describe('writeOutputs', () => {
+  it("records the route of an entity's home article, and only for entities that have one", () => {
+    const out = join(root, 'out');
+    writeOutputs(loadGraph(data).graph, out, new Map([['plotinus', '/wiki/platonism/Plotinus']]));
+    const shard = (id: string): Record<string, EntityRecord> =>
+      JSON.parse(readFileSync(join(out, 'records', `${shardOf(id)}.json`), 'utf8')) as Record<
+        string,
+        EntityRecord
+      >;
+    expect(shard('plotinus')['plotinus']?.article).toBe('/wiki/platonism/Plotinus');
+    expect(shard('porphyry')['porphyry']).not.toHaveProperty('article');
+  });
+
   it('writes map data, record IDs and sharded records with derived inverse links', () => {
     const out = join(root, 'out');
     const summary = writeOutputs(loadGraph(data).graph, out);
@@ -383,6 +395,12 @@ function mapData(): MapData {
 }
 
 describe('buildMapData', () => {
+  it('carries the home article route of an entity that has one', () => {
+    const map = buildMapData(loadGraph(data).graph, new Map([['plotinus', '/wiki/p/Plotinus']]));
+    expect(map.entities.find((e) => e.id === 'plotinus')?.article).toBe('/wiki/p/Plotinus');
+    expect(map.entities.find((e) => e.id === 'porphyry')).not.toHaveProperty('article');
+  });
+
   it('colours a school by the nearest colour up its branch-of chain', () => {
     write(
       'entities/tradition/faith.yaml',

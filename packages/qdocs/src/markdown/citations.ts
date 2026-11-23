@@ -1,0 +1,159 @@
+import type MarkdownIt from 'markdown-it';
+
+/** The display fields of one `data/sources/<key>.yaml`, as far as a note needs them. */
+export type CiteSource = {
+  title: string;
+  authors?: string[];
+  translators?: string[];
+  editors?: string[];
+  edition?: string;
+  publisher?: string;
+  published?: string;
+  url?: string;
+};
+
+/** What the plugin needs from the graph, so it can run without the filesystem. */
+export type CitationData = {
+  /** Source key to its display fields. */
+  sources: ReadonlyMap<string, CiteSource>;
+  /** Entity ID to its English name. */
+  entityNames: ReadonlyMap<string, string>;
+  /** Entity ID to the route of its home article, for entities that have one. */
+  articles: ReadonlyMap<string, string>;
+};
+
+type Note = { n: number; key: string; locator: string };
+type CitationEnv = { id?: string; qdocsNotes?: { notes: Note[]; index: Map<string, Note> } };
+
+export const CITE_RE = /^\[@([a-z0-9]+(?:-[a-z0-9]+)*)(?:,\s*([^\]]*?))?\s*\]/u;
+export const ENTITY_RE = /^\[\[([a-z0-9]+(?:-[a-z0-9]+)*)(?:\|([^\]]+))?\]\]/u;
+
+function pageOf(env: CitationEnv): string {
+  return env.id ?? '(unknown page)';
+}
+
+function joinNames(names: string[]): string {
+  return names.join(', ');
+}
+
+/** One Sources entry from a source's public bibliographic fields; the locator is added by the note. */
+function describeSource(md: MarkdownIt, source: CiteSource): string {
+  const esc = md.utils.escapeHtml;
+  const parts: string[] = [];
+  if (source.authors?.length) parts.push(`${esc(joinNames(source.authors))}.`);
+  parts.push(`<cite>${esc(source.title)}</cite>.`);
+  if (source.translators?.length)
+    parts.push(`Translated by ${esc(joinNames(source.translators))}.`);
+  if (source.editors?.length) parts.push(`Edited by ${esc(joinNames(source.editors))}.`);
+  if (source.edition) parts.push(`${esc(source.edition)}.`);
+  const imprint = [source.publisher, source.published].filter(Boolean).join(', ');
+  if (imprint) parts.push(`${esc(imprint)}.`);
+  return parts.join(' ');
+}
+
+function renderSources(
+  md: MarkdownIt,
+  notes: Note[],
+  data: CitationData,
+  env: CitationEnv,
+): string {
+  const esc = md.utils.escapeHtml;
+  const items = notes.map((note) => {
+    const source = data.sources.get(note.key);
+    if (!source) throw new Error(`${pageOf(env)}: unknown source key "${note.key}"`);
+    const locator =
+      note.locator === '' ? '' : ` <span class="cite-locator">${esc(note.locator)}.</span>`;
+    const link = source.url
+      ? ` <a href="${esc(source.url)}" rel="noopener">${esc(source.url)}</a>`
+      : '';
+    return `<li id="cite-${note.n}">${describeSource(md, source)}${locator}${link} <a class="cite-back" href="#cite-ref-${note.n}" aria-label="Back to the text">&#8617;</a></li>`;
+  });
+  return `<section class="sources"><h2 id="sources">Sources</h2>\n<ol>\n${items.join('\n')}\n</ol></section>\n`;
+}
+
+type Inline = Parameters<Parameters<MarkdownIt['inline']['ruler']['before']>[2]>[0];
+
+function entityLink(
+  state: Inline,
+  match: RegExpExecArray,
+  silent: boolean,
+  data: CitationData,
+): void {
+  const env = state.env as CitationEnv;
+  const id = match[1] ?? '';
+  const name = data.entityNames.get(id);
+  if (name === undefined) throw new Error(`${pageOf(env)}: unknown entity ID "${id}"`);
+  if (silent) return;
+  const open = state.push('link_open', 'a', 1);
+  open.attrs = [['href', data.articles.get(id) ?? `/e/${id}`]];
+  state.push('text', '', 0).content = match[2]?.trim() || name;
+  state.push('link_close', 'a', -1);
+}
+
+function noteRef(state: Inline, match: RegExpExecArray, silent: boolean, data: CitationData): void {
+  const env = state.env as CitationEnv;
+  const key = match[1] ?? '';
+  const locator = (match[2] ?? '').trim();
+  if (!data.sources.has(key)) throw new Error(`${pageOf(env)}: unknown source key "${key}"`);
+  if (silent) return;
+  const book = (env.qdocsNotes ??= { notes: [], index: new Map() });
+  const id = `${key}|${locator}`;
+  let note = book.index.get(id);
+  const first = note === undefined;
+  if (!note) {
+    note = { n: book.notes.length + 1, key, locator };
+    book.notes.push(note);
+    book.index.set(id, note);
+  }
+  state.push('wiki_cite', '', 0).meta = { n: note.n, first };
+}
+
+/**
+ * Wiki syntax: `[@key, locator]` becomes a numbered note that links to a Sources list at the foot
+ * of the page, and `[[id]]` / `[[id|text]]` link to an entity's home article, or to its record
+ * page at `/e/<id>` when it has none. An unknown key or ID throws with the page path, so the build
+ * fails.
+ *
+ * Notes are numbered in order of first use. A repeat of the same key and locator reuses its number;
+ * the same key with another locator is a new note. `getData` is called on first use only, so pages
+ * without the syntax cost nothing.
+ */
+export function mdCitations(md: MarkdownIt, getData: () => CitationData): void {
+  let cached: CitationData | undefined;
+  const data = (): CitationData => (cached ??= getData());
+
+  md.inline.ruler.before('link', 'wiki_syntax', (state, silent) => {
+    if (state.src.codePointAt(state.pos) !== 0x5b /* [ */) return false;
+    const rest = state.src.slice(state.pos);
+    const entity = ENTITY_RE.exec(rest);
+    if (entity) {
+      entityLink(state, entity, silent, data());
+      state.pos += entity[0].length;
+      return true;
+    }
+    const cite = CITE_RE.exec(rest);
+    if (cite) {
+      noteRef(state, cite, silent, data());
+      state.pos += cite[0].length;
+      return true;
+    }
+    return false;
+  });
+
+  md.renderer.rules['wiki_cite'] = (tokens, idx) => {
+    const { n, first } = (tokens[idx] as { meta: { n: number; first: boolean } }).meta;
+    const id = first ? ` id="cite-ref-${n}"` : '';
+    return `<sup class="cite"${id}><a href="#cite-${n}">${n}</a></sup>`;
+  };
+
+  // After the inline pass, so every note is known; the list closes the page.
+  md.core.ruler.push('wiki_sources', (state) => {
+    const env = state.env as CitationEnv;
+    const book = env.qdocsNotes;
+    if (!book || book.notes.length === 0) return;
+    const token = new state.Token('html_block', '', 0);
+    token.content = renderSources(md, book.notes, data(), env);
+    token.block = true;
+    state.tokens.push(token);
+  });
+}

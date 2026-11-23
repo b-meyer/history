@@ -7,7 +7,11 @@ history/                     ← repo root (pnpm workspace)
 ├── apps/site/               the only deployable app: /, /wiki, /e and /map
 ├── packages/qdocs/          qdocs — the docs framework, carried over from the docs POC
 ├── packages/graph/          the graph: schema, validation, and the files the site reads
-├── data/                    the graph as YAML: entities/<type>/<id>.yaml, sources/<key>.yaml, vocab/
+├── tools/verify/            dev-only quote check against the library checkout (never a dependency of the site)
+├── data/                    the graph as YAML: entities/<type>/<id>.yaml, sources/<key>.yaml, vocab/,
+│                            and citations/<collection>/<Page>.yaml, the excerpts behind a wiki page's cites
+├── plans/                   wiki-<collection>.md page plans written by collection-plan
+├── .claude/skills/          collection-plan, page-draft and quote-check (dev only, run when the operator starts them)
 └── vite.config.ts           canonical lint + format config (whole workspace)
 ```
 
@@ -24,6 +28,9 @@ Stack: Vite + Vue 3 + qdocs-ssg (custom SSG, not SPA) + unplugin-vue-markdown + 
 
 The site is one app over one knowledge graph. Pages live in `apps/site/src/pages/`; every file there is a route. Source texts live in the separate private `library` repo and never enter this one.
 
+- **Wiki pages come from three skills**, each run only when the operator starts it, on named targets. `collection-plan` writes `plans/wiki-<collection>.md`; `page-draft` writes one page and its `data/citations/` file, creating no claims, entities or places; `quote-check` runs `vp run verify`. A page's citations file is the page's path without `wiki/`, with one entry per distinct cite in first-use order.
+- **The quote check mirrors the library.** `tools/verify/src/locate.ts` is a copy of `locate` in the library's `tools/locate.ts` (with `collapse`), and `locate.test.ts` is ported from its tests. Change both together. `vp run verify` reads the library read-only from `LIBRARY_DIR`, checks each excerpt in `data/entities/` and `data/citations/` within its locator, flags 12 or more unquoted words of a cited source in a wiki page, and exits non-zero on any problem. `--write` changes only the `passage` line (the first 16 hex digits of the SHA-256 of the collapsed paragraphs the excerpt touches, joined by a space). CI cannot read the library, so run it locally before pushing.
+
 ## Before finishing any task
 
 1. `vp run fix` — autofix formatting and lint issues
@@ -35,16 +42,17 @@ Always run `vp run fix` before `vp check` — `vp check` will fail on formatting
 
 ## Toolchain — `vp` is the sole entry point
 
-| Command            | Does                                                              |
-| ------------------ | ----------------------------------------------------------------- |
-| `vp install`       | Install/refresh all deps                                          |
-| `vp check`         | Format + lint + type-check (whole workspace)                      |
-| `vp run fix`       | Autofix format/lint issues                                        |
-| `vp run build`     | Build the site (`qdocs-ssg` → static HTML/route)                  |
-| `vp run test`      | Run all tests (Vitest)                                            |
-| `vp run ready`     | Check, test and build — pre-push gate                             |
-| `vp run dev`       | Dev server for the site (HMR on `.md` changes)                    |
-| `vp run dev:leads` | Dev server with the library's leads on `/map` (set `LIBRARY_DIR`) |
+| Command            | Does                                                                             |
+| ------------------ | -------------------------------------------------------------------------------- |
+| `vp install`       | Install/refresh all deps                                                         |
+| `vp check`         | Format + lint + type-check (whole workspace)                                     |
+| `vp run fix`       | Autofix format/lint issues                                                       |
+| `vp run build`     | Build the site (`qdocs-ssg` → static HTML/route)                                 |
+| `vp run test`      | Run all tests (Vitest)                                                           |
+| `vp run ready`     | Check, test and build — pre-push gate                                            |
+| `vp run dev`       | Dev server for the site (HMR on `.md` changes)                                   |
+| `vp run dev:leads` | Dev server with the library's leads on `/map` (set `LIBRARY_DIR`)                |
+| `vp run verify`    | Quote check and overlap flag against `LIBRARY_DIR`; `-- --write` fills `passage` |
 
 **`vp build` ≠ `vp run build`** — `vp build` invokes Vite's SPA path, skipping qdocs-ssg. Always use `vp run build`.
 **`vp test` ≠ `vp run test`** — `vp test` runs current package only. Always use `vp run test`.

@@ -22,6 +22,15 @@ export {
 export { ENTITY_TYPES, type EntityType } from './schema/common.ts';
 export type { Claim, Entity } from './schema/entity.ts';
 export type { Source } from './schema/source.ts';
+export type { CiteEntry } from './schema/citations.ts';
+export {
+  articleRoutes,
+  readWikiPages,
+  validateWiki,
+  type WikiPage,
+  type WikiPaths,
+} from './wiki.ts';
+export { findWikiRefs, type Cite, type WikiRefs } from './wikiSyntax.ts';
 export {
   BASIS,
   CONFIDENCE,

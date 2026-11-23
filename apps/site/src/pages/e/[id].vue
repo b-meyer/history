@@ -112,6 +112,7 @@ function people(source: RecordSource): string {
         </template>
       </dl>
       <p v-if="mapLink"><RouterLink :to="mapLink">Show on map</RouterLink></p>
+      <p v-if="record.article"><RouterLink :to="record.article">Wiki</RouterLink></p>
 
       <template v-if="claimGroups.length > 0">
         <h2 id="claims">Claims</h2>

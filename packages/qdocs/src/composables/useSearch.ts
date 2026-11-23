@@ -52,7 +52,9 @@ function searchFor(q: string): readonly SearchResult[] {
   const ms = miniSearch.value;
   if (q.length < MIN_QUERY_LENGTH || !ms) return [];
 
+  const keep = resultFilter.value;
   const opts = {
+    filter: (result: { slug?: unknown }) => keep(result as unknown as SearchEntry),
     boost: { heading: 3 },
     // ≤4 chars: exact only — avoids noise for short technical tokens ("ts", "ci", "vm")
     // ≥5 chars: 0.2 fraction → 1 edit distance — handles "guthub" → "github"
@@ -72,6 +74,15 @@ function searchFor(q: string): readonly SearchResult[] {
 // ---- Search UI state (module-scoped singleton) ----
 
 const open = ref(false);
+/**
+ * Keeps a result when it returns true. Set by the app (see setSearchFilter); the default keeps
+ * everything. Read inside the results computation, so a filter that reads a ref re-filters live.
+ */
+const resultFilter = shallowRef<(entry: SearchEntry) => boolean>(() => true);
+
+export function setSearchFilter(filter: (entry: SearchEntry) => boolean): void {
+  resultFilter.value = filter;
+}
 const query = ref('');
 const selectedIndex = ref(0);
 const results = computed(() => searchFor(query.value.trim()));

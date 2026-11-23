@@ -57,6 +57,8 @@ export type EntityRecord = {
   color?: string;
   /** Earliest and latest year across the entity's own dated claims. */
   span: { start: number | null; end: number | null };
+  /** The route of the wiki article that is this entity's home article, when there is one. */
+  article?: string;
   claims: RecordClaim[];
   /** Every source the claims cite, by key, with when each was written. */
   sources: Record<string, RecordSource>;
@@ -130,7 +132,10 @@ function recordSource(source: Source): RecordSource {
 }
 
 /** One record per entity, for the record template and its pre-rendered pages. */
-export function buildRecords(graph: Graph): EntityRecord[] {
+export function buildRecords(
+  graph: Graph,
+  articles: ReadonlyMap<string, string> = new Map(),
+): EntityRecord[] {
   const links = claimsByEntity(graph);
   const records: EntityRecord[] = [];
 
@@ -154,6 +159,7 @@ export function buildRecords(graph: Graph): EntityRecord[] {
       ...(entity.language === undefined ? {} : { language: entity.language }),
       ...(entity.status === undefined ? {} : { status: entity.status }),
       ...(entity.kind === undefined ? {} : { kind: entity.kind }),
+      ...(articles.has(id) ? { article: articles.get(id) ?? '' } : {}),
       span: spanOf(
         entity.claims.flatMap((claim) => (claim.when === undefined ? [] : [claim.when])),
       ),

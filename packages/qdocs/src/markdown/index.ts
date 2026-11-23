@@ -9,3 +9,7 @@ export { mdShiki } from './shiki';
 export { mdCodeGroup } from './codeGroup';
 export { mdContainers } from './containers';
 export { mdAlerts } from './alerts';
+export { mdCitations } from './citations';
+export { mdPageNotice } from './pageNotice';
+export type { PageNotice, PageNoticeContext } from './pageNotice';
+export type { CitationData, CiteSource } from './citations';

@@ -11,6 +11,7 @@ import { writeOutputs } from './build/write.ts';
 import { findLeadFiles } from './leadGuard.ts';
 import { loadGraph, type Problem } from './load.ts';
 import { localToday, validateGraph } from './validate.ts';
+import { articleRoutes, readWikiPages, validateWiki } from './wiki.ts';
 
 function findDataDir(from: string): string | null {
   let dir = resolve(from);
@@ -62,6 +63,8 @@ function main(): number {
 
   const { graph, problems } = loadGraph(dataDir);
   problems.push(...validateGraph(graph, { today: localToday() }));
+  const pagesDir = join(dirname(dataDir), 'apps', 'site', 'src', 'pages');
+  problems.push(...validateWiki(graph, { pagesDir, dataDir }));
   if (problems.length > 0) {
     report(problems);
     return 1;
@@ -75,7 +78,7 @@ function main(): number {
   }
 
   const outDir = resolve(values.out ?? join('public', 'data'));
-  const summary = writeOutputs(graph, outDir);
+  const summary = writeOutputs(graph, outDir, articleRoutes(readWikiPages(pagesDir)));
   console.info(
     `graph: wrote ${summary.entities} records in ${summary.shards} shards and ${summary.claims} map claims to ${outDir}`,
   );

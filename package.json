@@ -12,7 +12,8 @@
     "fix": "vp check --fix",
     "test": "vp run -r test",
     "ready": "vp check && vp run -r typecheck && vp run -r test && vp run -r build",
-    "typecheck": "vp run -r typecheck"
+    "typecheck": "vp run -r typecheck",
+    "verify": "vp run verify#verify"
   },
   "devDependencies": {
     "vite": "catalog:",
