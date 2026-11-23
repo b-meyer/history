@@ -1,0 +1,8 @@
+- key: porphyry-life-of-plotinus-mackenna
+  locator: '7'
+  excerpt: Fixture excerpt for section 7.
+- key: porphyry-life-of-plotinus-mackenna
+  locator: '24'
+  excerpt: Fixture excerpt for section 24.
+- key: sep-porphyry
+  excerpt: Fixture excerpt for the encyclopedia entry.
