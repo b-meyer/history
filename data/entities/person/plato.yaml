@@ -42,7 +42,7 @@ claims:
     predicate: active-at
     object: athens
     when: -0386~/-0347
-    confidence: A
+    confidence: B
     basis: primary
     origin: ai-extracted
     audits:
@@ -52,6 +52,18 @@ claims:
           by: claude-sonnet-5-5,
           verdict: changed,
           note: 'Graded B primary. DL 3.7 supports return to Athens and the Academy but gives no dates; range is inferred.',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Graded B primary. Diogenes Laertius states that Plato returned to Athens and lived in the Academy, but this passage gives no dates, so the -0386~/-0347 interval is unsupported by the source though not contradicted.',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'Graded B primary. DL 3.7 states that Plato returned to Athens and lived in the Academy, but the passage gives no date, so the stored interval -0386~/-0347 is not supported by this source.',
         }
     sources:
       - key: diogenes-laertius-lives-hicks

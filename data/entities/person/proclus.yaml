@@ -122,8 +122,8 @@ claims:
   - id: proclus.active-at.xanthus
     predicate: active-at
     object: xanthus
-    when: 0412/0430
-    confidence: A
+    when: 0412/
+    confidence: B
     basis: scholarly
     origin: ai-extracted
     audits:
@@ -139,6 +139,18 @@ claims:
         by: claude-opus-5-5
         verdict: changed
         note: "Graded A scholarly: SEP Proclus 1.1 states as fact that, soon after his birth in 412, Proclus's parents returned to their hometown Xanthos in Lycia and that he began his education there before moving to Alexandria, so his time there was his childhood and schooling."
+      - {
+          on: 2026-11-23,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. SEP says Proclus was born in 412 and his parents soon returned to Xanthos, where he began his education, so the place is stated and the 0412 start is a fair inference (it is the birth year, not the arrival).',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. SEP says his parents returned to Xanthos not long after his birth in 412 and he began his education there before moving to Alexandria, so the place is stated and the open-ended start of 412 is a fair inference, though a childhood education is thin evidence of activity.',
+        }
     sources:
       - key: sep-proclus
         locator: §1.1

@@ -64,8 +64,8 @@ claims:
   - id: iamblichus.active-at.apamea
     predicate: active-at
     object: apamea
-    when: 0300~/0325~
-    # Note: SEP dates neither the break with Porphyry nor the move; the start year is a guess to review.
+    when: /0325~
+    # Note: SEP dates neither the break with Porphyry nor the move. The end is his death, about 325.
     confidence: B
     basis: scholarly
     origin: ai-extracted
@@ -81,6 +81,18 @@ claims:
           by: claude-sonnet-5-5,
           verdict: changed,
           note: 'SEP says he settled in Apamea but gives no dates; 0300~/0325~ is not in the source.',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Graded B scholarly. SEP states that Iamblichus settled in Apamea and founded a school there, but it gives no date in this passage, so the /0325~ end is unsupported by the source though not contradicted.',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'Graded B scholarly. SEP says it is now accepted that Iamblichus settled and founded his school in Apamea, while noting his estate at Daphne, but the passage gives no date, so the end-bound of about 325 is unsupported here.',
         }
     sources:
       - key: sep-iamblichus

@@ -39,7 +39,7 @@ claims:
     object: ammonius-saccas
     when: 0232/0242
     where: alexandria
-    confidence: A
+    confidence: B
     basis: primary
     origin: ai-extracted
     audits:
@@ -50,6 +50,24 @@ claims:
           verdict: confirmed,
           source: sep-plotinus,
           note: 'Dates inferred from age 28 and eleven years of study.',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: "Graded B primary. Porphyry says Plotinus turned to Ammonius at about 28 after despairing of the Alexandrian professors, and stayed 11 years until the Gordian expedition at 39; the interval is inferred from Gordian's campaign (about 243), so 0242 is perhaps a year early, and Alexandria is implied rather than stated for Ammonius.",
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: "Graded A primary. Porphyry states that Plotinus followed Ammonius continuously for eleven years until he joined Gordian's Persian campaign at thirty-nine, which fairly yields about 232/242, and the Alexandrian setting is implied by the search among Alexandria's professors rather than said of Ammonius outright.",
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: "Third pass. Graded primary basis. B because Porphyry states the discipleship and the eleven years as fact, but the 0232/0242 interval is computed from relative ages with no anchoring year in the text, and Alexandria for Ammonius's teaching is inferred rather than stated.",
         }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
