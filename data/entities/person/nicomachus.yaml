@@ -48,6 +48,12 @@ claims:
           verdict: changed,
           note: 'Graded B scholarly. Excerpt is a section heading only, a weak citation.',
         }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'Re-audited on the new excerpt: SEP Pythagoreanism 4.4 presents Nicomachus as a second strand of Neopythagoreanism beside Eudorus, Moderatus and Numenius.',
+        }
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'
