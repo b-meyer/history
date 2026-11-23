@@ -1,0 +1,88 @@
+id: hanafi
+type: school
+names:
+  en: Hanafi school
+ids:
+  wikidata: Q228986
+claims:
+  - id: hanafi.branch-of.sunni
+    predicate: branch-of
+    object: sunni
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-central-asia
+        note: "Both passages state it as fact: Andalusia lists Ḥanafism among the four legal schools recognized within the Muslim Sunnī world, and Central Asia says the region's faith was initially Sunnī Islam of the Ḥanafī school of law."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Andalusia lists Ḥanafism among the four legal schools recognized within the Sunnī world, and Central Asia describes 'Sunnī Islam of the Ḥanafī school of law'.
+    sources:
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: the four legal schools (Malikism, Ḥanafism, Shafiʿism, and Hanbalism) recognized within the Muslim Sunnī world from the tenth century onwards
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: initially Sunnī Islam of the Ḥanafī school of law
+  - id: hanafi.active-at.kufa
+    predicate: active-at
+    object: kufa
+    when: 07XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-andalusia
+        note: 'Graded A scholarly: Islamic Law says the Ḥanafī school developed in the legal community of Kufa, Madhhab says Abū Ḥanīfah (d. 767) was born and studied in Kufa, and Andalusia says Ḥanafism was associated with Kufa.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-madhhab
+        note: "Graded A scholarly: eor-madhhab says Abū Ḥanīfah (d. 767) was born and studied in Kufa, and eor-islamic-law-shariah says the Ḥanafī school developed in Kufa's legal community; the sources do not narrow the activity to the 700s beyond his death date."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Ḥanafī school developed in the legal community of Kufa, and Abū Ḥanīfah (d. 767), its founder, was born and trained there.'
+    sources:
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: The Ḥanafī school was meanwhile developing in the context of the legal community in Kufa in southern Iraq.
+      - key: eor-madhhab
+        locator: preamble
+        stance: asserts
+        excerpt: The founder of the Ḥanafī school, Abū Ḥanīfah Nuʿmān ibn Thābit (d. 767), was born in Kufa
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: Ḥanafism was associated with ʿAlī and the town of Kufa
+  - id: hanafi.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 08XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Ifrīqiyā at first followed the example of Baghdad in adopting the legal tradition of Abū Ḥanīfah (d. 768), which implies Ḥanafī law at Baghdad but gives no 08XX date.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under Literary works the text says that Ifrīqiyā at first followed the example of Baghdad in adopting Abū Ḥanīfah's legal tradition before turning to Mālik's, which states Ḥanafī law at Baghdad only in passing and gives no date, so the ninth century is inferred from context (the Aghlabid setting and Saḥnūn, d. 854).
+    sources:
+      - key: eor-islam-north-africa
+        locator: preamble
+        stance: asserts
+        excerpt: At first Ifrīqiyā followed the example of Baghdad and adopted the legal tradition of Abū Ḥanīfah (d. 768)

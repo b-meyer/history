@@ -1,0 +1,5 @@
+id: murcia
+type: place
+names: { en: Murcia }
+ids: { wikidata: 'Q12225', pleiades: '810796636', geonames: '6362997' }
+coords: [-1.13, 37.99]

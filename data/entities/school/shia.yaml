@@ -1,0 +1,202 @@
+id: shia
+type: school
+names:
+  en: Shia Islam
+ids:
+  wikidata: Q9585
+claims:
+  - id: shia.branch-of.islam
+    predicate: branch-of
+    object: islam
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The overview states 'Shiism is a major branch of Islam with numerous subdivisions' and the Twelver article calls Twelvers the largest group within Shi'i Islam.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-shiism-ithna-ashariyah
+        note: Overview calls Shiism a major branch of Islam; the Twelver article calls Twelvers the largest group within Shi'i Islam.
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Shiism is a major branch of Islam with numerous subdivisions
+      - key: eor-shiism-ithna-ashariyah
+        locator: preamble
+        stance: asserts
+        excerpt: constitute the largest group within Shī ʿī Islam
+  - id: shia.splits-from.sunni
+    predicate: splits-from
+    object: sunni
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Both texts state as fact that the Shiah seceded from the main body of Muslims (Sunnis) on political grounds over leadership; eor-madhhab dates it about 660 ce, eor-islamic-law-shariah ties it to repudiating the Umayyads.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islamic-law-shariah
+        note: Both EoR articles state as fact that the Shiʿah broke away from the main body of Muslims (the Sunnis) over political leadership, about 660 ce, after the Umayyads took power.
+    sources:
+      - key: eor-madhhab
+        locator: preamble
+        stance: asserts
+        excerpt: The secession of the Shīʿah from the main body of the Muslims, the Sunnīs, took place on political grounds
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: the Shīʿī and Khārijī factions both broke away from the main body of Muslims, who came to be called Sunnīs
+  - id: shia.opened
+    predicate: opened
+    when: 0656/0661
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The overview says the Shi'ah emerged in support of Ali's caliphate (656-661) during the First Civil War, though Shi'is trace the foundation to Muhammad's appointment of Ali at Ghadir Khumm; eor-madhhab dates the Sunni-Shi'i split to about 660.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-madhhab
+        note: eor-shiism-overview says historically the Shiah emerged in support of Ali's caliphate (656-661) in the First Civil War and eor-madhhab says about 660 ce, but Shia tradition places the foundation earlier at Ghadir Khumm, so the date is approximate and the origin framing is disputed.
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: Historically, the Shīʿah emerged in support of the caliphate of ʿAlī (ah 35–40/656–661 ce) during the First Civil War
+      - key: eor-madhhab
+        locator: preamble
+        stance: asserts
+        excerpt: barely three decades after the death of the Prophet, about 660 ce
+  - id: shia.active-at.kufa
+    predicate: active-at
+    object: kufa
+    when: 0661
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: After 661 the Shi'ah kept a latent opposition to the Umayyads from their center in Ali's former capital Kufa in Iraq."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Origins and Early Development', EoR states that after Ali's murder and Hasan's abdication in 661 the Shia continued a latent opposition to the Umayyads from their center in Ali's former capital of Kufa in Iraq."
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: the Shīʿah continued a latent opposition to the Umayyad caliphate from their center in ʿAlī's former capital of Kufa in Iraq
+  - id: shia.active-at.karbala
+    predicate: active-at
+    object: karbala
+    when: 0680
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Husayn's violent death at Karbala in 680 led to a radical wing of the Shi'ah, and the Twelver article names Karbala as Husayn's burial place and a major Shi'i holy site."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-shiism-ithna-ashariyah
+        note: 'Graded A scholarly: Overview states Husayn was killed at Karbala in 680 and the Twelver article names Karbala as where Husayn and his family are interred and commemorated.'
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: The violent death of ʿAlī's second son, Ḥusayn, at Karbala, Iraq, in 680 led to the formation of a radical wing within the Shīʿah
+      - key: eor-shiism-ithna-ashariyah
+        locator: preamble
+        stance: asserts
+        excerpt: Karbalāʾ, where Imam Ḥusayn and his family are interred
+  - id: shia.active-at.najaf
+    predicate: active-at
+    object: najaf
+    when: 10XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Al-Tusi (d. 1067/8) founded the Twelver university at Najaf, still the most important and ancient Shi'i center of learning."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Second period: ninth to eleventh centuries' the article states as fact that Muhammad al-Tusi (d. 1067/8) founded the Twelver university at Najaf, which survives as the most important and ancient Shi'i center of learning, placing Twelver activity at Najaf in the 11th century (no exact founding year given)."
+    sources:
+      - key: eor-shiism-ithna-ashariyah
+        locator: preamble
+        stance: asserts
+        excerpt: also the founder of the Twelver university at Najaf, which survives to this day as the most important and ancient Shīʿī center of learning
+  - id: shia.active-at.qom
+    predicate: active-at
+    object: qom
+    when: 08XX/09XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Qom became a bastion of Imami Shiism adhering to the imamate of Ali al-Rida and his descendants in the ninth century, and the Twelver article lists Qom as a university center.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-shiism-ithna-ashariyah
+        note: 'Graded A scholarly: Overview says Qom became a bastion of Imami Shiism in the ninth century with a traditionist school peaking with Kulayni; the Twelver article lists Qom as a university center.'
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: it became a bastion of Imāmī Shiism, adhering to the imamate of ʿAlī al-Riḍā and his descendants in the ninth century
+      - key: eor-shiism-ithna-ashariyah
+        locator: preamble
+        stance: asserts
+        excerpt: others, including Najaf and Qom, have become important university centers over the centuries
+  - id: shia.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 09XX/10XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Baghdad theological school was led by al-Mufid (d. 1022) and al-Murtada (d. 1044), and al-Kulayni (d. 941) taught in Baghdad and is buried there.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-shiism-ithna-ashariyah
+        note: 'Graded A scholarly: Overview names al-Mufid (d. 1022) and al-Murtada (d. 1044) as leaders of the Baghdad school; the Twelver article says al-Kulayni (d. 941) taught in Baghdad and is buried there.'
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: The leading figures of the theological school of Baghdad were Shaykh al-Mufīd (d. 1022) and Sharif al-Murtaḍā ʿAlam al-Hudā (d. 1044)
+      - key: eor-shiism-ithna-ashariyah
+        locator: preamble
+        stance: asserts
+        excerpt: Al-Kulaynī, born and educated near Qom, taught in Baghdad, where he lies buried

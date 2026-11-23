@@ -1,0 +1,109 @@
+id: maliki
+type: school
+names:
+  en: Maliki school
+ids:
+  wikidata: Q48221
+claims:
+  - id: maliki.branch-of.sunni
+    predicate: branch-of
+    object: sunni
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-andalusia
+        note: Islamic Law calls the Mālikī 'the oldest of the classical Sunnī schools', and Andalusia lists Malikism among the four schools of the Sunnī world.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: EoR calls the Mālikī school the oldest of the classical Sunnī schools and lists Malikism among the four schools recognized in the Sunnī world.
+    sources:
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: The oldest of the classical Sunnī schools is the Mālikī
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: the four legal schools (Malikism, Ḥanafism, Shafiʿism, and Hanbalism) recognized within the Muslim Sunnī world from the tenth century onwards
+  - id: maliki.active-at.medina
+    predicate: active-at
+    object: medina
+    when: 07XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-andalusia
+        note: All three sources say the Mālikī school originated in Medina with Mālik ibn Anas, who spent his whole life there.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-madhhab
+        note: eor-madhhab says Mālik ibn Anas (d. 795) spent his entire life in Medina, eor-islamic-law-shariah says the school originated there, and eor-islam-andalusia ties it to Medina in the eighth century.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Mālikī school originated in Medina, where Mālik ibn Anas (d. 795/796) spent his entire life.
+    sources:
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: the Mālikī, which originated in Medina
+      - key: eor-madhhab
+        locator: preamble
+        stance: asserts
+        excerpt: The Mālikī school was founded by Mālik ibn Anas al-Aṣbaḥī (d. 795), who spent his entire life in Medina
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: The other major legal trend in the eighth century was that associated with Medina and more specifically with Mālik ibn Anas (d. 796).
+  - id: maliki.active-at.kairouan
+    predicate: active-at
+    object: kairouan
+    when: 08XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text states the Mālikī school in Kairouan took decisive steps toward unifying the Maghreb, and places Saḥnūn (d. 854) and his Mudawwanah in that setting.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Under Literary works the text states as fact that the Mālikī school in Kairouan took decisive steps toward the ideological unification of the Maghreb, and the next sentence credits Saḥnūn (d. 854) with setting down the Mudawwanah, which fixes it in the ninth century.'
+    sources:
+      - key: eor-islam-north-africa
+        locator: preamble
+        stance: asserts
+        excerpt: The Mālikī school in Kairouan took decisive steps toward the ideological unification of the Maghreb.
+  - id: maliki.active-at.cordoba
+    predicate: active-at
+    object: cordoba
+    when: 0929
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says the proclamation of the Umayyad caliphate of Cordova in 929 consolidated Malikism as the 'official' legal school of al-Andalus."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text states as fact that the proclamation of the Umayyad caliphate in 929 consolidated Malikism as an "official" legal school and that the Umayyad caliphs of Cordova stressed its association with Medina; 929 marks official consolidation, not a beginning, since Mālikī scholars already served the Umayyads in the ninth century.'
+    sources:
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: The proclamation of the Umayyad caliphate in 929 consolidated Malikism as an "official" legal school

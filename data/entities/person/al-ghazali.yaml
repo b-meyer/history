@@ -1,0 +1,140 @@
+id: al-ghazali
+type: person
+names:
+  en: al-Ghazali
+ids:
+  wikidata: Q9546
+claims:
+  - id: al-ghazali.born
+    predicate: born
+    when: 1058
+    where: tus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: eor-ghazali says he was born in Tus near modern Mashhad but gives no year, and eor-sufism states 'born at Tus ... in 1058'.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-sufism states he was born at Ṭūs near Mashhad in 1058, and eor-ghazali gives Ṭūs but no year.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: al-Ghazālī was born at Ṭūs near the modern Iranian city of Mashhad in 1058
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: Al-Ghazālī was born in the town of Ṭūs, near modern Mashhad
+  - id: al-ghazali.died
+    predicate: died
+    when: 1111
+    where: tus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-ghazali says he returned to Tus and 'died there in 1111', and eor-sufism gives the death year 1111 after retiring to a convent at Tus.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: eor-ghazali says he returned to Ṭūs and died there in 1111, and eor-sufism says he retired to a Ṣūfī convent at Ṭūs before his death in 1111.
+    sources:
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: returned to Ṭūs, probably because of ill health; he died there in 1111
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: he retired to a Ṣūfī convent at Ṭūs before his death in 1111
+  - id: al-ghazali.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 1091/1095
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Both texts say he was appointed to the Nizamiyah professorship in Baghdad in 1091, and eor-ghazali says he held it just over four years and left after a 1095 illness.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-sufism
+        note: 'Graded A scholarly: Both sources say he was appointed professor at the Niẓāmīyah in Baghdad in 1091, and eor-ghazali says he left after just over four years, with the 1095 crisis.'
+    sources:
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: In 1091, when he was about thirty-three, he was appointed to the main professorship at the Niẓāmīyah college in Baghdad
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: appointed him professor at the Niẓāmīyah madrasah in Baghdad in 1091
+  - id: al-ghazali.active-at.nishapur
+    predicate: active-at
+    object: nishapur
+    when: 1106/1110
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: eor-ghazali says that in the year 500 (began September 1106) he accepted the main professorship at the Nizamiyah in Nishapur for three or possibly four years, then returned to Tus and died there in 1111.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The Life section states as fact that, around the start of the Muslim year 500 (September 1106), he accepted the main professorship of the Niẓāmīyah in Nishapur and held it 'three or possibly four years' before returning to Ṭūs, so the stay is certain but 1106 and 1110 are inferred endpoints (1110 the outer limit) that the claim leaves unhedged; eor-sufism's return to teaching 'after eleven years' from 1095 agrees on about 1106 but does not name Nishapur.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Under Life, EoR states that at the start of AH 500 (began September 2, 1106) al-Ghazali accepted the invitation to become main professor at the Nizamiyah college in Nishapur and held the post three or possibly four years before returning to Tus, so 1106 to about 1110.'
+    sources:
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: to become the main professor in the Niẓāmīyah college there
+  - id: al-ghazali.active-at.tus
+    predicate: active-at
+    object: tus
+    when: 1097~/1111
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: eor-ghazali says that after the 1096 pilgrimage he returned by stages to Tus and founded a khanaqah with disciples, and eor-sufism says he retired to a Sufi convent at Tus before dying in 1111; the c.1097 start is inferred from the text, not stated.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: eor-ghazali says he returned to Ṭūs and set up a khānāqāh there, and eor-sufism says he retired to a Ṣūfī convent at Ṭūs before dying in 1111; the texts give no start year, so the 1097~ start is inferred from his 1096 pilgrimage and return.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: eor-ghazali says that some six months after the 1096 pilgrimage he was back in Baghdad and 'seems to have made his way by stages' to Ṭūs, where he founded a khānāqāh, and that he returned there from Nishapur and died in 1111; eor-sufism confirms the retirement to a Ṣūfī convent at Ṭūs before his death in 1111, but the arrival year is inferred and the span was broken by the three or four years teaching at Nishapur.
+    sources:
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: There he established a khānāqāh (hostel or convent)
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: he retired to a Ṣūfī convent at Ṭūs before his death in 1111

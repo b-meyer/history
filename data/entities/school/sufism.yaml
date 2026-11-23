@@ -1,0 +1,79 @@
+id: sufism
+type: school
+names:
+  en: Sufism
+ids:
+  wikidata: Q9603
+claims:
+  - id: sufism.branch-of.islam
+    predicate: branch-of
+    object: islam
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: eor-sufism calls Sufism 'the mystical tradition' of religious life in Islam, and eor-ghazali says it had flourished in the Islamic world for over two centuries.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-sufism calls Sufism 'one of the truly creative manifestations of religious life in Islam', and eor-ghazali says it 'had been flourishing in the Islamic world for more than two centuries'.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: One of the truly creative manifestations of religious life in Islam is the mystical tradition, known as Sufism.
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: Sufism had been flourishing in the Islamic world for more than two centuries.
+  - id: sufism.active-at.basra
+    predicate: active-at
+    object: basra
+    when: 07XX/08XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-sufism names Basra, Kufa and Baghdad as the three major centers of the ascetic movement (Iraq) in the 8th and 9th centuries, so it describes ascetic precursors of Sufism, not Sufism itself.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under Origins / The Ascetic movement the text states as fact that Iraq, especially Basra, Kufa and Baghdad, was a major center of 'the ascetic movement in the eighth and ninth centuries'; place and dates match exactly, but it names the ascetic movement rather than Sufism, so the claim rests on the article's treating those ascetics as early Sufism ('the early ascetics of Islam (Ṣūfīs)', Ḥasan of Basra 'considered a pivotal figure in the early development of Sufism'), while it places the transition from asceticism to love mysticism with Rābiʿah (d. 801).
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The three major centers of the ascetic movement in the eighth and ninth centuries were Iraq, especially the cities of Basra, Kufa, and Baghdad
+  - id: sufism.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 07XX/08XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-tariqah
+        note: 'Graded A scholarly: eor-sufism names Baghdad as one of three major centers of the ascetic movement in the 8th-9th centuries, and eor-tariqah says there were samāʿ houses for Ṣūfīs in Baghdad as early as 850 ce.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: eor-sufism lists Baghdad among the main ascetic centers of the 8th and 9th centuries, and eor-tariqah says that as early as 850 CE there were samāʿ houses in Baghdad where Ṣūfīs listened to music.'
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The three major centers of the ascetic movement in the eighth and ninth centuries were Iraq, especially the cities of Basra, Kufa, and Baghdad
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: As early as 850 ce there were samāʿ houses in Baghdad in which the Ṣūfīs could listen to music

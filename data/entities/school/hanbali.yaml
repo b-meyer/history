@@ -1,0 +1,166 @@
+id: hanbali
+type: school
+names:
+  en: Hanbali school
+ids:
+  wikidata: Q233387
+claims:
+  - id: hanbali.branch-of.sunni
+    predicate: branch-of
+    object: sunni
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: EoR calls the Hanbali madhhab one of the 'four surviving Sunni madhhabs' of law, and the law article calls it 'the last of the classical Sunni schools'.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islamic-law-shariah
+        note: EoR calls the Ḥanbalī school the last of the classical Sunnī schools and one of the surviving Sunnī madhhabs of law.
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: It was, like the three other surviving Sunnī madhhab s, a madhhab of law
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: The last of the classical Sunnī schools crystallized around Aḥmad ibn Ḥanbal (d. 855)
+  - id: hanbali.opened
+    predicate: opened
+    when: 08XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: eor-madhhab says the Ḥanbalī school was founded by Aḥmad ibn Ḥanbal (d. 855) in the ninth century ce, and eor-hanabilah dates the emergence of the personal schools to around the mid-ninth century.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-hanabilah
+        note: 'Graded A scholarly: The madhhab article says the Hanbali school was founded by Ahmad ibn Hanbal (d. 855) and emerged in the ninth century, and the Hanabilah article dates the personal schools from about the mid-ninth century, though that passage covers the schools generally.'
+    sources:
+      - key: eor-madhhab
+        locator: preamble
+        stance: asserts
+        excerpt: two new schools which emerged in the third century ah (ninth century ce)
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: The emergence of these guilds of jurisconsults dates from around the middle of the ninth century.
+  - id: hanbali.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 08XX/12XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Abu Ya'la's students spread the madhhab 'beyond the confines of Baghdad', which implies a Hanbali base there; this fits the 11th century and the later Damascus-learning-from-Baghdad passage, though the passage does not give a date for Baghdad itself."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: "The quoted sentence (Eleventh century section) only implies Baghdad was the madhhab's base in Abu Ya'la's time, but the article elsewhere has Ibn Hanbal dying at Baghdad in 855, dates the madhhabs' emergence to about the mid-ninth century (Laoust: 847-945, no precise date determinable), and follows Baghdad Hanbalis to the Mongol conquest of the mid-thirteenth century, so presence is certain while the ninth-century start is approximate."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Eleventh century', EoR says Abu Ya'la (d. 1066) led the Hanbali madhhab, madrasahs flourished in Baghdad in this period, and two of his students spread the madhhab beyond the confines of Baghdad, so the school was based in Baghdad."
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: students especially helped to spread the madhhab beyond the confines of Baghdad
+  - id: hanbali.active-at.damascus
+    predicate: active-at
+    object: damascus
+    when: 12XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: After the fall of Baghdad (1258) Damascus became the center of Hanbali learning, with intellectual dynasties such as the Munajja and Qudama families (Ibn Qudama d. 1223).'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Later period section states as fact that with the fall of Baghdad (mid-thirteenth century) Damascus became the Hanbali center of learning, with the Ibn al-Hanbali, Munajja and Qudamah families and the Taymiyah family settling there; the Eleventh century section puts a Hanbali school there earlier, so 12XX is the period of centrality, not the first activity.'
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: With the fall of Baghdad, Damascus became the center of learning for the Ḥanbālī madhhab
+  - id: hanbali.active-at.jerusalem
+    predicate: active-at
+    object: jerusalem
+    when: 10XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Abu al-Faraj al-Shirazi (d. 1094) 'is credited with carrying the Hanbali madhhab to Jerusalem and Damascus'; the hedged 'credited' and the lack of a date make it probable rather than certain.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The Eleventh century section says Abu al-Faraj al-Shirazi (d. 1094) 'is credited with' carrying the madhhab to Jerusalem and Damascus, a reported attribution, and nothing else in the article attests Hanbali activity in Jerusalem itself.
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: reports
+        excerpt: who is credited with carrying the Ḥanbālī madhhab to Jerusalem and Damascus
+  - id: hanbali.active-at.harran
+    predicate: active-at
+    object: harran
+    when: 10XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Qadi Harran (d. 1083) was appointed by Abu Ya'la as his judicial representative in Harran, so the Hanbalis were active there in the 11th century."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The Eleventh century section says Abu Ya'la (d. 1066) appointed Qadi Harran (d. 1083) his judicial representative in Harran and that he helped spread the madhhab beyond Baghdad, and the section's end names a Hanbali school of Harran as already existing."
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: whom Abū Yaʿlā appointed as his judicial representative in Ḥarrān
+  - id: hanbali.active-at.isfahan
+    predicate: active-at
+    object: isfahan
+    when: 10XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says the Hanabilah 'had also spread to Isfahan', where Abd al-Rahman ibn Mandah (d. 1077) was an activist."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The last paragraph of the Eleventh century section states as fact that the Hanabilah had by this time also spread to Isfahan, where the activist 'Abd al-Rahman ibn Mandah (d. 1077) worked."
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: the Ḥanābilah, by this time, had also spread to Isfahan

@@ -1,0 +1,5 @@
+id: medina
+type: place
+names: { en: Medina }
+ids: { wikidata: 'Q35484', geonames: '109223' }
+coords: [39.61, 24.47]

@@ -1,0 +1,5 @@
+id: qom
+type: place
+names: { en: Qom }
+ids: { wikidata: 'Q170573', geonames: '119208' }
+coords: [50.88, 34.64]

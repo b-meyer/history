@@ -1,0 +1,93 @@
+id: ali
+type: person
+names:
+  en: Ali
+ids:
+  wikidata: Q39619
+claims:
+  - id: ali.died
+    predicate: died
+    when: 0661
+    where: kufa
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-kharijis
+        note: The kharijis article says ʿAli was murdered at the door of his mosque in Kufa by Ibn Muljam, and the shariah and Shiism articles give his death or murder as 661.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: ʿAlī died in 661, murdered at the door of his mosque in Kufa by the Khārijī Ibn Muljam.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-shiism-overview
+        note: The cited passages give Ali's death as 661 (the overview calls it a murder), and eor-kharijis says he was murdered at the door of his mosque in Kufa.
+    sources:
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAlī ibn Abī Ṭālib (d. 661)
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: After the murder of ʿAlī and the abdication of his eldest son, Ḥasan, in 661
+      - key: eor-kharijis
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAlī was murdered at the door of his mosque in Kufa
+  - id: ali.active-at.mecca
+    predicate: active-at
+    object: mecca
+    when: 0612
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says that after Muḥammad began preaching in Mecca in 612 he gained converts including his young cousin ʿAlī, an account taken from the early Muslim biographies, and it gives no year for ʿAlī himself.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: flagged
+        note: The text dates Muḥammad's first preaching in Mecca to 612 and says he then 'gradually gained converts', including his young cousin ʿAlī, so it implies ʿAlī was in Mecca among the early converts but does not date him to 612.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: EoR says that after Muhammad began preaching in Mecca in 612 he 'gradually gained converts, including his young cousin Ali ibn Abi Talib', which places Ali in Mecca as an early convert but does not pin his conversion to 612 itself."
+    sources:
+      - key: eor-muhammad
+        locator: preamble
+        stance: asserts
+        excerpt: he gradually gained converts, including his young cousin ʿAlī ibn Abī Ṭālib
+  - id: ali.active-at.kufa
+    predicate: active-at
+    object: kufa
+    when: 0656/0661
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-kharijis
+        note: "Graded A scholarly: Both articles call Kufa ʿAli's capital (ʿAli's former capital in the Shiism overview); the 656 to 661 caliphate span is given in the Shiism article (AH 35-40/656-661)."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Both the overview and eor-kharijis call Kufa Ali's capital, and the overview dates his caliphate to 656-661."
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: their center in ʿAlī's former capital of Kufa in Iraq
+      - key: eor-kharijis
+        locator: preamble
+        stance: asserts
+        excerpt: near ʿAlī's capital of Kufa in Iraq

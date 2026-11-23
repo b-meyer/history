@@ -1,0 +1,5 @@
+id: kairouan
+type: place
+names: { en: Kairouan }
+ids: { wikidata: 'Q179570', geonames: '2473449' }
+coords: [10.10, 35.68]

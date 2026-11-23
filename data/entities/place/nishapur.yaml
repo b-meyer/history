@@ -1,0 +1,5 @@
+id: nishapur
+type: place
+names: { en: Nishapur }
+ids: { wikidata: 'Q131350', pleiades: '952092', geonames: '122285' }
+coords: [58.80, 36.20]

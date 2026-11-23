@@ -1,0 +1,5 @@
+id: karbala
+type: place
+names: { en: Karbala }
+ids: { wikidata: 'Q199909', geonames: '94824' }
+coords: [44.03, 32.62]

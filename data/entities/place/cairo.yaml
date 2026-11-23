@@ -1,0 +1,5 @@
+id: cairo
+type: place
+names: { en: Cairo }
+ids: { wikidata: 'Q85', geonames: '360630' }
+coords: [31.24, 30.04]

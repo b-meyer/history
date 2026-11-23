@@ -1,0 +1,140 @@
+id: muhammad
+type: person
+names:
+  en: Muhammad
+ids:
+  wikidata: Q9458
+claims:
+  - id: muhammad.born
+    predicate: born
+    when: 0570~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: The text says he was born in Mecca 'in about 570' and gives c. 570–632 ce, an approximate date resting largely on early Muslim biographies."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: The 'Early Life (c. 570–610)' section states he was born in Mecca 'in about 570' (the lead also gives c. 570–632), but the date is approximate, the article rests on the early Muslim biographers and adds that 'little is known about Muḥammad's early years'."
+    sources:
+      - key: eor-muhammad
+        locator: preamble
+        stance: asserts
+        excerpt: Born in Mecca, in the Arabian Ḥijāz, in about 570
+  - id: muhammad.died
+    predicate: died
+    when: 0632
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text states he died in ʿĀʾishah's arms on June 8, 632, and eor-islamic-law-shariah independently dates his death to 632 ce.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islamic-law-shariah
+        note: EoR states as fact that Muḥammad died in 632, specifically on June 8, 632 in ʿĀʾishah's arms, and was buried in Medina.
+    sources:
+      - key: eor-muhammad
+        locator: preamble
+        stance: asserts
+        excerpt: Muḥammad died in ʿĀʾishah's arms on June 8, 632
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: The death of the prophet Muḥammad in 632 ce
+  - id: muhammad.active-at.mecca
+    predicate: active-at
+    object: mecca
+    when: 0570/0622
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says that in 612 he began to preach in Mecca, a date drawn from the early Muslim biographies (Ibn Isḥāq, Ibn Saʿd, al-Ṭabarī).
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: The article states as fact that he was born in Mecca about 570, lived there as a Quraysh merchant, preached there from 612 and left in the hijrah of 622; the cited sentence itself gives only the 612 start of preaching, and the 570 start is only 'about 570'."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: EoR states as fact that he was born in Mecca about 570, began preaching there in 612 (section 'The Mission in Mecca (612-622)'), and left with the hijrah to Yathrib in 622."
+    sources:
+      - key: eor-muhammad
+        locator: preamble
+        stance: asserts
+        excerpt: In 612, after another powerfully endorsing revelation, Muḥammad began to preach in Mecca
+  - id: muhammad.active-at.medina
+    predicate: active-at
+    object: medina
+    when: 0622/0632
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text states the 622 hijrah to Yathrib (Medina) as fact, that Medina stayed the capital after his return, and that he was buried there; eor-islam-andalusia calls Medina the town where the Prophet acted as ruler.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-andalusia
+        note: Muhammad says Muslims migrated to Yathrib in 622, that Medina was the Islamic capital, that he returned there, and that he died on 8 June 632 and was buried in the mosque courtyard at Medina; Andalusia calls Medina the town where the Prophet acted as ruler.
+    sources:
+      - key: eor-muhammad
+        locator: preamble
+        stance: asserts
+        excerpt: In 622, the Muslim families slipped quietly out of Mecca, one by one, and made the migration (hijrah ) to Yathrib
+      - key: eor-muhammad
+        locator: preamble
+        stance: asserts
+        excerpt: He was buried in her little hut in the courtyard of the mosque of Medina
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: Medina, the town where the Prophet had acted as ruler
+  - id: muhammad.founder-of.islam
+    predicate: founder-of
+    object: islam
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: eor-sunnah
+        note: eor-muhammad only says he is revered by Muslims as the prophet to whom the Qur'an was revealed, and eor-sunnah only puts 'founded' in scare quotes in a general remark about religious traditions without naming Muhammad as Islam's founder, so neither text states the claim.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-muhammad says Muslims revere him as the prophet to whom the Qurʾān was revealed, and eor-sunnah speaks of proximity to 'the founder' in 'founded' traditions without itself spelling out that he founded Islam, so this rests mainly on the tradition's own account.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded C scholarly: Neither source calls him the founder outright: eor-muhammad's cited lead says only that Muslims revere him as the prophet to whom the Qurʾān was revealed, and the article later says he 'had no intention of founding a new religion', while eor-sunnah implies it by opening with proximity to the founder in 'founded' traditions (in scare quotes) and later pairing 'the founder' with Muslims' reliance on Muḥammad."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C scholarly: EoR Muhammad calls him the prophet to whom the Qur''an was revealed and says he ''had no intention of founding a new religion'', while EoR Sunnah only implies him as founder by placing Islam among "founded" traditions in scare quotes, so the founder label is a framing the sources qualify rather than state.'
+    sources:
+      - key: eor-muhammad
+        locator: preamble
+        stance: reports
+        excerpt: is revered by Muslims as the prophet to whom the Qurʾān, the sacred scripture of Islam, was revealed
+      - key: eor-sunnah
+        locator: preamble
+        stance: reports
+        excerpt: In every "founded" religious tradition, maintaining proximity to the founder has been an important source of legitimacy and authority

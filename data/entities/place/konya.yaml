@@ -1,0 +1,5 @@
+id: konya
+type: place
+names: { en: Konya }
+ids: { wikidata: 'Q79857', pleiades: '648647', geonames: '306571' }
+coords: [32.49, 37.87]

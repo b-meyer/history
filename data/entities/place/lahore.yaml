@@ -1,0 +1,5 @@
+id: lahore
+type: place
+names: { en: Lahore }
+ids: { wikidata: 'Q11739', geonames: '1172451' }
+coords: [74.34, 31.55]

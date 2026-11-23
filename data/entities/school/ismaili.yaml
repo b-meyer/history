@@ -1,0 +1,147 @@
+id: ismaili
+type: school
+names:
+  en: Ismaili
+ids:
+  wikidata: Q230386
+claims:
+  - id: ismaili.branch-of.shia
+    predicate: branch-of
+    object: shia
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-shiism-overview
+        note: The Isma'iliyah is described as a major branch of the Shi'ah tracing the imams through Isma'il, and the overview says the dissenting followers of Ja'far became its founders.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The ismailiyah article opens by calling the Ismaili 'a major branch of the Shi'ah', and the overview says Ismail's followers became its founders.
+    sources:
+      - key: eor-shiism-ismailiyah
+        locator: preamble
+        stance: asserts
+        excerpt: A major branch of the Shīʿah, the Ismāʿīlīyah traces the line of imams through Ismāʿīl
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: They became the founders of the Ismāʿīlīyah
+  - id: ismaili.splits-from.shia
+    predicate: splits-from
+    object: shia
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The succession to Ja'far al-Sadiq was disputed and caused a schism among the Imamiyah, with followers who denied Isma'il's death or accepted his son Muhammad becoming the founders of the Isma'iliyah.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: eor-shiism-ismailiyah
+        note: Both texts describe a schism among the Imamiyah (a split within Shia over Ja'far al-Sadiq's succession), and call the Ismailiyah a branch of the Shi'ah, so it did not split from Shia Islam.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: EoR states the disputed succession to Jafar al-Sadiq caused a schism among the Imamiyah, with those who held Ismail's designation irreversible becoming the founders of the Ismailiyah; the Ismailiyah article calls it a major branch of the Shia that traces its imams through Ismail.
+    sources:
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: The succession to Jaʿfar al-Ṣādiq was disputed and led to a schism among the Imāmīyah.
+      - key: eor-shiism-ismailiyah
+        locator: preamble
+        stance: asserts
+        excerpt: Some of Jaʿfar's followers who considered the designation irreversible either denied the death of Ismāʿīl or accepted Ismāʿīl's son Muḥammad as the rightful imam after Jaʿfar
+  - id: ismaili.opened
+    predicate: opened
+    when: 0765~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Ismāʿīlī schism followed Jaʿfar al-Ṣādiq's death in ah 148/765 ce, but the text gives no founding year, so 765 is only approximate.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-shiism-overview
+        note: The Ismailiyah article dates Jafar's death to 765 and says his followers split over the succession, but the overview says the Ismailiyah first became historically important only after the mid-ninth century, so 765 marks the schism's origin, not an organized founding.
+    sources:
+      - key: eor-shiism-ismailiyah
+        locator: preamble
+        stance: asserts
+        excerpt: Imam Jaʿfar al-Ṣādiq (d. ah 148/765 ce)
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: They became the founders of the Ismāʿīlīyah
+  - id: ismaili.active-at.cairo
+    predicate: active-at
+    object: cairo
+    when: 0969/1171
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-shiism-ismailiyah
+        note: The Fatimids took command of Egypt in 969 and the Fatimid caliphate, with its Ismāʿīlī imams, was overthrown in 1171 by Saladin, who restored Sunnism.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Fatimids took command of Egypt in 969, the Ismāʿīlī Fatimid caliphate was based in Cairo, and it was overthrown in 1171 by Saladin.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-shiism-ithna-ashariyah
+        note: The Twelver article names the Fatimid caliphate in Cairo as an Isma'ili political establishment, the North Africa article has the Fatimids taking command of Egypt in 969, and the Isma'iliyah article has Saladin overthrowing the Fatimid caliphate in 1171, with caliphal descendants kept prisoner in Cairo.
+    sources:
+      - key: eor-islam-north-africa
+        locator: preamble
+        stance: asserts
+        excerpt: Once they had taken command of Egypt in 969
+      - key: eor-shiism-ithna-ashariyah
+        locator: preamble
+        stance: asserts
+        excerpt: as the Ismaʿiliyah had done centuries before with the establishment of the Fatimid caliphate in Cairo
+      - key: eor-shiism-ismailiyah
+        locator: preamble
+        stance: asserts
+        excerpt: The Fatimid caliphate was now in full decline and was overthrown in 1171 by the Ayyubid Ṣālaḥ al-Dīn (Saladin)
+  - id: ismaili.active-at.alamut
+    predicate: active-at
+    object: alamut
+    when: 1090/1256
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Ḥasan-i Ṣābbāḥ seized Alamūt in 1090 and made it his headquarters, and the Nizārī Ismāʿīlī line was based there until the Mongol conquest of Alamūt in 1256.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-shiism-overview
+        note: Hasan-i Sabbah seized Alamut in 1090 and made it his headquarters, and the overview refers to the Mongol conquest of Alamut in 1256.
+    sources:
+      - key: eor-shiism-ismailiyah
+        locator: preamble
+        stance: asserts
+        excerpt: who in 1090 seized the mountain stronghold of Alamūt northwest of Qazvin and made it his headquarters
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: soon after the Mongol conquest of Alamūt in 1256

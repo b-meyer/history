@@ -1,0 +1,95 @@
+id: mevlevi
+type: school
+names:
+  en: Mevlevi
+ids:
+  wikidata: Q659567
+claims:
+  - id: mevlevi.branch-of.sufism
+    predicate: branch-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-rumi
+        note: EoR Sufism says the Mawlawīyah trace their silsilah to Rūmī, and EoR Rūmī says Sulṭān Walad shaped his disciples into a Ṣūfī fraternity proper.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-sufism says the Mawlawīyah trace their silsilah to Rūmī, and eor-rumi says Sulṭān Walad shaped his disciples into a 'Ṣūfī fraternity proper'.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The Mawlawīyah trace their silsilah to the mystic and poet Jalāl al-Dīn Rūmī.
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: shaped them into a Ṣūfī fraternity proper
+  - id: mevlevi.opened
+    predicate: opened
+    when: 1273/1312
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Rūmī (d. 1273) founded no formal ṭarīqah himself; his son Sulṭān Walad (d. 1312) organized the disciples into the order, which eor-rumi says was firmly established by 1312.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-rumi
+        note: Rūmī did not found a formal ṭarīqah in his lifetime (eor-sufism); his son Sulṭān Walad systematized the order (eor-tariqah) and it was firmly established by his death in 1312 (eor-rumi), so 1273 is not the founding date and 1312 marks only when the order was established.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: All three sources say Rūmī (d. 1273) founded no formal order and that his son Sulṭān Walad (d. 1312) systematized it, with the order 'firmly established' by 1312; none gives a founding year, so 1312 is a latest bound and 1273 is only Rūmī's death.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: All three agree: eor-tariqah says Rūmī's (1207–1273) disciples were systematized into an order by Sulṭān Walad (d. 1312), eor-sufism that Rūmī established no formal ṭarīqah in his lifetime and Sulṭān Walad organized it, and eor-rumi that Walad shaped the fraternity after Ḥusām al-Dīn's death in 1284 and it was firmly established by 1312; the range 1273/1312 is safe, though eor-rumi would narrow the start to 1284."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: EoR 'Mawlawiyah' says Rumi (d. 1273) founded no formal order and his Konya disciples were systematized into one by his son Sultan Walad (d. 1312); eor-rumi dates Walad's leadership from 1284 and calls the order firmly established by his death in 1312, so the founding falls within the 1273-1312 bracket."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: His community of disciples in Konya was systematized into an order by Sulṭān Walad (d. 1312)
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Rūmī himself, however, did not establish a formal ṭarīqah during his lifetime
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: By the time he died in 1312, the Mevlevi order (called Whirling Dervishes in the West) was firmly established
+  - id: mevlevi.active-at.konya
+    predicate: active-at
+    object: konya
+    when: 1273/1312
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: eor-tariqah says Rūmī's community of disciples in Konya was systematized into the Mevlevi order by Sulṭān Walad (d. 1312), who built a türbe over Rūmī's resting place."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under Mawlawīyah, the text says Rūmī's community of disciples in Konya was systematized into an order by Sulṭān Walad (d. 1312), who built the shrine dome over Rūmī's resting place and from this base established lodges throughout Anatolia; the 1273 start comes from Rūmī's death date, not a stated date for the order."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: His community of disciples in Konya was systematized into an order by Sulṭān Walad (d. 1312)

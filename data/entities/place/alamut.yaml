@@ -1,0 +1,5 @@
+id: alamut
+type: place
+names: { en: Alamut }
+ids: { wikidata: 'Q4706020', geonames: '120399' }
+coords: [50.59, 36.44]

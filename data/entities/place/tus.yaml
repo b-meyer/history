@@ -1,0 +1,5 @@
+id: tus
+type: place
+names: { en: Tus }
+ids: { wikidata: 'Q681427' }
+coords: [59.52, 36.49]
