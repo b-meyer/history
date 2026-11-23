@@ -108,9 +108,13 @@ export function readItems(file: string, source: string): Item[] {
   return items;
 }
 
-/** Every item under data/entities/ and data/citations/. */
-export function collectItems(root: string): Item[] {
-  return ['entities', 'citations'].flatMap((folder) =>
+export type Folder = 'entities' | 'citations';
+
+export const FOLDERS: readonly Folder[] = ['entities', 'citations'];
+
+/** Every item under data/entities/ and data/citations/, or only the folders named. */
+export function collectItems(root: string, folders: readonly Folder[] = FOLDERS): Item[] {
+  return folders.flatMap((folder) =>
     yamlFiles(join(root, 'data', folder)).flatMap((path) =>
       readItems(relative(root, path).replaceAll('\\', '/'), readFileSync(path, 'utf8')),
     ),

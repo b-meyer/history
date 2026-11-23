@@ -98,6 +98,17 @@ describe('collectItems', () => {
     ]);
     expect(items[0]?.passage).toBe('stale');
   });
+
+  it('reads only the folders named', () => {
+    expect(collectItems(root, ['citations']).map((item) => item.label)).toEqual([
+      'cite 1',
+      'cite 2',
+    ]);
+    expect(collectItems(root, ['entities']).map((item) => item.file)).toEqual([
+      'data/entities/person/archytas.yaml',
+      'data/entities/person/archytas.yaml',
+    ]);
+  });
 });
 
 describe('quote check', () => {

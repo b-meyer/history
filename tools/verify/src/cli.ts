@@ -4,6 +4,8 @@ import { findOverlaps, sourceGrams } from './overlap.ts';
 import {
   checkItems,
   collectItems,
+  FOLDERS,
+  type Folder,
   libraryText,
   type Library,
   openLibrary,
@@ -12,10 +14,12 @@ import {
   writeEdits,
 } from './quoteCheck.ts';
 
-// vp run verify [--write] [--root <dir>]: the quote check and the overlap flag against the library checkout in
-// LIBRARY_DIR. Without --write nothing is changed. With it, the `passage` hash of every matched
-// source is filled or updated, and nothing else in the YAML files moves. --root points at another
-// checkout of the repo's data/ and pages (used to try --write on a copy).
+// vp run verify [--write] [--only entities|citations] [--root <dir>]: the quote check and the overlap
+// flag against the library checkout in LIBRARY_DIR. Without --write nothing is changed. With it, the
+// `passage` hash of every matched source is filled or updated, and nothing else in the YAML files
+// moves. --only limits the check, and so the writes, to one of data/entities/ or data/citations/; the
+// overlap flag on wiki pages runs unless it is `entities`. --root points at another checkout of the
+// repo's data/ and pages (used to try --write on a copy).
 
 const CITE = /\[@([a-z0-9]+(?:-[a-z0-9]+)*)/gu;
 
@@ -57,6 +61,14 @@ export function checkWiki(root: string, library: Library): Problem[] {
 
 function main(): void {
   const write = process.argv.includes('--write');
+  const onlyAt = process.argv.indexOf('--only');
+  const only = onlyAt === -1 ? undefined : process.argv[onlyAt + 1];
+  if (only !== undefined && !FOLDERS.includes(only as Folder)) {
+    console.error(`--only takes ${FOLDERS.join(' or ')}, not '${only}'.`);
+    process.exitCode = 1;
+    return;
+  }
+  const folders = only === undefined ? FOLDERS : [only as Folder];
   const at = process.argv.indexOf('--root');
   const root = resolve(
     at === -1 ? join(import.meta.dirname, '..', '..', '..') : (process.argv[at + 1] ?? ''),
@@ -69,10 +81,11 @@ function main(): void {
     process.exitCode = 1;
     return;
   }
-  const items = collectItems(root);
+  const items = collectItems(root, folders);
   const result = checkItems(items, library, write);
   if (write) writeEdits(root, result.edits);
-  const problems = [...result.problems, ...checkWiki(root, library)];
+  const wiki = only === 'entities' ? [] : checkWiki(root, library);
+  const problems = [...result.problems, ...wiki];
   for (const problem of problems) {
     console.error(`${problem.type}: ${problem.where}: ${problem.message}`);
   }

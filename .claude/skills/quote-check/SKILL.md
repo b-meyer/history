@@ -17,6 +17,7 @@ LIBRARY_DIR=<library checkout> vp run verify -- --write
 - `LIBRARY_DIR` names the library checkout (read it from `.env`; never print `.env`). The tool reads `sources/<key>/text.md` read-only and never copies library text into this repo.
 - Without `--write` it only checks. It exits non-zero on any problem and prints one line per problem, then counts by type.
 - `--write` fills or updates the `passage` hash of every source that matched, and changes nothing else in the YAML files. Check `git diff` afterwards: only `passage:` lines should differ. To try it on a copy of the data, add `--root <dir>`.
+- `--only citations` or `--only entities` limits the check, and with `--write` the hashes written, to that folder under `data/`. The overlap flag on wiki pages runs unless it is `--only entities`. Scope a write this way rather than discarding the other folder's changes afterwards.
 - The passage hash is the first 16 hex digits of the SHA-256 of the paragraphs the excerpt touches, whitespace-collapsed and joined by one space. It moves only when that text does.
 - CI cannot read the private library, so it only checks that every source key and each cite's excerpt exists. The real match against the text happens here, before a push.
 
