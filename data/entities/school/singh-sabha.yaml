@@ -1,0 +1,73 @@
+id: singh-sabha
+type: school
+names:
+  en: Singh Sabha
+ids:
+  wikidata: Q7523459
+claims:
+  - id: singh-sabha.branch-of.sikhi
+    predicate: branch-of
+    object: sikhi
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Singh Sabha movement aimed to reform and renew Sikh philosophy and culture.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: Under 'Singh Sabha and the Rediscovery of Sikh Identity' the text calls it a movement founded in response to the loss of Sikh identity whose goal was to reform and renew Sikh philosophy and culture, i.e. a reform movement within Sikhism rather than an explicitly named branch."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: Under 'Singh Sabha and the Rediscovery of Sikh Identity' the text says the Singh Sabha movement was founded in Amritsar in 1873 to reform and renew Sikh philosophy and culture, which makes it a reform movement within Sikhism, though the text never calls it a branch or sect."
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: Its goal was to reform and renew Sikh philosophy and culture.
+  - id: singh-sabha.opened
+    predicate: opened
+    when: 1873
+    where: amritsar
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Singh Sabha movement was founded in Amritsar in 1873.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text states as fact that the Singh Sabha movement was founded in Amritsar in 1873.
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: the Singh Sabha movement was founded in Amritsar in 1873
+  - id: singh-sabha.active-at.amritsar
+    predicate: active-at
+    object: amritsar
+    when: 1873
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Singh Sabha movement was founded in Amritsar in 1873.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says the Singh Sabha was founded in Amritsar in 1873 and later founded the Khālsā College at Amritsar in 1892.
+    sources:
+      - key: eor-sikhism
+        locator: preamble
+        stance: asserts
+        excerpt: the Singh Sabha movement was founded in Amritsar in 1873
