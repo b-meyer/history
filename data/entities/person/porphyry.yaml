@@ -46,11 +46,11 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-porphyry }
     sources:
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 4
+        locator: p. 4
         stance: asserts
         excerpt: 'I myself arrived from Greece in the tenth year of Galienus’ reign'
       - key: porphyry-life-of-plotinus-mackenna
-        locator: VP 5
+        locator: p. 5
         stance: asserts
         excerpt: 'After coming to know him I passed six years in close relation with him.'
       - key: sep-porphyry
@@ -88,3 +88,150 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: 'Porphyry (234?–305? C.E.)'
+  - id: porphyry.active-at.athens
+    predicate: active-at
+    object: athens
+    when: ../0263
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP says Porphyry studied in Athens with Longinus before moving to Rome in 263.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP §1 states Porphyry studied in Athens with the Middle Platonist Longinus before moving to Rome in 263.'
+    sources:
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: Porphyry studied in Athens with the Middle Platonist Longinus.
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: In 263 C.E. Porphyry moved to Rome
+  - id: porphyry.active-at.rome
+    predicate: active-at
+    object: rome
+    when: 0263/0268
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-plotinus
+        note: "Graded B primary: SEP says Porphyry was Plotinus's student and lived with him roughly five years, and places Plotinus's teaching at Rome from 244 to 270; the passage does not itself name Porphyry's city or give 263/268."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says he moved to Rome in 263 and remained some five years.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP Porphyry says he moved to Rome in 263 and stayed some five years until leaving for Sicily in 268; SEP Plotinus says he lived with Plotinus roughly five years.
+    sources:
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: In 263 C.E. Porphyry moved to Rome, where he remained for some five years
+      - key: sep-plotinus
+        locator: §1
+        stance: asserts
+        excerpt: Porphyry was a student of Plotinus and lived with him for a period of roughly five years.
+  - id: porphyry.active-at.lilybaeum
+    predicate: active-at
+    object: lilybaeum
+    when: 0268/0270
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: sep-porphyry
+        note: SEP says he left for Sicily in 268 and was still there in 270 but never names Lilybaeum, so the specific place is unsupported.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A primary: Porphyry says first-hand that he was at Lilybaeum when Plotinus died, and that he left Rome for Sicily near Lilybaeum on Plotinus's advice; the exact years are not given in these passages."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eunapius-lives-wright
+        note: "Graded B tradition: Eunapius says the despairing Porphyry kept on to Lilybaeum in Sicily, where Plotinus found him; this is a late report that agrees with Porphyry's own account."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A primary: Porphyry says in the first person he left Rome for Sicily near Lilybaeum on Plotinus' advice and was at Lilybaeum when Plotinus died; SEP dates the departure to 268 and Plotinus' death to 270, and Eunapius also has him at Lilybaeum."
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: p. 2
+        stance: asserts
+        excerpt: I myself was at Lilybaeum at the time
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: p. 12
+        stance: asserts
+        excerpt: I obeyed and left for Sicily
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: he left for Sicily in 268 in order to recover from a bout of depression (“melancholy”), and he was still there when Plotinus died in 270
+      - key: eunapius-lives-wright
+        locator: p. 357
+        stance: reports
+        excerpt: kept on to Lilybaeum
+  - id: porphyry.influenced-by.plotinus
+    predicate: influenced-by
+    object: plotinus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP states he adopted Plotinus' version of Platonism.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP states Porphyry studied with Plotinus in Rome 263-268 and adopted his version of Platonism, after first writing a refutation and then recanting.
+    sources:
+      - key: sep-porphyry
+        locator: preamble
+        stance: asserts
+        excerpt: whose version of Platonism he adopted
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: adopted Plotinus’ version of Platonism
+  - id: porphyry.member-of.neoplatonists
+    predicate: member-of
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP opens by calling Porphyry a Neoplatonist philosopher.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: SEP lists Porphyry, pupil of Plotinus, among the important figures of late antique Neoplatonism.
+    sources:
+      - key: sep-porphyry
+        locator: preamble
+        stance: asserts
+        excerpt: was a Neoplatonist philosopher, born in Tyre in Phoenicia
+      - key: sep-neoplatonism
+        locator: §1
+        stance: asserts
+        excerpt: Important figures of late antique Neoplatonism were the already mentioned pupil of Plotinus, Porphyry

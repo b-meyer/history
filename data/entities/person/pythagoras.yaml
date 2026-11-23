@@ -90,7 +90,7 @@ claims:
         }
     sources:
       - key: iamblichus-pythagoric-life-taylor
-        locator: ch. 5
+        locator: ch. V
         stance: reports
         excerpt: 'on his arrival at Crotona, which was the noblest city in Italy, he had many followers'
   - id: pythagoras.died
@@ -124,3 +124,76 @@ claims:
         locator: DL 8.40
         stance: reports
         excerpt: 'Dicaearchus, however, says that Pythagoras died a fugitive in the temple of the Muses at Metapontum'
+  - id: pythagoras.active-at.samos
+    predicate: active-at
+    object: samos
+    when: -0569~/-0529~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: diogenes-laertius-lives-hicks
+        note: "Graded B tradition: DL 8.3 says Pythagoras returned to Samos, found it under Polycrates' tyranny, and sailed off to Croton; no dates given."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says there is agreement he grew up on Samos, and Aristoxenus has him leave at forty (ca. 530 BCE) with birth ca. 570 BCE, though the early life is called controversial.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §3 says there is agreement that he grew up on Samos and, following Aristoxenus, that he left at forty under Polycrates (who came to power ca. 535), implying birth ca. 570 and departure ca. 530; the dates rest on that reconstructed chronology, and DL 8.3 (tradition) likewise has him return to Samos and leave for Croton under Polycrates.
+    sources:
+      - key: sep-pythagoras
+        locator: §3
+        stance: asserts
+        excerpt: there is agreement that he grew up on the island of Samos
+      - key: sep-pythagoras
+        locator: §3
+        stance: reports
+        excerpt: Aristoxenus says that he left Samos at the age of forty
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.3
+        stance: reports
+        excerpt: After that he returned to Samos to find his country under the tyranny of Polycrates; so he sailed away to Croton in Italy
+  - id: pythagoras.active-at.metapontum
+    predicate: active-at
+    object: metapontum
+    when: -0509~/-0489~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: diogenes-laertius-lives-hicks
+        note: "Graded B tradition: DL 8.40 reports Dicaearchus (and Heraclides) placing Pythagoras' death at Metapontum, while Hermippus gives a different death story."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says the most reliable evidence (Aristoxenus, Dicaearchus) has violence in Croton ca. 510 BCE drive him to Metapontum, where he died around 490 BCE.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: iamblichus-pythagoric-life-taylor
+        note: 'Graded C tradition: Ch. XXXV says accounts differ on whether Pythagoras went to Pherecydes the Syrian or to Metapontum, and elsewhere that he is said to have ended his life there; no dates are given.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §3 says the most reliable evidence (Aristoxenus, Dicaearchus) suggests that after violence at Croton ca. 510 BCE he fled to Metapontum and died there around 490 BCE; DL 8.40 and Iamblichus ch. XXXV report the Metapontum death too, though alongside rival versions.
+    sources:
+      - key: sep-pythagoras
+        locator: §3
+        stance: asserts
+        excerpt: led him to flee to another Greek city in southern Italy, Metapontum, where he died around 490 BCE
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.40
+        stance: reports
+        excerpt: Dicaearchus, however, says that Pythagoras died a fugitive in the temple of the Muses at Metapontum
+      - key: iamblichus-pythagoric-life-taylor
+        locator: ch. XXXV
+        stance: reports
+        excerpt: For some say that he went to Pherecydes the Syrian, but others to Metapontum.

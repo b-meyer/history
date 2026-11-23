@@ -1,0 +1,40 @@
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.7
+  excerpt: 'Having returned to Athens, he lived in the Academy, which is a gymnasium outside the walls, in a grove named after a certain hero, Hecademus'
+  passage: 853f570b2b7af69d
+- key: mactutor-academy
+  locator: preamble
+  excerpt: 'began to teach there in around 387 BC'
+  passage: 38424e06b83543b8
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.41
+  excerpt: 'He was buried in the Academy'
+  passage: 03ab94b71dd21d24
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.46
+  excerpt: 'His disciples were Speusippus of Athens, Xenocrates of Chalcedon, Aristotle of Stagira'
+  passage: d07519d13658e9e1
+- key: diogenes-laertius-lives-hicks
+  locator: DL 3.4
+  excerpt: 'a sister, Potone, who was the mother of Speusippus'
+  passage: 3c308d8d7f11f296
+- key: sep-pythagoreanism
+  locator: §4.1
+  excerpt: 'Speusippus, Plato’s successor as head of the Academy'
+  passage: 8f1334c36b2a6437
+- key: sep-pythagoreanism
+  locator: §4
+  excerpt: 'The origins of Neopythagoreanism are probably to be found already in Plato’s school, the Academy'
+  passage: e0aa034178b19f53
+- key: sep-proclus
+  locator: preamble
+  excerpt: 'head or ‘successor’ (diadochos, sc. of Plato) of the Platonic ‘Academy’ in Athens'
+  passage: 03c257d3888e84ba
+- key: sep-proclus
+  locator: §1.1
+  excerpt: 'After Syrianus’ death (437), Proclus succeeded as head of the Athenian school'
+  passage: 648a1723443d34af
+- key: sep-neoplatonism
+  locator: §7
+  excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
+  passage: b77f00a2646bd600

@@ -26,7 +26,7 @@ claims:
         }
     sources:
       - key: marinus-life-of-proclus-guthrie
-        locator: '§6'
+        locator: Marinus 6
         stance: asserts
         excerpt: 'At birth he was welcomed by the Constantinopolitan goddess Poliouchos'
       - key: sep-proclus
@@ -45,7 +45,7 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed, source: sep-proclus }
     sources:
       - key: marinus-life-of-proclus-guthrie
-        locator: '§10'
+        locator: Marinus 10
         stance: asserts
         excerpt: 'he embarked for Athens'
       - key: sep-proclus
@@ -78,10 +78,110 @@ claims:
       - { on: 2026-11-19, by: claude-sonnet-5-5, verdict: confirmed }
     sources:
       - key: marinus-life-of-proclus-guthrie
-        locator: '§36'
+        locator: Marinus 36
         stance: asserts
         excerpt: "Proclus left this world in the 124th year from Julian's accession to the empire"
       - key: marinus-life-of-proclus-guthrie
-        locator: '§36'
+        locator: Marinus 36
         stance: asserts
         excerpt: 'under the archonship of the younger Nicagoras in Athens'
+  - id: proclus.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: 0412/0430
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-proclus
+        note: "Graded B scholarly: SEP §1.1 says Proclus moved from Xanthos to Alexandria to study rhetoric and later returned there to study Aristotle and mathematics, relying on Marinus' eulogy."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B tradition: Marinus 9 says Proclus returned to Alexandria and attended the philosophy courses given there, under Olympiodorus and Heron; no dates are given.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Marinus 8-9 has Proclus study rhetoric in Alexandria and, after the Constantinople journey, return there for philosophy (Olympiodorus, Heron) before Athens, and SEP Proclus 1.1 states as fact that he moved from Xanthos to Alexandria and later studied Aristotle and mathematics there before going to Athens in 430-431.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Marinus 8-10 has Proclus study rhetoric in Alexandria and then return there for Aristotle with Olympiodorus and mathematics with Heron before moving to Athens, and SEP Proclus 1.1 states the same as fact, with Athens in 430-431.'
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 9
+        stance: asserts
+        excerpt: first returning to Alexandria, he attended only what philosophical courses were there given
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: moved from there to Alexandria (Egypt) to pursue the study of rhetoric
+  - id: proclus.active-at.xanthus
+    predicate: active-at
+    object: xanthus
+    when: 0412/
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP §1.1 says his parents returned to Xanthos in Lycia soon after his birth and he began his education there, relying on Marinus' eulogy.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP Proclus 1.1 states that, soon after his birth in Constantinople in 412, his parents returned to their hometown Xanthos in Lycia, where he began his education before moving to Alexandria.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: SEP Proclus 1.1 states as fact that, soon after his birth in 412, Proclus's parents returned to their hometown Xanthos in Lycia and that he began his education there before moving to Alexandria, so his time there was his childhood and schooling."
+      - {
+          on: 2026-11-23,
+          by: claude-sonnet-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. SEP says Proclus was born in 412 and his parents soon returned to Xanthos, where he began his education, so the place is stated and the 0412 start is a fair inference (it is the birth year, not the arrival).',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: changed,
+          note: 'Graded B scholarly. SEP says his parents returned to Xanthos not long after his birth in 412 and he began his education there before moving to Alexandria, so the place is stated and the open-ended start of 412 is a fair inference, though a childhood education is thin evidence of activity.',
+        }
+    sources:
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: Not long after his birth his parents returned to their hometown Xanthos in Lycia
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: He began his education in Xanthos
+  - id: proclus.member-of.neoplatonists
+    predicate: member-of
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: SEP lists Proclus among the important figures of late antique Neoplatonism.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP's opening describes Proclus as the head of the Athenian Platonic Academy and a major influence on the late Neoplatonic schools, whose philosophers defended Hellenic wisdom against Christianity.
+    sources:
+      - key: sep-proclus
+        locator: preamble
+        stance: asserts
+        excerpt: the Neoplatonic philosophers had to defend the superiority of the Hellenic traditions of wisdom
+      - key: sep-neoplatonism
+        locator: §1
+        stance: asserts
+        excerpt: Plutarch of Athens, Syrianus, Proclus

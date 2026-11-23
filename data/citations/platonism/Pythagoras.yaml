@@ -1,0 +1,68 @@
+- key: sep-pythagoras
+  locator: 'preamble'
+  excerpt: 'lived from ca. 570 to ca. 490 BCE. He spent his early years on the island of Samos, off the coast of modern Turkey. At the age of forty, however, he emigrated to the city of Croton in southern Italy and most of his philosophical activity occurred there. Pythagoras wrote nothing, nor were there any detailed accounts of his thought written by contemporaries.'
+  passage: 89fe82bc6a243277
+- key: sep-pythagoras
+  locator: '§1'
+  excerpt: 'By the third century CE, when the first detailed accounts of Pythagoras that survive intact were written, Pythagoras had come to be regarded, in some circles, as the master philosopher, from whom all that was true in the Greek philosophical tradition derived. By the end of the first century BCE, a large collection of books had been forged in the name of Pythagoras and other early Pythagoreans'
+  passage: 66a756fe90a4f496
+- key: sep-pythagoras
+  locator: '§2.2'
+  excerpt: 'The most detailed, extended and hence most influential accounts of Pythagoras’ life and thought date to the third century CE, some 800 years after he died. Diogenes Laertius (ca. 200–250 CE) and Porphyry (ca. 234–305 CE) each wrote a Life of Pythagoras, while Iamblichus (ca. 245–325 CE) wrote On the Pythagorean Life, which includes some biography but focuses more on the way of life established by Pythagoras for his followers.'
+  passage: c3ee83a18de92d49
+- key: diogenes-laertius-lives-hicks
+  locator: 'DL 8.1'
+  excerpt: 'according to Hermippus, a Samian, or, according to Aristoxenus, a Tyrrhenian'
+  passage: 22f7e98d7189951e
+- key: sep-pythagoras
+  locator: '§3'
+  excerpt: 'Aristoxenus says that he left Samos at the age of forty, when the tyranny of Polycrates, who came to power ca. 535 BCE, became unbearable (Porphyry, VP 9). This chronology would suggest that he was born ca. 570 BCE. He then emigrated to the Greek city of Croton in southern Italy ca. 530 BCE; it is in Croton that he first seems to have attracted a large number of followers to his way of life. There are a variety of stories about his death, but the most reliable evidence (Aristoxenus and Dicaearchus) suggests that violence directed against Pythagoras and his followers in Croton ca. 510 BCE, perhaps because of the exclusive nature of the Pythagorean way of life, led him to flee to another Greek city in southern Italy, Metapontum, where he died around 490 BCE'
+  passage: fa694313564aa52d
+- key: diogenes-laertius-lives-hicks
+  locator: 'DL 8.3'
+  excerpt: 'After that he returned to Samos to find his country under the tyranny of Polycrates; so he sailed away to Croton in Italy, and there he laid down a constitution for the Italian Greeks'
+  passage: fa78443b9e5d59a4
+- key: iamblichus-pythagoric-life-taylor
+  locator: 'ch. V'
+  excerpt: 'on his arrival at Crotona, which was the noblest city in Italy, he had many followers, amounting, as it is said, to the number of six hundred'
+  passage: cad6539136e54f4c
+- key: diogenes-laertius-lives-hicks
+  locator: 'DL 8.39'
+  excerpt: 'As he sat one day among his acquaintances at the house of Milo, it chanced that the house was set ablaze'
+  passage: 45cac5830bc0f7d6
+- key: diogenes-laertius-lives-hicks
+  locator: 'DL 8.40'
+  excerpt: "Dicaearchus, however, says that Pythagoras died a fugitive in the temple of the Muses at Metapontum after forty days' starvation."
+  passage: 23aa623ed98c3058
+- key: iamblichus-pythagoric-life-taylor
+  locator: 'ch. XXXV'
+  excerpt: 'For some say that he went to Pherecydes the Syrian, but others to Metapontum.'
+  passage: b7b7a23d7ffcef1f
+- key: diogenes-laertius-lives-hicks
+  locator: 'DL 8.6'
+  excerpt: 'Pythagoras in fact wrote three books. On Education, On Statesmanship, and On Nature.'
+  passage: 7362d667d553491d
+- key: sep-pythagoreanism
+  locator: '§4.5'
+  excerpt: 'a treatise consisting of 71 Greek hexameter verses, which was ascribed to Pythagoras or the Pythagoreans. The poem is a combination of materials from different dates, and it is uncertain when it took the form preserved in manuscripts and called the Golden Verses; dates ranging from 350 BCE to 400 CE have been suggested'
+  passage: 608afabf30f06083
+- key: sep-pythagoras
+  locator: '§4.1'
+  excerpt: 'The earliest evidence makes clear that above all Pythagoras was known as an expert on the fate of our soul after death.'
+  passage: 88c5d9bda8551617
+- key: sep-pythagoras
+  locator: '§4.2'
+  excerpt: 'there was a story that Pythagoras had a golden thigh (a sign of divinity); the Pythagoreans taught that “of rational beings, one sort is divine, one is human, and another such as Pythagoras” (Iamblichus, VP 31); Pythagoras was seen on the same day at the same time in both Metapontum and Croton'
+  passage: ffa48113d2701eba
+- key: sep-pythagoras
+  locator: '§4.3'
+  excerpt: 'The testimony of both Plato (R. 600a) and Isocrates (Busiris 28) shows that Pythagoras was above all famous for having left behind him a way of life, which still had adherents in the fourth century over 100 years after his death. It is plausible to assume that many features of this way of life were designed to insure the best possible future reincarnations, but it is important to remember that nothing in the early evidence connects the way of life to reincarnation in any specific fashion.'
+  passage: c03b1c34d5c2a0a4
+- key: sep-pythagoras
+  locator: '§5'
+  excerpt: 'It should be clear from the discussion above that, while the early evidence shows that Pythagoras was indeed one of the most famous early Greek thinkers, there is no indication in that evidence that his fame was primarily based on mathematics or cosmology.'
+  passage: 7fc88685eb56bcfa
+- key: sep-pythagoras
+  locator: '§4'
+  excerpt: 'One of the manifestations of the attempt to glorify Pythagoras in the later tradition is the report that he, in fact, invented the word ‘philosophy’. This story goes back to the early Academy, since it is first found in Heraclides of Pontus'
+  passage: 1f982e753093ea65

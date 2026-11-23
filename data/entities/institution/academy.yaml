@@ -38,7 +38,7 @@ claims:
         }
     sources:
       - key: mactutor-academy
-        locator: opening section
+        locator: preamble
         stance: asserts
         excerpt: 'began to teach there in around 387 BC'
   - id: academy.closed
@@ -67,7 +67,7 @@ claims:
         stance: asserts
         excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
       - key: mactutor-academy
-        locator: final paragraph
+        locator: preamble
         stance: disputes
         excerpt: "the Academy continued to exist after Justinian's edict to close the pagan schools"
   - id: academy.affected-by.justinian-edict

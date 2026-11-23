@@ -1,0 +1,92 @@
+- key: sep-iamblichus
+  locator: preamble
+  excerpt: 'Iamblichus (ca. 242–ca. 325) was a Syrian Neoplatonist and disciple of Porphyry of Tyre, the editor of Plotinus’ works. One of the three major representatives of early Neoplatonism (the third one being Plotinus himself)'
+  passage: b3d530a84b1bdaa9
+- key: sep-iamblichus
+  locator: '§1.1'
+  excerpt: 'His birthplace is traditionally taken to be Chalcis ad Belum (modern Qinnasrin)'
+  passage: 387324fbffbaa58f
+- key: eunapius-lives-wright
+  locator: p. 363
+  excerpt: 'Then leaving Anatolius he attached himself to Porphyry'
+  passage: 2e0c4dcf809f5b06
+- key: sep-porphyry
+  locator: '§1'
+  excerpt: 'It is clear, at any rate, that Iamblichus was strongly influenced by Porphyry'
+  passage: e25771daf510f0c9
+- key: eunapius-lives-wright
+  locator: p. 365
+  excerpt: 'Sopater the Syrian was of their number'
+  passage: 779d390619986740
+- key: sep-iamblichus
+  locator: '§2.4'
+  excerpt: 'Eunapius is a tendentious source, with his own hagiographical agenda'
+  passage: 0d47ee97245ea30c
+- key: eunapius-lives-wright
+  locator: p. 367
+  excerpt: 'He who thus deluded you was a witty fellow; but the facts are otherwise'
+  passage: 32a2784ad3f9efe9
+- key: eunapius-lives-wright
+  locator: p. 375
+  excerpt: 'when he died he wrote his biography'
+  passage: 659c1ea9212751ac
+- key: eunapius-lives-wright
+  locator: p. 377
+  excerpt: 'He died an old man, in Alexandria, and after him died Iamblichus'
+  passage: 350c29777511d9b8
+- key: eunapius-lives-wright
+  locator: p. 379
+  excerpt: 'When Iamblichus had departed from this world, his disciples were dispersed in different directions'
+  passage: 62e47fa0f8f55f43
+- key: sep-iamblichus
+  locator: '§1.2'
+  excerpt: 'Few of Iamblichus’ works are preserved in the direct manuscript tradition.'
+  passage: 674581982297ba16
+- key: sep-iamblichus
+  locator: '§2.1'
+  excerpt: 'Karl Praechter described him as the second founder of Neoplatonism after Plotinus'
+  passage: d36bea268f3e6e83
+- key: sep-iamblichus
+  locator: '§2.3'
+  excerpt: 'Iamblichus brought about a shift towards religion and theology in Neoplatonism'
+  passage: 276f9141c047d2c5
+- key: sep-proclus
+  locator: preamble
+  excerpt: 'Continuing a movement that was inaugurated by Iamblichus'
+  passage: 03c257d3888e84ba
+- key: sep-iamblichus
+  locator: '§3'
+  excerpt: 'Iamblichus’ system is best characterized as a refined version of Plotinus’'
+  passage: 8e9e828ee42b7136
+- key: sep-iamblichus
+  locator: '§3.1'
+  excerpt: 'Below the One is located the intelligible triad of Limit, the Unlimited, and the One-Being.'
+  passage: 7dc1a3031711f041
+- key: sep-iamblichus
+  locator: '§3.2'
+  excerpt: 'Iamblichus’ best-known philosophical doctrine might be the distinction he introduced between the “intelligible” (noēton) and the “intellective” (noeron).'
+  passage: 725e61aa96c0f2e6
+- key: sep-iamblichus
+  locator: '§4.1'
+  excerpt: 'Iamblichus posited at the top of his system, below the One but above the Intelligible'
+  passage: e68cddb566272600
+- key: sep-iamblichus
+  locator: '§4.2'
+  excerpt: 'arithmetic, which takes precedence over the others; geometry, music and astronomy'
+  passage: 38994b86e4da674a
+- key: sep-iamblichus
+  locator: '§4.3'
+  excerpt: 'the Pythagorean Life in particular is one of our major sources on this subject'
+  passage: e71f89d23b4422e8
+- key: sep-iamblichus
+  locator: '§6.3'
+  excerpt: 'Co-action with the gods, “godlike action” (theourgia, i.e., theurgy), is the purpose of the Iamblichean soul'
+  passage: 548548d0674e1690
+- key: iamblichus-pythagoric-life-taylor
+  locator: ch. V
+  excerpt: 'Pythagoras, therefore, endeavoured to instruct him in the disciplines of arithmetic and geometry'
+  passage: cad6539136e54f4c
+- key: iamblichus-pythagoric-life-taylor
+  locator: ch. XXXV
+  excerpt: 'was rejected by him on account of the above-mentioned causes'
+  passage: b7b7a23d7ffcef1f

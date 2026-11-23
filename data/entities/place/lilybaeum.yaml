@@ -1,0 +1,5 @@
+id: lilybaeum
+type: place
+names: { en: Lilybaeum }
+ids: { wikidata: 'Q2260811', pleiades: '462281' }
+coords: [12.43, 37.80]

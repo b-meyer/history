@@ -38,3 +38,112 @@ claims:
         locator: '§4.5'
         stance: asserts
         excerpt: 'The two most learned figures in Rome of the first century BCE, Nigidius Figulus and Varro, both have connections to Pythagorean ritual practices.'
+  - id: neopythagoreans.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: -0099/0000
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP 4.3 says the first Neopythagorean in this sense, Eudorus of Alexandria, was active in the middle and later first century BCE.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: rouse-ball-short-account-history-mathematics
+        note: The text says that as students flocked back to Alexandria under Rome, prevailing philosophy became mostly neo-platonic or neo-pythagorean, which implies but does not directly state neopythagoreans at Alexandria.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §4.3 names Eudorus of Alexandria, active in the middle and later first century BCE, as the first Neopythagorean in the metaphysical sense, with Philo, another Alexandrian, a generation later; it also says 'Neopythagorean' is a modern label overlapping 'Middle Platonist', and Rouse Ball p. 78 says philosophy at Alexandria became mostly neo-platonic or neo-pythagorean in the transition from republic to empire.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §4.3
+        stance: asserts
+        excerpt: The first Neopythagorean in this sense is Eudorus of Alexandria, who was active in the middle and later part of the first century BCE.
+      - key: rouse-ball-short-account-history-mathematics
+        locator: p. 78
+        stance: asserts
+        excerpt: students began once more to flock to Alexandria. This time of confusion was, however, contemporaneous with a change in the prevalent views of philosophy which thenceforward were mostly neo-platonic or neo-pythagorean
+  - id: neopythagoreans.active-at.apamea
+    predicate: active-at
+    object: apamea
+    when: 0150~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP 4.3 says Numenius flourished ca. 150 CE in Apamea in northern Syria, though he may have taught at Rome, and Neopythagorean labelling of him is contested.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-numenius
+        note: Section 1 says the evidence associates Numenius with Apamea in Syria and Rome, and suggests he was born in Apamea and taught there and later in Rome; no date is given.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §4.3
+        stance: asserts
+        excerpt: who flourished ca. 150 CE in Apamea in northern Syria (although he may have taught at Rome)
+      - key: sep-numenius
+        locator: §1
+        stance: asserts
+        excerpt: The existing evidence associates Numenius with two cities, Apamea in Syria and Rome.
+  - id: neopythagoreans.influenced-by.pythagoras
+    predicate: influenced-by
+    object: pythagoras
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP section 4 defines Neopythagoreanism by the tendency to see Pythagoras as the central and original figure of Greek philosophy.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §4 says Neopythagoreanism sees Pythagoras as the central and original figure of Greek philosophy, but stresses that this is a construct with only limited contact with early Pythagoreanism and that the principles they father on him in fact originate with Plato.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP Pythagoreanism 4 says Neopythagoreans made Pythagoras the central figure of Greek philosophy, but adds that theirs was a constructed Pythagoras with only limited contact with early Pythagoreanism, whose supposed principles in fact came from Plato, so the influence is of the figure more than the historical teaching.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §4
+        stance: asserts
+        excerpt: Neopythagoreanism is characterized by the tendency to see Pythagoras as the central and original figure in the development of Greek philosophy
+  - id: neopythagoreans.influenced-by.academy
+    predicate: influenced-by
+    object: academy
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP section 4 says the origins of Neopythagoreanism are probably in Plato's Academy (Speusippus, Xenocrates), a hedged judgment.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        source: sep-numenius
+        note: The cited sentence says early Academics like Xenocrates were interested in Pythagoras' doctrines, which runs the opposite way; the paragraph shows Numenius following Plato's Timaeus but does not state Neopythagorean influence by the Academy.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §4 says the origins of Neopythagoreanism are probably to be found in the Academy in the later fourth century BCE, with Speusippus and Xenocrates presenting Academic speculations as Pythagoras's work, and SEP Numenius §2 notes early Academics like Xenocrates showed strong interest in Pythagoras's doctrines.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §4
+        stance: asserts
+        excerpt: The origins of Neopythagoreanism are probably to be found already in Plato’s school, the Academy, in the second half of the fourth century BCE.
+      - key: sep-numenius
+        locator: §2
+        stance: asserts
+        excerpt: That early Academics like Xenocrates showed strong interest in Pythagoras’ doctrines

@@ -1,0 +1,5 @@
+id: syracuse
+type: place
+names: { en: Syracuse }
+ids: { wikidata: 'Q4420718', pleiades: '462503' }
+coords: [15.28, 37.07]

@@ -50,3 +50,58 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: 'It is likely that the Pythagorean communities that practiced a way of life that they traced back to Pythagoras died out in the middle of the fourth century BCE.'
+  - id: pythagoreans.opened
+    predicate: opened
+    when: -0529~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: diogenes-laertius-lives-hicks
+        note: 'Graded B tradition: DL 8.3 says that at Croton he and his followers (about three hundred) were held in great estimation and governed the state, implying a founded community but giving no date.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says he emigrated to Croton ca. 530 BCE and it is there he first seems to have attracted a large number of followers, so founding is inferred and hedged.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §3 says he emigrated to Croton ca. 530 BCE and that it is in Croton that he first seems to have attracted a large number of followers, and DL 8.3 says he and his followers were held in great estimation there; the date is approximate and SEP's wording is hedged.
+    sources:
+      - key: sep-pythagoras
+        locator: §3
+        stance: asserts
+        excerpt: He then emigrated to the Greek city of Croton in southern Italy ca. 530 BCE
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.3
+        stance: reports
+        excerpt: he and his followers were held in great estimation
+  - id: pythagoreans.active-at.tarentum
+    predicate: active-at
+    object: tarentum
+    when: -0399/-0350
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: rouse-ball-short-account-history-mathematics
+        note: 'Graded A scholarly: Rouse Ball says Eudoxus studied at Tarentum under Archytas, then head of the Pythagoreans, and elsewhere that the Pythagoreans had Tarentum as headquarters for over a hundred years.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The preamble calls Archytas the last prominent figure in the early Pythagorean tradition and the dominant political figure in Tarentum, active in the first half of the fourth century BC.'
+    sources:
+      - key: sep-archytas
+        locator: preamble
+        stance: asserts
+        excerpt: He was the last prominent figure in the early Pythagorean tradition and the dominant political figure in Tarentum
+      - key: rouse-ball-short-account-history-mathematics
+        locator: p. 36
+        stance: asserts
+        excerpt: he went to Tarentum and studied under Archytas the then head of the Pythagoreans

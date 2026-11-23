@@ -42,7 +42,7 @@ claims:
     predicate: active-at
     object: athens
     when: -0386~/-0347
-    confidence: A
+    confidence: B
     basis: primary
     origin: ai-extracted
     audits:
@@ -52,6 +52,18 @@ claims:
           by: claude-sonnet-5-5,
           verdict: changed,
           note: 'Graded B primary. DL 3.7 supports return to Athens and the Academy but gives no dates; range is inferred.',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-sonnet-5-5,
+          verdict: confirmed,
+          note: 'Graded B primary. Diogenes Laertius states that Plato returned to Athens and lived in the Academy, but this passage gives no dates, so the -0386~/-0347 interval is unsupported by the source though not contradicted.',
+        }
+      - {
+          on: 2026-11-23,
+          by: claude-opus-5-5,
+          verdict: confirmed,
+          note: 'Graded B primary. DL 3.7 states that Plato returned to Athens and lived in the Academy, but the passage gives no date, so the stored interval -0386~/-0347 is not supported by this source.',
         }
     sources:
       - key: diogenes-laertius-lives-hicks
@@ -96,3 +108,105 @@ claims:
         locator: DL 3.41
         stance: asserts
         excerpt: 'He was buried in the Academy'
+  - id: plato.active-at.syracuse
+    predicate: active-at
+    object: syracuse
+    when: -0387/-0360
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A primary: DL 3.18 states Plato made three voyages to Sicily and was at Dionysius' court on the first; no years are given."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-archytas
+        note: 'Graded A scholarly: Section 1.4 says Plato first visited southern Italy and Sicily in 388/7, and the preamble says Archytas sent a ship to rescue him from Dionysius II of Syracuse in 361.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: DL 3.18-21 says Plato made three voyages to Sicily, meeting the elder Dionysius and then the younger, and SEP Archytas places his first visit to southern Italy and Sicily in 388/7, the second in 367 and Archytas's rescue of him from Dionysius II of Syracuse in 361."
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.18
+        stance: asserts
+        excerpt: He made three voyages to Sicily
+      - key: sep-archytas
+        locator: §1.4
+        stance: asserts
+        excerpt: Plato visited southern Italy and Sicily for the first time in 388/7
+      - key: sep-archytas
+        locator: preamble
+        stance: asserts
+        excerpt: He sent a ship to rescue Plato from the clutches of the tyrant of Syracuse, Dionysius II, in 361
+  - id: plato.active-at.tarentum
+    predicate: active-at
+    object: tarentum
+    when: -0387/-0386
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Rouse Ball states in passing that Plato, like Eudoxus, went to Tarentum, giving no date.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-philolaus
+        note: 'Graded C scholarly: Section 7.2 says only that there is a possibility Plato met an aged Philolaus in Tarentum on his 388-7 visit to southern Italy and Sicily (D. L. III 36).'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Rouse Ball p. 36 says that Eudoxus, like Plato, went to Tarentum and studied under Archytas, but gives no date; SEP Philolaus §7.2 places Plato's first visit to southern Italy and Sicily in 388-7 but presents a meeting with Philolaus at Tarentum only as a possibility.
+    sources:
+      - key: rouse-ball-short-account-history-mathematics
+        locator: p. 36
+        stance: asserts
+        excerpt: Like Plato, he went to Tarentum
+      - key: sep-philolaus
+        locator: §7.2
+        stance: reports
+        excerpt: on his first visit to Southern Italy and Sicily in 388–7 Plato met an aged Philolaus in Tarentum
+  - id: plato.influenced-by.pythagoreans
+    predicate: influenced-by
+    object: pythagoreans
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: diogenes-laertius-lives-hicks
+        note: 'Graded A primary: DL 3.8 says Plato mixed doctrines of Heraclitus, the Pythagoreans and Socrates, agreeing with Pythagoras on the intelligible.'
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP 3.7 says Plato's evidence and Aristotle's cohere to suggest considerable Pythagorean influence on Plato's late theory of principles, while stressing that wider influence is limited and debated.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: rouse-ball-short-account-history-mathematics
+        note: Rouse Ball says that perhaps Plato's philosophy should be regarded as founded on Pythagorean rather than Socratic teaching, a hedged judgment.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: SEP §3.7 reports a very wide range of opinion, with many recent Plato scholars giving Pythagoreanism little weight, but concludes that Plato's and Aristotle's evidence show considerable Pythagorean influence on Plato's late theory of principles and the world soul; Rouse Ball p. 35 ('perhaps') and DL 3.8 also connect Plato with the Pythagoreans.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §3.7
+        stance: asserts
+        excerpt: Pythagoreanism exerted considerable influence on Plato’s late theory of principles
+      - key: rouse-ball-short-account-history-mathematics
+        locator: p. 35
+        stance: reports
+        excerpt: perhaps his philosophy should be regarded as founded on the Pythagorean rather than on the Socratic teaching
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.8
+        stance: reports
+        excerpt: He mixed together doctrines of Heraclitus, the Pythagoreans and Socrates.
