@@ -1,0 +1,139 @@
+id: khawarij
+type: school
+names:
+  en: Khawarij
+ids:
+  wikidata: Q189570
+claims:
+  - id: khawarij.branch-of.islam
+    predicate: branch-of
+    object: islam
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The kharijis article calls them the 'third party' in Islam, and the shariah article says the Shii and Khariji factions both broke away from the main body of Muslims (later Sunnis).
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islamic-law-shariah
+        note: EoR calls the Khārijīs the "third party" in Islam, alongside the Sunnis and the Shiʿah, and says they broke away from the main body of Muslims.
+    sources:
+      - key: eor-kharijis
+        locator: preamble
+        stance: asserts
+        excerpt: KHᾹRIJĪS are the "third party" in Islam
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: the Shīʿī and Khārijī factions both broke away from the main body of Muslims
+  - id: khawarij.splits-from.sunni
+    predicate: splits-from
+    object: sunni
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the Khārijī and Shiʿi factions broke away from the main body of Muslims, who came to be called Sunnis, repudiating the Umayyads. This is a loose fit because the Khārijīs seceded from ʿAlī's camp before the Sunnis took shape.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'The Sunnī-Shīʿī division' the text states that, repudiating the Umayyads, the Shīʿī and Khārijī factions 'both broke away from the main body of Muslims, who came to be called Sunnīs', so the Sunnī label is retrospective; eor-kharijis instead has them leaving ʿAlī's own camp after the arbitration at Ṣiffīn (657), before the Umayyads, and eor-islam-north-africa has the three factions emerging side by side, so the parent body is not undisputed.
+    sources:
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: the Shīʿī and Khārijī factions both broke away from the main body of Muslims, who came to be called Sunnīs
+  - id: khawarij.opened
+    predicate: opened
+    when: 0657
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Origins are placed in ʿAli's agreement to arbitrate with Muʿawiyah after the Battle of Siffin (AH 37/657 CE), when a group of his followers left his camp; the text gives no exact founding year beyond that event.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text states as fact that the Khārijīs' origins lie in the ʿAlī-Muʿāwiyah arbitration agreement following the Battle of Ṣiffīn, but the year (ah 37/657 ce) is attached to the battle, so 657 as the founding year is a close inference (eor-islam-north-africa loosely puts their appearance 'later' than a crisis of 660).
+    sources:
+      - key: eor-kharijis
+        locator: preamble
+        stance: asserts
+        excerpt: Their origins lie in the agreement between the fourth caliph, ʿAlī, and his challenger, Muʿāwiyah
+  - id: khawarij.active-at.kufa
+    predicate: active-at
+    object: kufa
+    when: 0657
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the seceders went out from ʿAli's camp and collected at Harura' near ʿAli's capital Kufa; this places them near Kufa, not in the city itself, in the 657 context.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says the seceders left ʿAlī's camp and collected at Ḥarūrāʾ 'near ʿAlī's capital of Kufa' after Ṣiffīn (657), so it places them near Kufa rather than in it, with the year inferred from the battle.
+    sources:
+      - key: eor-kharijis
+        locator: preamble
+        stance: asserts
+        excerpt: They made an exodus (khurūj ) from his camp and collected at Ḥarūrāʾ near ʿAlī's capital of Kufa in Iraq
+  - id: khawarij.active-at.basra
+    predicate: active-at
+    object: basra
+    when: 06XX/07XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says the intellectual center of Khariji doctrine for the next century was the Iraqi port of Basra, before it moved to North Africa.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text states that Basra was the intellectual center of Khārijī doctrine 'for the next century' after the events of 657-661, before it moved to North Africa, and it also describes the Khārijīs of Basra in 684 and the later Ibāḍī headquarters there."
+    sources:
+      - key: eor-kharijis
+        locator: preamble
+        stance: asserts
+        excerpt: The intellectual center of Khārijī doctrine for the next century was the great Iraqi port of Basra
+  - id: khawarij.active-at.kairouan
+    predicate: active-at
+    object: kairouan
+    when: 07XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the rebel chief Maysarah, in the 740 Berber revolt, had lived in Kairouan and come under the influence of the Ṣufrīyah, Khārijī extremists, so Khārijī influence at Kairouan is stated but the date is only implied by the 740 revolt.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Under Islamization the text states as fact that Maysarah, a main chief of the revolt of 740, had lived in Kairouan and there come under the influence of the Ṣufrīyah, Khārijī extremists, which puts Khārijīs in the city before 740.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under Islamization, the EoR says the 740 rebel chief Maysarah had lived in Kairouan and come under the influence of the Sufriyah, Khariji extremists there; this implies a Khariji presence in Kairouan before 740 but does not state it or give a date directly.
+    sources:
+      - key: eor-islam-north-africa
+        locator: preamble
+        stance: asserts
+        excerpt: had lived in Kairouan, where he had come under the influence of the Ṣufrīyah, who were Khārijī extremists

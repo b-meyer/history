@@ -1,0 +1,83 @@
+id: sunni
+type: school
+names:
+  en: Sunni Islam
+ids:
+  wikidata: Q483654
+claims:
+  - id: sunni.branch-of.islam
+    predicate: branch-of
+    object: islam
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-north-africa
+        note: All three passages say the Shīʿah and Khārijīs split from the main body of Muslims, who came to be called Sunnīs (the EoR text puts the split at about 660).
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-madhhab
+        note: All three texts describe the Sunnis as the main body of the Muslims, from which the Shiʿah (and Khārijīs) seceded; eor-islamic-law-shariah and eor-islam-north-africa state it without dispute.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: EoR says the Sunnis are the main body of Muslims from which the Shiʿi and Khariji factions seceded, and ahl al-jamaʿah later became the Sunnis.
+    sources:
+      - key: eor-islamic-law-shariah
+        locator: preamble
+        stance: asserts
+        excerpt: the Shīʿī and Khārijī factions both broke away from the main body of Muslims, who came to be called Sunnīs
+      - key: eor-madhhab
+        locator: preamble
+        stance: asserts
+        excerpt: The secession of the Shīʿah from the main body of the Muslims, the Sunnīs, took place on political grounds
+      - key: eor-islam-north-africa
+        locator: preamble
+        stance: asserts
+        excerpt: the first, ahl al-jamāʿah, that is to say, the supporters of the majority, who were later to become the Sunnīs (orthodox ones)
+  - id: sunni.active-at.cordoba
+    predicate: active-at
+    object: cordoba
+    when: 0929
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says the 929 Umayyad caliphate consolidated Malikism as the official school, thus 'also marking it within the Sunnī world', so al-Andalus/Córdoba is placed in Sunni Islam."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says the 929 caliphal proclamation made Malikism (one of the four schools recognized within the Sunnī world) official, separating al-Andalus from heterodox Fāṭimid North Africa and marking it within the Sunnī world; Cordova is not named in that clause but is the Umayyad capital and the caliphs' seat in the next sentence, so the city is a short, undisputed inference."
+    sources:
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: also marking it within the Sunnī world
+  - id: sunni.active-at.lahore
+    predicate: active-at
+    object: lahore
+    when: 10XX/11XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: EoR says there are several indications Sunni ulama were established in northern India in the 11th-12th centuries, including the scholar-Sufi al-Hujwiri in Lahore, where he died between 1072 and 1077 (a second passage gives 1071); this is framed as an indication, not as flat fact.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The 'Sunnī Islam' section gives al-Hujwīrī's presence in Lahore, where he died between 1072 and 1077 (1071 in the Ṣūfī orders section), as one of several 'indications' that Sunnī ʿulamāʾ were already established in northern India in the eleventh and twelfth centuries, so Sunnī activity at Lahore is inferred from one scholar-Ṣūfī, and the Lahore evidence itself dates only to the eleventh century.
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: reports
+        excerpt: 'There are several indications that Sunnī ʿulamāʾ were already established in northern India in the eleventh and twelfth centuries: the presence of the scholar-Ṣūfī Shaykh ʿAlī al-Hujwīrī in Lahore'

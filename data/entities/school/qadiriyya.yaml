@@ -1,0 +1,58 @@
+id: qadiriyya
+type: school
+names:
+  en: Qadiriyya
+ids:
+  wikidata: Q137108
+claims:
+  - id: qadiriyya.branch-of.sufism
+    predicate: branch-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: eor-tariqah calls the Qādirīyah a ṭarīqah, 'commonly viewed' as the first structured brotherhood, and eor-hanabilah calls al-Jīlānī head of the first Ṣūfī order still extant.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-hanabilah
+        note: The Qadiriyya tariqah is called 'commonly viewed as the first of the brotherhoods' to organize, and Abd al-Qadir al-Jilani is described as head of the first Sufi order in Islam that has survived to this day.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: The Qādirīyah ṭarīqah is commonly viewed as the first of the brotherhoods to emerge in the form of a structured organization
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: head of the first Ṣūfī order in Islam that has come down to this day
+  - id: qadiriyya.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 11XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: eor-tariqah says the order began in Baghdad, where al-Jīlānī's tomb remains a pilgrimage site, and eor-hanabilah says his madrasah (a madrasah and ribāṭ for jurisconsults and Ṣūfīs) has been maintained on Baghdad's east side to this day."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-hanabilah
+        note: "Graded A scholarly: The Qadiriyya 'began in Baghdad' (Abd al-Qadir, 1088-1166), and the madhhab article says his madrasah there has been maintained on Baghdad's east side to this day."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: It began in Baghdad but eventually established itself as far afield as Yemen
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: it has been maintained on Baghdad's east side down to this day

@@ -1,0 +1,53 @@
+id: shafii
+type: school
+names:
+  en: Shafii school
+ids:
+  wikidata: Q82245
+claims:
+  - id: shafii.branch-of.sunni
+    predicate: branch-of
+    object: sunni
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: Andalusia article lists Shafi'ism among the four legal schools recognized within the Muslim Sunni world from the tenth century, and South Asia article says the Shafi'i school prevails among Sunni communities in southern India and Sri Lanka.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Andalusia lists Shafiʿism among the four schools of the Sunnī world, and South Asia says the Shāfiʿī school prevails among Sunnī communities in southern India and Sri Lanka.
+    sources:
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: the four legal schools (Malikism, Ḥanafism, Shafiʿism, and Hanbalism) recognized within the Muslim Sunnī world from the tenth century onwards
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: the Shāfiʿī school of jurisprudence prevails among Sunnī communities in southern and southwestern India and Sri Lanka
+  - id: shafii.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 11XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says al-Suhrawardī (d. 1168) was a professor of Shāfiʿi law at the Niẓāmīyah college in Baghdad, a pupil of Aḥmad al-Ghazālī (d. 1126).'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Under Suhrawardīyah, the text states as fact that Abū al-Najīb al-Suhrawardī (d. 1168) was a professor of Shāfiʿi law at the Niẓāmīyah college in Baghdad; the professorship itself is undated, so 11XX is inferred from his death in 1168 and his study under Aḥmad al-Ghazālī (d. 1126), and century precision covers it.'
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: a professor of Shāfiʿi law at the Niẓāmīyah college in Baghdad

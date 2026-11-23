@@ -1,0 +1,104 @@
+id: ibn-arabi
+type: person
+names:
+  en: Ibn al-Arabi
+ids:
+  wikidata: Q46420
+claims:
+  - id: ibn-arabi.born
+    predicate: born
+    when: 1165-07-28
+    where: murcia
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: EoR states he was 'Born on July 28, 1165, in Murcia', and the Sufism article independently says 'born at Murcia in Muslim Spain in 1165'.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: eor-ibn-al-arabi says he was born on July 28, 1165, in Murcia, and eor-sufism says he was born at Murcia in 1165.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: Born on July 28, 1165, in Murcia
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: was born at Murcia in Muslim Spain in 1165
+  - id: ibn-arabi.died
+    predicate: died
+    when: 1240
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-andalusia
+        note: Both the Ibn al-ʿArabī article (1165–1240 ce) and the Andalusia article (d. 1240) give his death as 1240.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The EoR entry heads the article 'IBN AL-ʿARABĪ (1165–1240 ce)', and the Islam in Andalusia article gives 'Muhyi al-din Ibn al-ʿArabi (d. 1240)'.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: IBN AL-ʿARABĪ (1165–1240 ce)
+      - key: eor-islam-andalusia
+        locator: preamble
+        stance: asserts
+        excerpt: Muhyi al-din Ibn al-ʿArabi (d. 1240)
+  - id: ibn-arabi.active-at.mecca
+    predicate: active-at
+    object: mecca
+    when: 1202
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says that after visiting Hebron, Jerusalem and Medina he reached 'Mecca, where he arrived in mid-1202'."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Under the Life heading the article states as plain fact that he ended his pilgrimage tour at Mecca, "where he arrived in mid-1202", and then describes "momentous years in Mecca" in which he completed several works and began the Futuhat, so 1202 is sound as the start of a stay that ran beyond that year.'
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: Mecca, where he arrived in mid-1202
+  - id: ibn-arabi.active-at.damascus
+    predicate: active-at
+    object: damascus
+    when: 1223~/1240
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he lived in Damascus for 'the final seventeen years of his life', which with a 1240 death gives about 1223 (the arrival year is inferred, not stated), and it dates the Futūhāt drafts at Damascus to 1231 and 1238.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The article states as fact that he lived in Damascus for the final seventeen years of his life under Ibn al-Zaki's patronage, writing and holding readings of the Futuhat there; with its 1165-1240 dates that gives c. 1223 to 1240, and eor-sufism (Gnosis and Ibn Arabi) says outright that he settled in Damascus in 1223 and remained until his death in 1240."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Ibn al-ʿArabī's Life' the article states that for the final seventeen years of his life (he died 1240, so from c. 1223) he lived in Damascus under the patronage of the judge Ibn al-Zakī, completing the Futūhāt drafts there in 1231 and 1238."
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: For the final seventeen years of his life Ibn al-ʿArabī lived in Damascus
