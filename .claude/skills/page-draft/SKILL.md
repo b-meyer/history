@@ -32,6 +32,7 @@ entity: iamblichus
 - **Your own words.** Paraphrase. A run of 12 or more words from a source outside quote marks is flagged by the overlap check. A phrase worth keeping is put in double quotation marks and cited.
 - **Links.** `[[id]]` for an entity, which resolves to its home article or record page. A link to another page is `[Display](collection/Page.md)`, root-relative from `wiki/`, and the file must exist. One entity has one home article, so link to it rather than rewriting it.
 - **Content rules.** Follow `AGENTS.md` "Content writing" §1-§40: plain verbs, no significance claims, no participial padding, no triads, title-case headings.
+- **Word the claim at its grade.** A claim with basis `tradition` (a life or the tradition's own account) is attributed in the sentence ("Iamblichus says…", "the Pythagorean lives tell…"), never stated as fact. A grade C or a disputed claim says it is uncertain or contested and names who holds which view. Only an A claim is stated plainly.
 - **No map facts.** Create no claim, entity or place. If the sources support a link the graph lacks (a teacher, a place, a date), leave it out of the page's statements of fact or state it only as the source states it, and list it in the hand-back as a proposed claim.
 - **Dropped sentences.** If no passage supports a sentence, delete the sentence. If the page's core cannot be supported (its entity has no usable passage, or too little survives to be an article), stop, write nothing, and report why.
 
