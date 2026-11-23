@@ -9,3 +9,5 @@ export { mdShiki } from './shiki';
 export { mdCodeGroup } from './codeGroup';
 export { mdContainers } from './containers';
 export { mdAlerts } from './alerts';
+export { mdCitations } from './citations';
+export type { CitationData, CiteSource } from './citations';

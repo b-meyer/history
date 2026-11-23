@@ -13,6 +13,7 @@
     "./ssg": "./src/ssg.ts",
     "./sitemap": "./src/sitemap.ts",
     "./markdown": "./src/markdown/renderer.ts",
+    "./citations": "./src/markdown/citations.ts",
     "./App.vue": "./src/App.vue",
     "./components": "./src/components/index.ts",
     "./styles/entry.css": "./src/styles/entry.css",

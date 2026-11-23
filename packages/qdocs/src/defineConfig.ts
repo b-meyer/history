@@ -6,6 +6,7 @@ import {
   type UserConfig,
 } from 'vite';
 import type { QDocsConfig, NavItem, SidebarEntry, SidebarItem, SocialLink } from './config.ts';
+import type { CitationData } from './markdown/citations.ts';
 import { setQDocsConfig, qdocsPlugin } from './plugin.ts';
 
 // The consumer's merged config type: all QDocsConfig fields (except `base`,
@@ -32,6 +33,8 @@ export type QDocsConsumerConfig = {
    * detection covers only the app, so a workspace package with its own components is listed here.
    */
   tailwindSources?: string[];
+  /** Wiki data for `[@key]` notes and `[[id]]` links; see QDocsPluginOptions.citations. */
+  citations?: () => CitationData;
 } & UserConfig;
 
 /**
@@ -78,6 +81,7 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     plugins: userPlugins,
     resolve: userResolve,
     tailwindSources,
+    citations,
     ...viteRest
   } = opts;
   const qdocsConfig = buildQDocsConfig(opts);
@@ -98,6 +102,7 @@ function buildViteUserConfig(opts: QDocsConsumerConfig): UserConfig {
     plugins: [
       qdocsPlugin({
         markdown: qdocsConfig.markdown,
+        citations,
         tailwindSources: (tailwindSources ?? []).map((source) => pathResolve(projectRoot, source)),
       }),
       ...(userPlugins ?? []),

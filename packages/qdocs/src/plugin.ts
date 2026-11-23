@@ -18,6 +18,7 @@ import { clientConfig, isSidebarGroup } from './config.ts';
 // extensionless specifiers. This file is never in the browser/app import graph,
 // so the unusual extensions stay isolated to the config-load path.
 import { mdAlerts } from './markdown/alerts.ts';
+import { mdCitations, type CitationData } from './markdown/citations.ts';
 import { mdCodeGroup } from './markdown/codeGroup.ts';
 import { mdContainers } from './markdown/containers.ts';
 import { mdLinkRewriter } from './markdown/linkRewriter.ts';
@@ -39,6 +40,11 @@ export type QDocsPluginOptions = Pick<QDocsConfig, 'markdown'> & {
   pagesDir?: string;
   /** Absolute folders for Tailwind to scan beyond the app root. */
   tailwindSources?: string[];
+  /**
+   * Wiki data for `[@key, locator]` notes and `[[id]]` links, read on the first page that uses
+   * either. Without it the syntax is not registered.
+   */
+  citations?: () => CitationData;
 };
 
 // Module-level state set by defineConfig before Vite processes plugins.
@@ -290,7 +296,9 @@ function devHtmlPlugin(): Plugin {
 /**
  * The qdocs single Vite-plugin entry. Consumers do: `plugins: [qdocsPlugin({ markdown: { mermaid:
  * true } })]` Markdown-it plugin order is load-bearing: anchor → linkRewriter → tableWrapper →
- * mermaid → containers → alerts.
+ * mermaid → containers → alerts. The citations plugin adds an inline rule ahead of markdown-it's
+ * `link` rule and emits plain `<a href>` tokens that linkRewriter leaves alone (no `.md` target), so
+ * its position among the renderer plugins does not matter.
  */
 export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
   const mermaidEnabled = Boolean(options.markdown?.mermaid);
@@ -334,6 +342,7 @@ export function qdocsPlugin(options: QDocsPluginOptions = {}): PluginOption[] {
       },
       async markdownItSetup(md) {
         md.use(anchor, { permalink: false, slugify });
+        if (options.citations) md.use(mdCitations, options.citations);
         md.use(mdLinkRewriter, () => resolvedBase);
         md.use(mdLinkTitles, () => {
           if (!qdocsConfigStore) return new Map<string, string>();
