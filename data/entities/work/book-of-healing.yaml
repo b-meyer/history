@@ -1,0 +1,67 @@
+id: book-of-healing
+type: work
+names:
+  en: The Book of Healing
+notability: 7
+claims:
+  - id: book-of-healing.attributed-to.ibn-sina
+    predicate: attributed-to
+    object: ibn-sina
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says Avicenna completed his major work, The Cure (al-Shifāʾ), in Isfahan, and §1.2 repeatedly calls it his work.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says that in Isfahan Avicenna completed his major work, The Cure (al-Shifāʾ, GS 5), and §1.2 lists it among his summae.
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: He completed there his major work, The Cure (al-Shifāʾ, GS 5)
+  - id: book-of-healing.composed
+    predicate: composed
+    when: 1024?/1037
+    where: isfahan
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says he completed The Cure in Isfahan, where he lived 1024?–1037, but it gives no composition date. §1.2 calls it a work of his 'middle period' and says major portions were written earlier without books, so 1024?/1037 only bounds the completion.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says Avicenna completed The Cure in Isfahan, where he lived from 1024? to 1037; the text says only that he completed it there, not that he wrote all of it there, and §1.2 places it in his middle period.
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: He completed there his major work, The Cure (al-Shifāʾ, GS 5)
+  - id: book-of-healing.influenced-by.aristotle
+    predicate: influenced-by
+    object: aristotle
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.2 says The Cure's contents exhibit all parts of philosophy in the Aristotelian tradition, which it reproduces, revises, adjusts, expands and re-presents.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.2 says The Cure's contents exhibit all the parts of philosophy in the Aristotelian tradition, which they reproduce, revise, adjust, expand and re-present.
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.2
+        stance: asserts
+        excerpt: its contents exhibit all the parts of philosophy in the Aristotelian tradition which they reproduce, revise, adjust, expand, and re-present

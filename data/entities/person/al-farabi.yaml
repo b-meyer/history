@@ -1,0 +1,225 @@
+id: al-farabi
+type: person
+names:
+  en: al-Farabi
+notability: 8
+claims:
+  - id: al-farabi.born
+    predicate: born
+    when: 0870~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he "was probably born in 870 CE (AH 257)" in Farab or Farayb, after opening with "We know little that is really reliable about al-Fārābī's life", so the approximate date fits but is hedged.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The preamble opens by saying little about his life is really reliable, and states he was probably born in 870 CE (AH 257) in Farab or Farayb.
+    sources:
+      - key: sep-al-farabi
+        locator: preamble
+        stance: asserts
+        excerpt: Abū Naṣr al-Fārābī was probably born in 870 CE (AH 257) in a place called Farab or Farayb
+  - id: al-farabi.died
+    predicate: died
+    when: 0950-12/0951-01
+    where: damascus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he "died in Damascus in December 950 CE or January 951 CE (AH 339)", which matches the 0950-12/0951-01 range and the Damascus location.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: §2 says only 'al-Fārābī (d. 950)'; it gives no month (so no 950-12/951-01) and never mentions Damascus as his place of death.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The preamble states plainly that he died in Damascus in December 950 CE or January 951 CE (AH 339).
+    sources:
+      - key: sep-al-farabi
+        locator: preamble
+        stance: asserts
+        excerpt: died in Damascus in December 950 CE or January 951 CE (AH 339)
+      - key: sep-al-ghazali
+        locator: §2
+        stance: asserts
+        excerpt: al-Fārābī (d. 950)
+  - id: al-farabi.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: ../0943
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says only that "In his youth he moved to Iraq and Baghdad" and gives no dates, so the ../0943 end bound is inferred from the later move to Syria in 943 CE.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-arabic-islamic-greek
+        note: 'Graded B scholarly: The text says Abu Bishr Matta (d. 940) taught al-Farabi in Baghdad in the first decades of the 10th century, so it supports activity there at about that time but gives no 943 endpoint.'
+    sources:
+      - key: sep-al-farabi
+        locator: preamble
+        stance: asserts
+        excerpt: In his youth he moved to Iraq and Baghdad.
+      - key: sep-arabic-islamic-greek
+        locator: §5
+        stance: asserts
+        excerpt: came to Baghdad, where in the first decades of the 10th century he had al-Farabi, a Muslim, and Yahya ibn ʿAdi, a Jacobite Christian, among his pupils
+  - id: al-farabi.active-at.damascus
+    predicate: active-at
+    object: damascus
+    when: 0943/0951
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says "In 943 CE (AH 331) he went to Syria and Damascus" and that he died in Damascus in 950/951 CE, which matches the 0943/0951 span.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The preamble says he went to Syria and Damascus in 943 CE and died in Damascus in 950/951, but adds that he may have gone to Egypt in between, so his presence there for the whole span is inferred.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The opening life paragraph says that in 943 CE (AH 331) al-Farabi went to Syria and Damascus and died in Damascus in December 950 or January 951 CE, but it also warns that little about his life is really reliable.'
+    sources:
+      - key: sep-al-farabi
+        locator: preamble
+        stance: asserts
+        excerpt: In 943 CE (AH 331) he went to Syria and Damascus.
+  - id: al-farabi.influenced-by.aristotle
+    predicate: influenced-by
+    object: aristotle
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says "Al-Fārābī's knowledge of Aristotle's works is extensive, and even includes some of his zoological treatises", and it organises the article around the order of the Aristotelian sciences he himself uses.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-al-ghazali
+        note: §2 says 'Following Aristotle, al-Fārābī taught that the world has no beginning in the past'.
+    sources:
+      - key: sep-al-farabi
+        locator: §1
+        stance: asserts
+        excerpt: Al-Fārābī’s knowledge of Aristotle’s works is extensive, and even includes some of his zoological treatises.
+      - key: sep-al-ghazali
+        locator: §2
+        stance: asserts
+        excerpt: Following Aristotle, al-Fārābī taught that the world has no beginning in the past
+  - id: al-farabi.influenced-by.plato
+    predicate: influenced-by
+    object: plato
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says his political philosophy "takes some inspiration from Plato, it much transforms it", so the influence is stated but qualified as a transformation.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 7 states that al-Farabi's political philosophy takes some inspiration from Plato while much transforming it.
+    sources:
+      - key: sep-al-farabi
+        locator: §7
+        stance: asserts
+        excerpt: Though al-Fārābī’s political philosophy takes some inspiration from Plato, it much transforms it
+  - id: al-farabi.influenced-by.republic
+    predicate: influenced-by
+    object: republic
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he "takes some inspiration from Plato's Republic and Laws", but his access to them "may have been rather limited" and a full Arabic translation of either may never have existed.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 7 says he takes some inspiration from Plato's Republic and Laws, but that his access to these texts may have been rather limited, since a full Arabic translation may never have existed.
+    sources:
+      - key: sep-al-farabi
+        locator: §7
+        stance: asserts
+        excerpt: rather takes some inspiration from Plato’s Republic and Laws, even if his access to these two texts may have been rather limited
+  - id: al-farabi.influenced-by.neoplatonists
+    predicate: influenced-by
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-ghazali
+        note: "Graded B scholarly: The text calls the philosophy of al-Fārābi and Ibn Sīnā 'Arabic Neoplatonism' and calls the Tahāfut's targets 'the Neoplatonic philosophers'; it does not use the word 'influenced'."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §8 says Neoplatonic thought entered Islam especially through Al-Kindi, Al-Farabi and Avicenna.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §8 (Influence) says that Neoplatonic thought, through the pseudo-epigraphical Theology of Aristotle, helped bring ancient philosophy and science into Islam, especially through Al-Kindi, Al-Farabi and Avicenna. It states this as fact and nothing in the article disputes it.
+    sources:
+      - key: sep-neoplatonism
+        locator: §8
+        stance: asserts
+        excerpt: Neoplatonic thought facilitated the integration of ancient philosophy and science into both Islam (especially through Al-Kindi, Al-Farabi and Avicenna [Ibn Sina])
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā
+  - id: al-farabi.influenced-by.theology-of-aristotle
+    predicate: influenced-by
+    object: theology-of-aristotle
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §8 says the pseudo-epigraphical Theology of Aristotle was the route by which Neoplatonism reached Islam, especially through Al-Farabi, though it does not name the treatise as Al-Farabi's own source.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-theology-aristotle
+        note: The Harmony of the Two Sages, a work ascribed to al-Farabi, cites the Theology to show Platonic and Aristotelian metaphysics agree, though the title there covers a larger body of material that includes Arabic Proclus.
+    sources:
+      - key: sep-neoplatonism
+        locator: §8
+        stance: asserts
+        excerpt: by way of a pseudo-epigraphical treatise entitled Theology of Aristotle, Neoplatonic thought facilitated the integration of ancient philosophy and science into both Islam (especially through Al-Kindi, Al-Farabi and Avicenna [Ibn Sina])
+      - key: sep-theology-aristotle
+        locator: §5
+        stance: asserts
+        excerpt: When al-Farabi refers here to the Theology, he evidently has in mind a more capacious work than our Theology of Aristotle

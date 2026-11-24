@@ -118,6 +118,12 @@ translates:
   inverseLabel: translated by
   subject: work
   object: work
+critiques:
+  label: critiques
+  inverse: critiqued-by
+  inverseLabel: critiqued by
+  subject: [person, work]
+  object: [person, work, school]
 
 # Traditions and schools
 branch-of:

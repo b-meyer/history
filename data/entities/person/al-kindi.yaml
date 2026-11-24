@@ -1,0 +1,215 @@
+id: al-kindi
+type: person
+names:
+  en: al-Kindi
+notability: 7
+claims:
+  - id: al-kindi.born
+    predicate: born
+    when: 0800~
+    where: basra
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says he was born in Basra and, because he served under al-Ma'mun and was associated with al-Mu'tasim, is 'usually reckoned' to have been born around 800 CE; the birth date is called hard to pin down.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says flatly that he was born in Basra, but calls the birth date harder to pin down and gives around 800 CE as the usual estimate, worked back from his service under al-Ma'mun and al-Mu'tasim.
+    sources:
+      - key: sep-al-kindi
+        locator: §1.1
+        stance: asserts
+        excerpt: He was born in Basra and educated in Baghdad.
+      - key: sep-al-kindi
+        locator: §1.1
+        stance: reports
+        excerpt: He is thus usually reckoned to have been born around 800 CE.
+  - id: al-kindi.died
+    predicate: died
+    when: 0870~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says he died after 866 CE and that his death date is usually put in the early 870s; the preamble gives ca. 800–870.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says he died after 866 CE and that his death is usually put in the early 870s, so 870~ is a fair approximation of the conventional dating.
+    sources:
+      - key: sep-al-kindi
+        locator: §1.1
+        stance: asserts
+        excerpt: al-Kindi died after 866 CE, and his death date is usually put in the early 870s
+  - id: al-kindi.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 08XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says he was educated in Baghdad and that his career peaked under al-Mu'tasim (833–842), but it never states outright that he was active in Baghdad in the 800s.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says only that he was educated in Baghdad (and §1.1 dates his career to the ninth century); it never places his court service in Baghdad, so 'active at' rests on his education there.
+    sources:
+      - key: sep-al-kindi
+        locator: §1.1
+        stance: asserts
+        excerpt: He was born in Basra and educated in Baghdad.
+  - id: al-kindi.floruit
+    predicate: floruit
+    when: 0833/0842
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says he was certainly associated with the court of al-Mu'tasim (reigned 833–842) and that his career peaked under him.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-arabic-islamic-greek
+        note: "Graded B scholarly: Al-Kindi was appointed preceptor of the son of al-Mu'tasim (r. 833-842) and addressed On First Philosophy to al-Mu'tasim, which places him at court in the 830s-840s."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says he was certainly associated with the court of al-Mu'tasim (reigned 833-842), that his career peaked under him, and that he dedicated On First Philosophy to him.
+    sources:
+      - key: sep-al-kindi
+        locator: §1.1
+        stance: asserts
+        excerpt: he was certainly associated with the court of the next caliph, al-Mu‘tasim (reigned 833–842)
+      - key: sep-arabic-islamic-greek
+        locator: §3
+        stance: asserts
+        excerpt: was appointed as the preceptor of the son of the successor of al-Ma’mun, al-Muʿtasim (r. 833–842)
+  - id: al-kindi.influenced-by.aristotle
+    predicate: influenced-by
+    object: aristotle
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §2.1 says the most important influence on his philosophy was Aristotle, and the preamble calls Aristotle his main authority.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §2.1 says the most important influence on his philosophy was from Aristotle, whose corpus he surveyed in On the Quantity of Aristotle's Books.
+    sources:
+      - key: sep-al-kindi
+        locator: §2.1
+        stance: asserts
+        excerpt: the most important influence on his philosophy was from Aristotle
+  - id: al-kindi.influenced-by.proclus
+    predicate: influenced-by
+    object: proclus
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §2.1 says the proof for the 'true One' in On First Philosophy is based in part on Proclus, citing Jolivet 1979.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-arabic-islamic-greek
+        note: "Graded B scholarly: Al-Kindi's On the First Philosophy is described as dependent 'directly or indirectly' on Proclus' Platonic Theology, and the circle also used Proclus excerpts circulating under Aristotle's name."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §2.1 says the proof for a 'true One' in On First Philosophy is based in part on Proclus, as Jolivet 1979 showed.
+    sources:
+      - key: sep-al-kindi
+        locator: §2.1
+        stance: asserts
+        excerpt: The proof for the existence of a “true One” is based in part on Proclus
+      - key: sep-arabic-islamic-greek
+        locator: §3
+        stance: reports
+        excerpt: dependent directly or indirectly on the Platonic Theology of Proclus
+  - id: al-kindi.influenced-by.theology-of-aristotle
+    predicate: influenced-by
+    object: theology-of-aristotle
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §2.1 says one can detect influences from the Arabic Plotinus produced in his circle, the Theology of Aristotle; the hedged wording ('can detect') keeps this at B.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §2.1 says, in hedged wording, that 'one can detect influences' in On First Philosophy from the Theology of Aristotle, the Arabic Plotinus made in al-Kindi's circle.
+    sources:
+      - key: sep-al-kindi
+        locator: §2.1
+        stance: asserts
+        excerpt: one can detect influences from the Arabic version of Plotinus produced in al-Kindi’s circle, the so-called Theology of Aristotle
+  - id: al-kindi.influenced-by.neoplatonists
+    predicate: influenced-by
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble says his thought was suffused with Neoplatonism, and §2.1 and §3.1 repeat that Neoplatonic texts shaped On First Philosophy.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: §8 names Al-Kindi first among those through whom Neoplatonic thought entered Islam.
+    sources:
+      - key: sep-al-kindi
+        locator: preamble
+        stance: asserts
+        excerpt: Al-Kindi’s own thought was suffused with Neoplatonism
+      - key: sep-neoplatonism
+        locator: §8
+        stance: asserts
+        excerpt: Neoplatonic thought facilitated the integration of ancient philosophy and science into both Islam (especially through Al-Kindi
+  - id: al-kindi.influenced-by.porphyry
+    predicate: influenced-by
+    object: porphyry
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: §2.2 says his anti-Trinity treatise uses concepts from Porphyry's Isagoge, and §3.1 says he follows the Isagoge in classifying predicates."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: §2.2 says his treatise against the Trinity uses concepts drawn from Porphyry's Isagoge."
+    sources:
+      - key: sep-al-kindi
+        locator: §2.2
+        stance: asserts
+        excerpt: He wrote a short treatise attacking the Christian doctrine of the Trinity, using concepts drawn from the Isagoge of Porphyry

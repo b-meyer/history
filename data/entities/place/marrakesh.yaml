@@ -1,0 +1,5 @@
+id: marrakesh
+type: place
+names: { en: Marrakesh }
+ids: { wikidata: 'Q101625' }
+coords: [-7.98, 31.63]

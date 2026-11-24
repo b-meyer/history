@@ -1,0 +1,258 @@
+id: ibn-sina
+type: person
+names:
+  en: Ibn Sina
+notability: 9
+claims:
+  - id: ibn-sina.born
+    predicate: born
+    when: 097X
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says he was born in Afshana near Bukhara 'some time in the 70s of the tenth century, perhaps as early as 964', and the preamble gives 'ca. 970–1037'. The exact year is undetermined, so 097X is probable but not certain given the 964 possibility.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says that, according to the Autobiography, he was born in Afshana near Bukhara some time in the 970s, perhaps as early as 964, and that the year cannot be fixed more precisely; the preamble gives ca. 970.
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: Avicenna was born in Afshana, a village in the outskirts of metropolitan Bukhara, some time in the 70s of the tenth century, perhaps as early as 964
+      - key: sep-ibn-sina
+        locator: preamble
+        stance: asserts
+        excerpt: Ibn-Sīnā [Avicenna] (ca. 970–1037)
+  - id: ibn-sina.died
+    predicate: died
+    when: 1037
+    where: hamadan
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The preamble gives 'Avicenna (Ibn Sīnā, c. 980–1037)', which supports 1037, but the text never mentions Hamadan or any place of death.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 states 'He died in 1037 in Hamadhan and was buried there.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: "§1.1 says: 'He died in 1037 in Hamadhan and was buried there.'"
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: He died in 1037 in Hamadhan and was buried there.
+      - key: sep-al-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: Avicenna (Ibn Sīnā, c. 980–1037)
+  - id: ibn-sina.buried-at.hamadan
+    predicate: buried-at
+    object: hamadan
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 says he was buried in Hamadhan, and that a mausoleum there today only 'purports' to be his.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says he was buried in Hamadhan, where a mausoleum today purports to be his.
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: He died in 1037 in Hamadhan and was buried there.
+  - id: ibn-sina.active-at.bukhara
+    predicate: active-at
+    object: bukhara
+    when: 097X/0999
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: §1.1 says he grew up and began his career in Bukhara in Samanid circles, and fled it after the Qarakhanids took over in 999. The span 097X/0999 is inferred from the birth decade and the flight, not stated.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: §1.1 says his family moved to Bukhara when he was a boy, that he was educated there and began his career there, and that he fled after the Qarakhanids took the city in 999; the start year rests on his uncertain birth date.'
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: In 999 the Turkic Qarakhanids effectively put an end to the Samanids and took over Bukhara.
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: saw fit to flee Bukhara
+  - id: ibn-sina.active-at.hamadan
+    predicate: active-at
+    object: hamadan
+    when: 1015/1024?
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.1 gives 'in Hamadhan (1015–1024?)', with the end date marked uncertain.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: §1.1 places him in Hamadhan from 1015 to 1024?, serving the local rulers there.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 says that after Ray (1014?–1015) Avicenna was 'in Hamadhan (1015–1024?)', citing Gutas 2014b; the question mark on the end date marks it as approximate.
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: in Hamadhan (1015–1024?)
+  - id: ibn-sina.active-at.isfahan
+    predicate: active-at
+    object: isfahan
+    when: 1024?/1037
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: §1.1 gives 'finally in Isfahan (1024?–1037)' at the court of ʿAlāʾ-ad-Dawla, with the start date marked uncertain."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 places him in Isfahan from 1024? to 1037, at the court of ʿAlāʾ-ad-Dawla, where he spent his last thirteen years or so.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: §1.1 places him 'finally in Isfahan (1024?–1037), in the court of ʿAlāʾ-ad-Dawla', and the next paragraph says he spent 'his last thirteen years or so' there; it also says he died in Hamadhan in 1037, so the 1037 end date marks his death rather than a confirmed final date in Isfahan."
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.1
+        stance: asserts
+        excerpt: and finally in Isfahan (1024?–1037), in the court of ʿAlāʾ-ad-Dawla, the Kakuyid ruler of the area
+  - id: ibn-sina.influenced-by.aristotle
+    predicate: influenced-by
+    object: aristotle
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-arabic-islamic-greek
+        note: The translated Aristotelian corpus led to an understanding of Aristotle as a systematic whole based on demonstrative science, 'apparent both in al-Farabi and in Avicenna'.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1.2 says his first big work was a youthful commentary on Aristotle's works. The article elsewhere calls Aristotle 'the First Teacher' and says Avicenna saw the whole tradition as essentially Aristotelian.
+    sources:
+      - key: sep-ibn-sina
+        locator: §1.2
+        stance: asserts
+        excerpt: The first was his youthful commentary on the works of Aristotle
+      - key: sep-arabic-islamic-greek
+        locator: §4
+        stance: asserts
+        excerpt: This enterprise paved the way to the understanding of Aristotle’s thought as a systematic whole based on the theory of demonstrative science and crowned by the Metaphysics, an understanding which is apparent both in al-Farabi and in Avicenna.
+  - id: ibn-sina.influenced-by.al-farabi
+    predicate: influenced-by
+    object: al-farabi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: §2 says 'Avicenna continued al-Fārābī's approach and developed his metaphysics and his prophetology'."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-arabic-islamic-greek
+        note: "Graded A scholarly: The preamble says Farabi's educational syllabus of the philosopher-king and the rise of a complete system of rational sciences lie in the background of Avicenna's program."
+    sources:
+      - key: sep-al-ghazali
+        locator: §2
+        stance: asserts
+        excerpt: Avicenna continued al-Fārābī’s approach and developed his metaphysics and his prophetology
+      - key: sep-arabic-islamic-greek
+        locator: preamble
+        stance: asserts
+        excerpt: the rise of a complete system of rational sciences in the light of Farabi’s educational syllabus of the philosopher-king, lie in the background of Avicenna’s program
+  - id: ibn-sina.influenced-by.theology-of-aristotle
+    predicate: influenced-by
+    object: theology-of-aristotle
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-ibn-sina
+        note: §1.2 says his Fair Judgment commentary covered the Theology of Aristotle (actually Plotinus), and two incomplete recensions of that commentary survive. §2 says Plotinus was available to him as the Theology of Aristotle, so he engaged with it, though the text does not use the word 'influence'.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Avicenna doubted the text's authenticity but still wrote a set of commentary notes on it, which shows engagement; the source does not use the word influence.
+    sources:
+      - key: sep-theology-aristotle
+        locator: §5
+        stance: asserts
+        excerpt: Avicenna, for instance, expressed some doubt as to its authenticity, yet he also composed a set of notes commenting on the text.
+      - key: sep-ibn-sina
+        locator: §1.2
+        stance: asserts
+        excerpt: along with two incomplete recensions of his commentary on the Theology of Aristotle
+  - id: ibn-sina.influenced-by.neoplatonists
+    predicate: influenced-by
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: The text calls the philosophy of al-Fārābi and Ibn Sīnā 'Arabic Neoplatonism' and describes Ibn Sīnā's tradition as Neoplatonic; it does not use the word 'influenced'.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: §8 lists Avicenna (Ibn Sina) among those through whom Neoplatonic thought entered Islam.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: §8 (Influence) names Avicenna [Ibn Sina] among the figures through whom Neoplatonic thought, transmitted by the Theology of Aristotle, brought ancient philosophy and science into Islam. It states this as fact and nothing in the article disputes it.'
+    sources:
+      - key: sep-neoplatonism
+        locator: §8
+        stance: asserts
+        excerpt: Neoplatonic thought facilitated the integration of ancient philosophy and science into both Islam (especially through Al-Kindi, Al-Farabi and Avicenna [Ibn Sina])
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā

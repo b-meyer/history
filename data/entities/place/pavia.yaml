@@ -1,0 +1,5 @@
+id: pavia
+type: place
+names: { en: Pavia }
+ids: { wikidata: 'Q6259' }
+coords: [9.16, 45.19]

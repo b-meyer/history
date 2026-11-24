@@ -1,0 +1,93 @@
+id: incoherence-of-the-incoherence
+type: work
+names:
+  en: The Incoherence of the Incoherence
+notability: 6
+claims:
+  - id: incoherence-of-the-incoherence.attributed-to.ibn-rushd
+    predicate: attributed-to
+    object: ibn-rushd
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-ghazali
+        note: "Graded B scholarly: The text says Ibn Rushd wrote a refutation of al-Ghazālī's Tahāfut but does not name the work as The Incoherence of the Incoherence."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §4 says Averroes composed the Tahāfut al-tahāfut, and §2 calls it 'a work in reality written by Averroes' against Gavison's mistaken attribution to al-Ghazālī.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-ibn-rushd
+        note: Section 1.2 lists the Incoherence of the Incoherence (Tahafut al-Tahafut) among Ibn Rushd's works.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §4 says Averroes composed a refutation of al-Ghazālī's Incoherence that he called The Incoherence of the [Book of the] Incoherence (Tahāfut al-tahāfut).
+    sources:
+      - key: sep-al-ghazali
+        locator: §4
+        stance: asserts
+        excerpt: Averroes composed a refutation of al-Ghazālī’s Incoherence, which he called The Incoherence of the [Book of the] Incoherence (Tahāfut al-tahāfut)
+      - key: sep-ibn-rushd
+        locator: §1.2
+        stance: asserts
+        excerpt: The Incoherence of the Incoherence (Tahāfut al-Tahāfut), a direct response to al-Ghazālī
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: a refutation of al-Ghazālī's Tahāfut by Ibn Rushd (Averroës)
+  - id: incoherence-of-the-incoherence.critiques.incoherence-of-the-philosophers
+    predicate: critiques
+    object: incoherence-of-the-philosophers
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-ghazali
+        note: "Graded B scholarly: A refutation of al-Ghazālī's Tahāfut by Ibn Rushd is stated, though the title of the refutation is not given."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §3 calls it Averroes's counter-refutation of al-Ghazālī's Tahāfut, and §4 calls it a refutation of al-Ghazālī's Incoherence.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §3 calls Tahāfut al-tahāfut Averroes's counter-refutation of al-Ghazālī's Tahāfut, and §4 calls it his refutation of al-Ghazālī's Incoherence.
+    sources:
+      - key: sep-al-ghazali
+        locator: §3
+        stance: asserts
+        excerpt: Averroes’s (d. 1198) counter-refutation The Incoherence of the [Book of the] Incoherence (Tahāfut al-tahāfut)
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: a refutation of al-Ghazālī's Tahāfut by Ibn Rushd (Averroës)
+  - id: incoherence-of-the-incoherence.critiques.al-ghazali
+    predicate: critiques
+    object: al-ghazali
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 1.2 calls it a direct response to al-Ghazali, whose work was highly influential in Andalusia at the time.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.2 describes the Tahāfut al-Tahāfut as 'a direct response to al-Ghazālī', whose work was influential in Andalusia at the time.
+    sources:
+      - key: sep-ibn-rushd
+        locator: §1.2
+        stance: asserts
+        excerpt: a direct response to al-Ghazālī, whose work had achieved considerable influence at the time in Andalusia

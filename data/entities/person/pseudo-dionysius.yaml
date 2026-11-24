@@ -1,0 +1,129 @@
+id: pseudo-dionysius
+type: person
+names:
+  en: Pseudo-Dionysius the Areopagite
+notability: 7
+claims:
+  - id: pseudo-dionysius.floruit
+    predicate: floruit
+    when: 0485/0528
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-neoplatonism
+        note: 'Graded B scholarly: §8 dates the writings of Dionysius the Areopagite to the early 6th century, which is consistent with activity in 485/528.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-proclus
+        note: 'Graded B scholarly: §4 says Dionysius was a Christian author writing around 500, which falls inside the 485/528 range but gives no finer dates.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: §1 says that since Proclus died in 485 and Severus of Antioch first clearly cites Dionysius between 518 and 528, his authorship falls between 485 and 518-28 CE.'
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: §1
+        stance: asserts
+        excerpt: we can place Dionysius’ authorship between 485 and 518–28 CE
+      - key: sep-proclus
+        locator: §4
+        stance: asserts
+        excerpt: Dionysius was a Christian author writing around 500
+      - key: sep-neoplatonism
+        locator: §8
+        stance: asserts
+        excerpt: the pseudo-epigraphic writings of Dionysius the Areopagite (early 6th century)
+  - id: pseudo-dionysius.member-of.neoplatonists
+    predicate: member-of
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble calls Dionysius a Christian Neoplatonist writing in the late fifth or early sixth century who transposed pagan Neoplatonism into a Christian context.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article's opening paragraph, which has no heading, calls Pseudo-Dionysius a Christian Neoplatonist who wrote in the late fifth or early sixth century CE.
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: preamble
+        stance: asserts
+        excerpt: was a Christian Neoplatonist who wrote in the late fifth or early sixth century CE
+  - id: pseudo-dionysius.influenced-by.proclus
+    predicate: influenced-by
+    object: proclus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-proclus
+        note: §4 says Dionysius fully exploited Proclus' works to develop his Christian Platonic theology, and the article also says he adopted Proclus' views on evil in On the Divine Names.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble says he transposed Neoplatonism, especially that of Proclus and the Athenian Platonic Academy, into a Christian context.
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: preamble
+        stance: asserts
+        excerpt: but especially that of Proclus and the Platonic Academy in Athens
+      - key: sep-proclus
+        locator: §4
+        stance: asserts
+        excerpt: He fully exploited Proclus’ works – which he must have read intensively — to develop his own original Christian Platonic theology.
+  - id: pseudo-dionysius.influenced-by.plotinus
+    predicate: influenced-by
+    object: plotinus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: §5 says his theory of evil as privation was adopted from Plotinus (with significant changes) and Proclus, and the preamble says he transposed Neoplatonism from Plotinus to Proclus.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: §5 says his theory of evil as privation was adopted from Plotinus (with significant changes) and Proclus, and the opening paragraph says he transposed Pagan Neoplatonism from Plotinus to Proclus.'
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: §5
+        stance: asserts
+        excerpt: a theory adopted from Plotinus (with significant changes) and Proclus
+      - key: sep-pseudo-dionysius-areopagite
+        locator: preamble
+        stance: asserts
+        excerpt: transposed in a thoroughly original way the whole of Pagan Neoplatonism from Plotinus to Proclus
+  - id: pseudo-dionysius.student-of.proclus
+    predicate: student-of
+    object: proclus
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: §1 says he must have lived in Proclus's time, 'most probably being a pupil of Proclus', so the source hedges it as probable, not certain."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: §1 says only that he 'most probably' was a pupil of Proclus, a modern inference from dating him between Proclus' death in 485 and Severus' first citation in 518–28."
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: §1
+        stance: asserts
+        excerpt: most probably being a pupil of Proclus
