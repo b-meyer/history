@@ -3,6 +3,7 @@ title: 'al-Ghazali'
 description: 'Theologian of Tus who taught at Baghdad, left his post for the Sufi path, and attacked Ibn Sina and al-Farabi in The Incoherence of the Philosophers.'
 group: 'Platonism in Arabic'
 order: 180
+audited: '2026-11-24'
 entity: al-ghazali
 ---
 
@@ -30,7 +31,7 @@ The Encyclopedia of Religion describes his position as that of the scholars who 
 
 ## The Philosophers
 
-The Arabic philosophers, the falasifa, inherited the late-antique habit of reading Aristotle in Neoplatonic terms. [@sep-al-ghazali, §2] Some plainly Neoplatonic texts reached Arabic, among them [[theology-of-aristotle]], compiled from the [[enneads]] of [[plotinus]], but most Neoplatonic ideas came through commentaries on Aristotle. [@sep-al-ghazali, §2] Following Aristotle, [[al-farabi]] taught that the world has no beginning in the past, and [[ibn-sina]] carried on his approach. [@sep-al-ghazali, §2] The Encyclopedia of Religion calls the philosophy al-Ghazali studied "the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā". [@eor-ghazali, preamble]
+The Arabic philosophers, the falasifa, inherited the late-antique habit of reading Aristotle in Neoplatonic terms. [@sep-al-ghazali, §2] Some plainly Neoplatonic texts reached Arabic, among them [[theology-of-aristotle]], compiled from the [[enneads]] of [[plotinus]], but the most significant Neoplatonic contributions came through commentaries on Aristotle. [@sep-al-ghazali, §2] Following Aristotle, [[al-farabi]] taught that the world has no beginning in the past, and [[ibn-sina]] carried on his approach. [@sep-al-ghazali, §2] The Encyclopedia of Religion calls the philosophy al-Ghazali studied "the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā". [@eor-ghazali, preamble]
 
 In his autobiography al-Ghazali says that at the Baghdad Nizamiyya he studied the philosophers' works for two years and wrote the Incoherence in a third. [@sep-al-ghazali, §2] The Stanford Encyclopedia treats this account as apologetic and thinks he probably first met falsafa as al-Juwayni's student, since al-Juwayni's works already show Ibn Sina's influence. [@sep-al-ghazali, §2] It dates his books answering falsafa to around 1095. [@sep-al-ghazali, §2]
 

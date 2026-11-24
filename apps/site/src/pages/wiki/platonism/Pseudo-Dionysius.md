@@ -3,6 +3,7 @@ title: 'Pseudo-Dionysius'
 description: 'Christian author of about 485 to 528 who wrote under the name of Dionysius the Areopagite and drew on Proclus.'
 group: 'Christian Platonists'
 order: 130
+audited: '2026-11-24'
 entity: pseudo-dionysius
 ---
 
@@ -12,7 +13,7 @@ Pseudo-Dionysius is the name now given to a Christian [[neoplatonists|Neoplatoni
 
 ## The Persona
 
-His works are written as if by Dionysius the Areopagite, a first-century member of the Athenian council of the Areopagus who was converted by [[paul]] [@sep-pseudo-dionysius-areopagite, §1]. The Stanford article calls them a successful "forgery" that gave their author Christian credentials older than Plotinus by close to two centuries [@sep-pseudo-dionysius-areopagite, §1]. The same article points out that forgery is a modern idea, and that taking on the persona of an ancient figure was an old rhetorical device, used by others in the author's circle with names from the New Testament [@sep-pseudo-dionysius-areopagite, §1].
+His works are written as if by Dionysius the Areopagite, a first-century member of the Athenian council of the Areopagus who was converted by [[paul]] [@sep-pseudo-dionysius-areopagite, §1]. The Stanford article says they might be regarded as a successful "forgery" that gave their author Christian credentials older than Plotinus by close to two centuries [@sep-pseudo-dionysius-areopagite, §1]. The same article points out that forgery is a modern idea, and that taking on the persona of an ancient figure was an old rhetorical device, used by others in the author's circle with names from the New Testament [@sep-pseudo-dionysius-areopagite, §1].
 
 The author presents his teaching as received from one Hierotheus and addressed to one Timothy [@sep-pseudo-dionysius-areopagite, §1]. In the persona's own voice, On the Divine Names opens with the salutation "To my Fellow Presbyter, Timothy, Dionysius the Presbyter" [@pseudo-dionysius-works-parker, Chapter_1]. Later in the treatise he calls Hierotheus both teacher and friend, and says he was taught by him after Paul [@pseudo-dionysius-works-parker, DN 3.2]. The Stanford article describes Hierotheus as a possibly fictional teacher [@sep-pseudo-dionysius-areopagite, §3.2].
 

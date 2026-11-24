@@ -3,6 +3,7 @@ title: 'Boethius'
 description: 'Roman aristocrat under Theoderic who translated Aristotle and Porphyry into Latin and wrote the Consolation of Philosophy while awaiting execution.'
 group: 'Christian Platonists'
 order: 120
+audited: '2026-11-24'
 entity: boethius
 ---
 
@@ -16,7 +17,7 @@ He was born into the Roman aristocracy about 475 to 477, near the time when Romu
 
 He lived most of his life under Theoderic, an Ostrogoth who let the old families keep their traditions in Rome while he held power in Ravenna [@sep-boethius, §1]. He learned Greek thoroughly. The Stanford Encyclopedia thinks it unlikely that he went to Athens or Alexandria, where the last two Platonic schools were, but says he knew a good deal of the work done in them [@sep-boethius, §1]. Rouse Ball also calls the older belief that he was educated at Athens "somewhat doubtful" [@rouse-ball-short-account-history-mathematics, p. 110].
 
-James says he was sole consul in 510 and that in 522 his two young sons were made joint consuls [@boethius-consolation-james, preamble]. Rouse Ball reports that Boethius would have preferred a life of study but entered politics because he accepted "that the world would be happy only when kings became philosophers or philosophers kings" [@rouse-ball-short-account-history-mathematics, p. 110].
+James says he was sole consul in 510 and that in 522 his two young sons were made joint consuls [@boethius-consolation-james, preamble]. Rouse Ball reports that Boethius seems to have wished for a life of study but entered politics because he accepted "that the world would be happy only when kings became philosophers or philosophers kings" [@rouse-ball-short-account-history-mathematics, p. 110].
 
 He became Theoderic's Master of Offices, one of the most senior officials, and soon quarrelled with others at court, probably because he attacked their corruption [@sep-boethius, §1]. He was accused of treason and of magic and imprisoned, and he wrote the Consolation before he was executed, probably in 526 [@sep-boethius, §1]. James says that within a year of his sons' consulship he was a prisoner at [[pavia]] [@boethius-consolation-james, preamble], and a note to Book I names Pavia as the place of his imprisonment [@boethius-consolation-james, ch. IV]. Rouse Ball tells of his torture at Ticinum and his death by clubbing on 23 October 526, adding "Such at least is the account that has come down to us" [@rouse-ball-short-account-history-mathematics, p. 110].
 
@@ -26,11 +27,11 @@ Besides textbooks on arithmetic and geometry closely based on Greek models, Boet
 
 The Stanford Encyclopedia stresses his choice of Porphyry as his main authority in logic [@sep-boethius, §2]. On the Categories he kept close to Porphyry's surviving question-and-answer commentary, and his long second commentary on On Interpretation is read as the best guide to Porphyry's lost one [@sep-boethius, §2]. A monograph by Porphyry on categorical syllogisms was the basis of Boethius's own work on that topic [@sep-porphyry, §3.4.1]. Later Greek Neoplatonists looked for Neoplatonic doctrine in Aristotle's logic, and because Boethius followed Porphyry, his commentaries were closer to Aristotle than the Greek ones of his day [@sep-boethius, §2].
 
-His arithmetic carried a line from Iamblichus. Iamblichus's views on the quadrivium, which drew on Nicomachus, were taken up by Martianus Capella and Boethius and so entered medieval education [@sep-iamblichus, §4.2].
+Iamblichus's views on the quadrivium, which drew on Nicomachus, were taken up by Martianus Capella and Boethius and so entered medieval education [@sep-iamblichus, §4.2].
 
 ## Theological Treatises
 
-In Treatises I, II and V of the Theological Treatises Boethius applied logic to problems of Christian doctrine, while Treatise IV is a plain statement of faith and Treatise III is a brief philosophical work that is not specifically Christian [@sep-boethius, §1]. The Stanford Encyclopedia reads the brief Treatise II as a faithful statement of [[augustine]]'s view that what is said of God is said of his substance, and Treatise I as Boethius's development of it [@sep-boethius, §4].
+In Treatises I, II and V of the Theological Treatises Boethius applied logic to problems of Christian doctrine, while Treatise IV is a plain statement of faith and Treatise III is a brief philosophical work that is not specifically Christian [@sep-boethius, §1]. The Stanford Encyclopedia reads the brief Treatise II as a faithful statement of [[augustine]]'s view that what is said of God is either relative, as with "Father" and "Son", or substantial, and Treatise I as Boethius's development of it [@sep-boethius, §4].
 
 ## The Consolation of Philosophy
 

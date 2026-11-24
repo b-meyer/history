@@ -38,6 +38,10 @@
   locator: preamble
   excerpt: 'Proclus of Athens (*412–485 C.E.)'
   passage: 03c257d3888e84ba
+- key: sep-neoplatonism
+  locator: §7
+  excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
+  passage: b77f00a2646bd600
 - key: sep-theology-aristotle
   locator: §1
   excerpt: 'the longest, and most famous, text to preserve an Arabic version of the Enneads of Plotinus'
@@ -66,7 +70,3 @@
   locator: §4
   excerpt: 'Neopythagoreans typically emphasize the role of number in the cosmos and treat the One and Indefinite Dyad as ultimate principles'
   passage: e0aa034178b19f53
-- key: sep-neoplatonism
-  locator: §7
-  excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
-  passage: b77f00a2646bd600

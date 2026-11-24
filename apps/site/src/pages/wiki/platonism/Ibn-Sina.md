@@ -3,6 +3,7 @@ title: 'Ibn Sina'
 description: 'Philosopher born near Bukhara in the 970s who wrote the Book of Healing, worked at Hamadan and Isfahan, and died in 1037.'
 group: 'Platonism in Arabic'
 order: 170
+audited: '2026-11-24'
 entity: ibn-sina
 ---
 
@@ -14,7 +15,7 @@ Ibn Sina, known in Latin as Avicenna, lived from about 970 to 1037, and the Stan
 
 The main source for his life is his Autobiography, which his student al-Juzjani continued past the point where the two first met and finished after his death. [@sep-ibn-sina, §1.1] According to it, he was born at Afshana, a village outside [[bukhara]], at some point in the 970s and perhaps as early as 964. The year has not been fixed more closely. [@sep-ibn-sina, §1.1]
 
-His father was an official in the service of the Samanid dynasty, and the family moved to Bukhara, the Samanid capital, while Ibn Sina was a boy. He grew up and was educated there. [@sep-ibn-sina, §1.1] He says that he worked through the philosophical curriculum on his own and had mastered it by the age of eighteen. [@sep-ibn-sina, §1.1] After he treated the ailing Samanid ruler he was allowed into the palace library, which held Greek books in Arabic translation. [@sep-ibn-sina, §1.1] At twenty-one he wrote a work covering all of philosophy for a neighbour, ʿArudi, and for another neighbour, Baraqi, a twenty-volume commentary that was in effect a commentary on Aristotle. [@sep-ibn-sina, §1.1]
+His father was an official in the service of the Samanid dynasty, and the family moved to Bukhara, the Samanid capital, while Ibn Sina was a boy. He grew up and was educated there. [@sep-ibn-sina, §1.1] He says that he worked through the philosophical curriculum on his own and had mastered it by the age of eighteen. [@sep-ibn-sina, §1.1] After he treated the ailing Samanid ruler he was allowed into the palace library, which held Greek books in Arabic translation. [@sep-ibn-sina, §1.1] At twenty-one he wrote a "comprehensive work" on philosophy for a neighbour, ʿArudi, treating every subject except mathematics, and for another neighbour, Baraqi, a twenty-volume commentary that was in effect a commentary on Aristotle. [@sep-ibn-sina, §1.1]
 
 In 999 the Turkic Qarakhanids ended Samanid rule and took Bukhara, and Ibn Sina, who was closely tied to the old dynasty, fled the city. [@sep-ibn-sina, §1.1] He moved on through Gurganj, Jurjan and Ray, then lived at [[hamadan]] from 1015 and at [[isfahan]] from about 1024 at the court of the Kakuyid ruler ʿAla al-Dawla. The year of the move to Isfahan is uncertain. [@sep-ibn-sina, §1.1] In these cities he served the rulers as physician and political counsellor. [@sep-ibn-sina, §1.1]
 
@@ -22,7 +23,7 @@ He spent roughly his last thirteen years at Isfahan, where he completed the [[bo
 
 ## Works
 
-Medieval lists of his works give close to three hundred titles, many of them works falsely ascribed to him, and a recent count puts the authentic writings at fewer than one hundred. [@sep-ibn-sina, §1.2] His chief innovation was the summa, a single work taking in every part of philosophy as the late antique and early Islamic curriculum divided it. [@sep-ibn-sina, §1.2] The work for ʿArudi was the first, and he wrote seven more over his career. [@sep-ibn-sina, §1.2]
+Some medieval lists of his works give close to three hundred titles, since pseudepigraphy multiplied the works attributed to him, and a recent count puts the authentic writings at fewer than one hundred. [@sep-ibn-sina, §1.2] His chief innovation was the summa, a single work taking in every part of philosophy as the late antique and early Islamic curriculum divided it. [@sep-ibn-sina, §1.2] The work for ʿArudi was the first, and he wrote seven more over his career. [@sep-ibn-sina, §1.2]
 
 The largest is the Book of Healing (al-Shifaʾ, rendered in the Stanford article as The Cure), from his middle period, which fills twenty-two volumes in the Cairo edition. Its contents cover the parts of philosophy in the [[aristotle|Aristotelian]] tradition and rework and extend them. [@sep-ibn-sina, §1.2] There are reports that he wrote large parts of it with no books to consult. [@sep-ibn-sina, §1.2] His last summa, Pointers and Reminders, gives only hints of arguments for the student to complete, and it drew commentaries for centuries. [@sep-ibn-sina, §1.2]
 
@@ -42,7 +43,7 @@ Logic and the theory of the soul drive his philosophy, and he wrote on these two
 
 ## Al-Ghazali and Ibn Rushd
 
-[[al-ghazali|Al-Ghazali]] studied the philosophers on his own while teaching at Baghdad, and his Maqasid al-falasifah (The Views of the Philosophers) sets out Ibn Sina's teaching on logic, metaphysics and physics. [@eor-ghazali, preamble] He then attacked the philosophers' metaphysics in [[incoherence-of-the-philosophers|The Incoherence of the Philosophers]]. [@eor-ghazali, preamble] At the end of the book he picks out three of Ibn Sina's teachings as wrong and dangerous to religion. These are that the world has no beginning in time, that God knows universals but not particulars, and that human souls never return to bodies after death. [@sep-al-ghazali, §3] He adds a fatwa declaring that anyone who teaches these positions in public is an unbeliever. [@sep-al-ghazali, §3] He attacks Ibn Sina's account of the modalities in at least three passages of the same book. [@sep-al-ghazali, §7.3]
+[[al-ghazali|Al-Ghazali]] studied the philosophers on his own while teaching at Baghdad, and his Maqasid al-falasifah (The Views of the Philosophers) sets out Ibn Sina's teaching on logic, metaphysics and physics. [@eor-ghazali, preamble] He then attacked the philosophers' metaphysics in [[incoherence-of-the-philosophers|The Incoherence of the Philosophers]]. [@eor-ghazali, preamble] At the end of the book he picks out three of Ibn Sina's teachings as wrong as well as religiously problematic, and says they may mislead the public into disregarding the religious law and so are dangerous for society. These are that the world has no beginning in time, that God knows universals but not particulars, and that human souls never return to bodies after death. [@sep-al-ghazali, §3] He adds a fatwa declaring that anyone who teaches these positions in public is an unbeliever. [@sep-al-ghazali, §3] He attacks Ibn Sina's account of the modalities in at least three passages of the same book. [@sep-al-ghazali, §7.3]
 
 Al-Ghazali also drew on him. He brought Ibn Sina's psychology and his rational account of prophecy into Ashʿarite theology, which in time adopted them. [@sep-al-ghazali, §5] He followed Ibn Sina in holding that this universe is the best of all possible worlds, though against him he held that God's will is free and chooses between alternatives. [@sep-al-ghazali, §6]
 

@@ -3,12 +3,13 @@ title: 'al-Kindi'
 description: 'Ninth-century philosopher at Baghdad, called the philosopher of the Arabs, whose circle put Aristotle and the Neoplatonists into Arabic.'
 group: 'Platonism in Arabic'
 order: 150
+audited: '2026-11-24'
 entity: al-kindi
 ---
 
 # al-Kindi
 
-Abu Yusuf Ya'qub ibn Ishaq al-Kindi (about 800 to 870) is described by the Stanford Encyclopedia as the first philosopher in the Arabic tradition to call himself one. [@sep-al-kindi, preamble] He led a group of translators who turned Greek philosophy and science into Arabic, including works of [[aristotle]] and the Neoplatonists. [@sep-al-kindi, preamble] His own thought was steeped in Neoplatonism, but in philosophical matters his main authority was Aristotle. [@sep-al-kindi, preamble]
+Abu Yusuf Ya'qub ibn Ishaq al-Kindi (about 800 to 870) is described by the Stanford Encyclopedia as the first philosopher in the Arabic tradition to call himself one. [@sep-al-kindi, preamble] He worked with a group of translators who turned Greek philosophy and science into Arabic, including works of [[aristotle]] and the Neoplatonists. [@sep-al-kindi, preamble] His own thought was steeped in Neoplatonism, but in philosophical matters his main authority was Aristotle. [@sep-al-kindi, preamble]
 
 ## Life
 
@@ -32,7 +33,7 @@ He wrote a short treatise against the Christian doctrine of the Trinity, which u
 
 ## On First Philosophy
 
-Only the first part of On First Philosophy survives, in four sections. [@sep-al-kindi, §1.2] The first urges the reader to honour Greek wisdom, the second discusses whether the world is eternal, and the third and fourth prove that a "true One", God, exists and ask how far language can apply to it. [@sep-al-kindi, §1.2] Al-Kindi identifies first philosophy with knowledge of God, whom he calls "the first truth and the cause of all truth." [@sep-al-kindi, §3.1]
+Only the first part of On First Philosophy survives, in four sections. [@sep-al-kindi, §1.2] The first urges the reader to honour Greek wisdom, the second discusses whether the world is eternal, and the third and fourth prove that a "true One", God, exists and consider why language cannot apply to it. [@sep-al-kindi, §1.2] Al-Kindi identifies first philosophy with knowledge of God, whom he calls "the first truth and the cause of all truth." [@sep-al-kindi, §3.1]
 
 He argues that every kind of predicate implies both unity and multiplicity, and that their union in things needs a cause outside them that is one and in no way many. [@sep-al-kindi, §3.1] This cause is the true One, and none of the predicates applies to it. [@sep-al-kindi, §3.1] The Stanford entry finds that it closely resembles the first principle of the Neoplatonists. [@sep-al-kindi, §3.1] Because to be a thing is to be one in some way, the true One is also the cause of being, and al-Kindi calls God's act of bringing beings to be from non-being "origination". [@sep-al-kindi, §3.2] His main source for this view of creation is Philoponus, a pupil of Ammonius. [@sep-al-kindi, §3.2] His argument that the world is not eternal also follows Philoponus, and it turns Aristotle's denial of an actual infinite against Aristotle's own eternal world. [@sep-al-kindi, §3.3]
 

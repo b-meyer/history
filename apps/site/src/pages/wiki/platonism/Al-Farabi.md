@@ -3,6 +3,7 @@ title: 'al-Farabi'
 description: "Philosopher of Baghdad and Damascus, born about 870, who built on Aristotle's logic and on Plato's Republic and was read closely by Ibn Sina."
 group: 'Platonism in Arabic'
 order: 160
+audited: '2026-11-24'
 entity: al-farabi
 ---
 
@@ -14,7 +15,7 @@ His two main interests were philosophy, logic above all, and music [@sep-al-fara
 
 ## Aristotle and the Sciences
 
-His Enumeration of the Sciences sets out the Aristotelian sciences in their traditional order, and its medieval Latin versions were widely read in the West [@sep-al-farabi, §1]. He knew a great many of Aristotle's works, some of the zoological treatises among them [@sep-al-farabi, §1]. The Stanford article on Greek sources in Arabic says that the full Aristotelian corpus, available in Arabic together with Euclid, Ptolemy, Hippocrates and Galen, let him plan a curriculum of higher education that took the native Islamic sciences into the wider system of philosophical sciences [@sep-arabic-islamic-greek, preamble].
+His Enumeration of the Sciences sets out the Aristotelian sciences in their traditional order, and its medieval Latin versions had much influence in the West [@sep-al-farabi, §1]. He knew a great many of Aristotle's works, some of the zoological treatises among them [@sep-al-farabi, §1]. The Stanford article on Greek sources in Arabic says that the full Aristotelian corpus, available in Arabic together with Euclid, Ptolemy, Hippocrates and Galen, let him plan a curriculum of higher education that took the native Islamic sciences into the wider system of philosophical sciences [@sep-arabic-islamic-greek, preamble].
 
 In logic he separated demonstration, which alone is philosophy in the strict sense, from the dialectic of the theologians and from the rhetoric and poetry that scripture uses to reach ordinary people [@sep-al-farabi, §3]. On future contingents he took up Aristotle's problem from On Interpretation, added God's foreknowledge to it, and defended human free will against some theologians [@sep-al-farabi, §3]. Following Aristotle, he held that the world had no beginning and that the heavenly spheres have been moving from all eternity [@sep-al-ghazali, §2].
 

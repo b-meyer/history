@@ -3,6 +3,7 @@ title: 'Ibn Rushd'
 description: 'Andalusian philosopher, physician and judge (1126 to 1198) who commented on Aristotle and answered al-Ghazali in The Incoherence of the Incoherence.'
 group: 'Platonism in Arabic'
 order: 190
+audited: '2026-11-24'
 entity: ibn-rushd
 ---
 
@@ -20,7 +21,7 @@ Late in his career he fell out of favour with the Almohads, for reasons that rem
 
 ## Commentaries on Aristotle
 
-His writings cover medicine, logic and every branch of philosophy, along with Islamic law, theology and Arabic grammar. [@sep-ibn-rushd, §1.2] Many are commentaries, above all on Aristotle, covering nearly the whole Aristotelian corpus. [@sep-ibn-rushd, §1.2] He wrote of Aristotle that no one in the 1500 years since had been able to "add a word worthy of attention to what he said." [@sep-ibn-rushd, §1.2] The Stanford Encyclopedia on the Greek sources of Arabic philosophy traces how the philosophers of the Muslim West prepared his plan to comment on the Aristotelian corpus "as the sum of philosophical science." [@sep-arabic-islamic-greek, §5]
+His writings cover medicine, logic and every branch of philosophy, along with Islamic law, theology and Arabic grammar. [@sep-ibn-rushd, §1.2] Many are commentaries, above all on Aristotle, covering nearly the whole Aristotelian corpus. [@sep-ibn-rushd, §1.2] He wrote of Aristotle that no one in the close to 1500 years since had been able to "add a word worthy of attention to what he said." [@sep-ibn-rushd, §1.2] The Stanford Encyclopedia on the Greek sources of Arabic philosophy traces how the philosophers of the Muslim West prepared his plan to comment on the Aristotelian corpus "as the sum of philosophical science." [@sep-arabic-islamic-greek, §5]
 
 Scholars have sorted the commentaries into three kinds, the short commentary or epitome, the middle commentary or paraphrase, and the long commentary, though recent work doubts that the threefold scheme fits his practice. [@sep-ibn-rushd, §1.2]
 
@@ -32,7 +33,7 @@ His long commentary on the Posterior Analytics is the occasion for "a critical a
 
 [[al-ghazali]] had attacked the philosophers in [[incoherence-of-the-philosophers]]. [@sep-al-ghazali, §3] Ibn Rushd wrote [[incoherence-of-the-incoherence]] as a direct reply, at a time when al-Ghazali's work carried considerable weight in Andalusia. [@sep-ibn-rushd, §1.2] The Encyclopedia of Religion counts this refutation among the work of the western Islamic philosophers who followed the Greek tradition until about 1200. [@eor-ghazali, preamble]
 
-He took over al-Ghazali's rule for reconciling reason with the outward sense of revelation, but he disagreed with al-Ghazali's findings on what can and cannot be demonstrated. [@sep-al-ghazali, §4] He held that Aristotle had already demonstrated the pre-eternity of the world, and he noted that no Qur'anic passage plainly states that the world was created in time. [@sep-al-ghazali, §4] His denial that al-Ghazali's book was philosophy was long accepted by Western readers, who read the Incoherence of the Philosophers through his reply. [@sep-al-ghazali, §3] The reply was translated into Latin in 1328 and again in 1526, both times as Destructio destructionum. [@sep-al-ghazali, §4]
+He took over al-Ghazali's rule for reconciling reason with the outward sense of revelation, but he disagreed with al-Ghazali's findings on what can and cannot be demonstrated. [@sep-al-ghazali, §4] He held that Aristotle had already demonstrated the pre-eternity of the world, and he noted that no Qur'anic passage plainly states that the world was created in time. [@sep-al-ghazali, §4] Many Western readers readily accepted his denial that al-Ghazali's book was philosophy, and the Incoherence of the Philosophers was for too long read through his reply. [@sep-al-ghazali, §3] The reply was translated into Latin in 1328 and again in 1526, both times as Destructio destructionum. [@sep-al-ghazali, §4]
 
 ## Hebrew and Latin Readers
 

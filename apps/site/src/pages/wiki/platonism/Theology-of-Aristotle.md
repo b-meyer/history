@@ -3,6 +3,7 @@ title: 'The Theology of Aristotle'
 description: "Ninth-century Arabic paraphrase of parts of Plotinus's Enneads IV to VI, made in al-Kindi's circle and circulated under Aristotle's name, and the translation movement that produced it."
 group: 'Platonism in Arabic'
 order: 140
+audited: '2026-11-24'
 entity: theology-of-aristotle
 ---
 
@@ -12,11 +13,11 @@ The Theology of Aristotle is the longest and best known text that keeps an Arabi
 
 ## The Text
 
-The Theology is divided into ten sections, each called a mimar, a Syriac word for a chapter, and opens with a preface and a set of "headings" that list points from Enneads IV.4. [@sep-theology-aristotle, §1] Every passage in it comes from Enneads IV, V and VI, and no direct evidence shows an Arabic version of any of the first three Enneads. [@sep-theology-aristotle, §1] The passages do not keep the order of the Enneads but move from one part of them to another. [@sep-theology-aristotle, §1]
+The Theology is divided into ten sections, each called a mimar, a Syriac word for a chapter, and opens with a preface and a set of "headings" that seem to list points from Enneads IV.4. [@sep-theology-aristotle, §1] Every passage in it comes from Enneads IV, V and VI, and no direct evidence shows an Arabic version of any of the first three Enneads. [@sep-theology-aristotle, §1] The passages do not keep the order of the Enneads but move from one part of them to another. [@sep-theology-aristotle, §1]
 
-Two other surviving texts come from the same Arabic version of Plotinus. One is the Letter on Divine Science, which was falsely ascribed to al-Farabi, and the other is a group of sayings ascribed to a "Greek sage". [@sep-theology-aristotle, §1] The Arabic is often a free paraphrase, and it carries interpolated passages, some as long as a paragraph, with no basis in the Greek. [@sep-theology-aristotle, §1] For that reason the Stanford Encyclopedia treats the Theology as an interpretation of Plotinus's thought and not only a translation. [@sep-theology-aristotle, preamble]
+Two other surviving texts come from the same Arabic version of Plotinus. One is the Letter on Divine Science, which was falsely ascribed to al-Farabi, and the other is a group of sayings ascribed to a "Greek sage". [@sep-theology-aristotle, §1] The Arabic is often a free paraphrase, and it carries interpolated passages, some as long as a paragraph, with no direct basis in the Greek. [@sep-theology-aristotle, §1] For that reason the Stanford Encyclopedia treats the Theology as an interpretation of Plotinus's thought and not only a translation. [@sep-theology-aristotle, preamble]
 
-The Theology follows [[porphyry]]'s edition of the Enneads, since it keeps the breaks Porphyry made when he split longer treatises to bring the count to 54. [@sep-theology-aristotle, §2] The Greek copy behind the translation was older than the oldest Greek manuscripts of the Enneads now extant and belonged to an independent branch of the tradition. The third chapter of the Theology has a section of Enneads IV.7.8 that every Greek manuscript lacks and that is otherwise known only through Eusebius. [@sep-theology-aristotle, §2]
+The Theology follows [[porphyry]]'s edition of the Enneads, since it keeps the breaks Porphyry made when he split longer treatises to bring the count to 54. [@sep-theology-aristotle, §2] The Greek copy behind the translation was older than the oldest Greek manuscripts of the Enneads now extant and belonged to an independent branch of the tradition. The third chapter of the Theology has a section of Enneads IV.7.8 that every Greek manuscript lacks and that Eusebius transmits indirectly. [@sep-theology-aristotle, §2]
 
 ## The Preface
 
@@ -64,4 +65,4 @@ The Stanford Encyclopedia's entry on al-Kindi says that influences from the Theo
 
 Ibn Sina doubted that the work was authentic but still wrote notes commenting on it. [@sep-theology-aristotle, §5] His lost Fair Judgment, a commentary on the whole Aristotelian corpus, took in the Theology, and two incomplete recensions of its commentary on the Theology survive. [@sep-ibn-sina, §1.2]
 
-Its influence may have been highest in the tenth century, when Abu Ya'qub al-Sijistani, al-Kirmani and other Isma'ili writers fitted Plotinus's hierarchy to their own metaphysics and Miskawayh drew on its terms and doctrine. [@sep-theology-aristotle, §5] A Longer Version in fourteen chapters reworked the text further, most likely in Fatimid Egypt, and Pier Nicola Castellani's Latin translation of 1519 was made from it. [@sep-theology-aristotle, §5] Many manuscripts of the Theology were copied in Iran under the Safavids and Qajars, and later Safavid thinkers, Mulla Sadra among them, wrote commentaries on it. [@sep-theology-aristotle, §5]
+Its influence may have been highest in the tenth century, when Abu Ya'qub al-Sijistani, al-Kirmani and other Isma'ili writers fitted Plotinus's hierarchy to their own metaphysics and Miskawayh's Shorter Healing is full of terminology and doctrine from the Arabic Plotinus. [@sep-theology-aristotle, §5] A Longer Version in fourteen chapters reworked the text further, most likely in Fatimid Egypt, and Pier Nicola Castellani's Latin translation of 1519 was made from it. [@sep-theology-aristotle, §5] Many manuscripts of the Theology were copied in Iran under the Safavids and Qajars, and later Safavid thinkers, Mulla Sadra among them, wrote commentaries on it. [@sep-theology-aristotle, §5]
