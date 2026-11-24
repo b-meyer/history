@@ -1,0 +1,36 @@
+id: xenocrates
+type: person
+names:
+  en: Xenocrates
+notability: 5
+claims:
+  - id: xenocrates.successor-of.speusippus
+    predicate: successor-of
+    object: speusippus
+    when: -03XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls Xenocrates 'Speusippus' successor as head of the Academy' and gives no date, so the loose -03XX is not contradicted.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: mactutor-academy
+        note: 'Graded B scholarly: The text lists Xenocrates immediately after Speusippus among the first heads of the Academy, with no date given; the 4th-century range is only implied by the 387 BC founding and 265 BC Arcesilaus dates.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §4.1 calls Xenocrates 'Speusippus' successor as head of the Academy' as plain fact, without a date, which fits the open -03XX.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §4.1
+        stance: asserts
+        excerpt: Speusippus’ successor as head of the Academy, Xenocrates
+      - key: mactutor-academy
+        locator: preamble
+        stance: asserts
+        excerpt: 'The first few to lead the Academy were: Plato, Speuisppus, Xenocrates, Polemon, Crates and Crantor.'

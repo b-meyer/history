@@ -1,0 +1,6 @@
+# Note: A region; the coords are Sardis, its capital. Wikidata's point (30, 40) falls in Bithynia.
+id: lydia
+type: place
+names: { en: Lydia }
+ids: { wikidata: 'Q620765', pleiades: '550701' }
+coords: [28.04, 38.49]

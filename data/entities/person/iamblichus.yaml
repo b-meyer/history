@@ -169,3 +169,32 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: Iamblichus (ca. 242–ca. 325)
+  - id: iamblichus.student-of.anatolius
+    predicate: student-of
+    object: anatolius
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-iamblichus
+        note: "Graded B scholarly: Sec. 1.1 says Eunapius names Anatolius then Porphyry as Iamblichus' teachers and there are no decisive reasons to doubt it, backed by Anatolian arithmology influence; Sec. 2 calls Anatolius his first teacher."
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Eunapius says Iamblichus, as a pupil of Anatolius (who ranks next after Porphyry), made great progress, then left Anatolius to attach himself to Porphyry.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: On p. 363 Eunapius says Iamblichus, as a pupil of Anatolius (ranked next after Porphyry), made great progress, then left Anatolius for Porphyry.
+    sources:
+      - key: eunapius-lives-wright
+        locator: p. 363
+        stance: asserts
+        excerpt: As a pupil of Anatolius, who ranks next after Porphyry, he made great progress
+      - key: sep-iamblichus
+        locator: §1.1
+        stance: asserts
+        excerpt: Eunapius gives Anatolius and then Porphyry as Iamblichus’ two teachers, and there are no decisive reasons to doubt this

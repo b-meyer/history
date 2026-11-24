@@ -1,0 +1,26 @@
+id: life-of-pythagoras
+type: work
+names:
+  en: Life of Pythagoras
+notability: 5
+claims:
+  - id: life-of-pythagoras.attributed-to.porphyry
+    predicate: attributed-to
+    object: porphyry
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §2 lists the Life of Pythagoras among Porphyry's extant works and calls it the only nearly intact portion of his Philosophical History.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 2 lists the Life of Pythagoras among Porphyry's extant works and calls it the only nearly intact portion of his Philosophical History.
+    sources:
+      - key: sep-porphyry
+        locator: §2
+        stance: asserts
+        excerpt: The Life of Pythagoras is the only nearly intact portion of the Philosophical History

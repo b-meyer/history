@@ -1,0 +1,35 @@
+id: aedesius
+type: person
+names:
+  en: Aedesius
+notability: 4
+claims:
+  - id: aedesius.student-of.iamblichus
+    predicate: student-of
+    object: iamblichus
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Sec. 1.1 lists Aedesius among Iamblichus' students at Apamea who moved the school to Pergamon, and Sec. 5 calls him 'Iamblichus' student Aedesius'.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eunapius-lives-wright
+        note: "Graded A primary: Eunapius lists Aedesius among the many disciples who flocked to Iamblichus, says Aedesius travelled from Cappadocia to Syria to hear him, and calls him 'one of the leading disciples of Iamblichus' and his successor in the school."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A primary: §1.1 names Aedesius, who moved the school to Pergamon, among Iamblichus' most conspicuous students at Apamea, and §2.4 calls him 'Iamblichus' student Aedesius' and places him on Eunapius' list of Iamblichus' students."
+    sources:
+      - key: sep-iamblichus
+        locator: §1.1
+        stance: asserts
+        excerpt: Aedesius, who moved the school to Pergamon
+      - key: eunapius-lives-wright
+        locator: p. 365
+        stance: asserts
+        excerpt: and Aedesius and Eustathius from Cappadocia

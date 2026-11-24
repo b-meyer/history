@@ -1,0 +1,6 @@
+# Note: A region; the coords are Wikidata's point for ancient Egypt, near Memphis on the Nile.
+id: egypt
+type: place
+names: { en: Egypt }
+ids: { wikidata: 'Q11768', pleiades: '981503' }
+coords: [31.3, 29.8]

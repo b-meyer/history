@@ -185,3 +185,201 @@ claims:
         locator: §1
         stance: asserts
         excerpt: Plutarch of Athens, Syrianus, Proclus
+  - id: proclus.head-of.academy
+    predicate: head-of
+    object: academy
+    when: 0437/0485
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Proclus succeeded as head of the Athenian school after Syrianus' death in 437 and held the post until his death in 485.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 1.1 says that after Syrianus died in 437 Proclus succeeded as head of the Athenian school and held the post for almost fifty years until his death in 485.
+    sources:
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: After Syrianus’ death (437), Proclus succeeded as head of the Athenian school, and he kept this position for almost fifty years until his death in 485.
+  - id: proclus.successor-of.syrianus
+    predicate: successor-of
+    object: syrianus
+    when: 0437
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: After Syrianus' death (437), Proclus succeeded as head of the Athenian school.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: Marinus 12 says Syrianus found in Proclus the disciple and successor he had long sought, and the epitaph says he was nourished to succeed as teacher, but the text gives no date such as 437 for the succession.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 1.1 says Proclus succeeded Syrianus as head of the Athenian school after Syrianus died in 437.
+    sources:
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: After Syrianus’ death (437), Proclus succeeded as head of the Athenian school
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 12
+        stance: asserts
+        excerpt: he had found in him the disciple and successor he had long been seeking
+  - id: proclus.student-of.plutarch-of-athens
+    predicate: student-of
+    object: plutarch-of-athens
+    where: athens
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Proclus moved to Athens in 430-431 and studied two years under Plutarch of Athens, reading Phaedo and De anima.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: marinus-life-of-proclus-guthrie
+        note: 'Graded A primary: Syrianus presented the barely twenty-year-old Proclus to the aged Plutarch, son of Nestorius, with whom he read De Anima and the Phaedo at Athens.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 1.1 says Proclus moved to Athens in 430-431 and studied for two years under Plutarch of Athens, reading the Phaedo and De anima with him.
+    sources:
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: He studied for two years under the direction of Plutarch
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 12
+        stance: asserts
+        excerpt: Syrianus presented him to the great Plutarch, son of Nestorius.
+  - id: proclus.student-of.syrianus
+    predicate: student-of
+    object: syrianus
+    where: athens
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Proclus followed Syrianus' curriculum and worked with him intensively for six years, strongly influenced by his teacher.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: marinus-life-of-proclus-guthrie
+        note: "Graded A primary: After Plutarch's death Syrianus took Proclus into his home and taught him, leading him through the lesser mysteries to the Greater Mysteries of Plato."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 1.1 says Proclus followed the school curriculum in Athens with Syrianus, his teacher, and that the two worked intensively together for six years.
+    sources:
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: Since Syrianus and Proclus worked intensively together for six years, Proclus was strongly influenced by his teacher.
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 13
+        stance: asserts
+        excerpt: Syrianus led Proclus to the Greater Mysteries of Plato
+  - id: proclus.student-of.olympiodorus
+    predicate: student-of
+    object: olympiodorus
+    where: alexandria
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A primary: Returning to Alexandria, Proclus attended the Younger Olympiodorus to begin his study of Aristotle.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A primary: Marinus 9 says that after returning to Alexandria Proclus began his study of Aristotle under the Younger Olympiodorus, whose reputation was very extensive.'
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 9
+        stance: asserts
+        excerpt: To begin his study of Aristotle's philosophy he attended the instruction of the Younger Olympiodorus
+  - id: proclus.student-of.heron
+    predicate: student-of
+    object: heron
+    where: alexandria
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A primary: At Alexandria Proclus trusted himself to the pious Heron for mathematics.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A primary: Marinus 9 says that in Alexandria Proclus trusted himself to Heron for mathematics, and that Heron initiated him into his religious ideas and made him his constant companion.'
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 9
+        stance: asserts
+        excerpt: For mathematics, he trusted himself to Heron
+  - id: proclus.buried-at.lycabettus
+    predicate: buried-at
+    object: lycabettus
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A primary: His body was buried in the most easterly part of the suburbs, near Mount Lycabettus, where Syrianus also lay.'
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A primary: Marinus 36 says his friends carried his body and buried it in the most easterly part of the suburbs, near Mount Lycabettus.'
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 36
+        stance: asserts
+        excerpt: was buried in the most easterly part of the suburbs, near Mount Lycabettus
+  - id: proclus.active-at.lydia
+    predicate: active-at
+    object: lydia
+    when: 04XX
+    confidence: B
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-proclus
+        note: Marinus (Life of Proclus 15) reports Proclus went into exile for about one year to Lydia; the article gives no date, so 04XX is only inferred from his career.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Proclus left Athens for Asia and spent no more than a year among the Lydians before returning to Athens, though the text gives no calendar date.
+    sources:
+      - key: marinus-life-of-proclus-guthrie
+        locator: Marinus 15
+        stance: asserts
+        excerpt: After no more than a year's sojourn in Lydia he returned to Athens
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: he had to go into exile for about one year to Lydia

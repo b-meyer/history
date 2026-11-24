@@ -210,3 +210,86 @@ claims:
         locator: DL 3.8
         stance: reports
         excerpt: He mixed together doctrines of Heraclitus, the Pythagoreans and Socrates.
+  - id: plato.student-of.socrates
+    predicate: student-of
+    object: socrates
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: DL 3.6 says that from his twentieth year (so it is said) Plato was the pupil of Socrates.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: DL 3.6 says that from his twentieth year (so it is said) Plato was the pupil of Socrates, following the 3.5 account of him burning his poems after hearing Socrates.
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.6
+        stance: asserts
+        excerpt: he was the pupil of Socrates
+  - id: plato.active-at.megara
+    predicate: active-at
+    object: megara
+    when: -0398~
+    confidence: B
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: DL 3.6 says that at age twenty-eight, according to Hermodorus, Plato withdrew to Megara to Euclides; the 398 BCE date is only an inference from his age, and the text gives no year.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: DL 3.6 reports, citing Hermodorus, that at twenty-eight, after Socrates' death, Plato withdrew to Megara to Euclides with other Socratics; the text gives his age, not a year, and -0398~ is derived from his birth date.
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.6
+        stance: reports
+        excerpt: Then at the age of twenty-eight, according to Hermodorus, he withdrew to Megara to Euclides
+  - id: plato.active-at.cyrene
+    predicate: active-at
+    object: cyrene
+    when: -0398~/-0386~
+    confidence: B
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: DL 3.6 says Plato next went to Cyrene to visit Theodorus the mathematician; the text gives the sequence but no dates, so the 398-386 BCE range is inferred.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: DL 3.6 says that after Megara Plato went to Cyrene to visit Theodorus the mathematician; the text gives the order of the journeys but no dates, so the -0398~/-0386~ range is inferred.
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.6
+        stance: asserts
+        excerpt: Next he proceeded to Cyrene on a visit to Theodorus the mathematician
+  - id: plato.active-at.egypt
+    predicate: active-at
+    object: egypt
+    when: -0398~/-0386~
+    confidence: B
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: DL 3.6 says Plato went thence to Egypt to see those who interpreted the will of the gods; the text gives the sequence but no dates, so the range is inferred.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: DL 3.6 says that after Cyrene and Italy Plato went to Egypt to see those who interpreted the will of the gods, adding the anecdotal detail that Euripides is said to have gone with him; no dates are given.
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.6
+        stance: asserts
+        excerpt: thence to Egypt to see those who interpreted the will of the gods

@@ -1,0 +1,26 @@
+id: hippasus
+type: person
+names:
+  en: Hippasus
+notability: 4
+claims:
+  - id: hippasus.member-of.pythagoreans
+    predicate: member-of
+    object: pythagoreans
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: DL 8.84 states 'Hippasus of Metapontum was another Pythagorean'.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: DL 8.84 states plainly that Hippasus of Metapontum was another Pythagorean and gives his cosmological doctrine.
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 8.84
+        stance: asserts
+        excerpt: Hippasus of Metapontum was another Pythagorean

@@ -1,0 +1,26 @@
+id: de-mysteriis
+type: work
+names:
+  en: De mysteriis
+notability: 6
+claims:
+  - id: de-mysteriis.attributed-to.iamblichus
+    predicate: attributed-to
+    object: iamblichus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Sec. 1.2 calls the Reply of Master Abamon to Porphyry (traditionally De mysteriis Aegyptiorum) Iamblichus' most important extant treatise, written under the guise of the prophet Abamon.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.2 calls the Reply of Master Abamon to Porphyry's Letter to Anebo, traditionally known as De mysteriis since Ficino, Iamblichus' most important extant treatise, written by him under the guise of the prophet Abamon, and raises no doubt about the authorship.
+    sources:
+      - key: sep-iamblichus
+        locator: §1.2
+        stance: asserts
+        excerpt: The most important extant treatise by Iamblichus, however, is the Reply of Master Abamon to Porphyry’s Letter to Anebo

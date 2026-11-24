@@ -211,7 +211,12 @@ function buildStays(
       const coords = place === undefined ? undefined : places[place]?.coords;
       if (place === undefined || coords === undefined) continue;
       const bounds = claim.when === undefined ? null : parseEdtf(claim.when);
-      const range = (bounds === null ? null : closed(bounds)) ?? entitySpan;
+      // An undated burial marks the end of a life, not the whole of it.
+      const fallback =
+        claim.predicate === 'buried-at' && entitySpan !== null
+          ? { start: entitySpan.end, end: entitySpan.end }
+          : entitySpan;
+      const range = (bounds === null ? null : closed(bounds)) ?? fallback;
       if (range === null) continue;
       stays.push({
         entity: id,

@@ -1,0 +1,5 @@
+id: cyrene
+type: place
+names: { en: Cyrene }
+ids: { wikidata: 'Q44112', pleiades: '373778' }
+coords: [21.85, 32.82]

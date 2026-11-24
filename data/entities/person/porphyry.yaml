@@ -235,3 +235,71 @@ claims:
         locator: §1
         stance: asserts
         excerpt: Important figures of late antique Neoplatonism were the already mentioned pupil of Plotinus, Porphyry
+  - id: porphyry.student-of.longinus
+    predicate: student-of
+    object: longinus
+    when: ../0263
+    where: athens
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1 (after Goulet's reconstruction) says Porphyry studied in Athens with the Middle Platonist Longinus, and he moved to Rome in 263, so the ../0263 end bound fits.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The preamble and section 1 (following Goulet's reconstruction) say Porphyry studied with Longinus in Athens before moving to Plotinus in Rome in 263, which fits the ../0263 end date.
+    sources:
+      - key: sep-porphyry
+        locator: preamble
+        stance: asserts
+        excerpt: He studied with Longinus in Athens
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: Porphyry studied in Athens with the Middle Platonist Longinus.
+  - id: porphyry.active-at.carthage
+    predicate: active-at
+    object: carthage
+    when: 0270/0305
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1 says a stay at Carthage is attested after the Sicily period (Plotinus died 270, Porphyry died c. 305), but gives no dates, so the 0270/0305 span is inferred.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 1 says a stay at Carthage is attested, mentioning it after the Sicilian period (he was in Sicily when Plotinus died in 270) and before a return to Rome, but gives no dates and notes that little about his later life is certain, so the 0270/0305 range is an inference.
+    sources:
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: A stay at Carthage and a period spent at Tyre are also attested
+  - id: porphyry.active-at.tyre
+    predicate: active-at
+    object: tyre
+    when: 0270/0305
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1 says a period at Tyre is attested after the Sicily stay, without dates, so the 0270/0305 span is inferred (Tyre was also his birthplace).
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 1 says a period spent at Tyre is attested, mentioning it after the Sicilian stay (ongoing in 270) and before a return to Rome, but gives no dates, so the 0270/0305 range is inferred from context.
+    sources:
+      - key: sep-porphyry
+        locator: §1
+        stance: asserts
+        excerpt: A stay at Carthage and a period spent at Tyre are also attested

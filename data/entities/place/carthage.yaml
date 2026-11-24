@@ -1,0 +1,5 @@
+id: carthage
+type: place
+names: { en: Carthage }
+ids: { wikidata: 'Q6343', pleiades: '314921' }
+coords: [10.32, 36.85]

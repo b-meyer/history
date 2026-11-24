@@ -1,0 +1,28 @@
+id: amelius
+type: person
+names:
+  en: Amelius
+notability: 4
+claims:
+  - id: amelius.student-of.plotinus
+    predicate: student-of
+    object: plotinus
+    when: 0246/0269
+    where: rome
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Porphyry says Amelius joined in the third year of Philip's reign (the third of Plotinus' Rome residence) and stayed until the first year of Claudius, twenty-four years in all, which fits 0246/0269.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Ch. 3 says Amelius joined Plotinus' circle in Rome in the third year of Philip's reign (the third of Plotinus' residence in Rome) and stayed until the first year of Claudius, twenty-four years in all.
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: p. 4
+        stance: asserts
+        excerpt: Amelius had entered the circle in the third year of Philip’s reign, the third, too, of Plotinus’ residence in Rome, and remained about him until the first year of Claudius, twenty-four years in all.

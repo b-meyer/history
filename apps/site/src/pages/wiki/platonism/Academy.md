@@ -15,7 +15,7 @@ The Academy was a gymnasium outside the walls of [[athens]], set in a grove name
 
 The modern word gives a false picture. MacTutor quotes Glucker, who says that in ancient Athens the Academy was first a public park dominated by its gymnasium, and that its link with Plato's school was one of many historical associations of the place [@mactutor-academy, preamble]. Cherniss, quoted in the same article, concludes that the school taught no orthodox metaphysical doctrine, that its members were not expected to subscribe to the theory of ideas, and that formal instruction was limited to mathematics [@mactutor-academy, preamble].
 
-Diogenes Laertius lists Plato's disciples, beginning with Speusippus of Athens, Xenocrates of Chalcedon and Aristotle of Stagira, and adds two women, Lastheneia of Mantinea and Axiothea of Phlius [@diogenes-laertius-lives-hicks, DL 3.46]. The words said to stand over the door, barring anyone who was not a geometer, appear in no source before the fourth century CE, and MacTutor judges the story almost certainly fictitious [@mactutor-academy, preamble].
+Diogenes Laertius lists Plato's disciples, beginning with [[speusippus]] of Athens, [[xenocrates]] of Chalcedon and Aristotle of Stagira, and adds two women, Lastheneia of Mantinea and Axiothea of Phlius [@diogenes-laertius-lives-hicks, DL 3.46]. The words said to stand over the door, barring anyone who was not a geometer, appear in no source before the fourth century CE, and MacTutor judges the story almost certainly fictitious [@mactutor-academy, preamble].
 
 ## The Early Heads
 
@@ -31,7 +31,7 @@ Philo left Athens for Rome about 85 BCE [@mactutor-academy, preamble]. A year or
 
 ## The Late School and 529
 
-The Stanford article on Proclus calls the later Athenian school the Platonic "Academy" and says it was headed by a successor of Plato [@sep-proclus, preamble]. After Plutarch of Athens died in 432, Syrianus became head [@sep-proclus, §1.1]. [[proclus]] succeeded Syrianus after his death in 437 and held the post for almost fifty years, until his own death in 485 [@sep-proclus, §1.1].
+The Stanford article on Proclus calls the later Athenian school the Platonic "Academy" and says it was headed by a successor of Plato [@sep-proclus, preamble]. After [[plutarch-of-athens]] died in 432, [[syrianus]] became head [@sep-proclus, §1.1]. [[proclus]] succeeded Syrianus after his death in 437 and held the post for almost fifty years, until his own death in 485 [@sep-proclus, §1.1].
 
 The Stanford article on Neoplatonism says the group of Neoplatonists in Athens still keeping the old rituals disbanded after the legislation of Justinian in 529 [@sep-neoplatonism, §7]. That is the [[justinian-edict]], and the same article describes it as closing the Platonist academy [@sep-neoplatonism, §7].
 

@@ -314,6 +314,42 @@ describe('writeOutputs', () => {
     });
   });
 
+  it('reads head-of, successor-of and nephew-of through their inverses on the object', () => {
+    write(
+      'entities/institution/school.yaml',
+      'id: school\ntype: institution\nnames: { en: School }\n',
+    );
+    write(
+      'entities/person/amelius.yaml',
+      `id: amelius\ntype: person\nnames: { en: Amelius }\nclaims:\n${claim('amelius.successor-of.plotinus', 'predicate: successor-of\nobject: plotinus\nwhen: "0270"')}${claim('amelius.nephew-of.plotinus', 'predicate: nephew-of\nobject: plotinus')}${claim('amelius.head-of.school', 'predicate: head-of\nobject: school\nwhen: 0270/0290')}`,
+    );
+    expect(problems()).toEqual([]);
+    const out = join(root, 'out');
+    writeOutputs(loadGraph(data).graph, out);
+    const record = (id: string): EntityRecord | undefined =>
+      (
+        JSON.parse(readFileSync(join(out, 'records', `${shardOf(id)}.json`), 'utf8')) as Record<
+          string,
+          EntityRecord
+        >
+      )[id];
+    const labels = (id: string): string[] =>
+      (record(id)?.claims ?? []).filter((c) => c.derived).map((c) => c.label);
+    expect(labels('plotinus')).toEqual(expect.arrayContaining(['succeeded by', 'uncle of']));
+    expect(labels('school')).toEqual(['headed by']);
+  });
+
+  it('requires a date on head-of and successor-of, and a place for buried-at', () => {
+    write(
+      'entities/person/amelius.yaml',
+      `id: amelius\ntype: person\nnames: { en: Amelius }\nclaims:\n${claim('amelius.successor-of.plotinus', 'predicate: successor-of\nobject: plotinus')}${claim('amelius.buried-at.plotinus', 'predicate: buried-at\nobject: plotinus')}`,
+    );
+    expect(problems()).toEqual([
+      expect.stringContaining('amelius.yaml'),
+      expect.stringContaining('amelius.yaml'),
+    ]);
+  });
+
   it('writes the confidence and basis wording to vocab.json', () => {
     const out = join(root, 'out');
     writeOutputs(loadGraph(data).graph, out);
@@ -455,6 +491,19 @@ describe('buildMapData', () => {
       notability: 9,
       start: 204,
       end: 204,
+    });
+  });
+
+  it('places an undated buried-at claim at the last year of the life', () => {
+    write(
+      'entities/person/plotinus.yaml',
+      `id: plotinus\ntype: person\nnames: { en: Plotinus }\nclaims:\n${claim('plotinus.born', 'predicate: born\nwhen: 0204/0205')}${claim('plotinus.died', 'predicate: died\nwhen: "0270"')}${claim('plotinus.buried-at.rome', 'predicate: buried-at\nobject: rome')}`,
+    );
+    expect(problems()).toEqual([]);
+    expect(mapData().stays.find((s) => s.claim === 'plotinus.buried-at.rome')).toMatchObject({
+      place: 'rome',
+      start: 270,
+      end: 270,
     });
   });
 
