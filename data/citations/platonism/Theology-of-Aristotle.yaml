@@ -1,0 +1,56 @@
+- key: sep-theology-aristotle
+  locator: §1
+  excerpt: 'is the longest, and most famous, text to preserve an Arabic version of the Enneads of Plotinus'
+  passage: 6a744b2469019537
+- key: sep-theology-aristotle
+  locator: preamble
+  excerpt: 'In the ninth century, Plotinus was translated into Arabic.'
+  passage: 7ac15f9646e137a1
+- key: sep-arabic-islamic-greek
+  locator: §3
+  excerpt: 'the Neoplatonic works falsely attributed to Aristotle in the age of al-Kindi'
+  passage: 62cf38d531593c21
+- key: sep-neoplatonism
+  locator: §8
+  excerpt: 'a pseudo-epigraphical treatise entitled Theology of Aristotle'
+  passage: 9b24f68aecdfebb9
+- key: sep-theology-aristotle
+  locator: §2
+  excerpt: 'it preserves breaks imposed by Porphyry as he split up longer treatises'
+  passage: c4c6c57b61fe501a
+- key: sep-theology-aristotle
+  locator: §4.2
+  excerpt: 'In Arabic, the One is very clearly conceived as a creating God'
+  passage: 61c35f3eb1991456
+- key: sep-theology-aristotle
+  locator: §3
+  excerpt: 'devoted to the promotion and Islamicization of Greek philosophy and science'
+  passage: d3be983cf0f341ba
+- key: sep-arabic-islamic-greek
+  locator: §1
+  excerpt: 'had already achieved in the Christian elites of Syria'
+  passage: f8c91e85976b27cb
+- key: sep-arabic-islamic-greek
+  locator: §2
+  excerpt: 'Already in Damascus, under the Umayyads (661–750), some Greek works of a loosely philosophical content had been translated into Arabic.'
+  passage: 8258caa355ba0cfd
+- key: sep-arabic-islamic-greek
+  locator: §5
+  excerpt: 'another set of translations into Arabic was produced by the Nestorian Christian Abu Bishr Matta ibn Yunus (d. 940) and his pupils'
+  passage: cbbf8972b8c6dad5
+- key: sep-arabic-islamic-greek
+  locator: preamble
+  excerpt: 'most scholars side with the opinion that what gave rise to the intellectual tradition of falsafa was the so-called movement of translation from Greek'
+  passage: 14a7c42ce1e68348
+- key: sep-theology-aristotle
+  locator: §5
+  excerpt: 'it was destined to become the key source for Neoplatonic ideas in Arabic'
+  passage: b605344d0d213fd9
+- key: sep-al-kindi
+  locator: §2.1
+  excerpt: 'one can detect influences from the Arabic version of Plotinus produced in al-Kindi’s circle, the so-called Theology of Aristotle'
+  passage: 429ab4b5faf73bca
+- key: sep-ibn-sina
+  locator: §1.2
+  excerpt: 'along with two incomplete recensions of his commentary on the Theology of Aristotle'
+  passage: 90e7d346aed14194

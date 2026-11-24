@@ -1,0 +1,36 @@
+- key: eor-ghazali
+  locator: preamble
+  excerpt: 'ah 450–505/1058–1111 ce'
+  passage: 58f557cb6ca8d088
+- key: sep-al-ghazali
+  locator: preamble
+  excerpt: 'Al-Ghazālī’s critique of twenty positions of falsafa in his Incoherence of the Philosophers'
+  passage: d34a1fd9345856d6
+- key: eor-sufism
+  locator: preamble
+  excerpt: 'al-Ghazālī was born at Ṭūs near the modern Iranian city of Mashhad in 1058'
+  passage: 58b17d0fe01d4515
+- key: sep-al-ghazali
+  locator: §1
+  excerpt: 'notes about his age in his letters and his autobiography indicate that he was born in 1055 or 1056'
+  passage: 30d54ef69a40965c
+- key: sep-al-ghazali
+  locator: §5
+  excerpt: 'This insight prompted al-Ghazālī to change his lifestyle and adopt the Sufi path'
+  passage: cc022910a9069ccd
+- key: sep-al-ghazali
+  locator: §2
+  excerpt: 'The Arabic philosophers (falāsifa) were heirs to the late-antique tradition of understanding the works of Aristotle in Neoplatonic terms.'
+  passage: b6d8508a286bf93b
+- key: sep-al-ghazali
+  locator: §3
+  excerpt: 'sixteen are concerned with positions held in the falāsifa’s metaphysics (ilāhiyyāt) and four with positions that appear in their natural sciences'
+  passage: c8b8fb772690f1c8
+- key: sep-al-ghazali
+  locator: §4
+  excerpt: 'Each teaching must be judged by itself, and if found sound and in accordance with revelation, should be adopted'
+  passage: 41cc6335257d6e04
+- key: sep-al-ghazali
+  locator: §6
+  excerpt: 'Al-Ghazālī also followed Avicenna in his conviction that this universe is the best of all possible worlds'
+  passage: 55a10fb84cb81df9

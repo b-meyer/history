@@ -1,0 +1,56 @@
+- key: sep-al-farabi
+  locator: preamble
+  excerpt: 'We know little that is really reliable about al-Fārābī’s life.'
+  passage: bd3aeea7f676901a
+- key: sep-arabic-islamic-greek
+  locator: §5
+  excerpt: 'in the first decades of the 10th century he had al-Farabi, a Muslim, and Yahya ibn ʿAdi, a Jacobite Christian, among his pupils'
+  passage: cbbf8972b8c6dad5
+- key: sep-al-farabi
+  locator: §1
+  excerpt: 'Al-Fārābī’s knowledge of Aristotle’s works is extensive, and even includes some of his zoological treatises.'
+  passage: d64769049c79f6a2
+- key: sep-arabic-islamic-greek
+  locator: preamble
+  excerpt: 'paved the way for al-Farabi to build up the project of a curriculum of higher education'
+  passage: 14a7c42ce1e68348
+- key: sep-al-farabi
+  locator: §3
+  excerpt: 'demonstrative discourse, reflecting Aristotle’s positions in the Posterior Analytics'
+  passage: a8bfe5517220df62
+- key: sep-al-ghazali
+  locator: §2
+  excerpt: 'Following Aristotle, al-Fārābī taught that the world has no beginning in the past'
+  passage: b6d8508a286bf93b
+- key: sep-arabic-islamic-greek
+  locator: §4
+  excerpt: 'he explains that metaphysics has three parts'
+  passage: c812f0d8b82c283d
+- key: sep-al-farabi
+  locator: §6
+  excerpt: 'begin with a metaphysical part presented as a Neo-Platonic descent'
+  passage: def20d749cec6857
+- key: sep-neoplatonism
+  locator: §8
+  excerpt: 'Neoplatonic thought facilitated the integration of ancient philosophy and science into both Islam (especially through Al-Kindi, Al-Farabi and Avicenna [Ibn Sina])'
+  passage: 9b24f68aecdfebb9
+- key: eor-ghazali
+  locator: preamble
+  excerpt: 'the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā'
+  passage: 2bd625b6e5f2f723
+- key: sep-theology-aristotle
+  locator: §5
+  excerpt: 'the Theology is cited in the Harmony of the Two Sages, Plato and Aristotle, a work ascribed to al-Farabi'
+  passage: 476eee724c6d9748
+- key: sep-al-farabi
+  locator: §7
+  excerpt: 'rather takes some inspiration from Plato’s Republic and Laws'
+  passage: f84a0de6e4422b87
+- key: sep-al-ghazali
+  locator: §3
+  excerpt: 'The longest and most substantial discussion is the first'
+  passage: c8b8fb772690f1c8
+- key: sep-ibn-rushd
+  locator: §2
+  excerpt: 'a critical and severe interaction with the two Islamic authorities in logic before him, al-Fārābī and Ibn Sīnā'
+  passage: 604054521ad07023

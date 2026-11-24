@@ -1,0 +1,64 @@
+- key: eor-augustine-hippo
+  locator: preamble
+  excerpt: 'AUGUSTINE OF HIPPO (354–430), Christian theologian and bishop.'
+  passage: 8ecfbe1afa62a0eb
+- key: sep-augustine
+  locator: preamble
+  excerpt: 'Platonism in particular remained a decisive ingredient of his thought.'
+  passage: 9269838d6facfb3f
+- key: sep-neoplatonism
+  locator: §8
+  excerpt: 'Through Augustine (354–430) in the West'
+  passage: 9b24f68aecdfebb9
+- key: sep-augustine
+  locator: §1
+  excerpt: 'He was born in Thagaste in Roman Africa (modern Souk Ahras in Algeria).'
+  passage: 48225ce2ce03cb5c
+- key: augustine-confessions-pusey
+  locator: bk. IV
+  excerpt: 'And thus from Thagaste, I came to Carthage.'
+  passage: 35b0762a3376601c
+- key: augustine-confessions-pusey
+  locator: bk. V
+  excerpt: 'I should be persuaded to go to Rome, and to teach there rather, what I was teaching at Carthage.'
+  passage: a6dfde309d40ae36
+- key: augustine-confessions-pusey
+  locator: bk. VIII
+  excerpt: 'Take up and read; Take up and read.'
+  passage: cd57d19e35a272ad
+- key: sep-augustine
+  locator: §4
+  excerpt: 'his mature doctrine of grace seems to have grown from a fresh reading of Paul ca. 395'
+  passage: c2b12c3e34aacbc3
+- key: augustine-confessions-pusey
+  locator: bk. VII
+  excerpt: 'certain books of the Platonists, translated from Greek into Latin'
+  passage: 83cf58cf3cfe52ed
+- key: sep-porphyry
+  locator: §2
+  excerpt: 'probably included works by both Plotinus and Porphyry'
+  passage: 749e42393d0e52db
+- key: sep-neoplatonism
+  locator: §1
+  excerpt: 'was intimately familiar with the writings of Plotinus and Porphyry'
+  passage: 64c8e2a4783c316d
+- key: sep-augustine
+  locator: §2
+  excerpt: 'The Confessiones (ca. 396–400; Toom 2020), probably his most original work'
+  passage: d1870d5c733dc0b7
+- key: augustine-city-of-god-dods
+  locator: CG 8.5
+  excerpt: 'It is evident that none come nearer to us than the Platonists.'
+  passage: cdea6de7281105c5
+- key: augustine-city-of-god-dods
+  locator: CG 10.29
+  excerpt: 'which the Platonists in their impiety blush to acknowledge'
+  passage: 2967aef8cacf69f0
+- key: augustine-city-of-god-dods
+  locator: CG 10.32
+  excerpt: 'either that the philosophy of which he was a disciple was not the truest, or that it did not comprehend such a way'
+  passage: 44afa6fd8601aba6
+- key: sep-boethius
+  locator: §4
+  excerpt: 'This Augustinian view is faithfully set out in the brief Treatise II.'
+  passage: fc214a933aa14223

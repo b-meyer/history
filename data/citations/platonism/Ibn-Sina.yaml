@@ -1,0 +1,68 @@
+- key: sep-ibn-sina
+  locator: preamble
+  excerpt: 'Ibn-Sīnā [Avicenna] (ca. 970–1037) was the preeminent philosopher and physician of the Islamic world'
+  passage: fbe8d058cd8d916f
+- key: sep-ibn-sina
+  locator: §1.1
+  excerpt: 'his Autobiography, reaching till the time in his middle years when they first met'
+  passage: 7fcdcd705bf4d42a
+- key: sep-ibn-sina
+  locator: §1.2
+  excerpt: 'a recent sober tally of them brings the authentic writings down to fewer than one hundred'
+  passage: 5222f93c89d9daa5
+- key: sep-arabic-islamic-greek
+  locator: §4
+  excerpt: 'an understanding which is apparent both in al-Farabi and in Avicenna'
+  passage: 4d8c3407ed33dfac
+- key: sep-ibn-sina
+  locator: §2
+  excerpt: 'could view the entire tradition as essentially Aristotelian'
+  passage: 4cb597a3b911fa58
+- key: sep-theology-aristotle
+  locator: §5
+  excerpt: 'Avicenna, for instance, expressed some doubt as to its authenticity, yet he also composed a set of notes commenting on the text.'
+  passage: f661e3087fcd0a37
+- key: sep-neoplatonism
+  locator: §8
+  excerpt: 'Neoplatonic thought facilitated the integration of ancient philosophy and science into both Islam (especially through Al-Kindi, Al-Farabi and Avicenna [Ibn Sina])'
+  passage: 9b24f68aecdfebb9
+- key: eor-ghazali
+  locator: preamble
+  excerpt: 'the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā'
+  passage: 2bd625b6e5f2f723
+- key: sep-ibn-sina
+  locator: §5
+  excerpt: 'Aristotelian physics and metaphysics capped with Neoplatonic emanationism in the context of Ptolemaic cosmology'
+  passage: 056fb1232d57ba64
+- key: sep-arabic-islamic-greek
+  locator: preamble
+  excerpt: 'the rise of a complete system of rational sciences in the light of Farabi’s educational syllabus of the philosopher-king, lie in the background of Avicenna’s program'
+  passage: 14a7c42ce1e68348
+- key: sep-al-ghazali
+  locator: §2
+  excerpt: 'Avicenna continued al-Fārābī’s approach and developed his metaphysics and his prophetology'
+  passage: b6d8508a286bf93b
+- key: sep-ibn-sina
+  locator: §4
+  excerpt: 'acquires it from the active intellect which thinks it eternally and atemporally'
+  passage: 6f6e1b46359062fd
+- key: sep-al-ghazali
+  locator: §3
+  excerpt: 'These are three teachings from Avicenna’s philosophy'
+  passage: 25311618e6a56da0
+- key: sep-al-ghazali
+  locator: §7.3
+  excerpt: 'In at least three passages of the Incoherence al-Ghazālī criticizes Avicenna’s understanding of the modalities.'
+  passage: 39fd62d033fd064c
+- key: sep-al-ghazali
+  locator: §5
+  excerpt: 'al-Ghazālī introduced Avicennan ideas into Ashʿarite kalām'
+  passage: be303eb185c78c97
+- key: sep-al-ghazali
+  locator: §6
+  excerpt: 'Al-Ghazālī also followed Avicenna in his conviction that this universe is the best of all possible worlds'
+  passage: 55a10fb84cb81df9
+- key: sep-ibn-rushd
+  locator: §6.1
+  excerpt: 'He rejects the a priori metaphysical arguments of Ibn Sīnā'
+  passage: e02c78886cc96eb4
