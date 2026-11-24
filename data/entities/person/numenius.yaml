@@ -36,8 +36,8 @@ claims:
   - id: numenius.member-of.neopythagoreans
     predicate: member-of
     object: neopythagoreans
-    # Note: SEP Numenius calls him a Platonist; SEP Pythagoreanism counts him a Neopythagorean.
-    confidence: B
+    # Note: SEP Numenius calls him a Pythagorean Platonist; SEP Pythagoreanism counts him a Neopythagorean.
+    confidence: A
     basis: scholarly
     origin: ai-extracted
     audits:
@@ -53,8 +53,26 @@ claims:
           verdict: confirmed,
           note: 'Numenius is also labelled a Platonist.',
         }
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: SEP Pythagoreanism §4.4 names Numenius among the Neopythagoreans, and nothing in the text disputes it.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-numenius
+        note: 'SEP Numenius §2 says ancient testimonies split between Platonist and Pythagorean and calls him a Pythagorean Platonist like Moderatus, without the word Neopythagorean.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        source: sep-numenius
+        note: 'Graded A scholarly: SEP Pythagoreanism §4.4 lists Numenius among the Neopythagoreans, and SEP Numenius §2 puts him with Moderatus and Eudorus as a Pythagorean Platonist.'
     sources:
       - key: sep-pythagoreanism
         locator: '§4.4'
         stance: asserts
         excerpt: 'Unlike Neopythagoreans such as Eudorus, Moderatus and Numenius'
+      - key: sep-numenius
+        locator: '§2'
+        stance: asserts
+        excerpt: 'Numenius is a Pythagorean Platonist like Moderatus'
