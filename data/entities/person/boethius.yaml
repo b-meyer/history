@@ -1,0 +1,224 @@
+id: boethius
+type: person
+names:
+  en: Boethius
+notability: 8
+claims:
+  - id: boethius.born
+    predicate: born
+    when: 0475~/0477~
+    where: rome
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: rouse-ball-short-account-history-mathematics
+        note: The text says Boethius was 'born at Rome about 475', so Rome and an approximate year are supported, though 477 is not mentioned.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Text says he was born into the Roman aristocracy c. 475-7 C.E. and lived in Rome under Theoderic; the date is hedged and Rome as birthplace is implied, not stated outright.
+    sources:
+      - key: sep-boethius
+        locator: §1
+        stance: asserts
+        excerpt: Anicius Severinus Manlius Boethius was born into the Roman aristocracy c. 475–7 C.E.
+      - key: rouse-ball-short-account-history-mathematics
+        locator: p. 110
+        stance: asserts
+        excerpt: born at Rome about 475 and died in 526
+  - id: boethius.died
+    predicate: died
+    when: 0526?
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: rouse-ball-short-account-history-mathematics
+        note: "Graded A scholarly: The text says he died in 526, specifically beaten to death on October 23, 526, though it hedges the manner of death with 'such at least is the account that has come down to us'."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: "Text says he was imprisoned and 'probably in 526' executed, and the preamble gives 'died: 526?'."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: "The preamble gives 'died: 526? C.E.' and §1 says he was imprisoned and 'probably in 526' executed, so the year is hedged in the same way as 0526?."
+    sources:
+      - key: sep-boethius
+        locator: §1
+        stance: asserts
+        excerpt: he was imprisoned and (probably in 526) executed
+      - key: rouse-ball-short-account-history-mathematics
+        locator: p. 110
+        stance: asserts
+        excerpt: born at Rome about 475 and died in 526
+  - id: boethius.active-at.pavia
+    predicate: active-at
+    object: pavia
+    when: 0523/0526
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble says his sons were made consuls in 522 and that within a year he was a solitary prisoner at Pavia; ch. IV note gives Pavia as the place of imprisonment, so about 523 falls inside the range, though the text gives no end date.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The translator's introduction says his sons were consuls in 522 A.D. and 'within a year he was a solitary prisoner at Pavia', and footnote C to Bk. I ch. IV calls Pavia 'the place of Boethius' imprisonment', which places him there from about 523; the text gives no year for his death, so 0526 as the end date is not stated in this source.
+    sources:
+      - key: boethius-consolation-james
+        locator: preamble
+        stance: asserts
+        excerpt: Within a year he was a solitary prisoner at Pavia
+      - key: boethius-consolation-james
+        locator: ch. IV
+        stance: asserts
+        excerpt: Pavia, the place of Boethius' imprisonment
+  - id: boethius.influenced-by.neoplatonists
+    predicate: influenced-by
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble says his writings drew extensively on Greek Neoplatonists such as Porphyry and Iamblichus.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article's opening paragraph states as fact that all his writings 'drew extensively on the thinking of Greek Neoplatonists such as Porphyry and Iamblichus'.
+    sources:
+      - key: sep-boethius
+        locator: preamble
+        stance: asserts
+        excerpt: drew extensively on the thinking of Greek Neoplatonists such as Porphyry and Iamblichus
+  - id: boethius.influenced-by.porphyry
+    predicate: influenced-by
+    object: porphyry
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 2 stresses Boethius's choice of Porphyry as his main authority in logic.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-porphyry
+        note: The text states that Porphyry's monograph on categorical syllogisms formed the basis of Boethius' work on the subject, and it also mentions the logical corpus translated by Boethius.
+    sources:
+      - key: sep-boethius
+        locator: §2
+        stance: asserts
+        excerpt: For what is important is Boethius’s choice of Porphyry as his main authority in logic.
+      - key: sep-porphyry
+        locator: §3.4.1
+        stance: asserts
+        excerpt: a monograph on categorical syllogisms formed the basis of Boethius’ work on the subject
+  - id: boethius.influenced-by.iamblichus
+    predicate: influenced-by
+    object: iamblichus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble names Iamblichus among the Greek Neoplatonists his writings drew on, and section 8 lists Iamblichus among the sources of ideas he transmitted.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-iamblichus
+        note: "Graded B scholarly: §4.2 says Iamblichus' views on the quadrivium, drawing on Nicomachus, were adopted by Martianus Capella and Boethius and through them became part of medieval education; the claim is stated flatly but covers only the quadrivium, not Boethius's thought generally, and the article names no Boethian text."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Iamblichus is named in the opening paragraph as one of the Greek Neoplatonists Boethius drew on extensively, and §8 lists him among those whose ideas Boethius passed on.
+    sources:
+      - key: sep-boethius
+        locator: preamble
+        stance: asserts
+        excerpt: drew extensively on the thinking of Greek Neoplatonists such as Porphyry and Iamblichus
+      - key: sep-iamblichus
+        locator: §4.2
+        stance: asserts
+        excerpt: His views on the quadrivium, drawing upon Nicomachus, were also adopted by Martianus Capella and Boethius
+  - id: boethius.influenced-by.augustine
+    predicate: influenced-by
+    object: augustine
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: Section 4 calls the view in Treatise II 'Augustinian' and says Boethius sets it out faithfully."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: §4 sets out Augustine's view of predication about God and says 'This Augustinian view is faithfully set out in the brief Treatise II', which Treatise I then develops; the influence follows from that rather than being stated outright."
+    sources:
+      - key: sep-boethius
+        locator: §4
+        stance: asserts
+        excerpt: This Augustinian view is faithfully set out in the brief Treatise II.
+  - id: boethius.influenced-by.plato
+    predicate: influenced-by
+    object: plato
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 5 says the Consolation's poem III m. 9 uses terms borrowed from Plato's Timaeus, and section 8 says he transmitted ideas deriving from Plato.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §5 says Consolation III m. 9 invokes God 'in terms borrowed from Plato's Timaeus', and §8 says he passed on ideas and arguments 'deriving from Plato, Aristotle, Alexander of Aphrodisias, Porphyry and Iamblichus'.
+    sources:
+      - key: sep-boethius
+        locator: §5
+        stance: asserts
+        excerpt: an invocation to God in terms borrowed from Plato’s Timaeus
+      - key: sep-boethius
+        locator: §8
+        stance: asserts
+        excerpt: he made available ideas and arguments deriving from Plato, Aristotle, Alexander of Aphrodisias, Porphyry and Iamblichus
+  - id: boethius.influenced-by.proclus
+    predicate: influenced-by
+    object: proclus
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 6 reports only that Noble 2024 argues Boethius adopted Proclus's position on determinism, a revisionist reading set against the usual view that he is an indeterminist.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §6 reports only a revisionist reading ('as Noble 2024 argues') that Boethius took Proclus's position, against the usual view that he is an indeterminist.
+    sources:
+      - key: sep-boethius
+        locator: §6
+        stance: reports
+        excerpt: Suppose, rather (as Noble 2024 argues), Boethius has adopted the position taken by Proclus

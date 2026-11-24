@@ -1,0 +1,221 @@
+id: ibn-rushd
+type: person
+names:
+  en: Ibn Rushd
+notability: 9
+claims:
+  - id: ibn-rushd.born
+    predicate: born
+    when: 1126
+    where: cordoba
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The preamble gives 'Averroes (Ibn Rushd, 1126–98)', which supports 1126 as the birth year, but the text never names Córdoba or any birthplace.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 1.1 states flatly that Ibn Rushd was born in Cordova in 1126.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 states as fact that Ibn Rushd was born in Cordova in 1126.
+    sources:
+      - key: sep-ibn-rushd
+        locator: §1.1
+        stance: asserts
+        excerpt: Abū al-Walīd Muḥammad ibn Ahmad Ibn Rushd was born in Cordova in 1126
+      - key: sep-al-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: Averroes (Ibn Rushd, 1126–98)
+  - id: ibn-rushd.died
+    predicate: died
+    when: 1198
+    where: marrakesh
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says Ibn Rushd and Ibn Zuhr 'both died in 1198' and lived in Marrakesh for many years, but it never says he died at Marrakesh, so the place is unsupported.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 1.1 gives 1198 as the death year, but says only 'according to one account' that he died confined to a residence in Marrakesh.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1.1 gives the death in 1198 while confined to a residence in Marrakesh, but only 'according to one account', after mentioning his exile in Lucena.
+    sources:
+      - key: sep-ibn-rushd
+        locator: §1.1
+        stance: reports
+        excerpt: According to one account, his death took place while he was confined to a residence in Marrakesh in 1198.
+      - key: eor-islam-north-africa
+        locator: preamble
+        stance: asserts
+        excerpt: Ibn Rushd and Ibn Zuhr (who both died in 1198)
+  - id: ibn-rushd.active-at.marrakesh
+    predicate: active-at
+    object: marrakesh
+    when: 11XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-north-africa
+        note: 'Graded A scholarly: The text states that Ibn Rushd (d. 1198) lived in Marrakesh for many years and wrote some of his most important works there during the Almohad period.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 1.1 says he moved in the ruling circles of Marrakesh and later became chief physician to the caliph there, during the reign of Abu Yaʿqub Yusuf (1163-84), which fits an 11XX date.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: §1.1 places him in the ruling circles of Marrakesh, then as chief physician to the caliph there after his meeting with Abū Yaʿqūb Yūsuf (r. 1163–84), which fits the 11XX date.'
+    sources:
+      - key: sep-ibn-rushd
+        locator: §1.1
+        stance: asserts
+        excerpt: Later he became chief physician to the caliph in Marrakesh.
+      - key: eor-islam-north-africa
+        locator: preamble
+        stance: asserts
+        excerpt: Ibn Rushd and Ibn Zuhr (who both died in 1198) lived there for many years and wrote some of their most importantworks there
+  - id: ibn-rushd.influenced-by.aristotle
+    predicate: influenced-by
+    object: aristotle
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-arabic-islamic-greek
+        note: The text says Averroes conceived his project of commenting on the Aristotelian corpus as the sum of philosophical science, and that he drew chiefly on Aristotle and his commentators.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble says it is Aristotle who should be our preeminent guide in philosophy, and the article treats Ibn Rushd's work as largely Aristotelian commentary.
+    sources:
+      - key: sep-ibn-rushd
+        locator: preamble
+        stance: asserts
+        excerpt: it is Aristotle who should be our preeminent guide in philosophy
+      - key: sep-arabic-islamic-greek
+        locator: §5
+        stance: asserts
+        excerpt: This paved the way for Averroes to conceive his project of commenting upon the Aristotelian corpus as the sum of philosophical science
+  - id: ibn-rushd.influenced-by.al-ghazali
+    predicate: influenced-by
+    object: al-ghazali
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: §4 says Averroes accepted al-Ghazālī's rule for reconciling conflicts between reason and the outward meaning of revelation."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: §4 says Averroes accepted al-Ghazālī's rule for reconciling conflicts between reason and the outward meaning of revelation, though he disagreed with al-Ghazālī's findings on what can be demonstrated."
+    sources:
+      - key: sep-al-ghazali
+        locator: §4
+        stance: asserts
+        excerpt: Averroes accepted al-Ghazālī’s rule for reconciling conflicts between reason and the outward meaning of revelation
+  - id: ibn-rushd.critiques.al-ghazali
+    predicate: critiques
+    object: al-ghazali
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: The Western philosophical tradition 'included a refutation of al-Ghazālī's Tahāfut by Ibn Rushd (Averroës)'.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-al-ghazali
+        note: §4 says Averroes composed a refutation of al-Ghazālī's Incoherence, titled Tahāfut al-tahāfut.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 1.2 calls the Incoherence of the Incoherence a direct response to al-Ghazali.
+    sources:
+      - key: sep-ibn-rushd
+        locator: §1.2
+        stance: asserts
+        excerpt: The Incoherence of the Incoherence (Tahāfut al-Tahāfut), a direct response to al-Ghazālī
+      - key: sep-al-ghazali
+        locator: §4
+        stance: asserts
+        excerpt: Averroes composed a refutation of al-Ghazālī’s Incoherence
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: a refutation of al-Ghazālī's Tahāfut by Ibn Rushd (Averroës)
+  - id: ibn-rushd.critiques.ibn-sina
+    predicate: critiques
+    object: ibn-sina
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 6.1 sets Ibn Rushd's conception of God against Ibn Sina's 'insufficiently Aristotelian philosophy', and section 2 says Ibn Sina's views are often the target of Ibn Rushd's logic and that Ibn Rushd rejects his view on demonstration of existence.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §6.1 sets his conception of God against Ibn Sīnā's 'insufficiently Aristotelian philosophy' and says he rejects Ibn Sīnā's a priori arguments, and §2 calls Ibn Sīnā's views 'often the target of Ibn Rushd's logic'.
+    sources:
+      - key: sep-ibn-rushd
+        locator: §6.1
+        stance: asserts
+        excerpt: The various strands of Ibn Rushd’s conception of God are set out on one hand against Ibn Sīnā’s insufficiently Aristotelian philosophy
+      - key: sep-ibn-rushd
+        locator: §2
+        stance: asserts
+        excerpt: Ibn Sīnā, whose views are often the target of Ibn Rushd’s logic
+  - id: ibn-rushd.critiques.al-farabi
+    predicate: critiques
+    object: al-farabi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 2 describes a 'critical and severe interaction' in the long commentary on the Posterior Analytics with al-Farabi and Ibn Sina, but it gives no specific criticism of al-Farabi.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: §2 says his long commentary on the Posterior Analytics is 'a critical and severe interaction' with al-Fārābī and Ibn Sīnā, and §8 adds that he rejected al-Fārābī's complaint about conjunction."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: §2 (Logic and Methodology) says Ibn Rushd's long commentary on the Posterior Analytics is the occasion for 'a critical and severe interaction with the two Islamic authorities in logic before him, al-Fārābī and Ibn Sīnā', and §8 adds that he rejected al-Fārābī's complaint that conjunction is 'an old woman's tale'."
+    sources:
+      - key: sep-ibn-rushd
+        locator: §2
+        stance: asserts
+        excerpt: a critical and severe interaction with the two Islamic authorities in logic before him, al-Fārābī and Ibn Sīnā

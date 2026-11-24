@@ -1,0 +1,80 @@
+id: divine-names
+type: work
+names:
+  en: On the Divine Names
+notability: 6
+claims:
+  - id: divine-names.attributed-to.pseudo-dionysius
+    predicate: attributed-to
+    object: pseudo-dionysius
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: pseudo-dionysius-works-parker
+        note: "Graded A primary: The Chapter_1 heading and opening line present the Divine Names as a letter 'To my Fellow Presbyter, Timothy, Dionysius the Presbyter', so the work is attributed to Dionysius, though that passage does not say 'Areopagite' or 'Pseudo-'."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §3.2 says Dionysius devotes his second theological treatise, On the Divine Names, to a particular kind of divine name, and the article treats the corpus as Pseudo-Dionysius's.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §3.2 says Dionysius devotes his second theological treatise, On the Divine Names, to a particular kind of divine name, so it treats him as the author without qualification.
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: §3.2
+        stance: asserts
+        excerpt: But Dionysius devotes his second theological treatise, entitled On the Divine Names only to a particular kind of divine name.
+      - key: pseudo-dionysius-works-parker
+        locator: Chapter_1
+        stance: asserts
+        excerpt: To my Fellow Presbyter, Timothy, Dionysius the Presbyter.
+  - id: divine-names.composed
+    predicate: composed
+    when: 0485/0528
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: §8 dates the pseudo-epigraphic writings of Dionysius the Areopagite to the early 6th century, which largely fits 485/528, but it names no individual work such as On the Divine Names.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1 places Dionysius's authorship between 485 (Proclus's death) and 518-28 (Severus of Antioch's first citation), a range for the whole corpus that is inferred, not specific to DN.
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: §1
+        stance: asserts
+        excerpt: we can place Dionysius’ authorship between 485 and 518–28 CE
+      - key: sep-neoplatonism
+        locator: §8
+        stance: asserts
+        excerpt: the pseudo-epigraphic writings of Dionysius the Areopagite (early 6th century)
+  - id: divine-names.influenced-by.proclus
+    predicate: influenced-by
+    object: proclus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: §4.1 says DN's theory of evil as privation and non-being is dependent upon one of Proclus' opuscula (cf. DN 4, 18-35)."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: §4.1 says the Divine Names' theory of evil as privation and non-being depends on one of Proclus' opuscula (DN 4, 18–35)."
+    sources:
+      - key: sep-pseudo-dionysius-areopagite
+        locator: §4.1
+        stance: asserts
+        excerpt: about the theory of evil as privation and non-being, however dependent this is upon one of Proclus’ opuscula (cf. DN 4, 18–35)

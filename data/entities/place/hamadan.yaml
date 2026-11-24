@@ -1,0 +1,5 @@
+id: hamadan
+type: place
+names: { en: Hamadan }
+ids: { wikidata: 'Q28587' }
+coords: [48.52, 34.80]

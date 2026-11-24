@@ -1,0 +1,133 @@
+id: theology-of-aristotle
+type: work
+names:
+  en: Theology of Aristotle
+notability: 6
+claims:
+  - id: theology-of-aristotle.translates.enneads
+    predicate: translates
+    object: enneads
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-arabic-islamic-greek
+        note: The text says the circle of al-Kindi produced the translation and reworking of significant parts of Enneads IV-VI, known as the Theology of Aristotle, and calls it an adapted translation of Plotinus.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Theology is the longest and most famous text preserving an Arabic version of Plotinus' Enneads, though the SEP stresses it paraphrases and interpolates, so it is an interpretation and not a plain translation.
+    sources:
+      - key: sep-theology-aristotle
+        locator: §1
+        stance: asserts
+        excerpt: The so-called Theology of Aristotle is the longest, and most famous, text to preserve an Arabic version of the Enneads of Plotinus.
+      - key: sep-arabic-islamic-greek
+        locator: §3
+        stance: asserts
+        excerpt: the circle of al-Kindi produced the translation and reworking of significant parts of the Enneads IV–VI known as the Theology of Aristotle
+  - id: theology-of-aristotle.attributed-to.aristotle
+    predicate: attributed-to
+    object: aristotle
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-arabic-islamic-greek
+        note: "Graded A scholarly: The text lists the Theology among Neoplatonic works falsely attributed to Aristotle, and its opening has the author speak as 'Aristotle', a proclaimed authorship that is false."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-neoplatonism
+        note: 'Graded A scholarly: §8 calls it a pseudo-epigraphical treatise entitled Theology of Aristotle, so it was attributed to Aristotle but is not genuinely his.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: The preface calls the work 'the book of Aristotle' and the title follows from it, but Zimmermann argues this was a later, ill-informed addition and that the Kindi circle did not think Aristotle wrote it."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The preface itself calls the work 'the book of Aristotle', and the article treats this as a misattribution: the authorship is false, but the attribution is stated as fact."
+    sources:
+      - key: sep-theology-aristotle
+        locator: §2
+        stance: disputes
+        excerpt: While it is sometimes suggested that this misattribution was intentional
+      - key: sep-arabic-islamic-greek
+        locator: §3
+        stance: disputes
+        excerpt: the Neoplatonic works falsely attributed to Aristotle in the age of al-Kindi
+      - key: sep-neoplatonism
+        locator: §8
+        stance: disputes
+        excerpt: a pseudo-epigraphical treatise entitled Theology of Aristotle
+  - id: theology-of-aristotle.composed
+    predicate: composed
+    when: 0833/0842
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preface names Ahmad ibn al-Mu'tasim, son of the caliph who reigned 833-842, which gives a fairly reliable date for the Theology or at least for al-Kindi's correction of it, and perhaps for the whole Arabic Plotinus translation.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Because al-Kindi corrected the text for Ahmad, son of the caliph who reigned 833-842, the article calls this 'a fairly reliable date' for producing the Theology, 'or at least' for al-Kindi's correction, and places the translation in the ninth century.
+    sources:
+      - key: sep-theology-aristotle
+        locator: §2
+        stance: asserts
+        excerpt: the son of the ‘Abbasid caliph who reigned from 833–842 AD (218–227 AH), so this gives us a fairly reliable date for the production of the Theology
+      - key: sep-theology-aristotle
+        locator: preamble
+        stance: asserts
+        excerpt: In the ninth century, Plotinus was translated into Arabic.
+  - id: theology-of-aristotle.influenced-by.aristotle
+    predicate: influenced-by
+    object: aristotle
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: A passage calling God 'pure actuality' seems to betray the influence of Aristotle's Metaphysics book 12, which the Kindi circle had translated, though it may only bring out Aristotelian aspects already present in Plotinus.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The passage calling God 'pure actuality' 'seems to betray the influence' of Metaphysics 12 as part of the Arabic version's 'Aristotelianizing tendencies', though the article notes one might instead say it only brings out Aristotelian aspects already in Plotinus.
+    sources:
+      - key: sep-theology-aristotle
+        locator: §4.2
+        stance: asserts
+        excerpt: This passage seems to betray the influence of Aristotle’s Metaphysics, book 12
+  - id: theology-of-aristotle.influenced-by.elements-of-theology
+    predicate: influenced-by
+    object: elements-of-theology
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says only that it has been suggested (D'Ancona 2011a) that Proclus' Elements helped inspire the program of study in the Theology's preface, a tentative proposal limited to the preface.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article only reports a suggestion by D'Ancona 2011a that Proclus' Elements helped to inspire the program of study in the Theology's preface; it does not state this as established.
+    sources:
+      - key: sep-theology-aristotle
+        locator: §3
+        stance: reports
+        excerpt: it has been suggested (D’Ancona 2011a) that the Elements helped to inspire the program of study outlined in the preface to the Theology

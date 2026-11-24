@@ -138,3 +138,185 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: he retired to a Ṣūfī convent at Ṭūs before his death in 1111
+  - id: al-ghazali.critiques.ibn-sina
+    predicate: critiques
+    object: ibn-sina
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: Al-Ghazālī wrote the Tahāfut, 'a powerful critique' of the philosophers' metaphysics, and the Maqāṣid is described as an account of Ibn Sīnā's teaching.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §3 says that at the end of the Incoherence al-Ghazālī judges three teachings of Avicenna (eternal world, God's knowledge of universals only, no bodily return of souls) to be unbelief.
+    sources:
+      - key: sep-al-ghazali
+        locator: §3
+        stance: asserts
+        excerpt: These are three teachings from Avicenna’s philosophy
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: al-Ghazālī wrote a powerful critique of the metaphysics or theology of the philosophers
+  - id: al-ghazali.critiques.al-farabi
+    predicate: critiques
+    object: al-farabi
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: Al-Fārābi is named only as a Neoplatonist whom al-Ghazālī studied; the Tahāfut is said to attack 'the philosophers' generally and al-Fārābi is not named as its target.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §3 says the first and longest discussion of the Incoherence deals with 'Avicenna's and al-F's' arguments for the world's pre-eternity, which al-Ghazālī rejects; 'al-F' is read as al-Fārābī, since §2 gives him that teaching.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §3 says the first discussion of the Incoherence deals with 'Avicenna’s and al-F’s arguments' for the world's pre-eternity and that al-Ghazālī argues an eternal world is impossible; the name is cut off as 'al-F' in text.md, al-Fārābī is named nowhere else in the article, so the referent is inferred rather than stated.
+    sources:
+      - key: sep-al-ghazali
+        locator: §3
+        stance: asserts
+        excerpt: The longest and most substantial discussion is the first, which deals with Avicenna’s and al-F’s arguments in favor of the world’s pre-eternity
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā
+  - id: al-ghazali.influenced-by.ibn-sina
+    predicate: influenced-by
+    object: ibn-sina
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §6 says al-Ghazālī followed Avicenna in holding this universe to be the best of all possible worlds, and §5 says he introduced Avicennan ideas into Ashʿarite kalām.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §5 says al-Ghazālī introduced Avicennan ideas on psychology and prophecy into Ashʿarite kalām and adopted these teachings, and §6 says he followed Avicenna in holding that this is the best of all possible worlds (while differing from him on God's free will).
+    sources:
+      - key: sep-al-ghazali
+        locator: §6
+        stance: asserts
+        excerpt: Al-Ghazālī also followed Avicenna in his conviction that this universe is the best of all possible worlds
+      - key: sep-al-ghazali
+        locator: §5
+        stance: asserts
+        excerpt: al-Ghazālī introduced Avicennan ideas into Ashʿarite kalām
+  - id: al-ghazali.influenced-by.aristotle
+    predicate: influenced-by
+    object: aristotle
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: He was 'very impressed by Aristotelian logic, especially the syllogism', used it in defending doctrine and wrote books on it, though the text does not say he was influenced by Aristotle himself.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §4 says his attitude toward falsafa leads to a widespread application of Aristotelian teachings in his works on theology and ethics, and he adopts the Aristotelian notion of demonstration.
+    sources:
+      - key: sep-al-ghazali
+        locator: §4
+        stance: asserts
+        excerpt: This attitude leads to a widespread application of Aristotelian teachings in al-Ghazālī’s works on Muslim theology and ethics.
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: He himself was very impressed by Aristotelian logic, especially the syllogism.
+  - id: al-ghazali.influenced-by.sufism
+    predicate: influenced-by
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: Under the 'Al-Ghazālī' heading the article says that after his 1095 breakdown he abandoned teaching and sought a solution to his doubts in Sufism, and that his later writings attest the success of that quest (Iḥyāʾ ʿulūm al-Dīn) and that he retired to a Ṣūfī convent at Ṭūs.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §1 says he began changing his lifestyle two years before leaving Baghdad 'under the influence of Sufi literature'; §5 says he adopted the Sufi path.
+    sources:
+      - key: sep-al-ghazali
+        locator: §1
+        stance: asserts
+        excerpt: Under the influence of Sufi literature al-Ghazālī had begun to change his lifestyle two years before his departure
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Al-Ghazālī abandoned his teaching career and sought a solution to his doubts in Sufism
+  - id: al-ghazali.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: After about six months of illness he left his professorship, adopted the life of a Ṣūfī and founded a khānāqāh in Ṭūs; the text notes some Muslim scholars have questioned how genuine his conversion was.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-al-ghazali
+        note: §1 says he founded a Sufi convent (khānqāh) in Ṭūs, and §5 says he adopted the Sufi path; the text never calls him a formal member of an order.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Life' the article says that around 1095 he left his Baghdad professorship to adopt the life of a Sufi, lived as a Sufi in Damascus for more than a year, and later founded a khanaqah at Tus for communal Sufi life; some Muslim scholars questioned whether his conversion was genuine, but the article rejects that doubt and does not dispute that he practised Sufism."
+    sources:
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: After about six months he resolved to leave his professorship and adopt the life of a Ṣūfī.
+      - key: sep-al-ghazali
+        locator: §1
+        stance: asserts
+        excerpt: he founded a small private school and a Sufi convent (khānqāh)
+  - id: al-ghazali.active-at.damascus
+    predicate: active-at
+    object: damascus
+    when: 1095/1096
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: His illness began in 1095, he went to Damascus and lived there as a Ṣūfī for more than a year, and he made the pilgrimage to Mecca in 1096, so 1095/1096 fits.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-al-ghazali
+        note: §1 says he went to Damascus and Jerusalem when he left Baghdad in 1095, and returned via Damascus after the 1096 pilgrimage.
+    sources:
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: Actually he went only to Damascus, living there as a Ṣūfī for more than a year
+      - key: sep-al-ghazali
+        locator: §1
+        stance: asserts
+        excerpt: When al-Ghazālī left Baghdad in 1095 he went to Damascus and Jerusalem

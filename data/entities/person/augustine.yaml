@@ -131,3 +131,282 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: Augustine and his associates were introduced to Plato via the teachings of Plotinus
+  - id: augustine.active-at.thagaste
+    predicate: active-at
+    object: thagaste
+    when: 0354/0391
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: augustine-confessions-pusey
+        note: The text places Augustine at Thagaste before he fled to Carthage, but it gives no years, so the 354/391 span rests on outside chronology.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-augustine-hippo
+        note: The text says he was born in Tagaste, returned there to teach rhetoric and later founded a lay monastery on his estate there, and that a visit to Hippo in 391 led to his conscription; the years are not given for the monastery stay, but 354/391 fits.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he was born in Thagaste and that he was born in 354. It dates the ordination at Hippo to 391 but never says he was at Thagaste in 391, so the interval is only loosely supported.
+    sources:
+      - key: sep-augustine
+        locator: §1
+        stance: asserts
+        excerpt: He was born in Thagaste in Roman Africa (modern Souk Ahras in Algeria).
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: Augustine established a lay retreat, a monastery, for philosophical contemplation, based at his small estate at Tagaste.
+      - key: augustine-confessions-pusey
+        locator: bk. IV
+        stance: asserts
+        excerpt: And thus from Thagaste, I came to Carthage.
+  - id: augustine.active-at.carthage
+    predicate: active-at
+    object: carthage
+    when: 0372~/0383
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: augustine-confessions-pusey
+        note: Book V has Augustine teaching at Carthage until he leaves for Rome, which fits the period; it gives no years, so 372~/383 rests on outside chronology.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-augustine-hippo
+        note: The text has him studying and teaching in Carthage, returning there after a friend's death, and leaving for Rome because of unruly students; no years are stated, but the 372~/383 span is consistent.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text places him in Carthage at about age 18, which gives about 372, and says he moved to Milan in 383.
+    sources:
+      - key: sep-augustine
+        locator: §1
+        stance: asserts
+        excerpt: In Carthage at the age of ca. 18, he found a mistress
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: Unruly students in Carthage occasioned Augustine's decision to leave for Rome
+      - key: augustine-confessions-pusey
+        locator: bk. V
+        stance: asserts
+        excerpt: I should be persuaded to go to Rome, and to teach there rather, what I was teaching at Carthage.
+  - id: augustine.active-at.rome
+    predicate: active-at
+    object: rome
+    when: 0387/0388
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The cited line, 'and I to Rome', describes his first voyage to Rome, which the dating puts at 383 and not 387/388, and the text gives no year.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text places him in Rome after leaving Carthage and again after his 387 baptism and Monica's death at Ostia, where he wrote De immortalitate animae and De quantitate animae; 387/388 is consistent though the text gives only 387 for the baptism.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text names Milan (baptism at Easter 387) and Ostia (Monnica's death, 388) but never says Augustine was at Rome, and Ostia is not Rome.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: After his baptism at Easter 387 and Monica's death at Ostia, Augustine returned to Rome and wrote De immortalitate animae and De quantitate animae before going back to Africa; the text gives no year for the Rome stay, so 387/388 is inferred from that sequence.
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: Returning to Rome, Augustine immersed himself in writing.
+      - key: sep-augustine
+        locator: §1
+        stance: asserts
+        excerpt: who died on the journey (Ostia, 388)
+      - key: augustine-confessions-pusey
+        locator: bk. V
+        stance: asserts
+        excerpt: went to her wonted place, and I to Rome.
+  - id: augustine.influenced-by.neoplatonists
+    predicate: influenced-by
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: augustine-confessions-pusey
+        note: "Graded A primary: Book VII says he read 'certain books of the Platonists, translated from Greek into Latin', and that they taught him to look for incorporeal truth. Book VIII names Victorinus as the translator."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the most lasting philosophical influence on Augustine is Neoplatonism.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: §8 says Neoplatonism profoundly influenced Christian theology through Augustine (354-430) in the West.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §4 states that Neoplatonism is the most lasting philosophical influence on Augustine, citing his reading of the 'books of the Platonists' in 386 and listing features of his thought that are Neoplatonic in origin.
+    sources:
+      - key: sep-augustine
+        locator: §4
+        stance: asserts
+        excerpt: The most lasting philosophical influence on Augustine is Neoplatonism.
+      - key: sep-neoplatonism
+        locator: §8
+        stance: asserts
+        excerpt: Through Augustine (354–430) in the West
+      - key: augustine-confessions-pusey
+        locator: bk. VII
+        stance: asserts
+        excerpt: certain books of the Platonists, translated from Greek into Latin
+  - id: augustine.influenced-by.porphyry
+    predicate: influenced-by
+    object: porphyry
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-augustine
+        note: "Graded B scholarly: The text says most scholars accept that the books of the Platonists included a selection from Porphyry, and that Augustine later read Porphyry's Philosophy from the Oracles and Letter to Anebo."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: sep-neoplatonism
+        note: §1 says Augustine was intimately familiar with the writings of Plotinus and Porphyry.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Porphyry left his mark on the Latin West above all through Augustine, and that works by Porphyry probably figured among the 'books of the Platonists' Augustine read at Milan in 386.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §2 says flatly that Porphyry left his mark on the Latin West above all through Augustine, whose 'books of the Platonists' read at Milan in 386 probably included Porphyry, and calls Augustine 'disciple and adversary of Porphyry' (Madec 1964); only which Porphyrian works he read is disputed (Courcelle vs. Beatrice).
+    sources:
+      - key: sep-porphyry
+        locator: §2
+        stance: asserts
+        excerpt: Porphyry left his mark on the Latin West above all through Augustine.
+      - key: sep-augustine
+        locator: §4
+        stance: asserts
+        excerpt: Today most scholars accept the compromise that the “books of the Platonists” comprised some treatises of Plotinus (e.g., Enneads I.6, I.2, V.1, VI.4–5) and a selection from Porphyry
+      - key: sep-neoplatonism
+        locator: §1
+        stance: asserts
+        excerpt: Augustine of Hippo (354–430) was intimately familiar with the writings of Plotinus and Porphyry
+  - id: augustine.influenced-by.plato
+    predicate: influenced-by
+    object: plato
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: augustine-city-of-god-dods
+        note: 'Graded A primary: In CG 8.5 Augustine says that none of the philosophers come nearer to Christian teaching than the Platonists, and that all other philosophers and the fabulous and civil theologies must give place to them. This is a statement of close doctrinal affinity, not an explicit statement that Plato influenced him.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text states he read Plato in Latin translation, found in him answers on the origin of evil, and built a Platonic metaphysics.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Augustine came to Plato through Plotinus, read Plato in Latin translation, found in him answers on the origin of evil, and later reconciled Platonic idealism with Christian faith.
+    sources:
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: In Plato, Augustine found answers to questions on the origin and meaning of evil that had first drawn him to the sect of Mani.
+      - key: augustine-city-of-god-dods
+        locator: CG 8.5
+        stance: asserts
+        excerpt: It is evident that none come nearer to us than the Platonists.
+  - id: augustine.critiques.porphyry
+    predicate: critiques
+    object: porphyry
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: augustine-city-of-god-dods
+        note: "Graded A primary: CG 10.32 argues that Porphyry never found the universal way of the soul's deliverance, which Augustine identifies with the Christian religion. It also says Porphyry was deterred from becoming a Christian by the persecutions."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: The text says that around 400 Augustine refuted objections to Christianity apparently drawn from Porphyry's Against the Christians (Letter 102)."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-porphyry
+        note: "Graded B scholarly: The text reports Augustine described as 'disciple and adversary of Porphyry' (Madec 1964), which makes the adversarial side a scholarly characterisation and not a detailed account of the critique."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: §1 says that after 400 Augustine refuted objections to Christianity 'apparently extracted' from Porphyry's Against the Christians (Letter 102), so the source of the objections is hedged; §4 adds that he quotes Porphyry in De civitate dei 10."
+    sources:
+      - key: sep-augustine
+        locator: §1
+        stance: asserts
+        excerpt: Augustine refuted a series of objections against Christianity apparently extracted from Porphyry’s treatise Against the Christians
+      - key: sep-porphyry
+        locator: §2
+        stance: reports
+        excerpt: Augustine has been described as at once “disciple and adversary of Porphyry” (Madec 1964).
+      - key: augustine-city-of-god-dods
+        locator: CG 10.32
+        stance: asserts
+        excerpt: Of the universal way of the soul's deliverance, which Porphyry did not find because he did not rightly seek it
+  - id: augustine.critiques.neoplatonists
+    predicate: critiques
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: augustine-city-of-god-dods
+        note: "Graded A primary: CG 10.32 infers that Porphyry's philosophy was either not the truest or did not comprehend the universal way of deliverance. CG 10.29 also rebukes the Platonists for refusing to recognise the incarnation. The target in both places is Porphyry and the Platonists, not Neoplatonists as a labelled group."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Platonism cannot lead to salvation because it will not accept Christ's mediation, and calls it philosophically defective (De civitate dei 10.32).
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §4 says Platonism cannot lead to salvation because it rejects Christ's mediation and is therefore philosophically defective (De civitate dei 10.32), and §3 says Augustine faults the Platonists for pride and for turning to theurgy.
+    sources:
+      - key: sep-augustine
+        locator: §4
+        stance: asserts
+        excerpt: Platonism cannot however lead to salvation because it is unable or unwilling to accept the mediation of Christ.
+      - key: augustine-city-of-god-dods
+        locator: CG 10.32
+        stance: asserts
+        excerpt: either that the philosophy of which he was a disciple was not the truest, or that it did not comprehend such a way

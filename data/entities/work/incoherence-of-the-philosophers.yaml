@@ -1,0 +1,105 @@
+id: incoherence-of-the-philosophers
+type: work
+names:
+  en: The Incoherence of the Philosophers
+notability: 7
+claims:
+  - id: incoherence-of-the-philosophers.attributed-to.al-ghazali
+    predicate: attributed-to
+    object: al-ghazali
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: Al-Ghazālī wrote the Tahāfut al-falāsifah, glossed here as 'The inconsistency of the philosophers', and the Works section lists it among his genuine works.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The preamble says 'Al-Ghazālī's critique of twenty positions of falsafa in his Incoherence of the Philosophers (Tahāfut al-falāsifa)'.
+    sources:
+      - key: sep-al-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: Al-Ghazālī’s critique of twenty positions of falsafa in his Incoherence of the Philosophers (Tahāfut al-falāsifa)
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: al-Ghazālī wrote a powerful critique of the metaphysics or theology of the philosophers entitled Tahāfut al-falāsifah
+  - id: incoherence-of-the-philosophers.composed
+    predicate: composed
+    when: 1095~
+    where: baghdad
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-ghazali
+        note: The Works section says that at Baghdad he turned to philosophy, 'producing the Maqāṣid and the Tahāfut'; the Tahāfut came after his philosophy study that started early in the professorship, which ran from 1091 until he left in 1095, so 1095~ fits only approximately.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §2 says al-Ghazālī's autobiography has him write it in a third year at the Baghdad Niẓāmiyya, which it calls apologetic (the work 'may have been decades in the making'), and says he published his falsafa books around 1095.
+    sources:
+      - key: sep-al-ghazali
+        locator: §2
+        stance: reports
+        excerpt: during his time at the Baghdad Niẓāmiyya he studied the works of the falāsifa for two years before he wrote his Incoherence of the Philosophers in a third year
+      - key: sep-al-ghazali
+        locator: §2
+        stance: asserts
+        excerpt: al-Ghazālī published around 1095 a number of books where he addresses the challenges posed by falsafa
+      - key: eor-ghazali
+        locator: preamble
+        stance: asserts
+        excerpt: At Baghdad he turned to philosophy, producing the Maqāṣid and the Tahāfut
+  - id: incoherence-of-the-philosophers.critiques.ibn-sina
+    predicate: critiques
+    object: ibn-sina
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §3 says the Incoherence names three Avicennan teachings as unbelief, and §7.3 says it criticizes Avicenna's understanding of the modalities in at least three passages.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §3 says the Incoherence condemns three teachings from Avicenna's philosophy as wrong and religiously dangerous, and §7.3 says that in at least three passages of the Incoherence al-Ghazālī criticizes Avicenna's understanding of the modalities.
+    sources:
+      - key: sep-al-ghazali
+        locator: §3
+        stance: asserts
+        excerpt: These are three teachings from Avicenna’s philosophy
+      - key: sep-al-ghazali
+        locator: §7.3
+        stance: asserts
+        excerpt: In at least three passages of the Incoherence al-Ghazālī criticizes Avicenna’s understanding of the modalities.
+  - id: incoherence-of-the-philosophers.critiques.al-farabi
+    predicate: critiques
+    object: al-farabi
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §3 says the Incoherence's first discussion treats 'Avicenna's and al-F's' arguments for the world's pre-eternity; 'al-F' is read as al-Fārābī, and the text gives no separate fatwā against him.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §3 says the Incoherence's first and longest discussion deals with 'Avicenna’s and al-F’s arguments' for the world's pre-eternity, and al-Ghazālī argues an eternal world is impossible; the name is cut off as 'al-F' in text.md and al-Fārābī is named nowhere else in the article.
+    sources:
+      - key: sep-al-ghazali
+        locator: §3
+        stance: asserts
+        excerpt: The longest and most substantial discussion is the first, which deals with Avicenna’s and al-F’s arguments in favor of the world’s pre-eternity

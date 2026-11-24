@@ -1,0 +1,73 @@
+id: confessions
+type: work
+names:
+  en: Confessions
+notability: 8
+claims:
+  - id: confessions.attributed-to.augustine
+    predicate: attributed-to
+    object: augustine
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: augustine-confessions-pusey
+        note: "Graded A primary: The text's opening byline reads 'By Saint Augustine', and the work is written in the first person to God."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-augustine-hippo
+        note: The text states Augustine began his Confessiones two years after becoming bishop, at age forty-three.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls the Confessiones Augustine's probably most original work.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §2 lists the Confessiones (ca. 396–400) among the five long treatises Augustine composed between 396 and 426 and calls it probably his most original work.
+    sources:
+      - key: sep-augustine
+        locator: §2
+        stance: asserts
+        excerpt: The Confessiones (ca. 396–400; Toom 2020), probably his most original work
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: Two years after becoming a bishop, Augustine, now forty-three, began his Confessiones
+      - key: augustine-confessions-pusey
+        locator: preamble
+        stance: asserts
+        excerpt: By Saint Augustine
+  - id: confessions.composed
+    predicate: composed
+    when: 0396~/0400~
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-augustine-hippo
+        note: 'Graded B scholarly: The text gives only the start (two years after his 395 episcopacy, age forty-three, so about 397) and no end date; the 396~/400~ range is approximate and consistent but the end year is not stated.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text dates the Confessiones to ca. 396-400.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §2 dates the Confessiones to ca. 396–400 (Toom 2020), which matches the approximate range 0396~/0400~.
+    sources:
+      - key: sep-augustine
+        locator: §2
+        stance: asserts
+        excerpt: The Confessiones (ca. 396–400; Toom 2020)
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: Two years after becoming a bishop, Augustine, now forty-three, began his Confessiones

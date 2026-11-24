@@ -1,0 +1,195 @@
+id: consolation-of-philosophy
+type: work
+names:
+  en: Consolation of Philosophy
+notability: 8
+claims:
+  - id: consolation-of-philosophy.attributed-to.boethius
+    predicate: attributed-to
+    object: boethius
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: boethius-consolation-james
+        note: The preamble calls it 'the great work of Boethius, with its alternate prose and verse', and the whole introduction treats Boethius as its author.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 1 calls the Consolation of Philosophy Boethius's most popular work and his literary masterpiece.
+    sources:
+      - key: sep-boethius
+        locator: §1
+        stance: asserts
+        excerpt: Boethius’s final years are well known to anyone who has read his most popular work, the Consolation of Philosophy.
+      - key: boethius-consolation-james
+        locator: preamble
+        stance: asserts
+        excerpt: The great work of Boethius, with its alternate prose and verse
+  - id: consolation-of-philosophy.composed
+    predicate: composed
+    when: 0523/0526
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: boethius-consolation-james
+        note: The text places it in the imprisonment at Pavia within a year of 522, and says Boethius died shortly after writing it, but gives no explicit composition year.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says only that he wrote it in prison before his probable 526 execution; it gives no 523 start date, so the 523/526 range is not supported.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §1 says he wrote the Consolation while imprisoned, before his execution 'probably in 526', which supports the 526 end of the range; the source gives no year for his arrest, so it does not attest the 523 start.
+    sources:
+      - key: sep-boethius
+        locator: §1
+        stance: asserts
+        excerpt: he was imprisoned and (probably in 526) executed, but not before he had the chance to write his literary masterpiece
+      - key: boethius-consolation-james
+        locator: preamble
+        stance: asserts
+        excerpt: Within a year he was a solitary prisoner at Pavia
+      - key: boethius-consolation-james
+        locator: bk. V
+        stance: asserts
+        excerpt: Within a short time of writing 'The Consolation of Philosophy,' Boethius died by a cruel death.
+  - id: consolation-of-philosophy.influenced-by.timaeus
+    predicate: influenced-by
+    object: timaeus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: boethius-consolation-james
+        note: The bk. III note says the substance of the poem is taken from Plato's Timaeus 29-42.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 5 says poem III m. 9 is an invocation to God in terms borrowed from Plato's Timaeus.
+    sources:
+      - key: sep-boethius
+        locator: §5
+        stance: asserts
+        excerpt: an invocation to God in terms borrowed from Plato’s Timaeus
+      - key: boethius-consolation-james
+        locator: bk. III
+        stance: asserts
+        excerpt: The substance of this poem is taken from Plato's 'Timæus,' 29-42.
+  - id: consolation-of-philosophy.quotes.timaeus
+    predicate: quotes
+    object: timaeus
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: Bk. III has Philosophy say that, as Plato maintains in the Timaeus, even trivial matters call for divine protection; this is an attributed paraphrase, though the notes also cite Timaeus 27C and 29B as sources.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A primary: In Bk. III ch. IX Philosophy says ''as Plato maintains in the "Timæus," we ought even in the most trivial matters to implore the Divine protection'', and the references list gives this as Timaeus 27 C.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        source: sep-boethius
+        note: "Graded A primary: In bk. III ch. IX Philosophy says 'as Plato maintains in the Timæus, we ought even in the most trivial matters to implore the Divine protection' (the translator's references give Timaeus 27C, which matches Timaeus's call upon God in plato-timaeus-jowett), and the translator notes that the poem which follows (III m. 9) takes its substance from Timaeus 29-42."
+    sources:
+      - key: boethius-consolation-james
+        locator: bk. III
+        stance: asserts
+        excerpt: since, as Plato maintains in the "Timæus," we ought even in the most trivial matters to implore the Divine protection
+  - id: consolation-of-philosophy.quotes.republic
+    predicate: quotes
+    object: republic
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Bk. I quotes Plato's maxim that states would be happy if philosophers ruled, and the editor's note cites it as Republic V. 473 D."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A primary: In Bk. I ch. IV Boethius quotes Plato's maxim that states would be happy if philosophers ruled or rulers turned philosophers, and the end-matter references list (after Bk. V and the epilogue) gives it as Republic V. 473 D, with a second Republic quotation at I. 347 C."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A primary: In bk. I ch. IV Boethius quotes 'by Plato's mouth' the maxim that states would be happy if philosophers ruled them or their rulers turned philosophers, and the translator's list of quotation references (under the bk. V heading) identifies it as Republic V. 473D; plato-republic-jowett has the passage, but no other catalogued source says the Consolation quotes it."
+    sources:
+      - key: boethius-consolation-james
+        locator: bk. I
+        stance: asserts
+        excerpt: Yet thou hast enjoined by Plato's mouth the maxim, "that states would be happy, either if philosophers ruled them, or if it should so befall that their rulers would turn philosophers.
+      - key: boethius-consolation-james
+        locator: bk. V
+        stance: asserts
+        excerpt: Plato, 'Republic,' V. 473, D
+  - id: consolation-of-philosophy.influenced-by.proclus
+    predicate: influenced-by
+    object: proclus
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-boethius
+        note: "Graded C scholarly: Section 6 reports Noble 2024's argument that the Consolation's position matches Proclus's, which is contested against the usual indeterminist reading."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: §3.4 says Proclus' answer on divine foreknowledge and free choice was later taken up in Boethius' Consolation of Philosophy V 6."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: In §3.4 the article states as fact that Proclus' answer to the foreknowledge and free-choice problem (an answer it traces back to Iamblichus) was later taken up by Ammonius and in Boethius' Consolation of Philosophy V 6."
+    sources:
+      - key: sep-proclus
+        locator: §3.4
+        stance: asserts
+        excerpt: Proclus’ answer was later taken up by Ammonius in his Commentary on the De Interpretatione IX and in Boethius’ Consolation of Philosophy V 6
+      - key: sep-boethius
+        locator: §6
+        stance: reports
+        excerpt: Suppose, rather (as Noble 2024 argues), Boethius has adopted the position taken by Proclus
+  - id: consolation-of-philosophy.influenced-by.neoplatonists
+    predicate: influenced-by
+    object: neoplatonists
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Section 5 says the Consolation's arguments draw out the consequences of the Neoplatonic assumptions Boethius accepts.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: §5 says that in Consolation III.10 onward Philosophy argues by drawing 'out the consequences of the Neoplatonic assumptions Boethius accepts'."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: SEP Boethius §5 says Philosophy's arguments from III.10 on 'draw out the consequences of the Neoplatonic assumptions Boethius accepts' to show that the perfect good and happiness are God; it describes the Consolation's argument as drawing on Neoplatonism but names no specific Neoplatonist."
+    sources:
+      - key: sep-boethius
+        locator: §5
+        stance: asserts
+        excerpt: Through a number of arguments which draw out the consequences of the Neoplatonic assumptions Boethius accepts

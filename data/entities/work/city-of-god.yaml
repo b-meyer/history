@@ -1,0 +1,114 @@
+id: city-of-god
+type: work
+names:
+  en: City of God
+notability: 8
+claims:
+  - id: city-of-god.attributed-to.augustine
+    predicate: attributed-to
+    object: augustine
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-augustine-hippo
+        note: The text states Augustine produced De civitate Dei in 413-427 in response to the charge that Christianity caused Rome's fall.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls the City of God Augustine's great apology, prompted by the sack of Rome.
+    sources:
+      - key: sep-augustine
+        locator: §1
+        stance: asserts
+        excerpt: The City of God, Augustine’s great apology, was prompted by this symbolic event
+      - key: eor-augustine-hippo
+        locator: preamble
+        stance: asserts
+        excerpt: Augustine, in 413–427, produced De civitate Dei (City of God)
+  - id: city-of-god.composed
+    predicate: composed
+    when: 0412/0426
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says De civitate dei was begun in 412 and completed in 426.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: §2 states that De civitate dei was begun in 412, two years after the sack of Rome, and completed in 426.'
+    sources:
+      - key: sep-augustine
+        locator: §2
+        stance: asserts
+        excerpt: De civitate dei (begun in 412, two years after the sack of Rome, and completed in 426
+  - id: city-of-god.critiques.neoplatonists
+    predicate: critiques
+    object: neoplatonists
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: augustine-city-of-god-dods
+        note: "Graded A primary: The CG 10.29 chapter heading reads 'the incarnation of our Lord Jesus Christ, which the Platonists in their impiety blush to acknowledge'. The body text says the Platonists see the destination but not the way, and refuse to recognise the incarnation of the Son."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Platonism cannot lead to salvation and is philosophically defective, citing De civitate dei 10.32. It also cites City of God 8 and 10 for Augustine's engagement with Platonists.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: §4 grounds the claim that Platonism cannot save because it rejects Christ's mediation in De civitate dei 8.5–8 and 10.32, so the critique is located in the City of God."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        source: sep-porphyry
+        note: "Graded A primary: SEP §4 says that in De civitate dei 8 Platonism shares some insights with Christianity but 'cannot however lead to salvation because it is unable or unwilling to accept the mediation of Christ' (citing CG 10.32), and §8 says bks. 8-10 attack Platonic philosophy for refusing Christ's mediation out of pride; the Dods CG 10.29 chapter heading reads 'Of the incarnation of our Lord Jesus Christ, which the Platonists in their impiety blush to acknowledge', and its text rebukes Porphyry for refusing to recognise the incarnation."
+    sources:
+      - key: sep-augustine
+        locator: §4
+        stance: asserts
+        excerpt: Platonism cannot however lead to salvation because it is unable or unwilling to accept the mediation of Christ
+      - key: augustine-city-of-god-dods
+        locator: CG 10.29
+        stance: asserts
+        excerpt: Of the incarnation of our Lord Jesus Christ, which the Platonists in their impiety blush to acknowledge.
+  - id: city-of-god.critiques.porphyry
+    predicate: critiques
+    object: porphyry
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The CG 10.32 heading says Porphyry did not find the universal way of the soul's deliverance because he did not rightly seek it. The body text argues that Porphyry himself admits he does not know the way.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: sep-porphyry
+        note: "Graded B scholarly: The text says Porphyry's On the Return of the Soul is known through long extracts in City of God X, and that Augustine repeatedly cites Porphyry's admission that he had not found a 'universal way for the liberation of the soul'. It does not itself call this a critique, so the critical use is inferred."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: CG 10.32 argues against Porphyry's De Regressu Animae claim that no universal way of the soul's deliverance had been found, says the philosophy he followed was not the truest, and says persecution kept him from becoming a Christian.
+    sources:
+      - key: augustine-city-of-god-dods
+        locator: CG 10.32
+        stance: asserts
+        excerpt: Of the universal way of the soul's deliverance, which Porphyry did not find because he did not rightly seek it
+      - key: sep-porphyry
+        locator: §3.1
+        stance: asserts
+        excerpt: Augustine also repeatedly cites Porphyry’s admission that he had not yet found a “universal way for the liberation of the soul”
