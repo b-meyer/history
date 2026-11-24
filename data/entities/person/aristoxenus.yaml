@@ -1,0 +1,27 @@
+id: aristoxenus
+type: person
+names:
+  en: Aristoxenus
+notability: 5
+claims:
+  - id: aristoxenus.active-at.tarentum
+    predicate: active-at
+    object: tarentum
+    when: ../-0349~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Aristoxenus was born in Tarentum and left as a young man, reaching Athens ca. 350 BCE, so an open-start interval ending about 350 BCE (-0349~) fits.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §3.5 says Aristoxenus (ca. 375-ca. 300 BCE) was born in Tarentum and left it as a young man, eventually coming to Athens ca. 350 (Fr. 1 Wehrli); this places his time at Tarentum before about 350, but the text gives no date for when he left.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §3.5
+        stance: asserts
+        excerpt: When Aristoxenus left Tarentum, as a young man, and eventually came to Athens (ca. 350)

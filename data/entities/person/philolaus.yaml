@@ -43,3 +43,29 @@ claims:
         locator: DL 8.84
         stance: asserts
         excerpt: 'Philolaus of Croton was a Pythagorean'
+  - id: philolaus.active-at.metapontum
+    predicate: active-at
+    object: metapontum
+    when: -0453
+    confidence: C
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: SEP §1.1 reports Plutarch's story that Philolaus escaped the 454 BCE burning of the Pythagorean meeting place in Metapontum, but says earlier versions (Aristoxenus in Iamblichus VP 249-50) omit him, so it is 'far from certain' he was involved, and nothing places him at Metapontum in 454/453 BCE as fact.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded C primary: SEP §1.1 reports Plutarch's story (On the Sign of Socrates 583a) that the young Philolaus escaped the burning of the Pythagorean meeting place at Metapontum in 454, but notes earlier versions (Aristoxenus in Iamblichus, VP 249-50) omit him, so it is far from certain he was involved."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        source: sep-pythagoreanism
+        note: "Graded C primary: SEP §1.1 reports only Plutarch's story (On the Sign of Socrates 583a) that the young Philolaus escaped the burning of the Pythagorean meeting place at Metapontum in 454, adding that earlier versions (Aristoxenus in Iamblichus, VP 249-50) omit him and that his involvement is far from certain; sep-pythagoreanism §3.4 calls Plutarch's version a later romantic one in which Philolaus' famous name has replaced Archippus."
+    sources:
+      - key: sep-philolaus
+        locator: §1.1
+        stance: reports
+        excerpt: Plutarch’s story that as a young man Philolaus was one of two to escape the burning of the Pythagorean meeting place in Metapontum in 454

@@ -1,0 +1,27 @@
+id: syrianus
+type: person
+names:
+  en: Syrianus
+notability: 5
+claims:
+  - id: syrianus.head-of.academy
+    predicate: head-of
+    object: academy
+    when: 0432/0437
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: After Plutarch's death in 432 Syrianus became head of the Academy, and he held the post until his death in 437.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 1.1 says Syrianus became head of the Academy after Plutarch died in 432, and that Proclus succeeded him at his death in 437.
+    sources:
+      - key: sep-proclus
+        locator: §1.1
+        stance: asserts
+        excerpt: After Plutarch’s death in 432, Syrianus became the head of the Academy.

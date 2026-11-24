@@ -238,3 +238,24 @@ claims:
         locator: §1
         stance: asserts
         excerpt: Carefully selected passages from Plato’s dialogues
+  - id: plotinus.active-at.campania
+    predicate: active-at
+    object: campania
+    when: 0269/0270
+    confidence: B
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B primary: Porphyry says the ailing Plotinus left Rome for Zethos' Campanian property, and he died at the end of Claudius' second year (about 270). The text gives no explicit date for the move, so 0269/0270 is inferred."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B primary: Ch. 2 says that, when his illness grew acute after Porphyry left for Sicily, Plotinus left Rome for Campania, to Zethos' former property, and died there at the end of the second year of Claudius; the text gives no date for the move itself, so the start year is inferred."
+    sources:
+      - key: porphyry-life-of-plotinus-mackenna
+        locator: p. 2
+        stance: asserts
+        excerpt: he therefore left Rome for Campania, retiring to a property which had belonged to Zethos

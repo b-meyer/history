@@ -1,0 +1,26 @@
+id: sententiae
+type: work
+names:
+  en: Sententiae
+notability: 4
+claims:
+  - id: sententiae.attributed-to.porphyry
+    predicate: attributed-to
+    object: porphyry
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: §2 lists the Starting-points Leading to the Intelligibles, usually called the Sententiae, among Porphyry's extant works, and §3 calls it the only extant work certainly attributable to him that sets out his basic views.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Section 2 lists the Starting-points Leading to the Intelligibles (Sententiae) among Porphyry's extant works, and section 3 calls it the only extant work certainly attributable to him in which he sets out his basic views.
+    sources:
+      - key: sep-porphyry
+        locator: §2
+        stance: asserts
+        excerpt: the Starting-points Leading to the Intelligibles, usually referred to as the Sententiae

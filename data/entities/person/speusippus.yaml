@@ -1,0 +1,56 @@
+id: speusippus
+type: person
+names:
+  en: Speusippus
+notability: 5
+claims:
+  - id: speusippus.nephew-of.plato
+    predicate: nephew-of
+    object: plato
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: DL 3.4 says Plato had a sister, Potone, who was the mother of Speusippus, which makes Speusippus his nephew.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: DL 3.4 says that Plato's sister Potone was the mother of Speusippus, which makes Speusippus Plato's nephew.
+    sources:
+      - key: diogenes-laertius-lives-hicks
+        locator: DL 3.4
+        stance: asserts
+        excerpt: a sister, Potone, who was the mother of Speusippus
+  - id: speusippus.successor-of.plato
+    predicate: successor-of
+    object: plato
+    when: -0347/-0346
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls Speusippus 'Plato's successor as head of the Academy' but gives no date, so the -0347/-0346 timing is not confirmed by this source.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: mactutor-academy
+        note: "Graded B scholarly: The text lists the Academy's first heads in order (Plato, Speusippus, Xenocrates, Polemon, Crates, Crantor), so Speusippus follows Plato, but it gives no date for the succession (only 387 BC for the founding and 265 BC for Arcesilaus)."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: §4.1 calls Speusippus 'Plato's successor as head of the Academy' as plain fact; the text gives no date for the succession, so -0347/-0346 comes from elsewhere.
+    sources:
+      - key: sep-pythagoreanism
+        locator: §4.1
+        stance: asserts
+        excerpt: Speusippus, Plato’s successor as head of the Academy
+      - key: mactutor-academy
+        locator: preamble
+        stance: asserts
+        excerpt: 'The first few to lead the Academy were: Plato, Speuisppus, Xenocrates, Polemon, Crates and Crantor.'

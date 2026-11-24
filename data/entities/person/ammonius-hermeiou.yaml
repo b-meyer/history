@@ -1,0 +1,26 @@
+id: ammonius-hermeiou
+type: person
+names:
+  en: Ammonius Hermeiou
+notability: 5
+claims:
+  - id: ammonius-hermeiou.student-of.proclus
+    predicate: student-of
+    object: proclus
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The abstract says Proclus influenced the Alexandrian school, 'where his student Ammonius became the head of the school'."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The opening paragraph says Proclus influenced the Alexandrian school, where his student Ammonius became head of the school.'
+    sources:
+      - key: sep-proclus
+        locator: preamble
+        stance: asserts
+        excerpt: his student Ammonius became the head of the school

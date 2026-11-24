@@ -70,3 +70,28 @@ claims:
         locator: p. 22
         stance: asserts
         excerpt: Archytas, circ. 400 b.c., was one of the most influential citizens of Tarentum
+  - id: archytas.student-of.philolaus
+    predicate: student-of
+    object: philolaus
+    confidence: C
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: SEP says Cicero reports Archytas was Philolaus's pupil and that this is 'not improbable', a hedged report from a late source rather than established fact.
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded C primary: §1.1 says only that Cicero (de Orat. III 34.139) reports Archytas was Philolaus' pupil, which the author judges 'not improbable' since Philolaus was the leading Pythagorean of the previous generation and may have taught in Tarentum."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        source: sep-philolaus
+        note: "Graded C primary: SEP §1.1 says only Cicero (de Orat. III 34.139) reports that Archytas was Philolaus' pupil and judges this 'not improbable', since Philolaus may have taught in Tarentum, so the claim rests on one late report that the author finds plausible."
+    sources:
+      - key: sep-archytas
+        locator: §1.1
+        stance: reports
+        excerpt: reports that Archytas was the pupil of Philolaus, and this is not improbable

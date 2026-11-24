@@ -1,0 +1,35 @@
+id: sopater
+type: person
+names:
+  en: Sopater
+notability: 3
+claims:
+  - id: sopater.student-of.iamblichus
+    predicate: student-of
+    object: iamblichus
+    confidence: A
+    basis: primary
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Sec. 1.1 names Sopater, Iamblichus' patron at Apamea, among the school's students, the most conspicuous being Sopater himself, who died through a plot at Constantine's court.
+      - on: 2026-11-23
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eunapius-lives-wright
+        note: "Graded A primary: Among the disciples who flocked to Iamblichus, Eunapius says 'Sopater the Syrian was of their number', a man most eloquent in speech and writing."
+      - on: 2026-11-23
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A primary: §1.1 says Iamblichus, welcomed at Apamea by the notable Sopater, founded a school whose most conspicuous students included 'Sopater himself', and §2.4 confirms that Eunapius' list of Iamblichus' students includes Sopater the Syrian."
+    sources:
+      - key: sep-iamblichus
+        locator: §1.1
+        stance: asserts
+        excerpt: among whom the most conspicuous are Sopater himself
+      - key: eunapius-lives-wright
+        locator: p. 365
+        stance: asserts
+        excerpt: for Sopater the Syrian was of their number
