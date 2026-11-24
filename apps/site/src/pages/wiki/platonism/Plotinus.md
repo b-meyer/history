@@ -19,9 +19,9 @@ According to Porphyry, Plotinus was discouraged by the teachers he first heard a
 
 ## Teaching in Rome
 
-For his first ten years in Rome Plotinus wrote nothing. He held conferences with a circle of associates and based them on what he had learned from Ammonius. About the first year of Gallienus he began to write on subjects that had come up in the conferences. [@porphyry-life-of-plotinus-mackenna, p. 4] Amelius, one of the circle, had transcribed and arranged nearly all of the works of [[numenius]]. [@porphyry-life-of-plotinus-mackenna, pp. 4-5] Porphyry came from Greece in the tenth year of Gallienus and stayed about six years. [@porphyry-life-of-plotinus-mackenna, pp. 4-5]
+For his first ten years in Rome Plotinus wrote nothing. He held conferences with a circle of associates and based them on what he had learned from Ammonius. About the first year of Gallienus he began to write on subjects that had come up in the conferences. [@porphyry-life-of-plotinus-mackenna, p. 4] [[amelius]], one of the circle, had transcribed and arranged nearly all of the works of [[numenius]]. [@porphyry-life-of-plotinus-mackenna, pp. 4-5] Porphyry came from Greece in the tenth year of Gallienus and stayed about six years. [@porphyry-life-of-plotinus-mackenna, pp. 4-5]
 
-Porphyry says that Gallienus and his wife Salonina honored Plotinus, and that he asked the emperor to rebuild a ruined city of philosophers in Campania, to be called Platonopolis and governed by Plato's laws. Opposition at court ended the plan. [@porphyry-life-of-plotinus-mackenna, p. 12]
+Porphyry says that Gallienus and his wife Salonina honored Plotinus, and that he asked the emperor to rebuild a ruined city of philosophers in [[campania]], to be called Platonopolis and governed by Plato's laws. Opposition at court ended the plan. [@porphyry-life-of-plotinus-mackenna, p. 12]
 
 When his health failed, Plotinus left Rome for Campania. He died there at the end of the second year of Claudius, according to Eustochius, the one friend at his bedside. [@porphyry-life-of-plotinus-mackenna, p. 2] Eustochius reported that Plotinus's last words were that he was striving to give back the Divine in himself to the Divine in the All. [@porphyry-life-of-plotinus-mackenna, p. 2]
 

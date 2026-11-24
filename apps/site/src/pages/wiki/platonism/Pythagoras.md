@@ -19,7 +19,7 @@ The three fullest ancient lives, by Diogenes Laertius, Porphyry and Iamblichus, 
 
 ## Life
 
-Diogenes Laertius gives two origins for him. Hermippus calls him a Samian, and Aristoxenus calls him a Tyrrhenian. [@diogenes-laertius-lives-hicks, DL 8.1] Aristoxenus also says that Pythagoras left Samos at forty, when the tyranny of Polycrates became unbearable, which would put his birth around 570 BCE. [@sep-pythagoras, §3]
+Diogenes Laertius gives two origins for him. Hermippus calls him a Samian, and [[aristoxenus]] calls him a Tyrrhenian. [@diogenes-laertius-lives-hicks, DL 8.1] Aristoxenus also says that Pythagoras left Samos at forty, when the tyranny of Polycrates became unbearable, which would put his birth around 570 BCE. [@sep-pythagoras, §3]
 
 Diogenes says that Pythagoras returned to Samos, found his country under Polycrates, and sailed to Croton, where he laid down a constitution for the Italian Greeks. [@diogenes-laertius-lives-hicks, DL 8.3] The modern account dates the move to about 530 BCE and says that Croton is where he first seems to have attracted a large number of followers. [@sep-pythagoras, §3] Iamblichus tells that on his arrival he had many followers, "six hundred" by one count. [@iamblichus-pythagoric-life-taylor, ch. V] The community that formed around him is the subject of [[pythagoreans]].
 
