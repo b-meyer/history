@@ -47,4 +47,4 @@ The dispute with Porphyry was older than the City of God. After 400 Augustine an
 
 Porphyry's mark on the Latin West came above all through Augustine. [@sep-porphyry, §2] The Stanford Encyclopedia names Augustine in the West, beside the Cappadocian Fathers in the East, as a channel through which Neoplatonism reached Christian theology. [@sep-neoplatonism, §8]
 
-The link to [[boethius]] rests on one doctrine. Augustine distinguished relative from substantial predication about God, and the Stanford Encyclopedia says that Boethius set out this Augustinian view faithfully in his second theological treatise. [@sep-boethius, §4]
+The Stanford Encyclopedia ties [[boethius]] to Augustine through the theological treatises. Augustine distinguished relative from substantial predication about God, Boethius set out this view faithfully in his second treatise, and the treatises use logical analysis in theology, a method Augustine had anticipated without developing it. [@sep-boethius, §4]
