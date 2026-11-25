@@ -80,6 +80,7 @@ All commands from the **repo root**.
 - `vue-router@~5.0.7` is intentional (in-dev next major). Do not upgrade to v4.
 - Cross-links in markdown: `[Display](Other.md)` — resolves to `/Other` from the site root. Never hardcode `/Other`.
 - Sidebar groups of supplementary pages carry `extra: true` (between `group` and `items`) to render de-emphasized.
+- Commits and PR titles follow Conventional Commits, `type(scope): description`. The scope is the part the change is about (`data`, `wiki`, `site`, `graph`, `map`, `verify`). PRs land by squash merge.
 
 ## Content writing
 
