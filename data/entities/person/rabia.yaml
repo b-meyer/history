@@ -1,0 +1,114 @@
+id: rabia
+type: person
+names:
+  en: Rabia al-Adawiyya
+claims:
+  - id: rabia.died
+    predicate: died
+    when: 0801
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The article gives Rabi'ah al-'Adawiyah as d. 801.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry opens by giving her death as AH 185/801 CE and states it without qualification.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text gives Rabia al-Adawiyya as 'd. 801'.
+    sources:
+      - key: eor-rabiah
+        locator: preamble
+        stance: asserts
+        excerpt: RĀBIʿAH AL-ʿADAWĪYAH (d. ah 185/801 ce), was an Arab mystic, poet, and Muslim saint.
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Rābiʿah al-ʿAdawīyah (d. 801)
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: the famous celibate saint Rābīʿah al-ʿAdawīyah (d. 801)
+  - id: rabia.born
+    predicate: born
+    when: 0713/0718
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: No birth year is given; the text says Hasan died in 728 when Rabi'ah was at best in her early teens, which implies a birth around 713 to 718 only by inference.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The entry says Hasan al-Basri died in 728 when Rabiah was about ten, which puts her birth near 718 (inside 0713/0718), but it gives no birth year and the age is approximate.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The entry gives no birth year but says Hasan al-Basri died in 728 when Rabiah was only about ten, implying birth around 718, the upper end of the claimed 713/718 range.'
+    sources:
+      - key: eor-rabiah
+        locator: preamble
+        stance: asserts
+        excerpt: died in 728, when Rābiʿah was only about ten years old
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Ḥasan died in 728, when Rābiʿah was at best in her early teens.
+  - id: rabia.active-at.basra
+    predicate: active-at
+    object: basra
+    when: 0718/0801
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry says she was for some time a house servant in Basra before her master freed her, and calls her Rabiah of Basra, but it gives no dates for the Basra period.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The entry calls her Rabiah of Basra, says she was a house servant in Basra and later lived in retirement attracting seekers, and dates her death to AH 185/801 CE, consistent with activity at Basra up to 801, though it gives no start date.
+    sources:
+      - key: eor-rabiah
+        locator: preamble
+        stance: asserts
+        excerpt: For some time she was a house servant in Basra, but, thanks to her amazing piety, her master released her from bondage.
+  - id: rabia.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Rabi'ah is called one of the first great female Sufis.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text calls Rabia al-Adawiyya the famous celibate saint among women Sufis.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: one of the first great female Ṣūfīs, Rābiʿah al-ʿAdawīyah (d. 801)
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: the lives of women Ṣūfīs attests to the involvement of many women besides the famous celibate saint Rābīʿah al-ʿAdawīyah (d. 801)

@@ -1,0 +1,73 @@
+id: kashf-al-mahjub
+type: work
+names:
+  en: Kashf al-Mahjub
+notability: 6
+claims:
+  - id: kashf-al-mahjub.attributed-to.al-hujwiri
+    predicate: attributed-to
+    object: al-hujwiri
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry states he was the author of Kashf al-mahjub.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The text calls al-Hujwiri 'the author of the famous Sufi manual Kashf al-mahjub'.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text names the Kashf al-maḥjūb as a manual of al-Hujwīrī (d. 1071/2?).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: "Graded A primary: The book opens with 'Ali b. Uthman b. Ali al-Jullabi al-Ghaznawi al-Hujwiri says as follows' and the author states he put his name at the beginning to secure authorship."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The entry states plainly that al-Hujwiri was the author of Kashf al-mahjub, an early Persian textbook of Sufism.
+    sources:
+      - key: eor-hujwiri
+        locator: preamble
+        stance: asserts
+        excerpt: was the author of Kashf al-maḥjūb (The unveiling of the secrets)
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Shaykh ʿAlī al-Hujwīrī, the author of the famous Ṣūfī manual Kashf al-maḥjūb
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: the Kashf al-maḥjūb (Unveiling of the veiled) of ʿAlī ibn ʿUthmān al-Jullābī al-Hujwīrī (d. 1071/2?)
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: '`Alí b. `Uthmán b. `Alí al-Jullábí al-Ghaznawí al-Hujwírí (may God be well pleased with him!) says as follows:—'
+  - id: kashf-al-mahjub.quotes.risala-qushayriyya
+    predicate: quotes
+    object: risala-qushayriyya
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Nicholson states the Kashf contains a Persian rendering of some passages in the Risala of Qushayri.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Nicholson states that the Kashf al-Mahjub contains a Persian rendering of some passages in Qushayri's Risala."
+    sources:
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: The _Kashf al-Maḥjúb_ contains a Persian rendering of some passages in the _Risála_ of Qushayrí

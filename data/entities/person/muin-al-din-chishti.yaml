@@ -1,0 +1,124 @@
+id: muin-al-din-chishti
+type: person
+names:
+  en: Muin al-Din Chishti
+claims:
+  - id: muin-al-din-chishti.founder-of.chishtiyya
+    predicate: founder-of
+    object: chishtiyya
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The text calls Muin al-Din Chishti 'the founder of the order' (the Chishti order) while describing the Ajmer dargah.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the Chishtīyah was founded by Muʿīn al-Dīn Chishtī (d. 1236), a native of Sīstān.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: It was founded by Muʿīn al-Dīn Chishtī (d. 1236), a native of Sīstān
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Muʿīn ad-Dīn Chishtī, the founder of the order, is buried
+  - id: muin-al-din-chishti.died
+    predicate: died
+    when: 1236
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text gives Muʿīn al-Dīn Chishtī as (d. 1236).'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Chishtiyah section says the order was founded by Muin al-Din Chishti (d. 1236).'
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: It was founded by Muʿīn al-Dīn Chishtī (d. 1236)
+  - id: muin-al-din-chishti.active-at.delhi
+    predicate: active-at
+    object: delhi
+    when: 1193
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Muin al-Din Chishti arrived in Delhi in 1193 before moving to Ajmer.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Muin al-Din Chishti arrived in Delhi in 1193 before moving on to Ajmer.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Chishtīyah' the text says Muʿīn al-Dīn Chishtī 'arrived in Delhi in 1193 and then moved to Ajmer'; eor-islam-south-asia mentions only his settling in Ajmer and does not confirm the Delhi stop.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: He arrived in Delhi in 1193 and then moved to Ajmer
+  - id: muin-al-din-chishti.active-at.ajmer
+    predicate: active-at
+    object: ajmer
+    when: 1193/1236
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says Khwajah Muin ad-Din settled in Ajmer 'in the 1290s' (alongside the Ghurid invasions of the late twelfth century), which does not give the claimed 1193/1236 dates.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says he moved to Ajmer after reaching Delhi in 1193 and founded a khanaqah there, and gives his death as 1236, though it does not say he stayed in Ajmer until then.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: After arriving in Delhi in 1193 he moved to Ajmer and founded a khanaqah there; the text gives no arrival date, so 1193/1236 is bounded by his Delhi arrival and death.'
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: He arrived in Delhi in 1193 and then moved to Ajmer, an important city in newly conquered Rajputana, where he founded a khānaqāh.
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: introduced by Khwājah Muʿīn ad-Dīn who settled in Ajmer (Rajasthan) in the 1290s
+  - id: muin-al-din-chishti.buried-at.ajmer
+    predicate: buried-at
+    object: ajmer
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the 'mother' dargah at Ajmer is where Muin ad-Din Chishti, founder of the order, is buried.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text calls Ajmer the "mother" dargah where Muin ad-Din Chishti, founder of the order, is buried.
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: the "mother" dargāh at Ajmer where Muʿīn ad-Dīn Chishtī, the founder of the order, is buried

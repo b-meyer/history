@@ -1,0 +1,135 @@
+id: suhrawardiyya
+type: school
+names:
+  en: Suhrawardiyya
+claims:
+  - id: suhrawardiyya.branch-of.sufism
+    predicate: branch-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The Suhrawardiyah is described as a Sufi fraternity characterized by serious training in the classical Sufi tradition.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls the Suhrawardiyah one of the oldest tariqahs.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: One of the oldest ṭarīqah s is the Suhrawardīyah
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: While the ethos of the Suhrawardīyah is characterized by serious training in the classical Ṣūfī tradition
+  - id: suhrawardiyya.opened
+    predicate: opened
+    when: 11XX/12XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The order was founded by Shihab al-Din al-Suhrawardi (d. 1234), nephew of Abu al-Najib (d. 1168); no founding year is stated, so 11XX/12XX is inferred from these dates.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text credits the order's origins to Abu al-Najib (d. 1168) and his nephew Shihab al-Din (1145-1234), so a 12th-13th century span fits.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Its origins, however, are credited to Abū al-Najīb and his nephew, Shihāb al-Dīn
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The fraternity that bears the name Suhrawardi was founded by Abū al-Najīb 's nephew, Shihāb al-Dīn Abū Ḥafṣ ʿUmar al-Suhrawardī (d. 1234).
+  - id: suhrawardiyya.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 1203/1234
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text places the Suhrawardiyah only generally 'in Iraq' and never names Baghdad or gives dates for activity there.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the Abbasid caliph al-Nasir built a ribat for Shihab al-Din in 1203 and gives his death as 1234, with Abu al-Najib teaching at the Nizamiyah college in Baghdad, though it does not name Baghdad as the ribat's site.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The Abbasid caliph al-Nasir built a ribat for Shihab al-Din (1145-1234) and his disciples in 1203; the text does not name the city of the ribat, though it places the founder Abu al-Najib's teaching in Baghdad.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: The Abbasid caliph al-Nāṣir built a ribāṭ for Shihāb al-Dīn and his disciples in 1203
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: In Iraq, as well, there arose two fraternities with diametrically opposed interpretations of religious experience.
+  - id: suhrawardiyya.active-at.multan
+    predicate: active-at
+    object: multan
+    when: 12XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text names Multan as a Suhrawardi headquarters where Baha ad-Din Zakariya (1182-1262) resided, so thirteenth-century (12XX) activity.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The Suhrawardiyah made inroads in the Indian subcontinent, with Baha' al-Din Zakariya of Multan (d. 1268); the 12XX period follows from his death date.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text names Multan, where Shaykh Baha ad-Din Zakariya (1182-1262) resided, as a Suhrawardi spiritual headquarters.'
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: 'Their spiritual headquarters were in the southwest Punjab: at Multan where Shaykh Bahāʾ ad-Dīn Zakarīyāʾ (1182–1262) resided'
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The Suhrawardīyah made significant inroads into the Indian subcontinent, where its ranks included such important figures as Bahāʾ al-Dīn Zakarīyā of Multan (d. 1268).
+  - id: suhrawardiyya.active-at.uchch
+    predicate: active-at
+    object: uchch
+    when: 12XX/1384
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text names Uchch as a Suhrawardi headquarters where Jalal ad-Din Surkhpush Bukhari (d. 1292) and his grandson Makhdum-i Jahaniyan (1308-1384) lived.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text names Uchch as a Suhrawardi headquarters where Jalal ad-Din Surkhpush Bukhari (d. 1292) and his grandson Makhdum-i Jahaniyan (1308-1384) lived.'
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: at Uchch where Sayyid Jalāl ad-Dīn Surkhpush ("red-dressed") Bukhārī (d. 1292) and his grandson Jalāl ad-Dīn Makhdūm-i Jahāniyān ("lord of the mortals," 1308–1384) lived

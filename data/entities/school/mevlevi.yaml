@@ -93,3 +93,97 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: His community of disciples in Konya was systematized into an order by Sulṭān Walad (d. 1312)
+  - id: mevlevi.active-at.constantinople
+    predicate: active-at
+    object: constantinople
+    when: 1775/1799
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says that from the late eighteenth century visiting Mevlevi lodges to watch the turning ceremony became part of European tourists' experience of Istanbul.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: From the late eighteenth century European tourists visited Mevlevi lodges in Istanbul to watch the Whirling Dervish ceremonies.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Mawlawīyah' the text says that from the late eighteenth century European tourists in Istanbul visited Mevlevi lodges to watch the turning ceremony, so the lodges were active there then; 1775/1799 is an approximation of 'late eighteenth century'.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Beginning in the late eighteenth century, a visit to one of the Mevlevi lodges to observe one of these so-called Whirling Dervish ceremonies became an important part of European tourists' experience of Istanbul.
+  - id: mevlevi.closed
+    predicate: closed
+    when: 1925
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The order was abolished in 1925 by Kemal Ataturk, like all mystical fraternities.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text states that Kemal Ataturk abolished the Mevlevi order in 1925, along with all mystical fraternities.
+    sources:
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: The order was abolished, like all mystical fraternities, in 1925 by Kemal Atatürk
+  - id: mevlevi.influenced-by.mathnawi
+    predicate: influenced-by
+    object: mathnawi
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Mawlawiyah's particular identity is derived from Rumi's Mathnavi and the Divan-i Shams-i Tabrizi.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: rumi-mesnevi-redhouse
+        note: "Graded B scholarly: The D'Herbelot epigraph says the Mevlevi dervishes make the Master's work their capital text, respect it almost as the Quran, and so the Mathnawi is also called Mevlevi."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article states the Mawlawiyah's particular identity is derived from Rumi's Mathnavi and the Divan-i Shams-i Tabrizi.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The order's particular identity is derived, of course, from Rūmī's Mathnavī and the Divāni Shams-i Tabrīzī.
+      - key: rumi-mesnevi-redhouse
+        locator: preamble
+        stance: reports
+        excerpt: lesquels on appelle ordinairement Mevlevis, qui font leur Capital de l’ouvrage de leur Maistre
+  - id: mevlevi.influenced-by.shia
+    predicate: influenced-by
+    object: shia
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says Dīwānah Muḥammad Chalabī and Yūsuf Sīnachāk introduced Shīʿī influences into the Mevlevi order in the mid-sixteenth century.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: In the mid-sixteenth century Diwanah Muhammad Chalabi and Yusuf Sinachak introduced Shii influences into the Mevlevi order.'
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: its character did change somewhat in the mid–sixteenth century, when Dīwānah Muḥammad Chalabī and Yūsuf Sīnachāk introduced Shīʿī influences into the order

@@ -1,0 +1,5 @@
+id: merv
+type: place
+names: { en: Merv }
+ids: { wikidata: 'Q193325' }
+coords: [62.19, 37.66]

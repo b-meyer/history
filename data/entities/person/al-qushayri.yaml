@@ -1,0 +1,56 @@
+id: al-qushayri
+type: person
+names:
+  en: al-Qushayri
+notability: 5
+claims:
+  - id: al-qushayri.died
+    predicate: died
+    when: 1074
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text gives al-Qushayrī as (d. 1074).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text lists al-Qushayrī (d. 1074).
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Al-risālah al-qushayrīyah (The Qushayrīan letter) of Abū al-Qāsim ʿAbd al-Karīm al-Qushayrī (d. 1074)
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: al-Hujwīrī (d. 1072), and al-Qushayrī (d. 1074)
+  - id: al-qushayri.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text names al-Qushayrī as a Ṣūfī manual author working to show Sufism conformed to Ashʿarī orthodoxy.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The article names al-Qushayri as an author of Sufi manuals written as guides for novices on the Sufi path, which implies he was a Sufi but does not call him one outright.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: The article names al-Qushayri's Risalah among the classic Sufi manuals and says he worked to show Sufism conformed with Ash'arism, which places him inside the Sufi manual tradition; Nicholson's introduction to the Kashf al-Mahjub counts Qushayri among the Sufis al-Hujwiri lists.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: To this end authors such as al-Kalābādhī and al-Qushayrī made deliberate efforts to demonstrate that Sufism was in conformity with the orthodox theological synthesis, namely Ashʿarism.

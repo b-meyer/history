@@ -1,0 +1,5 @@
+id: bijapur
+type: place
+names: { en: Bijapur }
+ids: { wikidata: 'Q3636023' }
+coords: [75.72, 16.82]

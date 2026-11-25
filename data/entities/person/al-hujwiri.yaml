@@ -1,0 +1,191 @@
+id: al-hujwiri
+type: person
+names:
+  en: al-Hujwiri
+claims:
+  - id: al-hujwiri.born
+    predicate: born
+    when: 1000~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry infers from his descriptions of contemporaries that he was born around the beginning of the eleventh century.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The entry infers from his contemporaries that he was born around the beginning of the eleventh century, which fits an approximate 1000.
+    sources:
+      - key: eor-hujwiri
+        locator: preamble
+        stance: asserts
+        excerpt: it is clear that he was born around the beginning of the eleventh century
+  - id: al-hujwiri.died
+    predicate: died
+    when: 1076?
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The entry gives d. AH 469?/1076? CE and says the traditional AH 465 is probably not far wrong, with Nicholson allowing up to four years later.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says al-Hujwiri 'settled and died in Lahore in 1071', not 1076.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: Nicholson reports death dates of 456 or 464 A.H. (1063-4 or 1071-2) and conjectures a death between 465 and 469 A.H. (about 1072-1077), so 1076 is not stated and is only the edge of an uncertain range.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The heading gives d. AH 469?/1076? CE with question marks, and the text notes the tomb's traditional AH 465 date and Nicholson's view that he may have died within the next four years, so the year is uncertain.
+    sources:
+      - key: eor-hujwiri
+        locator: preamble
+        stance: asserts
+        excerpt: HUJWĪRĪ, AL- (d. ah 469?/1076? ce)
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: it is likely that he survived Abu ´l-Qásim al-Qushayrí, who died in 465 A.H. (1072 A.D.)
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: disputes
+        excerpt: settled and died in Lahore in 1071
+  - id: al-hujwiri.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: He studied Sufism with Khuttali, traveled as a dervish and wrote a textbook of Sufism.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: Nicholson says he studied Sufiism under al-Khuttali and al-Shaqani and received instruction from Gurgani and Khwaja Muzaffar.
+    sources:
+      - key: eor-hujwiri
+        locator: preamble
+        stance: asserts
+        excerpt: He studied Sufism with Abū al-Faz̤l Muḥammad Khuṭṭalī
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: He studied Ṣúfiism under Abu ´l-Faḍl Muḥammad b. al-Ḥasan al-Khuttalí
+  - id: al-hujwiri.member-of.sunni
+    predicate: member-of
+    object: sunni
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Nicholson states 'Although he was a Sunni and a Hanafite' and notes his theology stayed within that framework."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Nicholson's preface states plainly that al-Hujwiri was a Sunni and a Hanafite who reconciled his theology with an advanced mysticism."
+    sources:
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: Although he was a Sunní and a Ḥanafite
+  - id: al-hujwiri.member-of.hanafi
+    predicate: member-of
+    object: hanafi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Nicholson states 'Although he was a Sunni and a Hanafite' in his account of al-Hujwiri's teaching."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Nicholson's preface states plainly that al-Hujwiri was a Sunni and a Hanafite."
+    sources:
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: Although he was a Sunní and a Ḥanafite
+  - id: al-hujwiri.active-at.lahore
+    predicate: active-at
+    object: lahore
+    when: 10XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: By his own words he was separated from his books in Ghaznin and forced to be among strangers in Lahore, though no date is given beyond his lifetime.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-south-asia
+        note: 'Graded A scholarly: The text says he settled and died in Lahore in 1071, which fits 10XX.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: Nicholson says that according to the Riyad al-Awliya he went to reside at Lahore and ended his days there, and that Hujwiri himself says he was taken there as a prisoner; he died in the eleventh century.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: From his own words he was separated from his books in Ghaznin and forced to live among strangers in Lahore; no exact date is given, but it falls within his eleventh-century life.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The entry says, from al-Hujwiri's own words, that he was separated from his books in Ghaznin and forced to be among strangers in Lahore, a stay that falls in the 11th century given his birth around 1000 and death c. AH 469/1076, though the entry gives no date for the stay, says he had left Lahore by the time he wrote the Kashf, and doubts the Lahore tomb.
+    sources:
+      - key: eor-hujwiri
+        locator: preamble
+        stance: asserts
+        excerpt: He says that he was separated from his books in Ghaznīn and forced to be (giriftār ) among strangers (nājinsān ) in Lahore.
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: settled and died in Lahore in 1071
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: partly at any rate, to the period of his residence in Lahore
+  - id: al-hujwiri.active-at.merv
+    predicate: active-at
+    object: merv
+    when: 10XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: Nicholson lists Merv (p. 401) among the places Hujwiri visited, with no exact date given.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B scholarly: Nicholson lists Merv (p. 401) among the places al-Hujwiri visited on his travels, and dates his life from about 1000 to about 1072 CE, so the visit falls in the 11th century, though no date for it is given.'
+    sources:
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: Merv (p. 401)

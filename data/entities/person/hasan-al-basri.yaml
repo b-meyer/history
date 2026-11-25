@@ -1,0 +1,117 @@
+id: hasan-al-basri
+type: person
+names:
+  en: Hasan al-Basri
+claims:
+  - id: hasan-al-basri.born
+    predicate: born
+    when: 0642
+    where: medina
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text says Ḥasan al-Baṣrī was born in Medina in 642.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry gives his dates as AH 21-110 / 642-728 CE and says he was born in Medina.
+    sources:
+      - key: eor-hasan-al-basri
+        locator: preamble
+        stance: asserts
+        excerpt: he was born in Medina
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: who was born in Medina in 642
+  - id: hasan-al-basri.died
+    predicate: died
+    when: 0728
+    where: basra
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text says he settled in Basra, where he died in 728.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry gives 642-728 CE and says the whole city of Basra attended his funeral on the day he died, which places his death at Basra.
+    sources:
+      - key: eor-hasan-al-basri
+        locator: preamble
+        stance: asserts
+        excerpt: ḤASAN AL-BAṢRĪ (ah 21–110/642–728 ce)
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: settled in Basra, where he died in 728
+  - id: hasan-al-basri.active-at.basra
+    predicate: active-at
+    object: basra
+    when: 0656/0728
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text says he settled in Basra and died there in 728, but gives no date for settling, so 656 is not stated.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry says he moved to Basra during the First Civil War and settled there permanently; the 656 start year is inferred from the war's date, not stated, and 728 is his death year.
+    sources:
+      - key: eor-hasan-al-basri
+        locator: preamble
+        stance: asserts
+        excerpt: During the First Civil War, which resulted in the rise of the Umayyad caliphate, Ḥasan moved to Basra, where he settled permanently
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: settled in Basra, where he died in 728
+  - id: hasan-al-basri.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: C
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded C tradition: The entry says only that the Sufis regarded Hasan as one of their forerunners, which is a later tradition's claim of him, not a statement that he was a Sufi member."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: 'Graded B primary: Hujwiri includes Hasan of Basra in his Sufi biographies and says he is held in high regard and esteem by the Sufis, which implies but does not explicitly state membership.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: flagged
+        note: The text calls Hasan a famous Muslim ascetic and says only that the Sufis (like the Mu'tazilah) later regarded him as one of their forerunners, a retrospective claim by the tradition rather than membership, so a precursor-of or claimed-by edge fits better than member-of.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-sufism
+        note: "Graded C tradition: The EOR entry calls Hasan a famous ascetic whom the Sufis (and also the Mu'tazilah, and the Sunnis) claimed as a forerunner, so membership rests on the Sufi tradition's own claim (Hujwiri lists him among the Sufi imams) rather than on his being a Sufi in his lifetime."
+    sources:
+      - key: eor-hasan-al-basri
+        locator: preamble
+        stance: reports
+        excerpt: both the Ṣūfīs and the Muʿtazilah regarded Ḥasan as one of their forerunners
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: §10.3
+        stance: asserts
+        excerpt: He is held in high regard and esteem by the Ṣúfís.

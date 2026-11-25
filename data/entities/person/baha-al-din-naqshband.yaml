@@ -1,0 +1,135 @@
+id: baha-al-din-naqshband
+type: person
+names:
+  en: Baha al-Din Naqshband
+notability: 6
+claims:
+  - id: baha-al-din-naqshband.born
+    predicate: born
+    when: 1318
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-central-asia
+        note: The text gives Naqshbandi's dates as (1318-1389), so birth in 1318.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text gives Bahāʾ al-Dīn-i Naqshband as (1318–1388), so born 1318.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ al-Dīn-i Naqshband (1318–1388)
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ ad-Dīn an-Naqshbandī (1318–1389)
+  - id: baha-al-din-naqshband.died
+    predicate: died
+    when: 1388/1389
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-central-asia
+        note: 'Graded A scholarly: The text gives (1318-1389), so death in 1389, which falls within the 1388/1389 range.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text gives 1388 as his death year; the alternative 1389 is not mentioned.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The Naqshbandiyah section gives Baha al-Din Naqshband's dates as 1318-1388, within the 1388/1389 interval."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ al-Dīn-i Naqshband (1318–1388)
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ ad-Dīn an-Naqshbandī (1318–1389)
+  - id: baha-al-din-naqshband.founder-of.naqshbandiyya
+    predicate: founder-of
+    object: naqshbandiyya
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-central-asia
+        note: The text says he formulated the tariqah of the Naqshbandi order, one of two chains derived from Yusuf Hamadani.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text states Bahāʾ al-Dīn founded the Naqshbandī ṭarīqah in Bukhara.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ al-Dīn founded the Naqshbandī ṭarīqah in Bukhara
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: who formulated the ṭarīqah of the Naqshbandī order
+  - id: baha-al-din-naqshband.active-at.bukhara
+    predicate: active-at
+    object: bukhara
+    when: 13XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he founded the order in Bukhara, which he left only three times, and gives his lifetime as 1318–1388, so activity there falls in the 1300s.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Baha al-Din (1318-1388) founded the Naqshbandi tariqah in Bukhara, which he left only three times.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Naqshbandīyah' the text gives Bahāʾ al-Dīn's dates as 1318–1388 and says he founded the Naqshbandī ṭarīqah in Bukhara and left it only three times, which places him there in the 1300s."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ al-Dīn founded the Naqshbandī ṭarīqah in Bukhara, which he left only three times
+  - id: baha-al-din-naqshband.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-central-asia
+        note: The text places him in a chain of authority from Yusuf Hamadani within Central Asian Sufism.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text traces his mystical heritage through Amīr Kulāl to the Khwājagān lineage of Ṣūfīs and calls his order a Ṣūfī ṭarīqah.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: traces his mystical heritage through Amīr Kulāl, a spiritual adviser to Tīmūr (Tamerlane), to the Persian-speaking Central Asian lineage of Ṣūfīs, the Khwājagān
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: The other led to Bahāʾ ad-Dīn an-Naqshbandī (1318–1389)

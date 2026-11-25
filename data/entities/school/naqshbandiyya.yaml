@@ -1,0 +1,101 @@
+id: naqshbandiyya
+type: school
+names:
+  en: Naqshbandiyya
+claims:
+  - id: naqshbandiyya.branch-of.sufism
+    predicate: branch-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text calls the Naqshbandiyah a conservative Central Asian Sufi order that became prominent in South Asia from the seventeenth century.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sirhindi
+        note: The text calls the Naqshbandi 'the Naqshbandi order of the Sufis'.
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: The Naqshbandīyah, a conservative Central Asian Ṣūfī order
+      - key: eor-sirhindi
+        locator: preamble
+        stance: asserts
+        excerpt: the Naqshbandī order of the Ṣūfīs
+  - id: naqshbandiyya.active-at.bukhara
+    predicate: active-at
+    object: bukhara
+    when: 13XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Baha al-Din (1318-1388) founded the Naqshbandi order in Bukhara, which he left only three times.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Baha al-Din (1318-1388) founded the Naqshbandi tariqah in Bukhara, where his tomb and shrine complex are a place of pilgrimage.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under 'Naqshbandīyah' the text says Bahāʾ al-Dīn (1318–1388) founded the Naqshbandī ṭarīqah in Bukhara, where his tomb and shrine remain a place of pilgrimage."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ al-Dīn founded the Naqshbandī ṭarīqah in Bukhara, which he left only three times
+  - id: naqshbandiyya.active-at.herat
+    predicate: active-at
+    object: herat
+    when: 1404/1490
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text names Khwajah Ahrar of Herat (1404-1490) as leading the Naqshbandiyah, which virtually dominated Central Asian political life, and has Baha al-Din visit the ruler of Herat.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded C scholarly: The text calls Khwajah Ahrar (1404-1490) 'of Herat' and says under him the Naqshbandiyah dominated Central Asian politics, but it never places the order's activity in Herat itself; the dates are his lifespan."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded C scholarly: The text says that 'under the leadership of Khwājah Aḥrār of Herat (1404–1490)' the order dominated Central Asian politics; tying the order's activity to Herat for 1404/1490 is an inference from his epithet and lifespan, since the text never says the order operated in Herat in those years (eor-islam-central-asia confirms Aḥrār's dates and influence but not Herat)."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: under the leadership of Khwājah Aḥrār of Herat (1404–1490), the Naqshbandīyah virtually dominated political life in Central Asia
+  - id: naqshbandiyya.active-at.delhi
+    predicate: active-at
+    object: delhi
+    when: 16XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text cites the Naqshbandi-inspired reform movement in seventeenth-century Delhi as a notable example and also describes Shah Wali Allah as the greatest reformer of eighteenth-century Delhi.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text cites the Naqshbandi-inspired reform movement in seventeenth-century Delhi as a notable example of the orders' contribution in India."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: the Naqshbandī-inspired reform movement in seventeenth-century Delhi is a notable example

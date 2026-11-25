@@ -82,3 +82,144 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: After Bahāʾ al-Dīn's death in 1231, Jalāl al-Dīn assumed his father's teaching post.
+  - id: rumi.buried-at.konya
+    predicate: buried-at
+    object: konya
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: rumi-mesnevi-redhouse
+        note: "Graded A tradition: The text has a merchant visiting Jelal's tomb at Qonya, and the preface says he died in December 1273 and was buried in his father's mausoleum there."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Sultan Walad built a shrine dome over Rumi's resting place, in the context of Rumi's community in Konya.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Sultan Walad systematized Rumi's Konya disciples into an order and built a shrine dome over Rumi's resting place there, which places the burial in Konya by clear implication.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: His community of disciples in Konya was systematized into an order by Sulṭān Walad (d. 1312), Rūmī's son, who built a shrine dome (türbe ) over Rūmī's resting place.
+      - key: rumi-mesnevi-redhouse
+        locator: §3.77
+        stance: asserts
+        excerpt: In the days of Sultan Veled, a great merchant came to Qonya to visit the tomb of Jelāl.
+  - id: rumi.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: Rumi's Sufi training progressed under Burhan al-Din Muhaqqiq, and he is called one of the greatest Sufi poets.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article calls Rumi a Muslim mystic and a Sufi poet whose influence on East and West was unmatched by any other Sufi poet.
+    sources:
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: No Ṣūfī poet has exerted a vaster influence on Muslim East and Christian West than Jalāl al-Dīn
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Rūmī's Ṣūfī training progressed in serious fashion under the tutelage of Burhān al-Dīn Muḥaiqqiq, one of his father's disciples.
+  - id: rumi.founder-of.mevlevi
+    predicate: founder-of
+    object: mevlevi
+    confidence: B
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says Rumi did not establish a formal tariqah; his son Sultan Walad organized the order, though the Mawlawiyah trace their silsilah to Rumi.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B tradition: The preface hedges that he 'is said to have instituted' the order, and an anecdote has Sultan Veled calling Jelal the Mevlevis' founder, while D'Herbelot says he instituted the order at Konya."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B tradition: Redhouse's introduction says Jelal 'is said to have instituted his peculiar order of dervishes' with its dress and music, and Eflaki's anecdote 3.76 calls Jelal the Mevlevis' founder, so the attribution rests on the order's own hagiographic tradition."
+    sources:
+      - key: rumi-mesnevi-redhouse
+        locator: §3.76
+        stance: asserts
+        excerpt: he wore the _sheker-āvīz_ of the Mevlevis, when nobody else but those dervishes wear it, in imitation of their founder, Jelāl.
+      - key: rumi-mesnevi-redhouse
+        locator: preamble
+        stance: reports
+        excerpt: He is said to have instituted his peculiar order of dervishes
+      - key: eor-sufism
+        locator: preamble
+        stance: disputes
+        excerpt: Rūmī himself, however, did not establish a formal ṭarīqah during his lifetime; rather, it was his son, Sulṭān Walad, who took upon himself the task of organizing the order.
+  - id: rumi.active-at.balkh
+    predicate: active-at
+    object: balkh
+    when: 1207/1219~
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Rumi was born in Balkh in 1207 and his father left Balkh around 1219 because of the Mongol threat.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-rumi
+        note: Rumi was born in Balkh (ah 604/1207, possibly some years earlier) and his father left the city some time before the Mongol invasion of 1220.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says Rumi was born in Balkh in 1207 and that his father left Balkh around 1219 because of the Mongol threat, so the dates bound only his childhood residence there.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Around 1219, however, Bahāʾ al-Dīn left Balkh because of the threat of invasion by the Mongols.
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: left the city some time before the Mongol invasion of 1220
+  - id: rumi.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 1211
+    confidence: B
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B tradition: The preface says Jelal's family left Balkh between 1208 and 1211, in which latter year they were at Baghdad, and 1.2 has news of Balkh's fall (1211) reaching them there, though Eflaki's dates are noted as inexact."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B tradition: The family left Balkh between 1208 and 1211 'in which latter year they were at Bagdad', with Jelal aged about five, and Eflaki (1.2) has news of Balkh's fall in A.D. 1211 reach Baha'u-'d-Din before he left Baghdad, though Redhouse warns Eflaki's dates do not agree exactly with other historians."
+    sources:
+      - key: rumi-mesnevi-redhouse
+        locator: preamble
+        stance: asserts
+        excerpt: when her father and brothers left their native city some time between A.D. 1208 and 1211, in which latter year they were at Bagdād.
+      - key: rumi-mesnevi-redhouse
+        locator: §1.2
+        stance: asserts
+        excerpt: Before Bahā’u-’d-Dīn quitted Bagdād, intelligence was received there of the siege of Balkh

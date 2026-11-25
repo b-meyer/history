@@ -1,0 +1,5 @@
+id: ardabil
+type: place
+names: { en: Ardabil }
+ids: { wikidata: 'Q180103' }
+coords: [48.3, 38.25]

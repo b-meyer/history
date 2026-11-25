@@ -1,0 +1,189 @@
+id: abd-al-qadir-al-jilani
+type: person
+names:
+  en: Abd al-Qadir al-Jilani
+claims:
+  - id: abd-al-qadir-al-jilani.born
+    predicate: born
+    when: 1077/1088
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-south-asia
+        note: "Graded B scholarly: The text gives al-Jilani's dates as 1077-1176, so 1077 is stated; 1088 does not appear, and the same article's death dates disagree (1176 vs 1166)."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: The text gives ʿAbd al-Qādir al-Jīlānī's dates as 1088–1166, so 1088 is stated; 1077 is not mentioned."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAbd al-Qādir al-Jīlānī (1088–1166) from the region of Gīlān near the Caspian Sea in Iran
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: the founder of the Qādirīyah, ʿAbd al-Qādir al-Jīlānī (1077–1176)
+  - id: abd-al-qadir-al-jilani.died
+    predicate: died
+    when: 1166
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-south-asia
+        note: "Graded B scholarly: The Cults of Personality section says 'd. 1166', but the Arrival section gives 1077-1176, so the article contradicts itself; 1166 is stated once."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text gives ʿAbd al-Qādir Jīlāni's death as 1116, not 1166.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text gives ʿAbd al-Qādir al-Jīlānī as (1088–1166), so he died in 1166.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The Qadiriyah section gives Abd al-Qadir al-Jilani's dates as 1088-1166."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAbd al-Qādir al-Jīlānī (1088–1166) from the region of Gīlān near the Caspian Sea in Iran
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAbd al-Qādir al-Jīlānī (d. 1166), who is actually buried in Baghdad
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: disputes
+        excerpt: the founder of the Qādirīyah, ʿAbd al-Qādir al-Jīlānī (1077–1176)
+      - key: eor-sufism
+        locator: preamble
+        stance: disputes
+        excerpt: The Qādirīyah, whose eponymous founder, ʿAbd al-Qādir Jīlāni (d. 1116)
+  - id: abd-al-qadir-al-jilani.founder-of.qadiriyya
+    predicate: founder-of
+    object: qadiriyya
+    confidence: B
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-south-asia
+        note: "Graded A scholarly: The text calls him 'the founder of the Qadiriyah, ʿAbd al-Qadir al-Jilani (1077-1176)'."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-sufism
+        note: 'Graded A scholarly: The text calls him the eponymous founder of the Qādirīyah and the most widely revered saint in Islam.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B tradition: The text says the Qādirīyah 'claims' ʿAbd al-Qādir al-Jīlānī as its founder, so this is the order's own attribution."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B tradition: The text says the Qadiriyah claims Abd al-Qadir al-Jilani as its founder, framing it as the order's own attribution."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-sufism
+        note: "Graded B tradition: Under 'Qādirīyah' the text says the order 'claims ʿAbd al-Qādir al-Jīlānī (1088–1166) ... as its founder', which frames it as the order's own attribution; the founder link holds, though the sources give different dates for him (1088–1166, d. 1116, 1077–1176)."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: reports
+        excerpt: It claims ʿAbd al-Qādir al-Jīlānī (1088–1166) from the region of Gīlān near the Caspian Sea in Iran as its founder
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The Qādirīyah, whose eponymous founder, ʿAbd al-Qādir Jīlāni (d. 1116)
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: the founder of the Qādirīyah, ʿAbd al-Qādir al-Jīlānī (1077–1176)
+  - id: abd-al-qadir-al-jilani.member-of.hanbali
+    predicate: member-of
+    object: hanbali
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text states ʿAbd al-Qādir was a Ḥanbalī legal scholar, a follower of that school.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article calls him 'the famous Ḥanbālī Ṣūfī', says he studied law under Ḥanbālī teachers, and lists him among the Ḥanbālī names of the twelfth century.
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAbd al-Qādir al-Jīlānī is the famous Ḥanbālī Ṣūfī whose Ṣūfī brotherhood is still prosperous in the present day.
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAbd al-Qādir was a Ḥanbalī legal scholar
+  - id: abd-al-qadir-al-jilani.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 11XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: Listed among the Ḥanbālī names dominating the twelfth century, he succeeded al-Mukharrimī as administrator, law professor and Ṣūfī master of the madrasah on Baghdad's east side."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: Under the 'Twelfth century' heading the article names ʿAbd al-Qādir as a dominant Ḥanbālī of that century and states he succeeded to al-Mukharrimī's madrasah as administrator, law professor and Ṣūfī master, enlarging the institution on Baghdad's east side."
+    sources:
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: It was also the madrasah of al-Mukharrimī to which ʿAbd al-Qādir succeeded as administrator, professor of law, and Ṣūfī master; under his direction the institution was enlarged, and it has been maintained on Baghdad's east side down to this day.
+      - key: eor-hanabilah
+        locator: preamble
+        stance: asserts
+        excerpt: The Ḥanbālī names that dominate the twelfth century are those of Ibn Hubayrah, ʿAbd al-Qādir al-Jīlānī, and Ibn al-Jawzī.
+  - id: abd-al-qadir-al-jilani.buried-at.baghdad
+    predicate: buried-at
+    object: baghdad
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The text says he 'is actually buried in Baghdad', despite many shrines to him in southern India.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says his tomb in Baghdad remains a pilgrimage place for the brotherhood.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: His tomb in Baghdad has remained a place of pilgrimage for members of the brotherhood to the twenty-first century
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: ʿAbd al-Qādir al-Jīlānī (d. 1166), who is actually buried in Baghdad

@@ -1,0 +1,55 @@
+id: safaviyya
+type: school
+names:
+  en: Safaviyya
+claims:
+  - id: safaviyya.branch-of.sufism
+    predicate: branch-of
+    object: sufism
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says the Safavid order traced its lineage to the Sunni Sufi teacher Safi al-Din of Ardabil and was later converted to Shiism by his descendants.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-shiism-overview
+        note: "Graded B scholarly: The text says the Kizilbash Türkmen federation and religious order adopted extremist Shiism under the Safavids, in a passage on Sufi orders moving toward Shi'i belief, but it never names the Safaviyya or calls it a Sufi order outright."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: a Sunnī Ṣūfī teacher, Ṣafī al-Dīn of Ardabīl (1252–1334). His descendants eventually converted the order to Shiism
+      - key: eor-shiism-overview
+        locator: preamble
+        stance: asserts
+        excerpt: In the fifteenth century the Kizilbash Türkmen federation and religious order adopted such extremist Shīʿī doctrine under the leadership of the Safavids
+  - id: safaviyya.active-at.ardabil
+    predicate: active-at
+    object: ardabil
+    when: 1252/1334
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text gives Safi al-Din of Ardabil as 1252-1334 and the source teacher of the Safavid lineage.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C scholarly: The text says the Safavid dynasty traced its lineage to the Sufi teacher Safi al-Din of Ardabil (1252-1334) and that his descendants converted the order to Shiism, but it neither names the Safaviyya nor states the order was active in Ardabil; the location rests on his nisba and the dates on his lifespan.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says the Safavids traced their lineage to the Sunnī Ṣūfī teacher 'Ṣafī al-Dīn of Ardabīl (1252–1334)', whose descendants turned 'the order' Shīʿī and militant; that the order was active at Ardabil in his lifetime comes from his epithet, not from an explicit statement.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: tracing its lineage to a Sunnī Ṣūfī teacher, Ṣafī al-Dīn of Ardabīl (1252–1334)

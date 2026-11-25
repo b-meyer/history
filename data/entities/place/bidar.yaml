@@ -1,0 +1,5 @@
+id: bidar
+type: place
+names: { en: Bidar }
+ids: { wikidata: 'Q461922' }
+coords: [77.55, 17.9]
