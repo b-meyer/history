@@ -77,3 +77,201 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: As early as 850 ce there were samāʿ houses in Baghdad in which the Ṣūfīs could listen to music
+  - id: sufism.active-at.balkh
+    predicate: active-at
+    object: balkh
+    when: 07XX/08XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the first Sufi centers appeared in Balkh and Nishapur in the eighth and ninth centuries.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Sufism and Ishanism' the article states the first Sufi centers in Central Asia appeared in Balkh and Nishapur in the eighth and ninth centuries, matching 07XX/08XX.
+    sources:
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: The first centers appeared in Balkh and Nishapur in the eighth and ninth centuries.
+  - id: sufism.active-at.nishapur
+    predicate: active-at
+    object: nishapur
+    when: 07XX/08XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the first Sufi centers appeared in Balkh and Nishapur in the eighth and ninth centuries.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Under 'Sufism and Ishanism' the article states the first Sufi centers in Central Asia appeared in Balkh and Nishapur in the eighth and ninth centuries, matching 07XX/08XX.
+    sources:
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: The first centers appeared in Balkh and Nishapur in the eighth and ninth centuries.
+  - id: sufism.active-at.cairo
+    predicate: active-at
+    object: cairo
+    when: 08XX
+    confidence: C
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Dhu al-Nun al-Misri (d. 859), an early Sufi, lived in Cairo and clashed with al-Mutawakkil (r. 847-861).'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says the Sufi Dhu al-Nun (d. 859) lived in Cairo and clashed with al-Mutawakkil (r. 847-861), while noting that his biography mixes a reliable kernel with pious fiction.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded C scholarly: The article says the Sufi Dhu al-Nun (d. 859) lived in Cairo, but Cairo was not founded until 969, so the place name is anachronistic (al-Fustat, not Cairo); the other catalogued source that covers him, Hujwiri (Nicholson), places him only in Egypt and does not confirm Cairo.'
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Although he lived in Cairo, Dhū al-Nūn traveled extensively, and during one of his sojourns in Baghdad, he ran afoul of the caliph al-Mutawakkil (r. 847–861).
+  - id: sufism.active-at.delhi
+    predicate: active-at
+    object: delhi
+    when: 12XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The text says Qutb ad-Din Bakhtiyar Kaki (d. 1235) spread Chishti influence to Delhi, placing Sufi activity there in the thirteenth century (12XX).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The Suhrawardiyah were extremely influential in court circles in thirteenth-century Delhi.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The Suhra-wardīyah, for example, were extremely influential in court circles in thirteenth-century Delhi
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: His successor, Quṭb ad-Dīn Bakhtiyār Kākī (d. 1235), spread Chishtī influence to Delhi.
+  - id: sufism.active-at.konya
+    predicate: active-at
+    object: konya
+    when: 1230~/1312
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text places Rumi's community of disciples in Konya, with his father Baha al-Din Walad (d. 1231) there before him and Sultan Walad (d. 1312) systematizing the order.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: A disciple of Rumi's father reached Konya in the early 1230s and introduced Rumi to mystical life, and by 1312 the Mevlevi order was firmly established there.
+    sources:
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: A disciple of Rūmī's father, Burhān al-Dīn Muḥaiqqiq, reached Konya in the early 1230s and introduced Jalāl al-Dīn into the mystical life
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: His community of disciples in Konya was systematized into an order by Sulṭān Walad (d. 1312)
+  - id: sufism.active-at.bukhara
+    predicate: active-at
+    object: bukhara
+    when: 13XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says only that Bukhara, among other cities, 'later' became a bastion of Sufism, with no century given, so 13XX is not stated.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Baha al-Din Naqshband (1318-1388) founded the Naqshbandi order in Bukhara.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Baha al-Din Naqshband (1318-1388) founded the Naqshbandi Sufi tariqah in Bukhara.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        source: eor-islam-central-asia
+        note: "Graded A scholarly: The text says Bahāʾ al-Dīn (1318–1388) founded the Naqshbandī ṭarīqah in Bukhara, which places Ṣūfī activity there in the 1300s; eor-islam-central-asia separately calls Bukhara a 'bastion of Sufism'."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Bahāʾ al-Dīn founded the Naqshbandī ṭarīqah in Bukhara
+      - key: eor-islam-central-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Later, Merv, Bukhara, Khwarezm, and other cities in Transoxiana became bastions of Sufism.
+  - id: sufism.influenced-by.ibn-arabi
+    predicate: influenced-by
+    object: ibn-arabi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Theoretical developments in Sufism from the thirteenth century onward were shaped by Ibn 'Arabi and his interpreters.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article states that the theoretical developments in Sufism from the thirteenth century onward were shaped by the work of Ibn Arabi and his interpreters.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: The theoretical developments in Sufism from the thirteenth century onward were shaped by the work of Ibn ʿArabī and his interpreters.
+  - id: sufism.influenced-by.hasan-al-basri
+    predicate: influenced-by
+    object: hasan-al-basri
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Hasan al-Basri is considered a pivotal figure in the early development of Sufism.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says Hasan al-Basri 'is considered a pivotal figure in the early development of Sufism' and that his ambivalence toward the material world remained significant in later Islamic mysticism.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-hasan-al-basri
+        note: The article says Hasan al-Basri 'is considered a pivotal figure in the early development of Sufism', and eor-hasan-al-basri says the Sufis regarded him as one of their forerunners, a retrospective attribution rather than a stated direct influence.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Ḥasan al-Baṣrī is considered a pivotal figure in the early development of Sufism

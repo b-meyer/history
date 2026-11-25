@@ -1,0 +1,119 @@
+id: ahmad-sirhindi
+type: person
+names:
+  en: Ahmad Sirhindi
+notability: 6
+claims:
+  - id: ahmad-sirhindi.born
+    predicate: born
+    when: 1564
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The text gives Shaykh Ahmad Sirhindi's dates as 1564-1624.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry heading gives his dates as ah 971-1034 / 1564-1624 ce, so birth in 1564.
+    sources:
+      - key: eor-sirhindi
+        locator: preamble
+        stance: asserts
+        excerpt: SIRHINDĪ, AḤMAD (ah 971–1034/1564–1624 ce)
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Shaykh Aḥmad Sirhindī (1564–1624)
+  - id: ahmad-sirhindi.died
+    predicate: died
+    when: 1624
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The text gives 1564-1624, and the other section says 'Shaykh Ahmad Sirhindi (d. 1624)'.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text gives Aḥmad Sirhindī as (d. 1624).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry heading gives his dates as ah 971-1034 / 1564-1624 ce, so death in 1624.
+    sources:
+      - key: eor-sirhindi
+        locator: preamble
+        stance: asserts
+        excerpt: SIRHINDĪ, AḤMAD (ah 971–1034/1564–1624 ce)
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Aḥmad Sirhindī (d. 1624), who was initiated into the order by its shaykh, Khwājah Bāqī Billāh, in 1600
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Shaykh Aḥmad Sirhindī (1564–1624)
+  - id: ahmad-sirhindi.member-of.naqshbandiyya
+    predicate: member-of
+    object: naqshbandiyya
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: Al-Baqi Billah initiated 'the most influential member of the order in South Asia, Shaykh Ahmad Sirhindi', and the order is the Naqshbandiyah.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text says Sirhindī was initiated into the Naqshbandī order by its shaykh Khwājah Bāqī Billāh in 1600.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says his religious activities were conducted within the Naqshbandi order, where he became prominent and instructed disciples.
+    sources:
+      - key: eor-sirhindi
+        locator: preamble
+        stance: asserts
+        excerpt: Sirhindī 's religious activities were conducted within the Naqshbandī order of the Ṣūfīs
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Aḥmad Sirhindī (d. 1624), who was initiated into the order by its shaykh, Khwājah Bāqī Billāh, in 1600
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: the most influential member of the order in South Asia, Shaykh Aḥmad Sirhindī (1564–1624)
+  - id: ahmad-sirhindi.influenced-by.ibn-arabi
+    predicate: influenced-by
+    object: ibn-arabi
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he belongs to the stream of mystical thought established by Ibn al-'Arabi, though they differ in certain aspects.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The entry states that on prophecy, sainthood, sharia and tariqa, and wahdat al-wujud versus wahdat al-shuhud, Sirhindi belongs to the stream of mystical thought established by Ibn al-Arabi, though they differ in certain aspects; it says he stands in that lineage but does not use the word influence.
+    sources:
+      - key: eor-sirhindi
+        locator: preamble
+        stance: asserts
+        excerpt: Sirhindī belongs to the stream of mystical thought established by Ibn al-ʿArabī, though they differ in certain aspects

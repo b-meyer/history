@@ -1,0 +1,60 @@
+id: tarjuman-al-ashwaq
+type: work
+names:
+  en: Tarjuman al-Ashwaq
+notability: 5
+claims:
+  - id: tarjuman-al-ashwaq.attributed-to.ibn-arabi
+    predicate: attributed-to
+    object: ibn-arabi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Nizam in Mecca became the inspiration for his famous poem collection The Interpreter of Ardent Desires (Tarjuman al-ashwaq).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: ibn-arabi-tarjuman-nicholson
+        note: "Graded A primary: The third-recension preface in his own voice says 'I wrote this commentary on the Diwan entitled Tarjuman al-Ashwaq, which I composed at Mecca', and Nicholson treats the work as his."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Nizam inspired 'his famous collection of poems, The Interpreter of Ardent Desires (Tarjuman al-ashwaq)'.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: she became the inspiration for his famous collection of poems, The Interpreter of Ardent Desires (Tarjumān al-ashwāq)
+      - key: ibn-arabi-tarjuman-nicholson
+        locator: Introduction
+        stance: asserts
+        excerpt: I wrote this commentary on the Díwán entitled Tarjumán al-Ashwáq, which I composed at Mecca
+  - id: tarjuman-al-ashwaq.composed
+    predicate: composed
+    when: 1215
+    where: mecca
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: The author's second and third prefaces date the Mecca poems to Rajab-Ramadan 611 A.H.; Nicholson rejects Dozy's 598 A.H. and concludes composition was finished in Ramadan 611 A.H. (January 1215 A.D.), though Dozy had argued otherwise."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: The author's second and third prefaces say he composed the poems at Mecca in Rajab-Ramadan 611 AH, and Nicholson, rebutting Dozy's theory of composition in 598 AH, concludes they were finished in Ramadan 611 AH (January 1215 AD)."
+    sources:
+      - key: ibn-arabi-tarjuman-nicholson
+        locator: Introduction
+        stance: asserts
+        excerpt: the composition of the Tarjumán al-Ashwáq was finished in Ramaḍán, 611 A.H. (January, 1215 A.D.)
+      - key: ibn-arabi-tarjuman-nicholson
+        locator: Introduction
+        stance: asserts
+        excerpt: These pages include the love-poems which I composed at Mecca . . . in the months of Rajab, Shaʿbán, and Ramaḍán in the year 611.

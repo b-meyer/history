@@ -1,0 +1,55 @@
+id: fusus-al-hikam
+type: work
+names:
+  en: Fusus al-Hikam
+notability: 6
+claims:
+  - id: fusus-al-hikam.attributed-to.ibn-arabi
+    predicate: attributed-to
+    object: ibn-arabi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article lists The Bezels of Wisdom (Fusus al-Hikam) among Ibn al-Arabi's works and calls it the quintessence of his teachings.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text names Fuṣūṣ al-ḥikam as one of Ibn ʿArabī's two most influential works.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: Ibn al-ʿArabī wrote at least 300 works, ranging from minor treatises to the huge thirty-seven-volume Meccan Illuminations (al-Futūhāt al-Makkīya) and the quintessence of his teachings, The Bezels of Wisdom (Fusūs al-Hikam).
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Two of his most influential works are Al-futūḥat al-makkīyah (The Meccan revelations), which he was ordered to write in a visionary experience while on pilgrimage, and Fuṣūs al-ḥikam (The bezels of wisdom).
+  - id: fusus-al-hikam.composed
+    predicate: composed
+    when: 1229
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The article says Ibn al-Arabi states he received the Fusus from the hand of the Prophet Muhammad in a dream in 1229.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says Ibn al-Arabi states the Fusus was received from the Prophet in a dream in 1229, so the date rests on his own account of its origin rather than an independent composition date.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text dates the Fusus al-Hikam to 1229 only as the year Ibn al-Arabi says he received it from the Prophet in a dream, not as an explicit date of writing, so 1229 as the composition year is a reasonable but indirect reading resting on the author's own account; eor-sufism and ibn-arabi-tarjuman-nicholson mention the Fusus but give no date.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: reports
+        excerpt: The Bezels of Wisdom (Fusūs al-Hikam), which he states was received from the hand of the prophet Muḥammad in a dream in 1229

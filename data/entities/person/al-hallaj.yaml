@@ -1,0 +1,160 @@
+id: al-hallaj
+type: person
+names:
+  en: al-Hallaj
+notability: 7
+claims:
+  - id: al-hallaj.born
+    predicate: born
+    when: 0857
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text says al-Ḥallāj was born in 857 at al-Ṭūr in Fārs.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded B scholarly: The opening gives al-Hallaj's dates as AH 244-309/857-922 CE, so 857 is the stated birth year."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The entry's heading gives al-Hallaj's dates as AH 244-309 / 857-922 CE, so a birth year of 857.
+    sources:
+      - key: eor-hallaj
+        locator: preamble
+        stance: asserts
+        excerpt: al-Husayn ibn Manṣūr (ah 244–309/857–922 ce)
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: He was born in 857 at al-Ṭūr, in the Iranian province of Fārs.
+  - id: al-hallaj.died
+    predicate: died
+    when: 0922-03-26
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-sufism
+        note: 'Graded B scholarly: The text says he was executed in 922 under al-Muqtadir, but gives no month or day, so only the year is confirmed.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text states he died on March 26, 922 (24 Dhu al-Qa'dah 309) after the March 922 death sentence.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text states he died on March 26, 922 (24 Dhu al-Qa'dah 309), after a death sentence drawn up in March 922.
+    sources:
+      - key: eor-hallaj
+        locator: preamble
+        stance: asserts
+        excerpt: He died on March 26, 922 (24 Dhū al-Qaʿdah 309)
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Al-Ḥallāj spent about eight years in prison before he was eventually executed in 922.
+  - id: al-hallaj.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says his initiation into Sufism began as a teenager and he was trained by great Ṣūfī masters.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: 'Graded A primary: Hujwiri calls al-Hallaj an enamoured and intoxicated votary of Sufiism, though the Sufi shaykhs disagree about whether to accept him.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article states al-Hallaj's initiation into Sufism began in his teens and that he trained for over twenty years under the great Sufi masters.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: His initiation into Sufism began early in life, while he was still a teenager.
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: §11.53
+        stance: asserts
+        excerpt: He was an enamoured and intoxicated votary of Ṣúfiism.
+  - id: al-hallaj.student-of.junayd
+    predicate: student-of
+    object: junayd
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text lists al-Junayd among his trainers and later calls him al-Ḥallāj's former teacher who ostracized him."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says al-Hallaj sought to associate with Junayd but Junayd would not receive him, so he was refused, not a student; his teachers named are Sahl b. Abdallah and Amr b. Uthman Makki.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-hallaj
+        note: 'Graded B scholarly: The text says he went to Baghdad and frequented Sufi masters such as al-Junayd, though it calls the knocking-at-the-door story unverifiable legend and does not use the word student.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The article names al-Junayd among the Sufi masters who trained al-Hallaj and later calls al-Junayd 'his former teacher', who ostracized him."
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: 'was trained by a number of the great Ṣūfī masters of the period: Sahl al-Tustarī, ʿAmr al-Makkī, and al-Junayd.'
+      - key: eor-hallaj
+        locator: preamble
+        stance: asserts
+        excerpt: al-Ḥallāj proceeded to Baghdad, the center of mystical learning during the late ninth century, and frequented such Ṣūfī masters as al-Junayd.
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: §11.53
+        stance: disputes
+        excerpt: sought to associate with Junayd, but Junayd would not receive him.
+  - id: al-hallaj.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 0913/0922
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text calls him the most famous of the Baghdad mystics and gives execution in 922 after about eight years in prison, but states no 913 start date.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says he was imprisoned in Baghdad in 913, preached in Baghdad mosques, and was sentenced and executed in March 922 amid the Baghdad political situation.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says he was imprisoned in Baghdad in 913 and kept there under protection until his execution in 922, so he was in Baghdad for 913-922, though as a prisoner rather than freely active.
+    sources:
+      - key: eor-hallaj
+        locator: preamble
+        stance: asserts
+        excerpt: he was exposed on a pillory and finally imprisoned in Baghdad in 913.
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: the most famous of the Baghdad mystics, Ḥusayn ibn Manṣūr al-Ḥallāj.

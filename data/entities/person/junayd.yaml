@@ -1,0 +1,98 @@
+id: junayd
+type: person
+names:
+  en: Junayd of Baghdad
+claims:
+  - id: junayd.died
+    predicate: died
+    when: 0910
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text gives al-Junayd as (d. 910).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry heading gives al-Junayd's death as AH 298/910 CE.
+    sources:
+      - key: eor-junayd
+        locator: preamble
+        stance: asserts
+        excerpt: JUNAYD, AL- (d. ah 298/910 ce)
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: the famous Baghdad Ṣūfī Abū al-Qāsim al-Junayd (d. 910)
+  - id: junayd.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: "Graded A primary: Hujwiri says all Sufis unanimously acknowledge Junayd's leadership and that he was the disciple of Sari Saqati."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry calls him a major representative of the Baghdad school of Sufism.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The entry calls al-Junayd a major representative of the Baghdad school of Sufism and the principal exponent of its sober trend.
+    sources:
+      - key: eor-junayd
+        locator: preamble
+        stance: asserts
+        excerpt: was a major representative of the Baghdad school of Sufism
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: §11.31
+        stance: asserts
+        excerpt: all Ṣúfís unanimously acknowledge his leadership
+  - id: junayd.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 08XX/0910
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text calls him the famous Baghdad Ṣūfī (d. 910), without giving a start date for his activity.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: 'Graded B primary: The anecdote has the Shaykhs of Baghdad interceding with Junayd and he is styled al-Baghdadi, but the passage gives no dates for the 08XX/0910 span.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry says he succeeded his uncle Sari al-Saqati as leader of the Baghdad school and died in 910, so he was active there in the 800s up to 910, though no dates are given for the succession.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The entry says al-Junayd succeeded his uncle Sari al-Saqati as leader of the Baghdad school, studied under Baghdad-era teachers who died c. 855-857, and died in AH 298/910 CE, which fits activity at Baghdad within 08XX/0910.'
+    sources:
+      - key: eor-junayd
+        locator: preamble
+        stance: asserts
+        excerpt: eventually succeeded him as leader of the Baghdad school of mysticism
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: the famous Baghdad Ṣūfī Abū al-Qāsim al-Junayd (d. 910)
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: §11.31
+        stance: asserts
+        excerpt: you rejected the intercession of the Shaykhs of Baghdád and my personal entreaty

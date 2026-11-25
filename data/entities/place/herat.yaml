@@ -1,0 +1,5 @@
+id: herat
+type: place
+names: { en: Herat }
+ids: { wikidata: 'Q45313' }
+coords: [62.2, 34.34]

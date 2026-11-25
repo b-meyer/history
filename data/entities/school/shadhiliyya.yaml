@@ -1,0 +1,108 @@
+id: shadhiliyya
+type: school
+names:
+  en: Shadhiliyya
+claims:
+  - id: shadhiliyya.branch-of.sufism
+    predicate: branch-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The Shadhiliyah is presented as a Sufi fraternity (tariqah) that became part of mainstream Sufism.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text discusses the Shadhiliyah as a tariqah with internalized and silent devotions.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: this ṭarīqah practices internalized and silent devotions
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: A fine example of a fraternity that responded to the religious needs of the larger community while cultivating a solid intellectual base in mystical theory is the Shādhilīyah.
+  - id: shadhiliyya.opened
+    predicate: opened
+    when: 1227
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Al-Shadhili founded his order at Tunis in 1227.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article states Abu al-Hasan al-Shadhili founded his order at Tunis in 1227.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: It was there that he founded his order in 1227.
+  - id: shadhiliyya.active-at.tunis
+    predicate: active-at
+    object: tunis
+    when: 1227
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Al-Shadhili began his career at Tunis and founded the order there in 1227.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text calls al-Shadhili 'of Tunis (1196-1258)' but gives no 1227 date for activity there.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says al-Shadhili preached at Tunis and founded his order there in 1227 before moving east to Egypt, where the order flourished.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Abū al-Ḥasan al-Shādhilī (d. 1258) began his religious career at Tunis, where he was well known as a preacher. It was there that he founded his order in 1227.
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: the Shādhilīyah, founded by Abū al-Ḥasan al-Shādhilī of Tunis (1196–1258)
+  - id: shadhiliyya.active-at.alexandria
+    predicate: active-at
+    object: alexandria
+    when: 12XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text says only that the order settled and flourished in Egypt; Alexandria appears only as the birthplace of the third leader Ibn 'Ata' Allah, not as a seat of the order.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says al-Shadhili (1196-1258) finally settled in Alexandria, where he died.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The founder Abu al-Hasan al-Shadhili (1196-1258) finally settled in Alexandria, where he died, and his successor is Ibn Ata Allah al-Iskandari; the order's activity there is implied rather than stated.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: finally settling in Alexandria, where he died
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: he traveled eastward and settled eventually in Egypt, where the Shādhilīyah order came to flourish

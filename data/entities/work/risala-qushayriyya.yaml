@@ -1,0 +1,31 @@
+id: risala-qushayriyya
+type: work
+names:
+  en: The Qushayrian Letter
+notability: 5
+claims:
+  - id: risala-qushayriyya.attributed-to.al-qushayri
+    predicate: attributed-to
+    object: al-qushayri
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Al-risalah al-qushayriyah is listed as the work of Abu al-Qasim 'Abd al-Karim al-Qushayri (d. 1074).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: hujwiri-kashf-al-mahjub-nicholson
+        note: Nicholson refers throughout to 'the Risala of Qushayri' and calls it a valuable collection of sayings, anecdotes and definitions.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Al-risālah al-qushayrīyah (The Qushayrīan letter) of Abū al-Qāsim ʿAbd al-Karīm al-Qushayrī (d. 1074)
+      - key: hujwiri-kashf-al-mahjub-nicholson
+        locator: preamble
+        stance: asserts
+        excerpt: the _Risála_ of Qushayrí, which is so valuable as a collection of sayings, anecdotes, and definitions

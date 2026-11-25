@@ -1,0 +1,76 @@
+id: mathnawi
+type: work
+names:
+  en: Mathnawi
+notability: 8
+claims:
+  - id: mathnawi.attributed-to.rumi
+    predicate: attributed-to
+    object: rumi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Rumi dictated his Mathnavi to Husam al-Din, who transcribed it and read it back for correction.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: rumi-mesnevi-redhouse
+        note: The preface states the Mesnevi was composed in six books by Jelal (Rumi) at Husam's suggestion, with Husam as amanuensis.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-rumi
+        note: Rumi recited the opening eighteen verses of the Mathnavi, and Husam al-Din wrote down what the master dictated.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Thus Rūmī was persuaded to dictate his Mathnavī to Ḥusām al-Dīn, who transcribed the text and read it back to his master for correction.
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: Rūmī began by reciting the famous "Song of the Reed," the eighteen introductory verses of the Mathnavī
+      - key: rumi-mesnevi-redhouse
+        locator: preamble
+        stance: asserts
+        excerpt: the Mesnevī had been composed, in six volumes, books, or parts, by Jelāl
+  - id: mathnawi.composed
+    predicate: composed
+    when: 1256~/1273
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text dates only the start of the second book to A.H. 662 (A.D. 1263) after a two-year gap, and has Jelal dying in 1273 with the work already composed; it gives no 1256 start.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: "Graded A scholarly: A poem of November 1256 marks the start of the Mathnavi's dictation, which resumed in 1262 and continued almost to Rumi's death on 17 December 1273."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded A scholarly: The text says Rumi began the Mathnavi with the Song of the Reed around November 1256 at Husam al-Din's request, paused it from 1258 to 1262, and continued dictating it almost until his death on December 17, 1273."
+    sources:
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: A poem dated November 1256 reveals the moment when Ḥusām al-Dīn first assumed his new role.
+      - key: eor-rumi
+        locator: preamble
+        stance: asserts
+        excerpt: The dictation of the Mathnavī resumed in 1262, when Ḥusām al-Dīn was designated as Rūmī's spiritual successor (khalīfah ), and continued almost to the master's death on December 17, 1273.
+      - key: rumi-mesnevi-redhouse
+        locator: §3.82
+        stance: asserts
+        excerpt: Husām married again; and in that year, A.H. 662 (A.D. 1263), the second book was commenced.
+      - key: rumi-mesnevi-redhouse
+        locator: preamble
+        stance: asserts
+        excerpt: The second volume was commenced in A.D. 1263.

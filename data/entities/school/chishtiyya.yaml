@@ -1,0 +1,129 @@
+id: chishtiyya
+type: school
+names:
+  en: Chishtiyya
+claims:
+  - id: chishtiyya.branch-of.sufism
+    predicate: branch-of
+    object: sufism
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text lists the Chishtīyah among the ṭarīqahs that became part of mainstream Sufism.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text describes the Chishtīyah as one of the earliest ṭarīqahs in India, and the article treats ṭarīqahs as Ṣūfī orders.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: the Chishtīyah was among the earliest ṭarīqah s operating in India, and the first to originate in the subcontinent
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: the music-loving Chishtīyah, Kubrawīyah, and so forth—all have played pivotal roles in the formation of Islamic religious life
+  - id: chishtiyya.active-at.delhi
+    predicate: active-at
+    object: delhi
+    when: 12XX/13XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-islam-south-asia
+        note: "Graded A scholarly: Qutb ad-Din Bakhtiyar Kaki (d. 1235) 'spread Chishti influence to Delhi', and the Delhi shaykhs Nizam al-Din (1238-1325) and Chiragh-i Dihli (1276-1356) are named, so 12XX/13XX fits."
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says Muʿīn al-Dīn arrived in Delhi in 1193 and Niẓām al-Dīn Awliyāʾ (d. 1325) spread the order from his center in Delhi.'
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Niẓām al-Dīn Awliyāʾ (d. 1325) spent fifty years extending the Chishtīyah throughout India by dispatching hundreds of his own disciples from his center in Delhi.
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: His successor, Quṭb ad-Dīn Bakhtiyār Kākī (d. 1235), spread Chishtī influence to Delhi.
+  - id: chishtiyya.active-at.ajmer
+    predicate: active-at
+    object: ajmer
+    when: 1193/1236
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B scholarly: The text says Muʿīn al-Dīn arrived in Delhi in 1193, then moved to Ajmer and founded a khānaqāh, and he died in 1236; it gives no exact year for the move.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: "Graded B scholarly: Muin al-Din Chishti (d. 1236), the order's founder, moved to Ajmer after arriving in Delhi in 1193 and founded a khanaqah there, and Ajmer is later called the Chishti city; the date range is inferred from those two dates."
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: He arrived in Delhi in 1193 and then moved to Ajmer, an important city in newly conquered Rajputana, where he founded a khānaqāh.
+  - id: chishtiyya.active-at.ajmer.mughal
+    predicate: active-at
+    object: ajmer
+    when: 1568/1681
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: Akbar made fourteen pilgrimages to the Ajmer shrine, including those of 1568 and 1574; 1568 is stated, and 1681 does not appear.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text calls Ajmer a Chishtī city that Jahāngīr decorated with white marble and mentions Jahānārā Begum (d. 1681), but states no 1568 date.
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Two of these pilgrimages, those of 1568 and 1574, were made immediately after conquering Chittor and Bengal, respectively, victories he attributed to the blessings of Muʿīn ad-Dīn Chishtī.
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Jahāngīr himself decorated the Chishtī city of Ajmer with beautiful buildings of white marble, and Jahānārā Begum (d. 1681)
+  - id: chishtiyya.active-at.fatehpur-sikri
+    predicate: active-at
+    object: fatehpur-sikri
+    when: 15XX/16XX
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: Akbar (d. 1605) built his new capital Fatehpur Sikri near Salim Chishti's khanqah; no year is given, but the Akbar-era context fits 15XX/16XX.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Akbar (d. 1605) commissioned a dargāh for the Chishtīyah in Fatehpur Sikri, after Salīm's birth in a Chishtī shaykh's home, with no exact year.
+    sources:
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: in gratitude Akbar commissioned a splendid dargāh for the Chishtīyah in Fatehpur Sikri
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: He also had his new capital city, Fatehpur Sikri, built near Salīm Chishtī's khānqāh

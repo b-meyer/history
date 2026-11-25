@@ -56,3 +56,66 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: it has been maintained on Baghdad's east side down to this day
+  - id: qadiriyya.active-at.uchch
+    predicate: active-at
+    object: uchch
+    when: 1450~/1517
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says Qadiri and other orders appeared from about the mid-fifteenth century and that Muhammad Ghawth (d. 1517), claiming Qadiri succession, settled at Uchch.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says Qadiri orders appeared from about the mid-fifteenth century and Muhammad Ghawth (d. 1517), claiming descent in the Qadiri line, settled at Uchch; no exact settlement date is given.
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Muḥammad Ghawth (d. 1517), claiming to be tenth in succession to the founder of the Qādirīyah, ʿAbd al-Qādir al-Jīlānī (1077–1176), settled at Uchch
+  - id: qadiriyya.active-at.bidar
+    predicate: active-at
+    object: bidar
+    when: 1422~
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says Qadiri Sufis had settled at Bidar about the time it became the Bahmani capital in 1422.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The text says Qadiri Sufis settled at Bidar about the time it became the Bahmani capital in 1422.'
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Qadiri Ṣūfīs had settled at Bidar about the time it became the capital of the Bahmani sultanate in 1422
+  - id: qadiriyya.active-at.bijapur
+    predicate: active-at
+    object: bijapur
+    when: 16XX
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says the Qadiriyah and Shattariyah accepted land grants in seventeenth-century Bijapur, which is 16XX in EDTF.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The text says the Qadiriyah and Shattariyah accepted land grants in seventeenth-century Bijapur, a major Qadiri center.
+    sources:
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: the Qādirīyah and Shaṭṭārīyah accepted land grants in seventeenth-century Bijapur

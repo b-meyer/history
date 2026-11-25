@@ -102,3 +102,188 @@ claims:
         locator: preamble
         stance: asserts
         excerpt: For the final seventeen years of his life Ibn al-ʿArabī lived in Damascus
+  - id: ibn-arabi.active-at.seville
+    predicate: active-at
+    object: seville
+    when: 1172~
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Born in 1165 and brought up in Seville from age seven (about 1172), where he later had his youthful triple vision.'
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text says that as a child (born 1165) he moved with his family to Seville and was educated there; 1172 is an inference.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: Born in 1165, he was brought up from the age of seven in Seville (so about 1172) and met Sufi teachers there.'
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: was brought up from the age of seven in Seville
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: While still a child, Ibn ʿArabī and his family moved to Seville
+  - id: ibn-arabi.active-at.cordoba
+    predicate: active-at
+    object: cordoba
+    when: 1190
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: In Cordoba in 1190, after a retreat of at least nine months, he had a vision of all the prophets from Adam to Muhammad.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: eor-sufism
+        note: 'Graded B scholarly: The text says in his early twenties (born 1165) he described a meeting with Ibn Rushd in Cordova; 1190 is approximate.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: After a retreat of at least nine months he experienced a vision of all the prophets in Cordoba in 1190.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: in Cordoba in 1190, he experienced a remarkable vision of all the prophets and messengers
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: He describes a unique meeting in Cordova with the greatest of the Muslim Aristotelian philosophers
+  - id: ibn-arabi.active-at.tunis
+    predicate: active-at
+    object: tunis
+    when: 1194
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: His first visit outside Andalusia was to Tunis, where he stayed with al-Mahdawi in 1194.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: His first visit outside Andalusia was to Tunis, where he stayed with al-Mahdawi in 1194.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: After his first visit outside Andalusia to Tunis where he stayed with al-Mahdawī in 1194
+  - id: ibn-arabi.active-at.konya
+    predicate: active-at
+    object: konya
+    when: 1202/1223
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: After Mecca (arrived 1202) he travelled with Majduddin Ishaq to Konya to meet the Seljuk sultan, but the text gives no year, so 1202/1223 is only a loose bracket.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: After the Mecca years (arrival 1202) he traveled with Majduddin to Konya to meet the Seljuk sultan; the text gives no year, and 1223 follows only from his death in 1240 after seventeen final years in Damascus.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: they traveled together to Konya to meet the Seljuk sultan
+  - id: ibn-arabi.active-at.baghdad
+    predicate: active-at
+    object: baghdad
+    when: 1202/1223
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he travelled the Levant advising kings and princes from Konya to Baghdad, Aleppo and Damascus, with no date given for Baghdad.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Between Mecca (1202) and settling in Damascus (c. 1223) he advised kings and princes 'from Konya to Baghdad, Aleppo, and Damascus', a regional sweep with no date for Baghdad itself.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: serving as adviser to kings and princes throughout the region, from Konya to Baghdad, Aleppo, and Damascus
+  - id: ibn-arabi.buried-at.damascus
+    predicate: buried-at
+    object: damascus
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The text says he settled in Damascus until his death in 1240 and that his mausoleum is a pilgrimage center, implying burial there without stating it outright.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The article says Ibn Arabi settled in Damascus in 1223 and stayed until his death in 1240, and that his mausoleum is still a pilgrimage center, but it does not explicitly place the mausoleum in Damascus.
+    sources:
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: In 1223 he settled in Damascus, where he remained until his death in 1240.
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: His mausoleum continues to be an important pilgrimage center.
+  - id: ibn-arabi.member-of.sufism
+    predicate: member-of
+    object: sufism
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The article describes him as a major spiritual teacher in Islam's mystical tradition who met many Sufi teachers in Andalusia and North Africa and studied central texts of Sufism.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text presents him as a major Ṣūfī who claimed initiation into Sufism by Khiḍr.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        source: ibn-arabi-tarjuman-nicholson
+        note: "Graded A primary: In the first-recension preface Ibn al-Arabi says his poems signify Divine influences 'according to the most excellent way which we (Sufis) follow', and Nicholson calls him the most celebrated Muhammadan mystic."
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: He dedicated himself to the spiritual life under many Sufi teachers and studied central Sufi texts, and the article calls al-Ghazali his Sufi predecessor.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: An account of the many Ṣūfī teachers, male and female, that he met in Seville, Córdoba, and other major cities of Andalusia and North Africa
+      - key: eor-sufism
+        locator: preamble
+        stance: reports
+        excerpt: his claim to have been initiated into Sufism by the mythic figure Khiḍr
+      - key: ibn-arabi-tarjuman-nicholson
+        locator: Introduction
+        stance: asserts
+        excerpt: according to the most excellent way which we (Ṣúfís) follow

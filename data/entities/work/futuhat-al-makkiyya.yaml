@@ -1,0 +1,55 @@
+id: futuhat-al-makkiyya
+type: work
+names:
+  en: al-Futuhat al-Makkiyya
+notability: 6
+claims:
+  - id: futuhat-al-makkiyya.attributed-to.ibn-arabi
+    predicate: attributed-to
+    object: ibn-arabi
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The insights the Youth inspired in Ibn al-Arabi at the Kaaba, which he was told to write down, became his Meccan Illuminations (Futuhat).
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-sufism
+        note: The text names Al-futūḥat al-makkīyah as his work, ordered in a vision during pilgrimage.
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: The youth's being inspired in Ibn al-ʿArabī a series of insights, which he was told to write down and which became his Meccan Illuminations (Futūhāt).
+      - key: eor-sufism
+        locator: preamble
+        stance: asserts
+        excerpt: Two of his most influential works are Al-futūḥat al-makkīyah (The Meccan revelations), which he was ordered to write in a visionary experience while on pilgrimage
+  - id: futuhat-al-makkiyya.composed
+    predicate: composed
+    when: 1202/1238
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The Futuhat was initiated after the 1202 Kaaba encounter, its first draft was completed in 1231 and a second recension of the whole in 1238.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: The insights from the 1202 Kaaba encounter became the Futuhat, whose first draft was completed in 1231 and a second recension of the whole work in 1238.'
+    sources:
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: The second significant event took place at the Kaʿaba in 1202.
+      - key: eor-ibn-al-arabi
+        locator: preamble
+        stance: asserts
+        excerpt: with the first draft of the Futūhāt being completed in 1231 and a second recension of the entire work in 1238

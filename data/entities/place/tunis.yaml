@@ -1,0 +1,5 @@
+id: tunis
+type: place
+names: { en: Tunis }
+ids: { wikidata: 'Q3572' }
+coords: [10.18, 36.8]

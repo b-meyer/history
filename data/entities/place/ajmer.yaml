@@ -1,0 +1,5 @@
+id: ajmer
+type: place
+names: { en: Ajmer }
+ids: { wikidata: 'Q200049' }
+coords: [74.64, 26.47]

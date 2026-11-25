@@ -1,0 +1,5 @@
+id: seville
+type: place
+names: { en: Seville }
+ids: { wikidata: 'Q8717' }
+coords: [-6.0, 37.39]

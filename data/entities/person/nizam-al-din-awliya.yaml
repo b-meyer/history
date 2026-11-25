@@ -1,0 +1,191 @@
+id: nizam-al-din-awliya
+type: person
+names:
+  en: Nizam al-Din Awliya
+claims:
+  - id: nizam-al-din-awliya.born
+    predicate: born
+    when: 1238
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The text gives Nizam al-Din Awliya's dates as 1238-1325, so born 1238.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry opens with his dates as AH 636-725/1238-1325 CE and says he was born in Badaon.
+    sources:
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: asserts
+        excerpt: NIẒĀM AL-DĪN AWLIYĀʾ (ah 636–725/1238–1325 ce) was a major Ṣūfī saint of the Chishtī order.
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Niẓām al-Dīn Awliyāʾ (1238–1325)
+  - id: nizam-al-din-awliya.died
+    predicate: died
+    when: 1325-04-03
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text gives only the year 1325 for his death; the day 1325-04-03 is not in the source.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text gives only 'd. 1325' with no month or day, so the 1325-04-03 precision is not in the source.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: The entry states he died on April 3, 1325, and was buried in the khanqah garden.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: The entry states plainly that he died on April 3, 1325, matching the heading dates AH 636-725/1238-1325 CE.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-islam-south-asia
+        note: The entry states plainly that he died on April 3, 1325 (heading dates AH 636-725/1238-1325 CE); eor-islam-south-asia gives 1238-1325 and eor-tariqah d. 1325, confirming the year though not the day.
+    sources:
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: asserts
+        excerpt: He died on April 3, 1325
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Niẓām al-Dīn Awliyāʾ (d. 1325)
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: Niẓām al-Dīn Awliyāʾ (1238–1325)
+  - id: nizam-al-din-awliya.active-at.delhi
+    predicate: active-at
+    object: delhi
+    when: 1254~/1325
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text calls him one of the two great shaykhs of fourteenth-century Delhi with dates 1238-1325, but gives no basis for an activity start of about 1254.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: flagged
+        note: The text places his center in Delhi, gives his death as 1325 and says he spent fifty years there, which puts the start near 1275 and not 1254.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: At sixteen (c. 1254 by the 1238 birth year) he moved to Delhi, founded his khanqah at Ghiyathpur just outside the capital, and remained there until his death in 1325.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: Born 1238, he moved to Delhi at sixteen (about 1254), and later founded his khanqah at Ghiyathpur just outside the capital where he worked until his death in 1325; the start year is derived from his age, hence approximate.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: Born 1238, he moved to Delhi at sixteen (so about 1254), was later ordered to found a khanqah in Delhi, and the entry describes his Delhi khanqah until his death in 1325; the 1254 start is derived from his age, hence approximate.
+    sources:
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: asserts
+        excerpt: At sixteen, knowing he could get no further as a scholar in Badaon, he asked permission to go to Delhi.
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: Niẓām al-Dīn Awliyāʾ (d. 1325) spent fifty years extending the Chishtīyah throughout India by dispatching hundreds of his own disciples from his center in Delhi.
+      - key: eor-islam-south-asia
+        locator: preamble
+        stance: asserts
+        excerpt: the two great shaykh s of fourteenth-century Delhi
+  - id: nizam-al-din-awliya.buried-at.delhi
+    predicate: buried-at
+    object: delhi
+    confidence: B
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: He was buried in the garden of his khanqah, which stood at Ghiyathpur a little way outside Delhi, and the shrine is visited during the conquest of Delhi, so Delhi is the city in a broad sense.
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded A scholarly: He was buried in the garden of the khanqah that Baba Farid ordered him to found in Delhi (at Ghiyathpur, a little outside the capital), where Muhammad Tughluq built his mausoleum and Babur visited the shrine during his conquest of Delhi.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: confirmed
+        note: He was buried in the garden of his Delhi khanqah at Ghiyathpur, a village a little outside the capital, and Babur visited the shrine during his conquest of Delhi; no other catalogued source mentions the burial.
+    sources:
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: asserts
+        excerpt: was buried in the garden of the khānqāh
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: asserts
+        excerpt: ordering him to found a khānqāh (lodge) in Delhi
+  - id: nizam-al-din-awliya.member-of.chishtiyya
+    predicate: member-of
+    object: chishtiyya
+    confidence: A
+    basis: scholarly
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        source: eor-tariqah
+        note: The text says Nizam al-Din Awliya spent fifty years extending the Chishtiyah throughout India, dispatching disciples from Delhi.
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: confirmed
+        note: He is called a major Sufi saint of the Chishti order and enrolled as disciple of Baba Farid, then head of the order.
+    sources:
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: asserts
+        excerpt: was a major Ṣūfī saint of the Chishtī order
+      - key: eor-tariqah
+        locator: preamble
+        stance: asserts
+        excerpt: spent fifty years extending the Chishtīyah throughout India
+  - id: nizam-al-din-awliya.head-of.chishtiyya
+    predicate: head-of
+    object: chishtiyya
+    when: 1261~/1325
+    confidence: B
+    basis: tradition
+    origin: ai-extracted
+    audits:
+      - on: 2026-11-24
+        by: claude-sonnet-5-5
+        verdict: changed
+        note: 'Graded B tradition: According to traditional accounts Baba Farid appointed him successor at twenty-three (c. 1261) and the order expanded under his leadership; the text gives no end date other than his death in 1325.'
+      - on: 2026-11-24
+        by: claude-opus-5-5
+        verdict: changed
+        note: 'Graded B tradition: Traditional accounts say Baba Farid, then head of the Chishti order, appointed him successor at twenty-three (about 1261) and the order expanded under his leadership until his death in 1325; the text gives the appointment, not the date he actually took over the headship.'
+    sources:
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: reports
+        excerpt: When Niẓām al-Dīn was only twenty-three, Bābā Farīd appointed him as his successor
+      - key: eor-nizam-al-din-awliya
+        locator: preamble
+        stance: asserts
+        excerpt: Under his leadership, the order expanded into a mass movement across India.
