@@ -1,0 +1,40 @@
+- key: eor-muhammad
+  locator: preamble
+  excerpt: 'is revered by Muslims as the prophet to whom the Qurʾān, the sacred scripture of Islam, was revealed'
+  passage: fe250a733c825fe0
+- key: eor-sunnah
+  locator: preamble
+  excerpt: 'In every "founded" religious tradition, maintaining proximity to the founder has been an important source of legitimacy and authority'
+  passage: 8f297effadec08ab
+- key: eor-islamic-law-shariah
+  locator: preamble
+  excerpt: 'the Shīʿī and Khārijī factions both broke away from the main body of Muslims, who came to be called Sunnīs'
+  passage: 33579dc4a5f96852
+- key: eor-madhhab
+  locator: preamble
+  excerpt: 'The Sunnīs accepted as legitimate the leadership of the four "Rightly Guided" caliphs'
+  passage: dfc2417411b7ba4d
+- key: eor-shiism-overview
+  locator: preamble
+  excerpt: 'the Arabic term for the "party" of ʿAlī ibn Abī Ṭālib, cousin of the prophet Muḥammad and husband of Muḥammad''s daughter Fāṭimah'
+  passage: f6ca2e696c4593a7
+- key: eor-shiism-ismailiyah
+  locator: preamble
+  excerpt: 'A major branch of the Shīʿah, the Ismāʿīlīyah traces the line of imams through Ismāʿīl'
+  passage: 0ab4f888edd4bac5
+- key: eor-shiism-ithna-ashariyah
+  locator: preamble
+  excerpt: 'the establishment of the Fatimid caliphate in Cairo'
+  passage: 8a711728d0e06303
+- key: eor-kharijis
+  locator: preamble
+  excerpt: 'KHᾹRIJĪS are the "third party" in Islam'
+  passage: d479b4510faa3b5b
+- key: eor-hanabilah
+  locator: preamble
+  excerpt: 'students especially helped to spread the madhhab beyond the confines of Baghdad'
+  passage: 8de629a8f3490c59
+- key: eor-sufism
+  locator: preamble
+  excerpt: 'the mystical tradition, known as Sufism'
+  passage: 04bc54373eedf9db

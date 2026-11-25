@@ -1,0 +1,20 @@
+- key: eor-islam-south-asia
+  locator: preamble
+  excerpt: 'a conservative Central Asian Ṣūfī order'
+  passage: d6749ce3b3853614
+- key: eor-islam-central-asia
+  locator: preamble
+  excerpt: 'the latter spread to India and China, as well as to the Ottoman Empire'
+  passage: e2a23d9e6e117260
+- key: eor-tariqah
+  locator: preamble
+  excerpt: 'Bahāʾ al-Dīn-i Naqshband (1318–1388)'
+  passage: 4d22c12f8c9cbc74
+- key: eor-sufism
+  locator: preamble
+  excerpt: 'In some Ṣūfī groups, such as the Naqshbandīyah, dhikr is a private exercise.'
+  passage: d849b5eab13d2a00
+- key: eor-sirhindi
+  locator: preamble
+  excerpt: 'SIRHINDĪ, AḤMAD (ah 971–1034/1564–1624 ce), an eminent Indian Muslim Ṣūfī'
+  passage: 003d6060df5d63a6

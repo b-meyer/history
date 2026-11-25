@@ -1,0 +1,24 @@
+- key: eor-sufism
+  locator: preamble
+  excerpt: 'The Mawlawīyah trace their silsilah to the mystic and poet Jalāl al-Dīn Rūmī.'
+  passage: 7905b78b7b277959
+- key: eor-tariqah
+  locator: preamble
+  excerpt: 'takes its name from the title Mawlawī (my master), by which the Persian mystic poet Jalāl al-Dīn Rūmī (1207–1273) was addressed'
+  passage: 258b9bf9e3b0438b
+- key: eor-rumi
+  locator: preamble
+  excerpt: 'the Mevlevi order (called Whirling Dervishes in the West)'
+  passage: b67f133007227cdd
+- key: rumi-mesnevi-redhouse
+  locator: preamble
+  excerpt: 'He is said to have instituted his peculiar order of dervishes'
+  passage: 169847e7ffd7a5ff
+- key: rumi-mesnevi-redhouse
+  locator: §3.76
+  excerpt: 'in imitation of their founder, Jelāl'
+  passage: 329aefb065c05b9f
+- key: rumi-mesnevi-redhouse
+  locator: §3.77
+  excerpt: 'a great merchant came to Qonya to visit the tomb of Jelāl'
+  passage: d2e30b8de5c339f4

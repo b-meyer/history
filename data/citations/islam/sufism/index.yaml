@@ -1,0 +1,40 @@
+- key: eor-sufism
+  locator: preamble
+  excerpt: 'the mystical tradition, known as Sufism'
+  passage: 04bc54373eedf9db
+- key: eor-islam-central-asia
+  locator: preamble
+  excerpt: 'The first centers appeared in Balkh and Nishapur in the eighth and ninth centuries.'
+  passage: bc67c471dff2d391
+- key: eor-tariqah
+  locator: preamble
+  excerpt: 'As early as 850 ce there were samāʿ houses in Baghdad in which the Ṣūfīs could listen to music'
+  passage: 966a311c4d846439
+- key: eor-hasan-al-basri
+  locator: preamble
+  excerpt: 'was a famous Muslim ascetic of the generation following the prophet Muḥammad'
+  passage: 006e6c925e664c86
+- key: hujwiri-kashf-al-mahjub-nicholson
+  locator: §10.3
+  excerpt: 'He is held in high regard and esteem by the Ṣúfís.'
+  passage: baa5195c4274e2cb
+- key: eor-rabiah
+  locator: preamble
+  excerpt: 'RĀBIʿAH AL-ʿADAWĪYAH (d. ah 185/801 ce)'
+  passage: e93f86c6d21a525d
+- key: eor-hujwiri
+  locator: preamble
+  excerpt: 'a very early textbook of Sufism in the Persian language'
+  passage: 6334ed3710cf0c17
+- key: hujwiri-kashf-al-mahjub-nicholson
+  locator: preamble
+  excerpt: 'Although he was a Sunní and a Ḥanafite'
+  passage: 485d9dd516ac6eaf
+- key: eor-islam-south-asia
+  locator: preamble
+  excerpt: 'settled and died in Lahore in 1071'
+  passage: e6d4c0306e7324ef
+- key: eor-ghazali
+  locator: preamble
+  excerpt: 'religious scholars in the main stream of Sunnism had to look more favorably on the Ṣūfī movement'
+  passage: e5bf990fba828a19

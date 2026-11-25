@@ -1,0 +1,16 @@
+- key: eor-tariqah
+  locator: preamble
+  excerpt: 'a confraternity founded around the figure or the memory of a charismatic figure of spiritual authority'
+  passage: e6c45cca30045889
+- key: eor-sufism
+  locator: preamble
+  excerpt: 'Many Ṣūfī groups became self-perpetuating social organizations whose central focus was the founder and his teaching.'
+  passage: 04630cb0aa72fead
+- key: eor-islam-south-asia
+  locator: preamble
+  excerpt: 'The Naqshbandīyah, a conservative Central Asian Ṣūfī order'
+  passage: d6749ce3b3853614
+- key: eor-shiism-overview
+  locator: preamble
+  excerpt: 'the Kizilbash Türkmen federation and religious order adopted such extremist Shīʿī doctrine under the leadership of the Safavids'
+  passage: fe679887f814327c
