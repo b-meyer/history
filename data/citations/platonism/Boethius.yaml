@@ -1,0 +1,68 @@
+- key: sep-boethius
+  locator: preamble
+  excerpt: 'drew extensively on the thinking of Greek Neoplatonists such as Porphyry and Iamblichus'
+  passage: 23837d55fcec11fe
+- key: sep-boethius
+  locator: §1
+  excerpt: 'he was imprisoned and (probably in 526) executed, but not before he had the chance to write his literary masterpiece'
+  passage: 255b97cdbe69b8de
+- key: rouse-ball-short-account-history-mathematics
+  locator: p. 110
+  excerpt: 'born at Rome about 475 and died in 526'
+  passage: 27fcbe754aa8221f
+- key: boethius-consolation-james
+  locator: preamble
+  excerpt: 'Within a year he was a solitary prisoner at Pavia'
+  passage: c9b08e0fec82fbef
+- key: boethius-consolation-james
+  locator: ch. IV
+  excerpt: "Pavia, the place of Boethius' imprisonment"
+  passage: 878208b1d1000250
+- key: sep-boethius
+  locator: §2
+  excerpt: 'For what is important is Boethius’s choice of Porphyry as his main authority in logic.'
+  passage: 413a8b3a1a92aed0
+- key: sep-porphyry
+  locator: §3.4.1
+  excerpt: 'a monograph on categorical syllogisms formed the basis of Boethius’ work on the subject'
+  passage: 03c63d2359f521d0
+- key: sep-iamblichus
+  locator: §4.2
+  excerpt: 'His views on the quadrivium, drawing upon Nicomachus, were also adopted by Martianus Capella and Boethius'
+  passage: 8816cf7b96ff5f42
+- key: sep-boethius
+  locator: §4
+  excerpt: 'This Augustinian view is faithfully set out in the brief Treatise II.'
+  passage: fc214a933aa14223
+- key: sep-boethius
+  locator: §5
+  excerpt: 'an invocation to God in terms borrowed from Plato’s Timaeus'
+  passage: fef3e07976d573f3
+- key: boethius-consolation-james
+  locator: bk. V
+  excerpt: "Plato, 'Republic,' V. 473, D"
+  passage: fbfff295bc42c67c
+- key: boethius-consolation-james
+  locator: ch. IX
+  excerpt: 'as Plato maintains in the "Timæus," we ought even in the most trivial matters to implore the Divine protection'
+  passage: c968e1dc94355633
+- key: boethius-consolation-james
+  locator: bk. III
+  excerpt: "The substance of this poem is taken from Plato's 'Timæus,' 29-42."
+  passage: 4ee0b27fb70dff09
+- key: sep-boethius
+  locator: §6
+  excerpt: 'Suppose, rather (as Noble 2024 argues), Boethius has adopted the position taken by Proclus'
+  passage: b12a6019dd66e1a5
+- key: boethius-consolation-james
+  locator: ch. VI
+  excerpt: 'eternity is the possession of endless life whole and perfect at a single moment'
+  passage: 1a85a4b987cf8875
+- key: sep-proclus
+  locator: §3.4
+  excerpt: 'Proclus’ answer was later taken up by Ammonius in his Commentary on the De Interpretatione IX and in Boethius’ Consolation of Philosophy V 6'
+  passage: 56b028245142a562
+- key: sep-boethius
+  locator: §8
+  excerpt: 'Boethius’s translations of Aristotle and Porphyry (except for that of the Posterior Analytics, which was lost) remained standard throughout the Middle Ages'
+  passage: 32564ec375f2766b

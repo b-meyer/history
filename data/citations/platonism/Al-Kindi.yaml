@@ -1,0 +1,52 @@
+- key: sep-al-kindi
+  locator: preamble
+  excerpt: 'was the first self-identified philosopher in the Arabic tradition'
+  passage: fe98cf140301061b
+- key: sep-al-kindi
+  locator: '§1.1'
+  excerpt: 'His lineage earned him the title “philosopher of the Arabs” among later writers.'
+  passage: 3541ce6eec30d416
+- key: sep-arabic-islamic-greek
+  locator: '§3'
+  excerpt: 'one of Kindi’s works is addressed to al-Ma’mun'
+  passage: c203d96d5f41c70e
+- key: sep-theology-aristotle
+  locator: '§2'
+  excerpt: 'corrected for Ahmad ibn al-Mu‘tasim by al-Kindi'
+  passage: 724ad2b106c91ccd
+- key: sep-theology-aristotle
+  locator: '§3'
+  excerpt: 'devoted to the promotion and Islamicization of Greek philosophy and science'
+  passage: d3be983cf0f341ba
+- key: sep-al-kindi
+  locator: '§2.1'
+  excerpt: 'Euclid influenced his methodology as well as his mathematics'
+  passage: 0349ec0737adf0c5
+- key: sep-al-kindi
+  locator: '§2.2'
+  excerpt: 'using concepts drawn from the Isagoge of Porphyry'
+  passage: 29d6301b3763b047
+- key: sep-al-kindi
+  locator: '§3.1'
+  excerpt: 'he classifies all predicates or terms (maqulat) into genus, species, difference, individual, proper accident, and common accident'
+  passage: a264f76d9fd40008
+- key: sep-neoplatonism
+  locator: '§8'
+  excerpt: 'Neoplatonic thought facilitated the integration of ancient philosophy and science into both Islam (especially through Al-Kindi, Al-Farabi and Avicenna [Ibn Sina])'
+  passage: 9b24f68aecdfebb9
+- key: sep-al-kindi
+  locator: '§1.2'
+  excerpt: 'Our version of this treatise is incomplete, comprising only the first part, which is divided into four sections.'
+  passage: 5a60fc094d1f1e81
+- key: sep-al-kindi
+  locator: '§3.2'
+  excerpt: 'And this act is a proper characteristic [called] by the name “origination.”'
+  passage: b7b43d77a540afc6
+- key: sep-al-kindi
+  locator: '§3.3'
+  excerpt: 'he uses Philoponus’ strategy of using Aristotle against himself'
+  passage: 03ca584e8ff9f1c3
+- key: sep-al-kindi
+  locator: '§6'
+  excerpt: 'al-‘Amiri, a well-known Neoplatonist thinker who was a second generation student of al-Kindi’s'
+  passage: 1f9a16b196783cd2

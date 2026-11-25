@@ -1,19 +1,19 @@
 ---
 title: 'Platonism'
-description: 'A guide to the Pythagorean and Platonic line from Pythagoras at Croton to Proclus and the closing of the Athenian Academy in 529.'
+description: 'A guide to the Platonic line from Pythagoras at Croton through Plotinus and Proclus to the Christian Platonists and the philosophers who read Plato in Arabic, ending with Ibn Rushd.'
 group: 'Overview'
 order: 0
-audited: '2026-11-23'
+audited: '2026-11-24'
 ---
 
 # Platonism
 
-This collection follows one line of philosophy from [[pythagoras]] to [[proclus]]. It runs through Plato and his school, the [[neopythagoreans]], and the [[neoplatonists]]. Each page below covers one person or group, in the order the line runs. Figures who have no page of their own, such as Nicomachus, Numenius and Philolaus, are named inside the pages where they matter.
+This collection follows one line of philosophy from [[pythagoras]] to [[ibn-rushd]]. It runs through Plato and his school, the [[neopythagoreans]] and the [[neoplatonists]], then on through the Christian Platonists and Platonism in Arabic. Each page below covers one person, group or work, listed by the tradition it belongs to. Figures who have no page of their own, such as Nicomachus, Numenius and Philolaus, are named inside the pages where they matter.
 
 ## Pythagorean Beginnings
 
 - [Pythagoras](platonism/Pythagoras.md) - the philosopher who spent his early years on [[samos]] and emigrated to [[croton]] at the age of forty. [@sep-pythagoras, preamble]
-- [Pythagoreans](platonism/Pythagoreans.md) - the fifth- and fourth-century thinkers whom Aristotle called "the so-called Pythagoreans". [@sep-pythagoreanism, preamble]
+- [Pythagoreans](platonism/Pythagoreans.md) - the thinkers of the fifth and first half of the fourth century whom Aristotle called "the so-called Pythagoreans". [@sep-pythagoreanism, preamble]
 
 ## Plato and the Academy
 
@@ -31,9 +31,28 @@ This collection follows one line of philosophy from [[pythagoras]] to [[proclus]
 - [Iamblichus](platonism/Iamblichus.md) - Porphyry's pupil. [@sep-neoplatonism, §1]
 - [Proclus](platonism/Proclus.md) - named among the later Neoplatonists after Iamblichus. [@sep-neoplatonism, §1]
 
+## Christian Platonists
+
+- [[augustine]] - Augustine of Hippo (354 to 430), who knew the writings of Plotinus and Porphyry closely. [@sep-neoplatonism, §1]
+- [[boethius]] - born about 475 to 477 and probably dead by 526, whose writings drew on Greek Neoplatonists such as Porphyry and Iamblichus. [@sep-boethius, preamble]
+- [[pseudo-dionysius]] - the Christian author who wrote around 500 as Dionysius, a disciple of Saint Paul, and built his theology from the works of Proclus. [@sep-proclus, §4]
+
+The Stanford Encyclopedia names Augustine in the West, the Cappadocian Fathers in the East and the writings ascribed to Dionysius the Areopagite as the routes by which Neoplatonism shaped Christian theology. [@sep-neoplatonism, §8] This group follows a tradition, not a date order, since Proclus lived from 412 to 485 [@sep-proclus, preamble], after Augustine, who lived from 354 to 430 [@sep-neoplatonism, §1], while Boethius died around 526 [@sep-boethius, preamble] and Pseudo-Dionysius wrote around 500 [@sep-proclus, §4], before the Academy closed in 529 [@sep-neoplatonism, §7].
+
+## Platonism in Arabic
+
+- [[theology-of-aristotle|The Theology of Aristotle]] - the longest surviving Arabic version of Plotinus's [[enneads]], an adapted translation of parts of Enneads IV to VI that circulated under Aristotle's name. [@sep-theology-aristotle, §1] [@sep-arabic-islamic-greek, §3]
+- [[al-kindi]] - called by the Stanford Encyclopedia the first faylasuf, who began bringing Aristotelian and Neoplatonic doctrine into philosophy in Arabic. [@sep-arabic-islamic-greek, preamble]
+- [[al-farabi]] - who drew up a curriculum of higher education built on the Aristotelian sciences. [@sep-arabic-islamic-greek, preamble]
+- [[ibn-sina]] - whose program of demonstrative science, from logic to philosophical theology, had al-Kindi's mix of [[aristotle|Aristotelian]] and Neoplatonic thought and al-Farabi's syllabus behind it. [@sep-arabic-islamic-greek, preamble]
+- [[al-ghazali]] - whose [[incoherence-of-the-philosophers|Incoherence of the Philosophers]] judged three teachings of Ibn Sina both wrong and a danger to religion. [@sep-al-ghazali, §3]
+- [[ibn-rushd]] - who answered al-Ghazali with a refutation, [[incoherence-of-the-incoherence|The Incoherence of the Incoherence]]. [@sep-al-ghazali, §4]
+
+The Stanford Encyclopedia says that by way of the Theology of Aristotle, Neoplatonic thought helped bring ancient philosophy and science into Islam, above all through al-Kindi, al-Farabi and Ibn Sina. [@sep-neoplatonism, §8]
+
 ## The Teaching Chain
 
-The Stanford Encyclopedia names Porphyry as Plotinus's pupil and Iamblichus as Porphyry's pupil, with Proclus among the later figures. [@sep-neoplatonism, §1] The label Neoplatonism is modern, and the philosophers it covers did not think of themselves as engaged in an effort to revive Plato's dialogues. [@sep-neoplatonism, preamble] It covers roughly the middle of the third century to the middle of the seventh. [@sep-neoplatonism, preamble]
+The Stanford Encyclopedia names Porphyry as Plotinus's pupil and Iamblichus as Porphyry's pupil, with Proclus among the later figures. [@sep-neoplatonism, §1] The label Neoplatonism is modern, and the philosophers it covers did not think of themselves as engaged in an effort specifically to revive Plato's dialogues, though they did call themselves "Platonists". [@sep-neoplatonism, preamble] It covers roughly the middle of the third century to the middle of the seventh. [@sep-neoplatonism, preamble]
 
 ## The Number Thread
 

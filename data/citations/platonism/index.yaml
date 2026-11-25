@@ -22,6 +22,46 @@
   locator: §1
   excerpt: 'the Egyptian-born Plotinus (204/5–270) is commonly regarded as the founder of Neoplatonism'
   passage: bb0a7f0fa3247e2c
+- key: sep-boethius
+  locator: preamble
+  excerpt: 'drew extensively on the thinking of Greek Neoplatonists such as Porphyry and Iamblichus'
+  passage: 23837d55fcec11fe
+- key: sep-proclus
+  locator: §4
+  excerpt: 'Dionysius was a Christian author writing around 500, who was deeply fascinated by Proclus'
+  passage: 711ae5b5badad95c
+- key: sep-neoplatonism
+  locator: §8
+  excerpt: 'Neoplatonism profoundly influenced the emergence of mainstream and not so mainstream Christian theology'
+  passage: 9b24f68aecdfebb9
+- key: sep-proclus
+  locator: preamble
+  excerpt: 'Proclus of Athens (*412–485 C.E.)'
+  passage: 03c257d3888e84ba
+- key: sep-neoplatonism
+  locator: §7
+  excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
+  passage: b77f00a2646bd600
+- key: sep-theology-aristotle
+  locator: §1
+  excerpt: 'the longest, and most famous, text to preserve an Arabic version of the Enneads of Plotinus'
+  passage: 6a744b2469019537
+- key: sep-arabic-islamic-greek
+  locator: §3
+  excerpt: 'in fact an adapted translation of parts of Plotinus’ Enneads IV–VI'
+  passage: c203d96d5f41c70e
+- key: sep-arabic-islamic-greek
+  locator: preamble
+  excerpt: 'Al-Kindi, the first faylasuf, initiated the incorporation of the Aristotelian, Peripatetic and Neoplatonic doctrines'
+  passage: 14a7c42ce1e68348
+- key: sep-al-ghazali
+  locator: §3
+  excerpt: 'These are three teachings from Avicenna’s philosophy'
+  passage: 25311618e6a56da0
+- key: sep-al-ghazali
+  locator: §4
+  excerpt: 'Averroes composed a refutation of al-Ghazālī’s Incoherence'
+  passage: ec775e4d85c2db51
 - key: sep-neoplatonism
   locator: preamble
   excerpt: 'the designation “Neoplatonic” is of modern coinage and to some extent a misnomer'
@@ -30,7 +70,3 @@
   locator: §4
   excerpt: 'Neopythagoreans typically emphasize the role of number in the cosmos and treat the One and Indefinite Dyad as ultimate principles'
   passage: e0aa034178b19f53
-- key: sep-neoplatonism
-  locator: §7
-  excerpt: 'disbanded in the aftermath of Emperor Justinian’s legislation of 529, which resulted in the closing of the Platonist academy'
-  passage: b77f00a2646bd600

@@ -1,0 +1,48 @@
+- key: sep-ibn-rushd
+  locator: preamble
+  excerpt: 'The Andalusian philosopher, physician and judge Ibn Rushd (1126–1198)'
+  passage: 1ab5207352e1ea5b
+- key: sep-ibn-rushd
+  locator: §1.1
+  excerpt: 'Ibn Rushd was born in Cordova in 1126'
+  passage: b16fe29e1bcfdc05
+- key: eor-islam-north-africa
+  locator: preamble
+  excerpt: 'lived there for many years and wrote some of their most importantworks there'
+  passage: 0bb5382b01bb3056
+- key: sep-ibn-rushd
+  locator: §1.2
+  excerpt: 'most famously and extensively on Aristotle—covering nearly the whole Aristotelian corpus'
+  passage: 4ece87f54ac266b0
+- key: sep-arabic-islamic-greek
+  locator: §5
+  excerpt: 'This paved the way for Averroes to conceive his project of commenting upon the Aristotelian corpus as the sum of philosophical science'
+  passage: 92c9889c57d2d6dd
+- key: sep-ibn-rushd
+  locator: §2
+  excerpt: 'a critical and severe interaction with the two Islamic authorities in logic before him, al-Fārābī and Ibn Sīnā'
+  passage: 604054521ad07023
+- key: sep-ibn-rushd
+  locator: §6.1
+  excerpt: 'against Ibn Sīnā’s insufficiently Aristotelian philosophy'
+  passage: ad8ea83bd26ba7af
+- key: sep-al-ghazali
+  locator: §3
+  excerpt: 'Al-Ghazālī describes the Incoherence of the Philosophers as a “refutation” (radd) of the philosophical movement'
+  passage: 00f6998330e84ec3
+- key: eor-ghazali
+  locator: preamble
+  excerpt: "In the Islamic West philosophy following the Greek tradition continued until about 1200 and included a refutation of al-Ghazālī's Tahāfut by Ibn Rushd (Averroës)"
+  passage: 43113205b103a4a7
+- key: sep-al-ghazali
+  locator: §4
+  excerpt: 'Averroes accepted al-Ghazālī’s rule for reconciling conflicts between reason and the outward meaning of revelation'
+  passage: ec775e4d85c2db51
+- key: sep-ibn-rushd
+  locator: §9.2
+  excerpt: 'Maimonides’ acquisition of Ibn Rushd’s commentaries, perhaps around 1190'
+  passage: c37ce0ad1530987d
+- key: sep-ibn-rushd
+  locator: §9.3
+  excerpt: 'Translations from Arabic into Latin began with Michael Scott, around 1220'
+  passage: e9004c0cc2e3612d

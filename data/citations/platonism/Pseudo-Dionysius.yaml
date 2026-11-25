@@ -1,0 +1,56 @@
+- key: sep-pseudo-dionysius-areopagite
+  locator: preamble
+  excerpt: 'was a Christian Neoplatonist who wrote in the late fifth or early sixth century CE'
+  passage: 0edf62d4c20e35db
+- key: sep-pseudo-dionysius-areopagite
+  locator: §1
+  excerpt: 'who was converted by St. Paul'
+  passage: c4f6ff3e8062989a
+- key: pseudo-dionysius-works-parker
+  locator: Chapter_1
+  excerpt: 'To my Fellow Presbyter, Timothy, Dionysius the Presbyter.'
+  passage: 53a6929f49630d4d
+- key: pseudo-dionysius-works-parker
+  locator: DN 3.2
+  excerpt: 'to do injustice to one, both teacher and friend'
+  passage: b8411a969ccaec75
+- key: sep-pseudo-dionysius-areopagite
+  locator: §3.2
+  excerpt: 'Dionysius’ possibly fictional teacher Hierotheus'
+  passage: 8c297d936efd78fa
+- key: sep-proclus
+  locator: §4
+  excerpt: 'a pretence which was generally accepted until the late 19th century'
+  passage: 711ae5b5badad95c
+- key: sep-neoplatonism
+  locator: §8
+  excerpt: 'the pseudo-epigraphic writings of Dionysius the Areopagite (early 6th century)'
+  passage: 9b24f68aecdfebb9
+- key: sep-pseudo-dionysius-areopagite
+  locator: §2
+  excerpt: 'The surviving writings are four treatises and ten letters.'
+  passage: d0d43471faf02e2b
+- key: pseudo-dionysius-works-parker
+  locator: DN 1.1
+  excerpt: 'By no means then is it permitted to speak, or even to think, anything, concerning the superessential and hidden Deity'
+  passage: f938cb5b86aba968
+- key: sep-pseudo-dionysius-areopagite
+  locator: §3.4
+  excerpt: 'negations are more proper to God than affirmations'
+  passage: 2f178d91aac67e37
+- key: pseudo-dionysius-works-parker
+  locator: MT 1.1
+  excerpt: 'be raised aloft unknowingly to the union'
+  passage: 3d98b115a93b6414
+- key: pseudo-dionysius-works-parker
+  locator: MT 1.2
+  excerpt: 'more properly to deny them all to It'
+  passage: 8f0a656fff51371b
+- key: sep-pseudo-dionysius-areopagite
+  locator: §4.1
+  excerpt: 'however dependent this is upon one of Proclus’ opuscula'
+  passage: 1276053e6b996796
+- key: sep-pseudo-dionysius-areopagite
+  locator: §5
+  excerpt: 'a theory adopted from Plotinus (with significant changes) and Proclus'
+  passage: 639945bbcd89616d
