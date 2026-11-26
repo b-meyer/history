@@ -1,0 +1,36 @@
+- key: eor-rumi
+  locator: preamble
+  excerpt: 'RŪMĪ, JALĀL AL-DĪN (ah 604–672/1207–1273 ce), Muslim mystic and poet.'
+  passage: 5d1ae4ea43178091
+- key: eor-sufism
+  locator: preamble
+  excerpt: "Rūmī's Ṣūfī training progressed in serious fashion under the tutelage of Burhān al-Dīn Muḥaiqqiq, one of his father's disciples."
+  passage: 8963ed89df3895f6
+- key: rumi-mesnevi-redhouse
+  locator: preamble
+  excerpt: 'The historian El Eflākī was a disciple of Chelebī Emīr ‘Ārif, a grandson of the author of the Mesnevī.'
+  passage: d1968aa821e38297
+- key: rumi-mesnevi-redhouse
+  locator: §1.2
+  excerpt: 'Before Bahā’u-’d-Dīn quitted Bagdād, intelligence was received there of the siege of Balkh'
+  passage: 7c566e05b73f93ad
+- key: eor-tariqah
+  locator: preamble
+  excerpt: 'a role Rūmī eventually assumed after he had completed studies of law in Syria and a period of seclusion'
+  passage: ced6e6515092c600
+- key: rumi-mesnevi-redhouse
+  locator: §3.76
+  excerpt: 'in imitation of their founder, Jelāl'
+  passage: 329aefb065c05b9f
+- key: rumi-mesnevi-redhouse
+  locator: §3.82
+  excerpt: 'Often they spent whole nights at the task, Jelāl inditing, and Husām writing down his inspirations'
+  passage: d2d7aca1e3de73b2
+- key: rumi-mesnevi-redhouse
+  locator: Mesnevi proem
+  excerpt: 'From reed-flute[55] hear what tale it tells'
+  passage: dbbe604431e01ce7
+- key: rumi-mesnevi-redhouse
+  locator: notes
+  excerpt: 'The _reed-flute_ is the sacred musical instrument of the Mevlevī dervishes'
+  passage: e836a6c2f30d67b0

@@ -1,0 +1,24 @@
+- key: eor-ibn-al-arabi
+  locator: preamble
+  excerpt: 'known throughout the Islamic world simply as the "greatest master" (al-Shaykh al-akbar)'
+  passage: e7b1cec4b440e155
+- key: eor-islam-andalusia
+  locator: preamble
+  excerpt: 'The latter, like many other Andalusi Ṣūfīs, spent much of his life outside al-Andalus.'
+  passage: 7628d07c990de0f3
+- key: eor-sufism
+  locator: preamble
+  excerpt: 'While still a child, Ibn ʿArabī and his family moved to Seville'
+  passage: cc3eae26a288bd9f
+- key: ibn-arabi-tarjuman-nicholson
+  locator: Introduction
+  excerpt: 'These pages include the love-poems which I composed at Mecca'
+  passage: bf2ca5eb769e028e
+- key: ibn-arabi-tarjuman-nicholson
+  locator: Poem_11
+  excerpt: 'My heart has become capable of every form'
+  passage: 65a9bd7fbe7a8394
+- key: eor-sirhindi
+  locator: preamble
+  excerpt: 'the theories of unity of being (waḥdat al-wujūd) and unity of appearance'
+  passage: a6cef9ac4f5df0b9
