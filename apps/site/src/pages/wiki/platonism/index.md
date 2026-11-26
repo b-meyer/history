@@ -3,7 +3,7 @@ title: 'Platonism'
 description: 'A guide to the Platonic line from Pythagoras at Croton through Plotinus and Proclus to the Christian Platonists and the philosophers who read Plato in Arabic, ending with Ibn Rushd.'
 group: 'Overview'
 order: 0
-audited: '2026-11-24'
+audited: '2026-11-26'
 ---
 
 # Platonism
@@ -37,7 +37,7 @@ This collection follows one line of philosophy from [[pythagoras]] to [[ibn-rush
 - [[boethius]] - born about 475 to 477 and probably dead by 526, whose writings drew on Greek Neoplatonists such as Porphyry and Iamblichus. [@sep-boethius, preamble]
 - [[pseudo-dionysius]] - the Christian author who wrote around 500 as Dionysius, a disciple of Saint Paul, and built his theology from the works of Proclus. [@sep-proclus, §4]
 
-The Stanford Encyclopedia names Augustine in the West, the Cappadocian Fathers in the East and the writings ascribed to Dionysius the Areopagite as the routes by which Neoplatonism shaped Christian theology. [@sep-neoplatonism, §8] This group follows a tradition, not a date order, since Proclus lived from 412 to 485 [@sep-proclus, preamble], after Augustine, who lived from 354 to 430 [@sep-neoplatonism, §1], while Boethius died around 526 [@sep-boethius, preamble] and Pseudo-Dionysius wrote around 500 [@sep-proclus, §4], before the Academy closed in 529 [@sep-neoplatonism, §7].
+The Stanford Encyclopedia names Augustine in the West, the Cappadocian Fathers in the East and the writings ascribed to Dionysius the Areopagite as the routes by which Neoplatonism shaped Christian theology. [@sep-neoplatonism, §8] This group follows a tradition, not a date order, since Proclus lived from 412 to 485 [@sep-proclus, preamble], after Augustine, who lived from 354 to 430 [@sep-neoplatonism, §1], while Boethius died around 526 [@sep-boethius, preamble] and Pseudo-Dionysius wrote around 500 [@sep-proclus, §4], before Justinian's legislation of 529, which the Stanford Encyclopedia says resulted in the closing of the Platonist academy [@sep-neoplatonism, §7].
 
 ## Platonism in Arabic
 

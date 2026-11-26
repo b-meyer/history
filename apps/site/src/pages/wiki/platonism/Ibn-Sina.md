@@ -3,7 +3,7 @@ title: 'Ibn Sina'
 description: 'Philosopher born near Bukhara in the 970s who wrote the Book of Healing, worked at Hamadan and Isfahan, and died in 1037.'
 group: 'Platonism in Arabic'
 order: 170
-audited: '2026-11-24'
+audited: '2026-11-26'
 entity: ibn-sina
 ---
 

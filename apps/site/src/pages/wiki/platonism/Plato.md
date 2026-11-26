@@ -3,7 +3,7 @@ title: 'Plato'
 description: 'Athenian philosopher, founder of the Academy, and the source of the Platonic tradition the later pages follow.'
 group: 'Plato and the Academy'
 order: 30
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: plato
 ---
 
@@ -23,7 +23,7 @@ Plato lived in the Academy, a gymnasium outside the walls of Athens, after he re
 
 Nearly everything Plato wrote is a dialogue, with the Apology as the one striking exception, and the thirteen letters transmitted under his name are not all accepted as his [@sep-plato, §3]. Socrates speaks in nearly every dialogue and is absent only from the Laws [@sep-plato, §4]. Diogenes lists the [[republic]], [[timaeus]] and Critias together in the eighth of his groups of four [@diogenes-laertius-lives-hicks, DL 3.60]. He also reports that the opening of the Republic was found revised several times [@diogenes-laertius-lives-hicks, DL 3.37].
 
-The Republic takes up who should rule. Jowett's analysis of Book VI has Socrates ask whether philosophers or the many should govern, and answer that philosophers should, if they have the other qualities a ruler needs, because they love knowledge of the eternal and of all truth [@plato-republic-jowett, preamble]. In the Timaeus, Socrates presents Timaeus as a man of Locris in Italy [@plato-timaeus-jowett, preamble]. Socrates plays only a small part in that dialogue, and Timaeus and Critias deliver long speeches of their own [@sep-plato, §5].
+The Republic takes up who should rule. Jowett's analysis of Book VI has Socrates ask whether philosophers or the many should govern, and answer that philosophers should, if they have the other qualities a ruler needs, because they love knowledge of the eternal and of all truth [@plato-republic-jowett, preamble]. In the Timaeus, Socrates presents Timaeus as a man of Locris in Italy [@plato-timaeus-jowett, preamble]. Socrates has a small, peripheral role in that dialogue, and in the Timaeus and Critias another figure gives a long, continuous discourse [@sep-plato, §5].
 
 ## Doctrine
 

@@ -3,7 +3,7 @@ title: 'Neopythagoreans'
 description: 'Platonists and Pythagorean revivalists of roughly the first two centuries CE who read number and the Monad into Plato.'
 group: 'Between Plato and Plotinus'
 order: 50
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: neopythagoreans
 ---
 
@@ -13,7 +13,7 @@ Neopythagoreanism is a tendency to make [[pythagoras]] the original source from 
 
 ## Origins in the Academy
 
-The Stanford Encyclopedia traces the probable origin of the movement to Plato's own school, the [[academy]], in the later fourth century BCE. Plato's successors [[speusippus]] and [[xenocrates]] both presented speculations that grew partly out of Plato's late metaphysics as the work of Pythagoras. [@sep-pythagoreanism, §4] The Academy's side of this is told in [Academy](platonism/Academy.md).
+The Stanford Encyclopedia traces the probable origin of the movement to Plato's own school, the [[academy]], in the later fourth century BCE. There is evidence that [[speusippus]] and [[xenocrates]], who succeeded Plato, both presented speculations that grew partly out of Plato's late metaphysics as the work of Pythagoras, though the evidence is firmer for Speusippus in some cases than for Xenocrates, who may have done so. [@sep-pythagoreanism, §4] The Academy's side of this is told in [Academy](platonism/Academy.md).
 
 Neopythagoreans typically stress number in the cosmos. They credit Pythagoras with the One and the Indefinite Dyad as ultimate principles, though these come from [[plato]]. [@sep-pythagoreanism, §4] Interest in Pythagoreanism then declined for a couple of centuries, and the movement emerged again from the first century BCE. [@sep-pythagoreanism, §4] The construct of Pythagoras that dominates this period has only limited contact with early Pythagoreanism, and there is little interest in an accurate account of the man. [@sep-pythagoreanism, §4]
 

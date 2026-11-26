@@ -3,7 +3,7 @@ title: 'Plotinus'
 description: 'Egyptian-born philosopher who taught in Rome and is commonly counted as the founder of Neoplatonism.'
 group: 'Late Platonists'
 order: 60
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: plotinus
 ---
 
@@ -29,13 +29,13 @@ When his health failed, Plotinus left Rome for Campania. He died there at the en
 
 Porphyry lists a treatise On Numbers among them. [@porphyry-life-of-plotinus-mackenna, p. 6] The treatises circulated in a small circle and carried no titles from their author. [@porphyry-life-of-plotinus-mackenna, p. 4]
 
-Porphyry edited them after Plotinus's death. He divided fifty-four treatises into six sets of nine, and he says he liked pairing six, the perfect number, with nines. [@porphyry-life-of-plotinus-mackenna, p. 24] Number in Porphyry's arrangement is taken up again in [Number Mysticism from Pythagoras to Proclus](platonism/Number-Mysticism.md).
+Porphyry edited them. He divided fifty-four treatises into six sets of nine, and he says he liked pairing six, the perfect number, with nines. [@porphyry-life-of-plotinus-mackenna, p. 24] Number in Porphyry's arrangement is taken up again in [Number Mysticism from Pythagoras to Proclus](platonism/Number-Mysticism.md).
 
 Porphyry also says that Stoic and Peripatetic doctrines are buried in the treatises, and that Aristotle's Metaphysics is condensed in them almost entire. [@porphyry-life-of-plotinus-mackenna, p. 13]
 
 ## Thought
 
-Plotinus drew mainly on principles he took to be Plato's. [@sep-plotinus, preamble] Some Greeks of his day accused him of borrowing from Numenius, and Amelius wrote a reply. [@porphyry-life-of-plotinus-mackenna, p. 14] The Stanford Encyclopedia entry on Numenius says his work shows how much of Plotinus's metaphysics earlier Platonists such as Numenius inspired. [@sep-numenius, preamble]
+The Stanford Encyclopedia describes the school of thought Plotinus belongs to as resting mainly on what are regarded as Platonism's basic principles. [@sep-plotinus, preamble] Some Greeks of his day accused him of borrowing from Numenius, and Amelius wrote a reply. [@porphyry-life-of-plotinus-mackenna, p. 14] The Stanford Encyclopedia entry on Numenius says his work shows how much of Plotinus's metaphysics earlier Platonists such as Numenius inspired. [@sep-numenius, preamble]
 
 The Stanford Encyclopedia says the first principle has to be completely uncompounded, the absolute One, because a cause must be simpler than its effect. No predicate can be properly applied to it, and it is identified with the Good. [@sep-plotinus, §7] The same entry says that cathartic practices let people develop abilities that allow an experiential union or contact with it, although direct intellective apprehension of it is impossible. [@sep-plotinus, §7]
 

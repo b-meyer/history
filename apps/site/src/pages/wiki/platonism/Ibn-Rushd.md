@@ -3,7 +3,7 @@ title: 'Ibn Rushd'
 description: 'Andalusian philosopher, physician and judge (1126 to 1198) who commented on Aristotle and answered al-Ghazali in The Incoherence of the Incoherence.'
 group: 'Platonism in Arabic'
 order: 190
-audited: '2026-11-24'
+audited: '2026-11-26'
 entity: ibn-rushd
 ---
 

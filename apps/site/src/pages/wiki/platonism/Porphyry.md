@@ -3,7 +3,7 @@ title: 'Porphyry'
 description: "Plotinus's student and editor, born at Tyre, who wrote the Life of Plotinus and arranged the Enneads."
 group: 'Late Platonists'
 order: 70
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: porphyry
 ---
 
