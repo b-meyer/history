@@ -3,20 +3,21 @@ title: 'Rumi'
 description: 'Persian poet born at Balkh in 1207, who taught at Konya from 1231, wrote the Mathnawi and died there in 1273.'
 group: 'Gnosis and Poetry'
 order: 40
+audited: '2026-11-25'
 entity: rumi
 ---
 
 # Rumi
 
-Jalal al-Din Rumi (1207 to 1273) was a Muslim mystic and poet who wrote in Persian. [@eor-rumi, preamble] His followers called him Mawlana, "our master", and he took the name Rumi from Rum, the Anatolian country where he settled. [@eor-rumi, preamble] He was a Sufi, trained by Burhan al-Din Muhaqqiq, who had been a disciple of his father. [@eor-sufism, preamble]
+Jalal al-Din Rumi (1207 to 1273) was a Muslim mystic and poet who wrote in Persian. [@eor-rumi, preamble] He was called Mawlana, "our master", and he became known as Rumi after settling in Anatolia, or Rum. [@eor-rumi, preamble] He was a Sufi, trained by Burhan al-Din Muhaqqiq, who had been a disciple of his father. [@eor-sufism, preamble]
 
 ## Balkh and the Road West
 
-Rumi was born at [[balkh]], in what is now Afghanistan, and Afghans for that reason call him Balkhi. [@eor-rumi, preamble] The Encyclopedia of Religion gives his birth year as 1207. [@eor-sufism, preamble] Its entry on Rumi calls that date "well established" but allows that he may have been born some years before it. [@eor-rumi, preamble]
+Rumi was born at [[balkh]], in what is now Afghanistan, and Afghans for that reason call him Balkhi. [@eor-rumi, preamble] The Encyclopedia of Religion gives his birth year as 1207. [@eor-sufism, preamble] Its entry on Rumi says the date seems well established but allows that he may have been born some years before it. [@eor-rumi, preamble]
 
 His father, Baha al-Din Walad, was a mystical theologian and teacher. [@eor-rumi, preamble] The sources do not agree on when the family left Balkh. The Encyclopedia of Religion has Baha al-Din leave around 1219, when the Mongols threatened the city, and reports that on the way he and his son met the poet ʿAttar at Nishapur, who foretold the boy's greatness. [@eor-sufism, preamble] Its entry on Rumi places the departure some time before the Mongol invasion of 1220. [@eor-rumi, preamble]
 
-The Mevlevi hagiography gives an earlier date. Its author, Eflaki, was a dervish of the order and a disciple of Rumi's grandson, and James Redhouse translated a selection of his anecdotes in 1881. [@rumi-mesnevi-redhouse, preamble] In Redhouse's summary of Eflaki, the family left Balkh between 1208 and 1211 and was at [[baghdad]] in 1211, when Rumi was five. [@rumi-mesnevi-redhouse, preamble] Eflaki tells that word of the Mongol siege and destruction of Balkh reached Baghdad before Baha al-Din left it. [@rumi-mesnevi-redhouse, §1.2] Redhouse warns that Eflaki's dates do not match those of other historians exactly. [@rumi-mesnevi-redhouse, preamble]
+The Mevlevi hagiography gives an earlier date. Its author, Eflaki, was a dervish of the order and a disciple of Rumi's grandson, and James Redhouse translated a selection of his anecdotes in 1881. [@rumi-mesnevi-redhouse, preamble] In Redhouse's summary of Eflaki, the family left Balkh between 1208 and 1211 and was at [[baghdad]] in 1211, and Rumi was five years old when they left Balkh. [@rumi-mesnevi-redhouse, preamble] Eflaki tells that word of the Mongol siege and destruction of Balkh reached Baghdad before Baha al-Din left it. [@rumi-mesnevi-redhouse, §1.2] Redhouse warns that Eflaki's dates do not match those of other historians exactly. [@rumi-mesnevi-redhouse, preamble]
 
 The family reached Anatolia and settled at Laranda, now Karaman, where Rumi married and his son Sultan Walad was born in 1226. [@eor-rumi, preamble] Baha al-Din was then invited to teach at a college in [[konya]], the capital of the Anatolian Seljuks. [@eor-rumi, preamble]
 
@@ -26,9 +27,9 @@ Baha al-Din died early in 1231, and Rumi took over his teaching chair. [@eor-rum
 
 ## Shams al-Din of Tabriz
 
-In October 1244 Rumi met Shams al-Din of Tabriz, a wandering dervish. [@eor-rumi, preamble] The two were inseparable for two years, and the friendship caused jealousy and scandal among Rumi's family and followers until Shams left Konya. [@eor-sufism, preamble] Sultan Walad found him in Damascus and brought him back. [@eor-rumi, preamble] Shams disappeared for good in December 1248, and the Encyclopedia of Religion's entry on Rumi judges it "certain" that he was killed with the connivance of Rumi's younger son. [@eor-rumi, preamble]
+In October 1244 Rumi met Shams al-Din of Tabriz, a wandering dervish. [@eor-rumi, preamble] The two were inseparable for two years, and the friendship caused jealousy and scandal among Rumi's family and followers until Shams left Konya. [@eor-sufism, preamble] Sultan Walad found him in Damascus and brought him back. [@eor-rumi, preamble] Shams disappeared for good in December 1248, and the Encyclopedia of Religion's entry on Rumi says it seems certain that he was killed with the connivance of Rumi's younger son. [@eor-rumi, preamble]
 
-The loss made Rumi a poet. He sang of love and longing while whirling to music, and most of his lyric poetry was written in the name of Shams. [@eor-rumi, preamble]
+When Shams first left Konya, Rumi suddenly turned into a poet who sang of love and longing while whirling to music, and most of his lyric poetry came to be written in the name of Shams. [@eor-rumi, preamble]
 
 ## Disciples and the Order
 
@@ -46,7 +47,7 @@ Rumi's lyric poetry, born of his meeting with Shams, is collected in the Divan-i
 
 The [[mathnawi]] was Husam al-Din's idea. He asked Rumi for a mystical poem in couplets so that the students would no longer need the poems of Sanaʾi and ʿAttar. [@eor-rumi, preamble] Rumi dictated it to Husam al-Din, who wrote it down and read it back for correction. [@eor-sufism, preamble] Eflaki's account gives the same origin and has the two working through whole nights. [@rumi-mesnevi-redhouse, §3.82]
 
-A poem dated November 1256 marks the start of the work. [@eor-rumi, preamble] Dictation stopped in 1258, when Salah al-Din died and Husam al-Din lost his wife, and began again in 1262. It went on almost until Rumi's death. [@eor-rumi, preamble] Eflaki puts the start of the second book in 1263, after two years without progress. [@rumi-mesnevi-redhouse, §3.82] The finished poem has six books. The Encyclopedia of Religion counts almost thirty thousand verses [@eor-sufism, preamble], and Redhouse's introduction gives 26,660 couplets. [@rumi-mesnevi-redhouse, preamble]
+A poem dated November 1256 reveals the moment Husam al-Din took on his new role, and the request for the Mathnawi came about that time. [@eor-rumi, preamble] Dictation stopped in 1258, when Salah al-Din died and Husam al-Din lost his wife, and began again in 1262. It went on almost until Rumi's death. [@eor-rumi, preamble] Eflaki puts the start of the second book in 1263, after two years without progress. [@rumi-mesnevi-redhouse, §3.82] The finished poem has six books. The Encyclopedia of Religion counts almost thirty thousand verses [@eor-sufism, preamble], and Redhouse's introduction gives 26,660 couplets. [@rumi-mesnevi-redhouse, preamble]
 
 The poem opens with the eighteen verses known as the Song of the Reed, which tell of the soul's longing for home. [@eor-rumi, preamble] Redhouse's version begins "From reed-flute hear what tale it tells", and the flute cut from its reed bed weeps for the home it was torn from. [@rumi-mesnevi-redhouse, Mesnevi proem] In his notes Redhouse calls the reed-flute "the sacred musical instrument of the Mevlevī dervishes". [@rumi-mesnevi-redhouse, notes]
 

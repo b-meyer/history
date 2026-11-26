@@ -3,6 +3,7 @@ title: 'Qadiriyya'
 description: 'The order that traces itself to Abd al-Qadir al-Jilani, a Hanbali scholar and Sufi master of twelfth-century Baghdad, and that spread to South Asia by the fifteenth century.'
 group: 'The Orders'
 order: 60
+audited: '2026-11-25'
 entity: qadiriyya
 ---
 
@@ -14,7 +15,7 @@ The Qadiriyya is a Sufi brotherhood, or tariqa, within [[sufism]]. [@eor-tariqah
 
 The order began in [[baghdad]]. [@eor-tariqah, preamble] It claims [[abd-al-qadir-al-jilani]] as its founder and traces its silsila, the chain of masters behind it, back through [[junayd]]. [@eor-tariqah, preamble] The Encyclopedia of Religion describes a tariqa in general as a confraternity formed around a charismatic master "or the memory" of one. [@eor-tariqah, preamble] Al-Jilani's tomb in Baghdad has stayed a place of pilgrimage for members of the order into the twenty-first century. [@eor-tariqah, preamble]
 
-The madrasah al-Jilani directed in Baghdad has been kept up on the city's east side to the present. [@eor-hanabilah, preamble] Entry into the order follows a set rite in which the candidate takes the shaykh's hand as the hand of Abd al-Qadir. [@eor-tariqah, preamble] That rite is described on [The Tariqa as an Institution](islam/sufism/Tariqa.md).
+The madrasah al-Jilani directed in Baghdad has been kept up on the city's east side to the present. [@eor-hanabilah, preamble] One of the order's manuals describes a model initiation ceremony in which the candidate clasps the shaykh's right hand, recognising it as the hand of Abd al-Qadir. [@eor-tariqah, preamble] That rite is described on [The Tariqa as an Institution](islam/sufism/Tariqa.md).
 
 ## Abd al-Qadir al-Jilani
 

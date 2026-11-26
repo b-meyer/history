@@ -3,6 +3,7 @@ title: 'Sufism'
 description: 'The mystical tradition of Islam, from the ascetics of Basra and Baghdad in the eighth century through the manual writers and al-Ghazali to the orders that spread from Konya to Delhi.'
 group: 'Overview'
 order: 0
+audited: '2026-11-25'
 entity: sufism
 ---
 
@@ -14,7 +15,7 @@ This page follows the tradition in time order, from the ascetics of the eighth c
 
 ## The Ascetics
 
-The Encyclopedia of Religion traces the ascetic movement to a reaction against the wealth and worldliness of the Umayyad caliphate. [@eor-sufism, preamble] In the eighth and ninth centuries its main centres were Iraq, above all [[basra]], Kufa and [[baghdad]], then Khorasan with Balkh, and Egypt. [@eor-sufism, preamble] As early as 850 Baghdad had samāʿ houses where Sufis could listen to music. [@eor-tariqah, preamble]
+The Encyclopedia of Religion lists a reaction against the wealth and worldliness of the Umayyad caliphate among the early catalysts of the ascetic movement. [@eor-sufism, preamble] In the eighth and ninth centuries its main centres were Iraq, above all [[basra]], [[kufa|Kufa]] and [[baghdad]], the province of Khorasan, especially Balkh, and Egypt. [@eor-sufism, preamble] As early as 850 Baghdad had samāʿ houses where Sufis could listen to music. [@eor-tariqah, preamble]
 
 ### Hasan al-Basri
 
@@ -24,9 +25,9 @@ The Encyclopedia of Religion's article on him reports that "both the Ṣūfīs a
 
 ### Rabia
 
-[[rabia]] al-Adawiyya died in 801. [@eor-rabiah, preamble] For a time she was a house servant in Basra, and her master freed her because of her piety. [@eor-rabiah, preamble] The Encyclopedia of Religion says she brought the idea of pure love of God into the ascetic life of the second Islamic century. [@eor-rabiah, preamble] Her concern was ascetic practice as a means to a loving bond with God, and she held that making the practices themselves the goal distorted the Sufi path. [@eor-sufism, preamble]
+[[rabia]] al-Adawiyya died in 801. [@eor-rabiah, preamble] For a time she was a house servant in Basra, and her master freed her because of her piety. [@eor-rabiah, preamble] The Encyclopedia of Religion says she is regarded as the person who introduced the idea of pure love of God into the ascetic life of the second Islamic century. [@eor-rabiah, preamble] Her concern was ascetic practice as a means to a loving bond with God, and she held that making the practices themselves the goal distorted the Sufi path. [@eor-sufism, preamble]
 
-Tales set her against Hasan al-Basri, and some say he asked to marry her. The article on her calls these stories "pure invention", since Hasan died in 728 when she was about ten. [@eor-rabiah, preamble] The article on Sufism puts her at "at best in her early teens" that year. [@eor-sufism, preamble]
+Stories connect her with Hasan al-Basri, and some claim he proposed marriage to her. The article on her calls these stories "pure invention", since Hasan died in 728 when she was about ten. [@eor-rabiah, preamble] The article on Sufism puts her at "at best in her early teens" that year. [@eor-sufism, preamble]
 
 ### Other Early Figures
 
@@ -46,7 +47,7 @@ The classics of the genre include [[risala-qushayriyya]], the Qushayrian Letter 
 
 ### Al-Hujwiri
 
-[[al-hujwiri]] wrote [[kashf-al-mahjub]], an early Persian textbook of Sufism. [@eor-hujwiri, preamble] He came from Ghaznin and was born around the start of the eleventh century. [@eor-hujwiri, preamble] Nicholson, who translated the Kashf, notes that he "was a Sunní and a Ḥanafite", a [[sunni]] of the [[hanafi]] school. [@hujwiri-kashf-al-mahjub-nicholson, preamble] He studied Sufism with Abu al-Fadl al-Khuttali and travelled widely, and among the places he names is Merv. [@hujwiri-kashf-al-mahjub-nicholson, preamble] He says he was parted from his books in Ghaznin and held among strangers in [[lahore]]. [@eor-hujwiri, preamble]
+[[al-hujwiri]] wrote [[kashf-al-mahjub]], an early Persian textbook of Sufism. [@eor-hujwiri, preamble] He came from Ghaznin and was born around the start of the eleventh century. [@eor-hujwiri, preamble] Nicholson, who translated the Kashf, notes that he "was a Sunní and a Ḥanafite", a [[sunni]] of the [[hanafi]] school. [@hujwiri-kashf-al-mahjub-nicholson, preamble] He studied Sufism with Abu al-Fadl al-Khuttali and travelled widely, and among the places he names is [[merv|Merv]]. [@hujwiri-kashf-al-mahjub-nicholson, preamble] He says he was parted from his books in Ghaznin and held among strangers in [[lahore]]. [@eor-hujwiri, preamble]
 
 Nicholson writes that the Kashf "contains a Persian rendering of some passages" of al-Qushayri's Risala, and thinks the two men may have met. [@hujwiri-kashf-al-mahjub-nicholson, preamble] He judges the Kashf a full account of Sufi doctrine and practice, where the Risala is mostly a collection of "sayings, anecdotes, and definitions". [@hujwiri-kashf-al-mahjub-nicholson, preamble]
 

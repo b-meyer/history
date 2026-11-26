@@ -3,6 +3,7 @@ title: 'al-Hallaj'
 description: 'Mystic born in 857 who preached in Baghdad and was executed there in 922 after a long trial.'
 group: 'The Baghdad Masters'
 order: 20
+audited: '2026-11-25'
 entity: al-hallaj
 ---
 
@@ -12,7 +13,7 @@ Al-Husayn ibn Mansur al-Hallaj (857 to 922) was a mystic of [[sufism]] whom Musl
 
 ## Life
 
-He was born in 857 at al-Tur, in the Iranian province of Fars. [@eor-sufism, preamble] His initiation into Sufism began while he was still a teenager. [@eor-sufism, preamble] Al-Hujwiri, writing in the eleventh century, calls him "a Persian and a native of Bayḍá". [@hujwiri-kashf-al-mahjub-nicholson, §11.53]
+He was born at al-Tur in Fars, a province of Iran, in 857. [@eor-sufism, preamble] His initiation into Sufism began while he was still a teenager. [@eor-sufism, preamble] Al-Hujwiri calls him "a Persian and a native of Bayḍá". [@hujwiri-kashf-al-mahjub-nicholson, §11.53]
 
 ### Teachers and Junayd
 
@@ -30,7 +31,7 @@ The Encyclopedia of Religion describes his preaching as a call to moral reform a
 
 ### Prison and Execution
 
-On his return to Baghdad both the orthodox and the Sufis met him with more hostility than before. [@eor-hallaj, preamble] Arrested on the road to Sus during a third pilgrimage, he was pilloried and in 913 imprisoned in Baghdad. [@eor-hallaj, preamble] The chamberlain Nasr al-Qashuri and the mother of the young caliph al-Muqtadir protected him in prison. [@eor-hallaj, preamble] He spent about eight years there. [@eor-sufism, preamble]
+On his return to Baghdad both the orthodox and the Sufis met him with more hostility than before. [@eor-hallaj, preamble] He undertook a third pilgrimage. He was arrested on the road to Sus, pilloried, and in 913 imprisoned in Baghdad. [@eor-hallaj, preamble] He found protection with the chamberlain Nasr al-Qashuri and friendship with the mother of the infant caliph al-Muqtadir, which made his prison life tolerable. [@eor-hallaj, preamble] He spent about eight years there. [@eor-sufism, preamble]
 
 In March 922 the government drew up a death sentence against him. [@eor-hallaj, preamble] His disciples recorded that he was flogged, mutilated, exposed on a gibbet and beheaded, and that his body was burned. [@eor-sufism, preamble] He died on 26 March 922 (24 Dhu al-Qaʿda 309). [@eor-hallaj, preamble]
 
@@ -44,11 +45,11 @@ The Encyclopedia of Religion's entry on Sufism holds that his execution came as 
 
 The only work of his preserved complete is the Kitab al-tawasin, probably written in prison. [@eor-hallaj, preamble] In it he brought into Sufism the parable of the moth that burns itself in the candle flame, a figure for the lover. [@eor-hallaj, preamble] The same book makes Iblis and Pharaoh his models, since both were condemned by God yet held to their course. [@eor-sufism, preamble] His poem "Kill me, my trusted friends" asks for death as the way to life. [@eor-sufism, preamble]
 
-Later Persianate poetry made him the chief voice of waḥdat al-wujūd, the unity of being, but Massignon argued that he held instead to waḥdat al-shuhūd, the unity of witness. [@eor-hallaj, preamble] The Encyclopedia of Religion's entry on Sufism doubts he meant to be a metaphysician at all, and puts the charges against him down to misreading of his ecstatic language. [@eor-sufism, preamble]
+Later Persianate poetry made him the chief voice of waḥdat al-wujūd, the unity of being, but Massignon argued that he held instead to waḥdat al-shuhūd, the unity of witness. [@eor-hallaj, preamble] The Encyclopedia of Religion's entry on Sufism finds it very doubtful that he wished to be considered primarily a metaphysician, and puts the charges against him down to misreading of his ecstatic language. [@eor-sufism, preamble]
 
 ## Al-Hujwiri's Judgement
 
-Al-Hujwiri calls him "an enamoured and intoxicated votary of Ṣúfiism" and reports that the Sufi shaykhs disagreed about him. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He lists ʿAmr al-Makki, Ibn Khafif and others among those who accepted him, and Junayd, Shibli and others among those who suspended judgement. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He quotes [[al-qushayri]] as leaving the matter to God. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He says he saw fifty of al-Hallaj's works in Baghdad and its neighbourhood and in Khuzistan, Fars and Khurasan. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He rejects the charge of magic. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] Yet he warns that al-Hallaj's sayings are no model, because he was an ecstatic and not "firmly settled". [@hujwiri-kashf-al-mahjub-nicholson, §11.53]
+Al-Hujwiri calls him "an enamoured and intoxicated votary of Ṣúfiism" and reports that the Sufi shaykhs disagreed about him. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He lists ʿAmr al-Makki, Ibn Khafif and others among those who accepted him, and Junayd, Shibli and others among those who suspended judgement. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He quotes [[al-qushayri]]'s remark that neither popular condemnation nor popular approval settles the matter, and then says "we leave him to the judgment of God". [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He says he saw fifty of al-Hallaj's works in Baghdad and its neighbourhood and in Khuzistan, Fars and Khurasan. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] He rejects the charge of magic. [@hujwiri-kashf-al-mahjub-nicholson, §11.53] Yet he warns that al-Hallaj's sayings are no model, because he was an ecstatic and not "firmly settled". [@hujwiri-kashf-al-mahjub-nicholson, §11.53]
 
 ## Later Memory
 

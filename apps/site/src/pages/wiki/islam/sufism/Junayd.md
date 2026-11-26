@@ -3,6 +3,7 @@ title: 'Junayd and the Baghdad School'
 description: 'Junayd of Baghdad, who died in 910, and the sober school of Baghdad Sufism that later manual writers took as their model.'
 group: 'The Baghdad Masters'
 order: 10
+audited: '2026-11-25'
 entity: junayd
 ---
 
@@ -22,11 +23,11 @@ His public sermons drew high state officials and theologians as well as fellow m
 
 ## Sobriety and Intoxication
 
-Later Sufi tradition made al-Junayd the chief voice of "sober" mysticism and set him against an "intoxicated" line that included Abu Yazid al-Bistami, al-Nuri, al-Shibli and [[al-hallaj]]. [@eor-junayd, preamble] In his comments on Abu Yazid's ecstatic utterances (shatahat) he took the side of sobriety. [@eor-junayd, preamble] The split between sober and intoxicated Sufis stayed important through the later history of Islamic mysticism. [@eor-sufism, preamble] Of the two main chains of spiritual descent behind the later orders, the more sober runs back to al-Junayd and the other to Abu Yazid, though membership in either marks a spiritual genealogy rather than a member's own stance. [@eor-sufism, preamble]
+Later Sufi tradition made al-Junayd the chief voice of "sober" mysticism and set him against an "intoxicated" line that included Abu Yazid al-Bistami, al-Nuri, al-Shibli and [[al-hallaj]]. [@eor-junayd, preamble] In his comments on Abu Yazid's ecstatic utterances (shatahat) he took the side of sobriety. [@eor-junayd, preamble] The split between sober and intoxicated Sufis stayed important through the later history of Islamic mysticism. [@eor-sufism, preamble] Of the two main chains of spiritual descent behind the later orders, the one generally considered the more sober runs back to al-Junayd and the other to Abu Yazid, though belonging to either group points only to a line of spiritual descent, and need not reflect the member's own attitude toward mystical experience. [@eor-sufism, preamble]
 
 Al-Hujwiri sorts the Sufis into sects and gives Abu Yazid's followers, the Tayfuris, and Junayd's followers, the Junaydis, opposite views on the question. [@hujwiri-kashf-al-mahjub-nicholson, §14.3] He reports that the Junaydis call intoxication evil because it upsets a person's normal state and takes away sanity and self-control. [@hujwiri-kashf-al-mahjub-nicholson, §14.3] He sides with them and quotes his own shaykh, a follower of Junayd's doctrine, who called intoxication "the playground of children" and sobriety "the death-field of men". [@hujwiri-kashf-al-mahjub-nicholson, §14.3] Nicholson's preface notes that al-Hujwiri and his spiritual director al-Khuttali both took up Junayd's view that sobriety is better than intoxication. [@hujwiri-kashf-al-mahjub-nicholson, preamble]
 
-In his chapter on the Junaydis, al-Hujwiri says that in his own time Junayd was called the "Peacock of the Divines" and that his doctrine of sobriety is the best known of all, adopted by every shaykh. [@hujwiri-kashf-al-mahjub-nicholson, §14.4] He passes on a story from the Anecdotes in which al-Hallaj leaves ʿAmr al-Makki, comes to Junayd and is turned away with the words "I do not associate with madmen". [@hujwiri-kashf-al-mahjub-nicholson, §14.4] The sources do not agree on the two men's relation. The Encyclopedia of Religion's article on Sufism names al-Junayd among the masters who trained al-Hallaj, and calls him the teacher al-Hallaj later broke away from. [@eor-sufism, preamble]
+In his chapter on the Junaydis, al-Hujwiri says that in his own time Junayd was called the "Peacock of the Divines" and that his doctrine of sobriety is the best known of all, adopted by every shaykh. [@hujwiri-kashf-al-mahjub-nicholson, §14.4] He passes on a story from the Anecdotes in which al-Hallaj leaves ʿAmr al-Makki, comes to Junayd and is turned away with the words "I do not associate with madmen". [@hujwiri-kashf-al-mahjub-nicholson, §14.4] The Encyclopedia of Religion's article on Sufism names al-Junayd among the masters who trained al-Hallaj, says al-Hallaj eventually broke away from him, and says he was ostracized by his former teacher al-Junayd for announcing his visions of union publicly. [@eor-sufism, preamble]
 
 ## Teaching
 
