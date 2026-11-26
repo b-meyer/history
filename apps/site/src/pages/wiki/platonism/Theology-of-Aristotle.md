@@ -3,7 +3,7 @@ title: 'The Theology of Aristotle'
 description: "Ninth-century Arabic paraphrase of parts of Plotinus's Enneads IV to VI, made in al-Kindi's circle and circulated under Aristotle's name, and the translation movement that produced it."
 group: 'Platonism in Arabic'
 order: 140
-audited: '2026-11-24'
+audited: '2026-11-26'
 entity: theology-of-aristotle
 ---
 
@@ -63,6 +63,6 @@ The Theology became the main source of Neoplatonic ideas in Arabic. [@sep-theolo
 
 The Stanford Encyclopedia's entry on al-Kindi says that influences from the Theology can be detected in his On First Philosophy. [@sep-al-kindi, §2.1] The Harmony of the Two Sages, a work ascribed to al-Farabi, cites the Theology to show that Plato and Aristotle agree on the timeless creation of the universe and on the Forms. [@sep-theology-aristotle, §5] Under that title al-Farabi includes propositions from the Arabic Proclus, so he had a larger work in mind than the Theology that survives. [@sep-theology-aristotle, §5]
 
-Ibn Sina doubted that the work was authentic but still wrote notes commenting on it. [@sep-theology-aristotle, §5] His lost Fair Judgment, a commentary on the whole Aristotelian corpus, took in the Theology, and two incomplete recensions of its commentary on the Theology survive. [@sep-ibn-sina, §1.2]
+Ibn Sina doubted that the work was authentic but still wrote notes commenting on it. [@sep-theology-aristotle, §5] His lost Fair Judgment, a detailed commentary on the "difficult passages" of the entire Aristotelian corpus, took in the Theology, and two incomplete recensions of its commentary on the Theology survive. [@sep-ibn-sina, §1.2]
 
 Its influence may have been highest in the tenth century, when Abu Ya'qub al-Sijistani, al-Kirmani and other Isma'ili writers fitted Plotinus's hierarchy to their own metaphysics and Miskawayh's Shorter Healing is full of terminology and doctrine from the Arabic Plotinus. [@sep-theology-aristotle, §5] A Longer Version in fourteen chapters reworked the text further, most likely in Fatimid Egypt, and Pier Nicola Castellani's Latin translation of 1519 was made from it. [@sep-theology-aristotle, §5] Many manuscripts of the Theology were copied in Iran under the Safavids and Qajars, and later Safavid thinkers, Mulla Sadra among them, wrote commentaries on it. [@sep-theology-aristotle, §5]

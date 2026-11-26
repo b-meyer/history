@@ -3,7 +3,7 @@ title: 'Pythagoreans'
 description: 'The community around Pythagoras at Croton and its fifth- and fourth-century successors, ending with the school at Tarentum.'
 group: 'Pythagorean Beginnings'
 order: 20
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: pythagoreans
 ---
 
@@ -33,7 +33,7 @@ Diogenes lists [[hippasus]] of Metapontum as a Pythagorean who held that the cha
 
 Philolaus came from Croton, in southern Italy, and lived from about 470 to about 385 BCE. He wrote one book, On Nature, probably the first by a Pythagorean. [@sep-philolaus, preamble] Diogenes counts him as a Pythagorean. [@diogenes-laertius-lives-hicks, DL 8.84] His city is disputed. Diogenes and the pupil of Aristotle named Meno say Croton, while Aristoxenus says Tarentum. One proposed reconciliation has him born at Croton and settled at Tarentum late in life. [@sep-philolaus, §1.1]
 
-In his book the cosmos and everything in it are made of limiters and unlimiteds, fitted together in a "harmonia" that can be described in numbers. [@sep-philolaus, preamble] Not everyone labels him simply a Pythagorean. Neither Plato nor Meno applies the label to him, and the modern account stresses that he was as much a Presocratic philosopher as a member of the school. [@sep-philolaus, §1.1]
+In his book the cosmos and everything in it are made of limiters and unlimiteds, fitted together in a "harmonia" that can be described in numbers. [@sep-philolaus, preamble] Not everyone labels him simply a Pythagorean. Neither Plato nor Meno applies the label to him, and the modern account stresses that he "was influenced not just by the Pythagorean tradition but also as much or more by the broader tradition of Presocratic philosophy." [@sep-philolaus, §1.1]
 
 ## Archytas
 

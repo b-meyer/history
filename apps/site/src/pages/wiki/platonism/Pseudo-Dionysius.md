@@ -3,7 +3,7 @@ title: 'Pseudo-Dionysius'
 description: 'Christian author of about 485 to 528 who wrote under the name of Dionysius the Areopagite and drew on Proclus.'
 group: 'Christian Platonists'
 order: 130
-audited: '2026-11-24'
+audited: '2026-11-26'
 entity: pseudo-dionysius
 ---
 
@@ -31,7 +31,7 @@ Four treatises and ten letters survive, and the author names at least seven othe
 
 [[divine-names]] is his second theological treatise and deals with the names given to the godhead as a whole [@sep-pseudo-dionysius-areopagite, §3.2]. Each of these names carries the prefix "over-" (hyper- in Greek), giving forms such as "over-good" and "over-being" [@sep-pseudo-dionysius-areopagite, §3.2]. At its opening the author says that nothing may be said or even thought about the hidden Deity beyond what the sacred Oracles reveal [@pseudo-dionysius-works-parker, DN 1.1].
 
-The Mystical Theology turns from affirmation to negation [@sep-pseudo-dionysius-areopagite, §3.4]. Every divine name is to be denied, and the denials are themselves denied, since the godhead lies beyond both the living and the lifeless [@sep-pseudo-dionysius-areopagite, §3.4]. The treatise opens with a prayer to the Triad and urges Timothy to leave behind sense and intellect and rise "unknowingly" to union with what is above all being and knowledge [@pseudo-dionysius-works-parker, MT 1.1]. It then tells him to affirm every attribute of things to the Cause and, more properly, to deny them all, without treating the denials as the opposite of the affirmations [@pseudo-dionysius-works-parker, MT 1.2]. In the treatise's account of Moses on Sinai, Moses passes through sensible and intelligible contemplation and then enters the darkness above the peak, where he is united with the unknowable godhead [@sep-pseudo-dionysius-areopagite, §3.4].
+The Mystical Theology turns from affirmation to negation [@sep-pseudo-dionysius-areopagite, §3.4]. Every divine name is to be denied, and the denials are themselves denied, since the godhead lies beyond both the living and the lifeless [@sep-pseudo-dionysius-areopagite, §3.4]. The treatise opens with a prayer to the Triad and urges Timothy to leave behind sense and intellect and rise "unknowingly" to union with what is above all being and knowledge [@pseudo-dionysius-works-parker, MT 1.1]. It then tells him to affirm every attribute of things to the Cause and, more properly, to deny them all, without treating the denials as the opposite of the affirmations [@pseudo-dionysius-works-parker, MT 1.2]. In the treatise's account of Moses on Sinai, Moses passes through sensible and intelligible contemplation and then enters the darkness above the peak, and the treatise speaks of his "union" with the unknowable godhead but leaves the relation obscure, and commentators read it either as an extraordinary kind of knowing or as an affective experience [@sep-pseudo-dionysius-areopagite, §3.4].
 
 ## Debt to Proclus
 

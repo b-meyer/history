@@ -3,7 +3,7 @@ title: 'al-Farabi'
 description: "Philosopher of Baghdad and Damascus, born about 870, who built on Aristotle's logic and on Plato's Republic and was read closely by Ibn Sina."
 group: 'Platonism in Arabic'
 order: 160
-audited: '2026-11-24'
+audited: '2026-11-26'
 entity: al-farabi
 ---
 

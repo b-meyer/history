@@ -3,7 +3,7 @@ title: 'Pythagoras'
 description: 'Samian philosopher who settled at Croton about 530 BCE and drew the followers later called the Pythagoreans.'
 group: 'Pythagorean Beginnings'
 order: 10
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: pythagoras
 ---
 

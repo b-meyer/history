@@ -3,7 +3,7 @@ title: 'al-Ghazali'
 description: 'Theologian of Tus who taught at Baghdad, left his post for the Sufi path, and attacked Ibn Sina and al-Farabi in The Incoherence of the Philosophers.'
 group: 'Platonism in Arabic'
 order: 180
-audited: '2026-11-24'
+audited: '2026-11-26'
 entity: al-ghazali
 ---
 
@@ -19,19 +19,19 @@ He studied at the Nizamiyya college in [[nishapur]] under the Ashʿarite theolog
 
 In 1095 an inner crisis brought on an illness that left him unable to lecture, and after about six months he gave up the professorship to live as a Sufi. [@eor-ghazali, preamble] The Stanford Encyclopedia says he had already begun to change his way of life two years before he left, "under the influence of Sufi literature". [@sep-al-ghazali, §1] He spent more than a year in [[damascus]] living as a Sufi, and in 1096 he made the pilgrimage to [[mecca]]. [@eor-ghazali, preamble] He then seems to have made his way back to Tus in stages, and there he founded a khanaqah, a convent where young disciples joined him in a shared Sufi life. [@eor-ghazali, preamble]
 
-Some Muslim scholars have doubted that the conversion was genuine and suggested that he left Baghdad because political ties put his life in danger. [@eor-ghazali, preamble] The Encyclopedia of Religion judges from his own account that religious reasons came first. [@eor-ghazali, preamble]
+Muslim scholars have sometimes questioned whether the conversion was genuine, and it has been suggested that he left Baghdad because he feared for his life on account of political involvements. [@eor-ghazali, preamble] The Encyclopedia of Religion judges from his own account that religious reasons came first. [@eor-ghazali, preamble]
 
 The Muslim year 500, which began in September 1106, opened a new century, and friends told al-Ghazali he was the "renewer" promised for it. [@eor-ghazali, preamble] He accepted the main professorship at the Nizamiyya in Nishapur. [@eor-ghazali, preamble] The Stanford Encyclopedia notes that this broke a vow, sworn at Abraham's tomb in Hebron, to stay out of the service of rulers and away from state-funded schools. [@sep-al-ghazali, §1] He held the post for "three or possibly four years", returned to Tus, probably in poor health, and died there in 1111. [@eor-ghazali, preamble]
 
 ## Sufism
 
-In his autobiography al-Ghazali writes that Sufi literature taught him that beliefs alone do not secure the afterlife and that only good actions do, and this led him to take up the Sufi path. [@sep-al-ghazali, §5] He began his major work, The Revival of the Religious Sciences, in the period after he left Baghdad. [@sep-al-ghazali, §5] It has four sections of ten books each, on ritual practice, social custom, what leads to perdition and what leads to salvation. [@sep-al-ghazali, §5]
+In his autobiography al-Ghazali writes that Sufi literature taught him that beliefs alone do not secure the afterlife and that only good actions do, and this led him to take up the Sufi path. [@sep-al-ghazali, §5] In the period around his leaving Baghdad he began writing The Revival of the Religious Sciences, which most Muslim scholars regard as his major work. [@sep-al-ghazali, §5] It has four sections of ten books each, on ritual practice, social custom, what leads to perdition and what leads to salvation. [@sep-al-ghazali, §5]
 
 The Encyclopedia of Religion describes his position as that of the scholars who practised Sufism in moderation, without heresy in doctrine or neglect of the religious law. [@eor-ghazali, preamble] After his life and work, mainstream Sunni scholars had to view the Sufi movement more favourably, and ordinary Muslims could take up moderate Sufi practice. [@eor-ghazali, preamble]
 
 ## The Philosophers
 
-The Arabic philosophers, the falasifa, inherited the late-antique habit of reading Aristotle in Neoplatonic terms. [@sep-al-ghazali, §2] Some plainly Neoplatonic texts reached Arabic, among them [[theology-of-aristotle]], compiled from the [[enneads]] of [[plotinus]], but the most significant Neoplatonic contributions came through commentaries on Aristotle. [@sep-al-ghazali, §2] Following Aristotle, [[al-farabi]] taught that the world has no beginning in the past, and [[ibn-sina]] carried on his approach. [@sep-al-ghazali, §2] The Encyclopedia of Religion calls the philosophy al-Ghazali studied "the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā". [@eor-ghazali, preamble]
+The Arabic philosophers, the falasifa, inherited the late-antique habit of reading Aristotle in Neoplatonic terms. [@sep-al-ghazali, §2] Some plainly Neoplatonic texts reached Arabic, among them [[theology-of-aristotle]], compiled from the [[enneads]] of [[plotinus]], but the most significant Neoplatonic contributions came through commentaries on Aristotle. [@sep-al-ghazali, §2] [[al-farabi]] followed Aristotle in holding that the world had no beginning in the past, and [[ibn-sina]] continued his approach. [@sep-al-ghazali, §2] The Encyclopedia of Religion calls the philosophy al-Ghazali studied "the Arabic Neoplatonism of al-Fārābi and Ibn Sīnā". [@eor-ghazali, preamble]
 
 In his autobiography al-Ghazali says that at the Baghdad Nizamiyya he studied the philosophers' works for two years and wrote the Incoherence in a third. [@sep-al-ghazali, §2] The Stanford Encyclopedia treats this account as apologetic and thinks he probably first met falsafa as al-Juwayni's student, since al-Juwayni's works already show Ibn Sina's influence. [@sep-al-ghazali, §2] It dates his books answering falsafa to around 1095. [@sep-al-ghazali, §2]
 

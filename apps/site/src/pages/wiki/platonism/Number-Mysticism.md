@@ -3,7 +3,7 @@ title: 'Number Mysticism from Pythagoras to Proclus'
 description: 'How the Pythagorean claim that things are numbers passed through Plato, the Neopythagoreans and the Neoplatonists to Proclus.'
 group: 'Themes'
 order: 100
-audited: '2026-11-23'
+audited: '2026-11-26'
 ---
 
 # Number Mysticism from Pythagoras to Proclus
@@ -20,7 +20,7 @@ The same article doubts that Philolaus said things are numbers. In the surviving
 
 Aristotle also described other Pythagoreans who set out ten pairs of opposites, among them limit and unlimited, odd and even, and unity and plurality. [@sep-pythagoreanism, §2.4] Their table put good in one column and bad in the other, and nothing in the fragments of Philolaus says that limit is good and unlimited bad. [@sep-pythagoreanism, §2.4]
 
-For [[pythagoras]] himself the early evidence gives no sign that his fame rested on mathematics or cosmology. [@sep-pythagoras, §5] The Stanford article on Philolaus still finds number in the acousmata, the sayings that probably go back to Pythagoras. One says that number is the wisest thing, and Pythagoreans swore oaths by "the one who gave the tetraktys," a name for the first four numbers, whose sum of ten was the perfect number. The evidence for the oath is late. [@sep-philolaus, §7.1] The article concludes that Pythagoras seems to have presented a cosmos ordered by symbolic numbers, and that Philolaus continued the tradition by placing ten celestial bodies around the central fire because ten is the perfect number. [@sep-philolaus, §7.1] The [[pythagoreans]] page covers the school itself.
+For [[pythagoras]] himself the early evidence gives no sign that his fame rested primarily on mathematics or cosmology. [@sep-pythagoras, §5] The Stanford article on Philolaus still finds number in the acousmata, the sayings that probably go back to Pythagoras. One says that number is the wisest thing, and Pythagoreans swore oaths by "the one who gave the tetraktys," a name for the first four numbers, whose sum of ten was the perfect number. The evidence for the oath is late. [@sep-philolaus, §7.1] The article concludes that Pythagoras seems to have presented a cosmos ordered by symbolic numbers, and that Philolaus continued the tradition by placing ten celestial bodies around the central fire because ten is the perfect number. [@sep-philolaus, §7.1] The [[pythagoreans]] page covers the school itself.
 
 ## The Tetractys in Iamblichus
 
@@ -36,7 +36,7 @@ In the [[republic]] [[socrates]] says the future rulers should study arithmetic 
 
 Diogenes Laertius gives a Pythagorean account in which the monad is the principle of all things. Numbers come from the monad together with the undefined dyad. Numbers give rise to points, points to lines, and lines to plane figures, then solids and sensible bodies. [@diogenes-laertius-lives-hicks, DL 8.25] The Stanford article on Pythagoras says this is the system most commonly ascribed to him in the later tradition, but that Aristotle makes clear it was Plato's system in his later years. Aristotle says the indefinite dyad is unique to Plato. [@sep-pythagoras, §2.2] The most convincing explanation the article offers is that Plato's successors in the [[academy]], [[speusippus]], [[xenocrates]] and Heraclides, presented Pythagoreanism as having anticipated late Platonic metaphysics. The article adds that some scholars reject this thesis. [@sep-pythagoras, §2.2]
 
-Speusippus wrote a book On Pythagorean Numbers that builds on early ideas such as ten as the perfect number, though Zhmud regards the perfection of ten as Platonic rather than Pythagorean. [@sep-pythagoreanism, §4.1] Xenocrates defined the soul as "a number moving itself," a definition the doxographers gave to Pythagoras and that Burkert thinks Xenocrates may have developed from the Timaeus. [@sep-pythagoreanism, §4.1]
+Speusippus wrote a book On Pythagorean Numbers that seems to build on early ideas such as ten as the perfect number, although the source cannot be sure that the title goes back to him or that he assigned all its ideas to the Pythagoreans, and Zhmud regards the perfection of ten as Platonic rather than Pythagorean. [@sep-pythagoreanism, §4.1] Xenocrates defined the soul as "a number moving itself," a definition the doxographers gave to Pythagoras and that Burkert thinks Xenocrates may have developed from the Timaeus. [@sep-pythagoreanism, §4.1]
 
 ## The Neopythagoreans
 

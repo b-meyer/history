@@ -3,13 +3,13 @@ title: 'Boethius'
 description: 'Roman aristocrat under Theoderic who translated Aristotle and Porphyry into Latin and wrote the Consolation of Philosophy while awaiting execution.'
 group: 'Christian Platonists'
 order: 120
-audited: '2026-11-24'
+audited: '2026-11-26'
 entity: boethius
 ---
 
 # Boethius
 
-Boethius (born about 475 to 477, died probably 526) was a Roman who put Aristotle's logical works into Latin, commented on them, and wrote logical textbooks and the [[consolation-of-philosophy]] [@sep-boethius, preamble]. All of these writings drew heavily on Greek [[neoplatonists]], [[porphyry]] and [[iamblichus]] among them [@sep-boethius, preamble].
+Boethius (born about 475 to 477, died probably 526) was a Roman who put Aristotle's logical works into Latin, commented on them, and wrote logical textbooks and the [[consolation-of-philosophy]] [@sep-boethius, preamble] [@sep-boethius, §1]. All of these writings drew heavily on Greek [[neoplatonists]], [[porphyry]] and [[iamblichus]] among them [@sep-boethius, preamble].
 
 ## Life
 

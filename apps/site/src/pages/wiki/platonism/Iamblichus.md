@@ -3,7 +3,7 @@ title: 'Iamblichus'
 description: 'Born at Chalcis around 242, student of Porphyry and teacher at Apamea, who made Pythagorean mathematics and theurgy part of Platonism.'
 group: 'Late Platonists'
 order: 80
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: iamblichus
 ---
 
@@ -23,7 +23,7 @@ Eunapius relays a rumor, said to have reached the students through his slaves, t
 
 ## Works
 
-Few of his works survive in the direct manuscript tradition. [@sep-iamblichus, §1.2] Four of them belong to a larger work on Pythagoreanism. These are [[on-the-pythagorean-way-of-life]], the Protrepticus, a treatise on general mathematical science, and an introduction to arithmetic that follows the treatise of [[nicomachus]]. [@sep-iamblichus, §1.2] His most important surviving treatise answers Porphyry's Letter to Anebo, under the title [[de-mysteriis|Reply to Porphyry]] or, since Ficino, De mysteriis. [@sep-iamblichus, §1.2] It defends sacrifice, prayer and divination against Porphyry's objections, and Iamblichus wrote it under the guise of an Egyptian prophet, Abamon. [@sep-iamblichus, §1.2] His commentaries on Plato and Aristotle are all lost. For two of them, the Categories commentary known through Simplicius and the Timaeus commentary known through Proclus, the quotations are numerous enough to establish the main features of his exegesis. [@sep-iamblichus, §1.2]
+Few of his works survive in the direct manuscript tradition. [@sep-iamblichus, §1.2] Four of them belong to a larger work on Pythagoreanism. These are [[on-the-pythagorean-way-of-life]], the Protrepticus, a treatise on general mathematical science, and an introduction to arithmetic that follows the treatise of [[nicomachus]]. [@sep-iamblichus, §1.2] His most important surviving treatise answers Porphyry's Letter to Anebo, under the title [[de-mysteriis|Reply to Porphyry]] or, since Ficino, De mysteriis. [@sep-iamblichus, §1.2] It defends sacrifice, prayer and divination against Porphyry's objections, and Iamblichus wrote it under the guise of an Egyptian prophet, Abamon. [@sep-iamblichus, §1.2] His commentaries on Plato and Aristotle are all lost. For almost two of them, the Categories commentary known through Simplicius and the Timaeus commentary known through Proclus, the quotations are numerous enough to establish the main features of his exegesis. [@sep-iamblichus, §1.2]
 
 ## Place in Neoplatonism
 

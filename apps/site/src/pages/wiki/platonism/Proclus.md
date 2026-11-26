@@ -3,7 +3,7 @@ title: 'Proclus'
 description: 'Born at Constantinople in 412, a Platonist at Athens until his death in 485, and author of the Elements of Theology.'
 group: 'Late Platonists'
 order: 90
-audited: '2026-11-23'
+audited: '2026-11-26'
 entity: proclus
 ---
 
